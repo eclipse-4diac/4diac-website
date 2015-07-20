@@ -79,6 +79,42 @@ height:240px;
 margin-top:20px;
 margin-bottom:20px;
 }
+
+section.rteimage {
+background-image:url("content/img/rte.png");
+background-repeat:no-repeat;
+background-position: center bottom; 
+height:180px;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+section.ideimage {
+background-image:url("content/img/ide.png");
+background-repeat:no-repeat;
+background-position: center bottom; 
+height:220px;
+margin-top:20px;
+margin-bottom:20px;
+}
+ 
+section.libimage {
+background-image:url("content/img/lib.png");
+background-repeat:no-repeat;
+background-position: center bottom; 
+height:130px;
+margin-top:20px;
+margin-bottom:20px;
+} 
+ 
+section.sysimage {
+background-image:url("content/img/sys.png");
+background-repeat:no-repeat;
+background-position: center bottom; 
+height:140px;
+margin-top:20px;
+margin-bottom:20px;
+} 
  
 section.news{
 background-color:rgba(221,221,221,1.0); 
@@ -169,7 +205,7 @@ text-align:center;
 section.content a{
 width:4cm; 
 height:4cm;
-margin:20px;
+margin:20px 20px 0px 20px;
 padding:20px;
 display:inline-block;
 font-weight:bold;
@@ -188,6 +224,10 @@ section.content a:hover, a:active{
 background-color:rgba(0,137,209,1.0);
 color:rgba(221,221,221,1.0);
 border:1mm solid rgba(221,221,221,1.0);
+}
+
+section.content ul{
+list-style-type:square;
 }
 
 footer{
