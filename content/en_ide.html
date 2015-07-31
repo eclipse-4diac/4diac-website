@@ -45,18 +45,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 
 <section class="content">
-	<p>The 4DIAC-IDE is based on the Eclipse framework, which allows to easily apply other plug-ins to the 4DIAC-IDE providing new or extended functionality. </p>
-	<ul>
-		<li>System Explorer</li>
-		<li>Application Editor Modelling of IEC 61499 Function Block Networks (FBN)</li>
-		<li>Hardware Editor specification and parameterization of automation hardware Modelling of IEC 61499 Devices</li>
-		<li>Distribution/Mapping Editor Modelling of IEC 61499 Resources Mapping of FBNs to Device/Resources</li>
-		<li>Type Editor Generation of BasicFBs, Composite FBs, and Service Interface FBs, and Adapter FBs</li>
-		<li>Application Download Selective download of FBNs to Devices/Resources</li>
-		<li>Monitoring and Debugging Functionalities Watch Interface Elements Trigger Events Force Values</li>
-		<li>Function Block Tester Test FBs on their behavior</li>
-	</ul>
-	<img src="img/ide_screenshot.png" width="1200px" alt="4DIAC-IDE: prototypic engineering environment for distributed control systems"/>
+	<p>The 4DIAC-IDE is based on the Eclipse framework, which allows an easy integration of other plug-ins to the 4DIAC-IDE providing new or extended functionality. IEC 61499 based systems follow an application centric design, which means that the application of the overall system is created at first. Each application is created by interconnecting the desired function blocks (FB) in terms of a function block network (FBN). As soon as the hardware structure is known it can be added to a project's system configuration and the already existing application can be distributed onto the available devices. The IDE provides the following features:</p>
+	<table>
+		<tr>
+			<td>
+				<ul class="text">
+					<li><b>System Explorer:</b>
+						<br>manage IEC 61499 projects which consist of applications, a system configuration and a project specific type library</li>
+					<li><b>Application Editor:</b> 
+						<br>modelling of IEC 61499 function block networks consisting of the type library's elements</li>
+					<li><b>Hardware Editor:</b>
+						<br>specification and parameterization of automation hardware by modelling of IEC 61499 devices</li>					
+					<li><b>Type Editors:</b>
+						<br>creation of Basic FBs (BFB), Composite FBs (CFB), Service Interface FBs (SIFB), and Adapters</li>
+				</ul>
+			</td>
+			<td>
+				<ul class="text">
+					<li><b>Distribution Editor:</b> 
+						<br>mapping of FBNs or single FBs to the specified resources</li>
+					<li><b>Deployment:</b>
+						<br>selective download of applications to their corresponding resources</li>
+					<li><b>Monitoring and Debugging Functionalities:</b>
+						<br>watch and force the values of interface elements as well as trigger events</li>
+					<li><b>Testing Functionalities:</b>
+						<br>test a single FB on its behavior either by manually setting data values and triggering events within the FBTester editor or by running a list of test cases specified through the service sequences of the specific FB within the FBTest editor</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<p><img src="img/ide_screenshot.png" width="1200px" alt="4DIAC-IDE: prototypic engineering environment for distributed control systems"/></p>
 </section>
 
 <footer>
