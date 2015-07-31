@@ -222,6 +222,11 @@ vertical-align:top;
 }
 
 section.content ul{
+padding-top:5px;
+padding-bottom:5px;
+margin: auto;
+color:rgba(1,34,105,1.0);
+text-align:justify;
 list-style-type:square;
 }
 
@@ -232,6 +237,11 @@ margin-left:50px;
 
 ul.text li{
 margin-bottom: 10px;
+}
+
+section.content > img{
+display: block;
+margin: auto;
 }
 
 section.content > a{
