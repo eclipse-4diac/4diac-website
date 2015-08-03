@@ -117,7 +117,7 @@ section.uwsimage {
 background-image:url("content/img/uws.png");
 background-repeat:no-repeat;
 background-position: center bottom; 
-height:260px;
+height:240px;
 margin-top:20px;
 margin-bottom:20px;
 } 
@@ -132,11 +132,9 @@ text-align:center;
 }
 
 section.separator{
-background-color:rgba(221,221,221,1.0); 
-color:white;
+background-color:rgba(221,221,221,1.0);
 margin:0px 100px 0px 100px;
-padding-top:10px;
-padding-bottom:10px;
+padding:0px;
 text-align:center;
 }
 
