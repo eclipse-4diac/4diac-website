@@ -116,9 +116,9 @@ margin-bottom:20px;
 section.news{
 background-color:rgba(221,221,221,1.0); 
 color:white;
+margin:0px 100px 0px 100px;
 padding-top:10px;
 padding-bottom:10px;
-margin:0;
 text-align:center;
 }
 
