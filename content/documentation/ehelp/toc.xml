@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="4DIAC Help">
+
+   <topic label="Installation" href="html/installation/install.html"> 
+		<topic label="4DIAC-IDE" href="html/installation/install.html#4DIAC-IDE"/>
+		<topic label="FORTE" href="html/installation/install.html#FORTE">
+			<topic label="Compiling and Debugging FORTE with MS Visual Studio Express" href="html/installation/visualStudio.html" />
+			<topic label="Compiling and Debugging FORTE with Eclipse" href="html/installation/eclipse.html">
+				<topic label="Setting up Cygwin for FORTE Development" href="html/installation/cygwin.html"/>
+				<topic label="Setting up MinGW for FORTE Development" href="html/installation/minGW.html"/>
+			</topic>
+		</topic>	
+	</topic>
+   
+   	<topic label="Overview" href="html/overview/overview.html">
+   		<topic label="Perspectives" href="html/overview/perspectives.html">
+	   		<topic label="System Perspective" href="html/overview/perspectives.html#systemPerspective" /> 
+			<topic label="Type Management Perspective" href="html/overview/perspectives.html#typeManagementPerspective" /> 
+			<topic label="Deployment Perspective" href="html/overview/perspectives.html#deploymentPerspective" /> 
+			<topic label="Debug Perspective" href="html/overview/perspectives.html#debugPerspective" />
+		</topic>
+		<topic label="Modelling of IEC 61499 Applications using the 4DIAC-IDE" href="html/overview/applicationModelling.html">
+			<topic label="Import of Existing IEC 61499 Types" href="html/overview/applicationModelling.html#ImportExistingTypes"/>
+			<topic label="Create a new IEC 61499 System" href="html/overview/applicationModelling.html#CreateSystem"/>
+			<topic label="Create a new IEC 61499 Application" href="html/overview/applicationModelling.html#CreateApplication"/>
+			<topic label="Create IEC 61499 Subapplications" href="html/overview/applicationModelling.html#CreateSubapplications"/>
+			<topic label="Configuration of the Automation Hardware" href="html/overview/applicationModelling.html#ConfigureHardware">
+				<topic label="Configuration of the Device's Configuration Profile" href="html/overview/applicationModelling.html#DeviceProfileConfiguration"/>
+			</topic>
+			<topic label="Mapping of Function Block Networks to Devices/Resources" href="html/overview/applicationModelling.html#MapNetworks"/>
+			<topic label="Virtual DNS Functionality" href="html/overview/virtualDNS.html"/>
+		</topic>
+		<topic label="Deployment of IEC 61499 Applications" href="html/overview/deployment.html">
+			<topic label="Selection of Deployable System Configurations/Devices/Resources" href="html/overview/deployment.html#Deploy"/>
+			<topic label="Download of System Configurations/Devices/Resources" href="html/overview/deployment.html#Download"/>
+			<topic label="Creating Boot-files" href="html/overview/deployment.html#CreateBootfiles"/>
+		</topic>
+		<topic label="Management of IEC 61499 Element Types" href="html/overview/managementOfTypes.html">
+			<topic label="Create Function Block Types" href="html/overview/managementOfTypes.html#CreateTypes"/>
+			<topic label="Function Block Type Editor" href="html/overview/managementOfTypes.html#TypeEditor"/>
+			<topic label="FORTE Export of IEC 61499 Element Types" href="html/overview/managementOfTypes.html#ExportTypes"/>
+			<topic label="Other Type Editors" href="html/overview/managementOfTypes.html#OtherEditors"/>
+			<topic label="Function Block Tester" href="html/overview/managementOfTypes.html#FBTester"/>
+		</topic>
+		<topic label="Monitoring and Debugging Functionalities" href="html/overview/monitoringDebugging.html">
+			<topic label="Watch Interface Elements" href="html/overview/monitoringDebugging.html#WatchElements"/>
+			<topic label="Trigger Events" href="html/overview/monitoringDebugging.html#TriggerEvents"/>
+			<topic label="Force Values" href="html/overview/monitoringDebugging.html#ForceValues"/>
+			<topic label="Breakpoints" href="html/overview/monitoringDebugging.html#Breakpoints"/>
+		</topic>	 
+   	</topic> 
+   
+	<topic label="Tutorials"> 
+		<topic label="4DIAC Framework">
+			<topic label="X+3 Tutorial"  href="html/tutorials/x3_tutorial.html"> 
+				<topic label="Application" href="html/tutorials/x3_tutorial.html#application" /> 
+				<topic label="System Management" href="html/tutorials/x3_tutorial.html#systemManagement" /> 
+				<topic label="Deployment" href="html/tutorials/x3_tutorial.html#deployment" /> 
+			</topic>
+			<topic label="Flip-Flop Tutorial" href="html/tutorials/flipFlop_tutorial.html">
+				<topic label="Create a System" href="html/tutorials/flipFlop_tutorial.html#system"/>
+				<topic label="Adding a Device" href="html/tutorials/flipFlop_tutorial.html#device"/>
+				<topic label="Create the Application" href="html/tutorials/flipFlop_tutorial.html#application"/>
+				<topic label="Map the Application" href="html/tutorials/flipFlop_tutorial.html#mapping"/>
+				<topic label="Deploy the System" href="html/tutorials/flipFlop_tutorial.html#deploy"/>
+				<topic label="Monitor the Application" href="html/tutorials/flipFlop_tutorial.html#monitor"/>
+			</topic> 
+			
+		</topic>
+		<topic label="4DIAC-IDE">
+			<topic label="4DIAC Properties" href="html/tutorials/properties.html"/>
+			<topic label="Import an existing System" href="html/tutorials/systemImport.html"/>
+			<topic label="Application Structuring with Subapplications" href="html/tutorials/flipFlop_subapp.html" />
+			<topic label="Developing Function Blocks" href="html/tutorials/fbs.html"> 
+				<topic label="Create FB Interface" href="html/tutorials/fbInterface.html"/>
+				<topic label="Flip-Flop as BFB" href="html/tutorials/flipFlop_asBFB.html"/>
+				<topic label="Flip-Flop as CFB" href="html/tutorials/flipFlop_asCFB.html"/>
+				<topic label="Flip-Flop as SIFB" href="html/tutorials/flipFlop_asSIFB.html"/>	
+				<topic label="Export an own FB" href="html/tutorials/fBexport.html"/>
+				<topic label="Test own FB with FBTester" href="html/tutorials/fbTester.html"/>				
+			</topic>			
+		</topic>
+		<topic label="FORTE">
+			<topic label="CMake for new FB Type" href="html/tutorials/cmake.html"/>
+			<topic label="4DIAC on other Platforms">
+				<topic label="Building FORTE for Lego Mindstorms" href="html/tutorials/mindstorms.html"/>
+				<topic label="Building FORTE for ICnova" href="html/tutorials/icnova.html"/>
+				<topic label="Building FORTE on Raspberry Pi" href="html/tutorials/raspi.html"/>
+				<topic label="Building FORTE for Wago" href="html/tutorials/wago.html"/>
+			</topic>
+		</topic>
+	</topic>
+	
+	<topic label="Using Communication Protocols"> 
+		<topic label="FBDK/IP" href="html/communication/fbdkip.html"/>
+		<topic label="OPC DA" href="html/communication/opc.html"/>
+		<topic label="Modbus" href="html/communication/modbus.html"/>
+	</topic>  
+		
+	<topic label="Frequently Asked Questions"> 
+		<topic label="4DIAC-IDE">
+			<topic label="When I open a certain perspective a view element is missing, how can I get it back" href="html/faq/ide.html#faq1"/>
+			<topic label="Download not possible! Defined profile () for RMT_XXX.xxx not supported" href="html/faq/ide.html#faq2"/>
+			<topic label="When I download my application I get an UNSUPPORTED TYPE error message in the Deployment Console" href="html/faq/ide.html#faq3"/>
+			<topic label="When I download my application I get a STATUS ACCESS VIOLATION error messages in the Deployment Console" href="html/faq/ide.html#faq4"/>
+			<topic label="When I want to download my application I get an connection refused message" href="html/faq/ide.html#faq5"/>
+			<topic label="How do I use ARRAYs" href="html/faq/ide.html#faq6"/>
+			<topic label="What does CLEAN Device do" href="html/faq/ide.html#faq7"/>
+			<topic label="What does KILL Device do" href="html/faq/ide.html#faq8"/>
+		</topic>
+		<topic label="FORTE">
+			<topic label="Windows/Cygwin: The setup script runs to completion but when building the target I get strange compile errors" href="html/faq/forte.html#faq1"/>
+			<topic label="CMake/Cygwin: Can not find C and C++ compilers" href="html/faq/forte.html#faq2"/>
+			<topic label="CMake/Cygwin: Can not find RC Compilers" href="html/faq/forte.html#faq3"/>
+			<topic label="FORTE is C++ why are you than using the C-style include files for the standard c library instead of the C++ style include files?" href="html/faq/forte.html#faq4"/>
+		</topic>
+	</topic>  
+	
+	<topic label="Development Documentation"> 
+		<topic label="4DIAC-IDE">
+			<topic label="Building and Running 4DIAC-IDE from Source" href="html/development/installFromSource.html"> 
+				<topic label="Get the Development Environment" href="html/development/installFromSource.html#devEnvironment"/>
+				<topic label="Check out the 4DIAC-IDE Repository" href="html/development/installFromSource.html#checkOutRepos"/>
+				<topic label="Import Plug-Ins into Workspace" href="html/development/installFromSource.html#importPlugins"/>
+				<topic label="Get 4DIAC-LIB" href="html/development/installFromSource.html#getLib"/>
+				<topic label="Run in Development Mode" href="html/development/installFromSource.html#devMode"/>
+				<topic label="Building your own IDE" href="html/development/installFromSource.html#buildingIDE"/>
+			</topic>
+			<topic label="Building a Binary 4DIAC-IDE Package from Source" href="html/development/buildingBinary.html" /> 
+			<topic label="Headless-Build of 4DIAC-IDE" href="html/development/headlessBuild.html" />
+			<topic label="Automatic testing with Jubula" href="html/development/ide_jubula.html"/>
+		</topic>
+		<topic label="FORTE" href="html/development/forte.html">
+			<topic label="Structured Datatypes" href="html/development/forte_struct.html"/>
+			<topic label="Monitoring" href="html/development/forte_monitoring.html"/>
+			<topic label="Communication Architecture" href="html/development/forte_communicationArchitecture.html"/>
+			<topic label="External Event SIFB" href="html/development/externalEvent_example.html"/>
+   <topic href="html/development/forte_codequality.html" label="Assuring FORTE Code Quality">
+   </topic>
+		</topic>
+	</topic>  
+</toc>

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Management of IEC 61499 Element Types</title>
+    <link rel="stylesheet" type="text/css" href="../help.css" />
+  </head>
+  <body>
+  
+<h1>Management of IEC 61499 Element Types</h1>
+<p>The IEC 61499 defines different element types like Device Types, Resource Types, Function Block Types, Data Types and Adapter Types. In order to manage the element types, i.e. to create, delete or modify element types, the 4DIAC-IDE has to be changed to the <a href="./perspectives.html#typeManagementPerspective"><b>Type Management</b> perspective</a>. However for ease of use many type editing and creation tasks can also be performed in the <a href="./perspectives.html#systemPerspective"> <b>System</b> perspective</a> using the type navigators.</p>
+  
+  
+<a name="CreateTypes"></a>
+<h2>Create Function Block Types</h2>
+<p>to create new Function Block Types you have two options</p>
+<ol>
+	<li>From the menu: <b>File &rarr; New &rarr; New Type</b></li>
+	<li>From the context menu in the Type Navigator <b>New &rarr; New Type</b>:
+		<br><img src="./img/createTypeContextMenu.png" alt="Create Type From Context Menu" />
+	</br></li>
+</ol>
+<p>Follow the instruction in the creation wizard. In the following wizard the Function Block name as well as the type and the group in the type library have to be specified.</p>
+<table class="noBorder">
+	<tr>
+		<td class="noBorder"><img src="./img/newTypeWizard.png" alt="new Type Wizard" /></td>
+		<td class="noBorder"></td>
+		<td class="noBorder"><img src="./img/newTypeWizardFilledAOut.png" alt="new Type Wizard Filled Out" /></td>
+	</tr>
+</table>
+
+
+<a name="TypeEditor"></a>
+<h2>Function Block Type Editor</h2>
+<p>The Function Block Type Editor contains several tabs which allow the management (i.e. creation, deletion and modification) of
+types.</p>
+  
+<h3>General Function Block Editor Tabs</h3>
+<p>There is a set of tabs that are common to all function block types. They allow to modify the function block interface, the service sequences, and the general properties of a function block.</p>
+
+<h4>Editing of Function Block Types - Interface</h4>
+<img src="./img/editingFBInterfaces.png" width="1024" alt="editingFBInterfaces" />
+
+<h4>Editing of Function Block Types - Service Sequences</h4>
+<img src="./img/editingFBServices.png" width="1024" alt="editingFBServices" />
+
+<h4>Editing of Function Block Types - General Properties</h4>
+<img src="./img/editingFBGenProperties.png" width="1024" alt="editingFBGenProperties" />
+
+<h3>Basic Function Block Editor Tabs</h3>
+<p>For basic function block types in addition to the general function block tabs there are editor tabs for modifying the internal variables, the algorithms, and the Execution Control Chart (ECC).</p>
+
+<h4>Editing of Basic Function Block Types - Internal Variables</h4>
+<img src="./img/editingBFBsInternalVars.png" width="1024" alt="editingBFBsInternalVars" />
+
+<h4>Editing of Basic Function Block Types - Algorithms</h4>
+<p>Depending on the selected algorithm type different algorithm editors are provided. Currently the most used algorithm language is IEC 61131-3 structured text. For this also syntax highlighting is provided.</p>
+<img src="./img/editingBFBsAlgs.png" width="1024" alt="editingBFBsAlgs" />
+
+<h4>Editing of Basic Function Block Types - Execution Control Chart</h4>
+<img src="./img/editingBFBsECC.png" width="1024" alt="editingBFBsECC" />
+
+<h3>Composite Function Block Editor Tabs</h3>
+<p>For composite function block types in addition to the general function block tabs there are editor tabs for modifying the
+internal function block network.</p>
+
+<h4>Editing of Composite Function Block Types - Function Block Network</h4>
+<img src="./img/editingCFBs.png" width="1024" alt="editing cfb types" />
+
+<h3>Service Interface Function Block Editor Tabs</h3>
+<p>For the service interface function block types there are no additional tabs to the general function block editor tabs.</p>
+  
+  
+<a name="ExportTypes"></a>
+<h2>FORTE Export of IEC 61499 Element Types</h2>
+<p>In order to execute specified IEC 61499 Element Types the 4DIAC-IDE provides an export filter to generate C++ code which can be included in the FORTE development process. In order to export a Function Block Type, select either</p>
+<ul>
+	<li>
+	  <b>File &rarr; Export &rarr; Distributed Control System &rarr; 4DIAC Type Export</b>
+	</li>
+	<li>or Right click on the function block to export and select <b>Export &rarr; Distributed Control System &rarr; 4DIAC Type Export</b></li>
+</ul>
+<p>
+<img src="./img/selectExportType.png" alt="Select Export Type" />
+</p>
+<p>Before exporting one or more Function Block Types the corresponding types and the output directory have to be chosen.
+Furthermore the version of the FORTE C++ format have to be selected.</p>
+<p>
+<img src="./img/export4DIACTypeWizard.png" alt="Export Type Wizard" />
+</p>
+<p>After pressing the Next-Button a dialog window informs if the export to the FORTE C++ format was successful or not. If the
+output directory already contains an older version of the exported Function Block Type it is possible to overwrite the old file
+or to open a Merge Editor where manual merges can be performed.</p>
+<p>
+<img src="./img/exportMergeWindow.png" width="1024" alt="Export Merge Window" />
+</p>
+
+
+<a name="OtherEditors"></a>
+<h2>Other Type Editors</h2>
+<p>Currently only the management (i.e. creation, deletion and modification) of Basic, Composite and Service Interface Function Block types as well as Adapter types is supported. The management of Device and Resource Types is currently not supported, Sub-applications are currently under development.</p>
+
+
+<a name="FBTester"></a>
+<h2>Function Block Tester</h2>
+<p>The Function Block tester tab is an type editor tab available for all Function Blocks. It allows to test the functionality of a Function Block by executing it on a target device selectable in the top part. After starting the test with the <b>Start Testing FB</b> button you can manually set input values of your FB, trigger input events and inspect the resulting output events and output data. Furthermore you can store input/output sequences and execute them to automatically test a certain functionality of your FB.</p>
+<p>
+<img src="./img/functionBlockTester.png" width="1024" alt="Functionblock Tester" />
+</p>
+
+</body>
+</html>

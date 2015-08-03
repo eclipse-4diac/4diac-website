@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>FAQ FORTE</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1>FAQ FORTE</h1>
+
+<a name="faq1"></a>
+<h2>Windows/Cygwin: The setup script runs to completion but when building the target I get strange compile errors</h2>
+<ul>
+	<li>First check for any strange output of the setup script. Maybe your system misses something.</li>
+	<li>Do you have spaces in the directory names where you have put your FORTE? Some Cygwin versions have problems with these.</li>
+</ul>
+
+
+<a name="faq2"></a>
+<h2>CMake/Cygwin: Can not find C and C++ compilers</h2>
+CMake Errors: 
+<div class="code">your C compiler: CMAKE_C_COMPILER-NOTFOUND was not found. Please set CMAKE_C_COMPILER to a valid compiler path or name. 
+your CXX compiler: CMAKE_CXX_COMPILER-NOTFOUND was not found. Please set CMAKE_CXX_COMPILER to a valid compiler path or name.</div>
+<p>In this case you need to check the advanced check box and look for <span class="code">CMAKE_CXXX_COMPILER</span> and <span class="code">CMAKE_C_COMPILER</span> and set the path and executable for your C and C++ compiler. e.g., for Cygwin this could be <span class="code">c:\cygwin\bin\g++-3.exe</span> for the C++ compiler and <span class="code">c:\cygwin\bin\gcc-3.exe</span> for the C compiler. 
+
+
+<a name="faq3"></a>
+<h2>CMake/Cygwin: Can not find RC Compilers</h2>
+CMake Error: 
+<div class="code">your RC compiler: CMAKE_RC_COMPILER-NOTFOUND was not found. Please set CMAKE_RC_COMPILER to a valid compiler path or name.</div>
+<p>Again you need to check the advanced chekc box and look for <span class="code">CMAKE_RC_COMPILER</span>. For Cygwin or MinGW on Windows it needs a file called windres.exe (e.g., C:\cygwin\bin\windres.exe). 
+
+
+<a name="faq4"></a>
+<h2>FORTE is C++ why are you than using the C-style include files for the standard c library instead of the C++ style include files?</h2>
+<p>The main reason for this is that not all platforms provide the correct C++ include files. Especially with real-time OSs like eCos where you can freely configure the supported features. Using C++ style C include files on these platforms would pull lots of stuff from the compilers in and result in a bigger image or even worse it would not compile. So as of current experience C style include files are more reliable.</p>
+
+</body>
+</html>

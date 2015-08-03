@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Installation - Compiling and Debugging FORTE with Eclipse</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1>Compiling and Debugging FORTE with Eclipse</h1>
+
+<h2>Get C/C++ support for Eclipse</h2>
+<ul type="square">
+	<li>If you do not already use Eclipse to run 4DIAC-IDE from source, download the <a href="http://www.eclipse.org/downloads/">Eclipse for C/C++ Developers</a> and unzip the file to a suitable location (e.g., c:\eclipse). Otherwise you can integrate C/C++ functionality into your existing Eclipse by <i>Help/Install New Software</i>, choosing your Eclipse version and checking <i>Programming Languages/C/C++ Development Tools</i>.
+		<br><img src="./img/eclipseInstallNewSoftware.png" alt="Install new software in Eclipse"/>
+	</li>
+	<li>Run <span class="code">eclipse.exe</span></li>
+	<li>Choose a workspace directory, this will be the directory where your C/C++ project will be located (see below on how to add FORTE) Please avoid any spaces in its names. Otherwise you might get problems when compiling FORTE.</li>
+</ul>
+
+<h2>Compile FORTE with Eclipse</h2>
+<ul type="square">
+	<li>Import FORTE by <i>File/Import/General/Existing Project into Workspace</i>. Select the directory where you have extracted your FORTE . If you have extracted FORTE into your Eclipse workspace select this directory (e.g., c:\eclipse\workspace). If you have extracted FORTE into a different directory check copy into workspace (otherwise the source will stay at the original place).</li>
+	<li>Start Make Targets View by <i>Window/Show View/Make Targets</i> if it is not open already and choose the makefile: <span class="code">bin/posix/all</span> to generate the object files for the existing Function Blocks and compile FORTE to a executable application. 
+	<br><img src="./img/eclipseMakefiles.png" alt="Eclipse C++ with FORTE imported and marked makefiles"></li>
+</ul>
+
+<h2>Debug FORTE with Eclipse</h2>
+<p>For the debugging of self developed Function Blocks run through the following steps:</p>
+<ul type="square">
+	<li>set a breakpoint in the source code file of the desired Function Block </li>
+	<li>start FORTE in Eclipse Debug mode </li>
+	<li>choose your desired debugger. In case you use Cygwin choose <i>Cygwin gdb Debugger</i> in the debug configuration window shown in the following figure. If you use MinGW choose <i>MinGW gdb Debugger</i>
+		<br><img src="./img/eclipseLaunchDebug.png" alt="Eclipse Launch Debug Configuration Selection"></li>
+	<li>confirm for changing into the Debug view</li>
+	<li>press the <i>Locate File</i> button (see figure below) and navigate to the Eclipse workspace which contains the extracted FORTE, type <span class="code">main</span> into the search field of the Windows Explorer and select the offered <span class="code">main.cpp</span>. FORTE is now stopped at the <span class="code">main()</span> function. 
+		<br><img src="./img/eclipseDebug.png" alt="Eclipse C++ Debug View">
+	</li>
+	<li>Press the <i>Resume</i> button to run FORTE and observe the behavior of our application.</li>
+	<li>Always press the <i>Terminate</i> button for stopping a FORTE launched within Eclipse. This avoids FORTE running in the background (not always shown in Task Manager).</li>
+</ul>
+
+</body>
+</html>

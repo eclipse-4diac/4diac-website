@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Deployment of IEC 61499 Applications</title>
+    <link rel="stylesheet" type="text/css" href="../help.css" />
+  </head>
+  <body>
+    <h1>Deployment of IEC 61499 Applications</h1>
+    <p>The deployment of IEC 61499 applications in the area of IEC 61499 is the creation of a Function Block network on an IEC
+    61499 compliant device (resource of a device) by management commands. To instantiate/run the FB networks an IEC 61499 compliant
+    runtime is required, which supports theses management commands. Currently 4DIAC is utilizing the definitions of the 
+    <a href="http://holobloc.com/doc/ita/index.htm">IEC 61499 Compliance Profile for Feasibility Demonstrations</a> (i.e.
+    portability section).</p>
+    <p>In order to start with the deployment process of IEC 61499 applications the 4DIAC-IDE has to be switched to the 
+    <a href="./perspectives.html#deploymentPerspective">
+    <b>Deployment</b> perspective</a>.</p>
+
+
+    <a name="Deploy"></a>
+    <h2>Selection of Deployable System Configurations/Devices/Resources</h2>
+    <p>The first step is to select the parts of the IEC 61499 project that should be downloaded to the system. Basically, only
+    Function Blocks can be downloaded that are mapped to a resource. This means that the Function Blocks of an Applications have to
+    be assigned to the Resources as described in the last section.</p>
+    <p>Based on this the 
+    <b>Download Selection View</b> offers different scopes to be selected:</p>
+    <ul>
+      <li>
+      <b>System Configuration</b>: all mapped Function Block networks from all Applications of one Project (System) can be selected
+      for download. Currently the download of single Applications is not supported.</li>
+      <li>Single 
+      <b>Devices</b> or 
+      <b>Resources</b>: if only minor changes are required, the corresponding devices/resources can be selected for download.</li>
+    </ul>
+    <p>
+      <img src="./img/deplyomentSelection.png" width="1024"
+      alt="Selection of Deployable System Configurations/Devices/Resources" />
+    </p>
+    <p>In the 
+    <b>Properties View</b> of the 
+    <b>System Configuration</b> perspective the parameters of the Devices and Resources can be defined or changed.</p>
+    
+	
+	<a name="Download"></a>
+    <h2>Download of System Configurations/Devices/Resources</h2>
+    <p>After the System Configurations/Devices/Resources to be deployed are selected, and FORTE has been started on your device,
+    the download process can be started by selecting the 
+    <b>Download</b> button in the 
+    <b>Download View</b>. The Progress Information of the download is shown in a separate dialog window.</p>
+    <p>
+      <img src="./img/downloadSystemConfig.png" width="1024" alt="Download of System Configurations/Devices/Resources" />
+    </p>
+    <p>For testing purposes the 
+    <b>Runtime Launcher View</b> allows to start IEC 61499 run-time environments on the computer where the IDE is running.
+    Currently two different run-time environments are supported:</p>
+    <ol>
+      <li>FORTE from the 4DIAC project</li>
+      <li>FBRT from 
+      <a href="http://www.holobloc.com">Holobloc Inc.</a>
+      <br />As there are some issues with the latest version of FBRT, please use the version provided with 4DIAC-ID in the
+      directory: 
+      <i>4DIAC-IDE/runtime/FBRT</i></li>
+    </ol>
+    <p>In order to start the corresponding runtime in the preferences the right locations have to be set at 
+    <b>Window &rarr; Preferences &rarr; 4DIAC &rarr; FBRT Preferences</b> and 
+    <b>FORTE Preferences</b>.</p>
+    <div style="margin-left: 2em">
+    <b>
+      <i>Note:</i>
+    </b> With the runtime launcher you can only start run-time environments in your local development computer. It is not possible
+    to start run-time environments on remote computers or control devices. In order to perform this task device specific means to
+    start the run-time environment have to be performed.</div>
+    <p>The resulting download commands are shown in the 
+    <b>Deployment Console</b>:</p>
+    <p>
+      <img src="./img/deploymentOutput.png" width="1024" alt="Output Deployment Console" />
+    </p>
+    <p>The 
+    <b>Deployment Console</b> ist automatically cleared before each download. Furthermore, with the icon 
+    <img src="./img/clearDeploymentConsole.png" alt="Clear Deployment Console" /> in the upper right corner of the 
+    <b>Deployment Console</b> the deployment messages can be cleared.</p>
+    <p>By selecting a Device or Resource the corresponding IEC 61499 element can be cleaned. This means that the Device or Resource
+    configuration are cleaned and reset to the default configuration without any Function Block Network.</p>
+    <p>Cleaning a Device:</p>
+    <p>
+      <img src="./img/cleanDevice.png" width="1024" alt="Clean Device" />
+    </p>
+    <p>Cleaning a Resource:</p>
+    <p>
+      <img src="./img/cleanResource.png" width="1024" alt="Clean Resource" />
+    </p>
+    <p>The pop-up menu of the devices in the device list:</p>
+    <ul type="square">
+      <li>
+      <i>CLEAN Device:</i> deletes all existing resources (and the FBs in the resources). After the clean device, you can deploy
+      any other FB Network.</li>
+      <li>
+      <i>KILL Devices:</i> terminates FORTE</li>
+    </ul>
+	
+	
+    <a name="CreateBootfiles"></a>
+    <h2>Creating Boot-files</h2>
+    <p>When the option 
+    <span class="code">FORTE_SUPPORT_BOOTFILE</span> is enabled for the FORTE you are using, on startup FORTE tries to load a so
+    called boot-file. This boot-file has to be located in the same directory as your FORTE binary and needs to be named 
+    <span class="code">forte.fboot.</span> This file contains the FB network configuration for the device and will be automatically
+    instantiated during startup of FORTE.</p>
+    <p>In order to create such boot-files you need to select one or more devices or resources in the 
+    <b>Download Selection View</b> and select 
+    <b>Create FORTE boot-files...</b> from the context menu</p>
+    <p>
+      <img src="./img/createBootFileContextMenu.png" alt="Create Boot-file context menu" />
+    </p>
+    <p>In the wizard you can then select the devices and resources for which you like to create boot-files as well as the directory
+    where to place them.</p>
+    <p>
+      <img src="./img/createBootFileWizard.png" alt="Create Boot-file Wizard" />
+    </p>
+    <p>On pressing 
+    <i>Finish</i> one boot-file will be created per device. This boot-file will contain the selected resources and the FB networks
+    contained in the resources. As only the resources selected are included in the boot-file you can have a larger set of resources
+    during development (e.g., for test-code) and use only the main resources for the boot-file. The name of the boot-file will be a
+    combination of system and device name dot fboot. Before using it you need to rename it to forte.fboot.</p>
+  </body>
+</html>

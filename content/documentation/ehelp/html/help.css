@@ -1,0 +1,26 @@
+div.code{
+	background-color: #F9F9F9;
+	text-align:left; 
+	padding:10px; 
+	border:thin dashed blue; 
+	margin:5px;
+	font-family: "Courier New";
+	font-size: 10pt;
+	white-space: pre; 
+}
+table,tr,th,td{
+	border: 1px solid black;
+}
+
+.noBorder{
+	border: 0px;
+}
+
+span.code{
+	font-family: "Courier New";
+	font-size: 10pt;
+}
+
+p,li{
+	text-align:justify;
+}

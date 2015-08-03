@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Modbus</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1>Modbus</h1>
+<h2>Installation Instructions</h2>
+<p>The Modbus com interface need the <a href="http://libmodbus.org/">libmodbus</a> library to work. Follow the steps below to set up your environment before compiling FORTE.</p>
+
+<ol>
+	<li>libmodbus files should be placed in the following folder structure:
+		<ul>
+			<li><span class="code"><libmodbushome>/include/modbus</span>: include files</li>
+			<li><span class="code"><libmodbushome>/lib: libmodbus.lib</span> (windows) or <span class="code">libmodbus.so</span> (posix)</li>
+		</ul>
+	</li>
+	<li>When configuring FORTE project with CMake choose <span class="code"><libmodbushome></span> as <span class="code">FORTE_COM_MODBUS_LIB_DIR</span></li>
+	<li><span class="code">forte.exe</span> must be able to find the dynamic libmodbus library after build. therefore copy <span class="code">libmodbus.dll/so</span> to folder with <span class="code">forte.exe</span> or add <span class="code">libmodbus.dll/so</span> to library include path</li>
+		</ul>
+	</li>
+</ol>
+
+<h2>Parameters</h2>
+<h3>Modbus Client (TCP)</h3>
+<p>Usage of the Modbus Client (TCP):</p>
+<div class="code">modbus[(protocol:)ip:port:pollFreqency:functionCode:(slaveId):readAddresses:sendAddresses(:responseTimeout:byteTimeout)]</div>
+
+<ul>
+	<li><b>protocol</b>: tcp (tcp is default)</li>
+	<li><b>ip</b>: address of Modbus server, e.g. 127.0.0.1 </li>
+	<li><b>port</b>: preferably above 1024, default is 502</li>
+	<li><b>pollFrequency</b>: polling frequency in milliseconds</li>
+	<li><b>functionCode</b>: an integer between 1 and 4 
+		<ul>
+			<li>1 = Read Coils</li>
+			<li>2 = Read Discrete Inputs</li>
+			<li>3 = Read Holding Registers</li>
+			<li>4 = Read Input Register</li>
+		</ul>
+	</li>
+	<li><b>slaveId</b> (optional): the slave id used by the modbus server (0xFF is standard); this is in principle an optional parameter but some modbus devices - e.g. Siemens SENTRON PAC power measurement devices - need this parameter in order to establish a connection</li>
+	<li><b>readAddresses</b>: addresses can be specified between 0-65535 more than one address (max 100) can be specified using
+		<ul>
+			<li>comma for separate addresses 0,2,65500</li>
+			<li>dots for interval 5..10</li>
+			<li>combination 0,5..10,2,65500</li>
+		</ul>
+	</li>
+	<li><b>sendAddresses</b>: addresses can be specified between 0-65535 if data is only read sendAddresses should be left empty more than one address (max 100) can be specified using
+		<ul>
+			<li>comma for separate addresses 0,2,65500</li>
+			<li>dots for interval 5..10</li>
+			<li>combination 0,5..10,2,65500</li>
+		</ul>
+	</li>
+	<li><b>responseTimeout</b> (optional): timeout in milliseconds to wait for a response (500ms is default)</li>
+	<li><b>byteTimeout</b> (optional): timeout in milliseconds between two consecutive bytes (500ms is default)</li>
+</ul>
+
+<p>Example:</p>
+<div class="code">modbus[127.0.0.1:502:2000:3:1:0..3]</div>
+
+<h3>Modbus Client (RTU)</h3>
+<p>Usage of the Modbus Client (RTU):</p>
+<div class="code">modbus[protocol:device:baudRate:parity:dataBit:stopBit:pollFreqency:functionCode:(slaveId):readAddresses:sendAddresses(:responseTimeout:byteTimeout)]</div>
+
+<p>Parameter meaning:</p>
+<ul type="square">
+	<li><b>protocol</b>: rtu</li>
+	<li><b>device</b>: serial device, e.g., /dev/ttyS0</li>
+	<li><b>baudRate</b>: baud rate</li>
+	<li><b>parity</b>: N for none, E for even, O for odd</li>
+	<li><b>dataBit</b>: number of data bits </li>
+	<li><b>stopBit</b>: number of stop bits </li>
+	<li><b>pollFrequency</b>: polling frequency in milliseconds</li>
+	<li><b>functionCode</b>: an integer between 1 and 4, whereas 
+		<ul>
+			<li>1 = Read Coils</li>
+			<li>2 = Read Discrete Inputs</li>
+			<li>3 = Read Holding Registers</li>
+			<li>4 = Read Input Register</li>
+		</ul>
+	</li>
+	<li><b>slaveId</b> (optional): the slave id used by the modbus server (0xFF is standard); this is in principle an optional parameter but some modbus devices - e.g. Siemens SENTRON PAC power measurement devices - need this parameter in order to establish a connection</li>
+	<li><b>readAddresses</b>: addresses can be specified between 0-65535. More than one address (max 100) can be specified using 
+		<ul>
+			<li>comma for separate addresses 0,2,65500 </li>
+			<li>dots for interval 5..10 </li>
+			<li>combination 0,5..10,2,65500 </li>
+		</ul>
+	</li>
+	<li><b>sendAddresses</b>: addresses can be specified between 0-65535. More than one address (max 100) can be specified using 
+		<ul>
+			<li>comma for separate addresses 0,2,65500 </li>
+			<li>dots for interval 5..10 </li>
+			<li>combination 0,5..10,2,65500 </li>
+		</ul>
+	<li><b>responseTimeout</b> (optional): timeout in milliseconds to wait for a response (500ms is default) </li>
+	<li><b>byteTimeout</b> (optional): timeout in milliseconds between two consecutive bytes (500ms is default) </li>
+</ul>
+
+<p>Example:</p>
+<div class="code">modbus[rtu:/dev/ttyS0:19200:E:8:1:2000:3:247:6142,6132,6137:64025..64025,63995..63995]</div>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+   	  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+      <title>Building FORTE on Raspberry Pi</title>
+      <link rel="stylesheet" type="text/css" href="../help.css">
+   </head>
+
+   <body>
+      <h1>Building FORTE on Raspberry Pi</h1>
+      <h2>Introduction</h2>
+      <p>Raspberry Pi is a low-cost embedded system with an ARM processor @700Mhz and 512MB RAM. It supports many operation systems. 
+      The most popular OS for the RaspberryPi is the Debian based Raspbian. Furthermore there is an 26 pin header on board for custom I/O. 
+      FORTE uses the <i>wiringPi</i> library from <a href="http://www.wiringpi.com">http://www.wiringpi.com</a> that is released under the 
+      <a href="http://www.gnu.org/copyleft/lesser.html">GNU LGPLv3</a> license. The I/O are connected as follows.</p>
+	  <a name="table"></a>
+	  <table border="1">
+	  	 <thead>
+	  	 	  <tr>
+	  	 	     <th>wiringPi</th>
+	  	 		 <th>Name</th>
+	  	 		 <th colspan="2">Header</th>
+	  	 		 <th>Name</th>
+	  	 		 <th>wiringPi</th>
+	  	 	  </tr>
+	  	 </thead>
+	  	 <tbody>
+	  	 	 <tr>
+	  	 	     <th></th>
+	  	 	 	 <th>3.3v</th>
+	  	 	 	 <th>1</th>
+	  	 	 	 <th>2</th>
+	  	 	 	 <th>5v</th>
+	  	 	 	 <th></th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th>8</th>
+	  	 	 	 <th>SDA</th>
+	  	 	 	 <th>3</th>
+	  	 	 	 <th>4</th>
+	  	 	 	 <th>5v</th>
+	  	 	 	 <th></th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th>9</th>
+	  	 	 	 <th>SCL</th>
+	  	 	 	 <th>5</th>
+	  	 	 	 <th>6</th>
+	  	 	 	 <th>Gnd</th>
+	  	 	 	 <th></th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th>7</th>
+	  	 	 	 <th>GPIO7</th>
+	  	 	 	 <th>7</th>
+	  	 	 	 <th>8</th>
+	  	 	 	 <th>TxD</th>
+	  	 	 	 <th>15</th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th></th>
+	  	 	 	 <th>Gnd</th>
+	  	 	 	 <th>9</th>
+	  	 	 	 <th>10</th>
+	  	 	 	 <th>RxD</th>
+	  	 	 	 <th>16</th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th>0</th>
+	  	 	 	 <th>GPIO17</th>
+	  	 	 	 <th>11</th>
+	  	 	 	 <th>12</th>
+	  	 	 	 <th>GPIO18</th>
+	  	 	 	 <th>1</th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th>2</th>
+	  	 	 	 <th>GPIO27</th>
+	  	 	 	 <th>13</th>
+	  	 	 	 <th>14</th>
+	  	 	 	 <th>Gnd</th>
+	  	 	 	 <th></th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th>3</th>
+	  	 	 	 <th>GPIO22</th>
+	  	 	 	 <th>15</th>
+	  	 	 	 <th>16</th>
+	  	 	 	 <th>GPIO23</th>
+	  	 	 	 <th>4</th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th></th>
+	  	 	 	 <th>3v3</th>
+	  	 	 	 <th>17</th>
+	  	 	 	 <th>18</th>
+	  	 	 	 <th>GPIO24</th>
+	  	 	 	 <th>5</th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th>12</th>
+	  	 	 	 <th>GPIO10</th>
+	  	 	 	 <th>19</th>
+	  	 	 	 <th>20</th>
+	  	 	 	 <th>Gnd</th>
+	  	 	 	 <th></th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th>13</th>
+	  	 	 	 <th>GPIO9</th>
+	  	 	 	 <th>21</th>
+	  	 	 	 <th>22</th>
+	  	 	 	 <th>GPIO25</th>
+	  	 	 	 <th>6</th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th>14</th>
+	  	 	 	 <th>GPIO11</th>
+	  	 	 	 <th>23</th>
+	  	 	 	 <th>24</th>
+	  	 	 	 <th>GPIO8</th>
+	  	 	 	 <th>10</th>
+	  	 	 </tr>
+	  	 	 <tr>
+	  	 	     <th></th>
+	  	 	 	 <th>Gnd</th>
+	  	 	 	 <th>25</th>
+	  	 	 	 <th>26</th>
+	  	 	 	 <th>GPIO7</th>
+	  	 	 	 <th>11</th>
+	  	 	 </tr>
+	  	 </tbody>
+	  </table>
+	  
+	  <p>This tutorial shows how to compile FORTE in a console window. This way, it is not necessary to use the GUI mode on the Raspberry Pi. 
+	  If you compile FORTE for first the time, you have to configure your RaspberryPi, as described in <a href="#preparation">Preparation</a>. 
+	  When you recompile FORTE to include new FBs, skip to <a href="#building">Building</a>.</p>
+	  
+	  <a name="#preparation"></a>
+	  <h2>Preparation</h2>
+	  	  	<ol>
+	  	 <li>Install some additional software on your Raspberry Pi if not done yet. 
+	  	 	<ul type="circle"><li>The Mercurial version control system: <span class="code">tortoisehg</span></li>
+	  	 		<li>The building tools: <span class="code">cmake, make, gcc, g++</span></li>
+	  	 	</ul> 		
+	  	 			<div class="code">$ sudo apt-get install tortoisehg cmake make gcc g++</div><br>
+				<li>Check out FORTE from the Mercurial repository in your home directory.</li><br>
+	  	 			<div class="code">$ cd ~
+$ hg clone http://hg.code.sf.net/p/fordiac/forte</div><br>
+				<li>Prepare the FORTE project structure for the Posix architecture.</li><br>
+				<div class="code">$ cd forte
+$ chmod +x setup_posix.sh
+$ ./setup_posix.sh</div>
+	  	 	<br>
+	  	</ol>
+	  	        <a name="#building"></a>
+	  	 		<h2>Building</h2>
+	  	<ol>
+	  	 		<li>Go to the posix directory, which is within the <span class="code">forte/bin</span> directory.</li><br>
+	  	 		<div class="code">$ cd ~/forte/bin/posix</div><br>
+	  	 		<li>Create makefiles with cmake. The parameter <span class="code">-i</span> starts CMake in wizard mode, where you can setup parameters in a way similar to the CMake GUI.</li><br>
+	  	 		<div class="code">$ cmake -i ../..</div><br>
+	  	 		<li>Choose the function blocks you want to compile. To include or exclude an package, just enter <span class="code">YES</span> or <span class="code">NO</span> to the appropriate package.</li><br>
+	  	 		<li>Build FORTE.</li><br>
+	  	 		<div class="code">$ make</div><br>	  	 		
+		</ol>
+
+	<h2>Running an Application</h2>
+	<p>The following picture shows an example application from the <a href = "flipFlop_tutorial.html">flipflop tutorial</a> which is extended 
+	with IX and QX function blocks. The extended application periodically toggles on RaspberryPi pin number 3. It can be started and stopped 
+	via RaspberryPi pin number 13. You can connect an LED to obtain a blinking light.</p>
+	
+	<img src="./img/ixqx_fb_network.png" alt="Simple flip flop application with an IX and QX function block."/>
+	
+	<p>The "PARAMS" data input in the IX and QX FB define which pin should be used on the RaspberryPi. In this example, the input is taken 
+	from pin 2 in <i>wiringPi</i> which is pin number 13 on the RaspberryPi, according the <a href="#table">table</a>. The output signal is 
+	connected to <i>wiringPi</i> pin 8, which is the physical pin number 3 on the RaspberryPi connector.</p>
+	<p>The application also contains E_CYCLE and E_SWITCH function blocks (which ar not in the flipflop tutorial). The first one generates 
+	an event every 500 ms. This way the IX block will check the hardware input every half second if signal has changed. E_SWITCH_0 starts or 
+	stops the action, depending on the "IN" data output of the IX function block. </p>
+
+   </body>
+</html>

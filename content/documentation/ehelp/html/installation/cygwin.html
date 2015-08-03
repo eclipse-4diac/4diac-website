@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Installation - Setting up Cygwin for FORTE Development</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1>Setting up Cygwin for FORTE Development</h1>
+<h2>Install Cygwin</h2>
+<p>For building and debugging FORTE you will need the following tools: make, gcc, gdb and binutils. In windows Cygwin provides the necessary tools and libraries. Download Cygwin <a href="http://cygwin.com/">setup.exe</a>, consider that there should not be any blanks in the folder names of the installation. Follow the instructions of the installation wizard and choose at least the following packages:</p>
+<ul>
+	<li>make</li>
+	<li>gcc (binutils)</li>
+	<li>gdb</li>
+</ul>
+<img src="./img/cygwinSetup.png" alt="Setup Cygwin"/>
+
+<h2>Set Environment Variables</h2>
+<p>Set Environment variables in the control panel of the operating system (e.g., PATH C:\cygwin\bin)</p>
+
+<img src="./img/environmentVariables.png" alt="Environment variables"/><img src="./img/editEnvironmentVariables.png" alt="Edit environment variables"/>
+
+<h2>Test Cygwin</h2>
+<p>Open command prompt window by pressing <i>Windows</i> button and entering <span class="code">cmd</span>. Enter <span class="code">bash</span>, if bash prompt appears it was successful. To end cygwin enter <span class="code">exit </span>, enter <span class="code">exit </span> again to end command prompt.</p>
+
+<img src="./img/cygwinTest.png" alt="test Cygwin"/>
+
+<h2>Configure with CMake</h2>
+<ul>
+	<li>start CMake GUI </li>
+	<li>Select FORTE main directory as src directory</li>
+	<li>Select a bin directory for the output (e.g., forte_1.0/bin/posix). There all build specific files, configuration data, and the resulting binaries will be put.</li>
+	<li>Press the <i>Configure</i> button and you will be asked to specify the generator, select <i>Unix Makefiles</i> from the list.</li>
+	<li>press the <i>Configure</i> button.</li>
+	<li>You will encounter with a red/white screen then you have to check the following options as true:
+		<div class="code">FORTE_ARCHITECTURE_POSIX 
+FORTE_MODULE_CONVERT 
+FORTE_MODULE_IEC61131 
+FORTE_MODULE_Test 
+FORTE_MODULE_UTILS 
+FORTE_SUPPORT_MONITORING</div></li>
+	<li>Now press <i>Configure</i> button again, do it repeatedly while you get any red lines. If you get everything right then press the <i>Generate</i> button. You will be able to find the generated files in the directory you have mentioned in the top of the CMake GUI.</li> 
+</ul>
+
+</body>
+</html>

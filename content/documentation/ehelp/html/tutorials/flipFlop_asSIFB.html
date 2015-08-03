@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Flip-Flop Tutorial - Flip-Flop as SIFB</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1>Flip-Flop as Service Interface Function Block <img src="../overview/img/sifb_16.png" alt="SIFB"/></h1>
+<p>After creating a Service Interface Function Block (SIFB) perform the following steps to add the Flip-Flop functionality to your own SIFB.</p>
+
+<ol>
+	<li>Within the <i>Properties</i> tab enter a comment description for the Flip-Flop like <i>Flip Flop alternating on/off</i>
+	<li> Within the <i>Interface</i> tab use the same interface as for the BFB:
+		<br><img src="./img/flipFlop_BFB_interface.png" alt="Flip-Flop BFB Interface"/>
+	</li>
+	<li>For a SIFB the general structure is provided via 4DIAC-IDE function block export. Since you have to insert the desired Flip-Flop functionality into that structure, you have to export your SIFB first as it is described <a href="./fBexport.html">here</a>. </li>
+	<li>open the .cpp source file of the new SIFB and change the exported code here:
+		<div class="code">void FORTE_FlipFlop3::executeEvent(int pa_nEIID){
+  switch(pa_nEIID){
+    case scm_nEventREQID:
+#error add code for REQ event!
+/*
+    do not forget to send output evelt, calling e.g.
+      sendOutputEvent(scm_nEventCNFID);
+*/
+      break;
+  }
+}</div>
+		Change the code, that either could not be created via a Basic or Composite FB like an interface to Hardware or needs to be more efficient due hardware space restrictions. Do not forget to send the output event as shown in the default comment. Notice the output event variable is <span class="code">scm_nEvent<real event name>ID</span>, in this case <span class="code">CNF</span>. 
+		<div class="code">void FORTE_FlipFlop3::executeEvent(int pa_nEIID){
+  switch(pa_nEIID){
+    case scm_nEventREQID:
+      Q() = !Q();
+      sendOutputEvent(scm_nEventCNFID);
+      break;
+  }
+}</div></li>
+</ol>
+	
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+   	  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+      <title>Building FORTE for Wago</title>
+      <link rel="stylesheet" type="text/css" href="../help.css">
+   </head>
+
+   <body>
+      <h1>Building FORTE for Wago</h1>
+      <h2>Introduction</h2>
+      <p>Wago PFC 200 series is a PLC designed to work in Small and Medium Enterprises for small scale automations and runs on a ARM cortex A8 , 600 Mhz controller with real time Linux 3.6 (RT preemption patch). This tutorial helps to set up FORTE on the WAGO embedded platform. The essentials for following this tutorial are:</p>
+	  <ul type="square">
+		<li><a href="http://wiki.ubuntuusers.de/Downloads">Ubuntu 14.04 LTS</a> host system with 30GByte Hard Disk space (e.g. as a <a href="https://www.virtualbox.org/">VirtualBox</a> VM)</li>
+		<li>inside Ubuntu download 
+			<ul>
+				<li><a href="http://www.wago.com/public-download/WAGO-PFC-BSP-2014.10.3.zip">Board support Package for WAGO PFC from Wago</a> for configuring and building customized applications on Wago.</li>
+				<li><a href="http://www.ptxdist.org/software/ptxdist/download/">ptxdist-2013.03.0.tar.bz2</a> a GPL licensed build system for embedded Linux userlands, started by German Company Pengutronix. It uses the Kconfig configuration system from the Linux kernel. Basically it's a cross tool chain building framework, and builds the target system Linux kernel image and root system directly from the original sources. The ptxdist helps to build customized applications for the embedded device and create your own firmware image. <span style="color:red">PTXDist is a command line utility which works only from the saved software platform, here wago/ptxproj-2.2.20 directory. The "ptxdist" commands will work only in this directory.</span></li>
+			</ul>
+		</li>
+		<li>Latest version of FORTE. FORTE compiled for Wago contains Kbus and includes the Function Blocks <i>WAGO_750_530</i> (digital input) and <i>WAGO_750_400</i> (digital output) within the wagokbus folder.</li>
+	  </ul>
+
+	  
+	  <h2>Wago Toolchain Installation on Ubuntu Host</h2>
+	  <p>Do NOT install the packages within the root folder! The installation may take more than an hour, therefore be patient till the whole process completes.</p>
+	  <ol>
+		<li>Create a folder e.g. <span class="code">/home/.../Wago</span></li>
+		<li>unzip the board support Package for WAGO PFC downloaded before into the <span class="code">/home/.../Wago</span> folder. And follow the installation process found in <span class="code">HowTo_Install_WAGO-PFC-BSP-2014.10.3_Ubuntu-LTS.txt</span> until you finished <i>"6.1 Compile all packages of PFC200 Firmware"</i>. </li>	
+	  </ol>
+	
+	
+	<h2>Building FORTE for your Wago Device using "ptxdist" build tool on Ubuntu Host</h2>
+	<p>FORTE is normally deployed in cross platforms using cmake. Here for the wago device all the build process is controlled by the ptxdist. For FORTE build process it is important to know about a few directories in the wago development environment. All the ptxdist packages are managed by so called rule files. The rule files are located in <span class="code">wago/ptxproj-2.2.20/rules</span> directory. When you create a new package, rule files <span class="code">packagename.make</span> and <span class="code">packagename.in</span> are created in the rules directory. There are two kinds of source directories, <span class="code">wago/src</span> for system level packages and <span class="code">wago/local_src</span> for new custom packages. The build directory for the target system (wago) is located in a directory called <span class="code">platformwago-wago-pfc200/build-target</span>.</p>
+	<ol>
+		<li><b>Create forte_wago project in PTXDist:</b> Copy the rule files from <span class="code">FORTE/buildsupport/wago_pfc200/</span> <span class="code">forte_wago.in</span> and <span class="code">forte_wago.make</span> to <span class="code">wago/ptxproj-2.2.20/rules</span> (creates a new package). Within the copied rule file <span class="code">.../ptxproj-2.2.20/forte_wago.make</span> edit the line <span class="code">FORTE_WAGO_URL: file:///<path to FORTE main directory></span> to the absolute path of your FORTE main directory. To (de)activate specific modules (library parts) of FORTE edit <span class="code">.../ptxproj-2.2.20/wago.make</span> line <span class="code">FORTE_WAGO_CONF_OPT	:= ...</span></li>
+		
+		<li><b>Save the package to PTXDist:</b> To follow the standard build process of PTXDist the package has to be save to the PTXDist build environment. Select the <span class="code">forte_wago</span> with space key (This will be displayed as <span class="code">[*]</span>) and press exit to go out. It will ask you whether to save the package, then press Yes.
+		<div class="code">> cd wago/ptxproj-2.2.20
+> ptxdist menuconfig</div>
+		<img src="img/wagoManager.png" alt="PTXDist Manager"/></li>
+		
+		<li><b>Build the Project:</b> Go to your <span class="code">ptxproj-2.2.20</span> and perfom the build instruction as follows to build FORTE for the target device Wago PFC.
+		<div class="code">> cd wago/ptxproj-2.2.20
+> ptxdist targetinstall forte_wago</div>
+		<img src="img/wagoConsole.png" alt="Build Project Console Output"/>
+		 <p>The binary can be found in the directory <span class="code">.../ptxproj-2.2.20/platform-wago-pfc200/buid-target/forte_wago-1.6.2-build/src</span>. The binary can be either copied to the target device <span class="code">/usr/bin</span> directory or you can build your own custom linux image by performing <span class="code"><ptxdist go></span> command in your <span class="code">ptxproj-2.2.20</span> directory and boot with your own custom firmware.</p></li>
+		
+		<li><b>Rebuilding the Project:</b> For rebuilding the project, the project has to be cleaned and perform the <span class="code">targetinstall</span> again.
+		<div class="code">> cd wago/ptxproj-2.2.20
+> ptxdist clean forte_wago</div>
+		This clean instruction deletes the <span class="code">forte_wago</span> build time stamps in the wago development environment. Now performing a <span class="code">targetinstall</span> will rebuild the project
+<div class="code">> ptxdist targetinstall forte_wago</div>
+		If you made any changes in your forte root folder this changes will be reflected here and you will see a same window as you saw before.</li>
+	</ol>
+	  
+	  
+	  <h2>Build and Debug FORTE remotely on Wago PFC with Eclipse</h2>
+	  <h3>Build FORTE with Eclipse</h3>
+	  <p>FORTE can be debugged remotely from your Ubuntu host machine using Eclipse CDT. For more details please refer to Wago how to Utilize EclipseCDT. Using the same procedure FORTE can be debugged remotely. The recommended folder structure for building FORTE in Eclipse is:</p>
+	  
+	  <div class="code">- eclipseCDT
+-- workspace
+--- forte (contains FORTE source)
+--- forte-wago (contains project to access the Wago PFC)</div>
+	  
+	  <p>Within the forte-wago folder create a new <i>C Project</i> by <b>Menu &rarr; File &rarr; New &rarr; Project</b>, type a project name e.g., <span class="code">forte-wago</span>, deactivate default location and set the location to your FORTE source e.g., <span class="code">forte</span>, choose <i>Makefile project/Empty Makefile Project</i> and <i>- Other Toolchain -</i> and press <i>finish</i>. Set the properties for the new projects. Within the category <i>C/C++ Build</i> set the <i>Build command</i> to ptxdist and the <i>Build directory</i> to your ptxdist installation location.</p>
+	 
+	  <img src="img/wago_eclipse_ptxdist1.png" alt="configure Eclipse with ptxdist"/>
+	  
+	 <p>Set <i>Build</i> within the <i>Behvior</i> tab to <span class="code">targetinstall forte_wago</span> and <i>Clean</i> to <span class="code">clean forte_wago</span>.</p> 
+	  
+	  <img src="img/wago_eclipse_ptxdist2.png" alt="add include folders to Eclipse"/>	
+	  
+	 <p>Add the required include directories within the <i>C/C++ General / Paths and Symbols</i> category. The required include directories are:</p> 
+	  
+	  <div class="code">.../ptxproj-2.2.20/platform-wago-pfc200/sysroot-target/include
+
+.../ptxproj-2.2.20/platform-wago-pfc200/sysroot-target/usr/include
+	  
+.../OSELAS.Toolchain-2012.12.1/arm-cortexa8-linux-gnueabihf/
+gcc-4.7.3-glibc-2.16.0-binutils-2.22-kernel-3.6-sanitized/include	  
+
+.../OSELAS.Toolchain-2012.12.1/arm-cortexa8-linux-gnueabihf/
+gcc-4.7.3-glibc-2.16.0-binutils-2.22-kernel-3.6-sanitized/
+sysroot-arm-cortexa8-linux-gnueabihf/usr/include
+
+.../OSELAS.Toolchain-2012.12.1/arm-cortexa8-linux-gnueabihf/
+gcc-4.7.3-glibc-2.16.0-binutils-2.22-kernel-3.6-sanitized/
+lib/gcc/arm-cortexa8-linux-gnueabihf/4.7.3/include</div>
+	  
+	  <img src="img/wago_eclipse_ptxdist3.png" alt="FORTE build for Wago in Eclipse"/>
+	 
+	 <p>Within the <i>C/C++</i> perspective right-click on your project and choose <i>Build Project</i> or <i>Clean Project</i>. After building your project you should get a <i>Console</i> output as it is shown below.</p>
+	 
+	 <img src="img/wago_eclipse_ptxdist4.png" alt="FORTE build for Wago in Eclipse"/>
+	 
+	 <p>Within the <i>Remote System Explorer</i> perspective create a <i>New Connection</i> by clicking on  <img src="img/wago_newConnectionButton.png" alt="New Connection button"/>. Choose <i>Linux</i> and press <i>Next</i>. Enter the IP of our Wago PFC as <i>Host name</i> and type any <i>Connection Name</i> e.g. <span class="code">wagoPFC200</span> and press finish. In the <i>Remote System</i> view you can log to your Wago PFC by right-cklick on <i>Ssh Terminals</i> and entering <span class="code">root</span> as <i>user</i> and <span class="code">wago</span> as <i>password</i>. A <i>Terminal</i> view should open as well as a <i>Remote System Details</i> view. </p>
+	 
+	 <img src="img/wago_eclipse_ptxdist5.png" alt="FORTE build for Wago in Eclipse"/>
+	  
+	  <p>copy the FORTE executable to <span class="code">/usr/bin</span> on the Wago PFC. The executable can be copied to the Wago PFC by pasting it into the <span class="code">/usr/bin</span> folder in the <i>Remote System Details</i> view. Stop the running CoDeSys instance (<span class="code">kill plclinux_rt</span>) if you want to use digital inputs/outputs of the Wago PFC and start FORTE with:</p>
+	  
+	  <div class="code">> cd /usr/bin	  
+> ./forte</div>
+	  
+	  <h3>Debug FORTE with Eclipse</h3>
+	  <p>To debug FORTE on a Wago PFC click on the small triangle next to <img src="img/debug_persp.gif" alt="debug"/> and choose <i>Debug Configurations</i>. Then select <i>C/C++ Remote Application</i> and set any name e.g. <span class="code">forte</span>. Within the <i>main</i> tab set the path to the FORTE executable under <i>C/C++ Application</i>, set the <i>Project</i> to your chosen project name <span class="code">forte_wago</forte>, check <i>Disable auto build</i>, set <i>Connection</i> to your chosen <i>Connection name</i> e.g. <span class="code">wagoPFC200</span> and set the <i>Remote Absolute File Path for C/C++ Application</i> to your FORTE executable on the Wago <span class="code">/usr/bin/forte</span>.</p>
+
+	   <img src="img/wago_debug_eclipse1.png" alt="FORTE debug for Wago in Eclipse"/>
+	   
+	  <p>Within the <i>Debugger</i> tab set the <i>GDB debugger</i> to <span class="code">/.../OSELAS.Toolchain-2012.12.1/arm-cortexa8-linux-gnueabihf/gcc-4.7.3-glibc-2.16.0-binutils-2.22-kernel-3.6-sanitized/bin/arm-cortexa8-linux-gnueabihf-gdb</span>.</p>  
+	   
+	  <img src="img/wago_debug_eclipse2.png" alt="FORTE debug for Wago in Eclipse"/>
+	  
+	  <p>Debug FORTE with Eclipse as usual.</p>
+   </body>
+</html>

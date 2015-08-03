@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Flip-Flop Tutorial - Application Structuring with Subapplications</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1><i>Application</i> Structuring with <i>Subapplications</i></h1>
+<p>A <i>Subapplication</i> is used to group a part of an <i>Application</i> that belongs together. It appears like 1 FB where inputs and outputs have the real FB instance name as prefix. Inputs and outputs with no direct connection to outside can be hidden. <i>Subapplications</i> can be mapped to the same hardware like a FB but its internally FBs can also be mapped to different hardware (<i>Devices</i> or <i>Resources</i>). <i>Subapplications</i> can contain other <i>Subapplications</i>.</p>
+
+<h2>Creating a <i>Subapplication</i></h2>
+<p>Select the blocks to go into the desired <i>Subapplication</i>. If mapped to any hardware, unmap now. Right click and chose <i>New Subapplication</i>. The FBs will now appear as if they are within one FB. Give the <span class="code">SubApp</span> a better instance name</p>
+<img src="./img/flipFlop_application.png" alt="Flip-Flop Application"/> 
+
+<h2><i>Subapplication</i> Window</h2>
+<p>Double click on the <span class="code">SubApp</span> to open a window with the <i>Subapplication</i> contents of its function block network.</p> 
+<img src="./img/flipFlop_subapp.png" alt="Flip-Flop Sub-Application"/> 
+
+<h2>Interface Properties</h2>
+<p>In the <i>Application</i> window select the <span class="code">SubApp</span> block. In Properties window at the bottom click on Interface. Inputs/Outputs with no interface outside the <span class="code">SubApp</span> are just checked whereas an interface outside the <span class="code">SubApp</span> are filled-in. Un-check all inputs/outputs just checked, so we can see the interface we use for the <span class="code">SubApp</span>.</p> 
+<img src="./img/flipFlop_subappProperties.png" alt="Flip-Flop Sub-Application properties"/>
+
+<p>Now the <span class="code">SubApp</span> interface we use is shown and can be mapped to the desired hardware.</p>
+<img src="./img/flipFlop_subappProperties2.png" alt="Flip-Flop updated Sub-Application properties"/>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Flip-Flop Tutorial - Developing Function Blocks</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1>Developing Function Blocks</h1>
+<p>This section moves from the System perspective to the Type Management perspective <img src="../overview/img/typeButton.png" alt="Type Management Perspcetive"/>. Here the interface and the internals of Function Block types can be seen and new FBs can be created and exported to the FORTE. The new FBs are then available in the FB palette for use in the <i>Systems' Applications</i>.</p>
+
+<p>This section covers how to create your own Function Block types. New Function Blocks need to be created when the needed functionality doesn't exist or multiple FBs should be combined into just one FB. First you have to define the interface with its input and output events and data. And then define the FB internals, which are defined by the kind of FB. We implement the Flip-Flop functionality inside all three different FB types to introduce their creation process.</p>
+
+<img src="./img/FlipFlop_createNewFB.png" alt="create new folder and FB"/> 
+
+<p>The initial creation of all FB types is the same. Within the Type Management Perspective create a new folder within your System. Then create a <i>New Type</i>. Within the Wizard select the desired System and the folder you created, add your FB's <i>Type Name</i> like <span class="code">FlipFlop</span>, choose the desired <i>Type</i> and press <i>Finish</i>.</p>
+
+<img src="./img/newFB.png" alt="create new FB"/> 
+
+<p>Then create your desired <a href="./fbInterface.html">interface</a> and follow the instructions of your chosen FB type.</p>
+
+<ul>
+	<li><a href="./flipFlop_asBFB.html">Flip-Flop as <img src="../overview/img/basicfb_16.png" alt="BFB"/> Basic FB (BFB)</a></li>
+	<li><a href="flipFlop_asCFB.html">Flip-Flop as <img src="../overview/img/compositefb_16.png" alt="CFB"/> Composite FB (CFB)</a></li>
+	<li><a href="flipFlop_asSIFB.html">Flip-Flop as <img src="../overview/img/sifb_16.png" alt="SIFB"/> Service Interface FB (SIFB)</a></li>
+</ul>
+
+<p>After you have finished the design of your Function Block you have to <a href="./fBexport.html">export it for FORTE</a> that it can be used within your <i>Application</i>. Once you have successfuly compiled your Function Block, you are able to test it with <a href="./fbTester.html">4DIAC's Function Block tester</a>.</p>
+
+</body>
+</html>

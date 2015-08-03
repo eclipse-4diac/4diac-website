@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>4DIAC-IDE Perspectives</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+<body>
+
+<h1>4DIAC-IDE Perspectives</h1>
+<p>The 4DIAC-IDE provides four perspectives, which can be added by the <img src="./img/new_persp.gif" alt="add perspective"/> button in the upper right corner:</p>
+<ol>
+	<li><b>System</b> perspective with
+		<ul type="square">
+		<li><b>System Manager</b> including IEC 61499 System Model 
+		<li><b>System Configuration</b> with
+			<ul type="circle">
+			<li><i>Devices</i> according to the IEC 61499 <i>Device</i> Model</li>
+			<li><i>Resources</i> according to the IEC 61499 <i>Resource</i> Model, which is used for <i>Application</i> mapping and insertion of communication Function Blocks to other <i>Devices</i> and <i>Resources</i></li> 
+			<li><i>Segments</i> e.g., for communication over Ethernet</li>
+			</ul>
+		</li>
+		<li><i>Applications</i> according to the IEC 61499 <i>Application</i> Model and found under 4DIAC-IDE System Model</li>
+		</ul>
+	<li><b>Type Management</b> perspective which allows to manage the available Function Block types</li>
+	<li><b>Deployment</b> perspective where the <i>Applications</i> are launched and tested</li>
+	<li><b>4DIAC Debug</b> perspective where <i>Applications</i> can be monitored</li>
+</ol>
+
+
+<a name="systemPerspective"></a>
+<h2>System Perspective</h2>
+<p>In the right upper corner the perspective can be changed. The System perspective is reached by the <img src="./img/systemButton.png" alt="System Perspective Button"/> button. The System perspective is divided into the following five areas.</p>
+<ul type="square">
+	<li><i>System</i> Management Area which is used for the management of IEC 61499 compliant applications and to configure <i>Devices</i> and <i>Resources</i></li> 
+	<li>Editor Area which contains the <i>Application</i> editor for modelling of control applications, the <i>System</i> Editor for modelling the <i>System</i> configuration and the <i>Device</i> and <i>Resource</i> editor for modelling the <i>Resource</i> configuration</i></li>
+	<li>Property view which allows the parameterization of Function Block instances, <i>Devices</i> and <i>Resources</i></li>
+	<li>Outline of <i>Applications</i>, <i>System</i> configurations, <i>Devices</i> and <i>Resources</i></li>
+	<li>Type Navigator which lists the available Function Block library for every <i>System</i> as well as the default library</li>
+</ul>
+<p><img src="./img/systemPerspective.png" alt="System Perspective Button"/></p>
+
+
+<a name="typeManagementPerspective"></a>
+<h2>Type Management Perspective</h2>
+<p>In the right upper corner the perspective can be changed. The Type Management perspective is reached by the <img src="./img/typeButton.png" alt="Type Management Perspective Button"/> button. The Type Management perspective is divided into the following three areas.</p>
+<ul type="square">
+	<li>Type Navigator for the management of different type libraries, tool and project specific ones as well as the management of IEC 61499 element types</li> 
+	<li>Type Editor for the modification of IEC 61499 element types, like Basic, Composite, and
+Service Interface Function Block Types</li>
+	<li>Outline of FB types</li>
+</ul>
+<p><img src="./img/typeManagementPerspective.png" alt="Type Management Perspective Button"/></p>
+
+
+<a name="deploymentPerspective"></a>
+<h2>Deployment Perspective</h2>
+<p>In the right upper corner the perspective can be changed. The Deployment perspective is reached by the <img src="./img/deploymentButton.png" alt="Deployment Perspective Button"/> button. The Deployment Management perspective is divided into the following four areas.</p>
+<ul type="square">
+	<li>Download Selection for the selection of a <i>System</i>, <i>Devices</i> or <i>Resources</i> which have to be deployed to controller runtimes</li> 
+	<li>Visualisation of download messages</li>
+	<li>Runtime Launcher and Download Button which start the deployment process and launch IEC 61499 compliant runtimes</li>
+</ul>
+<p><img src="./img/deploymentPerspective.png" alt="Deployment Perspective Button"/></p>
+
+
+<a name="debugPerspective"></a>
+<h2>Debug Perspective</h2>
+<p>In the right upper corner the perspective can be changed. The Debug perspective is reached by the <img src="./img/debugButton.png" alt="Debug Perspective Button"/> button. The Debug perspective is divided into the following five areas.</p>
+<ul type="square">
+	<li>System selection where Systems can be marked for monitoring with right click and choosing <i>Monitor System</i></li> 
+	<li>Outline</li>
+	<li>Breakpoints view which lists the defined breakpoints and allows their activation and deactivation, this feature is currently not supported</li>
+	<li>Watches view which allow to watch the actual values of the variables you marked for watching</li>
+	<li>Application editor which shows your <i>Application</i> and highlights the variables marked for watching</li>
+</ul>
+<p><img src="./img/debugPerspective.png" alt="Debug Perspective Button"/></p>
+
+</body>
+</html>

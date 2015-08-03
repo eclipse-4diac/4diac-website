@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Building a Binary 4DIAC-IDE Package from Source</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1>Building a Binary 4DIAC-IDE Package from Source</h1>
+<p>For building a binary 4DIAC-IDE package from the source code Eclipse provides a product export wizard. The necessary steps are:</p>
+
+<ol>
+	<li>Have the 4DIAC-IDE source code in an Eclipse workspace as described in <a href="./installFromSource.html">Building and Running 4DIAC-IDE from Source</a></li>
+	<li>Press <i>Eclipse Product Export Wizard</i> in the <i>Exporting</i> Section of the product-file editor.
+		<p><img src="./img/productExport.png" alt="Product export"/></p>
+	</li> 
+	<li>Specify <i>Root Directory</i> - e.g. 4DIAC-IDE </li>
+	<li>Specify <i>Destination" </i></li>
+	<li>After pressing <i>Finish</i> your product configuration is exported.</li>
+	<li>In the exported product, you need the <span class="code">typelibrary</span> of an other 4DIAC-IDE and you have to copy or add the <span class="code">template</span> directory of an other 4DIAC-IDE otherwise creating new FB types will not provide any template.</li> 
+</ol>
+
+</body>
+</html>

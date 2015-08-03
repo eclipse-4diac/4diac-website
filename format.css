@@ -112,8 +112,26 @@ height:140px;
 margin-top:20px;
 margin-bottom:20px;
 } 
+
+section.uwsimage {
+background-image:url("content/img/uws.png");
+background-repeat:no-repeat;
+background-position: center bottom; 
+height:260px;
+margin-top:20px;
+margin-bottom:20px;
+} 
  
 section.news{
+background-color:rgba(221,221,221,1.0); 
+color:white;
+margin:0px 100px 0px 100px;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+}
+
+section.separator{
 background-color:rgba(221,221,221,1.0); 
 color:white;
 margin:0px 100px 0px 100px;
@@ -277,6 +295,18 @@ margin:0;
 bottom:0;*/
 width:100%;
 text-align:center;
+}
+
+span.left{
+text-align:left;
+margin:0px;
+padding-right:500px;
+}
+
+span.right{
+text-align:right;
+margin:0px;
+padding-left:500px;
 }
 
 footer img{

@@ -1,0 +1,28 @@
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Development - Structured Datatypes</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+
+<h1>Structured Datatypes</h1>
+<p>FORTE provides support for structured datatypes <span class="code">STRUCT</span>. Thus the encapsulation of data, which belongs together, is possible and the engineering is facilitated. Currently <span class="code">STRUCT</span> datatypes have to be implemented in FORTE, since there are no export-filters. Based on the <a href="http://www.holobloc.com/doc/ita/s3.htm#3.4.5.1">Compliance Profile for Feasibility Studies</a> only the unique ASN1-tag of the STRUCT-datatype is used for encoding. Therefore the ASN1-tag has to be set to the same value on all devices that exchange STRUCT-datatypes over the network! For testing and documentation purposes a sample datatype is provided:</p> 
+
+<img src="./img/struct.png" alt="Example STRUCT"/>
+
+<p>The definition file <span class="code">TestStruct.dtp</span> is included in 4DIAC-LIB. The according implementation <span class="code">FORTE_TestStruct.cpp</span> and <span class="code">FORTE_TestStruct.h</span> is provided in the module test of FORTE. </p>
+
+<p>Caution: the ASN1-tag provided in the dtp-file has to match the typeID provided in the constructor of the implementation of the datatype.</p>
+
+<div class="code">&#60;ASN1Tag Class="APPLICATION" Number="1" /&#62;</div>
+
+<p>leads to</p>
+
+<div class="code">typeID=(e_APPLICATION+e_CONSTRUCTED+1)</div>
+ 
+</body>
+</html>
