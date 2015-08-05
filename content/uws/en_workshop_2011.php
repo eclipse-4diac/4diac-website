@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<?php include 'header.html';?>
+<?php include '../header.html';?>
 
 <section class="uwsimage">
 </section>
@@ -103,7 +103,7 @@
 	<p><b>The 4DIAC team wants to thank all presenters and attendees for this interesting and inspiring workshop!</b></p>
 </section>
 
-<?php include 'footer.html';?>
+<?php include '../footer.html';?>
 
 </body>
 
