@@ -53,6 +53,7 @@
 			<td><b>Supported Programmable Logic Controllers (PLCs)</b>
 				<ul>
 					<li><a href="http://www.bachmann.info/en/products/controller-system/">Bachmann electronic M1 PLC</a></li>
+					<li><a href="http://global.wago.com/en/products/new-items/overview/pfc200-1.jsp">WAGO PFC200</a></li>
 					<li>RaspberryPi PLC under construction</li>
 					<li>B&R under construction</li>
 				</ul>
