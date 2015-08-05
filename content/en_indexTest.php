@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<?php include 'header.html';?>
+<?php include 'header.php';?>
 
 <section class="image">
 	<h1 class="cOrange">IEC 61499 Implementation for Distributed <br>Devices of the Next Generation</br></h1>
@@ -48,7 +48,7 @@ ctx.fill();
 		<img height="100px" src="img/sys-button.png"/></a>
 </section>
 
-<?php include 'footer.html';?>
+<?php include 'footer.php';?>
 
 </body>
 
