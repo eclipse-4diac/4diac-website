@@ -15,8 +15,8 @@
 
 <section class="news">
 	<a href="">
-		<svg width="60px" height="60px">
-			<polygon points="15,0 45,0 30,30 45,60 15,60 0,30 15,0" style="fill:rgba(0,137,209,1.0);fill-rule:evenodd;" />
+		<svg width="40px" height="40px">
+			<polygon points="10,0 30,0 20,20 30,40 10,40 0,20 10,0" style="fill:rgba(0,137,209,1.0);fill-rule:evenodd;" />
 			Sorry, your browser does not support inline SVG.
 		</svg>
 	</a>
@@ -25,7 +25,7 @@
 	<a href="">Tutorial <br>Videos</a>
 	<a href="">
 		<svg width="60px" height="60px">
-			<polygon points="15,0 45,0 60,30 45,60 15,60 30,30 15,0" style="fill:rgba(0,137,209,1.0);fill-rule:evenodd;" />
+			<polygon points="10,0 30,0 40,20 30,40 10,40 20,20 10,0" style="fill:rgba(0,137,209,1.0);fill-rule:evenodd;" />
 			Sorry, your browser does not support inline SVG.
 		</svg>
 	</a>
