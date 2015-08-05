@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<head>
-<meta charset="ANSI">
-<link rel="stylesheet" type="text/css" href="../format.css">
-
-<title>4DIAC-COM</title>
-</head>
-
-<body>
+<?php
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5CMRMZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -20,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <header>
 	<table>
 		<tr>
-			<td><a href="../index.html"><img src="img/4diac.png" height="80px" style="padding-left:8px"/></a></td>
+			<td><img src="img/4diac.png" height="80px" style="padding-left:8px"/></td>
 			<td><h1 class="cOrange">design once use everywhere</h1></td>
 			<td><h1 class="rDarkBlue">Framework for Industrial <br>Automation & Control</br></h1></td>
 		</tr>
@@ -35,26 +27,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<li><a href="documentation/help.html">Documentation</a></li>
 	</ul>
 </nav>
-
-<section class="img">
-	<img src="img/community.png"/>
-</section>
-
-<section class="content">
-	<h1 class="cOrange">Community</h1>
-	<p>Committers and Mentors</p>	
-	<p>Forum</p>
-	<p>Mailing List</p>
-	<p>Contribute</p>
-</section>
-
-<footer>
-	<a href="https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g"><img src="img/YouTube_24px.png"/></a>
-	<a href=""><img src="img/Twitter.png"/></a>
-	<a href="https://plus.google.com/communities/101972285570306852659"><img src="img/google.png"/></a>
-	<a href="https://www.linkedin.com/grp/home?gid=6949091"><img src="img/LinkedIn_24px.png"/></a>
-</footer>
-
-</body>
-
-</html> 
+?>
