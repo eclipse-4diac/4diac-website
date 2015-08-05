@@ -1,0 +1,1 @@
+<?php header('Location: http://eclipse.org/projects/project.php?id=iot.4diac/content/main.php'); ?>

@@ -38,14 +38,18 @@ ctx.fill();
 </section>
 
 <section class="content">
-	<a href="en_rte.html">RTE
-		<img height="100px" src="img/rte-button.png"/></a>
-	<a href="en_ide.html">IDE
-		<img height="100px" src="img/ide-button.png"/></a>
-	<a href="en_lib.html">LIB
-		<img height="100px" src="img/lib-button.png"/></a>
-	<a href="en_sys.html">SYS
-		<img height="100px" src="img/sys-button.png"/></a>
+	<a href="content/en_rte.php">RTE
+		<img height="100px" src="content/img/rte-button.png"/>
+		<span>Runtime Environment</span></a>
+	<a href="content/en_ide.php">IDE
+		<img height="100px" src="content/img/ide-button.png"/>
+		<span>Development Environment</span></a>
+	<a href="content/en_lib.php">LIB
+		<img height="100px" src="content/img/lib-button.png"/>
+		<span>Library</span></a>
+	<a href="content/en_sys.php">SYS
+		<img height="100px" src="content/img/sys-button.png"/>
+		<span>Systems</span></a>
 </section>
 
 <?php include 'footer.html';?>
