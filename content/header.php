@@ -26,5 +26,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<li><a href='en_dow.html'>Download</a></li>
 		<li><a href='documentation/help.html'>Documentation</a></li>
 	</ul>
-</nav>"
+</nav>";
 ?>

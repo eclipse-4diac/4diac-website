@@ -69,7 +69,7 @@ float:center;
 
 
 section.image {
-background-image:url("content/img/application.png");
+background-image:url("img/application.png");
 background-repeat:no-repeat;
 background-position: center bottom; 
 height:240px;
