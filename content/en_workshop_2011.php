@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
 <meta charset="ANSI">
-<link rel="stylesheet" type="text/css" href="../format.css">
+<link rel="stylesheet" type="text/css" href="format.css">
 
 <title>2th 4DIAC Users' Workshop</title>
 </head>
 
 <body>
-<?php include '../header.html';?>
+<?php include 'header.html';?>
 
 <section class="uwsimage">
 </section>
@@ -32,13 +32,13 @@
 				Morning <br>Sessions
 			</th>
 			<td colspan="2">
-				<a href="presentations/2011/ETFA2011_4DIAC_UW_Talk_1_Valentini_Welcome.pdf">Welcome</a>
+				<a href="uws/2011/ETFA2011_4DIAC_UW_Talk_1_Valentini_Welcome.pdf">Welcome</a>
 				<br><i>Antonio Valentini (O3NEIDA Europe, Belgium)</i>
 			</td>
 		</tr>
 		<tr>
 			<td colspan="2">
-				<a href="presentations/2011/ETFA2011_4DIAC_UW_Talk_2_Zoitl_OverviewAndUpdate.pdf">Overview and Update</a>
+				<a href="uws/2011/ETFA2011_4DIAC_UW_Talk_2_Zoitl_OverviewAndUpdate.pdf">Overview and Update</a>
 				<br><i>Alois Zoitl (Vienna University of Technology, Austria)</i>
 			</td>
 		</tr>
@@ -48,25 +48,25 @@
 				 Communication <br>Integration
 			</th>
 			<td>
-				<a href="presentations/2011/ETFA2011_4DIAC_UW_Talk_6_Hofmann_NetworkLayer.pdf">New FORTE Communication Infrastructure</a>
+				<a href="uws/2011/ETFA2011_4DIAC_UW_Talk_6_Hofmann_NetworkLayer.pdf">New FORTE Communication Infrastructure</a>
 				<br><i>Michael Hofmann (Profactor GmbH, Austria)</i>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<a href="presentations/2011/ETFA2011_4DIAC_UW_Talk_4_Zoitl_EtherNetIP.pdf">EtherNet/IP as communication infrastructure for distributed control applications</a>
+				<a href="uws/2011/ETFA2011_4DIAC_UW_Talk_4_Zoitl_EtherNetIP.pdf">EtherNet/IP as communication infrastructure for distributed control applications</a>
 				<br><i>Alois Zoitl (Vienna University of Technology, Austria)</i>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<a href="presentations/2011/ETFA2011_4DIAC_UW_Talk_5_Andren_POWERLINK-IEC61499_Integration.pdf">Accessing remote I/Os with Ethernet POWERLINK and 4DIAC</a>
+				<a href="uws/2011/ETFA2011_4DIAC_UW_Talk_5_Andren_POWERLINK-IEC61499_Integration.pdf">Accessing remote I/Os with Ethernet POWERLINK and 4DIAC</a>
 				<br><i>Filip Andr&eacute;n (Austrian Institute of Technology, Austria)</i>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<a href="presentations/2011/ETFA2011_4DIAC_UW_Talk_6_Moran_SIFB set for accessing Beckhoff controllers using ADS protocol.pdf">SIFB set for accessing Beckhoff controllers using ADS protocol</a>
+				<a href="uws/2011/ETFA2011_4DIAC_UW_Talk_6_Moran_SIFB set for accessing Beckhoff controllers using ADS protocol.pdf">SIFB set for accessing Beckhoff controllers using ADS protocol</a>
 				<br><i>Federico P&eacute;rez (Escuele Superior de Ingenieros, Bilbao, Spain)</i>
 			</td>
 		</tr>
@@ -76,19 +76,19 @@
 				Application <br>Modelling
 			</th>
 			<td>
-				<a href="presentations/2011/ETFA2011_4DIAC_UW_Talk_3_Hofmann_BinPicking.pdf">Coordination control of a bin picking application</a>
+				<a href="uws/2011/ETFA2011_4DIAC_UW_Talk_3_Hofmann_BinPicking.pdf">Coordination control of a bin picking application</a>
 				<br><i>Michael Hofmann (Profactor GmbH, Austria)</i>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<a href="presentations/2011/ETFA2011_4DIAC_UW_Talk_7_Zoitl_InjectionMoldingMachine.pdf">Supervisory control of an injection molding machine</a>
+				<a href="uws/2011/ETFA2011_4DIAC_UW_Talk_7_Zoitl_InjectionMoldingMachine.pdf">Supervisory control of an injection molding machine</a>
 				<br><i>Alois Zoitl (Vienna University of Technology, Austria)</i>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<a href="presentations/2011/ETFA2011_4DIAC_UW_Talk_8_Strasser_IEC61499-4DIAC_SmartGrids_Applications.pdf">4DIAC for Smart Grids Applications</a>
+				<a href="uws/2011/ETFA2011_4DIAC_UW_Talk_8_Strasser_IEC61499-4DIAC_SmartGrids_Applications.pdf">4DIAC for Smart Grids Applications</a>
 				<br><i>Thomas Strasser (Austrian Institute of Technology, Austria)</i>
 			</td>
 		</tr>
@@ -103,7 +103,7 @@
 	<p><b>The 4DIAC team wants to thank all presenters and attendees for this interesting and inspiring workshop!</b></p>
 </section>
 
-<?php include '../footer.html';?>
+<?php include 'footer.html';?>
 
 </body>
 

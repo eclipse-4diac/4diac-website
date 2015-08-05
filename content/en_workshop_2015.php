@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
 <meta charset="ANSI">
-<link rel="stylesheet" type="text/css" href="../format.css">
+<link rel="stylesheet" type="text/css" href="format.css">
 
 <title>6th 4DIAC Users' Workshop</title>
 </head>
 
 <body>
-<?php include '../header.html';?>
+<?php include 'header.html';?>
 
 <section class="uwsimage">
 </section>
@@ -95,7 +95,7 @@
 	<p><b>Disclaimer:</b> The ETFA 2015 Conference Organizers reserve a right to cancel the workshop in case of insufficient registrations. The cut-off date is July 15.</p>
 </section>
 
-<?php include '../footer.html';?>
+<?php include 'footer.html';?>
 
 </body>
 
