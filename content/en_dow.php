@@ -14,7 +14,7 @@
 </section>
 
 <section class="content">
-	<h1 class="cOrange">Downloads</h1>
+	<h1>Downloads</h1>
 	<p>IDE</p>
 	<p>RTE</p>
 	<p>LIB</p>

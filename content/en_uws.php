@@ -14,7 +14,7 @@
 </section>
 
 <section class="content">
-	<h1 class="cOrange">Users' Workshop</h1>
+	<h1>Users' Workshop</h1>
 	<p>4DIAC has been founded to support research activities and industrial adoption of distributed automation systems. Over time 4DIAC grew with new versions, improvements and new features for the modeling of distributed automation systems. Moreover, a special focus was the performance improvement of the runtime system. Even more important, 4DIAC as an IEC 61499-compliant distributed control environment for industrial and research applications has proven to be a stable basis for further research towards the next generation of distributed automation and control systems based on open standards.</p> 
 	<p>With 4DIAC users' workshop we want to bring the developers and users of 4DIAC together as the users are the main drivers of ongoing development activities. This event should provide a discussion platform to present novel research and achieved results based on the 4DIAC open source project. Moreover, new ideas and approaches as well as near future plans for 4DIAC can be discussed which turn this initiative into the position to become a larger framework for many application domains.</p>
 	<ul>

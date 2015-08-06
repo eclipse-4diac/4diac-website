@@ -6,6 +6,13 @@ width:100%;
 font-family:"Calibri";
 }
 
+h1{
+color:orange;
+font-size:18pt;
+font-weight:bold;
+text-align:center;
+}
+
 nav{
 background-color:rgba(0,137,209,1.0); 
 padding-top:10px;
@@ -181,7 +188,7 @@ margin: auto;
 }
 
 section.content span{
-padding-top:20px;
+padding-top:5px;
 color:rgba(1,34,105,1.0);
 font-size:10pt;
 text-decoration: none;

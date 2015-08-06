@@ -13,7 +13,7 @@
 </section>
 
 <section class="content">
-	<h1 class="cOrange">5th 4DIAC Users' Workshop</h1>
+	<h1>5th 4DIAC Users' Workshop</h1>
 	<p>The 5th Users' Workshop has been hold in conjunction with the 19th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Barcelona.</p>
 	
 	<p><b>Workshop Date: 16th September 2014</b></p>

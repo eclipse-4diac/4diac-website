@@ -10,7 +10,7 @@
 <?php include 'header.html';?>
 
 <section class="image">
-	<h1 class="cOrange">IEC 61499 Implementation for Distributed <br>Devices of the Next Generation</br></h1>
+	<h1>IEC 61499 Implementation for Distributed <br>Devices of the Next Generation</br></h1>
 </section>
 
 <section class="news">

@@ -14,7 +14,7 @@
 </section>
 
 <section class="content">
-	<h1 class="cOrange">IEC 61499 Example Projects</h1>
+	<h1>IEC 61499 Example Projects</h1>
 </section>
 
 <?php include 'footer.html';?>
