@@ -2,30 +2,8 @@ body{
 padding:0px; 
 margin:0px;
 height:100%;
-font-family:"Calibri";
-}
-
-img{
-vertical-align:middle;
-}
-
-h1.cOrange{
-color:orange;
-text-align:center;
-font-size:18pt;
-font-weight:bold;
-}
-
-h1.rDarkBlue{
-color:rgba(1,34,105,1.0);
-text-align:right;
-font-size:18pt;
-font-weight:bold;
-padding-right:8px;
-}
-
-header > table {
 width:100%;
+font-family:"Calibri";
 }
 
 nav{
@@ -155,7 +133,7 @@ text-align:center;
 vertical-align:center;
 }
 
-section.content > p, section.content > table, section.content > ul{
+section.content > p, section.content > table, section.content > ul, section.content h2{
 color:rgba(1,34,105,1.0);
 padding-top:5px;
 padding-bottom:5px;
@@ -165,6 +143,13 @@ margin: auto;
 text-align:justify;
 font-size:12pt;
 display:inline-block;
+}
+
+section.content h2{
+color:orange;
+text-align:left;
+font-size:14pt;
+font-weight:bold;
 }
 
 section.content td{
@@ -228,34 +213,63 @@ color:rgba(221,221,221,1.0);
 border:1.9mm solid rgba(221,221,221,1.0);
 }
 
+header{
+margin:0px;
+width:100%;
+height:80px;
+display:table;
+}
+
 footer{
 background-color:rgba(0,137,209,1.0); 
 color:white;
-padding:5px;
-margin:0;
-/*position:absolute;
-bottom:0;*/
+margin:0px;
+height:24px;
+padding:5px 0px 5px 0px;
 width:100%;
-text-align:center;
+display:table;
+}
+
+footer > span, header > span{
+padding:0px;
+width:33%;
+display:table-cell;
+vertical-align:middle;
 }
 
 span.left{
 text-align:left;
-margin:0px;
-padding-right:500px;
+padding-left:5px;
+}
+header span.left{
+padding-top:5px;
 }
 
-span.right{
+span.center{
+text-align:center;
+}
+header span.center{
+color:orange;
+font-size:18pt;
+font-weight:bold;
+}
+
+span.right, span.right > a{
 text-align:right;
-margin:0px;
-padding-left:500px;
+text-decoration:none;
+padding-right:5px;
+}
+header span.right{
+color:rgba(1,34,105,1.0);
+font-size:18pt;
+font-weight:bold;
 }
 
 footer img{
 margin-left:5px;
 margin-right:5px;
-height:24px;
-width:24px;
+height:30px;
+width:30px;
 background-color:black; 
 border-radius:5px;
 }
