@@ -89,7 +89,7 @@
 	<p><b>The 4DIAC team wants to thank all presenters and attendees for this interesting and inspiring workshop!</b></p>
 </section>
 
-<?php include 'footer.html';?>
+<?php include 'footer.php';?>
 
 </body>
 

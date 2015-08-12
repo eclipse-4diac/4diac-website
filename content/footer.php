@@ -1,5 +1,5 @@
 <footer>
-	<span class="left">&copy; 2007-2015</span>
+	<span class="left">&copy; 2007-<?php echo date("Y"); ?></span>
 	<span class="center">
 		<a href="https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g"><img src="img/appbar.youtube.png"/></a>
 		<a href=""><img src="img/appbar.social.twitter.png"/></a>

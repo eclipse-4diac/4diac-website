@@ -46,7 +46,7 @@
 		<span>Systems</span></a>
 </section>
 
-<?php include 'footer.html';?>
+<?php include 'footer.php';?>
 
 </body>
 

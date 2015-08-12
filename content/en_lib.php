@@ -55,7 +55,7 @@
 	</table>	
 </section>
 
-<?php include 'footer.html';?>
+<?php include 'footer.php';?>
 
 </body>
 

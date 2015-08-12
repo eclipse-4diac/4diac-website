@@ -48,7 +48,7 @@
 	<img src="img/ide_screenshot.png" width="800px" alt="4DIAC-IDE: prototypic engineering environment for distributed control systems"/>
 </section>
 
-<?php include 'footer.html';?>
+<?php include 'footer.php';?>
 
 </body>
 
