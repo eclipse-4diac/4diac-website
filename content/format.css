@@ -286,7 +286,13 @@ font-size:18pt;
 font-weight:bold;
 }
 
-footer img{
+span.right img{
+margin-left:5px;
+margin-right:5px;
+height:24px;
+}
+
+span.center img{
 margin-left:5px;
 margin-right:5px;
 height:30px;
