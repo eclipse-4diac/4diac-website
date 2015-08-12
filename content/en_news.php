@@ -15,8 +15,8 @@
 
 <section class="content">
 	<?php 
-		$alle = glob('./news/*.php');
-		foreach($alle as $datei) include $datei;
+		$folder = glob('./news/*.php');
+		foreach($folder as $file) include $file;
 	?>
 </section>
 
