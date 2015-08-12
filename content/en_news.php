@@ -16,7 +16,7 @@
 <section class="content">
 	<?php 
 		$folder = glob('./news/*.php');
-		foreach($folder as $file) include $file;
+		foreach(array_reverse($folder) as $file) include $file;
 	?>
 </section>
 
