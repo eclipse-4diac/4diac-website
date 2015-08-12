@@ -10,11 +10,10 @@
 <?php include 'header.html';?>
 
 <section class="img">
-	<img src="img/news.png"/>
+	<img src="img/news.png" height="80px"/>
 </section>
 
 <section class="content">
-	<h1>News</h1>
 	
 </section>
 
