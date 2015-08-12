@@ -14,7 +14,10 @@
 </section>
 
 <section class="content">
-	
+	<?php 
+		$alle = glob('./news/*.php');
+		foreach($alle as $datei) include $datei;
+	?>
 </section>
 
 <?php include 'footer.html';?>

@@ -13,6 +13,7 @@ font-weight:bold;
 text-align:center;
 }
 
+/* ***************** navigation ***************** */
 nav{
 background-color:rgba(0,137,209,1.0); 
 padding-top:10px;
@@ -52,7 +53,7 @@ display:inline;
 float:center;
 } 
 
-
+/* ***************** image ***************** */
 section.image {
 background-image:url("img/application.png");
 background-repeat:no-repeat;
@@ -67,7 +68,7 @@ display:block;
 margin:20px auto 0px auto;
 }
 
- 
+/* ***************** news ***************** */
 section.news{
 background-color:rgba(221,221,221,0.5);
 color:white;
@@ -113,6 +114,7 @@ background-color:rgba(1,34,105,1.0);
 color:orange;
 }
 
+/* ***************** content ***************** */
 section.content{
 color:orange;
 padding-top:30px;
@@ -144,6 +146,12 @@ margin-right:auto;
 text-align:center;
 }
 
+section.content div.newsheader{
+color:white;
+font-weight:bold;
+background-color:rgba(1,34,105,1.0);
+}
+
 section.content div > span{
 padding-top:5px;
 color:rgba(1,34,105,1.0);
@@ -161,7 +169,6 @@ padding-top:5px;
 padding-bottom:5px;
 width:800px;
 margin: auto;
-/*margin:0 100px 0 100px;*/
 text-align:justify;
 font-size:12pt;
 }
@@ -233,6 +240,7 @@ color:rgba(221,221,221,1.0);
 border:1.9mm solid rgba(221,221,221,1.0);
 }
 
+/* ***************** header / footer ***************** */
 header{
 margin:0px;
 width:100%;
