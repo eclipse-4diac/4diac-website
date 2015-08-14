@@ -1,4 +1,4 @@
-<div id="<?php echo basename($_SERVER['PHP_SELF'],'.php');?>" class="newsheader">
+<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
 	Eclipse SCADA visualising a process automated with 4DIAC: Download the demo!
 </div>
 <div class="news">
