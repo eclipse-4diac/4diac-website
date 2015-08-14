@@ -1,7 +1,7 @@
 <div class="newsheader">New 4DIAC Logo</div>
 <div class="news">
 	<span class="left">14-07-15 23:22</span>
-	<span class="right">Age: 29 days</span>
+	<span class="right">Age: <?php echo date_diff(date_create("2015-07-14"),date_create(date("Y-m-d")))->format("%a days");?></span>
 </div>
 <p>In order to reflect our transition to an Eclipse project we decided to update the 4DIAC logo. We now proudly present it here:</p>
 <img src="img/4diac.png"/>
