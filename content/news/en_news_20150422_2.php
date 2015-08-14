@@ -1,4 +1,4 @@
-<div id="20150422_2" class="newsheader">Call for Presentations for the 6th 4DIAC Users' Workshop</div>
+<div id="en_news_20150422_2" class="newsheader">Call for Presentations for the 6th 4DIAC Users' Workshop</div>
 <div class="news">
 	<span class="left"><?php $date="2015-04-22 10:06"; echo $date;?></span> 
 	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>

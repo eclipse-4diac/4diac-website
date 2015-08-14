@@ -19,9 +19,9 @@
 			Sorry, your browser does not support inline SVG.
 		</svg>
 	</a>
-	<a href="en_news.php#20150623">6th 4DIAC <br>Users' Workshop</a>
-	<a href="en_news.php#20150422">Visualize with <br>Eclipse SCADA</a>
-	<a href="en_news.php#20150420">Tutorial <br>Videos</a>
+	<a href="en_news.php#en_news_20150623">6th 4DIAC <br>Users' Workshop</a>
+	<a href="en_news.php#en_news_20150422">Visualize with <br>Eclipse SCADA</a>
+	<a href="en_news.php#en_news_20150420">Tutorial <br>Videos</a>
 	<a href="">
 		<svg width="60px" height="60px">
 			<polygon points="10,0 30,0 40,20 30,40 10,40 20,20 10,0" style="fill:rgba(1,34,105,1.0);fill-rule:evenodd;" />
