@@ -20,7 +20,7 @@
 		</svg>
 	</a>
 	<a href="en_news.php#en_news_20150623">6th 4DIAC <br>Users' Workshop</a>
-	<a href="en_news.php#en_news_20150422">Visualize with <br>Eclipse SCADA</a>
+	<a href="en_news.php#en_news_20150422_1">Visualize with <br>Eclipse SCADA</a>
 	<a href="en_news.php#en_news_20150420">Tutorial <br>Videos</a>
 	<a href="">
 		<svg width="60px" height="60px">
