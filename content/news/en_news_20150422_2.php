@@ -1,4 +1,6 @@
-<div id="en_news_20150422_2" class="newsheader">Eclipse SCADA visualising a process automated with 4DIAC: Download the demo!</div>
+<div id="<?php echo basename($_SERVER['PHP_SELF'],'.php');?>" class="newsheader">
+	Eclipse SCADA visualising a process automated with 4DIAC: Download the demo!
+</div>
 <div class="news">
 	<span class="left"><?php $date="2015-04-22 14:04"; echo $date;?></span> 
 	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
