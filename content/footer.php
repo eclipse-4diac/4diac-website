@@ -1,4 +1,4 @@
-<section style="position:relative;bottom:0px;margin-top:0px">
+<section style="position:relative;bottom:0px;margin-top:50px;">
 	<img src="img/Egg-incubation.png" style="position:absolute;right:8px;bottom:45px;z-index:1;"/>
 	<footer style="position:absolute;bottom:0px;">
 		<span class="left">&copy; 2007-<?php echo date("Y"); ?></span>
