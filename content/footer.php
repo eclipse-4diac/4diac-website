@@ -4,7 +4,7 @@
 		<span class="left">&copy; 2007-<?php echo date("Y"); ?></span>
 		<span class="center">
 			<a href="https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g"><img src="img/appbar.youtube.png"/></a>
-			<a href=""><img src="img/appbar.social.twitter.png"/></a>
+			<a href="https://twitter.com/4diac"><img src="img/appbar.social.twitter.png"/></a>
 			<a href="https://plus.google.com/communities/101972285570306852659"><img src="img/appbar.googleplus.png"/></a>
 			<a href="https://www.linkedin.com/grp/home?gid=6949091"><img src="img/appbar.social.linkedin.png"/></a>
 			<a href="https://www.xing.com/communities/groups/4diac-1076214"><img src="img/appbar.social.xing.png"/></a>
