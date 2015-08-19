@@ -274,6 +274,10 @@ height:80px;
 display:table;
 }
 
+header img{
+height:80px;
+}
+
 footer{
 background-color:rgba(1,34,105,1.0); 
 color:white;
