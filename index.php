@@ -1,1 +1,1 @@
-<?php header('Location: http://eclipse.org/projects/project.php?id=iot.4diac'); ?>
+<?php header('Location: http://www.eclipse.org/4diac/content/en_main.php'); ?>
