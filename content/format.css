@@ -150,7 +150,7 @@ width:100%;
 text-align:center;
 }
 
-section.content div{
+section.content div, section.content div.newsheader{
 min-width:800px;
 display:table;
 margin-left:auto;
