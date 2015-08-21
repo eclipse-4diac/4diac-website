@@ -1,7 +1,6 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="format.css">
-
 <title>4DIAC</title>
 </head>
 

@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+<html>
 <head>
 <link rel="stylesheet" type="text/css" href="format.css">
-
 <title>4DIAC Users' Workshop</title>
 </head>
 
