@@ -46,7 +46,7 @@
 	
 	<h2>Forum</h2>
 	<ul>
-		<li><a href="https://www.eclipse.org/forums/index.php/f/308/">eclipse</a></li>
+		<li><a href="http://eclipse.org/forums/eclipse.4diac">eclipse</a></li>
 		<li><a href="http://sourceforge.net/p/fordiac/discussion/">sourceforge</a></li>
 	</ul>
 	
