@@ -1,1 +1,0 @@
-<?php header('Location: http://www.eclipse.org/4diac/content/en_main.php'); ?>

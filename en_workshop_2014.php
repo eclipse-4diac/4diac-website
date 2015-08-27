@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<html>
 <head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="format.css">
-
 <title>5th 4DIAC Users' Workshop</title>
 </head>
 
