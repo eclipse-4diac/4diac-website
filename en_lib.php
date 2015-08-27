@@ -1,5 +1,6 @@
 <html>
 <head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="format.css">
 <title>4DIAC-LIB</title>
 </head>

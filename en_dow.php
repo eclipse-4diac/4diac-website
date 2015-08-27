@@ -1,6 +1,7 @@
 <html>
 <head>
 <script type="text/javascript" src="jquery-1.6.2.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="format.css">
 <title>4DIAC-Downloads</title>
 <script type="text/javascript">
