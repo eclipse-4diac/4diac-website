@@ -7,7 +7,6 @@
 </div>
 <p>We are proud to announce the second maintenance release for 4DIAC 1.7 providing a set of bug fixes to 4DIAC-IDE (7), and FORTE (1). </p>
 <p>As always please download, test, and report problems and bugs. </p>
-<p>Cheers, <br/> The 4DIAC Team</p>
 <ul>
 	<li>4DIAC-IDE:
 		<ul>
