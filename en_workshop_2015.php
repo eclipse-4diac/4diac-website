@@ -61,14 +61,14 @@
 		</tr>
 		<tr>
 			<td>
-				Modular machines implemented in 4DIAC
-				<br><i>Alois Zoitl, Monika Wenger, Milan Vathoopan (fortiss GmbH)</i>
+				Example of a Cyber-Physical Attacks Investigation on IEC 61850/61499 equipped PV Inverters using 4DIAC
+				<br><i>BooJoong Kang, Peter Maynard, Kieran McLaughlin, Sakir Sezer (CSIT Centre for Secure Information Technologies, Queen's University Belfast), Filip Andr&eacute;n, Christian Seitl, Friederich Kupzog, Thomas Strasser (AIT Austrian Institute of Technology, Energy Department, Electric Energy Systems)</i>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				Example of a Cyber-Physical Attacks Investigation on IEC 61850/61499 equipped PV Inverters using 4DIAC
-				<br><i>BooJoong Kang, Peter Maynard, Kieran McLaughlin, Sakir Sezer (CSIT Centre for Secure Information Technologies, Queen's University Belfast), Filip Andr&eacute;n, Christian Seitl, Friederich Kupzog, Thomas Strasser (AIT Austrian Institute of Technology, Energy Department, Electric Energy Systems)</i>
+				Modular machines implemented in 4DIAC
+				<br><i>Alois Zoitl, Monika Wenger, Milan Vathoopan (fortiss GmbH)</i>
 			</td>
 		</tr>
 		<tr>
