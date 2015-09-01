@@ -103,7 +103,7 @@ padding:10px 5px 0px 5px;
 text-decoration: none;
 }
 
-section.news > a{
+section.news.span > a{
 vertical-align:middle;
 display:inline-block;
 font-weight:bold;
