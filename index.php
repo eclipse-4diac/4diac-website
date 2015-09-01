@@ -19,7 +19,8 @@
 			Sorry, your browser does not support inline SVG.
 		</svg>
 	</a>
-	<a href="en_news.php#en_news_20150830">2nd Maintenance Release for 4DIAC 1.7</a>
+	<a href="en_news.php#en_news_20150901">One Week till this Year's 4DIAC Users' Workshop</a>
+  <a href="en_news.php#en_news_20150830">2nd Maintenance Release for 4DIAC 1.7</a>
 	<a href="en_news.php#en_news_20150819">New 4diac Webpage</a>
 	<a href="en_news.php#en_news_20150729">4DIAC Repositories put Off-line</a>
 	<a href="">
