@@ -42,7 +42,7 @@ overflow:hidden;
  
 nav > ul > li > a{
 font-size: 14pt;
-font-weight:bold;
+font-weight:800;
 text-align:center;
 padding-left:10px;
 padding-right:10px;
@@ -139,20 +139,20 @@ section.news div.news-item{
 div.news-item span { 
   height:70px; 
   display: inline-block; 
-  zoom: 1; 
-  *display: inline; 
+  /*zoom: 1; 
+  *display: inline; */
   vertical-align: middle; 
 }
 
 div.news-item a { 
   display: inline-block; 
-  zoom: 1; 
-  *display: inline; 
+ /* zoom: 1; 
+  *display: inline; */
   vertical-align: middle; 
   display:inline-block;
-  font-weight:bold;
+  font-weight:700;
   color:white;
-  font-size:13pt;
+  font-size:11pt;
   text-decoration: none;
 }
 
@@ -281,7 +281,7 @@ height:4cm;
 margin:20px;
 padding:15px;
 display:inline-block;
-font-weight:800;
+font-weight:700;
 color:rgba(1,34,105,1.0);
 font-size:34pt;
 border:1.9mm solid rgba(1,34,105,1.0);
