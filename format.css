@@ -136,14 +136,24 @@ section.news div.news-item{
   padding:0px 5px 0px 5px;
 }
 
-div.news-item a { 
-  display: inline-block; 
-  vertical-align: middle; 
+div.news-item span { 
+  height:70px; 
   display:inline-block;
+  zoom:1;
+  *display:inline;
+  vertical-align: middle;
+}
+
+div.news-item a{
+  display:inline-block;
+  zoom:1;
+  *display:inline;
+  vertical-align: middle;  
   font-weight:700;
   color:white;
   font-size:11pt;
   text-decoration: none;
+  
 }
 
 /* ***************** users' workshop ***************** */
