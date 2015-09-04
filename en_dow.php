@@ -1,9 +1,7 @@
 <html>
 <head>
+<?php include 'head.php';?>
 <script type="text/javascript" src="jquery-1.6.2.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="format.css">
 <title>4DIAC-Downloads</title>
 <script type="text/javascript">
 	$(document).ready(function() {

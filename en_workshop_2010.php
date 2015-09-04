@@ -1,8 +1,6 @@
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="format.css">
+<?php include 'head.php';?>
 <title>1th 4DIAC Users' Workshop</title>
 </head>
 
