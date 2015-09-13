@@ -1,7 +1,9 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>4DIAC</title>
+<title>4DIAC - The Open Source Environment for Distributed Industrial Automation and Control Systems</title>
+<meta name="description" content="4DIAC is an open source PLC environment allowing to implement industrial control solutions in a vendor neutral way. 4DIAC implements IEC 61499 extending IEC 61131-3 with better support for controller to controller communication and dynamic reconfiguration."> 
+<meta name="keywords" content="open source PLC, programmable logic controller, distributed control systems, networked embedded systems, distributed industrial process measurement and control systems, IEC 61499, IEC 61131-3, dynamic reconfiguration, industrial communication, industrie 4.0, smart manufacturing, controller to controller communication">
 </head>
 
 <body>
@@ -34,16 +36,16 @@
 
 <section class="content">
 	<a href="en_rte.php">RTE
-		<img height="100px" src="img/rte-button.png"/>
+		<img height="100px" src="img/rte-button.png" alt="4DIAC runtime environment (FORTE) provides a device indepent execution of IEC 61499 control application"/>
 		<span>Runtime Environment</span></a>
 	<a href="en_ide.php">IDE
-		<img height="100px" src="img/ide-button.png"/>
+		<img height="100px" src="img/ide-button.png" alt="4DIAC-IDE provides a development environment for developing distributed industrial processes measurements and control systems"/>
 		<span>Development Environment</span></a>
 	<a href="en_lib.php">LIB
-		<img height="100px" src="img/lib-button.png"/>
+		<img height="100px" src="img/lib-button.png" alt="4DIAC's function block library provides you with a set of reusable function blocks reducing the effort of application development"/>
 		<span>Library</span></a>
 	<a href="en_sys.php">SYS
-		<img height="100px" src="img/sys-button.png"/>
+		<img height="100px" src="img/sys-button.png" alt="Examle systems showing the features of IEC 61499 and 4DIAC"/>
 		<span>Systems</span></a>
 </section>
 
