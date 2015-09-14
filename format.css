@@ -231,7 +231,7 @@ text-align:justify;
 font-size:12pt;
 }
 
-section.content h2, content.table h2{
+section.content h2, content.tr h2{
 color:orange;
 text-align:left;
 font-size:14pt;
@@ -285,7 +285,7 @@ font-weight:normal;
 display:block;
 }
 
-section.content > a, section.content > td.a, content.td > a{
+section.content > a, section.content a.specialgroup{
 width:4cm; 
 height:4cm;
 margin:20px;
@@ -297,12 +297,13 @@ font-size:34pt;
 border:1.9mm solid rgba(1,34,105,1.0);
 border-radius:30px;
 text-decoration: none;
+text-align:center;
 } 
  
-section.content > a:link, section.content > a:visited{
+section.content > a:link, section.content > a:visited, section.content a.specialgroup:link, section.content a.specialgroup:visited{
 }
 
-section.content > a:hover, section.content > a:active{
+section.content > a:hover, section.content > a:active, section.content a.specialgroup:hover, section.content a.specialgroup:active{
 background-color:rgba(0,137,209,1.0);
 color:rgba(221,221,221,1.0);
 border:1.9mm solid rgba(221,221,221,1.0);
