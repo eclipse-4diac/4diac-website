@@ -243,6 +243,16 @@ width:600px;
 vertical-align:top;
 }
 
+content.td p{
+color:rgba(1,34,105,1.0);
+padding-top:5px;
+padding-bottom:5px;
+margin: auto;
+text-align:justify;
+font-size:12pt;
+
+}
+
 section.content ul{
 padding-top:5px;
 padding-bottom:5px;
