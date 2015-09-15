@@ -221,7 +221,7 @@ text-align:left;
 width:50%;
 }
 
-section.content td h2.featureh2{
+section.content .featureh2{ 
 width:550px;
 }
 
