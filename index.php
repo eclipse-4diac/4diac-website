@@ -45,7 +45,7 @@
 		<img height="100px" src="img/lib-button.png" alt="4DIAC's function block library provides you with a set of reusable function blocks reducing the effort of application development"/>
 		<span>Library</span></a>
 	<a class="componentbutton" href="en_sys.php">SYS
-		<img height="100px" src="img/sys-button.png" alt="Examle systems showing the features of IEC 61499 and 4DIAC"/>
+		<img height="100px" src="img/sys-button.png" alt="Example systems showing the features of IEC 61499 and 4DIAC"/>
 		<span>Systems</span></a>
 </section>
 
