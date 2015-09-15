@@ -2,6 +2,9 @@
 <head>
 <?php include 'head.php';?>
 <title>4DIAC Features</title>
+<meta name="description" content="The 4DIAC project provides an industrial-grade open source infrastructure for distributed Industrial Process Measurement and Control Systems (IPMCS) based on the IEC 61499 standard. It provides an engineering tool 4DIAC-IDE, a small real-time capable runtime environment FORTE, a component library and examples projects."> 
+<meta name="keywords" content="4DIAC-IDE, FORTE, function blocks, IEC 61131-3, IEC 61499, integrated development environment, graphical modeling language, small embedded control devices, C++, real-time execution">
+
 </head>
 
 <body>
