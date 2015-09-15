@@ -16,7 +16,7 @@
 		<table>
 		<tr>
 			<td>
-          <a class="specialgroup" href="en_ide.php">IDE<img height="100px" src="img/ide-button.png" alt="4DIAC-IDE provides a development environment for developing distributed industrial processes measurements and control systems"/></a>
+          <a class="componentbutton" href="en_ide.php">IDE<img height="100px" src="img/ide-button.png" alt="4DIAC-IDE provides a development environment for developing distributed industrial processes measurements and control systems"/></a>
 			</td>
 			<td>
         <h2><a href="en_ide.php">4DIAC-IDE</a></h2>
@@ -26,7 +26,7 @@
 
 		<tr>
 			<td>
-          <a class="specialgroup" href="en_rte.php">	RTE <img height="100px" src="img/rte-button.png" alt="4DIAC runtime environment (FORTE) provides a device indepent execution of IEC 61499 control application"/></a>
+          <a class="componentbutton" href="en_rte.php">	RTE <img height="100px" src="img/rte-button.png" alt="4DIAC runtime environment (FORTE) provides a device indepent execution of IEC 61499 control application"/></a>
 			</td>
 			<td>
         <h2><a href="en_rte.php">FORTE (4DIAC-RTE)</a></h2>
@@ -37,7 +37,7 @@
 
 		<tr>
 			<td>
-          <a class="specialgroup" href="en_lib.php">LIB<img height="100px" src="img/lib-button.png" alt="4DIAC's function block library provides you with a set of reusable function blocks reducing the effort of application development"/></a>
+          <a class="componentbutton" href="en_lib.php">LIB<img height="100px" src="img/lib-button.png" alt="4DIAC's function block library provides you with a set of reusable function blocks reducing the effort of application development"/></a>
 			</td>
 			<td>
         <h2><a href="en_lib.php">4DIAC function block library (4DIAC-LIB)</a></h2>

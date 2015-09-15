@@ -35,16 +35,16 @@
 </section>
 
 <section class="content">
-	<a href="en_rte.php">RTE
+	<a class="componentbutton" href="en_rte.php">RTE
 		<img height="100px" src="img/rte-button.png" alt="4DIAC runtime environment (FORTE) provides a device indepent execution of IEC 61499 control application"/>
 		<span>Runtime Environment</span></a>
-	<a href="en_ide.php">IDE
+	<a class="componentbutton" href="en_ide.php">IDE
 		<img height="100px" src="img/ide-button.png" alt="4DIAC-IDE provides a development environment for developing distributed industrial processes measurements and control systems"/>
 		<span>Development Environment</span></a>
-	<a href="en_lib.php">LIB
+	<a class="componentbutton" href="en_lib.php">LIB
 		<img height="100px" src="img/lib-button.png" alt="4DIAC's function block library provides you with a set of reusable function blocks reducing the effort of application development"/>
 		<span>Library</span></a>
-	<a href="en_sys.php">SYS
+	<a class="componentbutton" href="en_sys.php">SYS
 		<img height="100px" src="img/sys-button.png" alt="Examle systems showing the features of IEC 61499 and 4DIAC"/>
 		<span>Systems</span></a>
 </section>

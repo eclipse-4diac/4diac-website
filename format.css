@@ -285,7 +285,7 @@ font-weight:normal;
 display:block;
 }
 
-section.content > a, section.content a.specialgroup{
+.componentbutton{
 width:4cm; 
 height:4cm;
 margin:20px;
@@ -300,10 +300,10 @@ text-decoration: none;
 text-align:center;
 } 
  
-section.content > a:link, section.content > a:visited, section.content a.specialgroup:link, section.content a.specialgroup:visited{
+section.content > a:link, section.content > a:visited, section.content a.specialgroup:link, section.content a.componentbutton:visited{
 }
 
-section.content > a:hover, section.content > a:active, section.content a.specialgroup:hover, section.content a.specialgroup:active{
+section.content > a:active, section.content a.specialgroup:hover, section.content a.componentbutton:active{
 background-color:rgba(0,137,209,1.0);
 color:rgba(221,221,221,1.0);
 border:1.9mm solid rgba(221,221,221,1.0);
