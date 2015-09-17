@@ -2,13 +2,17 @@
 <head>
 <?php include 'head.php';?>
 <title>4DIAC-IDE</title>
+<meta name="description" content="4DIAC-IDE is an integrated development environment for developing distributed control applications according to the models of IEC 61499. For modelled applications and application components (IEC 61499 function blocks) code is gneerated and they can be downaloded to distributed field devices according."> 
+<meta name="keywords" content="integrated development environment, model-driven development, domains specific models, developing distributed control applications, IEC 61499 editor, distributed system management, communication configuration">
+
+
 </head>
 
 <body>
 <?php include 'header.html';?>
 
 <section class="img">
-	<img src="img/ide.png"/>
+	<img src="img/ide.png" alt="4DIAC-IDE provides editors for graphically modelling industrial control applications and assign them to networked embedded control devices." />
 </section>
 
 <section class="content">
@@ -43,7 +47,7 @@
 			</td>
 		</tr>
 	</table>
-	<img src="img/ide_screenshot.png" width="800px" alt="4DIAC-IDE: prototypic engineering environment for distributed control systems"/>
+	<img src="img/ide_screenshot.png" width="800px" alt="screenshot of the 4DIAC-IDE engineering environment for distributed control systems showing the system explorer, the function block nework editor for applications, subapplications, and composite FBs, and an ECC editor modelling the state machine of basic function blocks"/>
 </section>
 
 <?php include 'footer.php';?>

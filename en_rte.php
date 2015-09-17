@@ -2,6 +2,8 @@
 <head>
 <?php include 'head.php';?>
 <title>FORTE - The 4DIAC runtime environment</title>
+<meta name="description" content="The 4DIAC runtime environment (4DIAC-RTE, FORTE) is a small portable implementation of an IEC 61499 runtime environment targeting small embedded control devices (16/32 Bit), implemented in C++. It supports online-reconfiguration of its applications and the real-time capable execution of all function block types provided by the IEC 61499 standard. With that FORTE abstracts vendor and device specific features away allowing to run the same control applications  on any device."> 
+<meta name="keywords" content="runtime environment, embedded devices, smart field devices, vendor neutral, c++, real-time execution,">
 </head>
 
 <body>
@@ -18,7 +20,7 @@
 
 	<table>
 		<tr>
-			<td><b>Supported communication layers</b>
+			<td><h2 class="h2twocollumntable">Supported communication layers</h2>
 				<ul>
 					<li>FBDK ASN.1 encoding</li>
 					<li>Ethernet</li>
@@ -27,7 +29,7 @@
 					<li>MQTT using <a href="http://www.eclipse.org/paho/">Eclipse Paho</a></li>
 				</ul>
 			</td>
-			<td><b>Supported Operating Systems</b>
+			<td><h2 class="h2twocollumntable">Supported Operating Systems</h2>
 				<ul>
 					<li>Windows</li>
 					<li>Posix: <a href="https://www.cygwin.com/">Cygwin</a>, Linux (i386, PPC, ARM)</li>
@@ -37,7 +39,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td><b>Supported Boards</b>
+			<td><h2 class="h2twocollumntable">Supported Boards</h2>
 				<ul>
 					<li><a href="http://www.digi.com/products/embedded-systems">Digi Connect ME</a> (ARM7)</li>
 					<li><a href="http://mindstorms.lego.com/en-us/Default.aspx">Lego Mindstorms nxt</a> (ARM7)</li>
@@ -46,7 +48,7 @@
 					<li><a href="http://beagleboard.org/black">BeagleBone Black</a></li>
 				</ul>
 			</td>
-			<td><b>Supported Programmable Logic Controllers (PLCs)</b>
+			<td><h2 class="h2twocollumntable">Supported Programmable Logic Controllers (PLCs)</h2>
 				<ul>
 					<li><a href="http://www.bachmann.info/en/products/controller-system/">Bachmann electronic M1 PLC</a></li>
 					<li><a href="http://global.wago.com/en/products/new-items/overview/pfc200-1.jsp">WAGO PFC200</a></li>

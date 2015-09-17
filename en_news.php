@@ -2,6 +2,9 @@
 <head>
 <?php include 'head.php';?>
 <title>4DIAC-News</title>
+<meta name="description" content="Updates from the 4DIAC community for the 4DIAC community"> 
+<meta name="keywords" content="updates, news, applications, noteworthy">
+
 </head>
 
 <body>

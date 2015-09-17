@@ -1,14 +1,17 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>4DIAC-LIB</title>
+<title>4DIAC-LIB: 4DIAC's IEC 61499 Function Block Library</title>
+<meta name="description" content="4DIAC's IEC 61499 function block (FB) library provides a large set of FBs helping you in developing your control applications. The library contains for example, FBs for event managment, configuring real-time execution behavior, all IEC 61131-3 FBs and functions, IO access, and communication handling."> 
+<meta name="keywords" content="function blocks, event management, IEC 61131-3, OSCAT, IO handling, EthernetPOWERLINK, IEC 61499 real-time handling, communication">
+
 </head>
 
 <body>
 <?php include 'header.html';?>
 
 <section class="img">
-	<img src="img/lib.png"/>
+	<img src="img/lib.png" alt="Overview on the different groups of function block libraries."/>
 </section>
 
 <section class="content">
@@ -17,7 +20,7 @@
 
 	<p>The IEC 61499 standard provides three types of FBs. Basic function blocks (BFBs), composite function blocks (CFBs) and service interface function blocks (SIFBs). Each FB contains an interface and a body. The interface provides connection points for data transmission as well as event triggers. The body describes the entire behavior of the FB. For for CFBs this description is provided in terms of a FB-network (FBN), for BFBs in terms of an execution control chart (ECC) and for SIFBs in terms of a service sequence diagram which hides the entire code of the FB.</p>
 	
-	<img src="img/fbtypes.png" alt="function block types"/>
+	<img src="img/fbtypes.png" alt="The function block types of IEC 61499: composite function block, basic function block and service interface function block"/>
 	
 	<p>Besides these FB types also two grouping elements are provided. The grouping elements are adapters and subapplications. Adapters allow the grouping of interface elements within an own adapter type to reduce the amount of connections. Subapplications allow the grouping of FBs and therefore build FBNs. 4DIAC's FB library currently contains BFBs, CFBs, SIFBs and adapters which can be divided into the following subgroups.</p>
 	<table>

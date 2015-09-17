@@ -3,6 +3,9 @@
 <?php include 'head.php';?>
 <script type="text/javascript" src="jquery-1.6.2.js"></script>
 <title>4DIAC-Downloads</title>
+<meta name="description" content="Getting the latest version of the different components of 4DIAC."> 
+<meta name="keywords" content="4DIAC-IDE, FORTE, source code">
+
 <script type="text/javascript">
 	$(document).ready(function() {
 		$(".expand").click(function(e) {
