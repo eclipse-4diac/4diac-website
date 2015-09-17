@@ -1,7 +1,9 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>1th 4DIAC Users' Workshop</title>
+<title>1st 4DIAC Users' Workshop</title>
+<meta name="description" content="In the first 4DIAC users' workshop topics covered where on how 4DIAC helped setting up research labs, how to implement SIFBs, wirless sensor networks and a preview on runnung FORTE on Lego Mindstorms."> 
+<meta name="keywords" content="infomechatronics lab, lego mindstorms, SIFB development, wireless sensor networks, future plans">
 </head>
 
 <body>
@@ -11,19 +13,19 @@
 </section>
 
 <section class="content">
-	<h1>1th 4DIAC Users' Workshop</h1>
-	<p>The 1th Users' Workshop has been hold in conjunction with the 15th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Bilbao.</p>
+	<h1>1<sup>st</sup> 4DIAC Users' Workshop</h1>
+	<p>The 1<sup>st</sup> Users' Workshop has been hold in conjunction with the 15th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Bilbao.</p>
 	
-	<p><b>Workshop Date: 16th September 2010</b></p>
+	<p><b>Workshop Date: 16<sup>th</sup> September 2010</b></p>
 	
-	<p><b>Workshop Organizers:</b></p>
+	<h2>Workshop Organizers:</h2>
 	<ul>
 		<li>Alois Zoitl, Vienna University of Technology, Austria</li>
 		<li>Martijn Rooker, Profactor GmbH, Austria</li>
 		<li>Antonio Valentini, O3neida Europe, Belgium</li>
 	</ul>
 	
-	<p><b>Workshop Program:</b></p>
+	<h2>Workshop Program:</h2>
 	<table class="program">
 		<tr>
 			<th rowspan="9">

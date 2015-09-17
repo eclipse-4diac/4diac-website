@@ -2,6 +2,9 @@
 <head>
 <?php include 'head.php';?>
 <title>5th 4DIAC Users' Workshop</title>
+<meta name="description" content="The second 4DIAC users' workshop covered extension with partitioning and scheduling tool, handling resource constraints MCUs, dynamically loading of FB types, enhanced communication, middleware architectures, and automatic communicaiton configuration generation."> 
+<meta name="keywords" content="partitioning and scheduling, resource constraints MCUs, dynamic loadable FBs, enhanced communication, middleware architecture, automatic communication generation">
+
 </head>
 
 <body>
@@ -11,19 +14,19 @@
 </section>
 
 <section class="content">
-	<h1>5th 4DIAC Users' Workshop</h1>
-	<p>The 5th Users' Workshop has been hold in conjunction with the 19th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Barcelona.</p>
+	<h1>5<sup>th</sup> 4DIAC Users' Workshop</h1>
+	<p>The 5<sup>th</sup> Users' Workshop has been hold in conjunction with the 19th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Barcelona.</p>
 	
 	<p><b>Workshop Date: 16th September 2014</b></p>
 	
-	<p><b>Workshop Organizers:</b></p>
+	<h2>Workshop Organizers:</h2>
 	<ul>
 		<li>Alois Zoitl, fortiss GmbH</li>
 		<li>Gerhard Ebenhofer, PROFACTOR GmbH</li>
 		<li>Thomas Strasser, AIT Austrian Institute of Technology</li>
 	</ul>
 	
-	<p><b>Workshop Program:</b></p>
+	<h2>Workshop Program:</h2>
 	<table class="program">
 		<tr>
 			<th rowspan="7">

@@ -2,6 +2,9 @@
 <head>
 <?php include 'head.php';?>
 <title>3rd 4DIAC Users' Workshop</title>
+<meta name="description" content="The third 4DIAC users' workshop covered how IEC 61499 can be better integrated with IEC 61131-3, application in smart grid and power and engergy domain, using workflow models to generate 4DIAC applications, and implementing model predictive control."> 
+<meta name="keywords" content="IEC 61131-3 with IEC 61499, smart grid, synchronouse execution, power and energy, model predictive control, workflow model, IEC 61131-3 C-translator">
+
 </head>
 
 <body>
@@ -11,19 +14,19 @@
 </section>
 
 <section class="content">
-	<h1>3rd 4DIAC Users' Workshop</h1>
-	<p>The 3rd Users' Workshop has been hold in conjunction with the 17th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Krak&oacute;w.</p>
+	<h1>3<sup>rd</sup> 4DIAC Users' Workshop</h1>
+	<p>The 3<sup>rd</sup> Users' Workshop has been hold in conjunction with the 17th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Krak&oacute;w.</p>
 	
 	<p><b>Workshop Date: 21th September 2012</b></p>
 	
-	<p><b>Workshop Organizers:</b></p>
+	<h2>Workshop Organizers:</h2>
 	<ul>
 		<li>Alois Zoitl, fortiss GmbH</li>
 		<li>Gerhard Ebenhofer, PROFACTOR GmbH</li>
 		<li>Thomas Strasser, AIT Austrian Institute of Technology</li>
 	</ul>
 	
-	<p><b>Workshop Program:</b></p>
+	<h2>Workshop Program:</h2>
 	<table class="program">
 		<tr>
 			<th rowspan="9">

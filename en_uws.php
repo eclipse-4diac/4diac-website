@@ -2,13 +2,16 @@
 <head>
 <?php include 'head.php';?>
 <title>4DIAC Users' Workshop</title>
+<meta name="description" content="The 4DIAC users' workshop brings the developers and users of 4DIAC together as the users are the main drivers of ongoing development activities. It provides a discussion platform to present achieved results based on the 4DIAC open source project. Moreover, new ideas and approaches as well as near future plans for 4DIAC can be discussed which turn this initiative into the position to become a larger framework for many application domains."> 
+<meta name="keywords" content="4DIAC users, discussion, usage example, idea exchange">
+
 </head>
 
 <body>
 <?php include 'header.html';?>
 
 <section class="img">
-	<img src="img/uws.png"/>
+	<img src="img/uws.png" alt="bringing together 4DIAC users"/>
 </section>
 
 <section class="content">

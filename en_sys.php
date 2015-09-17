@@ -1,7 +1,9 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>4DIAC-SYS</title>
+<title>4DIAC Systems</title>
+<meta name="description" content="4DIAC provides you with a set of example projects helping to learn IEC 61499 and 4DIAC. Furthernore these examples show different features of IEC 61499."> 
+<meta name="keywords" content="application examples, tutorials, IEC 61499 applications">
 </head>
 
 <body>

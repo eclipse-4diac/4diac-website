@@ -1,7 +1,10 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>2th 4DIAC Users' Workshop</title>
+<title>2nd 4DIAC Users' Workshop</title>
+<meta name="description" content="The second 4DIAC users' workshop covered 4DIAC's new communication infrastructure, utilizing EtherNet/IP for distributed control, accessing remote I/Os with EtherNet POWERLINK, communicating with Backhoff controllers, and the application examples bin pciking, injection modling machine, and smart grid."> 
+<meta name="keywords" content="communication infrastructure, EtherNet/IP, Ethernet POWERLINK, Beckhoff ADS, bin picking application, injection molding machine, smart grid">
+
 </head>
 
 <body>
@@ -11,19 +14,19 @@
 </section>
 
 <section class="content">
-	<h1>2th 4DIAC Users' Workshop</h1>
-	<p>The 2th Users' Workshop has been hold in conjunction with the 16th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Toulouse.</p>
+	<h1>2<sup>nd</sup> 4DIAC Users' Workshop</h1>
+	<p>The 2<sup>nd</sup> Users' Workshop has been hold in conjunction with the 16th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Toulouse.</p>
 	
 	<p><b>Workshop Date: 9th September 2011</b></p>
 	
-	<p><b>Workshop Organizers:</b></p>
+	<h2>Workshop Organizers:</h2>
 	<ul>
 		<li>Alois Zoitl, fortiss GmbH</li>
 		<li>Antonio Valentini, O3NEIDA Europe</li>
 		<li>Thomas Strasser, AIT Austrian Institute of Technology</li>
 	</ul>
 	
-	<p><b>Workshop Program:</b></p>
+	<h2>Workshop Program:</h2>
 	<table class="program">
 		<tr>
 			<th rowspan="10">

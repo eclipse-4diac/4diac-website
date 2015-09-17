@@ -2,6 +2,9 @@
 <head>
 <?php include 'head.php';?>
 <title>4th 4DIAC Users' Workshop</title>
+<meta name="description" content="The second 4DIAC users' workshop covered smard grid challenges and experiences, using 4DIAC for generating execution models for the FASA project, implmenting load balancing applicaitons, high performance applicaiton utilizing DDS, timing analyis for IEC 61499."> 
+<meta name="keywords" content="smart grid, FASA, load balancing, FREEDM, DDS, timing analysis">
+
 </head>
 
 <body>
@@ -11,19 +14,19 @@
 </section>
 
 <section class="content">
-	<h1>4th 4DIAC Users' Workshop</h1>
-	<p>The 4th Users' Workshop has been hold in conjunction with the 18th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Cagliari, Italy.</p>
+	<h1>4<sup>th</sup> 4DIAC Users' Workshop</h1>
+	<p>The 4<sup>th</sup> Users' Workshop has been hold in conjunction with the 18th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Cagliari, Italy.</p>
 	
 	<p><b>Workshop Date: 10th September 2013</b></p>
 	
-	<p><b>Workshop Organizers:</b></p>
+	<h2>Workshop Organizers:</h2>
 	<ul>
 		<li>Alois Zoitl, fortiss GmbH</li>
 		<li>Gerhard Ebenhofer, PROFACTOR GmbH</li>
 		<li>Thomas Strasser, AIT Austrian Institute of Technology</li>
 	</ul>
 	
-	<p><b>Workshop Program:</b></p>
+	<h2>Workshop Program:</h2>
 	<table class="program">
 		<tr>
 			<th rowspan="6">

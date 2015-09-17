@@ -2,6 +2,12 @@
 <head>
 <?php include 'head.php';?>
 <title>6th 4DIAC Users' Workshop</title>
+<meta name="description" content="The second 4DIAC users' workshop covered 
+
+virtual commissioning, avoiding exernal event showers and overflow, integrating IoT utilizing OPC UA, certified extensions, cyber security in smart grid applications, and how to structure control applications for modular machines."> 
+
+<meta name="keywords" content="virtual commissioning, external events, IoT applications, certified extensions, cyber security, modular machines, OPC UA">
+
 </head>
 
 <body>
@@ -11,19 +17,19 @@
 </section>
 
 <section class="content">
-	<h1>6th 4DIAC Users' Workshop</h1>
-	<p>The 6th Users' Workshop is held in conjunction with the 20th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Luxembourg.</p>
+	<h1>6<sup>th</sup> 4DIAC Users' Workshop</h1>
+	<p>The 6<sup>th</sup> Users' Workshop is held in conjunction with the 20th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Luxembourg.</p>
 	
 	<p><b>Workshop Date: 8th September 2015</b></p>
 	
-	<p><b>Workshop Organizers:</b></p>
+	<h2>Workshop Organizers:</h2>
 	<ul>
 		<li>Alois Zoitl, fortiss GmbH</li>
 		<li>Gerhard Ebenhofer, PROFACTOR GmbH</li>
 		<li>Thomas Strasser, AIT Austrian Institute of Technology</li>
 	</ul>
 	
-	<p><b>Workshop Program:</b></p>
+	<h2>Workshop Program:</h2>
 	<table class="program">
 		<tr>
 			<th rowspan="8">
