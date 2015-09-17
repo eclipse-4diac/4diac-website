@@ -242,6 +242,12 @@ font-size:14pt;
 font-weight:bold;
 }
 
+section.content h3{
+color:orange;
+text-align:left;
+font-size:12pt;
+font-weight:bold;
+}
 
 
 section.content td{

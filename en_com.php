@@ -2,6 +2,8 @@
 <head>
 <?php include 'head.php';?>
 <title>4DIAC-Community</title>
+<meta name="4DIAC open source community helping new users applying 4DIAC for their applications as well as driving the further development of 4DIAC."> 
+<meta name="keywords" content="open source community, mailing lists, forums, user support, how to contribute">
 </head>
 
 <body>
@@ -15,13 +17,13 @@
 	<h1>Community</h1>
 	<h2>Who's Involved</h2>
 	<p>
-		<b>Project Lead:</b> 
+		<h3>Project Lead:</h3> 
 		<ul>
 			<li>Alois Zoitl (fortiss GmbH)</li>
 		</ul>
 	</p>	
 	<p>
-		<b>Committers:</b>
+		<h3>Committers:</h3>
 		<ul>
 			<li>Alois Zoitl (fortiss GmbH)</li>
 			<li>Gerhard Ebenhofer (Profactor GmbH)</li>
@@ -30,7 +32,7 @@
 		</ul>
 	</p>	
 	<p>
-		<b>Mentors:</b>
+		<h3>Mentors:</h3>
 		<ul>
 			<li>Ed Merks</li>
 			<li>Eike Stepper</li>
@@ -69,7 +71,8 @@
 	
 	<h2>Contribute</h2>
 	<p>If you want to support 4DIAC, there multiple ways to contribute.</p>	
-	<p><b>Documentation, Marketing, and Supporting new Users</b>
+	<h3>Documentation, Marketing, and Supporting new Users</h3>
+  <p>
 		<ul>
 			<li>Improve and extend the existing documentation in the 4DIAC Wiki</li>
 			<li>Write new tutorials for the 4DIAC Wiki</li>
@@ -77,7 +80,8 @@
 			<li>Spread the word: link to 4DIAC, use 4DIAC logo on your web page, write articles, blog entries, etc.</li>
 		</ul>
 	</p>
-	<p><b>Bug Wrangling and Testing</b>
+	<h3>Bug Wrangling and Testing</h3>
+  <p>
 		<ul>
 			<li>Find and report bugs to ensure the quality of 4DIAC.</li>
 			<li>Submit ideas for improvement via 4DIAc's issue tracker.</li>
@@ -85,8 +89,8 @@
 			<li>Rate Bugs, feature requests, and ideas. This helps that we can focus our limited resources on the most important elements first.</li>
 		</ul>
 	</p> 
-	<p><b>Development</b>
-		<br>If you are a developer feel free to grab the code and start hacking. You can submit your patch any time when you are ready.
+	<h3>Development</h3>
+  <p>If you are a developer feel free to grab the code and start hacking. You can submit your patch any time when you are ready.
 		<ul>
 			<li>Extend and improve FB library. Having a large set of FBs increases the usability of 4DIAC for developing control solutions.</li>
 			<li>For ideas where to start your effort have a look at the bugs and features submitted to the 4DIAC's issue tracker.</li>
