@@ -4,6 +4,7 @@
 <title>4DIAC - The Open Source Environment for Distributed Industrial Automation and Control Systems</title>
 <meta name="description" content="4DIAC is an open source PLC environment allowing to implement industrial control solutions in a vendor neutral way. 4DIAC implements IEC 61499 extending IEC 61131-3 with better support for controller to controller communication and dynamic reconfiguration. With that 4DIAC provides the infrastructure for industrie 4.0 and industrial IoT."> 
 <meta name="keywords" content="open source PLC, programmable logic controller, distributed control systems, networked embedded systems, distributed industrial process measurement and control systems, IEC 61499, IEC 61131-3, dynamic reconfiguration, industrial communication, industrie 4.0, smart manufacturing, controller to controller communication, indusrrial IoT, internet of things">
+<meta name="google-site-verification" content="v0F1VlYRwarfPpjribA2S4SBSl6ZvNtzautGKWO7juI" />
 </head>
 
 <body>
