@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://www.eclipse.org/4diac/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/index.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_news.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_features.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_uws.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_com.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_dow.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/help.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_rte.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_ide.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_lib.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_sys.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_workshop_2015.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_workshop_2014.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_workshop_2013.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_workshop_2012.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_workshop_2011.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/en_workshop_2010.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/toc.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2014/4DIAC_Talk0_Welcome_OverviewAndUpdate.pdf</loc>
+  <lastmod>2015-08-27T09:47:17+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2014/4DIAC_Talk1_Extending_4DIAC_with_a_partitioning_and_scheduling_tool.pdf</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2014/4DIAC_Talk2_Scheduling_IEC_61499_Function_Block_based_models_on_resource_constrained_platforms__MCUs.pdf</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2014/4DIAC_Talk3_Dynamically_loadable_Function_Block_types.pdf</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2014/4DIAC_Talk4_An_enhanced_communication_scheme_for_4DIAC.pdf</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2014/4DIAC_Talk5_Middleware_Architecture_for_CPPS_over_IEC61499.pdf</loc>
+  <lastmod>2015-08-27T09:47:17+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2014/4DIAC_Talk6_Automatic_generation_of_distributed_communication_in_4DIAC.pdf</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2013/01_Ebenhofer_Zoitl_Overview.pdf</loc>
+  <lastmod>2015-08-27T09:47:14+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2013/02_Andren_SmartGrid.pdf</loc>
+  <lastmod>2015-08-27T09:47:16+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2013/03_Domova_FASA.pdf</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2013/04_Patil_Load_Balancing.pdf</loc>
+  <lastmod>2015-08-27T09:47:17+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2013/05_Perez_DDS.pdf</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2013/06_Lednicki_timing-iec-61499.pdf</loc>
+  <lastmod>2015-08-27T09:47:17+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2012/1_Zoitl_Welcome_Overview.pdf</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2012/2_Campanelli_Integration_IEC61131-3_IEC61499.pdf</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2012/3_Andren_IEC61499_4DIAC_Lab_Automation.pdf</loc>
+  <lastmod>2015-08-27T09:47:14+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2012/4_Sorouri_Interoperability_FORTE_SynchronousExecution.pdf</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2012/5_Strasser_4DIAC_Applications_for_Power_and_Energy_Domain.pdf</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2012/6_Hegny_Embedded_Energy_Efficiency_Industrial_Controller_Platform.pdf</loc>
+  <lastmod>2015-08-27T09:47:16+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2012/8_Ebenhofer_Workflow_V03.pdf</loc>
+  <lastmod>2015-08-27T09:47:16+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2012/7_Ebenhofer_3DObjectpose_V03.pdf</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2012/9_Sousa_4DIAC_61131_integration.pdf</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2011/ETFA2011_4DIAC_UW_Talk_1_Valentini_Welcome.pdf</loc>
+  <lastmod>2015-08-27T09:47:14+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2011/ETFA2011_4DIAC_UW_Talk_2_Zoitl_OverviewAndUpdate.pdf</loc>
+  <lastmod>2015-08-27T09:47:14+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2011/ETFA2011_4DIAC_UW_Talk_6_Hofmann_NetworkLayer.pdf</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2011/ETFA2011_4DIAC_UW_Talk_4_Zoitl_EtherNetIP.pdf</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2011/ETFA2011_4DIAC_UW_Talk_5_Andren_POWERLINK-IEC61499_Integration.pdf</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2011/ETFA2011_4DIAC_UW_Talk_6_Moran_SIFB%20set%20for%20accessing%20Beckhoff%20controllers%20using%20ADS%20protocol.pdf</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2011/ETFA2011_4DIAC_UW_Talk_3_Hofmann_BinPicking.pdf</loc>
+  <lastmod>2015-08-27T09:47:14+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2011/ETFA2011_4DIAC_UW_Talk_7_Zoitl_InjectionMoldingMachine.pdf</loc>
+  <lastmod>2015-08-27T09:47:14+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2011/ETFA2011_4DIAC_UW_Talk_8_Strasser_IEC61499-4DIAC_SmartGrids_Applications.pdf</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2010/4DIAC_UM_Talk1_Hegny.ppt</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2010/4DIAC_UM_Talk2_Gerber_v02.pptx</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2010/4DIAC_UM_Talk3_Dai.pdf</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2010/4DIAC_UM_Talk4_Zoitl_v02.pptx</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2010/4DIAC_UM_Talk5_Fede.ppt</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2010/4DIAC_UM_Talk6_Mohamad_v02.pptx</loc>
+  <lastmod>2015-08-27T09:47:14+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/uws/2010/4DIAC_UM_Talk7_Zoitl_v02.ppt</loc>
+  <lastmod>2015-08-27T09:47:15+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/installation/install.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/installation/visualStudio.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/installation/eclipse.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/installation/cygwin.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/installation/minGW.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/overview/overview.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/overview/perspectives.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/overview/applicationModelling.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/overview/virtualDNS.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/overview/deployment.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/overview/managementOfTypes.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/overview/monitoringDebugging.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/x3_tutorial.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/flipFlop_tutorial.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/properties.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/systemImport.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/flipFlop_subapp.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/fbs.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/fbInterface.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/flipFlop_asBFB.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/flipFlop_asCFB.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/flipFlop_asSIFB.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/fBexport.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/fbTester.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/cmake.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/mindstorms.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/icnova.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/raspi.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/wago.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/communication/fbdkip.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/communication/opc.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/communication/modbus.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/faq/ide.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/faq/forte.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/installFromSource.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/buildingBinary.html</loc>
+  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/headlessBuild.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/ide_jubula.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/forte.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/forte_struct.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/forte_monitoring.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/forte_communicationArchitecture.html</loc>
+  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/externalEvent_example.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://www.eclipse.org/4diac/documentation/html/development/forte_codequality.html</loc>
+  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>
