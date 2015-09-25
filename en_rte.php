@@ -23,10 +23,13 @@
 			<td><h2 class="h2twocollumntable">Supported communication layers</h2>
 				<ul>
 					<li>FBDK ASN.1 encoding</li>
-					<li>Ethernet</li>
-					<li>Modbus TCP client</li>
-					<li>OPC DA client</li>
+					<li>Ethernet (TCP/UDP)</li>
+					<li>Modbus TCP client using <a href="http://libmodbus.org/">libmodbus</a></li>
+					<li>OPC DA client using <a href="http://sourceforge.net/projects/opcclient/">OPC Client library release 0.4</a></li></li>
 					<li>MQTT using <a href="http://www.eclipse.org/paho/">Eclipse Paho</a></li>
+					<li>RS232</li>
+					<li><a href="https://www.eclipse.org/eclipsescada/news/2014/08/29/wrapup__iot_top_level_project__syslog__relp___sfp__validation.html">EclipseSCADA SFP</a></li>
+					<li>Ethernet PowerLink using <a href="http://sourceforge.net/projects/openpowerlink/">openPOWERLINK V1.8.0</a></li>
 				</ul>
 			</td>
 			<td><h2 class="h2twocollumntable">Supported Operating Systems</h2>
