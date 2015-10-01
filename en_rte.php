@@ -27,6 +27,7 @@
 					<li>Modbus TCP client</li>
 					<li>OPC DA client</li>
 					<li>MQTT using <a href="http://www.eclipse.org/paho/">Eclipse Paho</a></li>
+					<li>Powerlink</li>
 				</ul>
 			</td>
 			<td><h2 class="h2twocollumntable">Supported Operating Systems</h2>
