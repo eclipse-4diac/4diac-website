@@ -1,5 +1,5 @@
 /*
-	4diac-gray			rgba(234,234,234,1.0)
+	4diac-gray		rgba(234,234,234,1.0)
 	4diac-lightblue		rgba(0,137,209,1.0)
 	4diac-middleblue	rgba(0,69,138,1.0)
 	4diac-darkblue 		rgba(1,34,105,1.0)
@@ -113,19 +113,7 @@ padding:0px;
 vertical-align:middle;
 }
 
-section.news > a:hover:first-of-type, section.news > a:active:first-of-type, section.news > a:hover:last-of-type, section.news > a:active:last-of-type{
-background-color:transparent;
-}
- 
-section.news > a:link, section.news > a:visited{
-}
-
-section.news > a:hover, section.news > a:active{
-background-color:rgba(0,137,209,1.0);
-color:rgba(221,221,221,0.5);
-}
-
-section.news div.news-item{ 
+section.news > div.news-item{ 
   background-color:rgba(1,34,105,1.0); 
   border-radius:10px;
   width:3.5cm; 
@@ -136,7 +124,7 @@ section.news div.news-item{
   padding:0px 5px 0px 5px;
 }
 
-div.news-item span { 
+div.news-item > span { 
   height:70px; 
   display:inline-block;
   zoom:1;
@@ -144,7 +132,7 @@ div.news-item span {
   vertical-align: middle;
 }
 
-div.news-item a{
+div.news-item > a{
   display:inline-block;
   zoom:1;
   *display:inline;
@@ -153,7 +141,18 @@ div.news-item a{
   color:white;
   font-size:11pt;
   text-decoration: none;
-  
+}
+
+section.news a:hover:first-of-type, section.news a:active:first-of-type, section.news a:hover:last-of-type, section.news a:active:last-of-type{
+background-color:transparent;
+}
+ 
+section.news a:link, section.news a:visited{
+}
+
+section.news a:hover, section.news a:active{
+background-color:rgba(0,137,209,1.0);
+color:rgba(234,234,234,1.0);
 }
 
 /* ***************** users' workshop ***************** */
@@ -315,10 +314,10 @@ text-decoration: none;
 text-align:center;
 } 
  
-section.content > a:link, section.content > a:visited, section.content a.specialgroup:link, section.content a.componentbutton:visited{
+section.content a:link, section.content a:visited{
 }
 
-section.content > a:active, section.content a.specialgroup:hover, section.content a.componentbutton:active{
+section.content a.componentbutton:active, section.content a.componentbutton:hover{
 background-color:rgba(0,137,209,1.0);
 color:rgba(221,221,221,1.0);
 border:1.9mm solid rgba(221,221,221,1.0);
