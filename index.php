@@ -36,18 +36,21 @@
 </section>
 
 <section class="content">
+
+<h4>4DIAC provides an industrial-grade open source infrastructure <br>for distributed Industrial Process Measurement and Control Systems (IPMCS) <br>based on the IEC 61499 standard. 4DIAC includes:</h4>
+
 	<a class="componentbutton" href="en_rte.php">RTE
 		<img height="100px" src="img/rte-button.png" alt="4DIAC runtime environment (FORTE) provides a device indepent execution of IEC 61499 control application"/>
-		<span>Runtime Environment</span></a>
+		<span>Runtime<br>Environment</span></a>
 	<a class="componentbutton" href="en_ide.php">IDE
 		<img height="100px" src="img/ide-button.png" alt="4DIAC-IDE provides a development environment for developing distributed industrial processes measurements and control systems"/>
-		<span>Development Environment</span></a>
+		<span>Development<br>Environment</span></a>
 	<a class="componentbutton" href="en_lib.php">LIB
 		<img height="100px" src="img/lib-button.png" alt="4DIAC's function block library provides you with a set of reusable function blocks reducing the effort of application development"/>
-		<span>Library</span></a>
+		<span>Function Block<br>Library</span></a>
 	<a class="componentbutton" href="en_sys.php">SYS
 		<img height="100px" src="img/sys-button.png" alt="Example systems showing the features of IEC 61499 and 4DIAC"/>
-		<span>Systems</span></a>
+		<span>Example<br>Projects</span></a>
 </section>
 
 <?php include 'footer.php';?>
