@@ -70,13 +70,13 @@
 	
 	
 	<h2>Contribute</h2>
-	<p>If you want to support 4DIAC, there multiple ways to contribute.</p>	
+	<p>If you want to support 4DIAC, there are multiple ways to contribute.</p>	
 	<h3>Documentation, Marketing, and Supporting new Users</h3>
   <p>
 		<ul>
 			<li>Improve and extend the existing documentation in the 4DIAC Wiki</li>
 			<li>Write new tutorials for the 4DIAC Wiki</li>
-			<li>Support the Forums: Answer questions in the different forums</li>
+			<li>Support the forums: Answer questions in the different forums</li>
 			<li>Spread the word: link to 4DIAC, use 4DIAC logo on your web page, write articles, blog entries, etc.</li>
 		</ul>
 	</p>
@@ -84,7 +84,7 @@
   <p>
 		<ul>
 			<li>Find and report bugs to ensure the quality of 4DIAC.</li>
-			<li>Submit ideas for improvement via 4DIAc's issue tracker.</li>
+			<li>Submit ideas for improvement via 4DIAC's issue tracker.</li>
 			<li>Review and verify reported bugs. Sometimes there is not enough info attached to a bug report or it is hard to reproduce. Trying to reproduce a bug and extending the description is of great value.</li>
 			<li>Rate Bugs, feature requests, and ideas. This helps that we can focus our limited resources on the most important elements first.</li>
 		</ul>
