@@ -26,14 +26,14 @@
 	</td></tr>
 	<tr><td>	
 	<figure>
-		<img src="news/figs/TabAlgorithms.png" alt="screenshot of transition tab" width="370"/>
-		<figcaption>screenshot of transition tab</figcaption>
+		<img src="news/figs/TabAlgorithms.png" alt="screenshot of algorithms tab" width="370"/>
+		<figcaption>screenshot of algorithms tab</figcaption>
 	</figure>
 	</td>
 	<td>
 	<figure>
-		<img src="news/figs/TabInternalVars.png" alt="screenshot of transition tab" width="370"/>
-		<figcaption>screenshot of transition tab</figcaption>
+		<img src="news/figs/TabInternalVars.png" alt="screenshot of internal variables tab" width="370"/>
+		<figcaption>screenshot of internal variables tab</figcaption>
 	</figure>
 	</td></tr>
 </table>
