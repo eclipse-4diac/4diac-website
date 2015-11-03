@@ -25,7 +25,7 @@
 	</ul>
 	
 	<h2>IEC 61499 Applications</h2>
-	<p><b>Pick and Place Station @ <a href="www.fortiss.org">fortiss GmbH</a></b>
+	<p><b>Pick and Place Station @ <a href="http://www.fortiss.org">fortiss GmbH</a></b>
 	<br>The pick and place station is supposed to study the IEC 61499 compliant implementation of hierarchical control applications.  ... purpose ... pick and place station... distributed on two PLCs
 	</p>
 	<figure>
