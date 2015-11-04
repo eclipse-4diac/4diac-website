@@ -19,7 +19,7 @@
 	</li>
 	<li>FORTE:
 		<ul>			
-       <li>Fixed issue with STOP handling in E_RESTART reported in: <a href="https://sourceforge.net/p/fordiac/discussion/708249/thread/c56bbd60/?limit=100#6f04"></a></li>
+       <li>Fixed issue with STOP handling in E_RESTART reported in: <a href="https://sourceforge.net/p/fordiac/discussion/708249/thread/c56bbd60/?limit=100#6f04">https://sourceforge.net/p/fordiac/discussion/708249/thread/c56bbd60/?limit=100#6f04</a></li>
 		</ul>
 	</li>
 </ul>
