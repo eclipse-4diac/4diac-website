@@ -66,6 +66,15 @@
 	<ul id="nav">
 		<li class="expand">4DIAC-IDE_1.7.x
 			<ul>
+				<li class="expand">4DIAC-IDE_1.7.3
+					<ul>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_win32.x86_64.zip/download">windows_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_win32.x86.zip/download">windows_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_cocoa.x86_64.zip/download">os_x86_64</a></li>
+					</ul>
+				</li>
 				<li class="expand">4DIAC-IDE_1.7.2
 					<ul>
 						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.2/4DIAC-IDE_1.7.2_win32.x86_64.zip/download">windows_x86_64</a></li>
@@ -354,6 +363,7 @@
 	<ul id="nav">
 				<li class="expand">FORTE_1.7.x
 					<ul>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.3.zip/download">FORTE_1.7.3</a></li>						
 						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.2.zip/download">FORTE_1.7.2</a></li>
 						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.1.zip/download">FORTE_1.7.1</a></li>
 						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.0.zip/download">FORTE_1.7.0</a></li>
