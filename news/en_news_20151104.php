@@ -1,5 +1,5 @@
 <div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	2rd Maintenance Release for 4DIAC&nbsp;1.7
+	3<sup>rd</sup> Maintenance Release for 4DIAC&nbsp;1.7
 </div>
 <div class="news">
 	<span class="left"><?php $date="2015-11-04 13:00"; echo $date;?></span> 
