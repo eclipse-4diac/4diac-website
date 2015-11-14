@@ -38,7 +38,7 @@
 
 <section class="content">
 
-<h4>4DIAC provides an industrial-grade open source infrastructure <br>for distributed Industrial Process Measurement and Control Systems (IPMCS) <br>based on the IEC 61499 standard. 4DIAC includes:</h4>
+<h4>4DIAC provides an industrial-grade open source infrastructure <br>for distributed industrial process measurement and control systems <br>based on the IEC 61499 standard. 4DIAC includes:</h4>
 
 	<a class="componentbutton" href="en_rte.php">RTE
 		<img height="100px" src="img/rte-button.png" alt="4DIAC runtime environment (FORTE) provides a device indepent execution of IEC 61499 control application"/>
