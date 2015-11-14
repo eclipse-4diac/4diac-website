@@ -266,11 +266,11 @@ section.content .h2twocollumntable{
 width:400px;
 }
 
-section.content > p, section.content > table, section.content > ul, section.content h2, section.content h3{
+section.content > p, section.content table, section.content tr, section.content > ul, section.content h2, section.content h3{
 color:rgba(1,34,105,1.0);
 padding-top:5px;
 padding-bottom:5px;
-width:800px;
+max-width:800px;
 margin: auto;
 text-align:justify;
 font-size:12pt;
@@ -296,7 +296,6 @@ font-weight:bold;
 }
 
 section.content td{
-width:600px;
 vertical-align:top;
 }
 
@@ -307,7 +306,6 @@ padding-bottom:5px;
 margin: auto;
 text-align:justify;
 font-size:12pt;
-width:550px;
 }
 
 section.content ul{

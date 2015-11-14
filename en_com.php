@@ -15,44 +15,20 @@
 
 <section class="content">
 	<h1>Community</h1>
-	<h2>Who's Involved</h2>
-	<p>
-		<h3>Project Lead:</h3> 
-		<ul>
-			<li>Alois Zoitl (fortiss GmbH)</li>
-		</ul>
-	</p>	
-	<p>
-		<h3>Committers:</h3>
-		<ul>
-			<li>Alois Zoitl (fortiss GmbH)</li>
-			<li>Gerhard Ebenhofer (Profactor GmbH)</li>
-			<li>Martin Melik-Merkumians (TU Wien ACIN)</li>
-			<li>Monika Wenger (fortiss GmbH)</li>
-		</ul>
-	</p>	
-	<p>
-		<h3>Mentors:</h3>
-		<ul>
-			<li>Ed Merks</li>
-			<li>Eike Stepper</li>
-		</ul>
-	</p>
-	
-	
-	<h2>Project Mailing List</h2>
-	<ul>
-		<li><a href="https://dev.eclipse.org/mailman/listinfo/4diac-dev">4diac-dev:</a> 4diac developer discussions</li>
-	</ul>
-	
-	<h2>Forum</h2>
-	<ul>
-		<li><a href="http://eclipse.org/forums/eclipse.4diac">eclipse</a></li>
-		<li><a href="http://sourceforge.net/p/fordiac/discussion/">sourceforge</a></li>
-	</ul>
-	
-	
 	<h2>Support</h2>
+	<table><tr>
+		<td class="h2twocollumntable">
+			<h3>Project Mailing List</h3>
+			<ul><li><a href="https://dev.eclipse.org/mailman/listinfo/4diac-dev">4diac-dev:</a> <br>4diac developer discussions</li></ul>
+		</td>
+		<td class="h2twocollumntable">
+			<h3>Forum</h3>
+			<ul>
+				<li><a href="http://eclipse.org/forums/eclipse.4diac">eclipse</a></li>
+				<li><a href="http://sourceforge.net/p/fordiac/discussion/">sourceforge</a></li>
+			</ul>
+		</td>
+	</tr></table>
 	<p>The following commercial enhancements and services related to 4DIAC:</p>
 	<ul>
 		<li>FORTE porting to different embedded platforms and operating systems (e.g. VxWorks, eCOS, IPC@CHIP ...)</li>
@@ -98,6 +74,32 @@
 		</ul>
 	</p>
 	
+
+	<h2>Who's Involved</h2>
+	<table>
+		<tr>
+			<td width="33%"><p>
+				<h3>Project Lead:</h3> 
+				<ul><li>Alois Zoitl (fortiss GmbH)</li></ul>
+			</p></td>
+			<td width="46%"><p>
+				<h3>Committers:</h3>
+				<ul>
+					<li>Alois Zoitl (fortiss GmbH)</li>
+					<li>Gerhard Ebenhofer (Profactor GmbH)</li>
+					<li>Martin Melik-Merkumians (TU Wien ACIN)</li>
+					<li>Monika Wenger (fortiss GmbH)</li>
+				</ul>
+			</p></td>	
+			<td width="20%"><p>
+				<h3>Mentors:</h3>
+				<ul>
+					<li>Ed Merks</li>
+					<li>Eike Stepper</li>
+				</ul>
+			</p></td>
+		</tr>
+	</table>
 </section>
 
 <?php include 'footer.php';?>
