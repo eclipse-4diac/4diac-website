@@ -10,3 +10,5 @@
 <p>However this does not mean that your existing messages will be lost. The existing form messages at SourceForge will be put into readonly mode on Friday Nov. 20Th and can still be searched and read.</p>
 
 <p>Looking forward to read you in our new forum!</p>
+
+<?php include 'greeting.html';?>
