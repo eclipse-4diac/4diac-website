@@ -1,8 +1,9 @@
 <div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	Feature Freeze for Release 1.7 on Mar. 31
+	Feature Freeze for Release 1.7
 </div>
 <div class="news">
 	<span class="left"><?php $date="2015-03-03 22:01"; echo $date;?></span> 
+	<span class="center"><img src="../img/release.png" alt="release" width="70"/></span>
 	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
 </div>
 <p>It is a great pleasure for us to announce the feature freeze phase for the upcoming 4DIAC release 1.7. In order to support testing and give you a sneak preview of the cool new features (e.g., monitoring of composite function blocks) we created a first release candidate 1.6_RC1. The highlights of the upcoming release are:</p>

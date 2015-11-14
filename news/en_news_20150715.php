@@ -1,5 +1,5 @@
 <div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	Program for 6th 4DIAC Users' Workshop Available
+	Rework 4DIAC's code base for Eclipse
 </div>
 <div class="news">
 	<span class="left"><?php $date="2015-07-15 22:35"; echo $date;?></span> 
