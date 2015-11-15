@@ -17,12 +17,12 @@
 	</script>
 	
 	<style type="text/css">
-	a {
+	span a {
 		text-decoration:none;
 		color: black;
 	}
 
-	ul, li {
+	span ul, span li {
 		list-style: none;
 		padding-left:5px;
 	}
@@ -436,8 +436,40 @@
 			</ul>
 	</span>
 </div>
-</section>
 
+<h1>Release Notes</h1>
+<?php 
+	$files = array_reverse(glob('./releases/*.php'));
+	$count = 0;
+?>
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+<select name="release"  onchange='this.form.submit()'>
+	<?php 
+	foreach($files as $file){
+		$lines = "Release " . str_split(basename($file,".php"),11)[1];
+		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['release'] == basename($file,".php")){
+			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
+		}elseif($count == 0){
+			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
+		}
+		else{
+			echo '<option value="' . basename($file,".php") . '">' . $lines . '</option>';
+		}
+		$count = $count + 1; 
+	}
+	?>
+</select>
+</form>
+
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+	include "releases/" . $_REQUEST['release'] . ".php";
+}else{
+	include $files[0];
+}
+?>
+
+</section>
 <?php include 'footer.php';?>
 
 </body>

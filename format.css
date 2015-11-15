@@ -219,10 +219,16 @@ margin-right:auto;
 text-align:center;
 }
 
-section.content > div.newsheader{
+section.content select{
+font-size:12pt;
+padding:2px;
+}
+section.content > div.newsheader, section.content select{
 color:white;
 font-weight:bold;
+min-width:800px;
 background-color:rgba(1,34,105,1.0);
+text-align:center;
 }
 section.content > div.news{
 display:table;
