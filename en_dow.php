@@ -445,7 +445,7 @@
 
 
 
-<select name="release"  onchange='this.form.submit()'>
+<select name="release" >
 	<?php 
 	foreach($files as $file){
 		$lines = "Release " . str_split(basename($file,".php"),11)[1];
