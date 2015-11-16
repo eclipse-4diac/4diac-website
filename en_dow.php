@@ -437,12 +437,12 @@
 	</span>
 </div>
 
-<h1>Release Notes</h1>
+<h1>Roadmaps</h1>
 <?php 
 	$files = array_reverse(glob('./releases/*.php'));
 	$count = 0;
 ?>
-<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+<!--form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 <select name="release"  onchange='this.form.submit()'>
 	<?php 
 	foreach($files as $file){
@@ -459,7 +459,7 @@
 	}
 	?>
 </select>
-</form>
+</form-->
 
 <?php
 if($_SERVER["REQUEST_METHOD"] == "POST"){
