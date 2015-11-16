@@ -443,25 +443,11 @@
 	$count = 0;
 ?>
 
-
-
-<select name="release" >
-	<?php 
-	foreach($files as $file){
-		$lines = "Release " . str_split(basename($file,".php"),11)[1];
-		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['release'] == basename($file,".php")){
-			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
-		}elseif($count == 0){
-			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
-		}
-		else{
-			echo '<option value="' . basename($file,".php") . '">' . $lines . '</option>';
-		}
-		$count = $count + 1; 
-	}
-	?>
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+<select name="release"  onchange='this.form.submit()'>
+	
 </select>
-
+</form>
 
 <?php
 if($_SERVER["REQUEST_METHOD"] == "POST"){
