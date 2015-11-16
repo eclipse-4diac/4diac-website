@@ -442,7 +442,7 @@
 	$files = array_reverse(glob('./releases/*.php'));
 	$count = 0;
 ?>
-<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+<form action="/en_dow.php" method="post">
 <select name="release"  onchange='this.form.submit()'>
 	<?php 
 	foreach($files as $file){
