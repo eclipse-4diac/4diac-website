@@ -447,9 +447,7 @@
 	<?php 
 	foreach($files as $file){
 		$lines = "Release " . str_split(basename($file,".php"),11)[1];
-		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['release'] == basename($file,".php")){
-			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
-		}elseif($count == 0){
+		if($count == 0){
 			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
 		}
 		else{
