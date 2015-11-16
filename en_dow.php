@@ -448,14 +448,15 @@
 	<?php 
 	foreach($files as $file){
 		$fileName = basename($file,".php");		
-		$releaseNumber = explode("_",$fileName)[2];		
+		$releaseNumber = explode("_",$fileName);
+		$releaseText = 	"Release " . $releaseNumber[2];	
 		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['release'] == $fileName){
-			echo '<option selected value="' . $fileName . '">Release ' . $releaseNumber . '</option>';
+			echo '<option selected value="' . $fileName . '">' . $releaseText . '</option>';
 		}elseif($count == 0){
-			echo '<option selected value="' . $fileName . '">Release ' . $releaseNumber . '</option>';
+			echo '<option selected value="' . $fileName . '">' . $releaseText . '</option>';
 		}
 		else{
-			echo '<option value="' . $fileName . '">Release ' . $releaseNumber . '</option>';
+			echo '<option value="' . $fileName . '">' . $releaseText . '</option>';
 		}
 		$count = $count + 1; 
 	}
