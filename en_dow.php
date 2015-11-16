@@ -444,8 +444,31 @@
 ?>
 
 
+
+<select name="release"  onchange='this.form.submit()'>
+	<?php 
+	foreach($files as $file){
+		$lines = "Release " . str_split(basename($file,".php"),11)[1];
+		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['release'] == basename($file,".php")){
+			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
+		}elseif($count == 0){
+			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
+		}
+		else{
+			echo '<option value="' . basename($file,".php") . '">' . $lines . '</option>';
+		}
+		$count = $count + 1; 
+	}
+	?>
+</select>
+
+
 <?php
-echo $_SERVER["REQUEST_METHOD"] . " " . $_SERVER['PHP_SELF'];
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+	include "releases/" . $_REQUEST['release'] . ".php";
+}else{
+	include $files[0];
+}
 ?>
 </section>
 <?php include 'footer.php';?>
