@@ -448,10 +448,10 @@
 	foreach($files as $file){
 		$lines = "Release " . str_split(basename($file,".php"),11)[1];
 		if($count == 0){
-			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
+			echo "<option selected value='{basename($file,'.php')}'>$lines</option>";
 		}
 		else{
-			echo '<option value="' . basename($file,".php") . '">' . $lines . '</option>';
+			echo "<option value='basename($file,'.php')'>$lines</option>";
 		}
 		$count = $count + 1; 
 	}
