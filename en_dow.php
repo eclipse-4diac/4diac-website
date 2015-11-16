@@ -445,11 +445,7 @@
 
 
 <?php
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-	include "releases/" . $_REQUEST['release'] . ".php";
-}else{
-	include $files[0];
-}
+echo $_SERVER["REQUEST_METHOD"] . " " . $_SERVER['PHP_SELF'];
 ?>
 </section>
 <?php include 'footer.php';?>
