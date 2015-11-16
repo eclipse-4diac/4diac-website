@@ -447,14 +447,15 @@
 <select name="release"  onchange='this.form.submit()'>
 	<?php 
 	foreach($files as $file){
-		$lines = "Release ";
-		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['release'] == basename($file,".php")){
-			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
+		$fileName = basename($file,".php");		
+		$releaseNumber = explode("_",$fileName)[2];		
+		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['release'] == $fileName){
+			echo '<option selected value="' . $fileName . '">Release ' . $releaseNumber . '</option>';
 		}elseif($count == 0){
-			echo '<option selected value="' . basename($file,".php") . '">' . $lines . '</option>';
+			echo '<option selected value="' . $fileName . '">Release ' . $releaseNumber . '</option>';
 		}
 		else{
-			echo '<option value="' . basename($file,".php") . '">' . $lines . '</option>';
+			echo '<option value="' . $fileName . '">Release ' . $releaseNumber . '</option>';
 		}
 		$count = $count + 1; 
 	}
