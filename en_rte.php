@@ -47,8 +47,14 @@
 					<li><a href="http://www.digi.com/products/embedded-systems">Digi Connect ME</a> (ARM7)</li>
 					<li><a href="http://mindstorms.lego.com/en-us/Default.aspx">Lego Mindstorms nxt</a> (ARM7)</li>
 					<li><a href="http://www.kipr.org/products/cbc-robot-controller">KIPR's CBC v2</a> robot controller</li>
-					<li><a href="http://www.raspberrypi.org/">RaspberryPI</a></li>
-					<li><a href="http://beagleboard.org/black">BeagleBone Black</a></li>
+					<li><a href="http://www.raspberrypi.org/">Raspberry PI</a><br/>
+              Raspberry PI based PLCs:
+              <ul>
+					       <li><a href="http://www.conmeleon.org/">CONMELLEON</a><br/>
+                 <li><a href="http://raspberry-sps.de/">RASPBERRY SPS</a><br/>
+              </ul>   
+            </li>
+					<li><a href="http://beagleboard.org/black">BeagleBone Black</a>
 				</ul>
 			</td>
 			<td><h2 class="h2twocollumntable">Supported Programmable Logic Controllers (PLCs)</h2>
