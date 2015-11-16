@@ -442,25 +442,15 @@
 	$files = array_reverse(glob('./releases/*.php'));
 	$count = 0;
 ?>
-<form action="/en_dow.php" method="post">
-<select name="release"  onchange='this.form.submit()'>
-	<?php 
-	foreach($files as $file){
-		$lines = "Release " . str_split(basename($file,".php"),11)[1];
-		if($count == 0){
-			echo "<option selected value='{basename($file,'.php')}'>$lines</option>";
-		}
-		else{
-			echo "<option value='basename($file,'.php')'>$lines</option>";
-		}
-		$count = $count + 1; 
-	}
-	?>
-</select>
-</form>
 
 
-
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+	include "releases/" . $_REQUEST['release'] . ".php";
+}else{
+	include $files[0];
+}
+?>
 </section>
 <?php include 'footer.php';?>
 
