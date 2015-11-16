@@ -459,7 +459,7 @@
 	}
 	?>
 </select>
-</form-->
+</form>
 
 <?php
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -467,7 +467,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }else{
 	include $files[0];
 }
-?>
+?-->
 
 </section>
 <?php include 'footer.php';?>
