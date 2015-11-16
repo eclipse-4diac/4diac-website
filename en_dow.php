@@ -448,7 +448,7 @@
 	<?php 
 	foreach($files as $file){
 		$lines = "Release " . str_split(basename($file,".php"),11)[1];
-		echo '<option value="' . basename($file,".php") . '">' . $lines . '</option>';
+		echo "<option value='test'>test</option>";
 		$count = $count + 1; 
 	}
 	?>
@@ -456,6 +456,7 @@
 </form>
 
 <?php
+echo "releases/" . $_REQUEST['release'] . ".php";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 	include "releases/" . $_REQUEST['release'] . ".php";
 }else{
