@@ -29,7 +29,7 @@
 	<br>The pick and place station is supposed to study the IEC 61499 compliant implementation of hierarchical control applications.  ... purpose ... pick and place station... distributed on two PLCs
 	</p>
 	<figure>
-		<img src="img/.png" alt="pick and place station"/>
+		<img src="img/pickNplace.png" alt="pick and place station"/>
 		<figcaption>pick and place station</figcaption>
 	</figure>
 	
