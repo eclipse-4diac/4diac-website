@@ -22,7 +22,7 @@
          For asking questions and discussing 4DIAC related issues the <a href="http://eclipse.org/forums/eclipse.4diac">4DIAC disscion forum</a> is here for you.
 		</td>
 
-		<td width="294" style='padding:0px 20px 0px 20px'>
+		<td width="253" style='padding:0px 30px 0px 30px'>
 			<h3>Project Mailing List</h3>
       Follow and participate in discussions on 4DIAC. You can <a href="https://dev.eclipse.org/mailman/listinfo/4diac-dev">subscribe here</a> 
 		</td>
