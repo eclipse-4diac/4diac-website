@@ -50,7 +50,7 @@
 					<li><a href="http://www.raspberrypi.org/">Raspberry PI</a><br/>
               Raspberry PI based PLCs:
               <ul>
-					       <li><a href="http://www.conmeleon.org/">CONMELLEON</a><br/>
+					       <li><a href="http://www.conmeleon.org/">CONMELEON</a><br/>
                  <li><a href="http://raspberry-sps.de/">RASPBERRY SPS</a><br/>
               </ul>   
             </li>
