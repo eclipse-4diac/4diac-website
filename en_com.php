@@ -17,16 +17,16 @@
 	<h1>Community</h1>
 	<h2>Communication Channels</h2>
 	<table><tr>
-		<td width="33%">
+		<td width="30%" >
 			<h3>Discussion Forum</h3>
          For asking questions and discussing 4DIAC related issues the <a href="http://eclipse.org/forums/eclipse.4diac">4DIAC disscion forum</a> is here for you.
 		</td>
 
-		<td width="33%">
+		<td width="30%" style='padding:0px 10px 0px 10px'>
 			<h3>Project Mailing List</h3>
       Follow and participate in discussions on 4DIAC. You can <a href="https://dev.eclipse.org/mailman/listinfo/4diac-dev">subscribe here</a> 
 		</td>
-		<td width="33%">
+		<td width="30%">
 			<h3>Bugzilla</h3>
       4DIAC bugs and enhancements are maintained using Bugzilla. Please submit issues and suggestions <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=4DIAC">here</a>.
 		</td>
