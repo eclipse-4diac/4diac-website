@@ -7,17 +7,11 @@
 </div>
 <p>Today we have a guest news entry presenting the CONMELEON C1 PLC:</p> 
 
-<table><tr>
-		<td >
-			<img src="news/figs/logo_conmeleonc1.svg" alt="Conmeleon C1 Logo" width="250"/>
-		</td>
-		<td >
-      CONMELEON C1 is a low cost but professional automation expansion board for the Raspberry Pi 2 B. 
+<p><img src="news/figs/logo_conmeleonc1.svg" alt="Conmeleon C1 Logo" width="125"/> is a low cost but professional automation expansion board for the Raspberry Pi 2 B. 
       Together with the Raspberry the C1 board turns into a powerful PLC for small scale automation projects. 
       Currently the CONMELEON team works on a direct integration of their hardware platform into the 4DIAC environment. 
       First tests of the digital inputs and outputs with FORTE 1.7 have already been successful and they are looking forward to be part of the upcoming 1.8 release of  4DIAC.			
-		</td>
-</tr></table>
+</p>
 <h3>Key facts:</h3>
 <ul>
     <li>4 analog inputs 0-10V, 12 bit resolution, up to 3,3 kHz sample rate</li>
@@ -36,7 +30,7 @@
 		<td >
 			  <img src="news/figs/conmeleonc1board.jpeg" alt="CONMELEON C1 board" width="350"/>
 		</td>
-    <td >
+    <td width="40">
 		</td>
     <td >
 			   <img src="news/figs/conmeleonc1housing.jpeg" alt="3D printed housing of CONMELEON C1 board" width="350"/>
