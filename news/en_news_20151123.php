@@ -27,13 +27,23 @@
     <li>Internal mikroBUS&trade; interface for future expansion</li>
     <li>Power supply 12-24V DC</li>
     <li>Easy to handle detachable screw terminals</li>
-    <li>Operating temperature with attached Raspberry Pi 0 °C to 50 °C</li>
+    <li>Operating temperature with attached Raspberry Pi 0 &deg;C to 50 &deg;C</li>
     <li>Protection class IP20</li>
     <li>Humidity class F, no condensation</li>
 </ul>   
-<p><center><img src="news/figs/conmeleonc1board.jpeg" alt="CONMELEON C1 board" width="750"/></center></p>
+
+<table><tr>
+		<td >
+			  <img src="news/figs/conmeleonc1board.jpeg" alt="CONMELEON C1 board" width="350"/>
+		</td>
+    <td >
+		</td>
+    <td >
+			   <img src="news/figs/conmeleonc1housing.jpeg" alt="3D printed housing of CONMELEON C1 board" width="350"/>
+		</td>
+</tr></table>
+
 
 <p>You can get a glimpse on the CONMELEON board at this years SPS IPC Drives in Nuremberg on 24. to 26.11.2015 at hall 8 booth 8-411 and you are also welcome to visit the 
 <a href="http://www.conmeleon.org">project website</a>.<p>
 
-<p><img src="news/figs/conmeleonc1housing.jpeg" alt="3D printed housing of CONMELEON C1 board" width="750"/></p>
