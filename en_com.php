@@ -69,7 +69,7 @@
 		</ul>
 	</p>	
 
-	<h2>Who's Involved</h2>
+	<!--h2>Who's Involved</h2>
 	<table>
 		<tr>
 			<td width="33%"><p>
@@ -93,7 +93,7 @@
 				</ul>
 			</p></td>
 		</tr>
-	</table>
+	</table-->
 </section>
 
 <?php include 'footer.php';?>
