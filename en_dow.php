@@ -64,7 +64,23 @@
 	<span><b>4DIAC-IDE:</b>
 	<br><i>development environment with FORTE executables</i>
 	<ul id="nav">
-		<li class="expand">4DIAC-IDE_1.7.x
+		<li class="expand">4DIAC-IDE_1.8.x
+			<ul>
+				<li class="expand">4DIAC-IDE_1.8M1
+					<ul>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_win32.x86_64.zip/download">windows_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_win32.x86.zip/download">windows_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_cocoa.x86_64.zip/download">os_x86_64</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		
+		<li class="expand">old releases
+			<ul>
+<li class="expand">4DIAC-IDE_1.7.x
 			<ul>
 				<li class="expand">4DIAC-IDE_1.7.3
 					<ul>
@@ -122,8 +138,6 @@
 				</li>
 			</ul>
 		</li>
-		<li class="expand">old releases
-			<ul>
 				<li class="expand">4DIAC-IDE_1.6.x
 					<ul>
 						<li class="expand">4DIAC-IDE_1.6.2
@@ -361,7 +375,15 @@
 	<span><b>4DIAC-RTE:</b>
 	<br><i>source of FORTE compilable for your system</i>
 	<ul id="nav">
-				<li class="expand">FORTE_1.7.x
+		<li class="expand">FORTE_1.8.x
+		<ul>
+		<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_M1.zip/download">FORTE_1.8M1</a></li>
+		</ul>
+		</li>
+				
+				<li class="expand">old releases
+					<ul>
+						<li class="expand">FORTE_1.7.x
 					<ul>
 						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.3.zip/download">FORTE_1.7.3</a></li>						
 						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.2.zip/download">FORTE_1.7.2</a></li>
@@ -371,8 +393,6 @@
 						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7_RC1.zip/download">FORTE_1.7_RC1</a></li>
 					</ul>
 				</li>
-				<li class="expand">old releases
-					<ul>
 						<li class="expand">FORTE_1.6.x
 							<ul>
 								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/OldReleases/FORTE%201.6/FORTE_1.6.2.zip/download">FORTE_1.6.2</a></li>
