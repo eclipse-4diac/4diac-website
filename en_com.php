@@ -65,7 +65,7 @@
 		<ul>
 			<li>Extend and improve FB library. Having a large set of FBs increases the usability of 4DIAC for developing control solutions.</li>
 			<li>For ideas where to start your effort have a look at the bugs and features submitted to the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=13385396&product=4DIAC&query_format=advanced">4DIAC's issue tracker</a>.</li>
-			<li>For getting started feel free to ask questions in the Developers forum.</li>
+			<li>For getting started feel free to ask questions in the <a href="http://eclipse.org/forums/eclipse.4diac">4DIAC disscion forum</a> and in <a href="https://dev.eclipse.org/mailman/listinfo/4diac-dev">4DIAC's mailing list</a>.</li>
 		</ul>
 	</p>	
 
