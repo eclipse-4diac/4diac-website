@@ -119,13 +119,16 @@
 	</topic>  
 	
 	<topic label="Development Documentation"> 
-		<topic label="4DIAC-IDE">
+		<topic href="html/development/ide.html" label="4DIAC-IDE">
 			<topic label="Building and Running 4DIAC-IDE from Source" href="html/development/installFromSource.html"> 
 				<topic label="Get the Development Environment" href="html/development/installFromSource.html#devEnvironment"/>
 				<topic label="Check out the 4DIAC-IDE Repository" href="html/development/installFromSource.html#checkOutRepos"/>
 				<topic label="Import Plug-Ins into Workspace" href="html/development/installFromSource.html#importPlugins"/>
+    <topic href="html/development/installFromSource.html#targetPlatform" label="Set Target Platform">
+    </topic>
+				<topic href="html/development/installFromSource.html#devMode" label="Run in Development Mode">
+    </topic>
 				<topic label="Get 4DIAC-LIB" href="html/development/installFromSource.html#getLib"/>
-				<topic label="Run in Development Mode" href="html/development/installFromSource.html#devMode"/>
 				<topic label="Building your own IDE" href="html/development/installFromSource.html#buildingIDE"/>
 			</topic>
 			<topic label="Building a Binary 4DIAC-IDE Package from Source" href="html/development/buildingBinary.html" /> 

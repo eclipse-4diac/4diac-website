@@ -52,8 +52,8 @@ In addition to the default Modeling Tool package you will need to following Ecli
 <a name="importPlugins"></a>
 <h2>Import Plug-Ins into Workspace</h2>
 <ol>
-	<li><i>File > Import > Existing Projects into Workspace</i></li>
-	<li>Select the Source Directory from the file system and select all Plug-ins to be imported.</li>
+	<li><i>File > Import > General > Existing Projects into Workspace</i></li>
+	<li>Under <i>Select root directory</i> select the source directory from the file system and mark all projects to be imported.</li>
 	<li>Wait till Eclipse finished building the project (look at the progress bar at the right bottom corner of the Eclipse main window)</li>
 	<li>Check problems view for errors. If you get <span class="code">API Baseline</span> not set errors you need to perform the following steps: 
 		<ol>
@@ -84,21 +84,16 @@ In addition to the default Modeling Tool package you will need to following Ecli
 	</li>
 </ol>
 
-<a name="getLib"></a>
-<h2>Get 4DIAC-LIB</h2>
-<p>Currently the 4DIAC-LIB includes:</p>
-<ul>
-	<li>IEC 61499 specific function blocks </li>
-	<li>All IEC 61131-3 functions and function blocks </li>
-	<li>Some <a href="http://www.oscat.de/">OSCAT</a> functions and function blocks </li>
-</ul>
-<p>To use the existing 4DIAC-LIB within the 4DIAC-IDE run through the following steps: </p>
-<ul>
-	<li>Use <a href="http://tortoisehg.bitbucket.org/">tortoiseHG</a> to clone the library from: <span class="code">http://hg.code.sf.net/p/fordiac/fordiac-lib</span></li>
-	<li>Simply copy the contents of the library into your projects or into the <i>Tool Library</i> directory of your 4DIAC-IDE (folders of the Windows explorer can directly be copied into the <i>Type Navigator</i> View)</li>
-	<li>OR Select all (for existing libraries in the project) and refresh</li>
-</ul>
-
+<a name="Platform"></a>	
+<h2>Set Target Platform</h2>
+<ol>
+	<li>Open the Eclipse preferences: <i>Window > Preferences</i></li>
+	<li>Open the target definition: <i>Plug-in Development > Target Platform</i>
+		<p><img src="./img/TargetPlatform.png" alt="Eclips target platform configuration"/></p>
+	</li>
+	<li>Select <i>4DIAC-IDE Development</i></li> 
+	<li>Press <i>OK</i></li>
+</ol>
 
 <a name="devMode"></a>	
 <h2>Run in Development Mode</h2>
@@ -116,6 +111,24 @@ In addition to the default Modeling Tool package you will need to following Ecli
 	<li>Press <i>Launch an Eclipse Application</i> in the <i>Overview</i></li>
 </ol>
 
+<a name="getLib"></a>
+<h2>Get 4DIAC-LIB</h2>
+<p>Currently the 4DIAC-LIB includes:</p>
+<ul>
+	<li>IEC 61499 specific function blocks </li>
+	<li>All IEC 61131-3 functions and function blocks </li>
+	<li>Some <a href="http://www.oscat.de/">OSCAT</a> functions and function blocks </li>
+</ul>
+<p>To use the existing 4DIAC-LIB within the 4DIAC-IDE build from source perform the following step: </p>
+<ul>
+	<li>Use <a href="http://tortoisehg.bitbucket.org/">tortoiseHG</a> to clone the library from: <span class="code">http://hg.code.sf.net/p/fordiac/fordiac-lib</span> into a <span>typelibrary</span> folder of your Eclipse installation (folder containing <span>eclipse.exe</span>).</li>
+</ul>
+<p>To use the existing 4DIAC-LIB within the 4DIAC-IDE run through the following steps: </p>
+<ul>
+	<li>Use <a href="http://tortoisehg.bitbucket.org/">tortoiseHG</a> to clone the library from: <span class="code">http://hg.code.sf.net/p/fordiac/fordiac-lib</span></li>
+	<li>Simply copy the contents of the library into your projects or into the <i>Tool Library</i> directory of your 4DIAC-IDE (folders of the Windows explorer can directly be copied into the <i>Type Navigator</i> View)</li>
+	<li>OR Select all (for existing libraries in the project) and refresh</li>
+</ul>
 
 <a name="buildingIDE"></a>	
 <h2>Building your own IDE</h2>

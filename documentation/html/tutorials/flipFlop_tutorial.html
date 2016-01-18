@@ -9,12 +9,12 @@
 
 <body>
 <h1>Flip-Flop Tutorial</h1>
-<p>This tutorial should give you an overview of how to work with 4DIAC. We will take the toggle Flip-flop, T-Flip-flop, as our task and use it as a running example for the different solution approaches. The tutorial starts with modeling an IEC 61499 <i>Application</i> using available FBs. For this application we will specify a test <i>System</i> consisting of two <i>Devices</i>, after the mapping of the <i>Application's</i> parts to the <i>Resources</i> we will test it. The T-Flip-Flop can also be implemented as a <a href="./flipFlop_asBFB.html">Basic</a>, a <a href="./flipFlop_asCFB.html">Composite</a>, or a <a href="flipFlop_asSIFB.html">Service Interface Function Block</a> and used within the <i>Application</i>, whereas the <a href="flipFlop_fbs.html">steps</a> for Function Block Development have to be considered.</p>
+<p>This tutorial should give you an overview of how to work with 4DIAC. We will take the toggle flip-flop, <a href="http://en.wikipedia.org/wiki/Flip-flop_(electronics)#T_flip-flop">T flip-flop</a>, as our task and use it as a running example for the different solution approaches. The tutorial starts with modeling an IEC 61499 <i>Application</i> using available FBs. For this application we will specify a test <i>System</i> consisting of two <i>Devices</i>, after the mapping of the <i>Application's</i> parts to the <i>Resources</i> we will test it. The T flip-flop can also be implemented as a <a href="./flipFlop_asBFB.html">Basic</a>, a <a href="./flipFlop_asCFB.html">Composite</a>, or a <a href="flipFlop_asSIFB.html">Service Interface Function Block</a> and used within the <i>Application</i>, whereas the <a href="flipFlop_fbs.html">steps</a> for function block development have to be considered.</p>
 
-Task of the Flip-Flop Tutorial:
+Task of the flip-flop tutorial:
 		<ul>
-			<li>Create a Flip-Flop IEC 61499 <i>Application</i> with 4DIAC. The Application alternates between 0 and 1 every 1 second, which is also known as a <a href="http://en.wikipedia.org/wiki/Flip-flop_(electronics)#T_flip-flop">T-Flip-flop</a>. Notice a T-Flip-flop is described using either Set/Reset or XOR. 
-			<li>To make the behavior visible use the Monitoring functionality of 4DIAC</li>
+			<li>Create a flip-flop IEC 61499 application with 4DIAC. The Application alternates between 0 and 1 every 1 second, which is also known as a T flip-flop. Notice a T flip-flop is described using either set/reset or XOR. 
+			<li>Make the behavior visible using the monitoring functionality of 4DIAC</li>
 		</ul>
 
 Prerequisites: 
@@ -26,24 +26,24 @@ Prerequisites:
 
 <a name="system"></>
 <h2>Create a <i>System</i></h2>
-<p>We need a <i>System</i> to put our <i>Application</i> into. To create a <i>System</i> with an empty <i>Application</i> you have to go to the System Perspective <img src="../overview/img/systemButton.png"/>. Both the <i>Application</i> and <i>Devices</i> need to be added afterwards. Define <i>Devices</i> first if known or define <i>Application(s)</i> first if they determine what <i>Devices</i> are needed.</p> 
+<p>We need a <i>System</i> to put our <i>Application</i> into. To create a <i>System</i> with an empty <i>Application</i> you have to go to the <i>System Perspective</i> <img src="../overview/img/systemButton.png"/>. Both the <i>Application</i> and <i>Devices</i> need to be added afterwards. Define <i>Devices</i> first if known or define <i>Application(s)</i> first if they determine what <i>Devices</i> are needed.</p> 
 
 <ol>
-	<li><i>System</i> Creation:
+	<li><i>System</i> creation:
 		<ul>
 			<li>In 4DIAC-IDE create a new <i>System</i> under <i>File/New/New System</i></li>
-			<li>Enter the <i>Project Name</i>, which is the <i>System</i> name and press <i>Finish</i> button</i>
+			<li>Enter the <i>Project name</i> <q>FlipFlopTutorial</q>, which is the <i>System</i> name and press <i>Finish</i> button</i>
 			<li>For good practice give your <i>System</i> a description like <i>FlipFlopTutorial</i></li>
 			<li>If you click on your <i>System's</i> name you will just see <i>System Configuration</i></li>
 			<li>If you can't see your new <i>System</i>, then press the refresh <img src="../overview/img/refresh.gif"/> button.</li>
 		</ul>
 	</li>
-	<li><i>Application</i> Creation:
+	<li><i>Application</i> creation:
 		<ul>
 			<li>In 4DIAC-IDE create a new <i>Application</i> under <i>File/New/New Application</i></li>
-			<li>Chose <i>System</i> name like <i>Test1</i></li>
-			<li>Element name is the <i>Application</i> name say: <i>FlipFlopApplication</i></li>
-			<li>If you click on your <i>Application</i> name you will just see a empty window with FB palette to the right. If you can't see your new <i>Application</i>, then press the refresh <img src="../overview/img/refresh.gif"/>.</li>
+			<li>As <i>Parent System</i> select the previously created <q>FlipFlopTutorial</q> system</li>
+			<li>Under <i>Element Name</i> enter the <i>Application</i> name <q>flipFlopApplication</q></li>
+			<li>If you click on your <i>Application</i> name you will just see a empty window with FB palette to the right. If you cannot see your new <i>Application</i>, then press the refresh <img src="../overview/img/refresh.gif"/> button.</li>
 		</ul>
 	</li>
 </ol>
@@ -57,73 +57,74 @@ Prerequisites:
 
 <a name="device"></a>
 <h2>Adding a <i>Device</i></h2>
-<p><i>Devices</i> and their <i>Resources</i> have to be created to map the <i>Applications</i> to. Communication <i>Segments</i> link <i>Devices</i> together. 4DIAC supports launching IEC 61499 <i>Applications</i> running in a <i>Resource</i> running FORTE for PLC/PC or a <i>Resource</i> running FBRT for HMI. For the Flip-Flop <i>Application</i> we have one <i>Device</i> running  FORTE (POSIX) and simulating an embedded <i>Device</i>. To set up the <i>Device</i> perform the following steps:</p>
+<p><i>Devices</i> and their <i>Resources</i> are the units used to execute <i>Applications</i>. Therefore, the parts of the <i>Application</i> need to be mapped to the respective <i>Devices</i> and <i>Resources</i>. Communication <i>Segments</i> link <i>Devices</i> together. 4DIAC supports launching IEC 61499 <i>Applications</i> running in a <i>Resource</i> running FORTE for PLC/PC or a <i>Resource</i> running FBRT for HMI. For the Flip-Flop <i>Application</i> we have one <i>Device</i> running  FORTE (POSIX) and simulating an embedded <i>Device</i>. To set up the <i>Device</i> perform the following steps:</p>
 
 <ol>
-	<li>Open the <i>System</i> perspective <img src="../overview/img/systemButton.png"/> if not already open.</li>
+	<li>Open the <i>System</i> perspective <img src="../overview/img/systemButton.png"/>, if not already open.</li>
 	<li>Click or double click on <i>System Configuration</i> of your <i>System</i></li>
-	<li>Add the <i>Device</i> from the <i>Palette</i> on right. Drag it into the <i>System Configuration</i>: 
+	<li>Add the <i>Device</i> from the <i>Palette</i> on right. Drag it into the <i>System Configuration</i>. Do not care about the color of the <i>Device</i>.
 		<ul>
-			<li><span class="code">RMT_DEV</span> This remote <i>Device</i> will be running FORTE under POSIX. Rename the <span class="code">RMT_DEV</span> as desired. Here it was renamed to FORTE.</li>
+			<li><span class="code">RMT_DEV</span> This remote <i>Device</i> will be running FORTE under POSIX. Rename the <span class="code">RMT_DEV</span> as desired. Here it was renamed to <q>FORTE</q>.</li>
 		</ul>
 	<li>Add a <i>Resource</i> to every <i>Device</i> from the <i>Palette</i> on right. Drag it into the <i>System Configuration</i>: 
 		<ul>
-			<li>Into <span class="code">RMT_DEV</span> drag an <span class="code">EMB_RES</span> embedded <i>Resource</i> and rename it to reflect that it will run the Flip-Flop <i>Application</i>. Here it is called FlipFlop.</li>
+			<li>Into <span class="code">RMT_DEV</span> drag an <span class="code">EMB_RES</span> embedded <i>Resource</i> and rename it to reflect that it will run the Flip-Flop <i>Application</i>. Here it is called <q>FlipFlop</q>.</li>
 		</ul>
 	</li>
-	<li>Add a <i>Segment</i> for communication. Here Ethernet is used.</li>
-	<li>Configure the <i>Device's</i> parameter values. Check that <span class="code">MGR_ID</span> of your FORTE <i>Device</i> has a proper IP:Port, like <span class="code">localhost:61499</span>. The values shown are the default. And check that the Profile is set to HOLOBLOC.</li>
+	<li>Add a <i>Segment</i> for communication. Here Ethernet is used. Do not care about the color of the <i>Segment</i>.</li>
+	<li>Link the <i>Device</i> to the <i>Segment</i> by dragging a line between them. Therefore, hover over the <i>Segement</i> and drag a line from the appearing bar to the appearing bar of the <i>Device</i>, when hovering over it.</li>
+	<li>Configure the <i>Device's</i> parameter values. Check that <span class="code">MGR_ID</span> of your FORTE <i>Device</i> has a proper IP:Port, like <span class="code">localhost:61499</span>. The values shown are the default. In addition, check that the Profile is set to HOLOBLOC.</li>
 </ol>
 
 <img src="./img/flipFlop_deviceDefinition.png" alt="Devices"/>
 
 
-
 <a name="application"></a>
 <h2>Create the <i>Application</i></h2>
-<p>The <i>Application</i> contains the functionality a specific <i>System</i> or <i>System</i> component is supposed to perform. In 4DIAC-IDE create a new <i>Application</i> under <i>File/New/New Application</i>. If you click on your <i>Application</i> name you will just see an empty window.</p>
+<p>The <i>Application</i> contains the functionality a specific <i>System</i> or <i>System</i> component is supposed to perform.</p>
 
-<h3>Modelling the Flip-Flop <i>Application</i> by Existing Function Blocks</h3>
-<p>Double click on the <i>Application</i> name to open the <i>Application</i>. Existing Function Block types can be dragged into an <i>Application</i> by <i>Type Navigator</i>. If the <i>Type Navigator</i> is not shown within the <i>System</i> perspective open it with <i>Window/Show View/Other/Type Management/Type Navigator</i>. Inside the <i>Type Navigator</i> view Function Blocks are grouped according to the <i>Systems</i> they belong to and inside the <i>System</i> folder in categories and sub-categories.</p>
+<h3>Modelling the Flip-Flop Application Using Existing Function Blocks</h3>
+<p>Double click on the <i>flipFlopApplication</i> to open the <i>Application</i>. Existing function block types can be dragged into an <i>Application</i> from the <i>Type Navigator</i>. If the <i>Type Navigator</i> is not shown within the <i>System</i> perspective, open it with <i>Window > Show View > Other > Type Management >Type Navigator</i>. Inside the <i>Type Navigator</i> view function blocks are grouped according to the <i>Systems</i> they belong to and inside the <i>System</i> folder in categories and sub-categories.</p>
 <img src="./img/flipFlop_openApplicationEditor.png" alt="Application Editor"/>
 
-<p>Check these categories for one existing Function Block that does the whole task. We look for a XOR or Set/Reset, that includes timing and output. Under Events find <span class="code">E_RS</span>. Since it doesn't toggle the state, is event-driven and not time activated, and also no other FB can be found providing the desired functionality, an <i>Application</i> will be created by a group of existing Function Blocks. Now we need to add Function Blocks to build the <i>Application</i>. You can use the edit field within the <i>Type Navigator</i> to search for a specific type and drag and drop the result into the <i>Application</i> Editor. We need three event Function Blocks that can be used to build the <a href="http://en.wikipedia.org/wiki/Flip-flop_(electronics)#T_flip-flop">T Flip-Flop</a>:</p>
+<p>Check the categories for one existing function block that does the whole task. Note that you can only use function blocks from the same <i>System</i>. A XOR or Set/Reset, that includes timing, and output is required. Under <span class="code">events</span> there is a <span class="code">E_RS</span> function block. Since it does not automatically toggle the state, is event-driven, and not time activated and no other function block can be found providing the desired functionality, the flip-flop <i>Application</i> will be created by a group of existing function blocks.</p>
+<p>Now, we need to add function blocks to build the <i>Application</i>. You can use the edit field within the <i>Type Navigator</i> to search for a specific type and drag and drop the result into the <i>Application</i> editor. We need three event function blocks that can be used to build the <a href="http://en.wikipedia.org/wiki/Flip-flop_(electronics)#T_flip-flop">t flip-flop</a>:</p>
 <ul>
-	<li>activate the Flip-Flop every 1 second: <span class="code">E_CYCLE</span></li>
-	<li>toggle output: <span class="code">E_SR</span>, <span class="code">E_SWITCH</span></li>
+	<li><span class="code">E_CYCLE</span> for activating the flip-flop every second</li>
+	<li><span class="code">E_SR</span> and <span class="code">E_SWITCH</span> to toggle the output</li>
 </ul>
 
-<h3>Connect the <i>Application's</i> Function Blocks</h3>
-<p>Connectors are used to control the order of data and event flow. To activate an event action both the Data and event must have been received by the FB. In Type Navigator View double click on the Function Block to see its event and data connections. Start to connect your Function Blocks with those that need to be initialized by <span class="code">INITO</span> to next <span class="code">INIT</span> until you start the event chain of the <i>Application</i>. To make a connection click and hold on the event name. A rounded rectangle should appear. Drag the connector from one output variable to the desired input variable. The forbidden circle under the arrow will disappear when it is over the desired input variable name. Release the mouse to connect. Follow your connectors through the <i>Application</i>, whereas one output event may be input to multiple Function Blocks. Check that all input events are triggered or you know why they are not needed. An input event may come from multiple FBs but be careful with multiple event inputs, that they are not sent for same reasons and cause events to grow exponentially.</p>
+<h3>Connect the Application's Function Blocks</h3>
+<p>Connectors are used to control the order of data and event flow. To activate an event action both the data and event must have been received by the function block. In <i>Type Navigator</i> view double click on the function block to see its event and data connections. Start to connect your function blocks with those that need to be initialized by <span class="code">INITO</span> to next <span class="code">INIT</span> until you start the event chain of the <i>Application</i>. To make a connection click and hold on the event name. A rounded rectangle should appear. Drag the connector from one output variable to the desired input variable. The forbidden circle under the arrow will disappear when it is over the desired input variable name. Release the mouse to connect. Follow your connectors through the <i>Application</i>, whereas one output event may be input to multiple function blocks. Check that all input events are triggered or you know why they are not needed. An input event may come from multiple function blocks but be careful with multiple event inputs, that they are not sent for same reasons and cause events to grow exponentially within the <i>Application</i>.</p>
 
-<p>The data needs to have inputs as well, either a constant value of its type or a connector input from a data output variable of another Function Block. For constant values type the desired value next to the data input variable. Valid time values are <span class="code">T#&#60;time length&#62;&#60;time measurement&#62;</span>, like 5 seconds as <span class="code">T#5s</span>, <span class="code">T#5000ms</span>.</p>
+<p>The data needs to have inputs as well, either a constant value of its type or a connector from a data input to a output variable of another function block. For constant values type the desired value next to the data input variable. Valid time values are <span class="code">T#&#60;time length&#62;&#60;time unit&#62;</span>, like 5 seconds as <span class="code">T#5s</span>, <span class="code">T#5000ms</span>.</p>
 
 <img src="./img/flipFlop_result.png" alt="FlipFlop Application"/>
 
 
 
 <a name="mapping"></a>
-<h2>Map the <i>Application</i></h2>
-<p>Now we need to map our <i>Application</i> on the <i>Device</i>, we created earlier, to run it. Right click and choose <i>Hardware Mapping/FORTE/FlipFlop</i>. To show that the Function Block is mapped to a Device the Function Block will become colored in the same color the <i>Device</i> was given in <i>System</i> Configuration and a green diamond will appear at top left of the Function Block.</p> 
+<h2>Map the Application</h2>
+<p>Now we need to map our <i>Application</i> on the <i>Device</i>, we created earlier, to run it. Right click and choose <i>Hardware Mapping > FORTE > FlipFlop</i>. To show that the function block is mapped to a Device the function block will be colored in the same color as the <i>Device</i> in the <i>System Configuration</i> and a green diamond will appear at top left of the function block.</p> 
 <img src="./img/flipFlop_mapping.png" alt="Map the Application"/>
 
-<p>Switch to the <i>Resource</i> within the System Manager by double clicking on the desired <i>Resource</i>. <i>Resources</i> are found in your <i>System</i> under the <i>System Configuration</i> node within any of the displayed <i>Devices</i>. Within the editor you now see your <i>Application</i> mapped to this <i>Resource</i>. Connect the <span class="code">COLD</span> and the <span class="code">WARM</span> start events of the <span class="code">E_RESTART</span> Function Block to your <i>Application's</i> first event, which is <span class="code">E_CYCLE.START</span> event. The <span class="code">COLD</span> event is send on system startup whereas the <span class="code">WARM</span> starts from last known state and values.</p>
+<p>Switch to the <i>Resource</i> within the <i>System Configuration</i> by double clicking on the desired <i>Resource</i>. <i>Resources</i> are found in your <i>System</i> under the <i>System Configuration</i> node within any of the displayed <i>Devices</i>. Within the editor you now see your <i>Application</i> mapped to this <i>Resource</i>. Connect the <span class="code">COLD</span> and the <span class="code">WARM</span> start events of the <span class="code">E_RESTART</span> function block to your <i>Application's</i> first event, which is <span class="code">E_CYCLE.START</span> event. The <span class="code">COLD</span> event is send on system startup, whereas the <span class="code">WARM</span> event is end on system reset and starts from last known state and values.</p>
 <img src="./img/flipFlop_mapped.png" alt="Application mapped on the Resource"/>
 
 
 <a name="deploy"></a>
-<h2>Deploy the <i>System</i></h2>
-<p>Switch to the Deployment perspective <img src="../overview/img/deploymentButton.png" alt="Deployment Perspective Button"/> and check your <i>System's</i> name. Launch FORTE either by the <i>Launch FORTE</i> button or by manually starting the <span class="code">forte.exe</span>. If you use the <i>Launch FORTE</i> button consider that you have to set the <a href="">properties</a>. Within the Deployment Console you see the download commands and within the console you will the outputs of FORTE.</p> 
+<h2>Deploy the System</h2>
+<p>Switch to the Deployment perspective <img src="../overview/img/deploymentButton.png" alt="Deployment Perspective Button"/> and check your <i>System's</i> name. Launch FORTE either by the <i>Launch FORTE</i> button or by manually starting the <span class="code">forte.exe</span>. If you use the <i>Launch FORTE</i> button consider that you have to set the <a href="">properties</a>. Within the Deployment Console you see the download commands and within the console you will see the outputs of FORTE. Press <i>Download</i> button for deployment.</p> 
 <img src="./img/flipFlop_deploy.png" alt="Deploy the Flip-Flop application"/>
 
 
 <a name="monitor"></a>
-<h2>Monitor the <i>Application</i></h2>
+<h2>Monitor the Application</h2>
 <h3>Start Monitoring</h3>
-<p>To observe the outputs of your Application you can use 4DIAC's Monitoring functionality. Right click on the System and choose <i>Monitor System</i>. Then switch to the 4DIAC Debug perspective <img src="../overview/img/debugButton.png" alt="Debug Perspective Button"/> and open the corresponding <i>Application</i>.</p>
+<p>To observe the outputs of your <i>Application</i> you can use 4DIAC's monitoring functionality. Right click on the <i>System</i> and choose <i>Monitor System</i>. Then switch to the 4DIAC Debug perspective <img src="../overview/img/debugButton.png" alt="Debug Perspective Button"/> and open the corresponding <i>Application</i>.</p>
 
 <h4>Watch Variable Changes</h4>
-<p>Within this view, it is possible to select the elements which should be monitored. This is done with a right mouse click on the specified element. Either the whole Function Block by <i>Watch All</i>, or a single interface element of a Function Block by <i>Watch</i> can be selected. After that the current values of the selected elements will be displayed in the engineering environment next to the interface elements as depicted as well as in the <i>Watches</i> view.</p>
+<p>Within this view, it is possible to select the elements which should be monitored. This is done with a right mouse click on the specified element. Either the whole function block by <i>Watch All</i>, or a single interface element of a function block by <i>Watch</i> can be selected. After that the current values of the selected elements will be displayed in the engineering environment next to the interface elements as depicted as well as in the <i>Watches</i> view.</p>
 <img src="./img/flipFlop_watch.png" alt="Watch variable changes during Monitoring"/>
 
 <h4>Trigger Event Inputs</h4>
@@ -131,7 +132,7 @@ Prerequisites:
 <img src="./img/flipFlop_triggerEvent.png" alt="Trigger an event during Monitoring"/>
 
 <h4>Force Values</h4>
-<p>The values of a Function Block input data can be overwritten by the force command form the context menu. The next time, the function block is executed the forced value will be used. The old value will be visualized in brackets.</p>
+<p>The values of a function block input data can be overwritten by the force command form the context menu. The next time, the function block is executed the forced value will be used. The old value will be visualized in brackets.</p>
 
 </body>
 </html>

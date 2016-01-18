@@ -12,17 +12,17 @@
 
 <h2>Get C/C++ support for Eclipse</h2>
 <ul type="square">
-	<li>If you do not already use Eclipse to run 4DIAC-IDE from source, download the <a href="http://www.eclipse.org/downloads/">Eclipse for C/C++ Developers</a> and unzip the file to a suitable location (e.g., c:\eclipse). Otherwise you can integrate C/C++ functionality into your existing Eclipse by <i>Help/Install New Software</i>, choosing your Eclipse version and checking <i>Programming Languages/C/C++ Development Tools</i>.
+	<li>If you do not already use Eclipse to run 4DIAC-IDE from source, download the <a href="http://www.eclipse.org/downloads/">Eclipse for C/C++ Developers</a> and unzip the file to a suitable location (e.g., c:\eclipse). Otherwise you can integrate C/C++ functionality into your existing Eclipse by <b>Help &rarr; Install New Software</b>, choosing your Eclipse version and checking <i>Programming Languages/C/C++ Development Tools</i>.
 		<br><img src="./img/eclipseInstallNewSoftware.png" alt="Install new software in Eclipse"/>
 	</li>
 	<li>Run <span class="code">eclipse.exe</span></li>
-	<li>Choose a workspace directory, this will be the directory where your C/C++ project will be located (see below on how to add FORTE) Please avoid any spaces in its names. Otherwise you might get problems when compiling FORTE.</li>
+	<li>Choose a workspace directory, this will be the directory where your C/C++ project will be located (see below on how to add FORTE). It is recommended to set the workspace folder one level above the entire source code folder. Please avoid any spaces in its names. Otherwise you might get problems when compiling FORTE.</li>
 </ul>
 
 <h2>Compile FORTE with Eclipse</h2>
 <ul type="square">
-	<li>Import FORTE by <i>File/Import/General/Existing Project into Workspace</i>. Select the directory where you have extracted your FORTE . If you have extracted FORTE into your Eclipse workspace select this directory (e.g., c:\eclipse\workspace). If you have extracted FORTE into a different directory check copy into workspace (otherwise the source will stay at the original place).</li>
-	<li>Start Make Targets View by <i>Window/Show View/Make Targets</i> if it is not open already and choose the makefile: <span class="code">bin/posix/all</span> to generate the object files for the existing Function Blocks and compile FORTE to a executable application. 
+	<li>Import FORTE by <b>File &rarr; Import &rarr; General &rarr; Existing Project into Workspace</b>. In case your Workspace is one folder above your source code folder you only have to click on <i>Browse...</i> and <i>OK</i> afterwards to import FORTE into Eclipse. Otherwise select the directory where you have extracted your FORTE and check <i>copy into workspace</i> (otherwise the source will stay at the original place).</li>
+	<li>Start Make Targets View by <b>Window &rarr; Show View &rarr; Make Targets</b> if it is not open already and choose the makefile: <span class="code">bin/posix/all</span> to generate the object files for the existing Function Blocks and compile FORTE to a executable application. 
 	<br><img src="./img/eclipseMakefiles.png" alt="Eclipse C++ with FORTE imported and marked makefiles"></li>
 </ul>
 
