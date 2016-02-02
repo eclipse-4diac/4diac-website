@@ -74,7 +74,7 @@ display: block;
 
 nav ul li ul{
 position: absolute;
-width: 255px;
+padding: 5px;
 display: none;
 }
 
@@ -82,6 +82,7 @@ nav ul li ul li{
 background-color:rgba(221,221,221,1.0);
 display: block; 
 text-align: left;
+border-radius:5px;
 }
 
 nav ul li ul li a{
