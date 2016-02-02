@@ -88,6 +88,7 @@
 				<topic label="Building FORTE for Lego Mindstorms" href="html/tutorials/mindstorms.html"/>
 				<topic label="Building FORTE for ICnova" href="html/tutorials/icnova.html"/>
 				<topic label="Building FORTE on Raspberry Pi" href="html/tutorials/raspi.html"/>
+				<topic label="Building FORTE for Raspberry-SPS" href="html/tutorials/raspberrySPS.html"/>
 				<topic label="Building FORTE for Wago" href="html/tutorials/wago.html"/>
 			</topic>
 		</topic>
@@ -97,6 +98,7 @@
 		<topic label="FBDK/IP" href="html/communication/fbdkip.html"/>
 		<topic label="OPC DA" href="html/communication/opc.html"/>
 		<topic label="Modbus" href="html/communication/modbus.html"/>
+		<topic label="MQTT with Eclipse Paho" href="html/communication/mqttPaho.html"/>
 	</topic>  
 		
 	<topic label="Frequently Asked Questions"> 
