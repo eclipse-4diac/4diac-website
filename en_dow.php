@@ -64,15 +64,19 @@
 	<span><b>4DIAC-IDE:</b>
 	<br><i>development environment with FORTE executables</i>
 	<ul id="nav">
-		<li class="expand">4DIAC-IDE_1.8.x
+		<li class="expand">4DIAC-IDE 1.8.x
 			<ul>
-				<li class="expand">4DIAC-IDE_1.8M1
+				<li class="expand">4DIAC-IDE 1.8M1 64-bit:<br/>requires Java 8 64-bit
 					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_win32.x86_64.zip/download">windows_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_win32.x86.zip/download">windows_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_cocoa.x86_64.zip/download">os_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_win32.x86_64.zip/download">Windows 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_cocoa.x86_64.zip/download">OS X</a></li>
+					</ul>
+				</li>
+				<li class="expand">4DIAC-IDE 1.8M1 32-bit:<br/>requires Java 8 32-bit
+					<ul>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_win32.x86.zip/download">Windows 32-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -375,7 +379,7 @@
 	<span><b>4DIAC-RTE:</b>
 	<br><i>source of FORTE compilable for your system</i>
 	<ul id="nav">
-		<li class="expand">FORTE_1.8.x
+		<li class="expand">FORTE 1.8.x
 		<ul>
 		<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_M1.zip/download">FORTE_1.8M1</a></li>
 		</ul>
