@@ -2,7 +2,7 @@
 	FORTE Code Repository is Public Again
 </div>
 <div class="news">
-	<span class="left"><?php $date="2015-02-11 21:30"; echo $date;?></span> 
+	<span class="left"><?php $date="2016-02-11 21:30"; echo $date;?></span> 
 	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
 </div>
 
