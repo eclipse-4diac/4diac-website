@@ -1,6 +1,6 @@
 <p>In addition to the 1.8 issues in  
 <a href="https://bugs.eclipse.org/bugs/buglist.cgi?list_id=13937131&product=4DIAC&query_format=advanced&target_milestone=1.8&target_milestone=1.8%20M1&target_milestone=1.8%20M2">
-bugzilla</a> as well as the old ones on <a href="https://sourceforge.net/p/fordiac/issues/milestone/1.8/">Sourceforge</a> the following features are planned:</p>
+Bugzilla</a> as well as the old ones on <a href="https://sourceforge.net/p/fordiac/issues/milestone/1.8/">Sourceforge</a> the following features are planned:</p>
 
 
 <p><b><u>Milestone 1:</u></b>
