@@ -87,6 +87,7 @@
 					<li>Overview on 4DIAC-IDE</li>
 					<li>Guided small control application example: Blinken Lights</li>
 					<li>The example project with the final application can be downloaded from here (use import existing project into workspace to get it into 4DIAC-IDE)</li>
+				</ul>
 			</td>
 		</tr>
 	</table>
