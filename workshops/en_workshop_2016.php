@@ -3,6 +3,58 @@
 
 <p><b>Workshop Date: 6th September 2016</b></p>
 
+<p>Contributions to this workshop may address, but are not limited to:</p>	
+<ul>
+	<li>Application of 4DIAC in automation projects across different industrial domains (manufacturing, robotics, logistics, energy, etc.</li>
+	<li>Extension to the runtime environment (FORTE) and engineering tool (4DIAC-IDE)</li>
+	<li>Integration to new communication technologies/protocols and/or porting to new hardware platforms</li>
+	<li>Interoperability with different automation systems</li>
+	<li>proposals for extending 4DIAC</li>
+</ul>
+
+<h2>Hands on Session</h2>
+<p>The workshop will be accompanied by a half day hands on session where the 4DIAC team will be available for detailed discussions and explanation on using 4DIAC as well as on implementation details. The following topics are covered:</p>
+<ul>
+	<li>Short Introduction to IEC 61499 and 4DIAC</li>
+	<li>Guided small control application example</li>
+	<li>Implementing a control application for a simulated press application</li>
+	<li>Extending 4DIAC-IDE</li>
+	<li>Overview on FORTE</li>
+	<li>Real-time execution and communication architecture</li>
+	<li>etc.</li>
+</ul>
+
+<h2>Hardware Exhibition</h2>
+<p>An exhibition and interoperability panel of control devices executing IEC 61499 (based on 4DIAC) will be held in the first time during the workshop of 2016.</p>
+
+<h2>Workshop Presentation Formats and Submission of Proposals</h2>
+<p>Authors may consider the following three presentation formats:</p>
+<ul>
+	<li>Workshop presentation: Oral presentation on the above topics.</li>
+	<li>Workshop poster on the above topics: Intended for 4DIAC users not able to attend the workshop.</li>
+	<li>Exhibition of control devices running 4DIAC.</li>
+</ul>
+<p>Presentations and posters will be published on the 4DIAC webpage after the event. For proposing a presentation, poster or hardware please contact <a href="mailto:alois.zoitl@gmx.at">Alois Zoitl, alois.zoitl@gmx.at<a/></p>
+
+<h2>Registration Information</h2>
+<p>Registration details for the workshop can be found <a href="http://www.etfa2016.org">here</a>.</p>
+
+<h2>Authors Schedule</h2>
+<table width="800px">
+	<tr>
+		<td><i>Deadline for submission of workshop contribution proposals:</i></td>
+		<td>April 30, 2016</td>
+	</tr>
+	<tr>
+		<td><i>Notification of acceptance of workshop contributions:</i></td>
+		<td>May 15, 2016</td>
+	</tr>	<tr>
+		<td><i>Deadline for submission of final workshop presentations and posters:</i></td>
+		<td>July 30, 2016</td>
+	</tr>
+</table>
+
+
 <h2>Workshop Organizers</h2>
 <ul>
 	<li>Alois Zoitl, fortiss GmbH, Germany</li>
@@ -10,6 +62,7 @@
 	<li>Thomas Strasser, AIT Austrian Institute of Technology, Austria</li>
 </ul>
 
+<!--
 <h2>Hardware Exhibition</h2>
 <ul>
 	<li>Lego Mindstorms EV3</li>
@@ -93,3 +146,5 @@
 		</td>
 	</tr>
 </table>
+-->
+
