@@ -29,14 +29,14 @@ towards achieving that vision with the installation of more than 35,000 NOJA Pow
 </p>
 
 <p>
-As NOJAs market penetration has increased, the company has faced these problems:
+As NOJAs market penetration has increased, the company has faced these problems:   
+</p>
 <ul>
     <li>How to accommodate customisation requests from customers without incurring the QA overheads of
         touching their base code?</li>
     <li>How to provide a pathway toward distributed power system automation applications in the 
         &quot;Smart Grid&quot;  of the future?</li>
-</ul>   
-</p>
+</ul>
 
 <p>
 Part of the long-term solution is <a href="https://en.wikipedia.org/wiki/IEC_61850">IEC 61850</a>, 
@@ -54,8 +54,9 @@ into its controllers, and integrating the <a href="en_ide.php">4DIAC-IDE</a> int
 
 <p>
 Initially, NOJA have taken several steps to control the risk of &quot;unconstrained&quot; customisation:
+</p>
 <ul>
-    <li>Their implementation does not currently support the creation of new function block types –
+    <li>Their implementation does not currently support the creation of new function block types -
         it includes only the standard types, plus a few NOJA specials for accessing their real-time
         database</li>
     <li>But note that composite FBs can be created and used</li>
@@ -64,7 +65,6 @@ Initially, NOJA have taken several steps to control the risk of &quot;unconstrai
     <li>NOJA provides a special group of dynamically typed variables which can be mapped to and from the
         contents of IEC 61850 GOOSE messages</li>
 </ul>
-</p>
 
 <p>
 Thanks to ongoing improvements in the 4DIAC suite, the solution looks great, works well, and provides excellent developer support.
@@ -74,12 +74,12 @@ Thanks to ongoing improvements in the 4DIAC suite, the solution looks great, wor
 One of NOJA's customers is already using this new capability in a stand-alone application, and NOJA 
 is actively seeking development collaborators, especially Power Utilities, for distributed applications.
 NOJA has plans to improve the offering including:
+</p>
 <ul>
     <li>Performance (speed) improvement</li>
     <li>Co-opting one or more secure communication profiles, since secure communication over public
         infrastructure is an absolute must for power system applications.</li>
 </ul>
-</p>
 
 <table><tr>
 	<td >

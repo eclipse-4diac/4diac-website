@@ -52,6 +52,8 @@
 	<a class="componentbutton" href="en_sys.php">SYS
 		<img height="100px" src="img/sys-button.png" alt="Example systems showing the features of IEC 61499 and 4DIAC"/>
 		<span>Example<br>Projects</span></a>
+
+	<h4>IEC 61499 defines a domain specific modeling language for developing distributed industrial control solutions.<br>IEC 61499 extends IEC 61131-1 by improving the encapsulation of software components for increased re-usability,<br>providing a vendor independent format, and simplifying support for controller to controller communication.<br>Its distribution functionality and the inherent support for dynamic reconfiguration provide<br>the required infrastructure for Industrie 4.0 and industrial IoT applications.</h4>
 </section>
 
 <?php include 'footer.php';?>
