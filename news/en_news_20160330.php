@@ -21,12 +21,12 @@ In order to reduce the impact for our users we came up with the following plan:<
 <p>With this plan we hope to perform the long needed modernization and clean-up of the 4DIAC-IDE. 
 Furthermore this should allow us to fix some long known bugs (e.g., better subapplication support). 
 In order that you can watch the required work and our progress we:</p>
-<<ul>
+<ul>
   <li> Created a <a href="https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=490601">bug list on 4DIAC’s bugzilla</a></li>
   <li> Made the <a href="https://sourceforge.net/p/fordiac/fordiac-ide">4DIAC-IDE mercurial</a> repository publicly visibly again</li>
 </ul>
 
-<p>If you have special needs and wishes for this migration please let us know in the <a href="https://dev.eclipse.org/mailman/listinfo/4diac-dev">4DIAC mailing list</a>).</p> 
+<p>If you have special needs and wishes for this migration please let us know in the <a href="https://dev.eclipse.org/mailman/listinfo/4diac-dev">4DIAC mailing list</a>.</p> 
 
 
 <?php include 'greeting.html';?>
