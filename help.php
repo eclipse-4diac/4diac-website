@@ -11,7 +11,7 @@
 <section class="content">
 	<h1>Documentation</h1>
 
-<iframe id="documentationToc" src="documentation/toc.php"></iframe>
+<iframe id="documentationToc" src="doctoc.php"></iframe>
 <iframe id="documentationContent" name="Content" src="documentation/html/overview/overview.html"  ></iframe>
 
 </section>
