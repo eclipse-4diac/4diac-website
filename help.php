@@ -15,6 +15,7 @@
 
 <body>
 <?php include 'header.html'; ?>
+<section class="content">
 <table>
 <tr>
 <td style="vertical-align: top;">
@@ -24,6 +25,7 @@
 </td>
 </tr>
 </table>
+</section>
 
 <?php include 'footer.php'; ?>
 
