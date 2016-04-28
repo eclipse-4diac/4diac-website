@@ -12,9 +12,11 @@
 	<h1>Documentation</h1>
 </section>
 
-<?php chdir('documentation'); 
+<?php 
 
- echo getcwd() . "\n";
+chdir('documentation'); 
+
+echo getcwd() . "\n";
 
 echo '<frameset cols="30%,70%">';
 echo '<frame src="toc.php" name="Toc">';
@@ -25,7 +27,9 @@ echo '    <body><a href="toc.php">4DIAC help index</a></body>';
 echo '  </noframes>';
 echo '</frameset>';
 
- php chdir('../'); 
- include 'footer.php';?>
+chdir('../'); 
+include 'footer.php';
+?>
+
 </body>
 </html> 
