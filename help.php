@@ -12,24 +12,10 @@
 	<h1>Documentation</h1>
 </section>
 
-<?php 
+<iframe id="Toc" src="documentation/toc.php" ></iframe>
+<iframe id="Content" src="documentation/html/overview/overview.html" ></iframe>
 
-chdir('documentation'); 
-
-echo getcwd() . "\n";
-
-echo '<frameset cols="30%,70%">';
-echo '<frame src="documentation/toc.php" name="Toc">';
-echo '<frame src="" name="Content">';
-	
-echo '<noframes>';
-echo '    <body><a href="documentation/toc.php">4DIAC help index</a></body>'; 
-echo '  </noframes>';
-echo '</frameset>';
-
-chdir('../'); 
-include 'footer.php';
-?>
+<?php include 'footer.php'; ?>
 
 </body>
 </html> 
