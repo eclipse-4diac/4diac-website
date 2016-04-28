@@ -376,7 +376,7 @@ border-right: 1px solid gray;
 #documentationContent {
 position: relative;
 top: 0;
-left: 0;
+left: -350px;
 border: 0;
 height: 100%;
 width: 800px;
