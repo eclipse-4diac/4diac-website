@@ -9,8 +9,8 @@
 <xsl:template match="toc">
        <html>
 <head>
-<base target="Content"/>
-<link rel="stylesheet" type="text/css" href="format.css">
+	<base target="Content"/>
+	<link rel="stylesheet" type="text/css" href="format.css"/>
       </head>
       <body>
          <ul>
