@@ -10,10 +10,11 @@
 <?php include 'header.html'; ?>
 <section class="content">
 	<h1>Documentation</h1>
-</section>
 
-<iframe id="Toc" src="documentation/toc.php" ></iframe>
-<iframe id="Content" src="documentation/html/overview/overview.html" ></iframe>
+<iframe id="documentationToc" src="documentation/toc.php" ></iframe>
+<iframe id="documentationContent" name="Content" src="documentation/html/overview/overview.html"  ></iframe>
+
+</section>
 
 <?php include 'footer.php'; ?>
 
