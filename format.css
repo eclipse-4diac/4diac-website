@@ -366,7 +366,7 @@ border:1.9mm solid rgba(153,166,195,1.0);
 #documentationToc {
 position: relative;
 top: 0;
-left: -350px;
+left: 0;
 height: 100%;
 width: 350px;
 border: 0;
@@ -376,7 +376,7 @@ border-right: 1px solid gray;
 #documentationContent {
 position: relative;
 top: 0;
-left: -350px;
+left: 0;
 border: 0;
 height: 100%;
 width: 800px;
