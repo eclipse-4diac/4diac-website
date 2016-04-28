@@ -368,9 +368,9 @@ position: relative;
 background-color:rgba(153,166,195,1.0);
 color:white;
 top: 0;
-left: 0;
+left: -180px;
 height: 100%;
-width: 350px;
+width: 360px;
 border: 0;
 border-right: 5px solid white; 
 }
@@ -381,7 +381,7 @@ border-right: 5px solid white;
 #documentationContent {
 position: relative;
 top: 0;
-left: 0;
+left: -180px;
 border: 0;
 height: 100%;
 width: 800px;
