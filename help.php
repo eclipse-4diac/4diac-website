@@ -18,9 +18,15 @@
 <section class="content">
 	<h1>Documentation</h1>
 
+<table>
+<tr>
+<td style="vertical-align: top;">
 <iframe id="documentationToc" src="documentation/toc.php" scrolling="no" onload="resizeIframe(this)"></iframe>
-<iframe id="documentationContent" name="Content" src="documentation/html/overview/overview.html" ></iframe>
-
+</td><td style="vertical-align: top;">
+<iframe id="documentationContent" name="Content" src="documentation/html/overview/overview.html" onload="resizeIframe(this)"></iframe>
+</td>
+</tr>
+</table>
 </section>
 
 <?php include 'footer.php'; ?>
