@@ -7,18 +7,20 @@
 </head>
 
 <body>
-<?php include 'header.html';?>
+<?php include 'header.html'; ?>
 
+<?php chdir('documentation'); ?>
 
 <frameset cols="30%,70%">
-  <frame src="documentation/toc.php" name="Toc">
+  <frame src="toc.php" name="Toc">
   <frame src="" name="Content">
 	
   <noframes>
-    <body><a href="documentation/toc.php">4DIAC help index</a></body> 
+    <body><a href="toc.php">4DIAC help index</a></body> 
   </noframes>
 </frameset>
 
+<?php chdir('../'); ?>
 <?php include 'footer.php';?>
 </body>
 </html> 
