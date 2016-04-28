@@ -202,7 +202,7 @@ width:100%;
 text-align:center;
 }
 
-section.content div, section.content div.newsheader{
+section.content div, section.content div.newsheader documentationContent{
 min-width:800px;
 display:table;
 margin-left:auto;
@@ -373,13 +373,12 @@ border: 0;
 border-right: 1px solid gray; 
 }
 
-documentationContent {
+#documentationContent {
 position: relative;
 top: 0;
 left: 0;
 border: 0;
-height: 100%;
-width: 100%; }
+}
 
 
 /****************** header / footer ******************/
