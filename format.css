@@ -373,6 +373,7 @@ height: 100%;
 width: 360px;
 border: 0;
 border-right: 5px solid white; 
+overflow-x:hidden;
 }
 
 #documentationToc a:link, #documentationToc a:visited{
@@ -385,6 +386,7 @@ left: -180px;
 border: 0;
 height: 100%;
 width: 800px;
+overflow-x:hidden;
 }
 
 

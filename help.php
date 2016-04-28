@@ -21,7 +21,7 @@
 <table>
 <tr>
 <td style="vertical-align: top;">
-<iframe id="documentationToc" src="documentation/toc.php" scrolling="no" onload="resizeIframe(this)"></iframe>
+<iframe id="documentationToc" src="documentation/toc.php" onload="resizeIframe(this)"></iframe>
 </td><td style="vertical-align: top;">
 <iframe id="documentationContent" name="Content" src="documentation/html/overview/overview.html" onload="resizeIframe(this)"></iframe>
 </td>
