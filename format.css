@@ -361,7 +361,28 @@ color:white;
 border:1.9mm solid rgba(153,166,195,1.0);
 }
 
-/* ***************** header / footer ***************** */
+/****************** documentation ******************/
+
+#documentationToc {
+position: relative;
+top: 0;
+left: 0;
+height: 100%;
+width: 200px;
+border: 0;
+border-right: 1px solid gray; 
+}
+
+documentationContent {
+position: relative;
+top: 0;
+left: 0;
+border: 0;
+height: 100%;
+width: 100%; }
+
+
+/****************** header / footer ******************/
 header{
 margin:0px;
 width:100%;
