@@ -4,12 +4,20 @@
    version="1.1"
    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:output method="html" indent="no" encoding="ISO-8859-1"/>
+<xsl:output method="text" indent="no" encoding="ISO-8859-1"/>
 
 <xsl:template match="toc">
+       <html>
+<head>
+<base target="Content"/>
+<link rel="stylesheet" type="text/css" href="format.css">
+      </head>
+      <body>
          <ul>
             <xsl:apply-templates />
          </ul>
+      </body>
+   </html>
 </xsl:template>
 
 <xsl:template match="topic">
