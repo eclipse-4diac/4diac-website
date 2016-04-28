@@ -10,6 +10,7 @@
    <html>
 <head>
 <base target="Content"/>
+<link rel="stylesheet" type="text/css" href="format.css">
       </head>
       <body>
          <h1><xsl:value-of select="@label" /></h1>
