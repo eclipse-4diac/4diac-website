@@ -19,7 +19,7 @@
 	<h1>Documentation</h1>
 
 <iframe id="documentationToc" src="documentation/toc.php" scrolling="no" onload="resizeIframe(this)"></iframe>
-<iframe id="documentationContent" name="Content" src="documentation/html/overview/overview.html"  onload="resizeIframe(this)"></iframe>
+<iframe id="documentationContent" name="Content" src="documentation/html/overview/overview.html" ></iframe>
 
 </section>
 

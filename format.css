@@ -364,7 +364,7 @@ border:1.9mm solid rgba(153,166,195,1.0);
 /****************** documentation ******************/
 
 #documentationToc {
-position: absolute;
+position: relative;
 background-color:rgba(153,166,195,1.0);
 color:white;
 top: 0;
@@ -379,7 +379,7 @@ border-right: 5px solid white;
 }
 
 #documentationContent {
-position: absolute;
+position: relative;
 top: 0;
 left: 0;
 border: 0;
