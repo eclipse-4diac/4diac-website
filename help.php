@@ -8,6 +8,9 @@
 
 <body>
 <?php include 'header.html'; ?>
+<section class="content">
+	<h1>Documentation</h1>
+</section>
 
 <?php chdir('documentation'); 
 
