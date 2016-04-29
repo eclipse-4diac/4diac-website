@@ -1,0 +1,37 @@
+
+body {
+	color:white;
+	background-color:rgba(153,166,195,1.0);
+}
+
+span a {
+	text-decoration:none;
+	color: black;
+}
+
+span ul, span li {
+	list-style: none;
+	padding-left:5px;
+}
+
+#nav li {
+	padding: 2px 2px 2px 15px;
+	cursor: default;
+	background: no-repeat scroll 0px 10px transparent;
+	background-size: 12px 12px;
+	background-position: 0px 5px; 
+}
+
+#nav ul {
+	display: none;
+}
+
+#nav li.expand {
+	background: url(../img/arrow-down.png) no-repeat scroll 0px 10px transparent;
+	background-position: 0px 8px; 
+}
+
+.expanded {
+	background: url(../img/arrow-up.png) no-repeat scroll 0px 10px transparent !important;
+	background-position: 0px 8px; 
+}

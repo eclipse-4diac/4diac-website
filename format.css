@@ -365,21 +365,28 @@ border:1.9mm solid rgba(153,166,195,1.0);
 
 #documentationToc {
 position: relative;
+background-color:rgba(153,166,195,1.0);
+color:white;
 top: 0;
-left: 0;
+left: -180px;
 height: 100%;
-width: 350px;
+width: 360px;
 border: 0;
-border-right: 1px solid gray; 
+border-right: 5px solid white; 
+overflow-x:hidden;
+}
+
+#documentationToc a:link, #documentationToc a:visited{
 }
 
 #documentationContent {
 position: relative;
 top: 0;
-left: 0;
+left: -180px;
 border: 0;
 height: 100%;
 width: 800px;
+overflow-x:hidden;
 }
 
 
