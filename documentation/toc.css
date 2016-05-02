@@ -4,6 +4,7 @@ body {
 	background-color:rgba(153,166,195,1.0);
 	padding:0px; 
 	margin:0px;
+	margin-left:5px;
 	height:100%;
 	width:100%;
 	font-family: 'Open Sans', sans-serif;
@@ -21,6 +22,7 @@ ul {
 	list-style-type: none;
 	padding:0px;
 	margin:0px;
+	margin-right: 5px;
 }
 
 ul > li {
