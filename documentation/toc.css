@@ -2,6 +2,48 @@
 body {
 	color:white;
 	background-color:rgba(153,166,195,1.0);
+	padding:0px; 
+	margin:0px;
+	height:100%;
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+li > ul{
+	list-style-type: square;
+	padding-left:20px;
+	padding-top:0px;
+	font-weight:normal;
+}
+
+ul {
+	font-weight:bold;
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+}
+
+ul > li {
+	padding-top:5px;
+}
+
+li > ul > li {
+	padding:0px;
+}
+
+
+li a:link, li a:visited{
+color:white;
+}
+
+li a:hover, li a:active{	
+color:rgba(1,34,105,1.0);
+background-color:rgba(153,166,195,1.0);
+border-radius:5px;
+}
+
+li a{
+text-decoration: none;
 }
 
 span a {
