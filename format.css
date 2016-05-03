@@ -272,6 +272,15 @@ text-align:justify;
 font-size:12pt;	
 }
 
+h2, h2 a{
+color:orange;
+text-align:left;
+font-size:14pt;
+font-weight:bold;
+margin: auto;
+}
+
+
 section.content > p, section.content table, section.content tr, section.content ul, section.content h2, section.content h3{
 color:rgba(1,34,105,1.0);
 padding-top:5px;
@@ -280,13 +289,6 @@ max-width:800px;
 margin: auto;
 text-align:justify;
 font-size:12pt;
-}
-
-h2, h2 a{
-color:orange;
-text-align:left;
-font-size:14pt;
-font-weight:bold;
 }
 
 h3{

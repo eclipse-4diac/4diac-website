@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="toc.css"/>
       </head>
       <body>
-         <h1><xsl:value-of select="@label" /></h1>
+<!--  <h1><xsl:value-of select="@label" /></h1> -->         
          <ul>
             <xsl:apply-templates />
          </ul>

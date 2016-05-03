@@ -16,6 +16,7 @@
 <body>
 <?php include 'header.html'; ?>
 <section class="content">
+<h1>Documentation</h1>
 <table>
 <tr>
 <td style="vertical-align: top;">
