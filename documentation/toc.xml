@@ -98,6 +98,7 @@
 		<topic label="FBDK/IP" href="html/communication/fbdkip.html"/>
 		<topic label="OPC DA" href="html/communication/opc.html"/>
 		<topic label="Modbus" href="html/communication/modbus.html"/>
+		<topic label="openPOWERLINK" href="html/communication/openPOWERLINK.html"/>
 		<topic label="MQTT with Eclipse Paho" href="html/communication/mqttPaho.html"/>
 	</topic>  
 		
