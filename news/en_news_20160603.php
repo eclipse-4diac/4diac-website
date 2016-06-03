@@ -1,5 +1,5 @@
 <div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	Feature Freeze for Release 1.8
+	First Release Candidate for Upcoming 4diac 1.8 Release
 </div>
 <div class="news">
 	<span class="left"><?php $date="2016-06-03 17:20"; echo $date;?></span> 
