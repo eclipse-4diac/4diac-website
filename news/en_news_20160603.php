@@ -29,10 +29,3 @@ The name of the branch is 1.8.x.
 Looking forward to your feedback. </p>
 <?php include 'greeting.html';?>
 
-
-
-
-
-
-Cheers, 
-The 4DIAC Team
