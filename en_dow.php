@@ -2,9 +2,9 @@
 <head>
 <?php include 'head.php';?>
 <script type="text/javascript" src="jquery-1.6.2.js"></script>
-<title>4DIAC-Downloads</title>
-<meta name="description" content="Getting the latest version of the different components of 4DIAC."> 
-<meta name="keywords" content="4DIAC-IDE, FORTE, source code">
+<title>4diac-Downloads</title>
+<meta name="description" content="Getting the latest version of the different components of 4diac."> 
+<meta name="keywords" content="4diac-IDE, FORTE, source code">
 
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -32,7 +32,7 @@
 		cursor: default;
 		background: url(img/fordiac16.png) no-repeat scroll 0px 10px transparent;
 		background-size: 12px 12px;
-		background-position: 0px 5px; 
+		background-position: 0px 8px; 
 	}
 
 	#nav ul {
@@ -61,22 +61,35 @@
 <section class="content">
 	<h1>Downloads</h1>
 <div>
-	<span><b>4DIAC-IDE:</b>
+	<span><b>4diac-IDE:</b>
 	<br><i>development environment with FORTE executables</i>
 	<ul id="nav">
-		<li class="expand">4DIAC-IDE 1.8.x
+		<li class="expand">4diac-IDE 1.8.x
 			<ul>
-				<li class="expand">4DIAC-IDE 1.8M1 64-bit:<br/>requires Java 8 64-bit
+				<li class="expand">4diac-IDE 1.8RC1 64-bit:<br/>requires Java 8 64-bit
 					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_win32.x86_64.zip/download">Windows 64-bit</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_cocoa.x86_64.zip/download">OS X</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC1_win32.x86_64.zip/download">Windows 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC1_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC1_cocoa.x86_64.zip/download">OS X</a></li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE 1.8M1 32-bit:<br/>requires Java 8 32-bit
+				<li class="expand">4diac-IDE 1.8RC1 32-bit:<br/>requires Java 8 32-bit
 					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_win32.x86.zip/download">Windows 32-bit</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8M1/4DIAC-IDE_1.8M1_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC1_win32.x86.zip/download">Windows 32-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC1_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
+					</ul>
+				</li>
+				<li class="expand">4diac-IDE 1.8M1 64-bit:<br/>requires Java 8 64-bit
+					<ul>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8M1/4diac-IDE_1.8M1_win32.x86_64.zip/download">Windows 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8M1/4diac-IDE_1.8M1_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8M1/4diac-IDE_1.8M1_cocoa.x86_64.zip/download">OS X</a></li>
+					</ul>
+				</li>
+				<li class="expand">4diac-IDE 1.8M1 32-bit:<br/>requires Java 8 32-bit
+					<ul>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8M1/4diac-IDE_1.8M1_win32.x86.zip/download">Windows 32-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8M1/4diac-IDE_1.8M1_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -84,290 +97,290 @@
 		
 		<li class="expand">old releases
 			<ul>
-<li class="expand">4DIAC-IDE_1.7.x
+<li class="expand">4diac-IDE_1.7.x
 			<ul>
-				<li class="expand">4DIAC-IDE_1.7.3
+				<li class="expand">4diac-IDE_1.7.3
 					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_win32.x86_64.zip/download">windows_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_win32.x86.zip/download">windows_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.3/4DIAC-IDE_1.7.3_cocoa.x86_64.zip/download">os_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.3/4diac-IDE_1.7.3_win32.x86_64.zip/download">windows_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.3/4diac-IDE_1.7.3_win32.x86.zip/download">windows_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.3/4diac-IDE_1.7.3_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.3/4diac-IDE_1.7.3_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.3/4diac-IDE_1.7.3_cocoa.x86_64.zip/download">os_x86_64</a></li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_1.7.2
+				<li class="expand">4diac-IDE_1.7.2
 					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.2/4DIAC-IDE_1.7.2_win32.x86_64.zip/download">windows_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.2/4DIAC-IDE_1.7.2_win32.x86.zip/download">windows_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.2/4DIAC-IDE_1.7.2_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.2/4DIAC-IDE_1.7.2_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.2/4DIAC-IDE_1.7.2_cocoa.x86_64.zip/download">os_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.2/4diac-IDE_1.7.2_win32.x86_64.zip/download">windows_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.2/4diac-IDE_1.7.2_win32.x86.zip/download">windows_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.2/4diac-IDE_1.7.2_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.2/4diac-IDE_1.7.2_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.2/4diac-IDE_1.7.2_cocoa.x86_64.zip/download">os_x86_64</a></li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_1.7.1
+				<li class="expand">4diac-IDE_1.7.1
 					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.1/4DIAC-IDE_1.7.1_win32.x86_64.zip/download">windows_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.1/4DIAC-IDE_1.7.1_win32.x86.zip/download">windows_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.1/4DIAC-IDE_1.7.1_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.1/4DIAC-IDE_1.7.1_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.1/4DIAC-IDE_1.7.1_cocoa.x86_64.zip/download">os_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.1/4diac-IDE_1.7.1_win32.x86_64.zip/download">windows_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.1/4diac-IDE_1.7.1_win32.x86.zip/download">windows_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.1/4diac-IDE_1.7.1_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.1/4diac-IDE_1.7.1_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.1/4diac-IDE_1.7.1_cocoa.x86_64.zip/download">os_x86_64</a></li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_1.7.0
+				<li class="expand">4diac-IDE_1.7.0
 					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.0/4DIAC-IDE_1.7.0_win32.x86_64.zip/download">windows_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.0/4DIAC-IDE_1.7.0_win32.x86.zip/download">windows_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.0/4DIAC-IDE_1.7.0_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.0/4DIAC-IDE_1.7.0_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.7.0/4DIAC-IDE_1.7.0_cocoa.x86_64.zip/download">os_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.0/4diac-IDE_1.7.0_win32.x86_64.zip/download">windows_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.0/4diac-IDE_1.7.0_win32.x86.zip/download">windows_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.0/4diac-IDE_1.7.0_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.0/4diac-IDE_1.7.0_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.7.0/4diac-IDE_1.7.0_cocoa.x86_64.zip/download">os_x86_64</a></li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_1.7.0_RC2
+				<li class="expand">4diac-IDE_1.7.0_RC2
 					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC2/4DIAC-IDE_1.7.0_RC2_win32.x86_64.zip/download">windows_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC2/4DIAC-IDE_1.7.0_RC2_win32.x86.zip/download">windows_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC2/4DIAC-IDE_1.7.0_RC2_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC2/4DIAC-IDE_1.7.0_RC2_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC2/4DIAC-IDE_1.7.0_RC2_cocoa.x86_64.zip/download">os_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC2/4diac-IDE_1.7.0_RC2_win32.x86_64.zip/download">windows_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC2/4diac-IDE_1.7.0_RC2_win32.x86.zip/download">windows_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC2/4diac-IDE_1.7.0_RC2_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC2/4diac-IDE_1.7.0_RC2_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC2/4diac-IDE_1.7.0_RC2_cocoa.x86_64.zip/download">os_x86_64</a></li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_1.7.0_RC1
+				<li class="expand">4diac-IDE_1.7.0_RC1
 					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC1/4DIAC-IDE_1.7.0_RC1_win32.x86_64.zip/download">windows_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC1/4DIAC-IDE_1.7.0_RC1_win32.x86.zip/download">windows_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC1/4DIAC-IDE_1.7.0_RC1_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC1/4DIAC-IDE_1.7.0_RC1_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.7.0_RC1/4DIAC-IDE_1.7.0_RC1_cocoa.x86_64.zip/download">os_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC1/4diac-IDE_1.7.0_RC1_win32.x86_64.zip/download">windows_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC1/4diac-IDE_1.7.0_RC1_win32.x86.zip/download">windows_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC1/4diac-IDE_1.7.0_RC1_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC1/4diac-IDE_1.7.0_RC1_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.7.0_RC1/4diac-IDE_1.7.0_RC1_cocoa.x86_64.zip/download">os_x86_64</a></li>
 					</ul>
 				</li>
 			</ul>
 		</li>
-				<li class="expand">4DIAC-IDE_1.6.x
+				<li class="expand">4diac-IDE_1.6.x
 					<ul>
-						<li class="expand">4DIAC-IDE_1.6.2
+						<li class="expand">4diac-IDE_1.6.2
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE_1.6.2/4DIAC-IDE_1.6.2_win32.x86_64.zip/download">windows_x86_64</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE_1.6.2/4DIAC-IDE_1.6.2_win32.x86.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE_1.6.2/4DIAC-IDE_1.6.2_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE_1.6.2/4DIAC-IDE_1.6.2_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE_1.6.2/4DIAC-IDE_1.6.2_cocoa.x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE_1.6.2/4diac-IDE_1.6.2_win32.x86_64.zip/download">windows_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE_1.6.2/4diac-IDE_1.6.2_win32.x86.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE_1.6.2/4diac-IDE_1.6.2_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE_1.6.2/4diac-IDE_1.6.2_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE_1.6.2/4diac-IDE_1.6.2_cocoa.x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.6.1
+						<li class="expand">4diac-IDE_1.6.1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.1/4DIAC-IDE_1.6.1_win32.x86_64.zip/download">windows_x86_64</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.1/4DIAC-IDE_1.6.1_win32.x86.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.1/4DIAC-IDE_1.6.1_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.1/4DIAC-IDE_1.6.1_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.1/4DIAC-IDE_1.6.1_cocoa.x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.1/4diac-IDE_1.6.1_win32.x86_64.zip/download">windows_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.1/4diac-IDE_1.6.1_win32.x86.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.1/4diac-IDE_1.6.1_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.1/4diac-IDE_1.6.1_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.1/4diac-IDE_1.6.1_cocoa.x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.6.0
+						<li class="expand">4diac-IDE_1.6.0
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0/4DIAC-IDE_1.6.0_win32.x86_64.zip/download">windows_x86_64</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0/4DIAC-IDE_1.6.0_win32.x86.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0/4DIAC-IDE_1.6.0_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0/4DIAC-IDE_1.6.0_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0/4DIAC-IDE_1.6.0_cocoa.x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0/4diac-IDE_1.6.0_win32.x86_64.zip/download">windows_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0/4diac-IDE_1.6.0_win32.x86.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0/4diac-IDE_1.6.0_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0/4diac-IDE_1.6.0_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0/4diac-IDE_1.6.0_cocoa.x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.6.0_RC2
+						<li class="expand">4diac-IDE_1.6.0_RC2
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0_RC2/4DIAC-IDE_1.6.0_RC2_win32.x86_64.zip/download">windows_x86_64</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0_RC2/4DIAC-IDE_1.6.0_RC2_win32.x86.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0_RC2/4DIAC-IDE_1.6.0_RC2_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0_RC2/4DIAC-IDE_1.6.0_RC2_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0_RC2/4DIAC-IDE_1.6.0_RC2_cocoa.x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0_RC2/4diac-IDE_1.6.0_RC2_win32.x86_64.zip/download">windows_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0_RC2/4diac-IDE_1.6.0_RC2_win32.x86.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0_RC2/4diac-IDE_1.6.0_RC2_linux.gtk.x86_64.tar.gz/download">linux_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0_RC2/4diac-IDE_1.6.0_RC2_linux.gtk.x86.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0_RC2/4diac-IDE_1.6.0_RC2_cocoa.x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.6.0_RC1
+						<li class="expand">4diac-IDE_1.6.0_RC1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0_RC1/4DIAC-IDE_1.6.0_RC1.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0_RC1/4DIAC-IDE_1.6.0_RC1_Linux.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.6.0_RC1/4DIAC-IDE_1.6.0_RC1_MacOS_x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0_RC1/4diac-IDE_1.6.0_RC1.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0_RC1/4diac-IDE_1.6.0_RC1_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.6.0_RC1/4diac-IDE_1.6.0_RC1_MacOS_x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>					
-				<li class="expand">4DIAC-IDE_1.5.x
+				<li class="expand">4diac-IDE_1.5.x
 					<ul>
-						<li class="expand">4DIAC-IDE_1.5.3
+						<li class="expand">4diac-IDE_1.5.3
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.3/4DIAC-IDE_1.5.3.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.3/4DIAC-IDE_1.5.3_Linux.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.3/4DIAC-IDE_1.5.3_MacOS_x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.3/4diac-IDE_1.5.3.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.3/4diac-IDE_1.5.3_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.3/4diac-IDE_1.5.3_MacOS_x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.5.2
+						<li class="expand">4diac-IDE_1.5.2
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.2/4DIAC-IDE_1.5.2.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.2/4DIAC-IDE_1.5.2_Linux.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.2/4DIAC-IDE_1.5.2_MacOS_x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.2/4diac-IDE_1.5.2.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.2/4diac-IDE_1.5.2_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.2/4diac-IDE_1.5.2_MacOS_x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.5.1
+						<li class="expand">4diac-IDE_1.5.1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.1/4DIAC-IDE_1.5.1.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.1/4DIAC-IDE_1.5.1_Linux.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.1/4DIAC-IDE_1.5.1_MacOS_x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.1/4diac-IDE_1.5.1.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.1/4diac-IDE_1.5.1_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.1/4diac-IDE_1.5.1_MacOS_x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.5.0
+						<li class="expand">4diac-IDE_1.5.0
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.0/4DIAC-IDE_1.5.0.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.0/4DIAC-IDE_1.5.0_Linux.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.0/4DIAC-IDE_1.5.0_MacOS_x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.0/4diac-IDE_1.5.0.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.0/4diac-IDE_1.5.0_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.0/4diac-IDE_1.5.0_MacOS_x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.5.0_RC2
+						<li class="expand">4diac-IDE_1.5.0_RC2
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.0%20RC2/4DIAC-IDE_1.5.0_RC2.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.0%20RC2/4DIAC-IDE_1.5.0_RC2_Linux.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.0%20RC2/4DIAC-IDE_1.5.0_RC2_MacOS_x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.0%20RC2/4diac-IDE_1.5.0_RC2.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.0%20RC2/4diac-IDE_1.5.0_RC2_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.0%20RC2/4diac-IDE_1.5.0_RC2_MacOS_x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.5.0_RC1
+						<li class="expand">4diac-IDE_1.5.0_RC1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.0%20RC1/4DIAC-IDE_1.5.0_RC1.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.0%20RC1/4DIAC-IDE_1.5.0_RC1_Linux.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.5.0%20RC1/4DIAC-IDE_1.5.0_RC1_MacOS_x86_64.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.0%20RC1/4diac-IDE_1.5.0_RC1.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.0%20RC1/4diac-IDE_1.5.0_RC1_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.5.0%20RC1/4diac-IDE_1.5.0_RC1_MacOS_x86_64.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_1.4.x
+				<li class="expand">4diac-IDE_1.4.x
 					<ul>
-						<li class="expand">4DIAC-IDE_1.4.2
+						<li class="expand">4diac-IDE_1.4.2
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.4.2/4DIAC-IDE_1.4.2.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.4.2/4DIAC-IDE_1.4.2_Linux.tar.gz/download">linux_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.4.2/4DIAC-IDE_1.4.2_MacOS_x86_64_experimental.zip/download">os_x86_64</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.4.2/4diac-IDE_1.4.2.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.4.2/4diac-IDE_1.4.2_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.4.2/4diac-IDE_1.4.2_MacOS_x86_64_experimental.zip/download">os_x86_64</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.4.1
+						<li class="expand">4diac-IDE_1.4.1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.4.1/4DIAC-IDE_1.4.1.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.4.1/4DIAC-IDE_1.4.1_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.4.1/4diac-IDE_1.4.1.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.4.1/4diac-IDE_1.4.1_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.4.0
+						<li class="expand">4diac-IDE_1.4.0
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.4.0/4DIAC-IDE_1.4.0.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.4.0/4DIAC-IDE_1.4.0_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.4.0/4diac-IDE_1.4.0.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.4.0/4diac-IDE_1.4.0_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_1.3.x
+				<li class="expand">4diac-IDE_1.3.x
 					<ul>
-						<li class="expand">4DIAC-IDE_1.3.3
+						<li class="expand">4diac-IDE_1.3.3
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3.3/4DIAC-IDE_1.3.3.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3.3/4DIAC-IDE_1.3.3_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3.3/4diac-IDE_1.3.3.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3.3/4diac-IDE_1.3.3_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.3.2
+						<li class="expand">4diac-IDE_1.3.2
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3.2/4DIAC-IDE_1.3.2.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3.2/4DIAC-IDE_1.3.2.zip/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3.2/4diac-IDE_1.3.2.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3.2/4diac-IDE_1.3.2.zip/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.3.1
+						<li class="expand">4diac-IDE_1.3.1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3.1/4DIAC-IDE_1.3.1.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3.1/4DIAC-IDE_1.3.1_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3.1/4diac-IDE_1.3.1.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3.1/4diac-IDE_1.3.1_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.3.0
+						<li class="expand">4diac-IDE_1.3.0
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3/4DIAC-IDE_1.3.0.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3/4DIAC-IDE_1.3.0_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3/4diac-IDE_1.3.0.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3/4diac-IDE_1.3.0_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.3.0_RC1
+						<li class="expand">4diac-IDE_1.3.0_RC1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3_RC1/4DIAC-IDE_1.3.0_RC1.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.3_RC1/4DIAC-IDE_1.3.0_RC1_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3_RC1/4diac-IDE_1.3.0_RC1.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.3_RC1/4diac-IDE_1.3.0_RC1_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_1.2.x
+				<li class="expand">4diac-IDE_1.2.x
 					<ul>
-						<li class="expand">4DIAC-IDE_1.2.1
+						<li class="expand">4diac-IDE_1.2.1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.2.1/4DIAC-IDE_1.2.1.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.2.1/4DIAC-IDE_1.2.1_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.2.1/4diac-IDE_1.2.1.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.2.1/4diac-IDE_1.2.1_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.2.0
+						<li class="expand">4diac-IDE_1.2.0
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.2/4DIAC-IDE_1.2.0.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.2/4DIAC-IDE_1.2.0_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.2/4diac-IDE_1.2.0.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.2/4diac-IDE_1.2.0_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_1.x
+				<li class="expand">4diac-IDE_1.x
 					<ul>
-						<li class="expand">4DIAC-IDE_1.1.3
+						<li class="expand">4diac-IDE_1.1.3
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.1.3/4DIAC-IDE_1.1.3.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.1.3/4DIAC-IDE_1.1.3_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.1.3/4diac-IDE_1.1.3.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.1.3/4diac-IDE_1.1.3_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.1.2
+						<li class="expand">4diac-IDE_1.1.2
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.1.2/4DIAC-IDE_1.1.2.zip/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.1.2/4DIAC-IDE_1.1.2_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.1.2/4diac-IDE_1.1.2.zip/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.1.2/4diac-IDE_1.1.2_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.1.1
+						<li class="expand">4diac-IDE_1.1.1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.1.1/4DIAC-IDE_1.1.1.exe/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.1.1/4DIAC-IDE_1.1.1_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.1.1/4diac-IDE_1.1.1.exe/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.1.1/4diac-IDE_1.1.1_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.1.0
+						<li class="expand">4diac-IDE_1.1.0
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.1/4DIAC-IDE_1.1.0.exe/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.1/4DIAC-IDE_1.1.0_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.1/4diac-IDE_1.1.0.exe/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.1/4diac-IDE_1.1.0_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_1.0
+						<li class="expand">4diac-IDE_1.0
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.0/4DIAC-IDE_1.0.exe/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%201.0/4DIAC-IDE_1.0_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.0/4diac-IDE_1.0.exe/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%201.0/4diac-IDE_1.0_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
 					</ul>
 				</li>
-				<li class="expand">4DIAC-IDE_0.x
+				<li class="expand">4diac-IDE_0.x
 					<ul>
-						<li class="expand">4DIAC-IDE_0.3
+						<li class="expand">4diac-IDE_0.3
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%200.3/4DIAC-IDE_0.3.exe/download">windows_x86</a></li>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%200.3/4DIAC-IDE_0.3_Linux.tar.gz/download">linux_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%200.3/4diac-IDE_0.3.exe/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%200.3/4diac-IDE_0.3_Linux.tar.gz/download">linux_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_0.3.RC2
+						<li class="expand">4diac-IDE_0.3.RC2
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%200.3%20RC2/4DIAC-IDE_0.3RC2_2008-12-23.exe/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%200.3%20RC2/4diac-IDE_0.3RC2_2008-12-23.exe/download">windows_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_0.3_RC1
+						<li class="expand">4diac-IDE_0.3_RC1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%200.3%20RC1/4DIAC-IDE_0.3RC1_2008-11-21.exe/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%200.3%20RC1/4diac-IDE_0.3RC1_2008-11-21.exe/download">windows_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_0.2
+						<li class="expand">4diac-IDE_0.2
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%200.2/4DIAC-IDE_0.2.exe/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%200.2/4diac-IDE_0.2.exe/download">windows_x86</a></li>
 							</ul>
 						</li>
-						<li class="expand">4DIAC-IDE_0.1
+						<li class="expand">4diac-IDE_0.1
 							<ul>
-								<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/OldReleases/4DIAC-IDE%200.1/4DIAC-IDE_0.1.exe/download">windows_x86</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/OldReleases/4diac-IDE%200.1/4diac-IDE_0.1.exe/download">windows_x86</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -376,27 +389,27 @@
 		</li>
 	</ul></span>
 	
-	<span><b>4DIAC-RTE:</b>
+	<span style="border-left: solid rgba(255,149,14,1.0);"><b>4diac-RTE:</b>
 	<br><i>source of FORTE compilable for your system</i>
 	<ul id="nav">
 		<li class="expand">FORTE 1.8.x
 		<ul>
+		<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC1.zip/download">FORTE_1.8RC1</a></li>
 		<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_M1.zip/download">FORTE_1.8M1</a></li>
 		</ul>
-		</li>
-				
-				<li class="expand">old releases
-					<ul>
-						<li class="expand">FORTE_1.7.x
-					<ul>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.3.zip/download">FORTE_1.7.3</a></li>						
-						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.2.zip/download">FORTE_1.7.2</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.1.zip/download">FORTE_1.7.1</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.0.zip/download">FORTE_1.7.0</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7_RC2.zip/download">FORTE_1.7_RC2</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7_RC1.zip/download">FORTE_1.7_RC1</a></li>
-					</ul>
-				</li>
+		</li>	
+						<li class="expand">old releases
+							<ul>
+								<li class="expand">FORTE_1.7.x
+							<ul>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.3.zip/download">FORTE_1.7.3</a></li>						
+								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.2.zip/download">FORTE_1.7.2</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.1.zip/download">FORTE_1.7.1</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.0.zip/download">FORTE_1.7.0</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7_RC2.zip/download">FORTE_1.7_RC2</a></li>
+								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7_RC1.zip/download">FORTE_1.7_RC1</a></li>
+							</ul>
+						</li>
 						<li class="expand">FORTE_1.6.x
 							<ul>
 								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/OldReleases/FORTE%201.6/FORTE_1.6.2.zip/download">FORTE_1.6.2</a></li>
@@ -458,6 +471,15 @@
 					</ul>
 				</li>
 			</ul>
+	</span>
+<span style="border-left: solid rgba(255,149,14,1.0);"><b>4diac-repositories:</b>
+	<br><i>sources for IDE, library and systems</i>	
+	<ul id="nav">
+		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-ide">IDE source</li>
+		<li><a href="http://hg.code.sf.net/p/fordiac/forte">RTE source</li>
+		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-lib">library</a></li>
+		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-systems">systems (example projects)</a></li>
+	</ul>
 	</span>
 </div>
 
