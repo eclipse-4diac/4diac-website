@@ -476,7 +476,7 @@
 	<br><i>sources for IDE, library and systems</i>	
 	<ul id="nav">
 		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-ide">IDE source</li>
-		<li><a href="http://hg.code.sf.net/p/fordiac/forte">RTE source</li>
+		<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">RTE source</li>
 		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-lib">library</a></li>
 		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-systems">systems (example projects)</a></li>
 	</ul>
