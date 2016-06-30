@@ -8,7 +8,7 @@
 <h2>Workshop Program:</h2>
 <table class="program">
 	<tr>
-		<th rowspan="10">
+		<th rowspan="11">
 			Morning <br>Session
 		</th>
 		<td>
