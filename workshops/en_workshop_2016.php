@@ -1,8 +1,9 @@
 <h1>7<sup>th</sup> 4DIAC Users' Workshop</h1>
 <p>The 7<sup>th</sup> Users' Workshop is held in conjunction with the 21th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Berlin.</p>
 
-<p><b>Workshop Date: 6th September 2016</b></p>
+<p><b>Workshop Date:</b> 6th September 2016</p>
 
+<p><b>Registration Information:</b> Registration details for the workshop can be found <a href="http://etfa2016.org/registration">at the ETFA web-page</a>.</p>
 
 
 <h2>Workshop Program:</h2>
@@ -107,6 +108,5 @@ will be held in the first time during the workshop of 2016.</p>
 	<li>Thomas Strasser, AIT Austrian Institute of Technology, Austria</li>
 </ul>
 
-<h2>Registration Information</h2>
-<p>Registration details for the workshop can be found <a href="http://www.etfa2016.org">here</a>.</p>
+
 
