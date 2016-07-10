@@ -1,59 +1,105 @@
 <h1>7<sup>th</sup> 4DIAC Users' Workshop</h1>
 <p>The 7<sup>th</sup> Users' Workshop is held in conjunction with the 21th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Berlin.</p>
 
-<p><b>Workshop Date: 6th September 2016</b></p>
+<p><b>Workshop Date:</b> 6th September 2016</p>
 
-<p>Contributions to this workshop may address, but are not limited to:</p>	
-<ul>
-	<li>Application of 4DIAC in automation projects across different industrial domains (manufacturing, robotics, logistics, energy, etc.</li>
-	<li>Extension to the runtime environment (FORTE) and engineering tool (4DIAC-IDE)</li>
-	<li>Integration to new communication technologies/protocols and/or porting to new hardware platforms</li>
-	<li>Interoperability with different automation systems</li>
-	<li>proposals for extending 4DIAC</li>
-</ul>
+<p><b>Registration Information:</b> Registration details for the workshop can be found <a href="http://etfa2016.org/registration">at the ETFA web-page</a>.</p>
 
-<h2>Hands on Session</h2>
-<p>The workshop will be accompanied by a half day hands on session where the 4DIAC team will be available for detailed discussions and explanation on using 4DIAC as well as on implementation details. The following topics are covered:</p>
-<ul>
-	<li>Short Introduction to IEC 61499 and 4DIAC</li>
-	<li>Guided small control application example</li>
-	<li>Implementing a control application for a simulated press application</li>
-	<li>Extending 4DIAC-IDE</li>
-	<li>Overview on FORTE</li>
-	<li>Real-time execution and communication architecture</li>
-	<li>etc.</li>
-</ul>
 
-<h2>Hardware Exhibition</h2>
-<p>An exhibition and interoperability panel of control devices executing IEC 61499 (based on 4DIAC) will be held in the first time during the workshop of 2016.</p>
-
-<h2>Workshop Presentation Formats and Submission of Proposals</h2>
-<p>Authors may consider the following three presentation formats:</p>
-<ul>
-	<li>Workshop presentation: Oral presentation on the above topics.</li>
-	<li>Workshop poster on the above topics: Intended for 4DIAC users not able to attend the workshop.</li>
-	<li>Exhibition of control devices running 4DIAC.</li>
-</ul>
-<p>Presentations and posters will be published on the 4DIAC webpage after the event. For proposing a presentation, poster or hardware please contact <a href="mailto:alois.zoitl@gmx.at">Alois Zoitl, alois.zoitl@gmx.at<a/></p>
-
-<h2>Registration Information</h2>
-<p>Registration details for the workshop can be found <a href="http://www.etfa2016.org">here</a>.</p>
-
-<h2>Authors Schedule</h2>
-<table width="800px">
+<h2>Workshop Program:</h2>
+<table class="program">
 	<tr>
-		<td><i>Deadline for submission of workshop contribution proposals:</i></td>
-		<td>April 30, 2016</td>
+		<th rowspan="11">
+			Morning <br>Session
+		</th>
+		<td>
+			Welcome and Recent Activities of the 4DIAC Open Source Initiative
+			<br><i>A. Zoitl (fortiss GmbH)</i>
+		</td>
 	</tr>
 	<tr>
-		<td><i>Notification of acceptance of workshop contributions:</i></td>
-		<td>May 15, 2016</td>
-	</tr>	<tr>
-		<td><i>Deadline for submission of final workshop presentations and posters:</i></td>
-		<td>July 30, 2016</td>
+		<td>
+			Agent-based local energy market control using 4DIAC
+			<br><i>C. Moyo, T. Strasser (AIT)</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Smart Grid Automation with IEC IEC 61499
+			<br><i>Sergio Tanus (NOJA Power)</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Human-Robot Collaborative Assembly: 4DIAC as base Technology in the SYMBIO-TIC project
+			<br><i>Gerhard Ebenhofer (Profactor GmbH)</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Integrating FORTE with ROS
+			<br><i>Waldemar Eisenmenger (fortiss GmbH)</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Architecture for services composition in OPC UA Servers using FORTE
+			<br><i>Federico Perez(Escuela Superior de Ingenieros)</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Integration of OPC UA with 4DIAC
+			<br><i>Petr Kadera (Czech Institute of Informatics, Robotics, and Cybernetics Czech Technical University in Prague)</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Cert-4FUN, Towards a Certified Compiler backend for IEC 61499
+			<br><i>Per Lindgren (Lulea University of Technology)</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Towards using Formal Behavioral Specifications in IEC 61499 for Remote Software Health Monitoring
+			<br><i>Jan Olaf Blech RMIT</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Modelling Apps for Open CPS with 4DIAC
+			<br><i>Martin Jobst (fortiss GmbH)</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			4DIAC in Teaching - Lessons from Lab Exercises and Student Projects
+			<br><i>Martin Melik Merkumians (Vienna University of Technology)</i>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			Afternoon Session
+		</th>
+		<td>
+			<h3>Hands on Session</h3>
+			The afternoon is reserved for hands on and discussions where the 4DIAC team will be available for detailed discussions and explanation on using 4DIAC as well as on implementation details. The following topics can be covered but suggestions from the audience is welcome:
+			<ul>
+				<li>Short Introduction to IEC 61499 and 4DIAC</li> 
+				<li>Guided small control application example </li>
+				<li>Implementing a control application for a simulated press application</li> 
+				<li>Extending 4DIAC-IDE </li>
+				<li>Overview on FORTE </li>
+				<li>Real-time execution and communication architecture</li>
+			</ul> 
+		</td>
 	</tr>
 </table>
 
+
+<h2>Hardware Exhibition</h2>
+<p>An exhibition and interoperability panel of control devices executing IEC 61499 (based on 4DIAC) 
+will be held in the first time during the workshop of 2016.</p>
 
 <h2>Workshop Organizers</h2>
 <ul>
@@ -62,89 +108,5 @@
 	<li>Thomas Strasser, AIT Austrian Institute of Technology, Austria</li>
 </ul>
 
-<!--
-<h2>Hardware Exhibition</h2>
-<ul>
-	<li>Lego Mindstorms EV3</li>
-	<li>Raspberry SPS</li>
-	<li>Wago PFC 200</li>
-	<li>NOJA Power <a href="http://www.nojapower.com.au/product/recloser.html">OSM Recloser</a></li>
-	<li>further asked</li>
-</ul>
 
-<h2>Preliminary Workshop Program:</h2>
-<table class="program">
-	<tr>
-		<th rowspan="10">
-			Morning <br>Session
-		</th>
-		<td>
-			<a href="uws/2016/.pdf">Welcome and Recent Activities of the 4DIAC Open Source Initiative</a>
-			<br><i>A. Zoitl (fortiss GmbH)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="uws/2016/.pdf" >T.B.D. (IEC 61499 for Remote Software Health Monitoring)</a>
-			<br><i>Jan Olaf Blech (Royal Melbourne Institute of Technology)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="uws/2016/.pdf">Modeling Apps for CPS with 4DIAC</a>
-			<br><i>Martin Jobst (fortiss GmbH)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="uws/2016/.pdf" >T.B.D. (IEC 61499 in the Smart Grid Domain)</a>
-			<br><i>Thomas Strasser (AIT Austrian Institute of Technology, Energy Department, Electric Energy Systems)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="uws/2016/.pdf" >Smart Grid Automation with IEC 61499</a>
-			<br><i>Sergio Tanus (NOJA Power)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="uws/2016/.pdf" >Human-Robot Collaborative Assembly: 4DIAC as base Technology in the SYMBIO-TIC project</a>
-			<br><i>Gerhard Ebenhofer (PROFACTOR GmbH)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="uws/2016/.pdf">Integrating FORTE with ROS</a>
-			<br><i>Waldemar Eisenmenger (fortiss GmbH)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="uws/2016/.pdf">Integration of OPC UA with 4DIAC</a>
-			<br><i>Petr Kadera (Czech Institute of Informatics, Robotics, and Cybernetics of Czech Technical University in Prague)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="uws/2016/.pdf">Architecture of service composition in OPC UA servers using FORTE</a>
-			<br><i>Federico Perez (Escuela Superior de Ingenieros)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Open Discussion
-		</td>
-	</tr>
-	
-	<tr>
-		<th>
-			Afternoon Session
-		</th>
-		<td>
-			Hands on Session
-		</td>
-	</tr>
-</table>
--->
 

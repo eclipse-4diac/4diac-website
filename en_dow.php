@@ -66,6 +66,19 @@
 	<ul id="nav">
 		<li class="expand">4diac-IDE 1.8.x
 			<ul>
+				<li class="expand">4diac-IDE 1.8RC2 64-bit:<br/>requires Java 8 64-bit
+					<ul>
+						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8RC2/4DIAC-IDE_1.8RC2_win32.x86_64.zip/download">Windows 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC2_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC2_cocoa.x86_64.zip/download">OS X</a></li>
+					</ul>
+				</li>
+				<li class="expand">4diac-IDE 1.8RC2 32-bit:<br/>requires Java 8 32-bit
+					<ul>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC2_win32.x86.zip/download">Windows 32-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC2_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
+					</ul>
+				</li>			
 				<li class="expand">4diac-IDE 1.8RC1 64-bit:<br/>requires Java 8 64-bit
 					<ul>
 						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8RC1/4diac-IDE_1.8RC1_win32.x86_64.zip/download">Windows 64-bit</a></li>
@@ -394,6 +407,7 @@
 	<ul id="nav">
 		<li class="expand">FORTE 1.8.x
 		<ul>
+		<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC2.zip/download">FORTE_1.8RC2</a></li>
 		<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC1.zip/download">FORTE_1.8RC1</a></li>
 		<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_M1.zip/download">FORTE_1.8M1</a></li>
 		</ul>
@@ -476,7 +490,7 @@
 	<br><i>sources for IDE, library and systems</i>	
 	<ul id="nav">
 		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-ide">IDE source</li>
-		<li><a href="http://hg.code.sf.net/p/fordiac/forte">RTE source</li>
+		<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">RTE source</li>
 		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-lib">library</a></li>
 		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-systems">systems (example projects)</a></li>
 	</ul>
