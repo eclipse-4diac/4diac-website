@@ -379,15 +379,12 @@ border:1.9mm solid rgba(153,166,195,1.0);
 /****************** documentation ******************/
 section.documentation{
 height:100%;
-width:100%;
-display:table;
+width:95%;
+display:flex;
 text-align:left;
-overflow:hidden;
-white-space:nowrap;
 }
 
-.toc{
-display:table-cell;
+iframe.toc{
 height:inherit;
 width:25%;
 border:0px;
@@ -397,12 +394,12 @@ background-color:rgba(153,166,195,1.0);
 box-sizing:border-box;
 overflow-x:hidden;
 }
-.doc{
-display:table-cell;
+iframe.doc{
 vertical-align:top;
 height:inherit;
 width:70%;
-margin:0px 25px 25px 5px;
+margin-left:5px;
+margin-bottom:25px;
 padding:0px;
 border:0px;
 box-sizing:border-box;
