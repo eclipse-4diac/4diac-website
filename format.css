@@ -198,8 +198,9 @@ color:orange;
 padding-top:0px;
 padding-bottom:25px;
 margin-bottom:25px;
-width:100%;
 text-align:center;
+height:auto;
+width:100%;
 }
 
 section.content div, section.content div.newsheader {
@@ -376,33 +377,33 @@ border:1.9mm solid rgba(153,166,195,1.0);
 }
 
 /****************** documentation ******************/
+section.documentation{
+height:100%;
+width:100%;
+display:table;
+text-align:left;
+}
 
-#documentationToc {
-position: relative;
+.toc{
+display:table-cell;
+height:inherit;
+width:25%;
+border:0px;
+padding:0px;
+margin:0px;
 background-color:rgba(153,166,195,1.0);
-color:white;
-top: 0;
-left: -180px;
-height: 100%;
-width: 360px;
-border: 0;
-border-right: 5px solid white; 
 overflow-x:hidden;
 }
-
-#documentationToc a:link, #documentationToc a:visited{
-}
-
-#documentationContent {
-position: relative;
-top: 0;
-left: -180px;
-border: 0;
-height: 100%;
-width: 800px;
+.doc{
+display:table-cell;
+vertical-align:top;
+height:inherit;
+width:70%;
+margin:0px;
+padding:0px 25px 25px 5px;
+border:0px;
 overflow-x:hidden;
 }
-
 
 /****************** header / footer ******************/
 header{
@@ -467,6 +468,7 @@ font-weight:bold;
 footer span.right img{
 margin-left:5px;
 margin-right:5px;
+margin-top:5px;
 height:24px;
 }
 
@@ -477,4 +479,11 @@ height:30px;
 width:30px;
 background-color:rgba(1,34,105,1.0); 
 border-radius:5px;
+}
+
+footer span.links{
+margin-left:5px;
+margin-right:20px;
+font-size:8pt;
+vertical-align:middle;
 }

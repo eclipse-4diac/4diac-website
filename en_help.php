@@ -10,22 +10,17 @@
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
 </script>
-
 </head>
 
 <body>
 <?php include 'header.html'; ?>
+
 <section class="content">
 <h1>Documentation</h1>
-<table>
-<tr>
-<td style="vertical-align: top;">
-<iframe id="documentationToc" src="documentation/toc.php" onload="resizeIframe(this)"></iframe>
-</td><td style="vertical-align: top;">
-<iframe id="documentationContent" name="Content" src="documentation/html/overview/overview.html" onload="resizeIframe(this)"></iframe>
-</td>
-</tr>
-</table>
+<section class="documentation">
+<iframe class="toc" src="documentation/toc.php" onload="resizeIframe(this)"></iframe>
+<iframe class="doc" name="Content" src="documentation/html/overview/overview.html" onload="resizeIframe(this)"></iframe>
+</section>
 </section>
 
 <?php include 'footer.php'; ?>
