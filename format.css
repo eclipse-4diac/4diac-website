@@ -392,6 +392,7 @@ border:0px;
 padding:0px;
 margin:0px;
 background-color:rgba(153,166,195,1.0);
+box-sizing:border-box;
 overflow-x:hidden;
 }
 .doc{
@@ -402,6 +403,7 @@ width:70%;
 margin:0px;
 padding:0px 25px 25px 5px;
 border:0px;
+box-sizing:border-box;
 overflow-x:hidden;
 }
 
