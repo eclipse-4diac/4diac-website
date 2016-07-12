@@ -122,15 +122,13 @@
 	</topic>  
 	
 	<topic label="Development Documentation"> 
-		<topic href="html/development/ide.html" label="4DIAC-IDE">
+		<topic label="4DIAC-IDE">
 			<topic label="Building and Running 4DIAC-IDE from Source" href="html/development/installFromSource.html"> 
 				<topic label="Get the Development Environment" href="html/development/installFromSource.html#devEnvironment"/>
 				<topic label="Check out the 4DIAC-IDE Repository" href="html/development/installFromSource.html#checkOutRepos"/>
 				<topic label="Import Plug-Ins into Workspace" href="html/development/installFromSource.html#importPlugins"/>
-    <topic href="html/development/installFromSource.html#targetPlatform" label="Set Target Platform">
-    </topic>
-				<topic href="html/development/installFromSource.html#devMode" label="Run in Development Mode">
-    </topic>
+    			<topic href="html/development/installFromSource.html#targetPlatform" label="Set Target Platform"/>
+				<topic href="html/development/installFromSource.html#devMode" label="Run in Development Mode"/>
 				<topic label="Get 4DIAC-LIB" href="html/development/installFromSource.html#getLib"/>
 				<topic label="Building your own IDE" href="html/development/installFromSource.html#buildingIDE"/>
 			</topic>
@@ -138,13 +136,12 @@
 			<topic label="Headless-Build of 4DIAC-IDE" href="html/development/headlessBuild.html" />
 			<topic label="Automatic testing with Jubula" href="html/development/ide_jubula.html"/>
 		</topic>
-		<topic label="FORTE" href="html/development/forte.html">
+		<topic label="FORTE">
 			<topic label="Structured Datatypes" href="html/development/forte_struct.html"/>
 			<topic label="Monitoring" href="html/development/forte_monitoring.html"/>
 			<topic label="Communication Architecture" href="html/development/forte_communicationArchitecture.html"/>
 			<topic label="External Event SIFB" href="html/development/externalEvent_example.html"/>
-   <topic href="html/development/forte_codequality.html" label="Assuring FORTE Code Quality">
-   </topic>
+   			<topic href="html/development/forte_codequality.html" label="Assuring FORTE Code Quality"/>
 		</topic>
 	</topic>  
 </toc>

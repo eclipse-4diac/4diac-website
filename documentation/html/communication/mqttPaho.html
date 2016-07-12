@@ -9,7 +9,7 @@
 
 <body>
 <h1>MQTT with Eclipse Paho</h1>
-<p>This section will show you how to make applications communicate using <a href="http://www.eclipse.org/paho/">MQTT Paho</a>. 4DIAC uses a layered communication architecture. For MQTT Paho a middle layer has been realized, connecting MQTT Paho and the FBDK layer. <b>Please consider that with the current implementation it is not possible to connect to more than one MQTT Paho broker on one Device</b>. For the installation please follow the next steps:</p>
+<p>This section will show you how to make applications communicate using <a href="http://www.eclipse.org/paho/">MQTT Paho</a>. 4DIAC uses a layered communication architecture. For MQTT Paho a bottom layer has been realized, connecting MQTT Paho and the FBDK layer. <b>Please consider that with the current implementation it is not possible to connect to more than one MQTT Paho broker on one Device</b>. For the installation please follow the next steps:</p>
 
 <ol>
 	<li>checkout and build MQTT Paho on Linux or Linux Virtual Machine:
@@ -31,7 +31,7 @@
 	<li>in case you use MQTT Paho on a Virtual Machine use NAT and configure forwarding for port 1883, which is the default port on a MQTT Paho broker. IP addresses for the forwarding can be empty.</li>
 	
 	<li>to communicate with MQTT Paho use the Publish / Subscribe function blocks of 4DIAC and configure its ID data input as follows:
-	<div class="code">fbdk[].mqtt[tcp://ip:port, cientID, topic]</div>
+	<div class="code">raw[].mqtt[tcp://ip:port, cientID, topic]</div>
 	</li>
 </ol>
 

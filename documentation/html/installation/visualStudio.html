@@ -3,13 +3,19 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<title>Installation - Compiling and Debugging FORTE with MS Visual Studio Express</title>
+	<title>Installation - Compiling and Debugging FORTE with MS Visual Studio</title>
 	<link rel="stylesheet" type="text/css" href="../help.css">
 </head>
 
 <body>
-<h1>Compiling and Debugging FORTE with MS Visual Studio Express</h1>
+<h1>Compiling and Debugging FORTE with MS Visual Studio</h1>
 <p>FORTE with a win32-architecture can only be created with Visual Studio. The following describes how to compile FORTE with win32-architecture.</p>
+
+<div class="infobox"><div>
+<h1>Attention</h1>
+If you are using a Visual Studio version older then 2010 you need to extend it with a stdint.h file.  See for example <a href="http://stackoverflow.com/questions/12970293/why-microsoft-visual-studio-cannot-find-stdint-h">here.</a>
+</div>
+</div>
 
 <h2>Create MS Visual Studio Project for FORTE with CMake</h2>
 <ul>
@@ -21,15 +27,15 @@
 	<li>press the <i>Configure</i> and afterwards the <i>Generate</i> button</li>
 </ul>
 
-<h2>Compile Forte with Visual Studio Express</h2>
+<h2>Compile Forte with Visual Studio</h2>
 <p>Open the generated FORTE project with Visual Studio and change from Debug to Release mode. Build FORTE afterwards. A <span class="code">forte.exe</span> file should be generated in <span class="code">&#60;forteroot&#62;/bin/win32/src/Release</span>.</p>
 
-<img src="./img/VSreleaseDebug.png" alt="Release Mode of Visual Studio Express"/> 
+<img src="./img/VSreleaseDebug.png" alt="Release Mode of Visual Studio "/> 
 
-<h2>Debug Forte with Visual Studio Express</h2>
+<h2>Debug Forte with Visual Studio </h2>
 <p>Open the generated FORTE project with Visual Studio and change from Release to Debug mode. Set FORTE as the main project.</p>
 
-<img src="./img/VSstartProject.png" alt="Set FORTE as main project in Visual Studio Express"/>
+<img src="./img/VSstartProject.png" alt="Set FORTE as main project in Visual Studio "/>
 
 <p>And Push <span class="code">F5</span> or click <span class="code">start debugging</span></p>
 

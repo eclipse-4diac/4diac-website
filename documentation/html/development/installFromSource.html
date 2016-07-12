@@ -22,12 +22,11 @@ Run through the following steps to build and execute the 4DIAC-IDE from source:
 <a name="devEnvironment"></a>
 <h2>Get the Development Environment</h2>
 <p>
-<a href="http://www.eclipse.org/downloads/packages/release/kepler/r">Eclipse Kepler</a> (or later) use <b>Eclipse Modeling Tools</b> edition. 
-In addition to the default Modeling Tool package you will need to following Eclipse Plug-ins. These can be installed via <b>Help &rarr; Install Modeling Components</b>. 
+<a href="https://eclipse.org/downloads/eclipse-packages/">Eclipse Neon</a> (or later) use <b>Eclipse Modeling Tools</b> edition. 
+In addition to the default Modeling Tool package you will need the following Eclipse Plug-ins. These can be installed via <b>Help &rarr; Install Modeling Components</b>. 
 
 <ul>
 	<li>Xpand</li>
-	<li>Graphical Modeling Framework (GMF) Tooling</li>
 	<li>Xtext </li>
 </ul>
 
@@ -84,15 +83,13 @@ In addition to the default Modeling Tool package you will need to following Ecli
 	</li>
 </ol>
 
-<a name="Platform"></a>	
+<a name="targetPlatform"></a>	
 <h2>Set Target Platform</h2>
 <ol>
-	<li>Open the Eclipse preferences: <i>Window > Preferences</i></li>
-	<li>Open the target definition: <i>Plug-in Development > Target Platform</i>
-		<p><img src="./img/TargetPlatform.png" alt="Eclips target platform configuration"/></p>
-	</li>
-	<li>Select <i>4DIAC-IDE Development</i></li> 
-	<li>Press <i>OK</i></li>
+	<li>Open the Eclipse preferences within the product plugin:
+	<br/><img src="./img/TargetPlatform.png" alt="Eclipse target platform configuration"/></li>
+	<li>Wait until the target platform is resolved or press <i>Reload</i> and wait until it is resolved</li>
+	<li>press <i>Set as Target Platform</i> within the upper right corner and wait until the workspace is builded.</li>
 </ol>
 
 <a name="devMode"></a>	

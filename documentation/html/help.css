@@ -1,6 +1,4 @@
-@import url("../../format.css");
-
-div.code{
+div.code {
 	background-color: #F9F9F9;
 	text-align:left; 
 	padding:10px; 
@@ -10,6 +8,31 @@ div.code{
 	font-size: 10pt;
 	white-space: pre; 
 }
+
+div.infobox{
+	background-color: #F9F9F9;
+	text-align:left; 
+	border:thin dashed blue; 
+	margin:0px;
+	padding:0px;
+	font-size: 10pt;
+	white-space: pre; 
+}
+
+div.infobox, h1{
+	font-size: 11pt;
+	margin-top:0px;
+	padding:0px;
+	line-height:0.5;
+}
+
+div.infobox, div{
+	font-size: 11pt;
+	margin:0px;
+	padding:0px 0px 0px 5px;
+	line-height:1;
+}
+
 table,tr,th,td{
 	border: 1px solid black;
 }
