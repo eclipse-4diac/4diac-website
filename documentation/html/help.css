@@ -21,7 +21,7 @@ div.infobox{
 	white-space: pre; 
 }
 
-div.infobox > h1{
+infobox.h1{
 	font-size: 11pt;
 	margin-top:0px;
 	padding:0px;
