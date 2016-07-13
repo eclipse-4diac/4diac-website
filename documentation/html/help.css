@@ -1,4 +1,6 @@
-div.code {
+@import url("../../format.css");
+
+div.code{
 	background-color: #F9F9F9;
 	text-align:left; 
 	padding:10px; 
