@@ -27,11 +27,11 @@
 		<ul>
 			<li>Raspberry-SPS</li>
 			<li>CONMELON C1 PLC</li>
-			<li>Lego Mindstorms EV3<li>
+			<li>Lego Mindstorms EV3</li>
 			<li>analog IOs for Wago PFC 200</li>
 			<li>Odroid analog inputs</li>
 		</ul>
-	<li>
+	</li>
 </ul>
 
 <p>Furthermore many improvements and bug-fixes have been performed. Together with the issues fixed during the maintenance of the last major release 172 issues could be solved.</p>
