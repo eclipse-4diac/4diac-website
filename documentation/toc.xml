@@ -87,9 +87,21 @@
 			<topic label="4DIAC on other Platforms">
 				<topic label="Building FORTE for Lego Mindstorms" href="html/tutorials/mindstorms.html"/>
 				<topic label="Building FORTE for ICnova" href="html/tutorials/icnova.html"/>
-				<topic label="Building FORTE on Raspberry Pi" href="html/tutorials/raspi.html"/>
+				<topic label="Running FORTE on Raspberry Pi" href="html/tutorials/raspi.html">
+				  <topic label="Building FORTE on the Raspberry Pi" href="html/tutorials/raspi.html#onRPI"/>
+				  <topic label="Cross-compiling FORTE to the Raspberry Pi" href="html/tutorials/raspi.html#crossCompiling">
+				     <topic label="Linux host" href="html/tutorials/raspi.html#crossCompilingLinux"/>
+				     <topic label="Windows host" href="html/tutorials/raspi.html#crossCompilingWindows"/>
+				  </topic>
+				  <topic label="Using the RPI's pins" href="html/tutorials/raspi.html#usingPins"/>
+				</topic>  
 				<topic label="Building FORTE for Raspberry-SPS" href="html/tutorials/raspberrySPS.html"/>
 				<topic label="Building FORTE for Wago" href="html/tutorials/wago.html"/>
+				<topic label="Everything about the Lego Mindstorm EV3" href="html/tutorials/legoMindstormEv3.html">
+				  <topic label="What is EV3 and how to run FORTE on it?" href="html/tutorials/legoMindstormEv3.html#ev3_introduction"/>
+				  <topic label="What I/O can be controlled?" href="html/tutorials/legoMindstormEv3.html#ev3_parameters"/>
+				  <topic label="Example of a PID controller for a motor" href="html/tutorials/legoMindstormEv3.html#ev3_example"/>
+				</topic>
 			</topic>
 		</topic>
 	</topic>
@@ -141,6 +153,7 @@
 			<topic label="Monitoring" href="html/development/forte_monitoring.html"/>
 			<topic label="Communication Architecture" href="html/development/forte_communicationArchitecture.html"/>
 			<topic label="External Event SIFB" href="html/development/externalEvent_example.html"/>
+			<topic label="Contributing to FORTE" href="html/development/contributeToForte.html"/>
    			<topic href="html/development/forte_codequality.html" label="Assuring FORTE Code Quality"/>
 		</topic>
 	</topic>  

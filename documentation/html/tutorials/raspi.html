@@ -1,183 +1,167 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
    <head>
-   	  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <title>Building FORTE on Raspberry Pi</title>
       <link rel="stylesheet" type="text/css" href="../help.css">
    </head>
 
-   <body>
-      <h1>Building FORTE on Raspberry Pi</h1>
-      <h2>Introduction</h2>
-      <p>Raspberry Pi is a low-cost embedded system with an ARM processor @700Mhz and 512MB RAM. It supports many operation systems. 
-      The most popular OS for the RaspberryPi is the Debian based Raspbian. Furthermore there is an 26 pin header on board for custom I/O. 
-      FORTE uses the <i>wiringPi</i> library from <a href="http://www.wiringpi.com">http://www.wiringpi.com</a> that is released under the 
-      <a href="http://www.gnu.org/copyleft/lesser.html">GNU LGPLv3</a> license. The I/O are connected as follows.</p>
-	  <a name="table"></a>
-	  <table border="1">
-	  	 <thead>
-	  	 	  <tr>
-	  	 	     <th>wiringPi</th>
-	  	 		 <th>Name</th>
-	  	 		 <th colspan="2">Header</th>
-	  	 		 <th>Name</th>
-	  	 		 <th>wiringPi</th>
-	  	 	  </tr>
-	  	 </thead>
-	  	 <tbody>
-	  	 	 <tr>
-	  	 	     <th></th>
-	  	 	 	 <th>3.3v</th>
-	  	 	 	 <th>1</th>
-	  	 	 	 <th>2</th>
-	  	 	 	 <th>5v</th>
-	  	 	 	 <th></th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th>8</th>
-	  	 	 	 <th>SDA</th>
-	  	 	 	 <th>3</th>
-	  	 	 	 <th>4</th>
-	  	 	 	 <th>5v</th>
-	  	 	 	 <th></th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th>9</th>
-	  	 	 	 <th>SCL</th>
-	  	 	 	 <th>5</th>
-	  	 	 	 <th>6</th>
-	  	 	 	 <th>Gnd</th>
-	  	 	 	 <th></th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th>7</th>
-	  	 	 	 <th>GPIO7</th>
-	  	 	 	 <th>7</th>
-	  	 	 	 <th>8</th>
-	  	 	 	 <th>TxD</th>
-	  	 	 	 <th>15</th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th></th>
-	  	 	 	 <th>Gnd</th>
-	  	 	 	 <th>9</th>
-	  	 	 	 <th>10</th>
-	  	 	 	 <th>RxD</th>
-	  	 	 	 <th>16</th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th>0</th>
-	  	 	 	 <th>GPIO17</th>
-	  	 	 	 <th>11</th>
-	  	 	 	 <th>12</th>
-	  	 	 	 <th>GPIO18</th>
-	  	 	 	 <th>1</th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th>2</th>
-	  	 	 	 <th>GPIO27</th>
-	  	 	 	 <th>13</th>
-	  	 	 	 <th>14</th>
-	  	 	 	 <th>Gnd</th>
-	  	 	 	 <th></th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th>3</th>
-	  	 	 	 <th>GPIO22</th>
-	  	 	 	 <th>15</th>
-	  	 	 	 <th>16</th>
-	  	 	 	 <th>GPIO23</th>
-	  	 	 	 <th>4</th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th></th>
-	  	 	 	 <th>3v3</th>
-	  	 	 	 <th>17</th>
-	  	 	 	 <th>18</th>
-	  	 	 	 <th>GPIO24</th>
-	  	 	 	 <th>5</th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th>12</th>
-	  	 	 	 <th>GPIO10</th>
-	  	 	 	 <th>19</th>
-	  	 	 	 <th>20</th>
-	  	 	 	 <th>Gnd</th>
-	  	 	 	 <th></th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th>13</th>
-	  	 	 	 <th>GPIO9</th>
-	  	 	 	 <th>21</th>
-	  	 	 	 <th>22</th>
-	  	 	 	 <th>GPIO25</th>
-	  	 	 	 <th>6</th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th>14</th>
-	  	 	 	 <th>GPIO11</th>
-	  	 	 	 <th>23</th>
-	  	 	 	 <th>24</th>
-	  	 	 	 <th>GPIO8</th>
-	  	 	 	 <th>10</th>
-	  	 	 </tr>
-	  	 	 <tr>
-	  	 	     <th></th>
-	  	 	 	 <th>Gnd</th>
-	  	 	 	 <th>25</th>
-	  	 	 	 <th>26</th>
-	  	 	 	 <th>GPIO7</th>
-	  	 	 	 <th>11</th>
-	  	 	 </tr>
-	  	 </tbody>
-	  </table>
-	  
-	  <p>This tutorial shows how to compile FORTE in a console window. This way, it is not necessary to use the GUI mode on the Raspberry Pi. 
-	  If you compile FORTE for first the time, you have to configure your RaspberryPi, as described in <a href="#preparation">Preparation</a>. 
-	  When you recompile FORTE to include new FBs, skip to <a href="#building">Building</a>.</p>
-	  
-	  <a name="#preparation"></a>
-	  <h2>Preparation</h2>
-	  	  	<ol>
-	  	 <li>Install some additional software on your Raspberry Pi if not done yet. 
-	  	 	<ul type="circle"><li>The Mercurial version control system: <span class="code">tortoisehg</span></li>
-	  	 		<li>The building tools: <span class="code">cmake, make, gcc, g++</span></li>
-	  	 	</ul> 		
-	  	 			<div class="code">$ sudo apt-get install tortoisehg cmake make gcc g++</div><br>
-				<li>Check out FORTE from the Mercurial repository in your home directory.</li><br>
-	  	 			<div class="code">$ cd ~
-$ hg clone http://hg.code.sf.net/p/fordiac/forte</div><br>
-				<li>Prepare the FORTE project structure for the Posix architecture.</li><br>
-				<div class="code">$ cd forte
-$ chmod +x setup_posix.sh
-$ ./setup_posix.sh</div>
-	  	 	<br>
-	  	</ol>
-	  	        <a name="#building"></a>
-	  	 		<h2>Building</h2>
-	  	<ol>
-	  	 		<li>Go to the posix directory, which is within the <span class="code">forte/bin</span> directory.</li><br>
-	  	 		<div class="code">$ cd ~/forte/bin/posix</div><br>
-	  	 		<li>Create makefiles with cmake. The parameter <span class="code">-i</span> starts CMake in wizard mode, where you can setup parameters in a way similar to the CMake GUI.</li><br>
-	  	 		<div class="code">$ cmake -i ../..</div><br>
-	  	 		<li>Choose the function blocks you want to compile. To include or exclude an package, just enter <span class="code">YES</span> or <span class="code">NO</span> to the appropriate package.</li><br>
-	  	 		<li>Build FORTE.</li><br>
-	  	 		<div class="code">$ make</div><br>	  	 		
-		</ol>
+  <body>
+    <h1>Introduction</h1>
+      <p><a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi</a> (RPI) is one of most famous low-cost embedded system. In its third generation, the Raspberry Pi 3 launched in February 2016 
+      has a 1.2GHz 64-bit quad-core ARMv8 CPU, 1 GB RAM and several I/O options, among them a 40 pin header. The operating system is loaded from a SD card, so it can support many 
+      OS, being the most popular the Debian-based Raspbian. FORTE used to use the <i>wiringPi</i> library, but it has changed to use the sysFs virtual file system.</p>
+    
+      <p>This tutorial explains first how to compile FORTE in the RPI, or even cross-compile, and how to easily use the I/O Function Blocks in FORTE to control the 40 pin
+      header.</p>
+     
+      <h2>Getting the RPI ready</h2>
+       
+      <p>This tutorial doesn't show the details of how to make the RPI run, but if you never used before, you should know that besides the RPI board, you need a source power that is
+      connected to the mini-USB port and a mini-SD card. The RPI can be connected to a screen, mouse and keyboard through the HDMI and USB ports, but you also can connect to it headless,
+      meaning that you connect through ssh using the Ethernet or a usb-wifi connector. There are plenty of tutorials on how to access the RPI, so this tutorial starts supposing you have access
+      to the command line of the RPI, through ssh or directly on it using the GUI, and that the RPI has Internet access.</p>
+   
+    <h1 id="onRPI">Building FORTE on the RPI</h1>
+      
+      <h2>Preparation</h2>
+        <ol>
+          <li>Install the additional software needed on your RPI. 
+            <ul>
+              <li>Git. FORTE is stored as a git repository in the elipse server.</li>
+              <li>The building tools: cmake, make, gcc, g++</li>
+            </ul>
+            <div class="code">$ sudo apt-get install git cmake make gcc g++</div>
+          </li>
+        </ol> 
+          
+      <h2>Building</h2> 
+        <ol>  
+          <li>Check out FORTE from the git repository in your home directory.
+            <div class="code">$ cd ~
+$ git clone https://git.eclipse.org/r/4diac/org.eclipse.4diac.forte</div>
+          </li>
+          <li>Prepare the FORTE project structure for the Posix architecture.
+				    <div class="code">$ cd org.eclipse.4diac.forte
+$ chmod +x setup_posix.sh</div>
+              <p>You will need to add the SysFs module to the compilation. In order to that, you will need to change the <i>setup_posix.sh</i> file, using your preferred text editor.
+              In the file you will find a line that starts with <i>cmake -G "Unix Makefiles" -DFORTE_ARCHITECTURE=Posix</i>. At the end of the line, add
+              <i> -DFORTE_MODULE_SysFs=ON</i>. This will enable the interface to the 40 pin header of the RPI. Save the file, exit the editor and execute:</p>
+               <div class="code">$ ./setup_posix.sh</div>
+               <p>When no error occurs, the command creates a folder in bin/posix where all the files to compile FORTE are stored.</p>
+            <div class="code">$ cd bin/posix</div>
+          </li>
+	  	 		<li>Execute "make", which will start the compilation.
+            <div class="code">$ make</div>
+          </li>
+      </ol>
+      
+    <h1 id="crossCompiling">Cross compiling to the RPI</h1>
+    
+	    <p>The RPI is a very powerful computer, but when developing a project, one sometimes has to compile FORTE many times, an the RPI is slow compared to the power of a desktop computer. 
+	    That's when cross-compiling is useful. It allows to compile in your desktop machine, and then send the executable to the RPI.</p>
+	    
+	    <p>You will need the FORTE source code, and the same additional tools used in the preparation, except the CMake, because the CMake-GUI will be needed in this case.</p>
+	    
+      <h2 id="crossCompilingLinux">Cross-compiling using Linux</h2>
+        <ol>
+          <li>Install needed additional tools:
+            <ul>
+              <li>CMake-GUI
+                <div class="code">$ sudo apt-get install cmake-qt-gui</div>
+              </li>
+              <li>Linaro Cross-compiling Toolchain. You can download it from <a href="https://releases.linaro.org/15.06/components/toolchain/binaries/4.8/arm-linux-gnueabihf/gcc-linaro-4.8-2015.06-x86_64_arm-linux-gnueabihf.tar.xz">this</a> link.
+                Then, you should de-compress this file
+                <div class="code">$ tar -xvf gcc-linaro-4.8-2015.06-x86_64_arm-linux-gnueabihf.tar.xz</div>
+                You could avoid downloading and de-compressing the file using the command
+                <div class="code">$ sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf</div>
+                but this method gave some errors in some cases. 
+              </li>
+            </ul>
+          <li>Open CMake-GUI and complete as the image
+            <ol>
+              <li>Set the FORTE source path where you cloned the git repository.</li>
+              <li>Set path for binaries where you want to create the executable. Normally is used bin/raspPi</li>
+              <li>Press configure</li>
+            </ol>
+            <p><img src="img/raspiCrossLinux1.png" alt="Selecting folders in CMake"/></p>
+          </li>
+           <li>CMake Setup
+            <ol>
+              <li>Select the tool you normally use to compile your programs. This example follows using UNIX Makefiles from the list.</li>
+              <li>Select "Specify tools for cross-compiling"</li>
+              <li>Press Next</li>
+            </ol>
+            <p><img src="img/raspiCrossLinux2.png" alt="CMake Setup"/></p>
+          </li>
+          <li>CMake Setup
+            <ol>
+              <li>Write a name for the OS (normally raspbian, it won't affect the compilation).</li>
+              <li>Select the path to the C cross-compiler called arm-linux-gnueabihf-gcc, in the bin folder of the downloaded tools' folder. If not found, you could execute:
+                <div class="code">$ which arm-linux-gnueabi-gcc</div> 
+              </li>
+              <li>Select the path to the C++ cross-compiler called arm-linux-gnueabihf-g++, in the bin folder of the downloaded tools' folder. If not found, you could execute:
+                <div class="code">$ which arm-linux-gnueabi-g++</div> 
+              </li>
+              <li>The target root field can be left empty.</li>
+              <li>Click Finish</li>
+            </ol>
+            <p><img src="img/raspiCrossLinux3.png" alt="Select cross-compiling tools."/></p>
+          </li>
+          <li>Configure the compilation
+             <p>A list with all variables of FORTE in red should be shown in CMake as the picture below.</p>
+            <ol>
+              <li>Choose you Eclipse version if you selected it in step 3.1. Otherwise, it can be left as it is.</li>
+              <li>Set the FORTE_ARCHITECTURE variable to Posix</li>
+              <li>Enable FORTE_MODULE_SysFs and all other modules that you want</li>
+              <li>Click Configure and the variables that need revision will apear again in red and the rest in white. Check the variables and press configure until no red variable is shown.</li>
+            </ol>
+            <p><img src="img/raspiCrossLinux4.png" alt="Configure FORTE compilation."/></p>
+          </li>
+          <li>Generate files
+            <ol>
+              <li>Click Generate</li>
+            </ol>
+            <p><img src="img/raspiCrossLinux5.png" alt="Generate the makefiles."/></p>
+          </li>
+          <li>Build forte
+            <ol>
+              <li>Go to the recently generated folder and execute make (or build it as you normally do)
+               <div class="code">$ cd bin/raspPi
+$ make</div> 
+              </li>
+            </ol>
+          </li>
+        </ol>
+        
+      <h2 id="crossCompilingWindows">Cross-compiling using Windows</h2>
+        <ol>
+          <li>Install needed additional tools:
+            <ul>
+              <li>CMake from its download <a href="https://cmake.org/download/">page</a></li>
+              <li>Cross-compiling tool. You can download it from <a href="http://gnutoolchains.com/raspberry/">this</a> link.</li>
+            </ul>
+          <li>Follow instructions of cross-compiling in the <a href="#crossCompilingLinux">Linux</a> platform from step 2, taking in account the following:
+            <ol>
+              <li>In steps 4.2 and 4.3, the C and C++ cross-compilers are in the bin folder where you installed the tool, normally C:\SysGCC\Raspberry\bin</li>
+            </ol>
+          </li>
+         </ol>
 
-	<h2>Running an Application</h2>
-	<p>The following picture shows an example application from the <a href = "flipFlop_tutorial.html">flipflop tutorial</a> which is extended 
-	with IX and QX function blocks. The extended application periodically toggles on RaspberryPi pin number 3. It can be started and stopped 
-	via RaspberryPi pin number 13. You can connect an LED to obtain a blinking light.</p>
+    <h1 id="usingPins">Using RPI pins</h1>
+    
+	   	<p>The following picture shows an example application from the <a href = "flipFlop_tutorial.html">flipflop tutorial</a> which is extended 
+		  with IX and QX function blocks. The extended application periodically toggles on RPI pin number 8. It can be started and stopped 
+		  via RPI pin number 2. You can connect an LED to obtain a blinking light.</p>
 	
-	<img src="./img/ixqx_fb_network.png" alt="Simple flip flop application with an IX and QX function block."/>
+	   <img src="./img/ixqx_fb_network.png" alt="Simple flip flop application with an IX and QX function block."/>
 	
-	<p>The "PARAMS" data input in the IX and QX FB define which pin should be used on the RaspberryPi. In this example, the input is taken 
-	from pin 2 in <i>wiringPi</i> which is pin number 13 on the RaspberryPi, according the <a href="#table">table</a>. The output signal is 
-	connected to <i>wiringPi</i> pin 8, which is the physical pin number 3 on the RaspberryPi connector.</p>
-	<p>The application also contains E_CYCLE and E_SWITCH function blocks (which ar not in the flipflop tutorial). The first one generates 
-	an event every 500 ms. This way the IX block will check the hardware input every half second if signal has changed. E_SWITCH_0 starts or 
-	stops the action, depending on the "IN" data output of the IX function block. </p>
+			<p>The "PARAMS" data input in the IX and QX FB define which pin should be used on the RPI. The application also contains E_CYCLE and E_SWITCH function blocks (which are not in the flipflop tutorial). The first one generates 
+			an event every 500 ms. This way the IX block will check the hardware input every half second if the signal has changed. E_SWITCH_0 starts or 
+			stops the action, depending on the "IN" data output of the IX function block.</p>
+			
+			<p>Remember that if you have any problem and cannot find the solution in the documentation, visit the <a href="https://www.eclipse.org/forums/index.php?t=thread&frm_id=308">forum</a>.</p>
 
+      <div class="lastModified"><script> document.write("This page was last modified on: " + document.lastModified +"");</script></div>
    </body>
 </html>
