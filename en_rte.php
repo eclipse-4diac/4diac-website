@@ -45,7 +45,7 @@
 			<td><h2 class="h2twocollumntable">Supported Boards</h2>
 				<ul>
 					<li><a href="http://www.digi.com/products/embedded-systems">Digi Connect ME</a> (ARM7)</li>
-					<li><a href="http://mindstorms.lego.com/en-us/Default.aspx">Lego Mindstorms nxt</a> (ARM7)</li>
+					<li><a href="http://mindstorms.lego.com/en-us/Default.aspx">Lego Mindstorms EV3</a> (ARM7)</li>
 					<li><a href="http://www.kipr.org/products/cbc-robot-controller">KIPR's CBC v2</a> robot controller</li>
 					<li><a href="http://www.raspberrypi.org/">Raspberry PI</a></li>
 					<li><a href="http://beagleboard.org/black">BeagleBone Black</a></li>
@@ -56,7 +56,7 @@
 					<li><a href="http://www.bachmann.info/en/products/controller-system/">Bachmann electronic M1 PLC</a></li>
 					<li><a href="http://global.wago.com/en/products/new-items/overview/pfc200-1.jsp">WAGO PFC200</a></li>
 					<li><a href="http://raspberry-sps.de/">Raspberry-SPS</a></li>
-					<li><a href="http://www.conmeleon.org/">CONMELEON</a> under construction<br/>
+					<li><a href="http://www.conmeleon.org/">CONMELEON C1</a><br/>
 					<li>B&amp;R under construction</li>
 				</ul>
 			</td>
