@@ -67,12 +67,6 @@
 	</tr>
 	<tr>
 		<td>
-			Modelling Apps for Open CPS with 4DIAC
-			<br><i>Martin Jobst (fortiss GmbH)</i>
-		</td>
-	</tr>
-	<tr>
-		<td>
 			4DIAC in Teaching - Lessons from Lab Exercises and Student Projects
 			<br><i>Martin Melik Merkumians (Vienna University of Technology)</i>
 		</td>
