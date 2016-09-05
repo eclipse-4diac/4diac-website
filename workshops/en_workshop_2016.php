@@ -9,7 +9,7 @@
 <h2>Workshop Program:</h2>
 <table class="program">
 	<tr>
-		<th rowspan="11">
+		<th rowspan="10">
 			Morning <br>Session
 		</th>
 		<td>
