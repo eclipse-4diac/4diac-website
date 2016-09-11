@@ -23,7 +23,7 @@
 
 <br/>
 <?php 
-	$files = array_reverse(glob('./workshops/*.php'));
+	$files = glob('./workshops/*.php');
 	$count = 0;
 ?>
 
@@ -33,7 +33,18 @@
 	foreach($files as $file){
 		$fileName = basename($file,".php");		
 		$releaseNumber = explode("_",$fileName);
-		$releaseText = 	"4DIAC Users' Workshop @ ETFA " . $releaseNumber[2];	
+		if($count == 0){
+			$releaseText = 	$count + 1 . "st 4diac Users' Workshop @ ETFA " . $releaseNumber[2];
+		}
+		elseif($count == 1){
+			$releaseText = 	$count + 1 . "nd 4diac Users' Workshop @ ETFA " . $releaseNumber[2];
+		}
+		elseif($count == 2){
+			$releaseText = 	$count + 1 . "rd 4diac Users' Workshop @ ETFA " . $releaseNumber[2];		
+		}
+		else{
+			$releaseText = 	$count + 1 . "th 4diac Users' Workshop @ ETFA " . $releaseNumber[2];		
+		}	
 		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['workshop'] == $fileName){
 			echo '<option selected value="' . $fileName . '">' . $releaseText . '</option>';
 		}elseif($count == 0){

@@ -1,4 +1,4 @@
-<h1>4<sup>th</sup> 4DIAC Users' Workshop</h1>
+<!--h1>4<sup>th</sup> 4DIAC Users' Workshop</h1-->
 <p>The 4<sup>th</sup> Users' Workshop has been hold in conjunction with the 18th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Cagliari, Italy.</p>
 
 <p><b>Workshop Date: 10th September 2013</b></p>

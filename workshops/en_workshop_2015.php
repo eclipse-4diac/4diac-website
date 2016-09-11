@@ -1,4 +1,4 @@
-<h1>6<sup>th</sup> 4DIAC Users' Workshop</h1>
+<!--h1>6<sup>th</sup> 4DIAC Users' Workshop</h1-->
 <p>The 6<sup>th</sup> Users' Workshop is held in conjunction with the 20th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Luxembourg.</p>
 
 <p><b>Workshop Date: 8th September 2015</b></p>
