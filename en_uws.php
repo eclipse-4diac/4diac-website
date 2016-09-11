@@ -23,8 +23,9 @@
 
 <br/>
 <?php 
-	$files = glob('./workshops/*.php');
+	$files = array_reverse(glob('./workshops/*.php'));
 	$count = 0;
+	$size = count($files);
 ?>
 
 <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
@@ -33,17 +34,17 @@
 	foreach($files as $file){
 		$fileName = basename($file,".php");		
 		$releaseNumber = explode("_",$fileName);
-		if($count == 0){
-			$releaseText = 	$count + 1 . "st 4diac Users' Workshop @ ETFA " . $releaseNumber[2];
+		if($count == $size - 1){
+			$releaseText = "1st 4diac Users' Workshop @ ETFA " . $releaseNumber[2];
 		}
-		elseif($count == 1){
-			$releaseText = 	$count + 1 . "nd 4diac Users' Workshop @ ETFA " . $releaseNumber[2];
+		elseif($count == $size - 2){
+			$releaseText = "2nd 4diac Users' Workshop @ ETFA " . $releaseNumber[2];
 		}
-		elseif($count == 2){
-			$releaseText = 	$count + 1 . "rd 4diac Users' Workshop @ ETFA " . $releaseNumber[2];		
+		elseif($count == $size - 3){
+			$releaseText = "3rd 4diac Users' Workshop @ ETFA " . $releaseNumber[2];		
 		}
 		else{
-			$releaseText = 	$count + 1 . "th 4diac Users' Workshop @ ETFA " . $releaseNumber[2];		
+			$releaseText = 	$size - $count . "th 4diac Users' Workshop @ ETFA " . $releaseNumber[2];		
 		}	
 		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['workshop'] == $fileName){
 			echo '<option selected value="' . $fileName . '">' . $releaseText . '</option>';
