@@ -13,13 +13,13 @@
 			Morning <br>Session
 		</th>
 		<td>
-			Welcome and Recent Activities of the 4DIAC Open Source Initiative
+			<a href="uws/2016/UW_01_Zoitl.pdf">Welcome and Recent Activities of the 4DIAC Open Source Initiative</a>
 			<br><i>A. Zoitl (fortiss GmbH)</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			Agent-based local energy market control using 4DIAC
+			<a href="uws/2016/UW_02_Strasser.pdf">Agent-based local energy market control using 4DIAC</a>
 			<br><i>C. Moyo, T. Strasser (AIT)</i>
 		</td>
 	</tr>
@@ -37,19 +37,19 @@
 	</tr>
 	<tr>
 		<td>
-			Integrating FORTE with ROS
+			<a href="uws/2016/UW_05_Eisenmenger.pdf">Integrating FORTE with ROS</a>
 			<br><i>Waldemar Eisenmenger (fortiss GmbH)</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			Architecture for services composition in OPC UA Servers using FORTE
+			<a href="uws/2016/UW_06_Perez.pdf">Architecture for services composition in OPC UA Servers using FORTE</a>
 			<br><i>Federico Perez(Escuela Superior de Ingenieros)</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			Integration of OPC UA with 4DIAC
+			<a href="uws/2016/UW_07_Kadera.pdf">Integration of OPC UA with 4DIAC</a>
 			<br><i>Petr Kadera (Czech Institute of Informatics, Robotics, and Cybernetics Czech Technical University in Prague)</i>
 		</td>
 	</tr>
@@ -61,13 +61,13 @@
 	</tr>
 	<tr>
 		<td>
-			Towards using Formal Behavioral Specifications in IEC 61499 for Remote Software Health Monitoring
+			<a href="uws/2016/UW_09_Blech.pdf">Towards using Formal Behavioral Specifications in IEC 61499 for Remote Software Health Monitoring</a>
 			<br><i>Jan Olaf Blech RMIT</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			4DIAC in Teaching - Lessons from Lab Exercises and Student Projects
+			<a href="uws/2016/UW_10_Melik.pdf">4DIAC in Teaching - Lessons from Lab Exercises and Student Projects</a>
 			<br><i>Martin Melik Merkumians (Vienna University of Technology)</i>
 		</td>
 	</tr>
