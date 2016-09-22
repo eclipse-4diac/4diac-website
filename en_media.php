@@ -12,7 +12,7 @@
 <h1>Media</h1>
 
 <h2>Showing that you are using 4diac</h2>	
-<p>With these two stickers you can show the world that you are using 4diac. Put it on your web-page, flyers, controllers, t-shirts... 
+<p>With these two stickers you can show the world that you are using 4diac. Put it on your web-page, flyers, controllers, laptops, t-shirts... 
 
 <table><tr>
 		<td width="380" >
