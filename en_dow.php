@@ -526,41 +526,6 @@
 	</span>
 </div>
 
-<h1>Roadmaps</h1>
-<?php 
-	$files = array_reverse(glob('./releases/*.php'));
-	$count = 0;
-?>
-
-<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
-<select name="release"  onchange='this.form.submit()'>
-	<?php 
-	foreach($files as $file){
-		$fileName = basename($file,".php");		
-		$releaseNumber = explode("_",$fileName);
-		$releaseText = 	"Release " . $releaseNumber[2];	
-		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['release'] == $fileName){
-			echo '<option selected value="' . $fileName . '">' . $releaseText . '</option>';
-		}elseif($count == 0){
-			echo '<option selected value="' . $fileName . '">' . $releaseText . '</option>';
-		}
-		else{
-			echo '<option value="' . $fileName . '">' . $releaseText . '</option>';
-		}
-		$count = $count + 1; 
-	}
-	?>
-</select>
-</form>
-
-<?php
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-	include "releases/" . $_REQUEST['release'] . ".php";
-}else{
-	include $files[0];
-}
-?>
-
 <h2>Showing that you are using 4diac</h2>	
 <p>With these two stickers you can show the world that you are using 4diac. Put it on your web-page, flyers, controllers, laptops, t-shirts... 
 
