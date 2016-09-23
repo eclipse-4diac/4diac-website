@@ -6,13 +6,13 @@
 	<span class="center">
 	<table><tr>
 		<td>
-		<img src="media/poweredby4diac_small.png" alt="release" height="50"/>
+		<img src="media/poweredby4diac_small.png" alt="release" height="80"/>
 		</td>
 
 		<td >
-		<img src="media/poweredby4diac_large.png" alt="release" height="50"/>
+		<img src="media/poweredby4diac_large.png" alt="release" height="80"/>
 		</td>
-	</tr></table>
+	</tr></table></span>
 	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
 </div>
 
