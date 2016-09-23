@@ -518,10 +518,10 @@
 <span style="border-left: solid rgba(255,149,14,1.0);"><b>4diac-repositories:</b>
 	<br><i>sources for IDE, library and systems</i>	
 	<ul id="nav">
-		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-ide">IDE source</li>
-		<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">RTE source</li>
-		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-lib">library</a></li>
-		<li><a href="http://hg.code.sf.net/p/fordiac/fordiac-systems">systems (example projects)</a></li>
+		<li><a href="http://sourceforge.net/p/fordiac/fordiac-ide/ci/default/tree/">IDE source</a></li>
+		<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">RTE source</a></li>
+		<li><a href="http://sourceforge.net/p/fordiac/fordiac-lib/ci/default/tree/">library</a></li>
+		<li><a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">systems (example projects)</a></li>
 	</ul>
 	</span>
 </div>
