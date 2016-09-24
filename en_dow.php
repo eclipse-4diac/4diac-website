@@ -533,7 +533,7 @@
 				<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">RTE source</a></li>
 				<li><a href="http://sourceforge.net/p/fordiac/fordiac-lib/ci/default/tree/">library</a></li>
 				<li><a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">systems</a>
-					<i>(example projects)</i>/li>
+					<i>(example projects)</i></li>
 			</ul>
 		</span>
 	</td>
