@@ -525,8 +525,8 @@
 		</span>
 	</td>
 		<td width="253">
-		<b>4diac-repositories:</b>
-		<br><i>sources for IDE, library and systems</i>	
+		<h2>4diac-repositories:</h2>
+		<i>sources for IDE, library, and systems</i>	
 		<span>
 			<ul id="nav">
 				<li><a href="http://sourceforge.net/p/fordiac/fordiac-ide/ci/default/tree/">IDE source</a></li>
