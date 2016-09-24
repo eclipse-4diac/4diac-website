@@ -434,24 +434,24 @@
 	</ul>
 	</span>
 	</td>
-
-		<td width="253" style='padding:0px 30px 0px 30px'>
-		
-	<b>4diac-RTE:</b>
-	<br><i>source of FORTE compilable for your system</i>
-	<ul id="nav">
-		<li class="expand">FORTE 1.8.x
-		<ul>
-		<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.0.zip/download">FORTE_1.8</a></li>
-		<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC3.zip/download">FORTE_1.8RC3</a></li>
-		<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC2.zip/download">FORTE_1.8RC2</a></li>
-		<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC1.zip/download">FORTE_1.8RC1</a></li>
-		<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_M1.zip/download">FORTE_1.8M1</a></li>
-		</ul>
-		</li>	
-						<li class="expand">old releases
+	<td width="253" style='padding:0px 30px 0px 30px'>
+		<h2>4diac-RTE:</h2>	
+		<i>source of FORTE compilable for your system</i>
+		<h3>Latest Stable Release:</h3>
+		<a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.0.zip/download">FORTE_1.8</a>		
+		<span>		
+			<ul id="nav">
+				<li class="expand">old releases
+					<ul>
+						<li class="expand">FORTE 1.8.x
 							<ul>
-								<li class="expand">FORTE_1.7.x
+							<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC3.zip/download">FORTE_1.8RC3</a></li>
+							<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC2.zip/download">FORTE_1.8RC2</a></li>
+							<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC1.zip/download">FORTE_1.8RC1</a></li>
+							<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_M1.zip/download">FORTE_1.8M1</a></li>
+							</ul>
+						</li>	
+						<li class="expand">FORTE_1.7.x
 							<ul>
 								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.3.zip/download">FORTE_1.7.3</a></li>						
 								<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.7/FORTE_1.7.2.zip/download">FORTE_1.7.2</a></li>
@@ -522,6 +522,7 @@
 					</ul>
 				</li>
 			</ul>
+		</span>
 	</td>
 		<td width="253">
 		<b>4diac-repositories:</b>
