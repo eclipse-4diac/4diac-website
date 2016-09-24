@@ -74,7 +74,7 @@
 				<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
 				<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_cocoa.x86_64.zip/download">OS X</a></li>
 			</ul>	
-			<p style="font-size:10pt"><i>64-bit version requires Java 8 64-bit</i>
+			<p style="font-size:12pt"><i>64-bit version requires Java 8 64-bit</i>
 			<br>32-bit version requires Java 8 32-bit</i></p>
 	<ul id="nav">		
 		<li class="expand"><h3>Old Releases</h3>
