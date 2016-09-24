@@ -429,22 +429,22 @@
 	</span>
 	</td>
 	<td width="253" style='padding:0px 20px 0px 20px'>
-		<h2>4diac-RTE:</h2>	
+		<h2>4diac-RTE</h2>	
 		<i>Sources of FORTE compilable for your system.</i>
 		<h3>Latest Stable Release:</h3>
 		<span>		
 			<ul id="nav">
-				<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.0.zip/download">FORTE_1.8</a></li>
+				<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.0.zip/download">FORTE 1.8.0</a></li>
 			</ul>		
 			<ul id="nav">
 				<li class="expand"><h3>Old Releases</h3>
 					<ul>
 						<li class="expand">FORTE 1.8.x
 							<ul>
-							<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC3.zip/download">FORTE_1.8RC3</a></li>
-							<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC2.zip/download">FORTE_1.8RC2</a></li>
-							<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC1.zip/download">FORTE_1.8RC1</a></li>
-							<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_M1.zip/download">FORTE_1.8M1</a></li>
+							<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC3.zip/download">FORTE 1.8 RC3</a></li>
+							<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC2.zip/download">FORTE 1.8 RC2</a></li>
+							<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_RC1.zip/download">FORTE 1.8 RC1</a></li>
+							<li><a href="http://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8_M1.zip/download">FORTE 1.8 M1</a></li>
 							</ul>
 						</li>	
 						<li class="expand">FORTE_1.7.x
@@ -521,8 +521,8 @@
 		</span>
 	</td>
 		<td width="253">
-		<h2>4diac-repositories:</h2>
-		<i>Sources for IDE, library, and systems</i>	
+		<h2>4diac-repositories</h2>
+		<i>Sources for IDE, library, and systems:</i>	
 		<span>
 			<ul id="nav">
 				<li><a href="http://sourceforge.net/p/fordiac/fordiac-ide/ci/default/tree/">IDE source</a></li>
