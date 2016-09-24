@@ -64,7 +64,7 @@
 		<table><tr>
 		<td width="253" >
 			<h2>4diac-IDE</h2>
-			<i>development environment with FORTE executables</i>
+			<i>Development environment with FORTE executables</i>
 			<h3>Latest Stable Release<br><i>4diac-IDE 1.8.0</i></h3>
 	<span>
 			<ul id="nav">		
@@ -522,7 +522,7 @@
 	</td>
 		<td width="253">
 		<h2>4diac-repositories:</h2>
-		<i>sources for IDE, library, and systems</i>	
+		<i>Sources for IDE, library, and systems</i>	
 		<span>
 			<ul id="nav">
 				<li><a href="http://sourceforge.net/p/fordiac/fordiac-ide/ci/default/tree/">IDE source</a></li>
