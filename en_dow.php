@@ -432,10 +432,10 @@
 		<h2>4diac-RTE:</h2>	
 		<i>Sources of FORTE compilable for your system.</i>
 		<h3>Latest Stable Release:</h3>
-		<ul id="nav">
-			<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.0.zip/download">FORTE_1.8</a></li>
-		</ul>		
 		<span>		
+			<ul id="nav">
+				<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.0.zip/download">FORTE_1.8</a></li>
+			</ul>		
 			<ul id="nav">
 				<li class="expand"><h3>Old Releases</h3>
 					<ul>
