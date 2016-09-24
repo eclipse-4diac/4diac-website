@@ -65,23 +65,23 @@
 		<td width="253" >
 			<h2>4diac-IDE</h2>
 			<i>development environment with FORTE executables</i>
-			<h3>Latest Stable Release<br><i>4diac-IDE 1.8.x</i></h3>
+			<h3>Latest Stable Release<br><i>4diac-IDE 1.8.0</i></h3>
+	<span>
 			<ul>		
-				<li>4diac-IDE 1.8 64-bit:<br/><i>requires Java 8 64-bit</i>
+				<li>4diac-IDE 1.8.0 64-bit:<br/><i>requires Java 8 64-bit</i>
 					<ul>
 						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8/4DIAC-IDE_1.8_win32.x86_64.zip/download">Windows 64-bit</a></li>
 						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
 						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_cocoa.x86_64.zip/download">OS X</a></li>
 					</ul>
 				</li>
-				<li>4diac-IDE 1.8 32-bit:<br/><i>requires Java 8 32-bit</i>
+				<li>4diac-IDE 1.8.0 32-bit:<br/><i>requires Java 8 32-bit</i>
 					<ul>
 						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_win32.x86.zip/download">Windows 32-bit</a></li>
 						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
 					</ul>
 				</li>
 			</ul>	
-	<span>
 	<ul id="nav">		
 		<li class="expand"><h3>Old Releases</h3>
 			<ul>
