@@ -66,8 +66,7 @@
 			<h2>4diac-IDE</h2>
 			<i>development environment with FORTE executables</i>
 			<h3>Latest Stable Release<br><i>4diac-IDE 1.8.0</i></h3>
-	<span>
-			<ul>		
+			<ul id="nav">		
 				<li>4diac-IDE 1.8.0 64-bit:<br/><i>requires Java 8 64-bit</i>
 					<ul>
 						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8/4DIAC-IDE_1.8_win32.x86_64.zip/download">Windows 64-bit</a></li>
@@ -82,6 +81,7 @@
 					</ul>
 				</li>
 			</ul>	
+	<span>
 	<ul id="nav">		
 		<li class="expand"><h3>Old Releases</h3>
 			<ul>
