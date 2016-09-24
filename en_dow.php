@@ -83,7 +83,7 @@
 			</ul>	
 	<span>
 	<ul id="nav">		
-		<li class="expand">old releases
+		<li class="expand"><h3>Old Releases</h3>
 			<ul>
 				<li class="expand">4diac-IDE 1.8.x
 				<ul>			
@@ -436,12 +436,12 @@
 	</td>
 	<td width="253" style='padding:0px 30px 0px 30px'>
 		<h2>4diac-RTE:</h2>	
-		<i>source of FORTE compilable for your system</i>
+		<i>Sources of FORTE compilable for your system.</i>
 		<h3>Latest Stable Release:</h3>
 		<a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.0.zip/download">FORTE_1.8</a>		
 		<span>		
 			<ul id="nav">
-				<li class="expand">old releases
+				<li class="expand"><h3>Old Releases</h3>
 					<ul>
 						<li class="expand">FORTE 1.8.x
 							<ul>
