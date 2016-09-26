@@ -568,7 +568,7 @@
 			<br> <a href="media/poweredby4diac_small.png">Powered by 4diac large PNG</a>
 		</td>
 
-		<td'>
+		<td>
 			<img src="media/poweredby4diac_large_lowres.png" alt="powerd by 4daic large" height="100"/>
 		</td>
 		<td style='padding:0px 0px 0px 10px>	
