@@ -80,11 +80,11 @@
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">		
-						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8/4DIAC-IDE_1.8_win32.x86_64.zip/download">Windows 64-bit</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_win32.x86.zip/download">Windows 32-bit</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4diac-IDE/4diac-IDE%201.8/4diac-IDE_1.8_cocoa.x86_64.zip/download">OS X</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8/4DIAC-IDE_1.8_win32.x86_64.zip/download">Windows 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8/4DIAC-IDE_1.8_win32.x86.zip/download">Windows 32-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8/4DIAC-IDE_1.8_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8/4DIAC-IDE_1.8_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
+						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8/4DIAC-IDE_1.8_cocoa.x86_64.zip/download">Mac OS X</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
@@ -560,14 +560,18 @@
 <p>With these two stickers you can show the world that you are using 4diac. Put it on your web-page, flyers, controllers, laptops, t-shirts... 
 
 <table><tr>
-		<td width="380" >
+		<td >
 			<img src="media/poweredby4diac_small_lowres.png" alt="powered by 4diac small" height="100"/>
+		</td>
+		<td style='padding:0px 30px 0px 10px'>
 			<br> <a href="media/poweredby4diac_small.svg">Powered by 4diac large SVG</a>
 			<br> <a href="media/poweredby4diac_small.png">Powered by 4diac large PNG</a>
 		</td>
 
-		<td width="380" style='padding:0px 30px 0px 0px'>
+		<td>
 			<img src="media/poweredby4diac_large_lowres.png" alt="powerd by 4daic large" height="100"/>
+		</td>
+		<td style='padding:0px 0px 0px 10px'>	
 			<br> <a href="media/poweredby4diac_large.svg">Powered by 4diac large SVG</a>
 			<br> <a href="media/poweredby4diac_large.png">Powered by 4diac large PNG</a>
 		</td>
