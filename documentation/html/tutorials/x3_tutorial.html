@@ -22,19 +22,19 @@ Prerequisites:
 <ul>	
 	<li>4DIAC-IDE</li>
 	<li>FORTE</li>
-	<li><a href="http://www.holobloc.com/fbdk20081003.zip">FBRT 2008</a></li>
+	<li><a href="http://www.holobloc.com/">FBRT 2008- Downloadable from Holobloc, Inc.</a></li>
 	<li>Import the prepared <i>System</i> <span class="code">Xplus3</span>. How existing <i>Systems</i> are imported is described <a href="./systemImport.html">here</a>. 
 </ul>
 
 
 <a name="application"></a>
 <h2>Application for X+3</h2>
-<p>A IEC 61499 <i>Application</i> is designed independent of on what <i>Device</i> and <i>Resource</i> the various FBs are found. The <i>Application</i> FBs are mapped to the <i>Resource</i> of a <i>Device</i> they will run on. Click on the arrow beside the <span class="code">Xplus3</span> <i>System</i> and double-click to open the <i>Application</i> called <span class="code">Xplus3Application</span> (note: depending on your operating system, a single click may be sufficient where double clicks are mentioned in this tutorial) 
+<p>A IEC 61499 <i>Application</i> is designed independent of <i>Devices</i> and <i>Resources</i>. The <i>Application</i> FBs are mapped to the <i>Resource</i> of a <i>Device</i> they will run on after building the application. Click on the arrow beside the <span class="code">Xplus3</span> <i>System</i> and double-click to open the <i>Application</i> called <span class="code">Xplus3Application</span> (note: depending on your operating system, a single click may be sufficient where double clicks are mentioned in this tutorial) 
 <p>
 
 <img src="./img/x3_application.png" alt="X+3 TestApplication"/>
 
-<p>There are 3 groups of Function Blocks connected. The green diamond symbol to the left of a Function Block's name shows that this block is mapped to a <i>Device</i>. That there are two colors shows there are two <i>Devices</i>, so the <i>Application</i> is distributed. The dashed line connections are just information. We will see how the data is passed between <i>Devices</i> in <i>Resources</i>.</p>
+<p>There are 3 groups of Function Blocks connected. The specific color of a Function Block shows that this block is mapped to a <i>Device</i>. The two different colors of the FBs indicate that they are mapped to two different <i>Devices</i>, so the  <i>Application</i> is distributed. The dashed line connections are just information. We will see how the data is passed between <i>Devices</i> in <i>Resources</i>.</p>
 
 <p>The <i>Applications</i> IOs are on one <i>Device</i> and the calculation (X+3) is on the 2nd <i>Device</i>. Mouse over often provides extra information like a data variable's type. When exploring the <i>Application</i> it can be figured out that there are three types of Function Blocks used</p>
 <ul>

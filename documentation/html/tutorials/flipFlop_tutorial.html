@@ -26,7 +26,7 @@ Prerequisites:
 
 <a name="system"></>
 <h2>Create a <i>System</i></h2>
-<p>We need a <i>System</i> to put our <i>Application</i> into. To create a <i>System</i> with an empty <i>Application</i> you have to go to the <i>System Perspective</i> <img src="../overview/img/systemButton.png"/>. Both the <i>Application</i> and <i>Devices</i> need to be added afterwards. Define <i>Devices</i> first if known or define <i>Application(s)</i> first if they determine what <i>Devices</i> are needed.</p> 
+<p>We need a <i>System</i> to put our <i>Application</i> into. To create a <i>System</i> with an empty <i>Application</i> you have to go to the <i>System Perspective</i> <img src="../4diacIDE/img/systemButton.png"/>. Both the <i>Application</i> and <i>Devices</i> need to be added afterwards. Define <i>Devices</i> first if known or define <i>Application(s)</i> first if they determine what <i>Devices</i> are needed.</p> 
 
 <ol>
 	<li><i>System</i> creation:
@@ -35,7 +35,7 @@ Prerequisites:
 			<li>Enter the <i>Project name</i> <q>FlipFlopTutorial</q>, which is the <i>System</i> name and press <i>Finish</i> button</i>
 			<li>For good practice give your <i>System</i> a description like <i>FlipFlopTutorial</i></li>
 			<li>If you click on your <i>System's</i> name you will just see <i>System Configuration</i></li>
-			<li>If you can't see your new <i>System</i>, then press the refresh <img src="../overview/img/refresh.gif"/> button.</li>
+			<li>If you can't see your new <i>System</i>, then press the refresh <img src="../4diacIDE/img/refresh.gif"/> button.</li>
 		</ul>
 	</li>
 	<li><i>Application</i> creation:
@@ -43,7 +43,7 @@ Prerequisites:
 			<li>In 4DIAC-IDE create a new <i>Application</i> under <i>File/New/New Application</i></li>
 			<li>As <i>Parent System</i> select the previously created <q>FlipFlopTutorial</q> system</li>
 			<li>Under <i>Element Name</i> enter the <i>Application</i> name <q>flipFlopApplication</q></li>
-			<li>If you click on your <i>Application</i> name you will just see a empty window with FB palette to the right. If you cannot see your new <i>Application</i>, then press the refresh <img src="../overview/img/refresh.gif"/> button.</li>
+			<li>If you click on your <i>Application</i> name you will just see a empty window with FB palette to the right. If you cannot see your new <i>Application</i>, then press the refresh <img src="../4diacIDE/img/refresh.gif"/> button.</li>
 		</ul>
 	</li>
 </ol>
@@ -60,7 +60,7 @@ Prerequisites:
 <p><i>Devices</i> and their <i>Resources</i> are the units used to execute <i>Applications</i>. Therefore, the parts of the <i>Application</i> need to be mapped to the respective <i>Devices</i> and <i>Resources</i>. Communication <i>Segments</i> link <i>Devices</i> together. 4DIAC supports launching IEC 61499 <i>Applications</i> running in a <i>Resource</i> running FORTE for PLC/PC or a <i>Resource</i> running FBRT for HMI. For the Flip-Flop <i>Application</i> we have one <i>Device</i> running  FORTE (POSIX) and simulating an embedded <i>Device</i>. To set up the <i>Device</i> perform the following steps:</p>
 
 <ol>
-	<li>Open the <i>System</i> perspective <img src="../overview/img/systemButton.png"/>, if not already open.</li>
+	<li>Open the <i>System</i> perspective <img src="../4diacIDE/img/systemButton.png"/>, if not already open.</li>
 	<li>Click or double click on <i>System Configuration</i> of your <i>System</i></li>
 	<li>Add the <i>Device</i> from the <i>Palette</i> on right. Drag it into the <i>System Configuration</i>. Do not care about the color of the <i>Device</i>.
 		<ul>
@@ -114,14 +114,14 @@ Prerequisites:
 
 <a name="deploy"></a>
 <h2>Deploy the System</h2>
-<p>Switch to the Deployment perspective <img src="../overview/img/deploymentButton.png" alt="Deployment Perspective Button"/> and check your <i>System's</i> name. Launch FORTE either by the <i>Launch FORTE</i> button or by manually starting the <span class="code">forte.exe</span>. If you use the <i>Launch FORTE</i> button consider that you have to set the <a href="">properties</a>. Within the Deployment Console you see the download commands and within the console you will see the outputs of FORTE. Press <i>Download</i> button for deployment.</p> 
+<p>Switch to the Deployment perspective <img src="../4diacIDE/img/deploymentButton.png" alt="Deployment Perspective Button"/> and check your <i>System's</i> name. Launch FORTE either by the <i>Launch FORTE</i> button or by manually starting the <span class="code">forte.exe</span>. If you use the <i>Launch FORTE</i> button consider that you have to set the <a href="">properties</a>. Within the Deployment Console you see the download commands and within the console you will see the outputs of FORTE. Press <i>Download</i> button for deployment.</p> 
 <img src="./img/flipFlop_deploy.png" alt="Deploy the Flip-Flop application"/>
 
 
 <a name="monitor"></a>
 <h2>Monitor the Application</h2>
 <h3>Start Monitoring</h3>
-<p>To observe the outputs of your <i>Application</i> you can use 4DIAC's monitoring functionality. Right click on the <i>System</i> and choose <i>Monitor System</i>. Then switch to the 4DIAC Debug perspective <img src="../overview/img/debugButton.png" alt="Debug Perspective Button"/> and open the corresponding <i>Application</i>.</p>
+<p>To observe the outputs of your <i>Application</i> you can use 4DIAC's monitoring functionality. Right click on the <i>System</i> and choose <i>Monitor System</i>. Then switch to the 4DIAC Debug perspective <img src="../4diacIDE/img/debugButton.png" alt="Debug Perspective Button"/> and open the corresponding <i>Application</i>.</p>
 
 <h4>Watch Variable Changes</h4>
 <p>Within this view, it is possible to select the elements which should be monitored. This is done with a right mouse click on the specified element. Either the whole function block by <i>Watch All</i>, or a single interface element of a function block by <i>Watch</i> can be selected. After that the current values of the selected elements will be displayed in the engineering environment next to the interface elements as depicted as well as in the <i>Watches</i> view.</p>
@@ -133,6 +133,25 @@ Prerequisites:
 
 <h4>Force Values</h4>
 <p>The values of a function block input data can be overwritten by the force command form the context menu. The next time, the function block is executed the forced value will be used. The old value will be visualized in brackets.</p>
+
+<h2>Flip Flop Implemented as Different Function Block Types</h2>
+
+<ol>		
+		<ul type="square">
+			<li><a href="./flipflop_asBFB.html">Flip-Flop as a basic function block </a></li>
+			<li><a href="./flipflop_asCFB.html">Flip-Flop as a composite function block </a></li>
+			<li><a href="./flipflop_asSIFB.html">Flip-Flop as a service interface function block </a></li>							
+		</ul>
+	
+</ol>
+
+<h2>Flip Flop Application Structuring with Subapplication</h2>
+<ol>		
+		<ul type="square">
+			<li><a href="./flipflop_subapp.html">Flip Flop Application Structuring with Subapplication</a></li>								
+		</ul>
+	
+</ol>
 
 </body>
 </html>

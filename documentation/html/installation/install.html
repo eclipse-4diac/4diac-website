@@ -27,7 +27,7 @@ Unzip it to any desired folder and start the 4DIAC-IDE. It already contains a fu
 If you only want to use available Function Blocks you are ready to go.</p>
 		
 <p>In the 4DIAC-IDE you can set some preferences under <b>Window &rarr; Preferences &rarr; 4DIAC</b>.
-See <a href="../tutorials/properties.html">Useful 4DIAC Preferences</a> for detailed instructions.</p>
+See <a href="../4diacIDE/properties.html">Useful 4DIAC Preferences</a> for detailed instructions.</p>
 
 
 <div class="infobox"><div>
@@ -41,70 +41,22 @@ In case you want to run 4DIAC-IDE from source follow the Installation steps unde
 
 <a name="FORTE"></a>
 <h2>FORTE</h2>
-<p>For conducting first experiments with 4DIAC you can use the pre-build version of FORTE which comes along in the runtimes directory of the 4DIAC-IDE package.
-However if you want to develop your own Function Blocks or you want to run FORTE on different control devices you have to download and build FORTE from source.</p>
-
-<p>The required infrastructure for compiling and debugging FORTE consists of 3 main elements:</p>
-
-<ol>
-	<li><b>Tool-chain for generating the FORTE executable:</b>
-		<p>Depending on the intended target system you will need different tool-chains that allow you to create the FORTE executable and debug it. In general minimal requirement for the tool-chain is a C++ compiler and a linker that generates the final executable. At first you have to download the FORTE source code. There are two possibilities to get the source code: 
+<p>For conducting first experiments with 4DIAC you can use the pre-build version of FORTE which comes along in the runtimes directory of the 4diac-IDE package.
+<a href="../tutorials/flipFlop_tutorial.html">Flip Flop Tutorial</a> will direct you making a simple application with 4diac-IDE and using built-in FORTE.
+However if you want to develop your own Function Blocks or you want to run FORTE on different control devices, then you have to download and set up FORTE for the specific platform you are using</a>.
+<h2 id="BuildFORTE">Setting up FORTE for different platforms</h2>
+<ol>		
 		<ul type="square">
-			<li>If you do not want to keep up with the developments performed in the repository you can download the latest version of FORTE <a href="http://www.eclipse.org/4diac/en_dow.php">here</a>. Extract the file into your desired working directory.</li> 
-			<li>In any other case please use (e)Git to get FORTE from <span class="code">https://git.eclipse.org/r/4diac/org.eclipse.4diac.forte</span>.</li>
+			<li><a href="./windowsUnix.html">Setting up FORTE for Windows and Unix based systems</a></li>
+			<li><a href="./legoMindstormEv3.html">Setting up  FORTE for Lego Mindstorms EV3</a></li>
+			<li><a href="./mindstorms.html">Setting up  FORTE for Lego Mindstorms</a></li>
+			<li><a href="./raspi.html">Setting up  FORTE for RaspberryPi</a></li>
+			<li><a href="./raspberrySPS.html">Setting up  FORTE for RaspberryPi SPS</a></li>
+			<li><a href="./wago.html">Setting up FORTE for Wago PFCs SPS</a></li>
+			<li><a href="./icnova.html">Setting up FORTE for ICNova</a></li>				
 		</ul>
-		</p>
-	</li>
-	<li><b>CMake for generating the make files:</b>
-		<p>CMake helps you to configure FORTE for compilation with your desired development environment or hardware device. 
-		    For starters we recommend to use the GUI tool that comes with CMake. 
-		    After installing <a href="http://www.cmake.org/">CMake</a> please make sure that the PATH variable is set 
-		    to <span class="code">C:\<cmake dir>\bin</span>. 
-		</p>    
-		<p>When starting the CMake-GUI you have to select the source directory, 
-		    which is the main FORTE directory and the bin directory (e.g. <span class="code">FORTE/bin/posix</span>) which is the 
-		    output directory. There CMake will put the build project files (e.g., the makefiles) as well as any configuration data. 
-		    After that you will need to press the configuration button. 
-		    A window will pop up that lets you select the kind of project you like to build. 
-		    For the correct Project Setting please have a look at the next step. 
-		    In the CMake main window a list of red marked options will appear. 
-		    These options allow you to configure your FORTE build. 
-		    The minimal configuration you have to perform is to select the architecture you like to build for 
-		    (e.g., <span class="code">FORTE_ARCHITECTURE_POSIX</span>) and the modules with the function block libraries you like to use. 
-		    You should also keep <span class="code">FORTE_SUPPORT_MONITORING</span> enabled for Debugging and FB-Testing. 
-		  </p>    
-		<p> Then you need to press again the configure button and depending on your selection in the previous step new options (marked in red) may appear. 
-		    Press configure until no new options are appearing and then the generate button for generating the project files. 
-		    After that you can start the build process.
-		    </p> 
-	</li>
-	<li><b>IDE to work with the FORTE code</b>
-		<p>You can use different development Environments, whereas the C++ Compiler you can use to build FORTE not only depends on this environment but also on your operating system. 
-		For compiling FORTE under Windows you can use either Visual Studio (Express or full edition) or Eclipse. 
-		When using Eclipse for development and debugging under Windows you will need to use a Posix emulation environment like cygwin or minGW.</p>
-		<ul type="square">
-			<li><a href="visualStudio.html">Compiling and Debugging FORTE with MS Visual Studio Express</a></li>
-			
-			<li><a href="eclipse.html">Compiling and Debugging FORTE with Eclipse</a>
-				<ul type="circle">
-					<li><a href="cygwin.html">Setting up Cygwin for FORTE Development</a></li>
-					<li><a href="minGW.html">Setting up MinGW for FORTE Development</a></li>
-				</ul>
-			</li>
-			<li>Setting up Unix-like systems for FORTE Development: 
-				<br>install: binutils, gcc, gdb, make</li>
-		</ul>
-		<p>For the development with FORTE the understanding of the general file structure is helpful. Therefore the essential parts as well as the Makefiles which are important for the configuration and compilation of FORTE are listed in the following:
-		<ul type="square">
-			<li><span class="code">src/modules</span> this folder contains the source code (cpp, h) of all Function Blocks available for FORTE </li>
-			<li><span class="code">bin/&#60;yourSystem&#62;/src</span> contains the forte executable after compilation with Makefile <span class="code">all</span></li>
-			<li><span class="code">bin/&#60;yourSystem&#62;/src_gen</span> contains the object files generated during compilation with Makefile <span class="code">all</span></li>
-			<li><span class="code">all</span> this Makefile generates the object files for all FORTE core files and Function Block source code files </li>
-			<li><span class="code">clean</span> this makefile removes all generated object files. </li>
-		</ul>
- </p>
-	</li>
+	
 </ol>
-
+</p>
 </body>
 </html>

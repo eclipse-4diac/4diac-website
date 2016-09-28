@@ -2,108 +2,96 @@
 <?NLS TYPE="org.eclipse.help.toc"?>
 
 <toc label="4DIAC Help">
-
+   <topic label="Overview" href="html/overview/overview.html"/>   		 
+   
    <topic label="Installation" href="html/installation/install.html"> 
 		<topic label="4DIAC-IDE" href="html/installation/install.html#4DIAC-IDE"/>
-		<topic label="FORTE" href="html/installation/install.html#FORTE">
-			<topic label="Compiling and Debugging FORTE with MS Visual Studio Express" href="html/installation/visualStudio.html" />
-			<topic label="Compiling and Debugging FORTE with Eclipse" href="html/installation/eclipse.html">
-				<topic label="Setting up Cygwin for FORTE Development" href="html/installation/cygwin.html"/>
-				<topic label="Setting up MinGW for FORTE Development" href="html/installation/minGW.html"/>
-			</topic>
-		</topic>	
+		<topic label="FORTE" href="html/installation/install.html#FORTE">			
+			<topic label="Setting up FORTE for different platforms" href="html/installation/install.html#BuildFORTE">
+				<topic label="Setting up for Windows and Unix based systems" href="html/installation/windowsUnix.html">
+					<topic label="Compiling and Debugging FORTE with MS Visual Studio Express" href="html/installation/visualStudio.html" />
+					<topic label="Compiling and Debugging FORTE with Eclipse" href="html/installation/eclipse.html"/>
+						<topic label="Setting up Cygwin for FORTE Development" href="html/installation/cygwin.html"/>
+						<topic label="Setting up MinGW for FORTE Development" href="html/installation/minGW.html"/>	
+				</topic> 						
+				<topic label="Setting up FORTE for lego Mindstorms EV3" href="html/installation/legoMindstormEv3.html"/>
+				<topic label="Setting up FORTE for lego Mindstorms" href="html/installation/mindstorms.html"/>
+				<topic label="Setting up FORTE for RaspberryPi" href="html/installation/raspi.html">
+					<topic label="Cross-compiling FORTE to the Raspberry Pi" href="html/installation/raspi.html#crossCompiling">
+					     <topic label="Linux host" href="html/installation/raspi.html#crossCompilingLinux"/>
+					     <topic label="Windows host" href="html/installation/raspi.html#crossCompilingWindows"/>
+					</topic>
+				</topic>
+				<topic label="Setting up FORTE for RaspberrySPS" href="html/installation/raspberrySPS.html"/>
+				<topic label="Setting up FORTE for WagoPFCs" href="html/installation/wago.html"/>
+				<topic label="Setting up FORTE for ICNova" href="html/installation/icnova.html"/>				 
+		 	</topic>	
+		 	</topic>
 	</topic>
+	
    
-   	<topic label="Overview" href="html/overview/overview.html">
-   		<topic label="Perspectives" href="html/overview/perspectives.html">
-	   		<topic label="System Perspective" href="html/overview/perspectives.html#systemPerspective" /> 
-			<topic label="Type Management Perspective" href="html/overview/perspectives.html#typeManagementPerspective" /> 
-			<topic label="Deployment Perspective" href="html/overview/perspectives.html#deploymentPerspective" /> 
-			<topic label="Debug Perspective" href="html/overview/perspectives.html#debugPerspective" />
-		</topic>
-		<topic label="Modelling of IEC 61499 Applications using the 4DIAC-IDE" href="html/overview/applicationModelling.html">
-			<topic label="Import of Existing IEC 61499 Types" href="html/overview/applicationModelling.html#ImportExistingTypes"/>
-			<topic label="Create a new IEC 61499 System" href="html/overview/applicationModelling.html#CreateSystem"/>
-			<topic label="Create a new IEC 61499 Application" href="html/overview/applicationModelling.html#CreateApplication"/>
-			<topic label="Create IEC 61499 Subapplications" href="html/overview/applicationModelling.html#CreateSubapplications"/>
-			<topic label="Configuration of the Automation Hardware" href="html/overview/applicationModelling.html#ConfigureHardware">
-				<topic label="Configuration of the Device's Configuration Profile" href="html/overview/applicationModelling.html#DeviceProfileConfiguration"/>
+   
+   	<topic label="4diac-IDE">
+	   	<topic label="Perspectives" href="html/4diacIDE/perspectives.html">
+		   		<topic label="System Perspective" href="html/4diacIDE/perspectives.html#systemPerspective" /> 
+				<topic label="Type Management Perspective" href="html/4diacIDE/perspectives.html#typeManagementPerspective" /> 
+				<topic label="Deployment Perspective" href="html/4diacIDE/perspectives.html#deploymentPerspective" /> 
+				<topic label="Debug Perspective" href="html/4diacIDE/perspectives.html#debugPerspective" />
 			</topic>
-			<topic label="Mapping of Function Block Networks to Devices/Resources" href="html/overview/applicationModelling.html#MapNetworks"/>
-			<topic label="Virtual DNS Functionality" href="html/overview/virtualDNS.html"/>
+			<topic label="4DIAC Properties" href="html/4diacIDE/properties.html"/>
+			<topic label="Modelling of IEC 61499 Applications using the 4DIAC-IDE" href="html/4diacIDE/applicationModelling.html">				
+				<topic label="Create a new IEC 61499 System" href="html/4diacIDE/applicationModelling.html#CreateSystem"/>
+				<topic label="Create a new IEC 61499 Application" href="html/4diacIDE/applicationModelling.html#CreateApplication"/>
+				<topic label="Create IEC 61499 Subapplications" href="html/4diacIDE/applicationModelling.html#CreateSubapplications"/>				
+				<topic label="Configuration of the Automation Hardware" href="html/4diacIDE/applicationModelling.html#ConfigureHardware">
+					<topic label="Configuration of the Device's Configuration Profile" href="html/4diacIDE/applicationModelling.html#DeviceProfileConfiguration"/>
+				</topic>
+				<topic label="Mapping of Function Block Networks to Devices/Resources" href="html/4diacIDE/applicationModelling.html#MapNetworks"/>							
+			</topic>
+			<topic label="Management of IEC 61499 Element Types" href="html/4diacIDE/managementOfTypes.html">
+				<topic label="Create Function Block Types" href="html/4diacIDE/managementOfTypes.html#CreateTypes"/>
+				<topic label="Function Block Type Editor" href="html/4diacIDE/managementOfTypes.html#TypeEditor"/>
+				<topic label="FORTE Export of IEC 61499 Element Types" href="html/4diacIDE/managementOfTypes.html#ExportTypes"/>
+				<topic label="Other Type Editors" href="html/4diacIDE/managementOfTypes.html#OtherEditors"/>
+				<topic label="Function Block Tester" href="html/4diacIDE/managementOfTypes.html#FBTester"/>
+			</topic>
+			<topic label="Deployment of IEC 61499 Applications" href="html/4diacIDE/deployment.html">
+				<topic label="Selection of Deployable System Configurations/Devices/Resources" href="html/4diacIDE/deployment.html#Deploy"/>
+				<topic label="Download of System Configurations/Devices/Resources" href="html/4diacIDE/deployment.html#Download"/>
+				<topic label="Creating Boot-files" href="html/4diacIDE/deployment.html#CreateBootfiles"/>
+			</topic>			
+			<topic label="Monitoring and Debugging Functionalities" href="html/4diacIDE/monitoringDebugging.html">
+				<topic label="Watch Interface Elements" href="html/4diacIDE/monitoringDebugging.html#WatchElements"/>
+				<topic label="Trigger Events" href="html/4diacIDE/monitoringDebugging.html#TriggerEvents"/>
+				<topic label="Force Values" href="html/4diacIDE/monitoringDebugging.html#ForceValues"/>
+				<topic label="Breakpoints" href="html/4diacIDE/monitoringDebugging.html#Breakpoints"/>
+			</topic>
+			<topic label="Other Useful Features" href="html/4diacIDE/otherUseful.html">
+			<topic label="Import an Existing System" href="html/4diacIDE/otherUseful.html#ImportSystem"/>
+			<topic label="Import an Existing Type" href="html/4diacIDE/otherUseful.html#ImportType"/>
+			<topic label="Virtual DNS Functionality" href="html/4diacIDE/otherUseful.html#VirtualDNS"/>
+			</topic>	
 		</topic>
-		<topic label="Deployment of IEC 61499 Applications" href="html/overview/deployment.html">
-			<topic label="Selection of Deployable System Configurations/Devices/Resources" href="html/overview/deployment.html#Deploy"/>
-			<topic label="Download of System Configurations/Devices/Resources" href="html/overview/deployment.html#Download"/>
-			<topic label="Creating Boot-files" href="html/overview/deployment.html#CreateBootfiles"/>
-		</topic>
-		<topic label="Management of IEC 61499 Element Types" href="html/overview/managementOfTypes.html">
-			<topic label="Create Function Block Types" href="html/overview/managementOfTypes.html#CreateTypes"/>
-			<topic label="Function Block Type Editor" href="html/overview/managementOfTypes.html#TypeEditor"/>
-			<topic label="FORTE Export of IEC 61499 Element Types" href="html/overview/managementOfTypes.html#ExportTypes"/>
-			<topic label="Other Type Editors" href="html/overview/managementOfTypes.html#OtherEditors"/>
-			<topic label="Function Block Tester" href="html/overview/managementOfTypes.html#FBTester"/>
-		</topic>
-		<topic label="Monitoring and Debugging Functionalities" href="html/overview/monitoringDebugging.html">
-			<topic label="Watch Interface Elements" href="html/overview/monitoringDebugging.html#WatchElements"/>
-			<topic label="Trigger Events" href="html/overview/monitoringDebugging.html#TriggerEvents"/>
-			<topic label="Force Values" href="html/overview/monitoringDebugging.html#ForceValues"/>
-			<topic label="Breakpoints" href="html/overview/monitoringDebugging.html#Breakpoints"/>
-		</topic>	 
-   	</topic> 
    
 	<topic label="Tutorials"> 
-		<topic label="4DIAC Framework">
-			<topic label="X+3 Tutorial"  href="html/tutorials/x3_tutorial.html"> 
-				<topic label="Application" href="html/tutorials/x3_tutorial.html#application" /> 
-				<topic label="System Management" href="html/tutorials/x3_tutorial.html#systemManagement" /> 
-				<topic label="Deployment" href="html/tutorials/x3_tutorial.html#deployment" /> 
-			</topic>
-			<topic label="Flip-Flop Tutorial" href="html/tutorials/flipFlop_tutorial.html">
-				<topic label="Create a System" href="html/tutorials/flipFlop_tutorial.html#system"/>
-				<topic label="Adding a Device" href="html/tutorials/flipFlop_tutorial.html#device"/>
-				<topic label="Create the Application" href="html/tutorials/flipFlop_tutorial.html#application"/>
-				<topic label="Map the Application" href="html/tutorials/flipFlop_tutorial.html#mapping"/>
-				<topic label="Deploy the System" href="html/tutorials/flipFlop_tutorial.html#deploy"/>
-				<topic label="Monitor the Application" href="html/tutorials/flipFlop_tutorial.html#monitor"/>
-			</topic> 
-			
-		</topic>
-		<topic label="4DIAC-IDE">
-			<topic label="4DIAC Properties" href="html/tutorials/properties.html"/>
-			<topic label="Import an existing System" href="html/tutorials/systemImport.html"/>
-			<topic label="Application Structuring with Subapplications" href="html/tutorials/flipFlop_subapp.html" />
-			<topic label="Developing Function Blocks" href="html/tutorials/fbs.html"> 
-				<topic label="Create FB Interface" href="html/tutorials/fbInterface.html"/>
-				<topic label="Flip-Flop as BFB" href="html/tutorials/flipFlop_asBFB.html"/>
-				<topic label="Flip-Flop as CFB" href="html/tutorials/flipFlop_asCFB.html"/>
-				<topic label="Flip-Flop as SIFB" href="html/tutorials/flipFlop_asSIFB.html"/>	
-				<topic label="Export an own FB" href="html/tutorials/fBexport.html"/>
-				<topic label="Test own FB with FBTester" href="html/tutorials/fbTester.html"/>				
-			</topic>			
-		</topic>
-		<topic label="FORTE">
-			<topic label="CMake for new FB Type" href="html/tutorials/cmake.html"/>
-			<topic label="4DIAC on other Platforms">
-				<topic label="Building FORTE for Lego Mindstorms" href="html/tutorials/mindstorms.html"/>
-				<topic label="Building FORTE for ICnova" href="html/tutorials/icnova.html"/>
-				<topic label="Running FORTE on Raspberry Pi" href="html/tutorials/raspi.html">
-				  <topic label="Building FORTE on the Raspberry Pi" href="html/tutorials/raspi.html#onRPI"/>
-				  <topic label="Cross-compiling FORTE to the Raspberry Pi" href="html/tutorials/raspi.html#crossCompiling">
-				     <topic label="Linux host" href="html/tutorials/raspi.html#crossCompilingLinux"/>
-				     <topic label="Windows host" href="html/tutorials/raspi.html#crossCompilingWindows"/>
-				  </topic>
-				  <topic label="Using the RPI's pins" href="html/tutorials/raspi.html#usingPins"/>
-				</topic>  
-				<topic label="Building FORTE for Raspberry-SPS" href="html/tutorials/raspberrySPS.html"/>
-				<topic label="Building FORTE for Wago" href="html/tutorials/wago.html"/>
-				<topic label="Everything about the Lego Mindstorm EV3" href="html/tutorials/legoMindstormEv3.html">
-				  <topic label="What is EV3 and how to run FORTE on it?" href="html/tutorials/legoMindstormEv3.html#ev3_introduction"/>
-				  <topic label="What I/O can be controlled?" href="html/tutorials/legoMindstormEv3.html#ev3_parameters"/>
-				  <topic label="Example of a PID controller for a motor" href="html/tutorials/legoMindstormEv3.html#ev3_example"/>
-				</topic>
-			</topic>
-		</topic>
+		<topic label="Flip-Flop Tutorial" href="html/tutorials/flipFlop_tutorial.html">
+			<topic label="Create a System" href="html/tutorials/flipFlop_tutorial.html#system"/>
+			<topic label="Adding a Device" href="html/tutorials/flipFlop_tutorial.html#device"/>
+			<topic label="Create the Application" href="html/tutorials/flipFlop_tutorial.html#application"/>
+			<topic label="Map the Application" href="html/tutorials/flipFlop_tutorial.html#mapping"/>
+			<topic label="Deploy the System" href="html/tutorials/flipFlop_tutorial.html#deploy"/>
+			<topic label="Monitor the Application" href="html/tutorials/flipFlop_tutorial.html#monitor"/>
+			<topic label="Flip-Flop as a basic function block" href="html/tutorials/flipFlop_asBFB.html"/>
+			<topic label="Flip-Flop as a composite function block" href="html/tutorials/flipFlop_asCFB.html"/>
+			<topic label="Flip-Flop as a service interface function block" href="html/tutorials/flipFlop_asSIFB.html"/>
+			<topic label="Flip Flop Application Structuring with Subapplication" href="html/tutorials/flipFlop_subapp.html"/>
+		</topic>			
+		<topic label="X+3 Tutorial"  href="html/tutorials/x3_tutorial.html"> 
+			<topic label="Application" href="html/tutorials/x3_tutorial.html#application" /> 
+			<topic label="System Management" href="html/tutorials/x3_tutorial.html#systemManagement" /> 
+			<topic label="Deployment" href="html/tutorials/x3_tutorial.html#deployment" /> 
+		</topic>				
+		
 	</topic>
 	
 	<topic label="Using Communication Protocols"> 

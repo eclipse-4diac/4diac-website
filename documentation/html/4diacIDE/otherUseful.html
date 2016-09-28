@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Import an Existing System</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1 id= "ImportSystem">Import an Existing <i>System</i></h1>
+<p>Existing <i>Systems</i> can be imported as follows: </p>
+
+<ol>
+	<li>Start 4DIAC-IDE with the desired Workspace</li>
+	<li>select <i>File/Import/Existing Projects into Workspace</i> and press <i>Next</i></li>
+	<li>choose the folder that contains the folder with the <i>System</i> you want to import</i>
+	<li>mark the desired <i>System</i> within the project field below</li>
+	<li>if your project is not already within your workspace and if you do not want to modify the original version of your projekt mark <i>Copy Projects into workspace</i> and press <i>Finish</i>. Consider that if you did not check <i>Copy Projects into workspace</i> and you delete your <i>System</i> within 4DIAC then your <i>System</i> will be deleted permanently.</li>
+	<li>Check the <i>System</i> is completely there, like the <i>System Configuration</i> with the <i>Devices</i> and <i>Resources</i> as well as the <i>Application</i> with FBs and both event and data connects.</li>
+</ol>
+
+<a name="ImportExistingTypes"></a>
+<h2 id= "ImportType">Import an Existing IEC 61499 <i>Types</i></h2>
+	<p>New systems per default contain a copy the IEC 61499 types in the tool-library. If different types are need, for
+    example from another project or another IEC 61499 engineering tool, these type files can be easily added by copying them into
+    the project directory at the desired place. Furthermore the 
+    <b>Type Navigator</b> allows to drag and drop types between projects as well as within a project to a different folder.</p>
+    
+<h1 id= "VirtualDNS">Virtual DNS Functionality</i></h1>
+<p>The Properties View of the System Configuration Editor provides a <i>Virtual DNS</i> editor. This functionality allows defining a set of variables which are replaced by a specified value. The variable names can be used for parameters of Function Blocks and <i>Devices</i>. During the deployment, all variables which are available in the VirtualDNS are replaced with the specified value. For using a variable, the variable name has to be written between <span class="code">%</span>. </p> 
+ 
+<img src="./img/virtualDNS.png" alt="Virtual DNS"/>
+
+
+</body>
+</html>

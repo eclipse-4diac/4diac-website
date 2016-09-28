@@ -1,0 +1,61 @@
+  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Building FORTE for Lego Mindstorms</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+
+<h1>Building FORTE for Lego Mindstorms</h1>
+<p><a href="http://www.lego.com/">LEGO</a> is a trademark name and Mindstorms NXT is a registered trademark from the company LEGO. This tutorial uses <a href="http://ecos.sourceware.org/">eCos</a> realtime operating system (RTOS) and FORTE on the ARM7 processor of the LEGO Mindstorms NXT Brick. The System of the <a href="./flipFlop.html">Flip-Flop Tutorial</a> can used with Lego Mindstorms (LMS) as a first test example. If you do not already use Eclipse with Cygwin please consider to get it, as it is described <a href="../installation/forte.html">here</a>.</p> 
+
+<ol>
+	<li>For Cygwin consider the <a href="http://ecos.sourceware.org/cygwin.html">eCos installation instructions</a></li>
+	<li>Install the <a href="http://ecos.sourceware.org/getstart.html">GNU ARM toolchain</a></li>
+	<li>Within the FORTE source create the directories <span class="code">bin/lego</span> and copy the eCos <span class="code">include</span> and <span class="code">lib</span> directories into it</li>
+	<li>Open cMake Gui, for source directory enter the FORTE project directory, for build directory, enter the previously created directory <span class="code">.../bin/lego</span> and press the <i>Configure</i> button </li>
+	<li>From the dropdown choose: <i>UNIX Makefiles</i> and select <i>Specify options for cross-compiling</i> then press the <i>Next</i> button</li>
+	<li>Specify options for cross-compiling: 
+		<ul>
+			<li>Operation System: eCos</li> 
+			<li>Compilers for C: <span class="code">arm-elf-gcc</span> (need to include path if not installed under cygwin)</li>
+			<li>Compilers for C++: <span class="code">arm-elf-g++</span> (need to include path if not installed under cygwin)</li>
+			<li>insert the path to the target <span class="code">.../bin/lego</span></li>
+		</ul>
+		<div class="code">INCLUDE(CMakeForceCompiler)
+
+# this one is important
+SET(CMAKE_SYSTEM_NAME eCos) 
+
+# specify the cross compiler
+CMAKE_FORCE_C_COMPILER(arm-elf-gcc GNU)
+CMAKE_FORCE_CXX_COMPILER(arm-elf-g++ GNU)
+
+# where is the target environment 
+SET(CMAKE_FIND_ROOT_PATH  C:/.../FORTE/bin/lms)
+
+# search for programs in the build host directories
+SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+
+# for libraries and headers in the target directories
+SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)</div>
+		<img src="./img/CMake_eCos.PNG" alt=""/>		
+	</li>
+	<li>press the <i>Configure</i> button, check the following options an press the <i>Generate</i> button
+	<div class="code">FORTE_ARCHITECTURE_LMS #check
+FORTE_COM_ETH #uncheck  
+FORTE_MODULE_xxx #check as needed 
+FORTE_USE_64BIT_DATATYPES #uncheck since not available in LMS 
+FORTE_USE_LREAL_DATATYPE #uncheck since not available in LMS
+FORTE_USE_REAL_DATATYPE #uncheck since not available in LMS</div></li>
+	<li> in Eclipse make all (Note: under cygwin in <span class="code">lms/bin</span> directory <span class="code">make</span> forte also works)</li>
+	<li>Generate <span class="code">forte.bin</span> separately or as part of flashing bat file <span class="code">arm-elf-objcopy --gap-fill 0xFF -O binary forte.elf forte.bin</span> notice now <span class="code">.elf</span> before no extension</li>
+	<li>Ready to flash and test on LMS </li>
+</ol>
+ 
+</body>
+</html>
