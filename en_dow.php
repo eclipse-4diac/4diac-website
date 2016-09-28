@@ -108,10 +108,8 @@
 					<p style="font-size:10.5pt"><i>64-bit version requires Java 8 64-bit</i>
 					<br>32-bit version requires Java 8 32-bit</i></p>
 				</td>
-				<td>
-				</td>
-				<td>
-				</td>
+				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'> </td>
+				<td width="33%" style='padding-left:10px; '> </td>
 			</tr>
 			
 			<tr>
@@ -467,7 +465,7 @@
 						</li>
 					</ul>
 				</td>
-				<td width="33%" style='padding-right:10px; padding-left:10px; '>
+				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
 						<li class="expand"><h3>Old 4diac-RTE Releases</h3>
 							<ul>
@@ -551,8 +549,7 @@
 						</li>
 					</ul>
 				</td>
-				<td width="33%" style='padding-left:10px; '>
-				</td>
+				<td width="33%" style='padding-left:10px; '> </td>
 			</tr>	
 </table>
 
