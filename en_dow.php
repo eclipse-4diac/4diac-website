@@ -33,6 +33,7 @@
 		background: url(img/fordiac16.png) no-repeat scroll 0px 10px transparent;
 		background-size: 12px 12px;
 		background-position: 0px 8px; 
+		cursor: pointer;
 	}
 
 	#nav ul {
