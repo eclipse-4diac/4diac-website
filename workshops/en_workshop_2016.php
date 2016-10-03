@@ -31,7 +31,7 @@
 	</tr>
 	<tr>
 		<td>
-			Human-Robot Collaborative Assembly: 4DIAC as base Technology in the SYMBIO-TIC project
+			<a href="uws/2016/UW_04_Ebenhofer.pdf">Human-Robot Collaborative Assembly: 4DIAC as base Technology in the SYMBIO-TIC project</a>
 			<br><i>Gerhard Ebenhofer (Profactor GmbH)</i>
 		</td>
 	</tr>
