@@ -562,8 +562,8 @@
 			<img src="media/poweredby4diac_small_lowres.png" alt="powered by 4diac small" height="100"/>
 		</td>
 		<td style='padding:0px 30px 0px 10px'>
-			<br> <a href="media/poweredby4diac_small.svg">Powered by 4diac large SVG</a>
-			<br> <a href="media/poweredby4diac_small.png">Powered by 4diac large PNG</a>
+			<br> <a href="media/poweredby4diac_small.svg">Powered by 4diac small SVG</a>
+			<br> <a href="media/poweredby4diac_small.png">Powered by 4diac small PNG</a>
 		</td>
 
 		<td>
