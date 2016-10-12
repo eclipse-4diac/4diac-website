@@ -13,3 +13,4 @@
 
 <p>We are already looking forward to the next users' workshop.</p>
 <?php include 'greeting.html';?>
+

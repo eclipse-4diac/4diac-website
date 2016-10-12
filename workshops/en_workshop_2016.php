@@ -31,7 +31,7 @@
 	</tr>
 	<tr>
 		<td>
-			Human-Robot Collaborative Assembly: 4DIAC as base Technology in the SYMBIO-TIC project
+			<a href="uws/2016/UW_04_Ebenhofer.pdf">Human-Robot Collaborative Assembly: 4DIAC as base Technology in the SYMBIO-TIC project</a>
 			<br><i>Gerhard Ebenhofer (Profactor GmbH)</i>
 		</td>
 	</tr>
@@ -55,7 +55,7 @@
 	</tr>
 	<tr>
 		<td>
-			Cert-4FUN, Towards a Certified Compiler backend for IEC 61499
+			<a href="uws/2016/UW_08_Lindgren.pdf">Cert-4FUN, Towards a Certified Compiler backend for IEC 61499</a>
 			<br><i>Per Lindgren (Lulea University of Technology)</i>
 		</td>
 	</tr>
