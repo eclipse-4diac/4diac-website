@@ -1,8 +1,8 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>4DIAC - The Open Source Environment for Distributed Industrial Automation and Control Systems</title>
-<meta name="description" content="4DIAC is an open source PLC environment allowing to implement industrial control solutions in a vendor neutral way. 4DIAC implements IEC 61499 extending IEC 61131-3 with better support for controller to controller communication and dynamic reconfiguration. With that 4DIAC provides the infrastructure for industrie 4.0 and industrial IoT."> 
+<title>Eclipse 4diac - The Open Source Environment for Distributed Industrial Automation and Control Systems</title>
+<meta name="description" content="Eclipse 4diac(tm) is an open source PLC environment allowing to implement industrial control solutions in a vendor neutral way. 4diac implements IEC 61499 extending IEC 61131-3 with better support for controller to controller communication and dynamic reconfiguration. With that 4diac provides the infrastructure for industrie 4.0 and industrial IoT."> 
 <meta name="keywords" content="open source PLC, programmable logic controller, distributed control systems, networked embedded systems, distributed industrial process measurement and control systems, IEC 61499, IEC 61131-3, dynamic reconfiguration, industrial communication, industrie 4.0, smart manufacturing, controller to controller communication, indusrrial IoT, internet of things">
 <meta name="google-site-verification" content="v0F1VlYRwarfPpjribA2S4SBSl6ZvNtzautGKWO7juI" />
 </head>
@@ -38,19 +38,19 @@
 
 <section class="content">
 
-<h4>4DIAC provides an industrial-grade open source infrastructure <br>for distributed industrial process measurement and control systems <br>based on the IEC 61499 standard. 4DIAC includes:</h4>
+<h4>Eclipse 4diac&trade; provides an open source infrastructure <br>for distributed industrial process measurement and control systems <br>based on the IEC 61499 standard. 4diac includes:</h4>
 
 	<a class="componentbutton" href="en_rte.php">RTE
-		<img height="100px" src="img/rte-button.png" alt="4DIAC runtime environment (FORTE) provides a device indepent execution of IEC 61499 control application"/>
+		<img height="100px" src="img/rte-button.png" alt="4diac runtime environment (FORTE) provides a device indepent execution of IEC 61499 control application"/>
 		<span>Runtime<br>Environment</span></a>
 	<a class="componentbutton" href="en_ide.php">IDE
-		<img height="100px" src="img/ide-button.png" alt="4DIAC-IDE provides a development environment for developing distributed industrial processes measurements and control systems"/>
+		<img height="100px" src="img/ide-button.png" alt="4diac-IDE provides a development environment for developing distributed industrial processes measurements and control systems"/>
 		<span>Development<br>Environment</span></a>
 	<a class="componentbutton" href="en_lib.php">LIB
-		<img height="100px" src="img/lib-button.png" alt="4DIAC's function block library provides you with a set of reusable function blocks reducing the effort of application development"/>
+		<img height="100px" src="img/lib-button.png" alt="4diac's function block library provides you with a set of reusable function blocks reducing the effort of application development"/>
 		<span>Function Block<br>Library</span></a>
 	<a class="componentbutton" href="en_sys.php">SYS
-		<img height="100px" src="img/sys-button.png" alt="Example systems showing the features of IEC 61499 and 4DIAC"/>
+		<img height="100px" src="img/sys-button.png" alt="Example systems showing the features of IEC 61499 and 4diac"/>
 		<span>Example<br>Projects</span></a>
 
 	<h4>IEC 61499 defines a domain specific modeling language for developing distributed industrial control solutions.<br>IEC 61499 extends IEC 61131-1 by improving the encapsulation of software components for increased re-usability,<br>providing a vendor independent format, and simplifying support for controller to controller communication.<br>Its distribution functionality and the inherent support for dynamic reconfiguration provide<br>the required infrastructure for Industrie 4.0 and industrial IoT applications.</h4>
