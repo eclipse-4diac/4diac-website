@@ -90,8 +90,7 @@
 			<topic label="Application" href="html/tutorials/x3_tutorial.html#application" /> 
 			<topic label="System Management" href="html/tutorials/x3_tutorial.html#systemManagement" /> 
 			<topic label="Deployment" href="html/tutorials/x3_tutorial.html#deployment" /> 
-		</topic>				
-		
+		</topic>
 	</topic>
 	
 	<topic label="Using Communication Protocols"> 
@@ -100,6 +99,11 @@
 		<topic label="Modbus" href="html/communication/modbus.html"/>
 		<topic label="openPOWERLINK" href="html/communication/openPOWERLINK.html"/>
 		<topic label="MQTT with Eclipse Paho" href="html/communication/mqttPaho.html"/>
+		<topic label="OPC UA"  href="html/communication/opc_ua.html">
+			<topic label="Build FORTE with OPC UA" href="html/communication/opc_ua.html#build" />
+			<topic label="OPC UA Variables" href="html/communication/opc_ua.html#variables" />
+			<topic label="OPC UA Methods" href="html/communication/opc_ua.html#methods" />
+		</topic>
 	</topic>  
 		
 	<topic label="Frequently Asked Questions"> 
