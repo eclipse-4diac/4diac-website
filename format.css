@@ -472,12 +472,9 @@ font-weight:bold;
 }
 
 footer td.right img{
-margin-left:5px;
-margin-right:5px;
 margin-top:5px;
 height:24px;
 align:middle;
-float:right;
 }
 
 footer td.center img{
