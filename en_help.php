@@ -6,8 +6,16 @@
 <meta name="keywords" content="porting, tutorials, getting started, overview  ">
 
 <script language="javascript" type="text/javascript">
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+function resizeIframe(obj, size) {
+    obj.style.height = size + 'px';
+  }
+
+  function resizeIframes() {
+    maxSize = document.getElementById("iframe-toc").contentWindow.document.body.scrollHeight;
+    if (maxSize < document.getElementById("iframe-content").contentWindow.document.body.scrollHeight)
+        maxSize = document.getElementById("iframe-content").contentWindow.document.body.scrollHeight;
+    resizeIframe(document.getElementById("iframe-toc"), maxSize);
+    resizeIframe(document.getElementById("iframe-content"), maxSize);
   }
 </script>
 </head>
@@ -18,8 +26,8 @@
 <section class="content">
 <h1>Documentation</h1>
 <section class="documentation">
-<iframe class="toc" src="documentation/toc.php" onload="resizeIframe(this)"></iframe>
-<iframe class="doc" name="Content" src="documentation/html/overview/overview.html" onload="resizeIframe(this)"></iframe>
+<iframe class="toc" src="documentation/toc.php" onload="resizeIframes()"></iframe>
+<iframe class="doc" name="Content" src="documentation/html/overview/overview.html" onload="resizeIframes()"></iframe>
 </section>
 </section>
 
