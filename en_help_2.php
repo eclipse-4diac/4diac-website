@@ -38,7 +38,17 @@ function resizeIframe(obj, size) {
 	<section class="documentation">
 		<span class="toc">
 			<ul id="nav">
-	            <?php include 'documentation/toc.php'; ?>
+	            <?php 
+$XML = new DOMDocument(); 
+$XML->load( './documentation/toc.xml' ); 
+#echo $XML->saveXML();
+$xslt = new XSLTProcessor(); 
+$XSL = new DOMDocument(); 
+$XSL->load( './documentation/toc_2.xsl', LIBXML_NOCDATA); 
+#echo $XSL->saveXML();
+$xslt->importStylesheet( $XSL ); 
+print $xslt->transformToXML( $XML ); 
+?>
 	        </ul>
 	    </span>
 		<iframe class="doc" id="iframe-content" name="Content" src="documentation/html/overview/overview.html" onload="resizeIframes()"></iframe>
