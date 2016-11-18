@@ -10,12 +10,22 @@
 			<a href="https://www.linkedin.com/grp/home?gid=6949091"><img src="img/appbar.social.linkedin.png"/></a>
 			<a href="https://www.xing.com/communities/groups/4diac-1076214"><img src="img/appbar.social.xing.png"/></a></td>
 				<td id="width33">
-					<table style="float:right;"><tr><td class="right" style="padding:0px;margin:0px;"><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a><a href="http://www.eclipse.org/"><br/>
-					<a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a>
-					</td>
-					<td class="right" style="padding:0px;margin:0px;"><a href="http://www.eclipse.org/"><img src="img/eclipse.png"/></a></td>
-<td class="right" style="text-align:left;"><a href="http://www.eclipse.org/legal/copyright.php">Copyright</a></br>
-					<a href="http://www.eclipse.org/legal/">Legal</a></td></tr></table></td>			
+					<table style="float:right;">
+						<tr>
+							<td class="right" style="padding:0px;margin:0px;">
+								<a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a><br/>
+								<a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a>
+							</td>
+							<td class="right" style="padding:0px;margin:0px;">
+								<a href="http://www.eclipse.org/"><img src="img/eclipse.png"/></a>
+							</td>
+							<td class="right" style="text-align:left;">
+								<a href="http://www.eclipse.org/legal/copyright.php">Copyright</a></br>
+								<a href="http://www.eclipse.org/legal/">Legal</a>
+							</td>
+						</tr>
+					</table>
+				</td>			
 			</tr>
 		</table>		
 	</footer>
