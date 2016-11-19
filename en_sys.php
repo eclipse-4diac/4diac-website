@@ -1,9 +1,6 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" type="text/css" href="format.css">
 
 <title>4DIAC Systems</title>
 <meta name="description" content="4DIAC provides you with a set of example projects helping to learn IEC 61499 and 4DIAC. Furthernore these examples show different features of IEC 61499."> 
@@ -37,16 +34,15 @@
 		<li>a handling unit composed of a horizontal and a vertical axis as well as vacuum gripper to put an inlay into any part on the conveyor</li>
 		<li>a status light which represents the state of the station</li>
 	</ul>
-	<figure>
-		<figure class="single">
-			<img src="img/pickNplace.png" width="350px" alt="pick and place station"/>
-			<figcaption>Pick&amp;Place Station</figcaption>	
-		</figure>
-		<figure class="single">
-			<img src="img/pickNplaceHierarchy.png" width="350px" alt="pick and place station hierarchy"/>
-			<figcaption>Hierarchically structured Pick&amp;Place Station</figcaption>
-		</figure>
+	<figure class="single">
+		<img src="img/pickNplace.png" width="350px" alt="pick and place station"/>
+		<figcaption>Pick&amp;Place Station</figcaption>	
+	</figure>
+	<figure class="single">
+		<img src="img/pickNplaceHierarchy.png" width="350px" alt="pick and place station hierarchy"/>
+		<figcaption>Hierarchically structured Pick&amp;Place Station</figcaption>
 	</figure></p>
+	
 	<p><b>... @ <a href="http://www.profactor.at/">PROFACTOR GmbH</a></b>
 		<br>... 
 	</p>
