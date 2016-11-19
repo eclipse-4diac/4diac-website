@@ -29,6 +29,13 @@ text-align:center;
 figcaption{
 font-size:10pt;
 color:rgba(1,34,105,1.0);
+text-align:center;
+}
+
+figure.single{
+  display: inline-block;
+  padding: 10px;
+  width: 33%;
 }
 
 /* ***************** navigation ***************** */
@@ -195,9 +202,7 @@ vertical-align:center;
 /* ***************** content ***************** */
 section.content{
 color:orange;
-padding-top:0px;/*
-padding-bottom:25px;
-margin-bottom:25px;*/
+padding:0px;
 text-align:center;
 height:auto;
 width:100%;

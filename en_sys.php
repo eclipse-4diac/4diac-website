@@ -1,6 +1,10 @@
 <html>
 <head>
 <?php include 'head.php';?>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="format.css">
+
 <title>4DIAC Systems</title>
 <meta name="description" content="4DIAC provides you with a set of example projects helping to learn IEC 61499 and 4DIAC. Furthernore these examples show different features of IEC 61499."> 
 <meta name="keywords" content="application examples, tutorials, IEC 61499 applications">
@@ -25,14 +29,24 @@
 	</ul>
 	
 	<h2>IEC 61499 Applications</h2>
-	<p><b>Pick and Place Station @ <a href="http://www.fortiss.org">fortiss GmbH</a></b>
-	<br>The pick and place station is supposed to study the IEC 61499 compliant implementation of hierarchical control applications.  ... purpose ... pick and place station... distributed on two PLCs
-	</p>
+	<p><b>Programming Patterns for IEC 61499 @ <a href="http://www.fortiss.org">fortiss GmbH</a></b>
+	<br>The Pick&amp;Place station from <a href="http://www.festo-didactic.com/de-de/lernsysteme/mechatronische-systeme-mps/mps-stationen">Festo</a> is used to explore programming patterns for the design of IEC 61499 compliant control applications. This station is composed of several components used to design reusable mechatronic entities for an hierarchical orchestration:
+	<ul>
+		<li>a conveyor with part detection for incoming parts and a light barrier for outgoing parts, which transports any part</li>
+		<li>a separator with a part detector which separates parts in front of a handling unit</li>
+		<li>a handling unit composed of a horizontal and a vertical axis as well as vacuum gripper to put an inlay into any part on the conveyor</li>
+		<li>a status light which represents the state of the station</li>
+	</ul>
 	<figure>
-		<img src="img/pickNplace.png" width="800px" alt="pick and place station"/>
-		<figcaption>pick and place station</figcaption>
-	</figure>
-	
+		<figure class="single">
+			<img src="img/pickNplace.png" width="350px" alt="pick and place station"/>
+			<figcaption>Pick&amp;Place Station</figcaption>	
+		</figure>
+		<figure class="single">
+			<img src="img/pickNplaceHierarchy.png" width="350px" alt="pick and place station hierarchy"/>
+			<figcaption>Hierarchically structured Pick&amp;Place Station</figcaption>
+		</figure>
+	</figure></p>
 	<p><b>... @ <a href="http://www.profactor.at/">PROFACTOR GmbH</a></b>
 		<br>... 
 	</p>
