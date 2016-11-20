@@ -399,7 +399,8 @@ background-color:rgba(153,166,195,1.0);
 box-sizing:border-box;
 overflow-x:hidden;
 }
-iframe.doc{
+
+iframe.doc, div.doc{
 vertical-align:top;
 height:inherit;
 width:70%;

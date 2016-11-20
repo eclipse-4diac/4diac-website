@@ -17,9 +17,8 @@
          <xsl:when test="@href">
               <xsl:element name="a">
                	<xsl:attribute name="href">
-               	  documentation/<xsl:value-of select="@href" />
+               	  en_help_2.php?helppage=<xsl:value-of select="@href" />
                 </xsl:attribute>
-               	<xsl:attribute name="target">Content</xsl:attribute>   
                	<xsl:value-of select="@label" />
             </xsl:element>
          </xsl:when>

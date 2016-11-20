@@ -137,7 +137,17 @@ print $xslt->transformToXML( $XML );
 ?>
 	        </ul>
 	    </span>
-		<iframe class="doc" id="iframe-content" name="Content" src="documentation/html/overview/overview.html" onload="resizeIframes()"></iframe>
+	    
+	    <div class ="doc">
+	    <?php 
+	    	$page = 'html/overview/overview.html';
+	    	
+	    	if(isset($_GET['helppage'])) {
+	    		$page = $_GET['helppage'];
+	    	}
+	    	include './documenation/'.$page; 
+	    ?>
+	    </div>	    
 	</section>
 </section>
 
