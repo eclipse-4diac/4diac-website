@@ -22,42 +22,61 @@
 		<tr>
 			<td><h2 class="h2twocollumntable">Supported communication layers</h2>
 				<ul>
-					<li>FBDK ASN.1 encoding</li>
-					<li>Ethernet (TCP/UDP)</li>
-					<li>Modbus TCP client using <a href="http://libmodbus.org/">libmodbus</a></li>
-					<li>OPC DA client using <a href="http://sourceforge.net/projects/opcclient/">OPC Client library release 0.4</a></li>
-					<li>MQTT using <a href="http://www.eclipse.org/paho/">Eclipse Paho</a></li>
-					<li>RS232</li>
 					<li><a href="https://www.eclipse.org/eclipsescada/news/2014/08/29/wrapup__iot_top_level_project__syslog__relp___sfp__validation.html">EclipseSCADA SFP</a></li>
+					<li>Ethernet (TCP/UDP)</li>
 					<li>Ethernet PowerLink using <a href="http://sourceforge.net/projects/openpowerlink/">openPOWERLINK V1.8.0</a></li>
+					<li>FBDK ASN.1 encoding</li>
+					<li>Modbus TCP client using <a href="http://libmodbus.org/">libmodbus</a></li>
+					<li>MQTT using <a href="http://www.eclipse.org/paho/">Eclipse Paho</a></li>
+					<li>OPC UA using <a href="https://github.com/open62541/open62541">open62541</a> upcoming</li>
+					<li>OPC DA client using <a href="http://sourceforge.net/projects/opcclient/">OPC Client library release 0.4</a></li>
+					<li>RS232</li>
 				</ul>
 			</td>
 			<td><h2 class="h2twocollumntable">Supported Operating Systems</h2>
 				<ul>
-					<li>Windows</li>
-					<li>Posix: <a href="https://www.cygwin.com/">Cygwin</a>, Linux (i386, PPC, ARM)</li>
-					<li><a href="http://www.digi.com/products/wireless-wired-embedded-solutions/software-microprocessors-accessories/software/netos">NET+OS 7</a></li>
 					<li><a href="http://ecos.sourceware.org/">eCos</a></li>
+					<li><a href="http://www.digi.com/products/wireless-wired-embedded-solutions/software-microprocessors-accessories/software/netos">NET+OS 7</a></li>		
+					<li>Posix: <a href="https://www.cygwin.com/">Cygwin</a>, Linux (i386, PPC, ARM)</li>
+					<li>Windows</li>
+					<li>upcoming:
+						<ul>
+							<li><a href="http://www.freertos.org/">freeRTOS</a></li>
+							<li><a href="https://kb.hilscher.com/display/RCX/rcX">rcX</a></li>
+							<li><a href="http://www.windriver.com/products/vxworks/">VxWorks</a></li>
+						</ul>
+					</li>
 				</ul> 
 			</td>
 		</tr>
 		<tr>
 			<td><h2 class="h2twocollumntable">Supported Boards</h2>
 				<ul>
-					<li><a href="http://www.digi.com/products/embedded-systems">Digi Connect ME</a> (ARM7)</li>
-					<li><a href="http://mindstorms.lego.com/en-us/Default.aspx">Lego Mindstorms EV3</a> (ARM7)</li>
-					<li><a href="http://www.kipr.org/products/cbc-robot-controller">KIPR's CBC v2</a> robot controller</li>
-					<li><a href="http://www.raspberrypi.org/">Raspberry PI</a></li>
 					<li><a href="http://beagleboard.org/black">BeagleBone Black</a></li>
+					<li><a href="http://www.digi.com/products/embedded-systems">Digi Connect ME</a> (ARM7)</li>
+					<li><a href="http://www.kipr.org/products/cbc-robot-controller">KIPR's CBC v2</a> robot controller</li>
+					<li><a href="http://mindstorms.lego.com/en-us/Default.aspx">Lego Mindstorms EV3</a> (ARM7)</li>					
+					<li><a href="http://www.raspberrypi.org/">Raspberry PI</a></li>
+					<li>upcoming:
+						<ul>
+							<li><a href="http://www.embrick.de/">emBRICK</a> for Raspberry PI and BeagleBone Black</li>
+							<li><a href="http://www.hilscher.com/">NXH 51-ETM</a></li>
+						</ul>
+					</li>
 				</ul>
 			</td>
 			<td><h2 class="h2twocollumntable">Supported Programmable Logic Controllers (PLCs)</h2>
 				<ul>
 					<li><a href="http://www.bachmann.info/en/products/controller-system/">Bachmann electronic M1 PLC</a></li>
-					<li><a href="http://global.wago.com/en/products/new-items/overview/pfc200-1.jsp">WAGO PFC200</a></li>
+					<li><a href="http://www.conmeleon.org/">CONMELEON C1</a></li>
 					<li><a href="http://raspberry-sps.de/">Raspberry-SPS</a></li>
-					<li><a href="http://www.conmeleon.org/">CONMELEON C1</a><br/>
-					<li>B&amp;R under construction</li>
+					<li><a href="http://global.wago.com/en/products/new-items/overview/pfc200-1.jsp">WAGO PFC200</a></li>
+					<li>upcoming:
+						<ul>
+							<li><a href="http://www.advantech.com/products/">ADAM 3600</a></li>
+							<li>B&amp;R</li>
+							<li><a href="http://www.elrest-gmbh.com/">Robusto RMC 50x</a></li>
+						</ul></li>
 				</ul>
 			</td>
 		</tr>
