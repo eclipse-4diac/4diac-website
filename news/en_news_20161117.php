@@ -12,7 +12,7 @@ As always please download, test, and report problems and bugs.</p>
 <ul>
 	<li>4DIAC-IDE:
 		<ul>
-      		<li>Improved transition condtion editing property sheet with code completion and syntax higlighting of condition expressions</li>
+      		<li>Improved transition condition editing property sheet with code completion and syntax higlighting of condition expressions</li>
       		<li>Fixed transition coditions without events to conform to IEC 61499-1 Ed. 2</li>
       		<li>Fixed handling the array size of internal variables leading to wrong C++ code</li>
       		<li>Correctly check for names of Algorithms, States, and internal variables</li>
