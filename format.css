@@ -383,7 +383,7 @@ border:1.9mm solid rgba(153,166,195,1.0);
 
 /****************** documentation ******************/
 section.documentation{
-height:100%;
+height:auto;
 width:95%;
 display:flex;
 text-align:left;
@@ -402,14 +402,14 @@ overflow-x:hidden;
 
 iframe.doc, div.doc{
 vertical-align:top;
-height:inherit;
 width:70%;
 margin-left:5px;
-margin-bottom:25px;
 padding:0px;
 border:0px;
 box-sizing:border-box;
 overflow-x:hidden;
+min-height: 100%;
+margin-bottom: -142px;
 }
 
 /****************** header / footer ******************/
