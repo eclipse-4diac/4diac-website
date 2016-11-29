@@ -17,7 +17,6 @@
 	<li>Do you have spaces in the directory names where you have put your FORTE? Some Cygwin versions have problems with these.</li>
 </ul>
 
-
 <a name="faq2"></a>
 <h2>CMake/Cygwin: Can not find C and C++ compilers</h2>
 CMake Errors: 
@@ -36,6 +35,18 @@ CMake Error:
 <a name="faq4"></a>
 <h2>FORTE is C++ why are you than using the C-style include files for the standard c library instead of the C++ style include files?</h2>
 <p>The main reason for this is that not all platforms provide the correct C++ include files. Especially with real-time OSs like eCos where you can freely configure the supported features. Using C++ style C include files on these platforms would pull lots of stuff from the compilers in and result in a bigger image or even worse it would not compile. So as of current experience C style include files are more reliable.</p>
+
+<a name="faq5"></a>
+<h2>Within my FORTE console I get <i>UDP-Socket Send failed: Network is unreachable</i></h2>
+<p>Consider to explicitly setup multicast IP routing in the kernel with the <span class="code">route</span> command. This has been an issue on on Raspberry Pi, where executing the following command resolved the problem:</p>
+<div class="code">route add -net 224.0.0.0 netmask 240.0.0.0 dev eth0</div> 
+<p>where the IPs are the desired multicast IP.</p>
+
+<a name="faq6"></a>
+<h2>Within my FORTE console I get <i>connection closed by peer</i></h2>
+<p>The TCP port is opened by a server in the RMT_RES. 
+This server handles the communication with the tool for download and monitoring. 
+The message indicates the end of the download process when 4DIAC-IDE disconnects.</p>
 
 </body>
 </html>
