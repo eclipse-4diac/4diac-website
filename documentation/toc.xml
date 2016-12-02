@@ -90,8 +90,7 @@
 			<topic label="Application" href="html/tutorials/x3_tutorial.html#application" /> 
 			<topic label="System Management" href="html/tutorials/x3_tutorial.html#systemManagement" /> 
 			<topic label="Deployment" href="html/tutorials/x3_tutorial.html#deployment" /> 
-		</topic>				
-		
+		</topic>
 	</topic>
 	
 	<topic label="Using Communication Protocols"> 
@@ -100,6 +99,11 @@
 		<topic label="Modbus" href="html/communication/modbus.html"/>
 		<topic label="openPOWERLINK" href="html/communication/openPOWERLINK.html"/>
 		<topic label="MQTT with Eclipse Paho" href="html/communication/mqttPaho.html"/>
+		<topic label="OPC UA"  href="html/communication/opc_ua.html">
+			<topic label="Build FORTE with OPC UA" href="html/communication/opc_ua.html#build" />
+			<topic label="OPC UA Variables" href="html/communication/opc_ua.html#variables" />
+			<topic label="OPC UA Methods" href="html/communication/opc_ua.html#methods" />
+		</topic>
 	</topic>  
 		
 	<topic label="Frequently Asked Questions"> 
@@ -108,19 +112,16 @@
 			<topic label="Download not possible! Defined profile () for RMT_XXX.xxx not supported" href="html/faq/ide.html#faq2"/>
 			<topic label="When I download my application I get an UNSUPPORTED TYPE error message in the Deployment Console" href="html/faq/ide.html#faq3"/>
 			<topic label="When I download my application I get a STATUS ACCESS VIOLATION error messages in the Deployment Console" href="html/faq/ide.html#faq4"/>
-			<topic label="When I download my application I get an Create FB Instance failed error" href="html/faq/ide.html#faq5"/>
-			<topic label="When I want to download my application I get an connection refused message" href="html/faq/ide.html#faq6"/>
-			<topic label="How do I use ARRAYs" href="html/faq/ide.html#faq7"/>
-			<topic label="What does CLEAN Device do" href="html/faq/ide.html#faq8"/>
-			<topic label="What does KILL Device do" href="html/faq/ide.html#faq9"/>
+			<topic label="When I want to download my application I get an connection refused message" href="html/faq/ide.html#faq5"/>
+			<topic label="How do I use ARRAYs" href="html/faq/ide.html#faq6"/>
+			<topic label="What does CLEAN Device do" href="html/faq/ide.html#faq7"/>
+			<topic label="What does KILL Device do" href="html/faq/ide.html#faq8"/>
 		</topic>
 		<topic label="FORTE">
 			<topic label="Windows/Cygwin: The setup script runs to completion but when building the target I get strange compile errors" href="html/faq/forte.html#faq1"/>
 			<topic label="CMake/Cygwin: Can not find C and C++ compilers" href="html/faq/forte.html#faq2"/>
 			<topic label="CMake/Cygwin: Can not find RC Compilers" href="html/faq/forte.html#faq3"/>
 			<topic label="FORTE is C++ why are you than using the C-style include files for the standard c library instead of the C++ style include files?" href="html/faq/forte.html#faq4"/>
-			<topic label="Within my FORTE console I get UDP-Socket Send failed: Network is unreachable" href="html/faq/forte.html#faq4"/>
-			<topic label="Within my FORTE console I get connection closed by peer" href="html/faq/forte.html#faq5"/>
 		</topic>
 	</topic>  
 	
