@@ -10,7 +10,7 @@
 <p>Eclipse 4diac™ was presented at the Eclipse DemoCamp in Munich on December 5TH. An introduction to its capabilities was followed by the demonstration of a 3D-printed prototype of a un/stacker module controlled by an IndraControl XM22 PLC from Bosch Rexroth. The PLC received the commands from an HMI and sent its states back using MQTT messages, allowing the user to see in real-time the process steps of the prototype</p>
 
 <figure class="single">
-	<img src="img/EclipseDemoCamp.png" width="600px" alt="4diac at Eclipse Demo Camp"/>
+	<img src="news/figs/EclipseDemoCamp.png" width="600px" alt="4diac at Eclipse Demo Camp"/>
 	<figcaption>4diac at Eclipse Demo Camp with IndraControl XM22 PLC from Bosch Rexroth controlling a 3D-printed prototype of a un/stacker module</figcaption>	
 </figure>
 
