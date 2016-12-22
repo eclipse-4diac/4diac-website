@@ -9,7 +9,8 @@
 <p>We are proud to announce the third maintenance release for 4DIAC 1.8 providing a set of bug fixes to 4diac-ide, and FORTE.
 As always please download, test, and report problems and bugs.</p>
 
-<h3>Attention: </h3><i>Because of build issues we had to change the name of thread.h to forte_thread.h and from sycn.h to forte_sync.h. 
+<h3>Attention: </h3>
+<p><i>Because of build issues we had to change the name of thread.h to forte_thread.h and from sycn.h to forte_sync.h. 
 If you have your own FORTE extensions using these you need to adjust the include statements accordingly.</i></p>
 
 <p>The main changes are:</p>
