@@ -69,7 +69,7 @@
 					<i>Development environment with FORTE executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac-RTE 1.8.3</h2>	
+					<h2>4diac-RTE 1.8.4</h2>	
 					<i>Sources of FORTE compilable for your system.</i>
 				</td>
 				<td width="33%" style='padding-left:10px;'>
@@ -90,7 +90,7 @@
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-						<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.3.zip/download">FORTE 1.8.3</a></li>
+						<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.4.zip/download">FORTE 1.8.4</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
@@ -503,6 +503,7 @@
 							<ul>
 								<li class="expand">FORTE 1.8.x
 									<ul>
+									<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.3.zip/download">FORTE 1.8.3</a></li>
 									<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.2.zip/download">FORTE 1.8.2</a></li>
 									<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.1.zip/download">FORTE 1.8.1</a></li>
 									<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.8/FORTE_1.8.0.zip/download">FORTE 1.8.0</a></li>
