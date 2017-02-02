@@ -28,7 +28,7 @@ As always please download, test, and report problems and bugs.</p>
 			<li>profile saving for system files has been added in order to allow an easy migration from 1.8.x projects to the upcoming 4diac versions</li>
 			<li>reenabled untyped subapp mapping for testing purposes</li>
 			<li>order of the menu entries and their names have been changed to better follow the classical workflow</li>
-      		<li>fixed <b>16<b> issues reported by AERI</li>
+      		<li>fixed <b>16</b> issues reported by AERI</li>
       	</ul>
 	</li>
 	<li>forte:
