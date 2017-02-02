@@ -81,9 +81,9 @@
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">						
-						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8.4/4DIAC-IDE_1.8.4_win32.x86_64.zip/download">Windows 64-bit</a></li>
-						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8.4/4DIAC-IDE_1.8.4_win32.x86.zip/download">Windows 32-bit</a></li>
-						<li><a href="http://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.8.4/4DIAC-IDE_1.8.4_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
+						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC_IDE%201.8.4/4DIAC-IDE_1.8.4_win32.x86_64.zip/download">Windows 64-bit</a></li>
+						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC_IDE%201.8.4/4DIAC-IDE_1.8.4_win32.x86.zip/download">Windows 32-bit</a></li>
+						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC_IDE%201.8.4/4DIAC-IDE_1.8.4_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
 						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC_IDE%201.8.4/4DIAC-IDE_1.8.4_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
 						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC_IDE%201.8.4/4DIAC-IDE_1.8.4_cocoa.x86_64.zip/download">Mac OS X</a></li>
 					</ul>
