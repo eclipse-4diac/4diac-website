@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Adapter Usage</title>
+	<link rel="stylesheet" type="text/css" href="../help.css">
+</head>
+
+<body>
+<h1>Adapter Usage</h1>
+<p><i>Adapters</i> group interface elements into reusable interface descriptions.
+They reduce the number of interface elements (event and data inputs and outputs) and by that the number of connections that have to be created between interacting function blocks.
+In 4diac <i>adapters</i> are listed in the type library and represented by this symbol <img src="./img/adapter/adapter.png"/>.
+</p>
+
+<a name="newAdapterType"></a>
+<h2>Create a new Adapter Type</h2>
+<p>These interface descriptions can be added to the interface of any function block type.
+Currently <i>adapters</i> can not contain other adapters.
+There are two types of <i>adapters</i>, which are mirrored interfaces:</p>
+
+<img class="center" src="./img/adapter/plugAndSocket.png" alt="socket and plug."/>
+
+<ul>
+	<li><i>socket</i>: added as <b>input</b> of a function block and represented by this symbol <img src="./img/adapter/sockets_16.png"/> within the function block's interface.</li>
+	<li><i>plug</i>: added as <b>output</b> of a function block and represented by this symbol <img src="./img/adapter/plugs_16.png"/> within the function block's interface.</li>
+</ul>
+
+<p>When a new <i>adapter</i> is created it is supposed to be a <i>socket</i> the mirrored plug is derived automatically by 4diac and is <b>not</b> created by the user.
+An <i>adapter</i> (<i>socket</i>) is created by <i>File > New > New Type</i> and selecting Adapter.adp as Type.
+All <i>adapters</i> should start with an <span class="code">A</span> (naming convention).</p>
+
+<img class="center" src="./img/adapter/newAdapter.png" alt="socket creation."/>
+
+<a name="useAdapterType"></a>
+<h2>Use your new Adapter Type</h2>
+<p>After the creation of your desired <i>adapter</i> type (<i>socket</i>) it can be added to a function block's interface by drag and drop from the Palette, as illustrated in the following figure.</p>
+
+<img class="center" src="./img/adapter/addAdapter.png" alt="add adapter to the interface of a function block."/>
+
+<p>The function blocks used within the following application snippet are part of the TrafficLight example system. 
+Two different <i>adapter</i> types have been used, <span class="code">ATimeOut</span> in <span class="code">PedLightCtl_AT</span> and <span class="code">E_TimeOut</span>) and <span class="code">ATrafficLight</span> in <span class="code">PedLightCtl_AT</span>.</p>
+
+<p>The <span class="code">PedLightCtl_AT</span> is a basic function block.
+Within basic function blocks <i>adapters</i> are accessed by <span class="code">FB_INTERFACE_NAME.ADAPTER_INTERFACE_NAME</span>. 
+The elements of the <span class="code">ATimeOut</span> <i>adapter</i> are therefore accessed by <span class="code">timeOut.START</span>, <span class="code">timeOut.STOP</span> and <span class="code">timeOut.TimeOut</span>.</p>
+
+<p>The <span class="code">E_TimeOut</span> is a composite function block.
+Within the network of a composite function block any <i>adapter</i> added to its interface is represented by an <i>adapter</i> block which looks like a function block.
+The interface elements of this <i>adapter</i> block are connected like a function block.</p>
+
+<img class="center" src="./img/adapter/example.png" alt="application with function blocks that contain adapters."/>
+
+<p>Further examples for the usage of <i>adapters</i> can be found within the FestoMPS example system.<p>
+
+</body>
+</html>
