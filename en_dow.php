@@ -106,11 +106,49 @@
 			
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<p style="font-size:10.5pt"><i>64-bit version requires Java 8 64-bit</i>
+					<p style="font-size:10.5pt"><i>64-bit version requires Java 8 64-bit
 					<br>32-bit version requires Java 8 32-bit</i></p>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'> </td>
 				<td width="33%" style='padding-left:10px; '> </td>
+			</tr>
+			
+			<tr>
+				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
+					<ul id="nav">
+						<li class="expand"><h3>IDE Milestones (unstable)</h3>
+							<ul>
+								<li class="expand">4diac-IDE 1.9.x
+									<ul>
+										<li class="expand">4diac-IDE 1.9.0.M1
+											<ul>
+												<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.9.0/Milestones/4DIAC-IDE_1.9.0.M1_win32.x86_64.zip/download">Windows 64-bit</a></li>
+												<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.9.0/Milestones/4DIAC-IDE_1.9.0.M1_win32.x86.zip/download">Windows 32-bit</a></li>
+												<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.9.0/Milestones/4DIAC-IDE_1.9.0.M1_linux.gtk.x86_64.tar.gz/download">Linux 64-bit</a></li>
+												<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.9.0/Milestones/4DIAC-IDE_1.9.0.M1_linux.gtk.x86.tar.gz/download">Linux 32-bit</a></li>
+												<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/4DIAC-IDE%201.9.0/Milestones/4DIAC-IDE_1.9.0.M1_cocoa.x86_64.zip/download">Mac OS X</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</td>
+				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
+					<ul id="nav">
+						<li class="expand"><h3>RTE Milestones (unstable)</h3>
+							<ul>
+								<li class="expand">FORTE 1.9.x
+									<ul> 
+										<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/FORTE%201.9/Milestones/FORTE_1.9.0.M1.zip/download">FORTE 1.9.0.M1</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</td>
+				<td width="33%" style='padding-left:10px;'> </td>
 			</tr>
 			
 			<tr>
