@@ -1,5 +1,5 @@
 <div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	First Milestone on our Way to 1.9.0
+	1<sup>st</sup> Milestone on our Way to 1.9.0
 </div>
 <div class="news">
 	<span class="left"><?php $date="2017-02-08 11:26"; echo $date;?></span> 
