@@ -9,6 +9,6 @@
 On February 16<sup>th</sup> we gave a short overview on IEC 61499 and 4diac. If you missed the video of the talk is now online. </p>
 
 <?php include 'greeting.html';?>
-<p>
+<p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1z3pxDngQG8" frameborder="0" allowfullscreen></iframe></p>
 <br>
