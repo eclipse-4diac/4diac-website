@@ -1,7 +1,7 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>4diac-Community</title>
+<title>4diac-Support</title>
 <meta name="4diac open source community helping new users applying 4diac for their applications as well as driving the further development of 4diac."> 
 <meta name="keywords" content="open source community, mailing lists, forums, user support, how to contribute">
 </head>
@@ -14,7 +14,7 @@
 </section>
 
 <section class="content">
-	<h1>Community</h1>
+	<h1>Support</h1>
 	<h2>Communication Channels</h2>
 	<table><tr>
 		<td width="253" >
