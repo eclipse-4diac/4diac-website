@@ -8,22 +8,29 @@
 </head>
 
 <body>
-<h1>Flip-Flop as Basic Function Block <img src="../overview/img/basicfb_16.png" alt="BFB"/></h1>
-<p>After creating a Basic Function Block (BFB) perform the following steps to add the Flip-Flop functionality to your own BFB.</p>
+<h1>Create Flip-Flop Basic Function Block</h1>
+<p>After creating a Basic Function Block (BFB) <img src="../overview/img/basicfb_16.png" alt="BFB"/> and its interface perform the following steps to add the Flip-Flop functionality to your own BFB.</p>
 
 <ol>
-	<li>Within the <i>Properties</i> tab enter a comment description for the Flip-Flop like <i>Flip Flop alternating on/off</i></li>
-	<li> Within the <i>Interface</i> tab create the following interface:
+	<li>Within the <i>Type Info</i> properties view, that is shown in the <i>Interface</i> tab, enter a comment description for the Flip-Flop like <i>Flip Flop alternating on/off</i></li>
+	<li>Within the <i>Interface</i> tab you should have the following interface:
 		<br><img src="./img/flipFlop_BFB_interface.png" alt="Flip-Flop BFB Interface"/>
 	</li>
-	<li>Within the Algorithm tab delete the existing <span class="code">INIT</span> <i>Algorithm</i> because we do not need it and choose the <span class="code">REQ</span> <i>Algorithm</i>. In the ST (Structured Text) area enter <span class="code">Q := NOT Q;</span>
+	<li>Within the Algorithms property sheet delete the existing <i>Algorithms</i> because we do not need them.
+	 And create a <span class="code">REQ</span> <i>Algorithm</i>. 
+	In the ST (Structured Text) area enter <span class="code">Q := NOT Q;</span>
 		<br><img src="./img/flipFlop_BFB_algorithm.png" alt="Flip-Flop BFB Algorithm"/>
 	</li>
 	<li>Within the <i>ECC</i> tab delete or adapt the default Execution Control Chart (ECC) according to the figure below. 
 		<ol>
-			<li>Open the Palette on the right and bring in 2 <i>States</i> or modify the existing <i>States</i>. Name the states <span class="code">NULL</span> and <span class="code">ONE</span>. Consider that the first inserted <i>State</i> is marked as the initial <i>State</i> by a double border. This initial <i>State</i> is named <span class="code">NULL</span>.</li>
-			<li>Bring an an <i>Action</i> pair for both <i>States</i> or modify the existing ones. Set the <i>Algorithm</i> to <span class="code">REQ</span> and the event output to <span class="code">CNF</span></li>
-			<li>Connect <span class="code">NULL</span> to <span class="code">ONE</span> (start at green dot) and change the trigger input event to <span class="code">REQ</span>. Connect <span class="code">ONE</span> to <span class="code">NULL</span> and change the trigger input event to <span class="code">REQ</span>.</li>
+			<li>Open the palette on the right and bring in 2 <i>States</i> or modify the existing <i>States</i>. 
+			Name the states <span class="code">IDLE</span> and <span class="code">STATE</span>. 
+			Consider that the first inserted <i>State</i> is marked as the initial <i>State</i> by a double border. 
+			This initial <i>State</i> is named <span class="code">IDLE</span>.</li>
+			<li>Bring an <i>Action</i> for the <span class="code">STATE</span> <i>state</i> or modify an existing one. 
+			Set the <i>Algorithm</i> to <span class="code">REQ</span> and the event output to <span class="code">CNF</span></li>
+			<li>Connect <span class="code">IDLE</span> to <span class="code">STATE</span> (start when connector symbol appears) and change the trigger input event to <span class="code">REQ</span>. 
+			Connect <span class="code">STATE</span> to <span class="code">IDLE</span> and leave the trigger at <span class="code">1</span>.</li>
 		</ol>
 		<br><img src="./img/flipFlop_BFB_ECC.png" alt="Flip-Flop BFB ECC"/>
 	</li>

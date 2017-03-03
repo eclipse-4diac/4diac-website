@@ -9,12 +9,17 @@
 
 <body>
 
-<h1>CMake for new FB Type</i></h1>
-<p>If you want to add your Function Blocks to an own Module which can be selected and deselected during configuration with CMake, create a new folder inside <span class="code"><path to>/forte/src/modules/<FB group/module name></span>. Then create a CMakeLists.txt file in the directory and add:</p> 
+<h1>Add Function Block Type to FORTE</h1>
+<p>If you want to add your function blocks to an own module, which can be selected and unselected during configuration with CMake, create a new folder inside <span class="code"><path to>/forte/src/modules/<FB group/module name></span>. 
+Then create a CMakeLists.txt file in the directory and add:</p> 
  
 <div class="code">forte_add_module(&#60;FB group name&#62; "&#60;description of FB Group&#62;")</div>
 
-<p>For each Function Block type you want to add to your module or to another existing module add the following line to your or an existing CMakeLists.txt</p>
+<p>If you want to structure your function blocks in several sub folders, add the following line to your CMakeLists.txt.</p>
+
+<div class="code">forte_add_subdirectory(&#60;folder name&#62;)</div>
+
+<p>For each function block type you want to add to your module or to another existing module add the following line to your or an existing CMakeLists.txt</p>
 
 <div class="code">forte_add_sourcefile_hcpp(&#60;FB type name&#62;)</div>
  

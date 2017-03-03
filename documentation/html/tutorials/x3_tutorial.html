@@ -8,19 +8,20 @@
 </head>
 
 <body>
-<h1>X+3 Tutorial</h1>
-This getting started tutorial should give you an overview of how to work with 4DIAC by examining and deploying the <i>System</i> <span class="code">Xplus3</span> and <i>Application</i> <span class="code">Xplus3Application</span>. The test <i>System</i> consists of two <i>Devices</i>, after examining the mapping of the <i>Application</i> parts to the <i>Resources</i>, we will set the preferences required and test it. 
+<h1>Explore an Existing System</h1>
+<p>This getting started tutorial should give you an overview of how to work with 4diac by examining and deploying the <i>System</i> <span class="code">Xplus3</span> and <i>Application</i> <span class="code">Xplus3Application</span>. 
+The test <i>System</i> consists of two <i>Devices</i>, after examining the mapping of the <i>Application</i> parts to the <i>Resources</i>, we will set the preferences required and test it.</p> 
 
 <ul>
 	<li>Task of the X+3 Tutorial: calculate and display X+3</li>
-	<li>The <span class="code">Xplus3</span> <i>System</i> is included with the 4DIAC-IDE release, alternatively you can get it from <a href="http://hg.code.sf.net/p/fordiac/fordiac-systems">[1]</a> with TortoiseHG 
+	<li>The <span class="code">Xplus3</span> <i>System</i> is included with the 4diac-IDE release, alternatively you can get it with mercurial <span class="code">hg clone http://hg.code.sf.net/p/fordiac/fordiac-systems</span> 
 	<li>Examines a simple IEC 61499 <i>Application</i> with 2 <i>Devices</i></li> 
 	<li>The communication between the different <i>Devices</i> is integrated within the <i>Resource</i></li>
 </ul>
 
 Prerequisites: 
 <ul>	
-	<li>4DIAC-IDE</li>
+	<li>4diac-IDE</li>
 	<li>FORTE</li>
 	<li><a href="http://www.holobloc.com/">FBRT 2008- Downloadable from Holobloc, Inc.</a></li>
 	<li>Import the prepared <i>System</i> <span class="code">Xplus3</span>. How existing <i>Systems</i> are imported is described <a href="./systemImport.html">here</a>. 
@@ -28,7 +29,7 @@ Prerequisites:
 
 
 <a name="application"></a>
-<h2>Application for X+3</h2>
+<h2>Explore Existing Application</h2>
 <p>A IEC 61499 <i>Application</i> is designed independent of <i>Devices</i> and <i>Resources</i>. The <i>Application</i> FBs are mapped to the <i>Resource</i> of a <i>Device</i> they will run on after building the application. Click on the arrow beside the <span class="code">Xplus3</span> <i>System</i> and double-click to open the <i>Application</i> called <span class="code">Xplus3Application</span> (note: depending on your operating system, a single click may be sufficient where double clicks are mentioned in this tutorial) 
 <p>
 
@@ -44,13 +45,14 @@ Prerequisites:
 
 
 <a name="systemManagement"></a>
-<h2><i>System</i> Configuration for X+3</h2>
+<h2>Explore Existing <i>System Configuration</i></h2>
 <p>Within the <i>System</i> called <span class="code">Xplus3</span> there is the <i>System</i> Configuration. Click once on <i>System</i> Configuration (on left) and keep expanding the <i>System</i> Configuration by clicking the arrows on the left 
 This shows the <i>Devices</i> and <i>Resources</i> used.</p>
 
 <img src="./img/x3_systemConfiguration.png" alt="System Configuration"/>
 
-<h3><i>Devices</i></h3>
+<a name="devices"></a>
+<h3>Explore Existing <i>Devices</i></h3>
 <p>Double click on <i>System</i> Configuration to open the <i>System</i> Configuration model that shows the <i>System</i>, the <i>Devices</i>, their <i>Resources</i> and the communication network the <i>Devices</i> are connected to.</p>
 
 <img src="./img/x3_system.png" alt="The X+3 System"/>
@@ -63,7 +65,8 @@ This shows the <i>Devices</i> and <i>Resources</i> used.</p>
 
 <p>Click on the <i>Device</i> name in main window to look at the <i>Device's</i> properties bottom window. It is important to set the property Misc / Profile to HOLOBLOC.</p>
 
-<h3><i>Resources</i></h3>
+<a name="resources"></a>
+<h3>Explore Existing <i>Resources</i></h3>
 <p>In this <i>System</i> each <i>Device</i> has a Manager and 1 <i>Resource</i>, that <i>Applications</i> can be mapped to. If you have not yet done so, click on the arrow at the left side of <i>System</i> Configuration to see the <i>Devices</i> (<span class="code">MICROCONTROLLER</span>; <span class="code">PC</span>). In the same way, expand the <i>Devices</i> (<span class="code">MICROCONTROLLER</span>; <span class="code">PC</span>) to see their <i>Resource(s)</i>. Double-click on the <i>Resource</i> names (<span class="code">CALC</span>, <span class="code">VIS</span>) to see what Function Blocks are mapped to the <i>Resource</i>. The full <i>Application</i> appears above the Resource. For the <span class="code">CALC</span> <i>Resource</i>, it looks like this: <i>System</i> Configuration / <span class="code">MICROCONTROLLER</span> / <span class="code">CALC</span></p>
 
 <img src="./img/x3_microcontroller.png" alt="Resource on the Microcontroller"/>
@@ -84,8 +87,11 @@ This shows the <i>Devices</i> and <i>Resources</i> used.</p>
 
 
 <a name="deployment"></a>
-<h2>Deployment for X+3</h2>
-<p>Switch to the Deployment perspective and set the runtime preferences. The following settings are under <i>Window/Preferences/4DIAC</i>. For further details on setting these locations see <a href="./properties.html">4DIAC Properties</a>. To run the test, the locations of the IEC 61499 executables for the <i>Devices</i> used are required.</p> 
+<h2>Deploy Your Application</h2>
+<p>Switch to the Deployment perspective and set the runtime preferences. 
+The following settings are under <i>Window/Preferences/4DIAC</i>. 
+For further details on setting these locations see <a href="../overview/properties.html">4diac-IDE Properties</a>. 
+To run the test, the locations of the IEC 61499 executables for the <i>Devices</i> used are required.</p> 
 
 <ul>
 	<li><span class="code">MICROCONTROLLER.CALC</span> uses FORTE. Therefore, the location of <span class="code">forte.exe</span> must be set within the FORTE preferences. Typically, this is somewhere below .<span class="code">\runtime\FORTE\</span>. Relative paths do not work in all setups, it is recommended to specify an absolute path here.</li>

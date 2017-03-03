@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Monitoring and Debugging Functionalities</title>
+    <link rel="stylesheet" type="text/css" href="../help.css" />
+  </head>
+  <body>
+  
+<h1>Monitoring and Debugging</h1>
+
+<a name="monitor"></a>
+<h2>Start Monitoring</h2>
+<p>To observe the outputs of your <i>Application</i> you can use 4diac's monitoring functionality. 
+Currently this can be done in two different ways:</p>
+<ol>
+	<li>Right click on a <i>system</i> in the system explorer or the download selection tree:
+	<br/><img src="./img/monitoring/monitorContextMenu.png" alt="Select elements to be monitored" />
+	</li>
+	<li>Via enabling it in the toolbar under the toolbar icon: <img src="../overview/img/properties/startMon.gif" alt="Monitoring" /></li>
+</ol>
+<p>A check sign shows that the monitoring is enabled for the system. 
+After that, the engineering environment opens the <a href="../overview/perspectives.html#debugPerspective">4diac debug perspective</a>.</p>
+
+<a name="WatchElements"></a>
+<h2>Watch Interface Elements</h2>
+<p>Within this view, it is possible to select the elements which should be monitored. 
+This is done with a right mouse click on the specified element. 
+Either the whole function block by <i>Watch All</i>, or a single interface element of a function block by <i>Watch</i> can be selected.</p>
+<br/><img src="./img/monitoring/flipFlop_watch.png" alt="Select elements to be monitored"/>
+<p>After that the current values of the selected elements will be displayed in the engineering environment next to the interface elements.
+They also appear in the <i>Watches</i> view.</p>
+<img src="./img/monitoring/currentMonitoredElements.png" width="1024" alt="Current monitored values displayed next to the interface elements" />
+
+
+<a name="TriggerEvents"></a>
+<h2>Trigger Event Inputs</h2>
+<p>Additionally, it is possible to trigger events. 
+Therefore, it is necessary to select <i>Trigger Event</i> menu from the context menu of an event interface element.</p>
+<img src="./img/monitoring/flipFlop_triggerEvent.png" alt="Trigger an event during Monitoring"/>
+
+
+<a name="ForceValues"></a>
+<h2>Force Values</h2>
+<p>The values of function block Input data can be overwritten by the force command form the context menu:</p>
+<br/><img src="./img/monitoring/enableForceValue.png" width="1024" alt="Enable Force Value" />
+<p>The next time, the function block is executed the forced value will be used with the next event. 
+The old value will be visualized in brackets:</p>
+<br/><img src="./img/monitoring/forcedValue.png" width="1024" alt="Forced Value" />
+
+
+<a name="Breakpoints"></a>
+<h2>Breakpoints</h2>
+<p><span style="color:red"><b>NOTE: Currently NOT supported!!!!!</b></span>
+</p>
+<p>Breakpoints allows to stop/break the event propagation of the control application. 
+Therefore it is necessary to specify at which event element the execution should be stopped. 
+A breakpoint can be specified by selecting the breakpoint menu form the context menu.</p>
+<p>
+<img src="./img/monitoring/enableBreakpoint.png" width="1024" alt="Enable Breakpoint" />
+</p>
+<p>After the next event the execution of the function block will be stopped and the current active breakpoint will be highlighted in the engineering environment.</p>
+<p>
+<img src="./img/monitoring/currentActiveBreakpoint.png" width="1024" alt="Current Active Breakpoint" />
+</p>
+<p>The Continue menu of the context menu or the Breakpoints view allows to continue the execution the control application.</p>
+<p>
+<img src="./img/monitoring/continueExecution.png" width="1024" alt="Continue Execution after Breakpoint" />
+</p>
+<p>Additionally it is possible, to specify a condition for a breakpoint. This means that the breakpoint will be only active, if the condition is true. In the current implementation only an event counter is a valid condition. Additionally it needs to be stated that the evaluation of the condition is executed in the engineering environment and automatically resumed if the condition is not true.</p>
+  
+</body>
+</html>

@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?NLS TYPE="org.eclipse.help.toc"?>
 
-<toc label="4DIAC Help">
-   <topic label="Overview" href="html/overview/overview.html"/>   		 
+<toc label="4diac User Guide">
+   <topic href="html/overview/overview.html" label="Overview">
+        <topic href="html/overview/perspectives.html" label="4diac-IDE Perspectives">
+	        <topic href="html/overview/perspectives.html#systemPerspective" label="System Perspective">
+	        </topic>
+	        <topic href="html/overview/perspectives.html#typeManagementPerspective" label="Type Management Perspective">
+	        </topic>
+	        <topic href="html/overview/perspectives.html#deploymentPerspective" label="Deployment Perspective">
+	        </topic>
+	        <topic href="html/overview/perspectives.html#debugPerspective" label="Debug Perspective">
+        </topic>
+     </topic>
+     <topic href="html/overview/properties.html" label="4diac-IDE Properties">
+        <topic href="html/overview/properties.html#preferences" label="Preferences">
+        </topic>
+        <topic href="html/overview/properties.html#toolbar" label="Toolbar">
+        </topic>
+   	 </topic>
+   </topic>   		 
    
    <topic label="Installation" href="html/installation/install.html"> 
 		<topic label="4DIAC-IDE" href="html/installation/install.html#4DIAC-IDE"/>
@@ -32,13 +49,6 @@
    
    
    	<topic label="4diac-IDE">
-	   	<topic label="Perspectives" href="html/4diacIDE/perspectives.html">
-		   		<topic label="System Perspective" href="html/4diacIDE/perspectives.html#systemPerspective" /> 
-				<topic label="Type Management Perspective" href="html/4diacIDE/perspectives.html#typeManagementPerspective" /> 
-				<topic label="Deployment Perspective" href="html/4diacIDE/perspectives.html#deploymentPerspective" /> 
-				<topic label="Debug Perspective" href="html/4diacIDE/perspectives.html#debugPerspective" />
-			</topic>
-			<topic label="4DIAC Properties" href="html/4diacIDE/properties.html"/>
 			<topic label="Modelling of IEC 61499 Applications using the 4DIAC-IDE" href="html/4diacIDE/applicationModelling.html">				
 				<topic label="Create a new IEC 61499 System" href="html/4diacIDE/applicationModelling.html#CreateSystem"/>
 				<topic label="Create a new IEC 61499 Application" href="html/4diacIDE/applicationModelling.html#CreateApplication"/>
@@ -60,12 +70,6 @@
 				<topic label="Download of System Configurations/Devices/Resources" href="html/4diacIDE/deployment.html#Download"/>
 				<topic label="Creating Boot-files" href="html/4diacIDE/deployment.html#CreateBootfiles"/>
 			</topic>			
-			<topic label="Monitoring and Debugging Functionalities" href="html/4diacIDE/monitoringDebugging.html">
-				<topic label="Watch Interface Elements" href="html/4diacIDE/monitoringDebugging.html#WatchElements"/>
-				<topic label="Trigger Events" href="html/4diacIDE/monitoringDebugging.html#TriggerEvents"/>
-				<topic label="Force Values" href="html/4diacIDE/monitoringDebugging.html#ForceValues"/>
-				<topic label="Breakpoints" href="html/4diacIDE/monitoringDebugging.html#Breakpoints"/>
-			</topic>
 			<topic label="Other Useful Features" href="html/4diacIDE/otherUseful.html">
 			<topic label="Import an Existing System" href="html/4diacIDE/otherUseful.html#ImportSystem"/>
 			<topic label="Import an Existing Type" href="html/4diacIDE/otherUseful.html#ImportType"/>
@@ -73,31 +77,57 @@
 			</topic>	
 		</topic>
    
-	<topic label="Tutorials"> 
-		<topic label="Flip-Flop Tutorial" href="html/tutorials/flipFlop_tutorial.html">
+	<topic label="Tutorials">			
+		<topic label="Explore an Existing System"  href="html/tutorials/x3_tutorial.html"> 
+			<topic label="Explore Existing Application" href="html/tutorials/x3_tutorial.html#application" /> 
+			<topic href="html/tutorials/x3_tutorial.html#systemManagement" label="Explore Existing System Configuration">
+      <topic href="html/tutorials/x3_tutorial.html#devices" label="Explore Existing Devices">
+      </topic>
+      <topic href="html/tutorials/x3_tutorial.html#resources" label="Explore Existing Resources">
+      </topic>
+   </topic> 
+			<topic label="Deploy Your Application" href="html/tutorials/x3_tutorial.html#deployment" /> 
+		</topic> 
+		<topic label="Create a FlipFlop System" href="html/tutorials/flipFlop_tutorial.html">
 			<topic label="Create a System" href="html/tutorials/flipFlop_tutorial.html#system"/>
 			<topic label="Adding a Device" href="html/tutorials/flipFlop_tutorial.html#device"/>
 			<topic label="Create the Application" href="html/tutorials/flipFlop_tutorial.html#application"/>
 			<topic label="Map the Application" href="html/tutorials/flipFlop_tutorial.html#mapping"/>
 			<topic label="Deploy the System" href="html/tutorials/flipFlop_tutorial.html#deploy"/>
-			<topic label="Monitor the Application" href="html/tutorials/flipFlop_tutorial.html#monitor"/>
-			<topic label="Flip-Flop as a basic function block" href="html/tutorials/flipFlop_asBFB.html"/>
-			<topic label="Flip-Flop as a composite function block" href="html/tutorials/flipFlop_asCFB.html"/>
-			<topic label="Flip-Flop as a service interface function block" href="html/tutorials/flipFlop_asSIFB.html"/>
-			<topic label="Flip Flop Application Structuring with Subapplication" href="html/tutorials/flipFlop_subapp.html"/>
-		</topic>			
-		<topic label="X+3 Tutorial"  href="html/tutorials/x3_tutorial.html"> 
-			<topic label="Application" href="html/tutorials/x3_tutorial.html#application" /> 
-			<topic label="System Management" href="html/tutorials/x3_tutorial.html#systemManagement" /> 
-			<topic label="Deployment" href="html/tutorials/x3_tutorial.html#deployment" /> 
 		</topic>
+  <topic href="html/tutorials/fbs.html" label="Developing Function Blocks">
+     <topic href="html/tutorials/fbInterface.html" label="Create FB Interface"/>
+     <topic label="Implement FB Type">
+       <topic href="html/tutorials/flipFlop_asCFB.html" label="Create Flip-Flop CFB"/>
+       <topic href="html/tutorials/flipFlop_asBFB.html" label="Create Flip-Flop BFB"/>
+       <topic href="html/tutorials/flipFlop_asSIFB.html" label="Create Flip-Flop SIFB"/>
+     </topic>
+   <topic href="html/tutorials/fBexport.html" label="Export FB Type for FORTE"/>
+   <topic href="html/tutorials/cmake.html" label="Add FB Type to FORTE"/>
+   <topic href="html/tutorials/fbTester.html" label="Test FB with FBTester"/>
+  </topic>
+  <topic href="html/tutorials/flipFlop_subapp.html" label="Create Flip-Flop Subapplication">
+     <topic href="html/tutorials/flipFlop_subapp.html#create" label="Create a Subapplication"/>
+     <topic href="html/tutorials/flipFlop_subapp.html#fbnetwork" label="Subapplication Network"/>
+     <topic href="html/tutorials/flipFlop_subapp.html#interface" label="Subapplication Interface"/>
+  </topic>
+     <topic href="html/tutorials/monitoringDebugging.html" label="Monitoring and Debugging">
+        <topic href="html/tutorials/monitoringDebugging.html#monitor" label="Start Monitoring">
+        </topic>
+      <topic href="html/tutorial/monitoringDebugging.html#WatchElements" label="Watch Interface Elements">
+      </topic>
+      <topic href="html/tutorials/monitoringDebugging.html#TriggerEvents" label="Trigger Events">
+      </topic>
+      <topic href="html/tutorials/monitoringDebugging.html#ForceValues" label="Force Values">
+      </topic>
+      <topic href="html/tutorials/monitoringDebugging.html#Breakpoints" label="Breakpoints">
+      </topic>
+   </topic>
   <topic href="html/tutorials/adapter.html" label="Adapter Usage">
-     <topic href="html/tutorials/adapter.html#newAdapterType" label="Create a new Adapter Type">
-     </topic>
-     <topic href="html/tutorials/adapter.html#useAdapterType" label="Use your new Adapter Type">
-     </topic>
+     <topic href="html/tutorials/adapter.html#newAdapterType" label="Create a new Adapter Type"/>
+     <topic href="html/tutorials/adapter.html#useAdapterType" label="Use your new Adapter Type"/>
   </topic>				
-	</topic>
+</topic>
 	
 	<topic label="Using Communication Protocols"> 
 		<topic label="FBDK/IP" href="html/communication/fbdkip.html"/>

@@ -8,16 +8,23 @@
 </head>
 
 <body>
-<h1>Export own Function Block to FORTE</h1>
-<p>All new Function Blocks have to be exported and build into your FORTE after their internals have been defined. For that purpose select all Function Blocks which are supposed to be exported, right click and choose <i>Export</i>. The Export Wizard opens:</p>
+<h1>Export Function Block Type to FORTE</h1>
+<p>All new function blocks have to be exported and build into your FORTE after their internals have been defined. 
+For that purpose select all function blocks which are supposed to be exported, right click and choose <i>Export</i>. 
+The Export Wizard opens:</p>
 
 <img src="./img/fbExport1.png" alt="Function Block Export Wizard"/>
 
-<p>Under <i>4DIAC</i> select <i>4DIAC Type Export</i> and press <i>Next</i>. The <i>4DIAC Type Export Wizard</i> will appear. Here you can modify your Function Block selection if desired. Enter the export destination (directory) of your FORTE source to export the Function Blocks into it, normally: <span class="code">&#60;path to&#62;/src/modules/&#60;FB group name&#62;</span>. Under Options choose the FORTE export version using <i>FORTE V1.0.x</i> and press <i>Finish</i>.</p>
+<p>Under <i>4DIAC</i> select <i>4DIAC Type Export</i> and press <i>Next</i>. 
+The <i>4DIAC Type Export Wizard</i> will appear. 
+Here you can modify your Function Block selection if desired. 
+Enter the export destination (directory) of your FORTE source to export the Function Blocks into it, normally: <span class="code">&#60;path to&#62;/src/modules/&#60;FB group name&#62;</span>. 
+Under Options choose the FORTE export version using <i>FORTE V1.0.x</i> and press <i>Finish</i>.</p>
 
 <img src="./img/fbExport2.png" alt="Function Block Export Wizard"/>
 
-<p>Consider that your Function Block will not be available within FORTE until it has been compiled into your <span class="code">forte.exe</span>. Please see <a href="./cmake.html">CMake for new FB Type</a> on how to include your new FBs to the FORTE build and <a href="../installation/visualStudio.html">MS Visual Studio</a> or <a href="../installation/eclipse.html">Eclipse</a> on how to compile FORTE.</p>
+<p>Consider that your Function Block will not be available within FORTE until it has been compiled into your <span class="code">forte.exe</span>. 
+Please see <a href="./cmake.html">Add FB Type to FORTE</a> on how to include your new FBs to the FORTE build and <a href="../installation/visualStudio.html">MS Visual Studio</a> or <a href="../installation/eclipse.html">Eclipse</a> on how to compile FORTE.</p>
 
 </body>
 </html>
