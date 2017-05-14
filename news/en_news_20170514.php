@@ -5,7 +5,7 @@
 	<span class="left"><?php $date="2017-05-14 19:50"; echo $date;?></span> 
 	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
 </div>
-
+<p>
 <table>
 	<tr>
 		<td width="66%" style='padding-right:10px;'>
@@ -22,5 +22,6 @@
 		</td>
 	</tr>
 </table>
+</p>
 <?php include 'greeting.html';?>
 
