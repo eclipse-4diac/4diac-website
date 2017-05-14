@@ -17,8 +17,8 @@
 		</td>
 		<td width="260" style='padding-left:10px;'>
 			<div align="right">
-			<img alt="uMic.200" src="http://www.microcontrol.net/fileadmin/_processed_/csm_uMIC200_1200px_db13955608.png"><br>
-			<i>Source: MicroControl</i></div>
+			<img alt="uMic.200" src="https://www.microcontrol.net/fileadmin/_processed_/csm_uMIC200_1200px_db13955608.png"><br>
+			<figcaption>Source: MicroControl</figcaption></div>
 		</td>
 	</tr>
 </table>
