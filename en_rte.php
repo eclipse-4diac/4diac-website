@@ -71,6 +71,7 @@
 					<li><a href="http://www.conmeleon.org/">CONMELEON C1</a></li>
 					<li><a href="http://raspberry-sps.de/">Raspberry-SPS</a></li>
 					<li><a href="http://global.wago.com/en/products/new-items/overview/pfc200-1.jsp">WAGO PFC200</a></li>
+					<li><a href="http://www.microcontrol.net/en/products/control-systems/umic200/">MicroControl uMIC.200</a></li>
 					<li>upcoming:
 						<ul>
 							<li><a href="http://www.advantech.com/products/">ADAM 3600</a></li>
