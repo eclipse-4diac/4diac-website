@@ -8,7 +8,7 @@
 
 <table width="100%">
 	<tr>
-		<td width="40%"><p>In the last weeks, the foritss team was busy setting up the demonstrator for the SPS/IPC/DRIVES Italy starting tomorrow. It features cool things like a 3D printed factory model, 4diac applications running on the Bosch Rexroth XM22 PLC, IoT connectivity with MQTT, and an HMI with HTML5. 
+		<td width="40%"><p>In the last weeks, the fortiss team was busy setting up the demonstrator for the SPS/IPC/DRIVES Italy starting tomorrow. It features cool things like a 3D printed factory model, 4diac applications running on the Bosch Rexroth XM22 PLC, IoT connectivity with MQTT, and an HMI with HTML5. 
 		<br>Got curious? Then visit us in Parma to see it!</p>
 <?php include 'greeting.html';?>
 </td>
