@@ -9,5 +9,6 @@
 As representant of the <a href="http://fossee.in/">FOSSEE (Free and Open Source Software for Education) Project</a> based at IIT Bombay <a href="http://akshaim.in/">Mr. Akshai</a> will give a talk at <a href="https://2017.rmll.info/en/">RMLL 2017</a> in France on Monday 3rd July 2017. It will be about <a href="https://prog2017.rmll.info/apprentissage-de-l-automation-industrielle-a-l-aide-de-materiel-et-de-logiciel-libres?lang=en">"Learning Industrial Automation and Control using FLOSS and Open Source Hardware"</a> containing a 4diac demonstration. 
 Looking forward to your attention.
 </p>
+<p style="color:rgba(255,149,14,1.0)">Due to personal reasons Mr. Akshai will unfortunately not be able to attend the conference. We wish him all the best and will be pleased to announce an alternative event for his presentation.</p>
 <?php include 'greeting.html';?>
 
