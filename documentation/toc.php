@@ -1,6 +1,6 @@
 <?php 
 $XML = new DOMDocument(); 
-$XML->load( './toc.xml' ); 
+$XML->load( './html/toc.xml' ); 
 #echo $XML->saveXML();
 $xslt = new XSLTProcessor(); 
 $XSL = new DOMDocument(); 

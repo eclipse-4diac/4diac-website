@@ -1,18 +1,28 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html> 
+<!--
+ Copyright (c) 2014, 2017 University of Thessaloniki, fortiss GmbH
+  
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ 
+ Contributors:
+   Giorgis Sfiris, Monika Wenger, Alois Zoitl, Jose Cabral
+     - initial API and implementation and/or initial documentation
+-->
 
-<html>
+
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>FBDK/IP</title>
 	<link rel="stylesheet" type="text/css" href="../help.css">
 </head>
 
 <body>
-<h1>FBDK/IP</h1>
-<p>This section will show you how to make applications communicate using the default FBDK/ip protocol as defined in the <a href="http://holobloc.com/doc/ita/index.htm">IEC 61499 Compliance Profile for Feasibility Demonstrations</a>.
-	Because we are going to use the default protocol we don't have to put it as a parameter
-	in the beginning of the ID input of the Communication Function Blocks.
-	We only have to provide an IP address and port in the following format:</p>
+<h1 id="topOfPage">FBDK/IP</h1>
+<p>This section will show you how to make applications communicate using the default FBDK/ip protocol as defined in the <a href="http://holobloc.com/doc/ita/index.htm" target="_blank">IEC 61499 Compliance Profile for Feasibility Demonstrations</a>. Because we are going to use the default protocol, we don't have to put it as a parameter in the beginning of the ID input of the Communication Function Blocks. We only have to provide an IP address and port in the following format:</p>
 	
 <div class="code">address:port</div>
 
@@ -24,24 +34,14 @@
 
 <div class="code">fbdk[].ip[192.168.0.2:61499]</div>
 
-<!--
-<ul>
-	<li><a href="http://sourceforge.net/projects/opcclient/">OPC Client library</a> release 0.4</li>
-	<li><a href="http://www.boost.org">Boost Lexical Cast</a></li>
-	<li><a href="http://www.microsoft.com/en-us/download/details.aspx?id=11800">Windows Driver Kit</a></li>
-</ul>
--->
+<h2 id="publishSubscribe">Publish/Subscribe - UDP/IP</h2>
 
-<h2>Publish/Subscribe - UDP/IP</h2>
-
-<p>To communicate using Publish/Subscribe FBs a UDP/IP connection is utilized, so we have to provide the Publish/Subscribe Function Blocks with a multicast IP address and a port.
-	The Publish FBs will send data over the network in this multicast IP address/port and the Subscribe FBs will listen to the same multicast IP address/port receiving any data sent by the Publish FBs.
-	Multicast IP addresses can be picked from the range 224.0.0.0 - 239.255.255.255, while the port is arbitrary. So an example ID parameter for the Publish/Subscribe FBs would be:</p>
+<p>To communicate using Publish/Subscribe FBs, a UDP/IP connection is utilized, so we have to provide the Publish/Subscribe Function Blocks with a multicast IP address and a port.
+	The Publish FBs will send data over the network in this multicast IP address/port and the Subscribe FBs will listen to the same multicast IP address/port receiving any data sent by the Publish FBs. Multicast IP addresses can be picked from the range 224.0.0.0 - 239.255.255.255, while the port is arbitrary. So an example ID parameter for the Publish/Subscribe FBs would be:</p>
 	
 <div class="code">225.0.0.1:61499</div>
 
-<p>In contrast to Client/Server pairs (see next section), Publish/Subscribe FBs don't have to work in pairs.
-	Any Subscribe FB in any device listening to this multicast IP address will receive data sent by any Publish FB in this multicast IP address.</p>
+<p>In contrast to Client/Server pairs (see <a href="#clientServer">next section</a>), Publish/Subscribe FBs don't have to work in pairs. Any Subscribe FB in any device listening to this multicast IP address will receive data sent by any Publish FB in this multicast IP address.</p>
 
 <p>An example of using a Publish/Subscribe FBs can be seen in the figure below and can be summarized as follows:</p>
 
@@ -65,11 +65,9 @@
 <img src="./img/publishsubscribe.png" alt="Publish/Subscribe pair"/>
 
 
-<h2>Client/Server - TCP/IP</h2>
+<h2 id="clientServer">Client/Server - TCP/IP</h2>
 
-<p>To communicate using a Client/Server pair a TCP/IP connection is utilized, so we have to set a Server in one device listening to a certain port and have a Client in another device connect to this Server using the first device's IP address and Server's listening port.
-	The Client FB will send a request to the Server FB using the Server FB's IP address and port and the Server FB will respond after processing the received data.
-	So if the Server is running in a device with IP address 192.168.0.2 listening to port 61501, an example of the ID parameters used for the Client/Server pair would be:</p>
+<p>To communicate using a Client/Server pair, a TCP/IP connection is utilized, so we have to set a Server in one device listening to a certain port and have a Client in another device connect to this Server using the first device's IP address and Server's listening port. The Client FB will send a request to the Server FB using the Server FB's IP address and port and the Server FB will respond after processing the received data. So if the Server is running in a device with IP address 192.168.0.2 listening to port 61501, an example of the ID parameters used for the Client/Server pair would be:</p>
 
 <p>Server</p>
 	
@@ -79,9 +77,7 @@
 
 <div class="code">192.168.0.2:61501</div>
 
-<p>However the "localhost" attribute is just for informational reasons and will not be used by FORTE, i.e. the Server's IP address will always be the same as the device's IP address. Only the port attribute is used.
-	In contrast to Publish/Subscribe FBs, Client/Server FBs work in pairs.
-	Only one Client FB can be connected to a Server FB at a time, while a Client FB can be connected to only one Server FB.</p>
+<p>However the "localhost" attribute is just for informational reasons and will not be used by FORTE, i.e. the Server's IP address will always be the same as the device's IP address. Only the port attribute is used.	In contrast to Publish/Subscribe FBs, Client/Server FBs work in pairs. Only one Client FB can be connected to a Server FB at a time, while a Client FB can be connected to only one Server FB.</p>
 
 <p>An example of using a Client/Server pair can be seen in the figure below and can be summarized as follows:</p>
 
@@ -108,6 +104,20 @@
 </ul>
 
 <img src="./img/clientserver.png" alt="Client/Server pair"/>
+
+<h1>Where to go from here?</h1>
+
+<p>Go back to Protocols index:</p>
+
+<p><a href="./communicationIndex.html">Communication Index</a></p>
+
+<p>If you want to go back to the Start Here page, we leave you here a fast access</p>
+
+<p><a href="../startHere/startHere.html">Start Here page</a></p>
+
+<p class="goToTop">Or <a href="#topOfPage">Go to top</a></p>
+
+<div class="lastModified"><script> document.write("This page was last modified on: " + document.lastModified +"");</script></div>
 
 </body>
 </html>

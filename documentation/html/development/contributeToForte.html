@@ -1,15 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+<!--
+ Copyright (c) 2016 - 2017 fortiss GmbH, Herwig Eichler
+  
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ 
+ Contributors:
+   Jose Cabral, Herwig Eichler, Alois Zoitl
+     - initial API and implementation and/or initial documentation
+-->
 
 <html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Contributing to Forte</title>
 	<link rel="stylesheet" type="text/css" href="../help.css">
 </head>
 
 <body>
 
-	<h1>Contributing to FORTE</h1>
+	<h1 id="topOfPage">Contributing to FORTE</h1>
 	
 		<p>The Forte project is stored as a Git repository in the eclipse platform. It's open source, so you can download and you can even change things and improve it. But of course, it's not that simple, otherwise changes will be added without any control and could mess up with the code</p>
 		
@@ -83,7 +95,7 @@
 						
 						<p>Right Click on the project, and then Team and you find all the possible commands regarding EGit. Team -> Show in History will show you all the commits in the current branch. Normally, master is the main branch. If Forte has another branch, and you want to work with it, you'll have to create a local branch that serves as reference of the original branch. That is, the Eclipse respository has a master branch (seen as origin/master), and for example a develop branch (seen as origin/develop). But you, locally, have only a master branch (seen as master). This local master is a reference to the origin/master and everything you change on it, will be then pushed to the origin/master. But if you want to work on the origin/develop branch, you'll need to create a local branch that references it. </p>
 						
-						<p>Right click on the project -> Team -> Switch To -> Other.... There you see the local and remote branches. Select the remote branch you want to work on, let's say origin/develop, and click Checkout. you'll get a message saying that you can watch the remote branch, or you can create a new branch locally to work on it. Click on Checkout as New Local Branch  and then select a name for the local branch. The usual thing is to name the same as the original, so we'll call it develop (wihtout the "origin/" part) and finish. Now you can switch between the branches, and the changes in each one will be reflected in the corresponding origin. </p>
+						<p>Right click on the project -> Team -> Switch To -> Other.... There you see the local and remote branches. Select the remote branch you want to work on, let's say origin/develop, and click Checkout. you'll get a message saying that you can watch the remote branch, or you can create a new branch locally to work on it. Click on Checkout as New Local Branch and then select a name for the local branch. The usual thing is to name the same as the original, so we'll call it develop (wihtout the "origin/" part) and finish. Now you can switch between the branches, and the changes in each one will be reflected in the corresponding origin. </p>
 						
 						<p>The Forte projects follows the workflow shown <a target="_blank" href="http://nvie.com/posts/a-successful-git-branching-model/">here</a>. Basically, the master branch is used to release versions and the develop for new stuff. You should always branch out from develop to work on something new.</p>
 					
@@ -174,7 +186,7 @@
 					<li>
 						<p>Push the commit</p>
 						
-						<p>In the History View you can see the new commit you have just added. But the commit is locally, and no one else knows about it. It's time to push it to the repository in Eclipse. Right-click on your last commit -> Push commit.... A dialog will open. With the showed configurations, you are trying to push to the develop branch of the Gerrit called refs/heads/develop. But according to the Gerrit documentation you should push to the magic refs/for/[branch] branch. So, in the Dialog, instead of the develop branch as it appear, you should change that to refs/for/develop (not reds/heads/develop). Click next, and you'll be asked to introduce your https Gerrit password generated in <a href="#ConfigureGerrit">step 1.5</a>. The push confirmation says that a  new branch is beeing created. Don't worry about that, and click Finish. Put the password again, and the push should succeed. If something fails, the error appears in the log.</p>
+						<p>In the History View you can see the new commit you have just added. But the commit is locally, and no one else knows about it. It's time to push it to the repository in Eclipse. Right-click on your last commit -> Push commit.... A dialog will open. With the showed configurations, you are trying to push to the develop branch of the Gerrit called refs/heads/develop. But according to the Gerrit documentation you should push to the magic refs/for/[branch] branch. So, in the Dialog, instead of the develop branch as it appear, you should change that to refs/for/develop (not reds/heads/develop). Click next, and you'll be asked to introduce your https Gerrit password generated in <a href="#ConfigureGerrit">step 1.5</a>. The push confirmation says that a new branch is beeing created. Don't worry about that, and click Finish. Put the password again, and the push should succeed. If something fails, the error appears in the log.</p>
 					</li>
 				</ol>
 			</li>
@@ -185,7 +197,7 @@
 		
 			<p>Use git on the command line instead of <a href="#EGit">EGit</a> (this one is for the reckless, the knights of the keyboard and especially those being afraid of mice)</p>
 		
-			<p>The following instructions apply to Debian based Linux systems like LinuxMint or Ubuntu. It is asumed that you already created your Eclipse account and signed the CLA as described <a href="#EclipseAccount">above</a>. Also the same <a href="#FindBug">rules</a> for creating a bug report and working on the forte code apply. Of course you can make your own decision which editor you want to use for the coding. There are a lot of possibilities out there, like VI, Emacs and many more. For code compilation and linking on a Linux system  the GNU compiler suite usually is the best choice. But this is a different story, which will not be addressed here.</p>
+			<p>The following instructions apply to Debian based Linux systems like LinuxMint or Ubuntu. It is asumed that you already created your Eclipse account and signed the CLA as described <a href="#EclipseAccount">above</a>. Also the same <a href="#FindBug">rules</a> for creating a bug report and working on the forte code apply. Of course you can make your own decision which editor you want to use for the coding. There are a lot of possibilities out there, like VI, Emacs and many more. For code compilation and linking on a Linux system the GNU compiler suite usually is the best choice. But this is a different story, which will not be addressed here.</p>
 			
 			 <ol>
 				<li>
@@ -255,7 +267,7 @@
 						Your identification has been saved in /home/johndoe/.ssh/id_rsa.<br>
 						Your public key has been saved in /home/johndoe/.ssh/id_rsa.pub.<br>
 						The key fingerprint is:<br>
-						4d:c7:4f:8f:71:07:89:cb:c9:dc:e5:ad:54:77:9a:64  john.doe@example.com<br>
+						4d:c7:4f:8f:71:07:89:cb:c9:dc:e5:ad:54:77:9a:64 john.doe@example.com<br>
 					</code>
 					<p>You can just accept the default key file location by hitting the return key.The Eclipse foundation strongly recommends to use a passphrase for additional security.Now copy the newly created public SSH key to your Gerrit account at eclipse.org. Display the contents of the public key file with the following command</p>
 					<code>johndoe@linuxmint ~/.ssh $ cat id_rsa.pub</code>
@@ -266,7 +278,7 @@
 						Are you sure you want to continue connecting (yes/no)? yes<br>
 						Warning: Permanently added '[git.eclipse.org]:29418,[198.41.30.196]:29418' (RSA) to the list of known hosts.<br>
 						<br>
-						****    Welcome to Gerrit Code Review    ****<br>
+						****	Welcome to Gerrit Code Review	****<br>
 						<br>
 						Hi John, you have successfully connected over SSH.<br>
 						<br>
@@ -288,7 +300,7 @@
 				<li>
 					<p>Create your own commit message template (optional)</p>
 					
-					<p>You can create a commit message template file, which will be used everytime   you do a new commit. You can add helpful comments, that you don't forget important contents of the message or even add text, which should be part of every commit message. It's just up to you. Change to your home directory and create a new file called .git_commit_msg_template with your favorite text editor. Here I used nano for convenience.</p>
+					<p>You can create a commit message template file, which will be used everytime you do a new commit. You can add helpful comments, that you don't forget important contents of the message or even add text, which should be part of every commit message. It's just up to you. Change to your home directory and create a new file called .git_commit_msg_template with your favorite text editor. Here I used nano for convenience.</p>
 					<code>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte/.git $ cd /home/johndoe<br>
 						johndoe@linuxmint ~/ $ nano .git_commit_msg_template<br>
 					</code>
@@ -330,7 +342,7 @@
 						src/modules/conmeleon_c1/processinterface.h<br>
 						src/modules/conmeleon_c1/spi/<br>
 					</code>
-					<p>Now we do the commit itself. Don't forget the -s option for automatic sign off  which is required by the org.eclipse.4diac.forte project and to follow the <a href="#CommitChanges">message guide</a> if you didn't do it already as a template. After the git commit command the default editor will be opened with your commit message template and you have to enter the message information (Bugzilla ID, what was changed and why and the URL to the bugzilla entry).</p>
+					<p>Now we do the commit itself. Don't forget the -s option for automatic sign off which is required by the org.eclipse.4diac.forte project and to follow the <a href="#CommitChanges">message guide</a> if you didn't do it already as a template. After the git commit command the default editor will be opened with your commit message template and you have to enter the message information (Bugzilla ID, what was changed and why and the URL to the bugzilla entry).</p>
 					<code>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git commit -s<br>
 						[develop 3a8de79] [495477] Add conmeleon support to forte<br>
 						3 files changed, 272 insertions(+)<br>
@@ -404,5 +416,18 @@
 			
 		</ul>
 
+<h1>Where to go from here?</h1>
+
+<p>Go back to Development index:</p>
+
+<p><a href="./developmentIndex.html">Development Index</a></p>
+
+<p>If you want to go back to the Start Here page, we leave you here a fast access</p>
+
+<p><a href="../startHere/startHere.html">Start Here page</a></p>
+
+<p class="goToTop">Or <a href="#topOfPage">Go to top</a></p>
+
+<div class="lastModified"><script> document.write("This page was last modified on: " + document.lastModified +"");</script></div>
+
 </body>
-</html>

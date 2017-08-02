@@ -27,7 +27,7 @@ function resizeIframe(obj, size) {
 <h1>Documentation</h1>
 <section class="documentation">
 <iframe class="toc" id="iframe-toc" src="documentation/toc.php" onload="resizeIframes()"></iframe>
-<iframe class="doc" id="iframe-content" name="Content" src="documentation/html/overview/overview.html" onload="resizeIframes()"></iframe>
+<iframe class="doc" id="iframe-content" name="Content" src="documentation/html/startHere/startHere.html" onload="resizeIframes()"></iframe>
 </section>
 </section>
 

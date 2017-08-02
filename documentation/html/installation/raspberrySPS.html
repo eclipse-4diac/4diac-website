@@ -1,53 +1,71 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-   <head>
-   	  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!DOCTYPE html>
+<!--
+ Copyright (c) 2016 fortiss GmbH
+  
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ 
+ Contributors:
+   Monika Wenger, Jose Cabral
+     - initial API and implementation and/or initial documentation
+-->
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <title>Building FORTE on Raspberry-SPS</title>
       <link rel="stylesheet" type="text/css" href="../help.css">
    </head>
 
    <body>
-      <h1>Building FORTE on Raspberry-SPS</h1>
+      <h1 id="topOfPage">Building FORTE on Raspberry-SPS</h1>
 	  
       <h2>Introduction</h2>
-      <p>The <a href="http://raspberry-sps.de/">Raspberry-SPS</a> consists of a Raspberry-PI which is a low-cost embedded system with an ARM processor @700Mhz and 512MB RAM and additional modules as digital and analog modules. This tutorial shows how to cross compile FORTE for the Raspberry-SPS.</p>
+      <p>The <a href="http://raspberry-sps.de/" target="_blank">Raspberry-SPS</a> consists of a Raspberry-PI which is a low-cost embedded system with an ARM processor @700Mhz and 512MB RAM and additional modules as digital and analog modules. This tutorial shows how to cross compile FORTE for the Raspberry-SPS.</p>
 	  
-	  <a name="#preparation"></a>
-	  <h2>Preparation</h2>
+	  <h2 id="preparation">Preparation</h2>
 	  <ol>
-	  	 <li>download the proper toolchain for your operating system where you plan to build FORTE <a href="https://releases.linaro.org/14.04/components/toolchain/binaries/">gcc-linaro-arm-linux-gnueabihf</a>.  The <b>path to your downloaded toolchain has to be short</b> e.g., <span class="code">C:/toolchain</span> for Windows.</li>
+	  	 <li>Download the proper toolchain for your operating system where you plan to build FORTE <a href="https://releases.linaro.org/archive/15.06/components/toolchain/binaries/" target="_blank"> gcc-linaro-arm-linux-gnueabihf</a>. The <span class="specificText">path to your downloaded toolchain has to be short</span> e.g., <span class="inlineCode">C:/toolchain</span> for Windows.</li>
 		  
-		 <li>start cmake-gui and choose forte source code folder and build binaries, e.g. <span class="code">forte/bin/raspberrySPS</span> and press the configure button. A new window will be opened. As generator, choose <i>Unix Makefiles</i> and check the <i>Specify options for cross compiling</i> radio button.
-		 <br/><img src="./img/raspberrySPS_configure.png" alt="configure cross compiling for Raspberry-SPS"/>
+		 <li>Start cmake-gui and choose forte source code folder and build binaries, e.g. <span class="folderLocation">forte/bin/raspberrySPS</span> and press the configure button. A new window will be opened. As generator, choose <span class="specificText">Unix Makefiles</span> and check the <span class="specificText">Specify options for cross compiling</span> radio button.
+		 <img src="./img/raspberrySPS_configure.png" alt="configure cross compiling for Raspberry-SPS"/>
 		 </li>
 		 
-		 <li>configure the cross compiling options as it is illustrated within the following image and press the <i>finish</i> button.
-		 <br/><img src="./img/raspberrySPS_configureToolchain.png" alt="configure toolchain for Raspberry-SPS"/>
+		 <li>Configure the cross compiling options as it is illustrated within the following image and press the <span class="button4diac">finish</span> button.
+		 <img src="./img/raspberrySPS_configureToolchain.png" alt="configure toolchain for Raspberry-SPS"/>
 		 </li>
 		 
-		 <li>choose posix as <span class="code">FORTE_ARCHITECHTURE</span> and check <span class="code">FORTE_MODULE_Raspberry-SPS</span> as well as other desired modules.</li>
+		 <li>Choose posix as <span class="specificText">FORTE_ARCHITECHTURE</span> and check <span class="specificText">FORTE_MODULE_Raspberry-SPS</span> as well as other desired modules.</li>
 		 
-		 <li>press the <i>Configure</i> button until nothing remains red. Afterwards press the <i>Generate</i> button.</li>
+		 <li>Press the <span class="button4diac">Configure</span> button until nothing remains red. Afterwards press the <span class="button4diac">Generate</span> button.</li>
 		 
-		 <li>the desired make files have been generated. execute make within a console and find the FORTE executable in <span class="code">forte/bin/raspberrySPS/src</span>
-		 <div class="code">> cd forte/bin/raspberrySPS 
-> make</div>
+		 <li>The desired make files have been generated. execute make within a console and find the FORTE executable in <span class="folderLocation">forte/bin/raspberrySPS/src</span>
+		 <div class="code">$ cd forte/bin/raspberrySPS 
+$ make</div>
 		 </li>
 		 
 		 <li>copy the FORTE executable to the Raspberry-SPS and start FORTE with:
- <div class="code">> ./forte</div></li>
+ <div class="code">$ ./forte</div></li>
 	  	</ol>
 	
-	<h2>Example Application</h2>
-	<p>To use the digital and analog IOs of the Raspberry-SPS please use the IX and QX function blocks for one bit as well as the QW and IW function blocks for word which are provided in the io folder of the tool library. Configure your 4DIAC Device with the correct IP and mapp an application on it as it is illustrated within the following image.</p>
-	<img src="./img/raspberrySPS_example.png" alt="Raspberry-SPS example application"/>
-	<p>The structure of the PARAMS data input ports is <i>busChannel.deviceNumber.portNumber</i>. The Raspberry-SPS has two I2C bus channels. The number of the different devices is listed in the following table. The port number always starts at 0.</p>
-	<table>
-		<tr><th>Device Type</th><th>Device Number</th></tr>
-		<tr><td>8 digital inputs</td><td>56</td></tr>
-		<tr><td>8 digital outputs</td><td>32</td></tr>
-		<tr><td>5 analog inputs</td><td>8</td></tr>
-		<tr><td>4 analog inputs</td><td>88</td></tr>
-	</table>
-   </body>
+<h1 id="whereToGoFromHere">Where to go from here?</h1>
+
+<p>Now that you installed the required tools, it's time to start using them. Take a look at the following page:</p>
+
+<p><a href="../4diacIDE/overview.html">Step by step tutorial</a></p>
+
+<p>If you want to compile FORTE for another platform or want to know more about that, here's a quick link back:</p>
+
+<p><a href="./install.html">Install 4DIAC</a></p>
+
+<p>If you want to go back to the Start Here page, we leave you here a fast access</p>
+
+<p><a href="../startHere/startHere.html">Start Here page</a></p>
+
+<p class="goToTop">Or <a href="#topOfPage">Go to top</a></p>
+
+<div class="lastModified"><script> document.write("This page was last modified on: " + document.lastModified +"");</script></div>
+</body>
 </html>

@@ -1,30 +1,46 @@
-<!DOCTYPE HTML>
-<html>
-   <head>
-   	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE html>
+<!--
+ Copyright (c) 2014, 2014 fortiss GmbH
+  
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ 
+ Contributors:
+   Waldemar Eisenmenger, Jose Cabral, Milan Vathoopan
+     - initial API and implementation and/or initial documentation
+-->
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <title>Building FORTE on Raspberry Pi</title>
       <link rel="stylesheet" type="text/css" href="../help.css">
    </head>
 
   <body>
-    <h1>Introduction</h1>
-      <p><a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi</a> (RPI) is one of most famous low-cost embedded system. In its third generation, the Raspberry Pi 3 launched in February 2016 
+
+     <h1 id="topOfPage">Introduction</h1>
+      <p>This guide is for compiling FORTE for the Raspberry Pi. For information about the parameters to be used, go to the <a href="../parameters/parameters.html#sysfs">Parameters</a> page</p>
+
+      <p><a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> (RPI) is one of most famous low-cost embedded system. In its third generation, the Raspberry Pi 3 launched in February 2016 
       has a 1.2GHz 64-bit quad-core ARMv8 CPU, 1 GB RAM and several I/O options, among them a 40 pin header. The operating system is loaded from a SD card, so it can support many 
-      OS, being the most popular the Debian-based Raspbian. FORTE used to use the <i>wiringPi</i> library, but it has changed to use the sysFs virtual file system.</p>
+      OS, being the most popular the Debian-based Raspbian. FORTE used to use the <span class="specificText">wiringPi</span> library, but it has changed to use the sysFs virtual file system.</p>
     
       <p>This tutorial explains first how to compile FORTE in the RPI, or even cross-compile, and how to easily use the I/O Function Blocks in FORTE to control the 40 pin
       header.</p>
      
       <h2>Getting the RPI ready</h2>
        
-      <p>This tutorial doesn't show the details of how to make the RPI run, but if you never used before, you should know that besides the RPI board, you need a source power that is
+      <p>This tutorial doesn't show the details of how to make the RPI run, but if you never used before, you should know that beside the RPI board, you need a source power that is
       connected to the mini-USB port and a mini-SD card. The RPI can be connected to a screen, mouse and keyboard through the HDMI and USB ports, but you also can connect to it headless,
       meaning that you connect through ssh using the Ethernet or a usb-wifi connector. There are plenty of tutorials on how to access the RPI, so this tutorial starts supposing you have access
       to the command line of the RPI, through ssh or directly on it using the GUI, and that the RPI has Internet access.</p>
    
     <h1 id="onRPI">Building FORTE on the RPI</h1>
       
-      <h2>Preparation</h2>
+      <h2 id="preparation">Preparation</h2>
         <ol>
           <li>Install the additional software needed on your RPI. 
             <ul>
@@ -35,7 +51,7 @@
           </li>
         </ol> 
           
-      <h2>Building</h2> 
+      <h2 id="building">Building</h2> 
         <ol>  
           <li>Check out FORTE from the git repository in your home directory.
             <div class="code">$ cd ~
@@ -44,13 +60,12 @@ $ git clone https://git.eclipse.org/r/4diac/org.eclipse.4diac.forte</div>
           <li>Prepare the FORTE project structure for the Posix architecture.
 				    <div class="code">$ cd org.eclipse.4diac.forte
 $ chmod +x setup_posix.sh</div>
-              <p>You will need to add the SysFs module to the compilation. In order to that, you will need to change the <i>setup_posix.sh</i> file, using your preferred text editor.
-              In the file you will find a line that starts with <i>cmake -G "Unix Makefiles" -DFORTE_ARCHITECTURE=Posix</i>. At the end of the line, add
-              <i> -DFORTE_MODULE_SysFs=ON</i>. This will enable the interface to the 40 pin header of the RPI. Save the file, exit the editor and execute:</p>
+              <p>You will need to add the SysFs module to the compilation. In order to that, you will need to change the <span class="fileLocation">setup_posix.sh</span> file, using your preferred text editor.
+              In the file you will find a line that starts with <span class="specificText">cmake -G "Unix Makefiles" -DFORTE_ARCHITECTURE=Posix</span>. At the end of the line, add
+              <span class="specificText"> -DFORTE_MODULE_SysFs=ON</span>. This will enable the interface to the 40 pin header of the RPI. Save the file, exit the editor and execute:</p>
                <div class="code">$ ./setup_posix.sh</div>
-               <p>When no error occurs, the command creates a folder in bin/posix where all the files to compile FORTE are stored.</p>
-            <div class="code">$ cd bin/posix</div>
-          </li>
+               <p>When no error occurs, the command creates a folder in bin/posix where all the files to compile FORTE are stored. Access the folder if not already there.</p>
+           </li>
 	  	 		<li>Execute "make", which will start the compilation.
             <div class="code">$ make</div>
           </li>
@@ -70,7 +85,7 @@ $ chmod +x setup_posix.sh</div>
               <li>CMake-GUI
                 <div class="code">$ sudo apt-get install cmake-qt-gui</div>
               </li>
-              <li>Linaro Cross-compiling Toolchain. You can download it from <a href="https://releases.linaro.org/15.06/components/toolchain/binaries/4.8/arm-linux-gnueabihf/gcc-linaro-4.8-2015.06-x86_64_arm-linux-gnueabihf.tar.xz">this</a> link.
+              <li>Linaro Cross-compiling Toolchain. You can download it from <a href="https://releases.linaro.org/archive/15.06/components/toolchain/binaries/4.8/arm-linux-gnueabihf/gcc-linaro-4.8-2015.06-x86_64_arm-linux-gnueabihf.tar.xz" target="_blank">this</a> link.
                 Then, you should de-compress this file
                 <div class="code">$ tar -xvf gcc-linaro-4.8-2015.06-x86_64_arm-linux-gnueabihf.tar.xz</div>
                 You could avoid downloading and de-compressing the file using the command
@@ -81,16 +96,16 @@ $ chmod +x setup_posix.sh</div>
           <li>Open CMake-GUI and complete as the image
             <ol>
               <li>Set the FORTE source path where you cloned the git repository.</li>
-              <li>Set path for binaries where you want to create the executable. Normally is used bin/raspPi</li>
-              <li>Press configure</li>
+              <li>Set path for binaries where you want to create the executable. Normally is used <span class="folderLocation">bin/raspPi</span></li>
+              <li>Press <span class="button4diac">Configure</span></li>
             </ol>
             <p><img src="img/raspiCrossLinux1.png" alt="Selecting folders in CMake"/></p>
           </li>
            <li>CMake Setup
             <ol>
               <li>Select the tool you normally use to compile your programs. This example follows using UNIX Makefiles from the list.</li>
-              <li>Select "Specify tools for cross-compiling"</li>
-              <li>Press Next</li>
+              <li>Select <span class="button4diac">Specify tools for cross-compiling</span></li>
+              <li>Press <span class="button4diac">Next</span></li>
             </ol>
             <p><img src="img/raspiCrossLinux2.png" alt="CMake Setup"/></p>
           </li>
@@ -104,7 +119,7 @@ $ chmod +x setup_posix.sh</div>
                 <div class="code">$ which arm-linux-gnueabi-g++</div> 
               </li>
               <li>The target root field can be left empty.</li>
-              <li>Click Finish</li>
+              <li>Click <span class="button4diac">Finish</span></li>
             </ol>
             <p><img src="img/raspiCrossLinux3.png" alt="Select cross-compiling tools."/></p>
           </li>
@@ -114,13 +129,13 @@ $ chmod +x setup_posix.sh</div>
               <li>Choose you Eclipse version if you selected it in step 3.1. Otherwise, it can be left as it is.</li>
               <li>Set the FORTE_ARCHITECTURE variable to Posix</li>
               <li>Enable FORTE_MODULE_SysFs and all other modules that you want</li>
-              <li>Click Configure and the variables that need revision will apear again in red and the rest in white. Check the variables and press configure until no red variable is shown.</li>
+              <li>Click <span class="button4diac">Configure</span> and the variables that need revision will apear again in red and the rest in white. Check the variables and press <span class="button4diac">Configure</span> until no red variable is shown.</li>
             </ol>
             <p><img src="img/raspiCrossLinux4.png" alt="Configure FORTE compilation."/></p>
           </li>
           <li>Generate files
             <ol>
-              <li>Click Generate</li>
+              <li>Click <span class="button4diac">Generate</span></li>
             </ol>
             <p><img src="img/raspiCrossLinux5.png" alt="Generate the makefiles."/></p>
           </li>
@@ -138,8 +153,8 @@ $ make</div>
         <ol>
           <li>Install needed additional tools:
             <ul>
-              <li>CMake from its download <a href="https://cmake.org/download/">page</a></li>
-              <li>Cross-compiling tool. You can download it from <a href="http://gnutoolchains.com/raspberry/">this</a> link.</li>
+              <li>CMake from its download <a href="https://cmake.org/download/" target="_blank">page</a></li>
+              <li>Cross-compiling tool. You can download it from <a href="http://gnutoolchains.com/raspberry/" target="_blank">this</a> link.</li>
             </ul>
           <li>Follow instructions of cross-compiling in the <a href="#crossCompilingLinux">Linux</a> platform from step 2, taking in account the following:
             <ol>
@@ -148,20 +163,22 @@ $ make</div>
           </li>
          </ol>
 
-    <h1 id="usingPins">Using RPI pins</h1>
-    
-	   	<p>The following picture shows an example application from the <a href = "flipFlop_tutorial.html">flipflop tutorial</a> which is extended 
-		  with IX and QX function blocks. The extended application periodically toggles on RPI pin number 8. It can be started and stopped 
-		  via RPI pin number 2. You can connect an LED to obtain a blinking light.</p>
-	
-	   <img src="./img/ixqx_fb_network.png" alt="Simple flip flop application with an IX and QX function block."/>
-	
-			<p>The "PARAMS" data input in the IX and QX FB define which pin should be used on the RPI. The application also contains E_CYCLE and E_SWITCH function blocks (which are not in the flipflop tutorial). The first one generates 
-			an event every 500 ms. This way the IX block will check the hardware input every half second if the signal has changed. E_SWITCH_0 starts or 
-			stops the action, depending on the "IN" data output of the IX function block.</p>
-			
-			<p>Remember that if you have any problem and cannot find the solution in the documentation, visit the <a href="https://www.eclipse.org/forums/index.php?t=thread&frm_id=308">forum</a>.</p>
+<h1 id="whereToGoFromHere">Where to go from here?</h1>
 
-      <div class="lastModified"><script> document.write("This page was last modified on: " + document.lastModified +"");</script></div>
-   </body>
+<p>Now that you installed the required tools, it's time to start using them. Take a look at the following page:</p>
+
+<p><a href="../4diacIDE/overview.html">Step by step tutorial</a></p>
+
+<p>If you want to compile FORTE for another platform or want to know more about that, here's a quick link back:</p>
+
+<p><a href="./install.html">Install 4DIAC</a></p>
+
+<p>If you want to go back to the Start Here page, we leave you here a fast access</p>
+
+<p><a href="../startHere/startHere.html">Start Here page</a></p>
+
+<p class="goToTop">Or <a href="#topOfPage">Go to top</a></p>
+
+<div class="lastModified"><script> document.write("This page was last modified on: " + document.lastModified +"");</script></div>
+</body>
 </html>
