@@ -41,26 +41,27 @@
 <ol>
 	<li>Download the FORTE source from <a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git" target="_blank">http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git</a>:
 		<div class="code">$ mkdir ~/4diac &amp;&amp; cd "$_"
-$ git clone https://git.eclipse.org/r/4diac/org.eclipse.4diac.forte forte
-// as of now you need to use the OPC_UA branch
-$ cd forte &amp;&amp; git checkout OPC_UA
-$ mkdir build &amp;&amp; cd $_
-// Ignore the errors which are shown in CMake
-$ cmake ..</div>
+$ git clone -b develop https://git.eclipse.org/r/4diac/org.eclipse.4diac.forte forte
+$ cd forte &amp;&amp; mkdir build</div>
 	</li>
 	<li>Download the source for open62541 from <a href="https://github.com/open62541/open62541" target="_blank">https://github.com/open62541/open62541</a>:
 		<div class="code">$ cd ~/4diac
-$ git clone https://github.com/open62541/open62541.git open62541
-$ cd open62541 &amp;&amp; git checkout master</div>
+$ git clone -b master https://github.com/open62541/open62541.git open62541</div>
 	</li>
 	<li>Build open62541. If you are running the code on production devices we suggest setting the build type to <span class="specificText">Release</span>.
 		<div class="code">$ cd ~/4diac/open62541 &amp;&amp; mkdir build &amp;&amp; cd $_
 $ cmake -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Debug -DUA_ENABLE_AMALGAMATION=ON ..
 $ make -j</div>
 	</li>
-	<li>Set FORTE to include open62541. If you are running the code on production devices we suggesst setting the build type to <span class="specificText">Release</span>. If you are using the 0.2 branch of open62541 make sure that you set the correct value for <span class="specificText">FORTE_COM_OPC_UA_VERSION=0.2</span>
+	<li>Set FORTE to include open62541. If you are running the code on production devices we suggesst setting the build type to <span class="specificText">Release</span>.
+	    If you are using the 0.2 branch of open62541 make sure that you set the correct value for <span class="specificText">FORTE_COM_OPC_UA_VERSION=0.2</span>
 		<div class="code">$ cd ~/4diac/forte/build
-$ cmake -DCMAKE_BUILD_TYPE=Debug -DFORTE_ARCHITECTURE=Posix -DFORTE_MODULE_CONVERT=ON -DFORTE_MODULE_IEC61131=ON -DFORTE_COM_OPC_UA=ON -DFORTE_COM_OPC_UA_DIR=$HOME/4diac/open62541/build -DFORTE_COM_OPC_UA_VERSION=master ..
+$ cmake -DCMAKE_BUILD_TYPE=Debug -DFORTE_ARCHITECTURE=Posix -DFORTE_MODULE_CONVERT=ON \
+-DFORTE_COM_ETH=ON -DFORTE_MODULE_IEC61131=ON -DFORTE_COM_OPC_UA=ON \
+-DFORTE_COM_OPC_UA_INCLUDE_DIR=$HOME/4diac/open62541/build \
+-DFORTE_COM_OPC_UA_LIB_DIR=$HOME/4diac/open62541/build/bin \
+-DFORTE_COM_OPC_UA_LIB=libopen62541.so \
+-DFORTE_COM_OPC_UA_VERSION=master ..
 $ make -j</div>
 	</li>
 </ol>
@@ -69,9 +70,7 @@ $ make -j</div>
 <ol>
 	<li>Use a Git tool under Windows and download the FORTE source from <a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git" target="_blank">http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git</a>. The following steps show the commands for <a href="https://git-for-windows.github.io/" target="_blank">Git Bash</a>:
 		<div class="code">$ mkdir "$HOME/4diac" &amp;&amp; cd "$HOME/4diac"
-$ git clone https://git.eclipse.org/r/4diac/org.eclipse.4diac.forte forte
-// as of now you need to use the OPC_UA branch
-$ cd forte &amp;&amp; git checkout OPC_UA
+$ git clone -b develop https://git.eclipse.org/r/4diac/org.eclipse.4diac.forte forte
 $ mkdir build &amp;&amp; cd "build"</div>
 	</li>
 	<li>Use CMake to generate all the build files. Download and install: <a href="https://cmake.org/download/" target="_blank">https://cmake.org/download/</a>
@@ -84,8 +83,8 @@ $ mkdir build &amp;&amp; cd "build"</div>
 	</li>
 	<li>Download the source for open62541 from <a href="https://github.com/open62541/open62541" target="_blank">https://github.com/open62541/open62541</a>. In Git Bash:
 		<div class="code">$ cd "$HOME/4diac"
-$ git clone https://github.com/open62541/open62541.git open62541
-$ cd open62541 &amp;&amp; git checkout master &amp;&amp; mkdir build</div>
+$ git clone -b master https://github.com/open62541/open62541.git open62541
+$ cd open62541 &amp;&amp; mkdir build</div>
 	</li>
 	<li>Build open62541. If you are running the code on production devices we suggest setting the build type to <span class="specificText">Release</span>. Open a new CMake window and open the <span class="folderLocation">$HOME/4diac/open62541</span> folder as source code directory, <span class="folderLocation">$HOME/4diac/open62541/build</span> as the binaries directory.
 	</li>
@@ -97,7 +96,8 @@ $ cd open62541 &amp;&amp; git checkout master &amp;&amp; mkdir build</div>
 	<li>Switch to the FORTE CMake window to include open62541.
 		<ul>
 			<li>FORTE_COM_OPC_UA=ON</li>
-			<li>FORTE_COM_OPC_UA_DIR=C:\Users\USER\4diac\open62541\build</li>
+			<li>FORTE_COM_OPC_UA_INCLUDE_DIR=C:\Users\USER\4diac\open62541\build</li>
+			<li>FORTE_COM_OPC_UA_LIB_DIR=C:\Users\USER\4diac\open62541\build</li>
 			<li>FORTE_COM_OPC_UA_VERSION=master</li>
 		</ul>
 	</li>
