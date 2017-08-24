@@ -1,17 +1,6 @@
-/*******************************************************************************
- * Copyright (c) 2014, 2016, 2017 fortiss GmbH
- * 
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *   Monika Wenger, Alois Zoitl, Jose Cabral
- *     - initial API and implementation and/or initial documentation
- *******************************************************************************/
+@import url("../../format.css");
 
-div.code {
+div.code{
 	background-color: #F9F9F9;
 	text-align:left; 
 	padding:10px; 
@@ -32,7 +21,7 @@ div.infobox{
 	white-space: pre; 
 }
 
-.infobox h{
+.infobox h1{
 	font-size: 11pt;
 	margin-top:0px;
 	padding:0px;
@@ -54,44 +43,11 @@ table,tr,th,td{
 	border: 0px;
 }
 
-span.folderLocation, span.fileLocation, span.address, span.element4diac, span.button4diac, span.menu4diac,
-span.tab4diac, span.view4diac, span.command4diac, span.errorMessage, span.inlineCode, span.specificText, span.inlineTitle, span.element61499{
-	font-weight: bold;
-}
-
-span.specialText{
-	font-style: italic;
+span.code{
+	font-family: "Courier New";
+	font-size: 10pt;
 }
 
 p,li{
 	text-align:justify;
-}
-
-img{
-	max-width: 100%;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-img.center, figure.center{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-figure.center figcaption {
-    text-align: center;
-}
-
-.inlineImg {
-	vertical-align: middle;
-}
-
-.attention {
-	color: red;
-}
-
-.lastModified {
-	font-size: 8pt;
-	float: right;
 }
