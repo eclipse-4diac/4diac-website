@@ -95,7 +95,7 @@
 				</td>
 				<td width="33%" style='padding-left:10px; '>
 					<ul id="nav">
-						<li><a href="http://sourceforge.net/p/fordiac/fordiac-ide/ci/default/tree/">IDE source</a></li>
+						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">IDE source</a></li>
 						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">RTE source</a></li>
 						<li><a href="http://sourceforge.net/p/fordiac/fordiac-lib/ci/default/tree/">library</a></li>
 						<li><a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">systems</a>
