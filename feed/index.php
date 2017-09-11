@@ -16,9 +16,10 @@ $folder = glob('../news/*.php');
 foreach(array_reverse($folder) as $file){
 	$lines = file($file);
 	$rssfeed .= '<item>';
-	$rssfeed .= '<title>' . $lines[1] . '</title>';
+	$rssfeed .= '<title>' . strip_tags($lines[1]) . '</title>';
+	$description = 'Empty test description';
 	$rssfeed .= '<description>' . $description . '</description>';
-	$rssfeed .= '<link> https://www.fordiac.org/en_news.php#' . basename($files[0],".php") . '</link>';
+	$rssfeed .= '<link> https://www.fordiac.org/en_news.php#' . basename($file,".php") . '</link>';
 	$rssfeed .= '<pubDate>' . date ("F d Y H:i:s.", filemtime($file)) . '</pubDate>';
 	$rssfeed .= '</item>';
 }
