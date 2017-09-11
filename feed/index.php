@@ -2,11 +2,11 @@
 	header("Content-Type: application/rss+xml; charset=ISO-8859-1");
 
 	function createDescription($lines){
-		$content = '[CDATA[';
+		$content = '<![CDATA[';
 		for ($x = 8; $x <= count($lines); $x++) {
 		  $content .= $lines[$x];
 		}
-		$content .= ']]';
+		$content .= ']]>';
 		return $content;
 	}
 
@@ -27,7 +27,7 @@ foreach(array_reverse($folder) as $file){
 	$rssfeed .= '<title>' . strip_tags($lines[1]) . '</title>';
 	$rssfeed .= '<description>' . createDescription($lines) . '</description>';
 	$rssfeed .= '<link> http://www.eclipse.org/4diac/en_news.php#' . basename($file,".php") . '</link>';
-	$rssfeed .= '<pubDate>' . date ("F d Y H:i:s.", filemtime($file)) . '</pubDate>';
+	$rssfeed .= '<pubDate>' . date ("F d Y H:i:s", filemtime($file)) . '</pubDate>';
 	$rssfeed .= '</item>';
 }
 
