@@ -4,7 +4,7 @@
 	function createDescription($lines){
 		$content = '[CDATA[';
 		for ($x = 8; $x <= count($lines); $x++) {
-		  $content .= eval($lines[$x]);
+		  $content .= $lines[$x];
 		}
 		$content .= ']]';
 		return $content;
