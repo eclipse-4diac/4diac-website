@@ -3,14 +3,13 @@
 
 #small script to turn our news items into an rss feed to be included in blog agregators and news readers	
 
-	$greetings =  file_get_contents('../news/greeting.html');  #buffer the content of the greatings
 	
 	
-	function createDescription($lines){
+	function createDescription($lines, $greetings){
 		$content = '<![CDATA[';
 		for ($x = 8; $x <= count($lines); $x++) {
 			if (strpos($lines[$x], 'greeting.html') != false){
-				$content .=  $grettings;
+				$content .= $grettings;
 			}else{
 		  		$content .= $lines[$x];
 			}
@@ -28,14 +27,15 @@ $rssfeed .= '<description>This is the RSS feed for the 4diac news</description>'
 $rssfeed .= '<language>en-us</language>';
 #$rssfeed .= '<copyright>Copyright (C) 2009 mywebsite.com</copyright>';
 
+$greetings =  file_get_contents('../news/greeting.html');  #buffer the content of the greatings
 
 $folder = glob('../news/*.php');
 foreach(array_reverse($folder) as $file){
 	$lines = file($file);
 	$rssfeed .= '<item>';
 	$rssfeed .= '<title>' . strip_tags($lines[1]) . '</title>';
-	$rssfeed .= '<description>' . createDescription($lines) . '</description>';
-	$rssfeed .= '<link> http://www.eclipse.org/4diac/en_news.php#' . basename($file,".php") . '</link>';
+	$rssfeed .= '<description>' . createDescription($lines, $greetings) . '</description>';
+	$rssfeed .= '<link> https://www.eclipse.org/4diac/en_news.php#' . basename($file,".php") . '</link>';
 	$rssfeed .= '<pubDate>' . date ("F d Y H:i:s", filemtime($file)) . '</pubDate>';
 	$rssfeed .= '</item>';
 }
