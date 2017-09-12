@@ -17,6 +17,20 @@
 		$content .= ']]>';
 		return $content;
 	}
+	
+	function getGreetingsContent(){
+		$retval = '';
+		$list = glob('../news/greeting.html');		
+		if(1 == count($list)){
+			$lines = file($list[0]);
+			foreach($lines as $line){
+				$retval .= $line;
+			}
+		}else{
+			$retval = 'Empty Greeting';
+		}
+		return $retval;		
+	}
 
 $rssfeed = '<?xml version="1.0" encoding="ISO-8859-1"?>';
 $rssfeed .= '<rss version="2.0">';
@@ -28,19 +42,18 @@ $rssfeed .= '<language>en-us</language>';
 #$rssfeed .= '<copyright>Copyright (C) 2009 mywebsite.com</copyright>';
 
 
-$stream = fopen("../news/greeting.html","r");
-$greetings = stream_get_contents($stream);
-# =  file_get_contents('../news/greeting.html');  #buffer the content of the greatings
-fclose($stream);
+
+$greetings =  getGreetingsContent(); 
+
 
 $folder = glob('../news/*.php');
 foreach(array_reverse($folder) as $file){
 	$lines = file($file);
 	$rssfeed .= '<item>';
-	$rssfeed .= '<title>' . strip_tags($lines[1]) . '</title>';
+	$rssfeed .= '<title>' . trim(strip_tags($lines[1])) . '</title>';
 	$rssfeed .= '<description>' . createDescription($lines, $greetings) . '</description>';
 	$rssfeed .= '<link> https://www.eclipse.org/4diac/en_news.php#' . basename($file,".php") . '</link>';
-	$rssfeed .= '<pubDate>' . date ("D, d M Y H:i:s e", filectime($file)) . '</pubDate>';
+	$rssfeed .= '<pubDate>' . date ("D, d M Y H:i:s T", filectime($file)) . '</pubDate>';
 	$rssfeed .= '</item>';
 }
 
