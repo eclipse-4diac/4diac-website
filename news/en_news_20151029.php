@@ -7,32 +7,32 @@
 </div>
 <p>The focus of our work for the next 4DIAC-IDE release (1.8.0) is on improving its usability. This means that you can do more with less clicks, that the things you need for a certain task are easy to find, and that disturbing elements are removed. The latest improvements concern the basic function block editor. We enhanced the property view so that we could get rid of the separate algorithm and internal variable editor tabs.</p>
 
-<p><img src="news/figs/reworkedBFBui.png" alt="screenshot of 4DIAC basic function block editor" width="750"/></p>
+<p><img src="https://www.eclipse.org/4diac/news/figs/reworkedBFBui.png" alt="screenshot of 4DIAC basic function block editor" width="750"/></p>
 
 <p>Depending on the selected element in the ECC editor you can manage the internal variables, add algorithms, or edit the EC actions of a state. In addition also the algorithm code can be edited in the properties, and for algorithms in ST again with syntax highlighting and code completion.</p>
 
 <table>
 	<tr><td>
 	<figure>
-		<img src="news/figs/TabStates.png" alt="screenshot of state tab" width="370"/>
+		<img src="https://www.eclipse.org/4diac/news/figs/TabStates.png" alt="screenshot of state tab" width="370"/>
 		<figcaption>screenshot of state tab</figcaption>
 	</figure>
 	</td>
 	<td>
 	<figure>
-		<img src="news/figs/TabTransition.png" alt="screenshot of transition tab" width="370"/>
+		<img src="https://www.eclipse.org/4diac/news/figs/TabTransition.png" alt="screenshot of transition tab" width="370"/>
 		<figcaption>screenshot of transition tab</figcaption>
 	</figure>
 	</td></tr>
 	<tr><td>	
 	<figure>
-		<img src="news/figs/TabAlgorithms.png" alt="screenshot of algorithms tab" width="370"/>
+		<img src="https://www.eclipse.org/4diac/news/figs/TabAlgorithms.png" alt="screenshot of algorithms tab" width="370"/>
 		<figcaption>screenshot of algorithms tab</figcaption>
 	</figure>
 	</td>
 	<td>
 	<figure>
-		<img src="news/figs/TabInternalVars.png" alt="screenshot of internal variables tab" width="370"/>
+		<img src="https://www.eclipse.org/4diac/news/figs/TabInternalVars.png" alt="screenshot of internal variables tab" width="370"/>
 		<figcaption>screenshot of internal variables tab</figcaption>
 	</figure>
 	</td></tr>
@@ -43,13 +43,13 @@
 <table>
 	<tr><td>
 <figure>
-		<img src="news/figs/oldTransition.png" alt="screenshot of former transitions" width="370"/>
+		<img src="https://www.eclipse.org/4diac/news/figs/oldTransition.png" alt="screenshot of former transitions" width="370"/>
 		<figcaption>screenshot of former transitions</figcaption>
 </figure>
 	</td>
 	<td>
 <figure>
-		<img src="news/figs/newTransition.png" alt="screenshot of new transitions" width="370"/>
+		<img src="https://www.eclipse.org/4diac/news/figs/newTransition.png" alt="screenshot of new transitions" width="370"/>
 		<figcaption>screenshot of new transitions</figcaption>
 </figure>
 	</td></tr>

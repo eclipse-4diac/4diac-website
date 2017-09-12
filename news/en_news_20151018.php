@@ -8,4 +8,4 @@
 <p>Since the Eclipse Mars release I've playing around with the new dark theme of Eclipse. Finally during the this weekend I spend some time to improve 4DIACs look on the dark theme. No you can also edit your IEC 61499 control applications with the dark them enabled.</p>
 <?php include 'greeting.html';?>
 
-<p><img src="news/figs/darktheme.png" alt="screenshot of 4DIAC using the dark theme" width="750"/></p>
+<p><img src="https://www.eclipse.org/4diac/news/figs/darktheme.png" alt="screenshot of 4DIAC using the dark theme" width="750"/></p>
