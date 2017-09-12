@@ -27,7 +27,11 @@ $rssfeed .= '<description>This is the RSS feed for the 4diac news</description>'
 $rssfeed .= '<language>en-us</language>';
 #$rssfeed .= '<copyright>Copyright (C) 2009 mywebsite.com</copyright>';
 
-$greetings =  file_get_contents('../news/greeting.html');  #buffer the content of the greatings
+
+$stream = fopen("../news/greeting.html","r");
+$greetings = stream_get_contents($stream);
+# =  file_get_contents('../news/greeting.html');  #buffer the content of the greatings
+fclose($stream);
 
 $folder = glob('../news/*.php');
 foreach(array_reverse($folder) as $file){
@@ -36,7 +40,7 @@ foreach(array_reverse($folder) as $file){
 	$rssfeed .= '<title>' . strip_tags($lines[1]) . '</title>';
 	$rssfeed .= '<description>' . createDescription($lines, $greetings) . '</description>';
 	$rssfeed .= '<link> https://www.eclipse.org/4diac/en_news.php#' . basename($file,".php") . '</link>';
-	$rssfeed .= '<pubDate>' . date ("F d Y H:i:s", filemtime($file)) . '</pubDate>';
+	$rssfeed .= '<pubDate>' . date ("D, d M Y H:i:s e", filectime($file)) . '</pubDate>';
 	$rssfeed .= '</item>';
 }
 
