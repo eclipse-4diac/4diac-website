@@ -22,6 +22,7 @@
 		$retval = '';
 		$list = glob('../news/greeting.html');		
 		if(1 == count($list)){
+			$retval = 'Test String!!!!!!!';
 			$lines = file($list[0]);
 			foreach($lines as $line){
 				$retval .= $line;
