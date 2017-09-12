@@ -1,10 +1,19 @@
 <?php
 	header("Content-Type: application/rss+xml; charset=ISO-8859-1");
 
+#small script to turn our news items into an rss feed to be included in blog agregators and news readers	
+
+	$greetings =  file_get_contents('../news/greeting.html');  #buffer the content of the greatings
+	
+	
 	function createDescription($lines){
 		$content = '<![CDATA[';
 		for ($x = 8; $x <= count($lines); $x++) {
-		  $content .= $lines[$x];
+			if (strpos($lines[$x], 'greeting.html') != false){
+				$content .=  $grettings;
+			}else{
+		  		$content .= $lines[$x];
+			}
 		}
 		$content .= ']]>';
 		return $content;
