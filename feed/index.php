@@ -2,14 +2,12 @@
 	header("Content-Type: application/rss+xml; charset=ISO-8859-1");
 
 #small script to turn our news items into an rss feed to be included in blog agregators and news readers	
-
-	
 	
 	function createDescription($lines, $greetings){
 		$content = '<![CDATA[';
-		for ($x = 8; $x <= count($lines); $x++) {
+		for ($x = 8; $x < count($lines); $x++) {
 			if (strpos($lines[$x], 'greeting.html') != false){
-				$content .= $grettings;
+			    $content .= $greetings;
 			}else{
 		  		$content .= $lines[$x];
 			}
@@ -18,21 +16,6 @@
 		return $content;
 	}
 	
-	function getGreetingsContent(){
-		$retval = '';
-		$list = glob('../news/greeting.html');		
-		if(1 == count($list)){
-			$retval = 'Test String!!!!!!!';
-			$lines = file($list[0]);
-			foreach($lines as $line){
-				$retval .= $line;
-			}
-		}else{
-			$retval = 'Empty Greeting';
-		}
-		return $retval;		
-	}
-
 $rssfeed = '<?xml version="1.0" encoding="ISO-8859-1"?>';
 $rssfeed .= '<rss version="2.0">';
 $rssfeed .= '<channel>';
@@ -42,10 +25,7 @@ $rssfeed .= '<description>This is the RSS feed for the 4diac news</description>'
 $rssfeed .= '<language>en-us</language>';
 #$rssfeed .= '<copyright>Copyright (C) 2009 mywebsite.com</copyright>';
 
-
-
-$greetings =  getGreetingsContent(); 
-
+$greetings =  file_get_contents('../news/greeting.html'); 
 
 $folder = glob('../news/*.php');
 foreach(array_reverse($folder) as $file){
