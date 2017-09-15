@@ -82,13 +82,13 @@
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
 						<li style="color:rgba(255,149,14,1.0);font-weight:bold;">4diac-ide 1.9.0 M2 release on Eclipse under construction</li>
-						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/">old 4diac-ide versions on SF</a></li>
+						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/">previous 4diac-ide versions on SF</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
 						<li style="color:rgba(255,149,14,1.0);font-weight:bold;">forte 1.9.0 M2 release on Eclipse under construction</li>
-						<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/">old forte versions on SF</a></li>
+						<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/">previous forte versions on SF</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
