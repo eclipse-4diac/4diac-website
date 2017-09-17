@@ -80,21 +80,31 @@
 			
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<ul id="nav">
-						<li style="color:rgba(255,149,14,1.0);font-weight:bold;">4diac-ide 1.9.0 M2 release on Eclipse under construction</li>
-						<li><a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/">previous 4diac-ide versions on SF</a></li>
-					</ul>
+					<p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">4diac-ide 1.9.0 M2 release on Eclipse under construction</p>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<ul id="nav">
-						<li style="color:rgba(255,149,14,1.0);font-weight:bold;">forte 1.9.0 M2 release on Eclipse under construction</li>
-						<li><a href="https://sourceforge.net/projects/fordiac/files/FORTE/">previous forte versions on SF</a></li>
-					</ul>
+					<p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">forte 1.9.0 M2 release on Eclipse under construction</p>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
 					<ul id="nav">
 						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">IDE source</a></li>
 						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">RTE source</a></li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
+					The current stable as well as previous releases can be found at 
+					<a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/">4diac's Sourceforge page</a>.
+				</td>
+				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'> 
+					The current stable as well as previous releases can be found at 
+					<a href="https://sourceforge.net/projects/fordiac/files/FORTE/">4diac's Sourceforge page</a>.					
+				</td>
+				<td width="33%" style='padding-left:10px; '> 
+				<p>Repositories still at Sourceforge:</p>
+					<ul id="nav">
 						<li><a href="http://sourceforge.net/p/fordiac/fordiac-lib/ci/default/tree/">library</a></li>
 						<li><a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">systems</a>
 							<i>(example projects)</i></li>
