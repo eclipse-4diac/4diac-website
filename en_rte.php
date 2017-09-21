@@ -72,7 +72,7 @@
 					<li><a href="http://raspberry-sps.de/">Raspberry-SPS</a></li>
 					<li><a href="http://global.wago.com/en/products/new-items/overview/pfc200-1.jsp">WAGO PFC200</a></li>
 					<li><a href="http://www.microcontrol.net/en/products/control-systems/umic200/">MicroControl uMIC.200</a></li>
-					<li><a href="https://www.insys-icom.de/de/knowledge-base/edge-computing/icom-smartbox/container">icom MR-router series</a>
+					<li><a href="https://www.insys-icom.de/icom-smartbox/container">icom MR-router series</a>
 					
 					<li>upcoming:
 						<ul>

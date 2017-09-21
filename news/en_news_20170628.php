@@ -10,6 +10,6 @@
 A few weeks ago we presented how the MR routers from INSYS icom can be turned into PLCs with 4diac. 
 Now we are happy to announce that INSYS icom is providing preconfigured 4diac enabled application containers for this routers. 
 This greatly reduces the setup and getting started effort for using 4diac on MR routers. 
-Details can be found at the <a href="https://www.insys-icom.de/de/knowledge-base/edge-computing/icom-smartbox/container">INSYS icom website</a>.
+Details can be found at the <a href="https://www.insys-icom.de/icom-smartbox/container">INSYS icom website</a>.
 </p>
 <?php include 'greeting.html';?>
