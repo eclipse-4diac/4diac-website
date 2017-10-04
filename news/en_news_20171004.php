@@ -7,7 +7,7 @@ Energy Load Management with 4diac by Awite Bioenergie GmbH
 </div>
 
 <p>
-As part of the <a href="http://www.cpse-labs.eu/">CPSE-Labs project</a>, which received funding by the European Union's Horizon 2020 research and innovation programme, <a href="http://www.awite.de/">Awite Bioenergie GmbH</a> completed its experiment on <i>Energy and Load Management in Process Technology Using IEC 61499</i> and 4diac. Enjoy the summary of their results on youtube:
+As part of the <a href="http://www.cpse-labs.eu/">CPSE-Labs project</a>, which received funding by the European Union's Horizon 2020 research and innovation programme, <a href="http://www.awite.de/">Awite Bioenergie GmbH</a> successfully completed its experiment on <i>Energy and Load Management in Process Technology Using IEC 61499</i> and 4diac. Enjoy the summary of their results on youtube:
 </p> 
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/VqQVdPE6lm0"></iframe> 
