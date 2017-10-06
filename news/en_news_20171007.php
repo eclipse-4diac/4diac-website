@@ -10,7 +10,7 @@
 By invitation and support of <a href="https://www.jemima.or.jp/english_top.html">Japan Electric Measuring Instruments Manufacturers' Association (JEMIMA)</a> 
 Alois Zoitl was able to present IEC 61499 and Eclipse 4diac at the <a href="http://www.sice.or.jp/sice2017/">SICE2017</a> conference in Kanazawa Japan. 
 SICE2017 is the annual conference of the <a href="http://www.sice.jp/english/">Japanese Society of Instrument and Control Engineers</a>. 
-Alois Zoitl’s introduction plenary talk on 
+Alois Zoitl's introduction plenary talk on 
 <a href="http://www.sice.or.jp/sice2017/plenary.html#PT1">Future Control System Architecture Enabling Industrie 4.0 / Smart Manufacturing</a> 
 featured the importance of IEC 61499 and showed how 4diac utilizing OPC UA can provide a potential solution for implementing 
 Service-oriented (Machine) Control Architectures. </p>
