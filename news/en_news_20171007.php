@@ -20,6 +20,6 @@ which is a part of SICE2017 program.
 There 4diac was discussed among other important topics for automation such as device integration with FDT or security for control components.</p>
 
 <figure class="single">
-<img src="https://www.eclipse.org/4diac/news/figs/kanazawa_panel.jpg" alt="panel discusion on standards for smart manufacturing" />
+<img src="https://www.eclipse.org/4diac/news/figs/kanazawa_panel.jpg" width="600px" alt="panel discusion on standards for smart manufacturing" />
 </figure>
 <?php include 'greeting.html';?>
