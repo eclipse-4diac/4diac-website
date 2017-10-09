@@ -14,8 +14,8 @@ As Thomas Strasser (<a href="http://www.ait.ac.at/profile/detail/Strasser-Thomas
 <i>"It is so exiting to celebrate the first 10 years of 4diac, to see a lot of users implementing academic applications but to recognize increasingly more and more industry-related applications. 
 This is a very good basis for the further development and usage of 4diac."</i></p> 
 
-<p>Lisbeth Mosnik, (<a href=" https://iktderzukunft.at">Austrian Federal Ministry for Transport, Innovation and Technology</a>) stresses the importance of R&D for innovation: 
-<i>"4diac is a glowing example how publicly funded R&D projects and the availability of results (i.e., open science) can pave the ground for innovation ecosystems. 
+<p>Lisbeth Mosnik, (<a href=" https://iktderzukunft.at">Austrian Federal Ministry for Transport, Innovation and Technology</a>) stresses the importance of R&amp;D for innovation: 
+<i>"4diac is a glowing example how publicly funded R&amp;D projects and the availability of results (i.e., open science) can pave the ground for innovation ecosystems. 
 We appreciate that the results are broadly used by a growing community, including a successful Austrian start-up."</i></p>
 
 <p>Indeed 4diac has grown with each release. 
