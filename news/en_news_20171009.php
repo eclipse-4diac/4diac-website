@@ -50,7 +50,7 @@ Therefore, hear what they have say on 4diac's anniversary:</p>
 <p>Even after ten years, the 4diac team is not tired and has many ideas for improving and extending 4diac. 
 The next ten years are going to be just as exciting. 
 <i>"For example, in the upcoming 1.9 release finally we will get subapplications and dynamically downloadable types (no more C++ compiling needed!)."</i>&nbsp;
-says Alois Zoitl (<a href="http://www.fortiss.org">fortiss Gmbh</a>), the creative leader behind 4diac.</p>
+says Alois Zoitl (<a href="http://www.fortiss.org">fortiss GmbH</a>), the creative leader behind 4diac.</p>
 
 <p>With that, we are looking forward to the next ten years!</p>
 
