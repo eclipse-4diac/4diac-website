@@ -3,7 +3,7 @@
 </div>
 <div class="news">
 	<span class="left"><?php $date="2017-10-09 18:00"; echo $date;?></span> 
-	<span class="center"><img src="news/figs/4diac_cake.png" alt="4diac's birthday cake" width="70"/></span>
+	<span class="center"><img src="news/figs/4diac_cake.png" alt="4diac's birthday cake" width="140"/></span>
 	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
 </div>
 <p>In 2006 a handful researchers had a crazy idea: based on the results of two public funded research projects provide a full-fledged open source 
