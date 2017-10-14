@@ -15,9 +15,36 @@
 </section>
 
 <section class="content">
-	<?php 
-		$folder = glob('./news/*.php');
-		foreach(array_reverse($folder) as $file) include $file;
+	<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+	<select name="news"  onchange='this.form.submit()'>
+		<?php 
+			$dir = "news/";
+			$dfList = scandir($dir, 1);	
+			if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['news'] == date("Y")){
+				echo '<option selected value="' . date("Y") . '">' . date("Y") . '</option>';
+			}else{
+				echo '<option value="' . date("Y") . '">' . date("Y") . '</option>';
+			}
+			foreach($dfList as $element){
+				if(is_dir($dir.$element) && $element != "figs" && $element != '.' && $element != ".."){
+					if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['news'] == $element){
+						echo '<option selected value="' . $element . '">' . $element . '</option>';
+					}else{
+						echo '<option value="' . $element . '">' . $element . '</option>';
+					}
+				}
+			}
+		?>
+	</select>
+	</form>
+	
+	<?php
+		if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST['news'] != date("Y")){
+			$files = glob($dir . $_REQUEST['news'] . "/*.php");
+		}else{
+			$files = glob($dir . '*.php');
+		}
+		foreach(array_reverse($files) as $file) include $file;
 	?>
 </section>
 
