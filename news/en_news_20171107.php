@@ -11,7 +11,7 @@ Over the last two years Jose has been increasingly contributing to 4diac.
 He has been working mostly on the FORTE code, bringing it to new architectures, new modules and he's always worried about the cleanness of the code. 
 He's also responsible for the big change in the Documentation from last month.</p> 
 
-<p>We are sure his capabilities are a great extension to 4diac’s committer team.<p> 
+<p>We are sure his capabilities are a great extension to 4diac's committer team.<p> 
 
 <p>Welcome Jose,
 	<br>The 4diac Team</p>
