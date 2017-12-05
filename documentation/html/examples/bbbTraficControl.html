@@ -57,10 +57,6 @@
 			
 			<p>In either way, one more step that must be done is to tell the CMake that you want to include the IO in FORTE. To do that, find first the <span class="fieLocation">setup_posix.sh</span> file on the root folder of FORTE, and find the command <span class="specificText">cmake</span> almost at the bottom, and add the text <span class="specificText">-DFORTE_MODULE_SysFs=ON</span> (without quotes) just before <span class="specificText">-DFORTE_ARCHITECTURE=Posix</span> (leaving the blank spaces between them). </p>
 			
-			
-			<!-- The second step is to navigate to the folder <span class="folderLocation">src/stdflib/</span>, and there you will find the <span class="fileLocation">CMakeLists.txt</span>, and you should add at the bottom in a new line: 
-			<span class="specificText">add_subdirectory(io)</span>. Now you are ready to transfer all to your BBB.</p> -->
-			
 			<h3>Transfering the source code to the BBB</h3>
 			
 			<p>To transfer the files from a windows machine to the BBB, an easy solution is the software <a target="_blank" href="https://winscp.net/eng/download.php">WinSCP</a> which allows to connect to the BBB and navigate the folders in it in a Graphic Interface. Connect to the BBB using the IP address in the same way as in SSH before. Once connected you will see two folder trees. The one on the left is your local machine and the one on the right is th BBB. In WinSCP, navigate on both trees to the desired folders and select the files to transfer and then click "Upload" to transfer from machine &rarr; BBB and "Download" to transfer BBB &rarr; machine.</p>

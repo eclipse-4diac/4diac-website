@@ -75,7 +75,8 @@ $ mkdir build &amp;&amp; cd "build"</div>
 	</li>
 	<li>Use CMake to generate all the build files. Download and install: <a href="https://cmake.org/download/" target="_blank">https://cmake.org/download/</a>
 	</li>
-	<li>Open the <span class="folderLocation">$HOME/4diac/forte</span> folder in CMake, and set the output for the build binaries to the <span class="folderLocation">forte/build</span>folder.
+	<li>Open the <span class="folderLocation">$HOME/4diac/forte</span> folder in CMake, and set the output for the build binaries to the <span class="folderLocation">forte/build</span>
+		folder.
 	</li>
 	<li>Press <span class="button4diac">Configure</span> and select your Visual Studio Version. (Make sure you select your installed VS version. Otherwise CMake does not find the C/C++ compiler. Activate <span class="specificText">Use default native compilers</span></li>
 	<li>Set <span class="specificText">FORTE_ARCHITECTURE</span> to <span class="specificText">Win32</span>, <span class="specificText">FORTE_MODULE_CONVERT=ON</span>, <span class="specificText">FORTE_MODULE_IEC61131=ON</span>, and press two times on cofigure. All red entries should now be gone.
@@ -184,7 +185,7 @@ $ cd open62541 &amp;&amp; mkdir build</div>
 
 <p>You can see that there are two <span class="element4diac">PUBLISH</span> function blocks in this APP: <span class="element4diac">PUBLISH_1</span> and <span class="element4diac">WRITE_INCREMENT</span>. Depending on the ID parameter, they differ in their functionality. For <span class="element4diac">PUBLISH_1</span> the ID does not include the OPC UA encpoint <span class="specificText">opc.tcp://localhost:4840</span> therefore the result will be an OPC UA server which offers a variable. <span class="element4diac">WRITE_INCREMENT</span> includes the encpoint in its ID field, therefore this FB will write the value from <span class="element4diac">SD_1</span> to the variable indicated by the ID on the remote server.</p>
 	<p>The client FB supports calling methods (see following section) and reading variable values. Depending on the OPC UA node given by the ID parameter it will be automatically determined if the remote node is a Variable where the client should read from, or if it is a method which should be called.</p>
-<p><b>NOTE:</b> Currently open62541 does not support data change events, therefore you need to use polling to see if a variable has changed on the remote server. When data change events are supported, we will add support for that on <span class="element4diac">SUBSCRIBE</span> FBs.</p>
+<p><span class="inlineTitle">NOTE:</span> Currently open62541 does not support data change events, therefore you need to use polling to see if a variable has changed on the remote server. When data change events are supported, we will add support for that on <span class="element4diac">SUBSCRIBE</span> FBs.</p>
 
 <h2 id="methods">OPC UA Methods</h2>
 

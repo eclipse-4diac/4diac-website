@@ -213,63 +213,63 @@ do
 		then
 			if [ $W_ERROR = true ]
 			then
-				OK=false
+			OK=false
 			else
 				WARNING_FILES="$WARNING_FILES $file"
 				echo "$WARNING_FILES"
 			fi
-			
+
 			printf "\033[0""$USER_CHECK_COLOR""m-----------\033[0m\n"
 			printf "Checked \033[""$USER_CHECK_COLOR""m%-${MAX_LENGTH_FILE}s $USER_CHECK_TEXT!\033[0m\n" $file
-			
+
 			RES=$(echo "$RESULT" | grep -E "\S"$'\t')
 			if [ "$RES" != "" ]
 			then
 				printf "WARNING AT SYNTAX: Tabs are only allowed at the beginning of the line:\n%s\n" "$RES"
 			fi
-			
+
 			RES=$(echo "$RESULT" | grep -E "[^\-]\->")
 			if [ "$RES" != "" ]
 			then
 				printf "WARNING AT SYNTAX: Don't use arrows like ->, only for comments:\n%s\n" "$RES"
 			fi
-			
+
 			RES=$(echo "$RESULT" | grep -E "span class=\"code\"")
 			if [ "$RES" != "" ]
 			then
 				printf "WARNING AT SYNTAX: Don't use a span with class code. Use inlineCode class or use a div with class code:\n%s\n" "$RES"
 			fi
-					
+
 			RES=$(echo "$RESULT" | grep -E "<i>")
 			if [ "$RES" != "" ]
 			then
 				printf "WARNING AT SYNTAX: Don't use the tag <i>. Put a span aroung it, and use one class that is styled in the css:\n%s\n" "$RES"
 			fi
-			
+
 			RES=$(echo "$RESULT" | grep -E "<b>")
 			if [ "$RES" != "" ]
 			then
 				printf "WARNING AT SYNTAX: Don't use the tag <b>. Put a span aroung it, and use one class that is styled in the css:\n%s\n" "$RES"
 			fi
-			
+
 			RES=$(echo "$RESULT" | grep -E "<em>")
 			if [ "$RES" != "" ]
 			then
 				printf "WARNING AT SYNTAX: Don't use the tag <em>. Put a span aroung it, and use one class that is styled in the css:\n%s\n" "$RES"
 			fi
-			
+
 			RES=$(echo "$RESULT" | grep -E "<strong>")
 			if [ "$RES" != "" ]
 			then
 				printf "WARNING AT SYNTAX: Don't use the tag <strong>. Put a span aroung it, and use one class that is styled in the css:\n%s\n" "$RES"
 			fi
-			
+
 			RES=$(echo "$RESULT" | grep -E "class=\"\"")
 			if [ "$RES" != "" ]
 			then
 				printf "WARNING AT SYNTAX: The class name is empty.:\n%s\n" "$RES"
 			fi
-			
+
 			RES=$(echo "$RESULT" | grep -E "\S  ")
 			if [ "$RES" != "" ]
 			then
@@ -313,6 +313,4 @@ else
 	printf "\n\033[0;31mTest FAILED. Check files: $FAILED_FILES.\033[0m\n"
 	return 5
 fi
-
-
 

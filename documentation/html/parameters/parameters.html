@@ -115,7 +115,7 @@
 		<li>At the beginning, right after the first #define add:
 		<div class="code">//----------------------------------------------------------------------------//
 // take precautions if compiled with C++ compiler
-#ifdef __cplusplus 
+#ifdef __cplusplus
 extern "C" {
 #endif
 //----------------------------------------------------------------------------//</div>
@@ -333,11 +333,11 @@ set the definitions of UMIC_LED_ENABLED and UMIC_RELAY_ENABLED to zero.</p>
 
 			<p>The 'reset' zeroes the position, pwm and speed values, and turn off the motor with a TRUE value in OUT. A FALSE value in OUT has no effect. It must be used with QX</p>
 
-			<p>The 'stop' specific must not be confused with stoping the motor, because it specifies the way the motor behaves when PWM is zero according to the value written to OUT. It must be used with QW</p>
+			<p>The 'stop' specific must not be confused with stoping the motor, because it specifies the way the motor behaves when PWM is zero according to the value written to OUT. It must be used with QW 	</p>
 
 			<ul>
 				<li>0: [coast]: Removes power from the motor. The motor will freely coast to a stop.</li>
-				<li>1: [brake]: Removes power from the motor and creates a passive electrical load. This is usually done by shorting the motor terminals together. This load will absorb the energy from the rotation of the motors and cause the motor to stop more quickly than coasting.</li>
+				<li>1: [brake]: Removes power from the motor and creates a passive electrical load. This is usually done by shorting the motor terminals together. This load will absorb the energy from the 	rotation of the motors and cause the motor to stop more quickly than coasting.</li>
 
 				<li>3: [hold]: Causes the motor to actively try to hold the current position. If an external force tries to turn the motor, the motor will "push back" to maintain its position.</li>
 			</ul>
