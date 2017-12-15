@@ -65,16 +65,16 @@
 		<table>
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac-IDE 1.8.4</h2>
-					<i>Development environment with FORTE executables</i>
+					<h2>4diac-ide</h2>
+					<i>Development environment with 4diac-rte executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac-RTE 1.8.4</h2>	
-					<i>Sources of FORTE compilable for your system.</i>
+					<h2>4diac-rte</h2>	
+					<i>Sources of 4diac-rte compilable for your system.</i>
 				</td>
 				<td width="33%" style='padding-left:10px;'>
 					<h2>4diac-repositories</h2>
-					<i>Sources for IDE, library, and systems:</i>	
+					<i>Sources for ide, rte, and systems:</i>	
 				</td>
 			</tr>
 			
@@ -84,7 +84,7 @@
 					<ul id="nav">
 						<!--li>Nightly Build</li-->
 						<!--li>Update Site</li-->
-						<li class="expand">4diac-IDE 1.9.0 M2
+						<li class="expand">4diac-ide 1.9.0 M2
 							<ul>
 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86.zip">Linux 32-bit</a></li>
 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86_64.zip">Linux 64-bit</a></li>
@@ -98,13 +98,13 @@
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">forte 1.9.0 M2 release on Eclipse under construction</p-->
 					<ul id="nav">
-						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/forte/forte-incubation_1.9.0.M2.zip">forte 1.9.0 M2</a></li>
+						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/forte/forte-incubation_1.9.0.M2.zip">4diac-rte 1.9.0 M2</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
 					<ul id="nav">
-						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">IDE source</a></li>
-						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">RTE source</a></li>
+						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">ide source</a></li>
+						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">rte source</a></li>
 					</ul>
 				</td>
 			</tr>
