@@ -80,10 +80,26 @@
 			
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">4diac-ide 1.9.0 M2 release on Eclipse under construction</p>
+					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">4diac-ide 1.9.0 M2 release on Eclipse under construction</p>-->
+					<ul id="nav">
+						<!--li>Nightly Build</li-->
+						<!--li>Update Site</li-->
+						<li>4diac-IDE 1.9.0 M2
+							<ul>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86.zip">Linux 32bit</a></li>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86_64.zip">Linux 64bit</a></li>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-macosx.cocoa.x86_64.zip">MacOS 64bit</a></li>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-win32.win32.x86.zip">Windows 32bit</a></li>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-win32.win32.x86_64.zip">Windows 64bit</a></li>									
+							</ul>
+						</li>
+					</ul>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">forte 1.9.0 M2 release on Eclipse under construction</p>
+					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">forte 1.9.0 M2 release on Eclipse under construction</p-->
+					<ul id="nav">
+						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/forte/forte-incubation_1.9.0.M2.zip">forte 1.9.0 M2</a></li>
+					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
 					<ul id="nav">
@@ -105,7 +121,7 @@
 				<td width="33%" style='padding-left:10px; '> 
 				<p>Repositories still at Sourceforge:</p>
 					<ul id="nav">
-						<li><a href="http://sourceforge.net/p/fordiac/fordiac-lib/ci/default/tree/">library</a></li>
+						<!--li><a href="http://sourceforge.net/p/fordiac/fordiac-lib/ci/default/tree/">library</a></li-->
 						<li><a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">systems</a>
 							<i>(example projects)</i></li>
 					</ul>
