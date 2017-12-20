@@ -20,7 +20,7 @@
 <p>The highlights for <i>forte</i> are:</p>
 <ul>
   <li>First version of dynamically loadable types utilizing <a href="http://www.lua.org/">Lua</a></li>
-  <li>First support for <a href="http://www.ros.org/">ROS</a><li>
+  <li>First support for <a href="http://www.ros.org/">ROS</a></li>
   <li>Expanding and improving OPC UA support</li>
   <li>Reducing porting effort of forte</li>
 </ul>
