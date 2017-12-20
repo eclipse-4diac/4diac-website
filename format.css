@@ -101,9 +101,8 @@ display:block !important;
 section.image {
 background-image:url("img/application.png");
 background-repeat:no-repeat;
-background-position:center; 
-height:200px;
-margin-bottom:25px;
+background-position: center top; 
+height:185px;
 }
 
 section.img img{
@@ -168,6 +167,7 @@ div.news-item > a{
   font-weight:700;
   color:white;
   font-size:9pt;
+  line-height:11pt;
   text-decoration: none;
 }
 
@@ -351,6 +351,7 @@ section.content span{
 padding-top:15px;
 color:rgba(1,34,105,1.0);
 font-size:10.5pt;
+line-height: 11pt;
 text-decoration: none;
 font-weight:normal;
 display:block;
@@ -361,6 +362,8 @@ width:4cm;
 height:4cm;
 margin:0px 20px 0px 20px;
 padding:15px;
+padding-top:0px;
+padding-bottom:25px;
 display:inline-block;
 font-weight:700;
 color:white;
@@ -371,6 +374,11 @@ border-radius:30px;
 text-decoration: none;
 text-align:center;
 } 
+
+.componentbuttonimage{
+	padding-top:5px;
+	padding-bottom:5px;
+}
  
 section.content a:link, section.content a:visited{
 }
@@ -414,14 +422,13 @@ margin-bottom: -142px;
 
 /****************** header / footer ******************/
 header{
-margin:0px;
 width:100%;
 height:80px;
 display:table;
 }
 
 header img{
-height:80px;
+height:55px;
 }
 
 footer{
@@ -451,8 +458,7 @@ padding-left:5px;
 color:white;
 }
 header span.left{
-padding-top:5px;
-padding-bottom:3px;
+padding:10px;
 }
 
 footer td.center, header span.center{
@@ -462,12 +468,13 @@ header span.center{
 color:orange;
 font-size:18pt;
 font-weight:bold;
+line-height: 18pt;
 }
 
 footer td.right, footer td.right > a, header span.right{
 text-align:right;
 text-decoration:none;
-padding-right:5px;
+padding-right:10px;
 color:white;
 font-size:8pt;
 }
@@ -475,6 +482,7 @@ header span.right{
 color:rgba(1,34,105,1.0);
 font-size:18pt;
 font-weight:bold;
+line-height: 18pt;
 }
 
 footer td.right img{

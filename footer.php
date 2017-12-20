@@ -1,5 +1,5 @@
-<section>
-	<img src="img/Egg-incubation.png" style="left:8px;bottom:47px;"/>
+<section style="margin-top: -125px;">
+	<img src="img/Egg-incubation.png" />
 	<footer style="bottom:0px;">
 		<table width="100%">
 			<tr>
