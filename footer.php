@@ -10,7 +10,7 @@
 					<a href="https://plus.google.com/communities/101972285570306852659"><img src="img/appbar.googleplus.png"/></a>
 					<a href="https://www.linkedin.com/grp/home?gid=6949091"><img src="img/appbar.social.linkedin.png"/></a>
 					<a href="https://www.xing.com/communities/groups/4diac-1076214"><img src="img/appbar.social.xing.png"/></a>
-					<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=4DIAC"><img src="img/appbar.pug.png"/></a>
+					<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=4DIAC"><img src="img/appbar.bug.png"/></a>
 					<a href="http://eclipse.org/forums/eclipse.4diac"><img src="img/appbar.people.multiple.png"/></a>
 				</td>
 				<td id="width33">
