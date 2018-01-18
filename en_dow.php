@@ -19,7 +19,12 @@
 	<style type="text/css">
 	ul a {
 		text-decoration:none;
-		color: black;
+		color: orange;
+	}
+	
+	ul a:hover{
+		text-decoration:underline;
+		color: orange;
 	}
 
 	ul, ul li {
@@ -38,6 +43,10 @@
 
 	#nav ul {
 		display: none;
+	}
+	
+	#expanded ul {
+	    display: inline;
 	}
 
 	#nav li.expand {
@@ -84,7 +93,7 @@
 					<ul id="nav">
 						<!--li>Nightly Build</li-->
 						<!--li>Update Site</li-->
-						<li class="expand">4diac-ide 1.9.0 M2
+						<li class="expanded" id="expanded">4diac-ide 1.9.0 M2
 							<ul>
 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
