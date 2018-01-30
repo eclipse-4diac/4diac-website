@@ -75,7 +75,7 @@
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<h2>4diac-ide</h2>
-					<i>Development environment with 4diac-rte executables</i>
+					<i>Development environment currently without 4diac-rte executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<h2>4diac-rte</h2>	
