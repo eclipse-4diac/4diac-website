@@ -93,7 +93,16 @@
 					<ul id="nav">
 						<!--li>Nightly Build</li-->
 						<!--li>Update Site</li-->
-						<li class="expanded" id="expanded">4diac-ide 1.9.0 M3
+						<li class="expanded" id="expanded">4diac-ide 1.9.0 RC1
+							<ul>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_win32.win32.x86.zip">Windows 32-bit</a></li>
+								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+							</ul>
+						</li>
+						<li class="expanded">4diac-ide 1.9.0 M3
 							<ul>
 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
@@ -116,6 +125,7 @@
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">forte 1.9.0 M2 release on Eclipse under construction</p-->
 					<ul id="nav">
+						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/forte/forte-incubation_1.9.0.RC1.zip">4diac-rte 1.9.0 RC1</a></li>
 						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/forte/forte-incubation_1.9.0.M3.zip">4diac-rte 1.9.0 M3</a></li>
 						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/forte/forte-incubation_1.9.0.M2.zip">4diac-rte 1.9.0 M2</a></li>
 					</ul>
