@@ -19,10 +19,6 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/en_features.php</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
   <loc>https://www.eclipse.org/4diac/en_uws.php</loc>
   <changefreq>daily</changefreq>
 </url>
@@ -56,27 +52,27 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/en_workshop_2015.php</loc>
+  <loc>https://www.eclipse.org/4diac/workshops/en_workshop_2015.php</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/en_workshop_2014.php</loc>
+  <loc>https://www.eclipse.org/4diac/workshops/en_workshop_2014.php</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/en_workshop_2013.php</loc>
+  <loc>https://www.eclipse.org/4diac/workshops/en_workshop_2013.php</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/en_workshop_2012.php</loc>
+  <loc>https://www.eclipse.org/4diac/workshops/en_workshop_2012.php</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/en_workshop_2011.php</loc>
+  <loc>https://www.eclipse.org/4diac/workshops/en_workshop_2011.php</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/en_workshop_2010.php</loc>
+  <loc>https://www.eclipse.org/4diac/workshops/en_workshop_2010.php</loc>
   <changefreq>daily</changefreq>
 </url>
 <url>
@@ -299,13 +295,8 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/documentation/html/overview/overview.html</loc>
+  <loc>https://www.eclipse.org/4diac/documentation/html/4diacIDE/overview.html</loc>
   <lastmod>2015-08-27T09:47:13+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>https://www.eclipse.org/4diac/documentation/html/overview/perspectives.html</loc>
-  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
@@ -394,22 +385,12 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/cmake.html</loc>
-  <lastmod>2015-08-27T09:47:13+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/mindstorms.html</loc>
+  <loc>https://www.eclipse.org/4diac/documentation/html/installation/mindstorms.html</loc>
   <lastmod>2015-08-27T09:47:12+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/icnova.html</loc>
-  <lastmod>2015-08-27T09:47:12+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>https://www.eclipse.org/4diac/documentation/html/tutorials/raspi.html</loc>
+  <loc>https://www.eclipse.org/4diac/documentation/html/installation/raspi.html</loc>
   <lastmod>2015-08-27T09:47:12+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
@@ -434,12 +415,7 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>https://www.eclipse.org/4diac/documentation/html/faq/ide.html</loc>
-  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>https://www.eclipse.org/4diac/documentation/html/faq/forte.html</loc>
+  <loc>https://www.eclipse.org/4diac/documentation/html/faq/faq.html</loc>
   <lastmod>2015-08-27T09:47:11+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
@@ -451,11 +427,6 @@
 <url>
   <loc>https://www.eclipse.org/4diac/documentation/html/development/buildingBinary.html</loc>
   <lastmod>2015-08-27T09:47:13+00:00</lastmod>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>https://www.eclipse.org/4diac/documentation/html/development/headlessBuild.html</loc>
-  <lastmod>2015-08-27T09:47:11+00:00</lastmod>
   <changefreq>daily</changefreq>
 </url>
 <url>
