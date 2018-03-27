@@ -17,6 +17,7 @@
 					<table style="float:right;">
 						<tr>
 							<td class="right" style="padding:0px;margin:0px;">
+								<a href="https://eclipse.org/security/">Eclipse Security</a>
 								<a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a><br/>
 								<a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a>
 							</td>
