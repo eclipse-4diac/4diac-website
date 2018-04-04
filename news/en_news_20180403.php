@@ -13,7 +13,7 @@ On April 19<sup>th</sup>, together with the Platforms4CPS project, results of th
 <p>This is a great chance to see how 4diac has been used in three CPSE Labs experiments, 
 to meet 4diac developers, and to hear about future funding possibilities for similar acitivties. 
 A detailed agenda and registration information can be found at the 
-<a href=”https://www.eventbrite.co.uk/e/cpse-labs-designing-for-digital-transformation-registration-43831110030”>event&rsquo;s web-page</a>.
+<a href="https://www.eventbrite.co.uk/e/cpse-labs-designing-for-digital-transformation-registration-43831110030">event&rsquo;s web-page</a>.
 </p>
 
 <p>See you there,
