@@ -11,7 +11,7 @@
 <?php include 'header.html';?>
 
 <section class="image">
-	<h1 style="line-height: 17pt; ">IEC 61499 Implementation for Distributed <br>Devices of the Next Generation</h1>
+	<h1 style="line-height: 19pt; ">IEC 61499 Implementation for Networked <br>Control Devices of the Next Generation</h1>
 </section>
 
 <section class="news">
@@ -53,7 +53,7 @@
 		<img class="componentbuttonimage" height="100px" src="img/sys-button.png" alt="Example systems showing the features of IEC 61499 and 4diac"/>
 		<span>Example<br>Projects</span></a>
 
-	<h4 style="font-weight: normal; line-height: 15pt; margin: 20px;">
+	<h4 style="font-weight: normal; line-height: 17pt; margin: 20px;">
 IEC 61499 defines a domain specific modeling language for developing distributed industrial control solutions.
 <br>IEC 61499 extends IEC 61131-1 by improving the encapsulation of software components for increased re-usability,
 <br>providing a vendor independent format, and simplifying support for controller to controller communication.
