@@ -101,8 +101,8 @@ display:block !important;
 section.image {
 background-image:url("img/application.png");
 background-repeat:no-repeat;
-background-position: center top; 
-height:185px;
+background-position: center bottom; 
+height:200px;
 }
 
 section.img img{
