@@ -103,6 +103,7 @@ background-image:url("img/application.png");
 background-repeat:no-repeat;
 background-position: center bottom; 
 height:200px;
+margin-bottom:20px;
 }
 
 section.img img{
