@@ -101,62 +101,13 @@
 								<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86.zip">Windows 32-bit</a></li>
 								<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
 							</ul>
-						</li>
-						<li class="expand">1.9.0 Milestones:
-    						<ul id="nav">
-        						<li class="expand">4diac-ide 1.9.0 RC3
-        							<ul>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_win32.win32.x86.zip">Windows 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
-        							</ul>
-        						</li>
-        						<li class="expand">4diac-ide 1.9.0 RC2
-        							<ul>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_win32.win32.x86.zip">Windows 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
-        							</ul>
-        						</li>
-        						<li class="expand">4diac-ide 1.9.0 RC1
-        							<ul>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_win32.win32.x86.zip">Windows 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
-        							</ul>
-        						</li>
-        						<li class="expand">4diac-ide 1.9.0 M3
-        							<ul>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_win32.win32.x86.zip">Windows 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
-        							</ul>
-        						</li>
-        						<li class="expand">4diac-ide 1.9.0 M2
-        							<ul>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-win32.win32.x86.zip">Windows 32-bit</a></li>
-        								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-win32.win32.x86_64.zip">Windows 64-bit</a></li>									
-        							</ul>
-        						</li>
-    						</ul>
-						</li>
+						</li>						
 					</ul>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">forte 1.9.0 M2 release on Eclipse under construction</p-->
 					<ul id="nav">
-						<li><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte 1.9.0 RC2</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte 1.9.0</a></li>
 						<li class="expand">1.9.0 Milestones:
     						<ul id="nav">
     							<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/forte/forte-incubation_1.9.0.RC3.zip">4diac-rte 1.9.0 RC2</a></li>
@@ -178,8 +129,62 @@
 			
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					Pre-Eclipse releases can be found at 
-					<a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/">4diac's Sourceforge page</a>.
+    				<ul id="nav">
+    					<li class="expand">Previous 4diac-ide releases:
+    						<ul id="nav">
+     							<li class="expand">1.9.0 Milestones:
+            						<ul id="nav">
+                						<li class="expand">4diac-ide 1.9.0 RC3
+                							<ul>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_win32.win32.x86.zip">Windows 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+                							</ul>
+                						</li>
+                						<li class="expand">4diac-ide 1.9.0 RC2
+                							<ul>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_win32.win32.x86.zip">Windows 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+                							</ul>
+                						</li>
+                						<li class="expand">4diac-ide 1.9.0 RC1
+                							<ul>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_win32.win32.x86.zip">Windows 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+                							</ul>
+                						</li>
+                						<li class="expand">4diac-ide 1.9.0 M3
+                							<ul>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_win32.win32.x86.zip">Windows 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+                							</ul>
+                						</li>
+                						<li class="expand">4diac-ide 1.9.0 M2
+                							<ul>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-win32.win32.x86.zip">Windows 32-bit</a></li>
+                								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+                							</ul>
+                						</li>
+            						</ul>
+        						</li>
+        						<li class="expand">Pre-Eclipse releases can be found at <a href="https://sourceforge.net/projects/fordiac/files/4DIAC-IDE/">4diac's Sourceforge page</a>.</li>        						
+    						</ul>
+    					</li>
+					</ul>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'> 
 					Pre-Eclipse releases can be found at 
