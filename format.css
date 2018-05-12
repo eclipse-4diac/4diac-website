@@ -289,13 +289,17 @@ text-align:left;
 font-size:16pt;
 font-weight:bold;
 margin: auto;
+adding-top:5px;
+padding-bottom:1px;
+max-width:800px;
+margin: auto;
 }
 
 
-section.content > p, section.content table, section.content tr, section.content ul, section.content h2, section.content h3{
+section.content > p, section.content table, section.content tr, section.content ul{
 color:rgba(1,34,105,1.0);
 padding-top:5px;
-padding-bottom:1px;
+padding-bottom:5px;
 max-width:800px;
 margin: auto;
 text-align:justify;
@@ -303,16 +307,24 @@ font-size:12pt;
 }
 
 h3{
-color:orange;
+color:rgba(1,34,105,1.0);
 text-align:left;
 font-weight:bold;
 font-size:14pt;
+padding-top:5px;
+padding-bottom:1px;
+max-width:800px;
+margin: auto;
 }
 
 h4{
 color:rgba(1,34,105,1.0);
 font-size:12pt;
 font-weight:bold;
+padding-top:5px;
+padding-bottom:1px;
+max-width:800px;
+margin: auto;
 }
 
 section.content td{
