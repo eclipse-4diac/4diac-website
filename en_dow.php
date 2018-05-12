@@ -118,9 +118,9 @@
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
     				<ul id="nav">
-    					<li class="expand">Previous 4diac-ide releases:
+    					<li class="expand">Previous 4diac-ide releases
     						<ul id="nav">
-     							<li class="expand">1.9.0 Milestones:
+     							<li class="expand">1.9.0 Milestones
             						<ul id="nav">
                 						<li class="expand">4diac-ide 1.9.0 RC3
                 							<ul>
@@ -176,9 +176,9 @@
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-    					<li class="expand">Previous 4diac-rte releases:
+    					<li class="expand">Previous 4diac-rte releases
     						<ul id="nav">
-        						<li class="expand">1.9.0 Milestones:
+        						<li class="expand">1.9.0 Milestones
             						<ul id="nav">
             							<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/forte/forte-incubation_1.9.0.RC3.zip">4diac-rte 1.9.0 RC2</a></li>
                 						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/forte/forte-incubation_1.9.0.RC2.zip">4diac-rte 1.9.0 RC2</a></li>
