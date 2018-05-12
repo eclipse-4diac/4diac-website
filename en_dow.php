@@ -105,15 +105,14 @@
 					</ul>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">forte 1.9.0 M2 release on Eclipse under construction</p-->
 					<ul id="nav">
 						<li  class="expanded" id="expanded"><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte 1.9.0</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
 					<ul id="nav">
-						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">ide source</a></li>
-						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">rte source</a></li>
+						<li class="expanded" id="expanded"><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">ide source</a></li>
+						<li class="expanded" id="expanded"><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">rte source</a></li>
 					</ul>
 				</td>
 			</tr>
