@@ -74,11 +74,11 @@
 		<table>
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac-ide</h2>
+					<h2>4diac-ide 1.9.0</h2>
 					<i>Development environment currently without 4diac-rte executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac-rte</h2>	
+					<h2>4diac-rte 1.9.0</h2>	
 					<i>Sources of 4diac-rte compilable for your system.</i>
 				</td>
 				<td width="33%" style='padding-left:10px;'>
@@ -91,28 +91,26 @@
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">4diac-ide 1.9.0 M2 release on Eclipse under construction</p>-->
 					<ul id="nav">
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86.zip">Windows 32-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
 						<!--li>Nightly Build</li-->
 						<!--li>Update Site</li-->
-						<li class="expanded" id="expanded">4diac-ide 1.9.0
-							<ul>
-								<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
-								<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-								<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-								<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86.zip">Windows 32-bit</a></li>
-								<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
-							</ul>
-						</li>						
 					</ul>
+					<p style="font-size:10.5pt"><i>64-bit version requires Java 8 64-bit
+					<br>32-bit version requires Java 8 32-bit</i></p>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-						<li  class="expanded" id="expanded"><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte 1.9.0</a></li>
+						<li ><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte sources for all OSes</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
 					<ul id="nav">
-						<li class="expanded" id="expanded"><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">ide source</a></li>
-						<li class="expanded" id="expanded"><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">rte source</a></li>
+						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">ide source</a></li>
+						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">rte source</a></li>
 					</ul>
 				</td>
 			</tr>
@@ -197,17 +195,7 @@
 				<td width="33%" style='padding-left:10px; '> 
 					Repositories still at Sourceforge: <a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">systems</a>
 				</td>
-			</tr>
-			
-			<tr>
-				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<p style="font-size:10.5pt"><i>64-bit version requires Java 8 64-bit
-					<br>32-bit version requires Java 8 32-bit</i></p>
-				</td>
-				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'> </td>
-				<td width="33%" style='padding-left:10px; '> </td>
-			</tr>
-			
+			</tr>			
 </table>
 
 <h1>Show your 4diac use</h1>	
