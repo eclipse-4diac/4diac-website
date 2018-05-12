@@ -289,7 +289,7 @@ text-align:left;
 font-size:14pt;
 font-weight:bold;
 margin: auto;
-adding-top:5px;
+padding-top:5px;
 padding-bottom:1px;
 max-width:800px;
 margin: auto;
@@ -325,6 +325,7 @@ font-weight:bold;
 
 section.content td{
 vertical-align:top;
+padding-left:0px;
 }
 
 td p{
