@@ -286,7 +286,7 @@ font-size:12pt;
 h2, h2 a{
 color:orange;
 text-align:left;
-font-size:14pt;
+font-size:16pt;
 font-weight:bold;
 margin: auto;
 }
@@ -306,11 +306,12 @@ h3{
 color:orange;
 text-align:left;
 font-weight:bold;
+font-size:14pt;
 }
 
 h4{
 color:rgba(1,34,105,1.0);
-font-size:13pt;
+font-size:12pt;
 font-weight:bold;
 }
 
