@@ -18,4 +18,6 @@ if ($Theme->hasCookieConsent()) {
     echo  "'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);";
     echo  "})(window,document,'script','dataLayer','GTM-5WLCZXC');</script>";
     echo  "<!-- End Google Tag Manager -->";    
-}?>
+}
+?>
+
