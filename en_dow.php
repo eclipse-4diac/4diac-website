@@ -199,7 +199,7 @@
 </table>
 
 <h1>Show your 4diac use</h1>	
-<p>With these two stickers you can show the world that you are using 4diac. Put it on your web-page, flyers, controllers, laptops, t-shirts... 
+<p>With these two stickers you can show the world that you are using 4diac. Put it on your web-page, flyers, controllers, laptops, t-shirts... <br/></p>
 
 <table><tr>
 		<td >
