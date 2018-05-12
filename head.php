@@ -6,6 +6,7 @@
 <script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
 
 <?php
+$App = new App();
 $Theme = $App->getThemeClass("quicksilver");
 if ($Theme->hasCookieConsent()) {
     //Insert widgets from a 3rd party
