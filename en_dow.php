@@ -107,16 +107,7 @@
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">forte 1.9.0 M2 release on Eclipse under construction</p-->
 					<ul id="nav">
-						<li><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte 1.9.0</a></li>
-						<li class="expand">1.9.0 Milestones:
-    						<ul id="nav">
-    							<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/forte/forte-incubation_1.9.0.RC3.zip">4diac-rte 1.9.0 RC2</a></li>
-        						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/forte/forte-incubation_1.9.0.RC2.zip">4diac-rte 1.9.0 RC2</a></li>
-        						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/forte/forte-incubation_1.9.0.RC1.zip">4diac-rte 1.9.0 RC1</a></li>
-        						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/forte/forte-incubation_1.9.0.M3.zip">4diac-rte 1.9.0 M3</a></li>
-        						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/forte/forte-incubation_1.9.0.M2.zip">4diac-rte 1.9.0 M2</a></li>
-    						</ul>
-						</li>
+						<li  class="expanded" id="expanded"><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte 1.9.0</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
@@ -186,17 +177,26 @@
     					</li>
 					</ul>
 				</td>
-				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'> 
-					Pre-Eclipse releases can be found at 
-					<a href="https://sourceforge.net/projects/fordiac/files/FORTE/">4diac's Sourceforge page</a>.					
+				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
+					<ul id="nav">
+    					<li class="expand">Previous 4diac-rte releases:
+    						<ul id="nav">
+        						<li class="expand">1.9.0 Milestones:
+            						<ul id="nav">
+            							<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/forte/forte-incubation_1.9.0.RC3.zip">4diac-rte 1.9.0 RC2</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/forte/forte-incubation_1.9.0.RC2.zip">4diac-rte 1.9.0 RC2</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/forte/forte-incubation_1.9.0.RC1.zip">4diac-rte 1.9.0 RC1</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/forte/forte-incubation_1.9.0.M3.zip">4diac-rte 1.9.0 M3</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/forte/forte-incubation_1.9.0.M2.zip">4diac-rte 1.9.0 M2</a></li>
+            						</ul>
+        						</li>
+    						 	<li class="expand"> Pre-Eclipse releases can be found at <a href="https://sourceforge.net/projects/fordiac/files/FORTE/">4diac's Sourceforge page</a>.</li>
+						 	</ul>
+					 	</li>
+				 	</ul>					
 				</td>
 				<td width="33%" style='padding-left:10px; '> 
-				<p>Repositories still at Sourceforge:</p>
-					<ul id="nav">
-						<!--li><a href="http://sourceforge.net/p/fordiac/fordiac-lib/ci/default/tree/">library</a></li-->
-						<li><a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">systems</a>
-							<i>(example projects)</i></li>
-					</ul>
+					Repositories still at Sourceforge: <a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">systems</a>
 				</td>
 			</tr>
 			
