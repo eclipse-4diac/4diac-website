@@ -28,7 +28,7 @@
 					<li>FBDK ASN.1 encoding</li>
 					<li>Modbus TCP client using <a href="http://libmodbus.org/">libmodbus</a></li>
 					<li>MQTT using <a href="http://www.eclipse.org/paho/">Eclipse Paho</a></li>
-					<li>OPC UA using <a href="https://github.com/open62541/open62541">open62541</a> upcoming</li>
+					<li>OPC UA using <a href="https://github.com/open62541/open62541">open62541</a></li>
 					<li>OPC DA client using <a href="http://sourceforge.net/projects/opcclient/">OPC Client library release 0.4</a></li>
 					<li>RS232</li>
 				</ul>
@@ -38,12 +38,12 @@
 					<li><a href="http://ecos.sourceware.org/">eCos</a></li>
 					<li><a href="http://www.digi.com/products/wireless-wired-embedded-solutions/software-microprocessors-accessories/software/netos">NET+OS 7</a></li>		
 					<li>Posix: <a href="https://www.cygwin.com/">Cygwin</a>, Linux (i386, PPC, ARM)</li>
+					<li><a href="https://kb.hilscher.com/display/RCX/rcX">rcX</a></li>
+					<li><a href="http://www.windriver.com/products/vxworks/">VxWorks</a></li>
 					<li>Windows</li>
 					<li>upcoming:
 						<ul>
 							<li><a href="http://www.freertos.org/">freeRTOS</a></li>
-							<li><a href="https://kb.hilscher.com/display/RCX/rcX">rcX</a></li>
-							<li><a href="http://www.windriver.com/products/vxworks/">VxWorks</a></li>
 						</ul>
 					</li>
 				</ul> 
@@ -54,15 +54,11 @@
 				<ul>
 					<li><a href="http://beagleboard.org/black">BeagleBone Black</a></li>
 					<li><a href="http://www.digi.com/products/embedded-systems">Digi Connect ME</a> (ARM7)</li>
+					<li><a href="http://www.embrick.de/">emBRICK</a> for Raspberry PI and BeagleBone Black</li>
 					<li><a href="http://www.kipr.org/products/cbc-robot-controller">KIPR's CBC v2</a> robot controller</li>
 					<li><a href="http://mindstorms.lego.com/en-us/Default.aspx">Lego Mindstorms EV3</a> (ARM7)</li>					
+					<li><a href="http://www.hilscher.com/">NXH 51-ETM</a></li>
 					<li><a href="http://www.raspberrypi.org/">Raspberry PI</a></li>
-					<li>upcoming:
-						<ul>
-							<li><a href="http://www.embrick.de/">emBRICK</a> for Raspberry PI and BeagleBone Black</li>
-							<li><a href="http://www.hilscher.com/">NXH 51-ETM</a></li>
-						</ul>
-					</li>
 				</ul>
 			</td>
 			<td><h2 class="h2twocollumntable">Supported Programmable Logic Controllers (PLCs)</h2>
