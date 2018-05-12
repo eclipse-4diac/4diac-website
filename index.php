@@ -42,7 +42,7 @@
 
 	<a class="componentbutton" href="en_ide.php">IDE
 		<img class="componentbuttonimage" height="100px" src="img/ide-button.png" alt="4diac-IDE provides a development environment for developing distributed industrial processes measurements and control systems"/>
-		<span>Integrated Devel-<br>opment Environment</span></a>
+		<span>Development<br>Environment</span></a>
 	<a class="componentbutton" href="en_rte.php">RTE
 		<img class="componentbuttonimage" height="100px" src="img/rte-button.png" alt="4diac runtime environment (FORTE) provides a device indepent execution of IEC 61499 control application"/>
 		<span>Runtime<br>Environment</span></a>
