@@ -5,6 +5,8 @@
 <meta name="description" content="Updates from the 4DIAC community for the 4DIAC community"> 
 <meta name="keywords" content="updates, news, applications, noteworthy">
 
+<link rel="alternate" href="/feed/" title="4diac's News RSS feed" type="application/rss+xml" />
+
 </head>
 
 <body>
