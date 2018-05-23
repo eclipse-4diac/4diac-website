@@ -10,33 +10,20 @@
 <body>
 <?php include 'header.html';?>
 
-<section class="image">
-	<h1 style="line-height: 19pt; ">IEC 61499 Implementation for Networked <br>Control Devices of the Next Generation</h1>
-</section>
-
-<section class="news">
-<?php 
-	$files = array_reverse(glob('./news/*.php'));
-?>
-	<a href="">
-		<svg width="40px" height="40px">
-			<polygon points="10,0 30,0 20,20 30,40 10,40 0,20 10,0" style="fill:rgba(1,34,105,1.0);fill-rule:evenodd;" />
-			Sorry, your browser does not support inline SVG.
-		</svg>
-	</a>
-	<div class="news-item"><span></span><a href="en_news.php#<?php echo basename($files[0],".php");?>"><?php $lines = file($files[0]); echo $lines[1];?></a></div>
-  <div class="news-item"><span></span><a href="en_news.php#<?php echo basename($files[1],".php");?>"><?php $lines = file($files[1]); echo $lines[1];?></a></div>
-	<div class="news-item"><span></span><a href="en_news.php#<?php echo basename($files[2],".php");?>"><?php $lines = file($files[2]); echo $lines[1];?></a></div>
-	<div class="news-item"><span></span><a href="en_news.php#<?php echo basename($files[3],".php");?>"><?php $lines = file($files[3]); echo $lines[1];?></a></div>
-	<a href="">
-		<svg width="60px" height="60px">
-			<polygon points="10,0 30,0 40,20 30,40 10,40 20,20 10,0" style="fill:rgba(1,34,105,1.0);fill-rule:evenodd;" />
-			Sorry, your browser does not support inline SVG.
-		</svg>
-	</a>
+<section class="right">
+    <a class="downloadbutton" href="https://www.eclipse.org/4diac/en_dow.php">
+    	<div ><i class="fa fa-download"></i> Download Now</div></a> 
+    <section class="news">
+        <h1><a href="https://www.eclipse.org/4diac/feed"><i class="fa fa-rss"></i></a> Recent Posts</h1>
+    	<div class="news-list">
+    		<?php include 'newslist.php'?>
+    	</div>
+    </section>
 </section>
 
 <section class="content">
+
+<h1>What is Eclipse 4diac?</h1>
 
 <h4>Eclipse 4diac&trade; provides an open source infrastructure <br>for distributed industrial process measurement and control systems <br>based on the IEC 61499 standard. 4diac includes:</h4>
 
@@ -59,6 +46,38 @@ IEC 61499 defines a domain specific modeling language for developing distributed
 <br>providing a vendor independent format, and simplifying support for controller to controller communication.
 <br>Its distribution functionality and the inherent support for dynamic reconfiguration provide
 <br>the required infrastructure for Industrie 4.0 and industrial IoT applications.</h4>
+
+<section class="applicationdomains">
+<h1>Application Domains</h1>
+
+<section class="appdomain">
+<span><img src="img/building.png" alt="building automation" width="110"></span>
+</section>
+
+<section class="appdomain">
+<span><img src="img/machine.png" alt="building automation" width="110"></span>
+</section>
+
+<section class="appdomain">
+<span><img src="img/factory.png" alt="building automation" width="110"></span>
+</section>
+
+<section class="appdomain">
+<span><img src="img/robotics.png" alt="building automation" width="110"></span>
+</section>
+
+<section class="appdomain">
+<span><img src="img/process.png" alt="building automation" width="110"></span>
+</section>
+
+<section class="appdomain">
+<span>
+<img src="img/energy.png" alt="building automation" width="110"></span>
+</section>
+
+
+</section>
+
 </section>
 
 <?php include 'footer.php';?>
