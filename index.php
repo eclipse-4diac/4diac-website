@@ -55,24 +55,24 @@ IEC 61499 defines a domain specific modeling language for developing distributed
 </section>
 
 <section class="appdomain">
-<span><img src="img/machine.png" alt="building automation" width="110"></span>
+<span><img src="img/machine.png" alt="machine controls" width="110"></span>
 </section>
 
 <section class="appdomain">
-<span><img src="img/factory.png" alt="building automation" width="110"></span>
+<span><img src="img/factory.png" alt="factory automation" width="110"></span>
 </section>
 
 <section class="appdomain">
-<span><img src="img/robotics.png" alt="building automation" width="110"></span>
+<span><img src="img/robotics.png" alt="robotics" width="110"></span>
 </section>
 
 <section class="appdomain">
-<span><img src="img/process.png" alt="building automation" width="110"></span>
+<span><img src="img/process.png" alt="continouse and batch process automation" width="110"></span>
 </section>
 
 <section class="appdomain">
 <span>
-<img src="img/energy.png" alt="building automation" width="110"></span>
+<img src="img/energy.png" alt="energy generation and distribution" width="110"></span>
 </section>
 
 
