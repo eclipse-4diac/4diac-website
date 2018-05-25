@@ -13,8 +13,7 @@
 	
 	for ($i = 0; $i <= $newsEntries; $i++) {
 	    $file = $files[$i];
-	    echo '<div class="news-item"><a href="en_news';
-	    echo basename($file,".php");
+	    echo '<div class="news-item"><a href="'. basename($file,".php") . '.php';
 	    echo '"><div class="news-date">' . date ("d M Y", filectime($file)) . '</div>';
 	    $lines = file($file); 
 	    echo $lines[1];
