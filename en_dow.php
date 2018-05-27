@@ -74,11 +74,11 @@
 		<table>
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac-ide 1.9.0</h2>
+					<h2>4diac-ide 1.9.1</h2>
 					<i>Development environment without 4diac-rte executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac-rte 1.9.0</h2>	
+					<h2>4diac-rte 1.9.1</h2>	
 					<i>Sources of 4diac-rte compilable for your system.</i>
 				</td>
 				<td width="33%" style='padding-left:10px;'>
@@ -91,11 +91,11 @@
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">4diac-ide 1.9.0 M2 release on Eclipse under construction</p>-->
 					<ul id="nav">
-						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86.zip">Windows 32-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.1_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.1_win32.win32.x86.zip">Windows 32-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.1_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
 						<!--li>Nightly Build</li-->
 						<!--li>Update Site</li-->
 					</ul>
@@ -104,7 +104,7 @@
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-						<li ><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte sources for all OSes</a></li>
+						<li ><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.1.zip">4diac-rte sources for all OSes</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
@@ -120,6 +120,15 @@
     				<ul id="nav">
     					<li class="expand">Previous 4diac-ide releases
     						<ul id="nav">
+    						    <li class="expand">1.9 Releases
+            						<ul id="nav">
+                						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86.zip">Windows 32-bit</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.0_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+            						</ul>
+        						</li>
      							<li class="expand">1.9.0 Milestones
             						<ul id="nav">
                 						<li class="expand">4diac-ide 1.9.0 RC3
@@ -178,6 +187,11 @@
 					<ul id="nav">
     					<li class="expand">Previous 4diac-rte releases
     						<ul id="nav">
+    							<li class="expand">1.9 Releases
+            						<ul id="nav">
+            							<li ><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte 1.9.1</a></li>
+            						</ul>
+        						</li>
         						<li class="expand">1.9.0 Milestones
             						<ul id="nav">
             							<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/forte/forte-incubation_1.9.0.RC3.zip">4diac-rte 1.9.0 RC2</a></li>
