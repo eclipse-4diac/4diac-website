@@ -9,21 +9,11 @@
 
 <body>
 <?php include 'header.html';?>
+
+<section class="mainContent">
+
 <section class="left">
  <!-- currently empty left section -->
-</section>
-
-
-
-<section class="right">
-    <a class="downloadbutton" href="https://www.eclipse.org/4diac/en_dow.php">
-    	<div ><i class="fa fa-download"></i> Download Now</div></a> 
-    <section class="news">
-        <h1><a href="https://www.eclipse.org/4diac/feed"><i class="fa fa-rss"></i></a> Recent Posts</h1>
-    	<div class="news-list">
-    		<?php include 'newslist.php'?>
-    	</div>
-    </section>
 </section>
 
 <section class="content">
@@ -83,7 +73,22 @@ IEC 61499 defines a domain specific modeling language for developing distributed
 
 </section>
 
-</section>
+</section> <!-- end of section content -->
+
+
+<section class="right">
+    <a class="downloadbutton" href="https://www.eclipse.org/4diac/en_dow.php">
+    	<div><i class="fa fa-download"></i> Download Now</div></a> 
+    <section class="news">
+        <h1><a href="https://www.eclipse.org/4diac/feed"><i class="fa fa-rss"></i></a> Recent Posts</h1>
+    	<div class="news-list">
+    		<?php include 'newslist.php'?>
+    	</div>
+    </section>
+</section>  <!-- end of section right -->
+
+
+</section> <!-- end of main content -->
 
 <?php include 'footer.php';?>
 

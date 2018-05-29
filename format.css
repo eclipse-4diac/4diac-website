@@ -196,7 +196,7 @@ vertical-align:middle;
 .news-item{ 
   background-color:white/*rgba(51,78,135,1.0);rgba(1,34,105,1.0)*/; 
   border-radius:4px;
-  width:80%; 
+  width: calc(100% - 50px); 
   vertical-align:middle;
   display:block;
   margin:10px 0px 10px 20px;
@@ -482,6 +482,7 @@ overflow: hidden;
 background-image: url("img/Egg-incubation.png");
 background-position: left bottom; 
 background-repeat: no-repeat;
+border-radius: 4px;
 }
 
 iframe.doc, div.doc{
@@ -623,6 +624,19 @@ section.appdomain span{
 height:100%;
 vertical-align: middle;
 padding:8px;
+}
+
+
+/*for responsive desing realign collums when to small */
+@media screen and (max-width: 800px) {
+    section.left, section.conntent {
+        width: 100%;
+    }
+    
+    section.right{
+    	width: calc(100% - 60px);
+    	margin-left: 30px;
+    }
 }
 
 /*!

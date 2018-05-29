@@ -11,6 +11,8 @@
  *     - initial API and implementation and/or initial documentation
  *******************************************************************************/
 
+@import url("../../format.css");
+
 div.code {
 	background-color: #F9F9F9;
 	text-align:left; 
