@@ -14,6 +14,11 @@
 	<img src="img/sys.png"/>
 </section>
 
+<section class="left">
+ <!-- currently empty left section -->
+</section>
+
+
 <section class="content">
 	<h1>Example Projects</h1>
 	

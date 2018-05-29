@@ -16,6 +16,11 @@
 	<img src="img/news.png" height="80px"/>
 </section>
 
+<section class="left">
+ <!-- currently empty left section -->
+</section>
+
+
 <section class="content">
 	<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 	<select name="news"  onchange='this.form.submit()'>

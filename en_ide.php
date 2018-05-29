@@ -15,6 +15,11 @@
 	<img src="img/ide.png" alt="4DIAC-IDE provides editors for graphically modelling industrial control applications and assign them to networked embedded control devices." />
 </section>
 
+<section class="left">
+ <!-- currently empty left section -->
+</section>
+
+
 <section class="content">
 	<h1>IEC 61499 Compliant Development Environment</h1>
 	<p>The 4DIAC integrated development environment (4DIAC-IDE) is an extensible, IEC 61499 compliant engineering environment for distributed control applications. The modelled applications can be downloaded to distributed field devices according the means defined by the IEC 61499 standard. The hardware capability definition allows to model the control hardware and its interconnections through networks.</p>

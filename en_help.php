@@ -8,6 +8,7 @@
 <script language="javascript" type="text/javascript">
 function resizeIframe(obj, size) {
     obj.style.height = size + 'px';
+    obj.style.overflow = "hidden";
   }
 
   function resizeIframes() {
@@ -15,7 +16,7 @@ function resizeIframe(obj, size) {
     if (maxSize < document.getElementById("iframe-content").contentWindow.document.body.scrollHeight)
         maxSize = document.getElementById("iframe-content").contentWindow.document.body.scrollHeight;
     resizeIframe(document.getElementById("iframe-toc"), maxSize);
-    resizeIframe(document.getElementById("iframe-content"), maxSize);
+    resizeIframe(document.getElementById("iframe-content"), maxSize + 30);
   }
 </script>
 </head>
@@ -23,11 +24,14 @@ function resizeIframe(obj, size) {
 <body>
 <?php include 'header.html'; ?>
 
+<section class="left">
+<iframe class="toc" id="iframe-toc" src="documentation/toc.php" onload="resizeIframes()" scrolling="no"></iframe>
+</section>
+
 <section class="content">
 <h1>Documentation</h1>
 <section class="documentation">
-<iframe class="toc" id="iframe-toc" src="documentation/toc.php" onload="resizeIframes()"></iframe>
-<iframe class="doc" id="iframe-content" name="Content" src="documentation/html/startHere/startHere.html" onload="resizeIframes()"></iframe>
+<iframe class="doc" id="iframe-content" name="Content" src="documentation/html/startHere/startHere.html" onload="resizeIframes()" scrolling="no"></iframe>
 </section>
 </section>
 

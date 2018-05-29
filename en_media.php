@@ -8,6 +8,11 @@
 <body>
 <?php include 'header.html';?>
 
+<section class="left">
+ <!-- currently empty left section -->
+</section>
+
+
 <section class="content">
 <h1>Media</h1>
 

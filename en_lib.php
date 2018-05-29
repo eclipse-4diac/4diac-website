@@ -14,6 +14,11 @@
 	<img src="img/lib.png" alt="Overview on the different groups of function block libraries."/>
 </section>
 
+<section class="left">
+ <!-- currently empty left section -->
+</section>
+
+
 <section class="content">
 	<h1>IEC 61499 Function Block Library</h1>
 	<p>The 4DIAC function block library (4DIAC-LIB) contains function blocks (FB) which are available on the 4DIAC-RTE and can therefore be used to create IEC 61499 compliant control applications.</p>

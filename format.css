@@ -104,11 +104,26 @@ display:block;
 margin:20px auto 15px auto;
 }
 
+/******************* left *******************/
+section.left{
+	float: left;
+	margin-left:30px;
+	width: calc(20% - 30px);
+	margin-top:50px;
+	min-height: 125px;
+	background-image: url("img/Egg-incubation.png");
+	background-position: left bottom; 
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+
+
 /******************* right *******************/
 section.right{
 float: right;
 margin-right:30px;
-width:15%;
+width:calc(20% - 30px);
 margin-top:50px;
 }
 
@@ -253,7 +268,8 @@ padding:0px;
 text-align:center;
 height:auto;
 width:60%;
-margin-left:20%
+/*margin-left:20%*/
+display:inline-block;
 }
 
 section.content div, section.content div.newsheader {
@@ -449,30 +465,34 @@ border:1.9mm solid rgba(153,166,195,1.0);
 /****************** documentation ******************/
 section.documentation{
 height:auto;
-width:95%;
+/*width:95%;*/         
 display:flex;
 text-align:left;
 }
 
 iframe.toc{
 height:inherit;
-width:25%;
+width:100%;
 border:0px;
 padding:0px;
 margin:0px;
 background-color:rgba(153,166,195,1.0);
 box-sizing:border-box;
-overflow-x:hidden;
+overflow: hidden;
+background-image: url("img/Egg-incubation.png");
+background-position: left bottom; 
+background-repeat: no-repeat;
 }
 
 iframe.doc, div.doc{
 vertical-align:top;
-width:70%;
-margin-left:5px;
+width:100%;
+margin-left:20px;
+margin-bottom:20px;
 padding:0px;
 border:0px;
 box-sizing:border-box;
-overflow-x:hidden;
+overflow: hidden;
 min-height: 100%;
 margin-bottom: -142px;
 }

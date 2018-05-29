@@ -10,8 +10,14 @@
 <body>
 <?php include 'header.html';?>
 
+
+
 <section class="img">
 	<img src="img/uws.png" alt="bringing together 4diac users"/>
+</section>
+
+<section class="left">
+ <!-- currently empty left section -->
 </section>
 
 <section class="content">

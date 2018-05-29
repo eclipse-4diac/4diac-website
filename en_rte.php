@@ -13,6 +13,11 @@
 	<img src="img/rte.png" alt="network of heterogenouse embedded control devices forming a distributed control system running IEC 61499 control applications"/>
 </section>
 
+<section class="left">
+ <!-- currently empty left section -->
+</section>
+
+
 <section class="content">
 	<h1>IEC 61499 Runtime Environment</h1>
 	<p>The 4DIAC runtime environment (4DIAC-RTE, FORTE) is a small portable implementation of an IEC 61499 runtime environment targeting small embedded control devices (16/32 Bit), implemented in C++. It supports online-reconfiguration of its applications and the real-time capable execution of all function block types provided by the IEC 61499 standard.</p>

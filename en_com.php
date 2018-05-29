@@ -13,6 +13,12 @@
 	<img src="img/community.png"/>
 </section>
 
+<section class="left">
+ <!-- currently empty left section -->
+</section>
+
+
+
 <section class="content">
 	<h1>Support</h1>
 	<h2>Communication Channels</h2>

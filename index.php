@@ -9,6 +9,11 @@
 
 <body>
 <?php include 'header.html';?>
+<section class="left">
+ <!-- currently empty left section -->
+</section>
+
+
 
 <section class="right">
     <a class="downloadbutton" href="https://www.eclipse.org/4diac/en_dow.php">

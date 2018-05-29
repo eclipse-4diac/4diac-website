@@ -64,8 +64,13 @@
 <body>
 <?php include 'header.html';?>
 
+
 <section class="img">
 	<img src="img/download.png"/>
+</section>
+
+<section class="left">
+ <!-- currently empty left section -->
 </section>
 
 <section class="content">
