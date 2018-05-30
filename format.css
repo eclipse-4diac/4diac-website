@@ -111,13 +111,8 @@ section.left{
 	width: calc(20% - 30px);
 	margin-top:50px;
 	min-height: 125px;
-	background-image: url("img/Egg-incubation.png");
-	background-position: left bottom; 
-	background-repeat: no-repeat;
 	overflow: hidden;
 }
-
-
 
 /******************* right *******************/
 section.right{
