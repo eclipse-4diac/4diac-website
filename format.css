@@ -98,6 +98,45 @@ font-size:11pt;
 display:block !important;
 } 
 
+.navsticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.leftmenu{
+	width: 100px;
+	float: left;
+	display:block;
+	height:23px;
+}
+
+.menucenter{
+	width: 100px;
+	width:calc(100% - 200px);
+	display:inline-block;
+}
+
+.rightmenu{
+	width: 100px;
+	height:23px;
+	float: right;
+	display:block;
+}
+
+#navlogo{
+	padding-left: 10px;
+}
+
+.dontshowlogo{
+	display: none;
+}
+
+#stickyBuffer{
+	height: 46px;
+}
+
+
 /* ***************** image ***************** */
 section.img img{
 display:block;

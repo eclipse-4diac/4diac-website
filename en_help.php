@@ -17,6 +17,7 @@ function resizeIframe(obj, size) {
         maxSize = document.getElementById("iframe-content").contentWindow.document.body.scrollHeight;
     resizeIframe(document.getElementById("iframe-toc"), maxSize);
     resizeIframe(document.getElementById("iframe-content"), maxSize + 30);
+    resizeIframe(document.getElementById("documentation-content-section"), maxSize + 30);    
   }
 </script>
 </head>
@@ -30,7 +31,7 @@ function resizeIframe(obj, size) {
 
 <section class="content">
 <h1>Documentation</h1>
-<section class="documentation">
+<section class="documentation" id="documentation-content-section">
 <iframe class="doc" id="iframe-content" name="Content" src="documentation/html/startHere/startHere.html" onload="resizeIframes()" scrolling="no"></iframe>
 </section>
 </section>
