@@ -17,7 +17,7 @@ This work has been realized within the <a href="https://www.basys40.de/">BaSys4.
 
 <td>
 <figure>		
-	<img alt="demonstrator" src="figs/CeBit_PickAPlace.jpg" width="300px"><br>
+	<img alt="demonstrator" src="news/figs/CeBit_PickAPlace.jpg" width="300px"><br>
 	<figcaption>pick and place module from Festo with 4diac as a guest.</figcaption>
 </figure>
 </td>
