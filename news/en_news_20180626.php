@@ -2,7 +2,7 @@
 	4diac-rte on PikeOS
 </div>
 <div class="news">
-	<span class="left"><?php $date="2018-01-07 20:06"; echo $date;?></span> 
+	<span class="left"><?php $date="2018-06-26 16:35"; echo $date;?></span> 
 	<span class="center"><img src="news/figs/basys40.png" alt="BaSys4.0" width="100"/></span>	
 	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
 </div>
