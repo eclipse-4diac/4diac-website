@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <!--
- Copyright (c) 2017 fortiss GmbH
+ Copyright (c) 2017, 2018 fortiss GmbH
   
  All rights reserved. This program and the accompanying materials
  are made available under the terms of the Eclipse Public License v1.0
@@ -8,7 +8,7 @@
  http://www.eclipse.org/legal/epl-v10.html
  
  Contributors:
-   Stefan Profanter, Jose Cabral
+   Stefan Profanter, Jose Cabral, Kirill Dorofeev
      - initial API and implementation and/or initial documentation
 -->
 <html lang="en">
@@ -27,6 +27,7 @@
 	<li><a href="#variables">Provide OPC UA variables to clients</a></li>
 	<li><a href="#methods">Offer an OPC UA method to be called by clients</a></li>
 	<li><a href="#client">Create an OPC UA client in an IEC 61499 Application</a></li>
+	<li><a href="#subscriptions">Create an OPC UA subscription from OPC UA Client to OPC UA Server in an IEC 61499 Application</a></li>
 </ol>
 
 <p>Prerequisites:</p>
@@ -35,7 +36,9 @@
 </ul>
 
 <h2 id="build">Build FORTE with open62541</h2>
-<p>OPC UA is not enabled by default in FORTE. To enable it, you need to build FORTE with the open62541 source code yourself. </p>
+<p>OPC UA is not enabled by default in FORTE. To enable it, you need to build FORTE with the open62541 source code yourself.</p>
+
+<p class="attention"><span class="inlineTitle">Attention</span>: You need <a href="https://www.python.org/" target="_blank">python</a> installed on your computer in order to compile the OPCUA library.</p>
 
 <h3>Linux</h3>
 <ol>
@@ -68,7 +71,7 @@ $ make -j</div>
 
 <h3>Windows with Visual Studio</h3>
 <ol>
-	<li>Use a Git tool under Windows and download the FORTE source from <a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git" target="_blank">http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git</a>. The following steps show the commands for <a href="https://git-for-windows.github.io/" target="_blank">Git Bash</a>:
+	<li>Use a Git tool under Windows and download the FORTE source from <a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git" target="_blank">http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git</a> and use the develop branch. The following steps show the commands for <a href="https://git-for-windows.github.io/" target="_blank">Git Bash</a>:
 		<div class="code">$ mkdir "$HOME/4diac" &amp;&amp; cd "$HOME/4diac"
 $ git clone -b develop https://git.eclipse.org/r/4diac/org.eclipse.4diac.forte forte
 $ mkdir build &amp;&amp; cd "build"</div>
@@ -91,20 +94,20 @@ $ cd open62541 &amp;&amp; mkdir build</div>
 	<li>Press <span class="button4diac">Configure</span> and select your Visual Studio Version. (Make sure you select your installed VS version. Otherwise CMake does not find the C/C++ compiler. Activate <span class="specificText">Use default native compilers</span></li>
 	<li>Activate <span class="specificText">BUILD_SHARED_LIBS</span> and <span class="specificText">UA_ENABLE_AMALGAMATION</span></li>
 	<li>Press <span class="button4diac">Configure</span>, then <span class="button4diac">Generate</span> and then <span class="button4diac">Open Project</span></li>
-	<li>Go to <span class="menu4diac">Build &rarr; Build Solution</span>. You may need to execute the command multiple times until all projects are build successfully. This will create the open62541 library under <span class="folderLocation">$HOME/4diac/open62541/build/Release</span> and the amalgamated header file <span class="fileLocation">open62541.h</span>in <span class="folderLocation">$HOME/4diac/open62541/build/Release</span>
+	<li>Go to <span class="menu4diac">Build &rarr; Build Solution</span>. You may need to execute the command multiple times until all projects are build successfully. This will create the open62541 library under <span class="folderLocation">$HOME/4diac/open62541/build/bin/Release</span> and the amalgamated header file <span class="fileLocation">open62541.h</span> in <span class="folderLocation">$HOME/4diac/open62541/build/</span>
 	</li>
 	<li>Switch to the FORTE CMake window to include open62541.
 		<ul>
 			<li>FORTE_COM_OPC_UA=ON</li>
 			<li>FORTE_COM_OPC_UA_INCLUDE_DIR=C:\Users\USER\4diac\open62541\build</li>
-			<li>FORTE_COM_OPC_UA_LIB_DIR=C:\Users\USER\4diac\open62541\build</li>
+			<li>FORTE_COM_OPC_UA_LIB_DIR=C:\Users\USER\4diac\open62541\build\bin\Release</li>
 			<li>FORTE_COM_OPC_UA_VERSION=master</li>
 		</ul>
 	</li>
 	<li>Press <span class="button4diac">Configure</span> and make sure that <span class="specificText">FORTE_COM_OPC_UA_LIB</span> is set to <span class="fileLocation">open62541.dll</span></li>
 	<li>Press <span class="button4diac">Configure</span>, then <span class="button4diac">Generate</span> and then <span class="button4diac">Open Project</span></li>
 	<li>Go to <span class="menu4diac">Build &rarr; Build Solution</span>. You may need to execute the command multiple times until all projects are built successfully. This will create <span class="folderLocation">$HOME/4diac/forte/build/Debug/forte.exe</span></li>
-	<li>In the forte VS Project, Set the PATH variable to include the path to the open62541.dll. Go to properties of <span class="specificText">forte</span>, <span class="specificText">Configuration Properties | Debugging | Environment</span> and add <span class="specificText">PATH=C:\Users\USER\4diac\open62541\build\Debug;%PATH%</span> (Set the correct user path!)
+	<li>In the forte VS Project, Set the PATH variable to include the path to the open62541.dll. Go to properties of <span class="specificText">forte</span>, <span class="specificText">Configuration Properties | Debugging | Environment</span> and add <span class="specificText">PATH=C:\Users\USER\4diac\open62541\build\bin\Release;%PATH%</span> (Set the correct user path!)
 	</li>
 </ol>
 
@@ -204,7 +207,7 @@ $ cd open62541 &amp;&amp; mkdir build</div>
 	<li>Connect the function blocks and rename them in the following way:
 		<div><img src="./img/opc_ua_method_full.png" alt="OPC UA Method Application"/></div>
 	</li>
-	<li>The name of the SERVER FB is at the same time the name of the Method which will be created in the OPC UA Server. The RD ports of the SERVER are the method's input arguments, the SD ports the output arguments.
+	<li>The name of the SERVER FB, specified at its ID port, is at the same time the browse path of the Method which will be created in the OPC UA Server. The RD ports of the SERVER are the method's input arguments, the SD ports the output arguments.
 	</li>
 	<li>Deploy the Application to FORTE</li>
 	<li>Open UaExpert and you should see the following address model:
@@ -243,6 +246,25 @@ $ cd open62541 &amp;&amp; mkdir build</div>
 	<li>This will trigger the client to call the add method on the server and gives back the result of the addition as <span class="element4diac">RD_1</span>
 		<div><img src="./img/opc_ua_client_monitor.png" alt="OPC UA Client Monitoring"/></div>
 	</li>
+</ol>
+
+
+<h2 id="subscription">OPC UA Client Subscriptions</h2>
+
+<p>In this step you will see how you can create an OPC UA data subscription in an IEC 61499 application. A client is used to set up a data subscription to variables on an OPC UA server to get the value changes as they appear on the server. It uses the <span class="element4diac">SUBSCRIBE</span> function block which is able to remotely subscribe to the variable value changes.</p>
+<p>We will create a client which subscribes to the <span class="element4diac">Incrementer/Incremented/OUT</span> value from <a href="#variables_remote">example</a> described above. Therefore we extend the OPC UA variables example by adding subscription function block to monitor the value change.</p>
+
+<ol>
+	<li>We change the <span class="element4diac">CLIENT</span> function block used to read variable in the previous example with a <span class="element4diac">SUBSCRIBE</span> function block, so that client gets the updated value automatically without a need to actively trigger read functionality
+	</li>
+	<li>Map the function blocks to the device</li>
+	<li>Connect the function blocks and rename them in the following way:
+		<div><img src="./img/opc_ua_subscriptions.PNG" alt="OPC UA Subscription Application"/></div>
+	</li>
+	<li>The browse path of the node, on which value the client needs to subscribe, is indicated in the <span class="element4diac">ID</span> field of the <span class="element4diac">SUBSCRIBE</span> FB. Note, that for the opc ua subscriptions only <span class="element4diac">SUBSCRIBE_1</span> FB can be used. The <span class="element4diac">RD_1</span> port of the <span class="element4diac">SUBSCRIBE</span> is the current value of the subscribed node. Additionaly, you need to make sure that the data type of the <span class="element4diac">RD</span> port matches the types from the OPC UA variable you want to subscribe to. Use the corresponding <span class="element4diac">conv</span> FBs for that, as shown in this example.
+	</li>
+	<li>Deploy the Application to FORTE</li>
+	<li>If the value you subscribed for has changed on the server, an updated value will appear at <span class="element4diac">RD_1</span> port</li>
 </ol>
 
 <h1>Where to go from here?</h1>
