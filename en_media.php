@@ -1,7 +1,7 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>4DIAC Media</title>
+<title>4diac Media</title>
 <meta name="description" content="Media like stickers desktop backgrounds, flyers for promoting 4diac."> 
 </head>
 

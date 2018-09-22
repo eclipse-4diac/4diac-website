@@ -2,8 +2,8 @@
 <head>
 <?php include 'head.php';?>
 
-<title>4DIAC Systems</title>
-<meta name="description" content="4DIAC provides you with a set of example projects helping to learn IEC 61499 and 4DIAC. Furthernore these examples show different features of IEC 61499."> 
+<title>4diac Systems</title>
+<meta name="description" content="4diac provides you with a set of example projects helping to learn IEC 61499 and 4diac. Furthernore these examples show different features of IEC 61499."> 
 <meta name="keywords" content="application examples, tutorials, IEC 61499 applications">
 </head>
 
@@ -22,7 +22,7 @@
 <section class="content">
 	<h1>Example Projects</h1>
 	
-	<h2>Systems provided by 4DIAC</h2>
+	<h2>Systems provided by 4diac</h2>
 	<ul>
 		<li>x+3</li>
 		<li>mechanical press</li>

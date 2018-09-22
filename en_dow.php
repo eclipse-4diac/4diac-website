@@ -2,9 +2,9 @@
 <head>
 <?php include 'head.php';?>
 <script type="text/javascript" src="jquery-1.6.2.js"></script>
-<title>4diac-Downloads</title>
+<title>4diac Downloads</title>
 <meta name="description" content="Getting the latest version of the different components of 4diac."> 
-<meta name="keywords" content="4diac-IDE, FORTE, source code">
+<meta name="keywords" content="4diac IDE, 4diac FORTE, source code">
 
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -79,22 +79,22 @@
 		<table>
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac-ide 1.9.1</h2>
-					<i>Development environment without 4diac-rte executables</i>
+					<h2>4diac IDE 1.9.1</h2>
+					<i>Development environment without 4diac FORTE executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac-rte 1.9.1</h2>	
-					<i>Sources of 4diac-rte compilable for your system.</i>
+					<h2>4diac FORTE 1.9.1</h2>	
+					<i>Sources of 4diac FORTE compilable for your system.</i>
 				</td>
 				<td width="33%" style='padding-left:10px;'>
-					<h2>4diac-repositories</h2>
-					<i>Sources for ide, rte, and systems:</i>	
+					<h2>4diac Repositories</h2>
+					<i>Sources for 4diac IDE, 4diac FORTE, and systems:</i>	
 				</td>
 			</tr>
 			
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">4diac-ide 1.9.0 M2 release on Eclipse under construction</p>-->
+					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">4diac IDE 1.9.0 M2 release on Eclipse under construction</p>-->
 					<ul id="nav">
 						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
 						<li><a href="http://download.eclipse.org/4diac/releases/1.9/4diac-ide/4diac-ide-incubation_1.9.1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
@@ -109,13 +109,14 @@
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-						<li ><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.1.zip">4diac-rte sources for all OSes</a></li>
+						<li ><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.1.zip">4diac FORTE sources for all OSes</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
 					<ul id="nav">
-						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">ide source</a></li>
-						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">rte source</a></li>
+						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">4diac IDE source</a></li>
+						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">4diac FORTE source</a></li>
+						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.examples.git">4diac example systems</a></li>
 					</ul>
 				</td>
 			</tr>
@@ -123,7 +124,7 @@
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
     				<ul id="nav">
-    					<li class="expand">Previous 4diac-ide releases
+    					<li class="expand">Previous 4diac IDE releases
     						<ul id="nav">
     						    <li class="expand">1.9 Releases
             						<ul id="nav">
@@ -136,7 +137,7 @@
         						</li>
      							<li class="expand">1.9.0 Milestones
             						<ul id="nav">
-                						<li class="expand">4diac-ide 1.9.0 RC3
+                						<li class="expand">4diac IDE 1.9.0 RC3
                 							<ul>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
@@ -145,7 +146,7 @@
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/4diac-ide/4diac-ide-incubation_1.9.0.RC3_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
                 							</ul>
                 						</li>
-                						<li class="expand">4diac-ide 1.9.0 RC2
+                						<li class="expand">4diac IDE 1.9.0 RC2
                 							<ul>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
@@ -154,7 +155,7 @@
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/4diac-ide/4diac-ide-incubation_1.9.0.RC2_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
                 							</ul>
                 						</li>
-                						<li class="expand">4diac-ide 1.9.0 RC1
+                						<li class="expand">4diac IDE 1.9.0 RC1
                 							<ul>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
@@ -163,7 +164,7 @@
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/4diac-ide/4diac-ide-incubation_1.9.0.RC1_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
                 							</ul>
                 						</li>
-                						<li class="expand">4diac-ide 1.9.0 M3
+                						<li class="expand">4diac IDE 1.9.0 M3
                 							<ul>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
@@ -172,7 +173,7 @@
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/4diac-ide/4diac-ide-incubation_1.9.0.M3_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
                 							</ul>
                 						</li>
-                						<li class="expand">4diac-ide 1.9.0 M2
+                						<li class="expand">4diac IDE 1.9.0 M2
                 							<ul>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
                 								<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/4diac-ide/4diac-ide-incubation_1.9.0.M2-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
@@ -190,20 +191,20 @@
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-    					<li class="expand">Previous 4diac-rte releases
+    					<li class="expand">Previous 4diac FORTE releases
     						<ul id="nav">
     							<li class="expand">1.9 Releases
             						<ul id="nav">
-            							<li ><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac-rte 1.9.1</a></li>
+            							<li ><a href="http://download.eclipse.org/4diac/releases/1.9/forte/forte-incubation_1.9.0.zip">4diac FORTE 1.9.1</a></li>
             						</ul>
         						</li>
         						<li class="expand">1.9.0 Milestones
             						<ul id="nav">
-            							<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/forte/forte-incubation_1.9.0.RC3.zip">4diac-rte 1.9.0 RC2</a></li>
-                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/forte/forte-incubation_1.9.0.RC2.zip">4diac-rte 1.9.0 RC2</a></li>
-                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/forte/forte-incubation_1.9.0.RC1.zip">4diac-rte 1.9.0 RC1</a></li>
-                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/forte/forte-incubation_1.9.0.M3.zip">4diac-rte 1.9.0 M3</a></li>
-                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/forte/forte-incubation_1.9.0.M2.zip">4diac-rte 1.9.0 M2</a></li>
+            							<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC3/forte/forte-incubation_1.9.0.RC3.zip">4diac FORTE 1.9.0 RC2</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC2/forte/forte-incubation_1.9.0.RC2.zip">4diac FORTE 1.9.0 RC2</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/RC1/forte/forte-incubation_1.9.0.RC1.zip">4diac FORTE 1.9.0 RC1</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M3/forte/forte-incubation_1.9.0.M3.zip">4diac FORTE 1.9.0 M3</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.9.0/M2/forte/forte-incubation_1.9.0.M2.zip">4diac FORTE 1.9.0 M2</a></li>
             						</ul>
         						</li>
     						 	<li class="expand"> Pre-Eclipse releases can be found at <a href="https://sourceforge.net/projects/fordiac/files/FORTE/">4diac's Sourceforge page</a>.</li>
@@ -212,7 +213,7 @@
 				 	</ul>					
 				</td>
 				<td width="33%" style='padding-left:10px; '> 
-					Repositories still at Sourceforge: <a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">systems</a>
+					Old <a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">example systems</a> repositorie still at Sourceforge.
 				</td>
 			</tr>			
 </table>

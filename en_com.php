@@ -35,7 +35,7 @@
 		<td width="253">
 			<h3>Bugzilla</h3>
       4diac bugs and enhancements are maintained using Bugzilla. 
-      Please submit issues and suggestions on 4diac-IDE, FORTE, libraries, examples as well as the web page <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=4DIAC">here</a>.
+      Please submit issues and suggestions on 4diac IDE, 4diac FORTE, libraries, examples as well as the web page <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=4DIAC">here</a>.
 		</td>
 	</tr></table>
   

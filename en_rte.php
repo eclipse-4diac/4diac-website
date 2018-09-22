@@ -1,8 +1,8 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>FORTE - The 4DIAC runtime environment</title>
-<meta name="description" content="The 4DIAC runtime environment (4DIAC-RTE, FORTE) is a small portable implementation of an IEC 61499 runtime environment targeting small embedded control devices (16/32 Bit), implemented in C++. It supports online-reconfiguration of its applications and the real-time capable execution of all function block types provided by the IEC 61499 standard. With that FORTE abstracts vendor and device specific features away allowing to run the same control applications  on any device."> 
+<title>4diac FORTE - The 4diac runtime environment</title>
+<meta name="description" content="The 4diac runtime environment (4diac FORTE) is a small portable implementation of an IEC 61499 runtime environment targeting small embedded control devices (16/32 Bit), implemented in C++. It supports online-reconfiguration of its applications and the real-time capable execution of all function block types provided by the IEC 61499 standard. With that 4diac FORTE abstracts vendor and device specific features away allowing to run the same control applications  on any device."> 
 <meta name="keywords" content="runtime environment, embedded devices, smart field devices, vendor neutral, c++, real-time execution, heterogenouse devices">
 </head>
 
@@ -20,8 +20,8 @@
 
 <section class="content">
 	<h1>IEC 61499 Runtime Environment</h1>
-	<p>The 4DIAC runtime environment (4DIAC-RTE, FORTE) is a small portable implementation of an IEC 61499 runtime environment targeting small embedded control devices (16/32 Bit), implemented in C++. It supports online-reconfiguration of its applications and the real-time capable execution of all function block types provided by the IEC 61499 standard.</p>
-	<p>FORTE supports all IEC 61131-3 edition 2 elementary data-types, structures, and arrays. It provides a scalable architecture which allows FORTE to  adapt to the needs of your application. Applications can consist of any IEC 61499 element as basic function blocks (BFBs), composite function blocks (CFBs), service interface function blocks (SIFBs), adapters and subapplications. For connections between function blocks FORTE uses automatic and save castings (e.g., INT -> REAL). FORTE provides a flexible communication infrastructure via so called communication layers.</p>
+	<p>The 4diac FORTE is a small portable implementation of an IEC 61499 runtime environment targeting small embedded control devices (16/32 Bit), implemented in C++. It supports online-reconfiguration of its applications and the real-time capable execution of all function block types provided by the IEC 61499 standard.</p>
+	<p>4diac FORTE supports all IEC 61131-3 edition 2 elementary data-types, structures, and arrays. It provides a scalable architecture which allows 4diac FORTE to  adapt to the needs of your application. Applications can consist of any IEC 61499 element as basic function blocks (BFBs), composite function blocks (CFBs), service interface function blocks (SIFBs), adapters and subapplications. For connections between function blocks 4diac FORTE uses automatic and save castings (e.g., INT -> REAL). 4diac FORTE provides a flexible communication infrastructure via so called communication layers.</p>
 
 	<table>
 		<tr>
