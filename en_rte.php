@@ -45,6 +45,7 @@
 					<li>Posix: <a href="https://www.cygwin.com/">Cygwin</a>, Linux (i386, PPC, ARM)</li>
 					<li><a href="https://kb.hilscher.com/display/RCX/rcX">rcX</a></li>
 					<li><a href="http://www.windriver.com/products/vxworks/">VxWorks</a></li>
+					<li><a href="https://www.sysgo.com/products/pikeos-hypervisor/">PikeOS</a></li>
 					<li>Windows</li>
 					<li>upcoming:
 						<ul>
