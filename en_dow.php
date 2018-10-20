@@ -118,13 +118,51 @@
 						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">4diac FORTE source</a></li>
 						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.examples.git">4diac example systems</a></li>
 					</ul>
+					Old <a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">example systems</a> repository still at Sourceforge.
 				</td>
 			</tr>
 			
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
     				<ul id="nav">
-    					<li class="expand">Previous 4diac IDE releases
+    					<li class="expand">Milestones for the upcoming 4diac IDE 1.10.0
+    						<ul id="nav">
+        						<li class="expand">4diac IDE 1.10.0 RC1
+        							<ul>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/4diac-ide/4diac-ide-incubation_1.10.0.RC1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/4diac-ide/4diac-ide-incubation_1.10.0.RC1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/4diac-ide/4diac-ide-incubation_1.10.0.RC1_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/4diac-ide/4diac-ide-incubation_1.10.0.RC1_win32.x86.zip">Windows 32-bit</a></li>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/4diac-ide/4diac-ide-incubation_1.10.0.RC1_win32.x86_64.zip">Windows 64-bit</a></li>									
+        							</ul>
+        						</li>
+    						</ul>
+						</li>
+					</ul>
+				</td>
+				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
+					<ul id="nav">
+    					<li class="expand">Milestones for the upcoming 4diac FORTE 1.10.0
+    						<ul id="nav">
+    							<li class="expand">4diac FORTE 1.10.0 RC1
+            						<ul id="nav">
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/forte/forte-incubation_1.10.0.RC1.zip">Source</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/forte/forte-incubation_1.10.0.RC1_linux.x86_64.zip">Linux x86 64-bit</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/forte/forte-incubation_1.10.0.RC1_linux.arm.zip">Linux ARM</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/forte/forte-incubation_1.10.0.RC1_win32.zip">Windows</a></li>
+            						</ul>
+        						</li>
+						 	</ul>
+					 	</li>
+				 	</ul>					
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
+    				<ul id="nav">
+    					<li class="expand">Old 4diac IDE releases
     						<ul id="nav">
     						    <li class="expand">1.9 Releases
             						<ul id="nav">
@@ -191,7 +229,7 @@
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-    					<li class="expand">Previous 4diac FORTE releases
+    					<li class="expand">Old 4diac FORTE releases
     						<ul id="nav">
     							<li class="expand">1.9 Releases
             						<ul id="nav">
@@ -211,9 +249,6 @@
 						 	</ul>
 					 	</li>
 				 	</ul>					
-				</td>
-				<td width="33%" style='padding-left:10px; '> 
-					Old <a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">example systems</a> repositorie still at Sourceforge.
 				</td>
 			</tr>			
 </table>
