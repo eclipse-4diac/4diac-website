@@ -11,7 +11,7 @@
 As with the 1.9.0 release we managed to get a bunch of cool new improvements into our two main 4diac components:</p>
 
 <ul>
-    <li><b>4diac FORTE:</b>
+    <li><b>4diac IDE:</b>
         <ul>
         	<li>Finally you can develop <i>Simple FBs</i></li>
         	<li>We reworked the deployment and monitoring infrastructure removing many issues we had there</li>
