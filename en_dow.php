@@ -127,6 +127,15 @@
     				<ul id="nav">
     					<li class="expand">Milestones for the upcoming 4diac IDE 1.10.0
     						<ul id="nav">
+        						<li class="expand">4diac IDE 1.10.0 RC2
+        							<ul>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC2/4diac-ide/4diac-ide-incubation_1.10.0.RC2_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC2/4diac-ide/4diac-ide-incubation_1.10.0.RC2_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC2/4diac-ide/4diac-ide-incubation_1.10.0.RC2_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC2/4diac-ide/4diac-ide-incubation_1.10.0.RC2_win32.win32.x86.zip">Windows 32-bit</a></li>
+        								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC2/4diac-ide/4diac-ide-incubation_1.10.0.RC2_win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+        							</ul>
+        						</li>
         						<li class="expand">4diac IDE 1.10.0 RC1
         							<ul>
         								<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/4diac-ide/4diac-ide-incubation_1.10.0.RC1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
@@ -144,6 +153,14 @@
 					<ul id="nav">
     					<li class="expand">Milestones for the upcoming 4diac FORTE 1.10.0
     						<ul id="nav">
+    							<li class="expand">4diac FORTE 1.10.0 RC2
+            						<ul id="nav">
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC2/forte/forte-incubation_1.10.0.RC2.zip">Source</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC2/forte/forte-incubation_1.10.0.RC2_linux.x86_64.zip">Linux x86 64-bit</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC2/forte/forte-incubation_1.10.0.RC2_linux.arm.zip">Linux ARM</a></li>
+                						<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC2/forte/forte-incubation_1.10.0.RC2_win32.zip">Windows</a></li>
+            						</ul>
+        						</li>
     							<li class="expand">4diac FORTE 1.10.0 RC1
             						<ul id="nav">
                 						<li><a href="http://download.eclipse.org/4diac/milestones/1.10.0/RC1/forte/forte-incubation_1.10.0.RC1.zip">Source</a></li>
