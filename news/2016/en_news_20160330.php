@@ -8,9 +8,9 @@
 </div>
 
 <p>Last week the 4DIAC committers met to plan the migration of the 4DIAC-IDE for its initial commit to the Eclipse foundation. 
-We identified that this is a great opportunity to perform a major clean-up of 4DIAC-IDE’s code. 
+We identified that this is a great opportunity to perform a major clean-up of 4DIAC-IDE&#39;s code. 
 Especially the core data models turned out to be hard to maintain.  
-When reworking the core data models we will not be able to provide a backward compatibility for the first time in 4DIAC’s history. 
+When reworking the core data models we will not be able to provide a backward compatibility for the first time in 4DIAC&#39;s history. 
 In order to reduce the impact for our users we came up with the following plan:</p>
 <ul>
  <li>The upcoming 1.8 release will still be based on the current data model and therefore fully backwards compatible. This will be the last release on Sourceforge.</li>
@@ -22,7 +22,7 @@ In order to reduce the impact for our users we came up with the following plan:<
 Furthermore this should allow us to fix some long known bugs (e.g., better subapplication support). 
 In order that you can watch the required work and our progress we:</p>
 <ul>
-  <li> Created a <a href="https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=490601">bug list on 4DIAC’s bugzilla</a></li>
+  <li> Created a <a href="https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=490601">bug list on 4DIAC&#39;s bugzilla</a></li>
   <li> Made the <a href="https://sourceforge.net/p/fordiac/fordiac-ide">4DIAC-IDE mercurial</a> repository publicly visibly again</li>
 </ul>
 

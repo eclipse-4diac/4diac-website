@@ -1,5 +1,5 @@
 <div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	4diac @ CPSE Labs Event &ldquo;Designing for Digital Transformation&rdquo;
+	4diac @ CPSE Labs Event &quot;Designing for Digital Transformation&quot;
 </div>
 <div class="news">
 	<span class="left"><?php $date="2018-04-03 10:20"; echo $date;?></span> 

@@ -12,7 +12,7 @@
 
 <p>The main goal of the 4DIAC Users' Workshop is to allow you to present your work and projects related to 4DIAC, 
 exchange ideas, and discuss the future enhancements and features of 4DIAC with the development team. 
-In addition to presentations this year’s workshop will also provide the possibility for people that are not 
+In addition to presentations this year&#39;s workshop will also provide the possibility for people that are not 
 able to join us in person to present their use of 4DIAC in form of a poster.</p>
 
 <p>Furthermore this year we'll have also a hardware exhibition with control devices able to execute IEC 61499 
