@@ -7,7 +7,7 @@
 	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
 </div>
 
-<p>We are very proud to announce the 4diac 1.10.0 rlease!
+<p>We are very proud to announce the 4diac 1.10.0 release!
 As with the 1.9.0 release we managed to get a bunch of cool new improvements into our two main 4diac components:</p>
 
 <ul>
@@ -22,10 +22,10 @@ As with the 1.9.0 release we managed to get a bunch of cool new improvements int
     
     <li><b>4diac FORTE:</b>
         <ul>
-        	<li>4diac FORTE got more then 10% faster</li>
+        	<li>4diac FORTE got more than 10% faster</li>
         	<li>HTTP communication layer</li>
         	<li>FMI/FMU support for connecting 4diac FORTE to different simulation tools</li>
-        	<li>Connect to XBase data bases</li>
+        	<li>Connect to BaseX data bases</li>
         	<li>New platforms: PLCnext, pikeOS, freeRTOS, and ROS!</li>
         </ul>
     </li>
