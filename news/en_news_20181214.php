@@ -18,7 +18,7 @@ To show you that we value your feedback, we can announce that already two smalle
 
 <p>We really need your feedback and there are several ways:</p>
 <ul>
-    <li>Submit issues and suggestions through our <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=4DIAC"></a>bug tracker</li>
+    <li>Submit issues and suggestions through our <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=4DIAC">bug tracker</a></li>
     <li>Fill out our anonymous <a href="https://goo.gl/forms/hVivvJKgTbD9HciI3">4diac IDE UX questionnaire</a></li>
     <li>Participate in our <a href="https://doodle.com/poll/ksfb2fat32zcx9zv">usability assessment</a></li>
 </ul>
