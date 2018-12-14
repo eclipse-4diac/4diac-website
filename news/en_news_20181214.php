@@ -10,8 +10,8 @@
 <p>We are currently in the middle of collecting feedback how we can improve 4diac. 
 To show you that we value your feedback, we can announce that already two smaller but really disturbing issues have been identified and fixed:</p>
 <ol>
-    <li>Test <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=542674">Updating FBs lead to loss of connection layout information</a></li>
-    <li>Test <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=542683">Updating Subapps was not possible</a></li>
+    <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=542674">Updating FBs lead to loss of connection layout information</a></li>
+    <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=542683">Updating Subapps was not possible</a></li>
 </ol>
     
 <p>These fixes will be available in the upcoming 1.10.1 maintenance release.</p>
