@@ -519,7 +519,8 @@ background-repeat: no-repeat;
 border-radius: 4px;
 }
 
-iframe.doc, div.doc{
+
+iframe.doc{
 vertical-align:top;
 width:100%;
 margin-left:20px;
