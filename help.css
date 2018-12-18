@@ -117,6 +117,10 @@ section.content a:link, section.content a:visited {
 	color: var(--fordiac-orange);
 }
 
+section.content img {
+	max-width:800px;
+}
+
 section.content div.code {
 	background-color: #F9F9F9;
 	text-align:left; 
