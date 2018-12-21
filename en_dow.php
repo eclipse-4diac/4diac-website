@@ -79,11 +79,11 @@
 		<table>
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac IDE 1.10.0</h2>
+					<h2>4diac IDE 1.10.1</h2>
 					<i>Development environment without 4diac FORTE executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac FORTE 1.10.0</h2>	
+					<h2>4diac FORTE 1.10.1</h2>	
 					<i>Sources of 4diac FORTE compilable for your system.</i>
 				</td>
 				<td width="33%" style='padding-left:10px;'>
@@ -96,11 +96,11 @@
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">4diac IDE 1.9.0 M2 release on Eclipse under construction</p>-->
 					<ul id="nav">
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_win32.x86.zip">Windows 32-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_win32.x86_64.zip">Windows 64-bit</a></li>									
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_win32.x86.zip">Windows 32-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_win32.x86_64.zip">Windows 64-bit</a></li>									
 						<!--li>Nightly Build</li-->
 						<!--li>Update Site</li-->
 					</ul>
@@ -109,10 +109,10 @@
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.0.zip">Source</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.0.linux.x86_64.zip">Linux x86 64-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.0.linux.arm.zip">Linux ARM</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.0.win32.zip">Windows</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.zip">Source</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.linux.x86_64.zip">Linux x86 64-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.linux.arm.zip">Linux ARM</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.win32.zip">Windows</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
@@ -132,6 +132,17 @@
     						<ul id="nav">
     							<li class="expand">1.10 Releases
             						<ul id="nav">
+            							<li class="expand">4diac IDE 1.10.0
+                							<ul id="nav">
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_win32.x86.zip">Windows 32-bit</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_win32.x86_64.zip">Windows 64-bit</a></li>									
+                        						<!--li>Nightly Build</li-->
+                        						<!--li>Update Site</li-->
+                        					</ul>
+	            						</li>
                     					<li class="expand">1.10.0 Milestones
                     						<ul id="nav">
                         						<li class="expand">4diac IDE 1.10.0 RC2
@@ -238,6 +249,14 @@
     						<ul id="nav">
     							<li class="expand">1.10 Releases
     								<ul id="nav">
+    									<li class="expand">1.10.0
+            								<ul id="nav">
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.0.zip">Source</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.0.linux.x86_64.zip">Linux x86 64-bit</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.0.linux.arm.zip">Linux ARM</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.0.win32.zip">Windows</a></li>
+                        					</ul>
+                    					</li>
                     					<li class="expand">1.10 Milestones
                     						<ul id="nav">
                     							<li class="expand">4diac FORTE 1.10.0 RC2
