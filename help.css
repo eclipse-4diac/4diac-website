@@ -230,6 +230,12 @@ section.content span.menu4diac {
 	font-weight: bold;
 }
 
+section.content span.tab4diac {
+	padding-top: 0px;
+	display: inline;
+	font-weight: bold;
+}
+
 section.content span.errorMessage {
 	padding-top: 0px;
 	display: inline;
