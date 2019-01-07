@@ -1,10 +1,4 @@
-<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	Sneak Preview: 4diac and OPC UA in Action
-</div>
-<div class="news">
-	<span class="left"><?php $date="2018-05-30 17:30"; echo $date;?></span> 
-	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
-</div>
+<?php printNewsEntryHeader(__FILE__, "Sneak Preview: 4diac and OPC UA in Action"); ?>
 
 <p>The <a href="https://ias.vdma.org/en/home">VDMA Integrated Assembly Solutions Group</a> is currently developing an OPC UA 
 Companion Specification for smart mechatronic components. 

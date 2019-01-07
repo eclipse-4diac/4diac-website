@@ -1,11 +1,4 @@
-<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	4diac Needs You!
-</div>
-<div class="news">
-	<span class="left"><?php $date="2018-12-03 19:53"; echo $date;?></span> 
-	<span class="center"></span>	
-	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
-</div>
+<?php printNewsEntryHeader(__FILE__, "4diac Needs You!"); ?>
 
 <p>As you know the Eclipse 4diac team has a strong focus in increasing 4diac's usability and user experience. 
 With the last releases we think we got better. But we know there is still a long road ahead of us.
@@ -22,3 +15,4 @@ With the last releases we think we got better. But we know there is still a long
 <p>Thanks in advance for your support,
 	<br>The 4diac Team</p>
 <br>
+

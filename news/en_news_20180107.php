@@ -1,11 +1,4 @@
-<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	Dynamic Type Load Prototype
-</div>
-<div class="news">
-	<span class="left"><?php $date="2018-01-07 20:06"; echo $date;?></span> 
-	<span class="center"><img src="news/figs/basys40.png" alt="BaSys4.0" width="100"/></span>	
-	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
-</div>
+<?php printNewsEntryHeader(__FILE__, "Dynamic Type Load Prototype", "news/figs/basys40.png"); ?>
 
 <p>As part of the <a href="https://www.basys40.de/">BaSys4.0 project</a>, which receives funding of the <a href="https://www.bmbf.de/en/index.html">Federal Ministry of Education and Research</a>, 4diac has been extended to support dynamic type load. This functionality allows to add new function block types during runtime, which is required for adaptable systems. It also simplifies testing, since the 4diac-rte does not have to be compiled anymore for every new function block or adapter type. The implementation is based on the work <i><a href="http://ieeexplore.ieee.org/document/7005164/">Reduction of development time by using scriptable IEC 61499 function blocks in a dynamically loadable type library</a></i> by Plasch, Hofman, Ebenhofer and Rooker.</p>
 

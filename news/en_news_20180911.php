@@ -1,11 +1,4 @@
-<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	Component Self Configuration by Accessing an AAS
-</div>
-<div class="news">
-	<span class="left"><?php $date="2018-09-11 09:35"; echo $date;?></span> 
-	<span class="center"><img src="news/figs/basys40.png" alt="BaSys4.0" width="100"/></span>	
-	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
-</div>
+<?php printNewsEntryHeader(__FILE__, "Component Self Configuration by Accessing an AAS", "news/figs/basys40.png"); ?>
 
 <p>As part of the <a href="https://www.basys40.de/">BaSys4.0 project</a>, which receives funding of the <a href="https://www.bmbf.de/en/index.html">Federal Ministry of Education and Research</a>, 4diac has been extended to support component configuration during runtime, by accessing a kind of asset administration shell.
 This work has been done in cooperation with the BaSys 4.0 partners. 

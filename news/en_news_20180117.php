@@ -1,10 +1,4 @@
-<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	The End is Near! 
-</div>
-<div class="news">
-	<span class="left"><?php $date="2018-01-17 20:06"; echo $date;?></span> 
-	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
-</div>
+<?php printNewsEntryHeader(__FILE__, "The End is Near!"); ?>
 
 <p>Yes, we are entering the final phase for the 1.9.0 release. 
 After nearly two years of hard work consisting of more then 1000 commits handling nearly 190 issues the endeavor of cleaning up the internal structures of 4diac-ide are finally paying of. 

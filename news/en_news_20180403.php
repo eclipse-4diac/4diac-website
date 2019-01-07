@@ -1,10 +1,4 @@
-<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	4diac @ CPSE Labs Event &quot;Designing for Digital Transformation&quot;
-</div>
-<div class="news">
-	<span class="left"><?php $date="2018-04-03 10:20"; echo $date;?></span> 
-	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
-</div>
+<?php printNewsEntryHeader(__FILE__, "4diac @ CPSE Labs Event &quot;Designing for Digital Transformation&quot;"); ?>
 
 <p>
 The European CPSE Labs project supported SMEs and mid-caps to experiment with new technologies like 4diac. 

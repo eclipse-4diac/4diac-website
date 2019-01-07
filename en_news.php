@@ -20,6 +20,36 @@
  <!-- currently empty left section -->
 </section>
 
+<?php 
+
+function printNewsEntryHeader($fileName, $HeadLine, $imgLink = null){
+    $baseFileName = basename($fileName,'.php');
+    echo '<div id="' . $baseFileName .'" class="newsheader">';
+    echo $HeadLine;
+    echo '</div>';
+    echo '<div class="news">';
+    $date = getDateFromFileName($baseFileName);     
+    echo '  <span class="left">' . $date . '</span>';
+    echo '	<span class="center">';
+    if( null !== $imgLink){
+        echo '	<img src="' . $imgLink .'" alt="news image" width="70"/>';
+    }
+    echo '  </span>';    
+    echo '	<span class="right">Age: '; 
+    
+    echo date_diff(date_create($date),date_create(date("Y-m-d")))->format("%a days");
+    echo '</span>';
+    echo '</div>';
+}
+
+function getDateFromFileName($baseFileName) {
+    $dateString =  explode("_", $baseFileName)[2];
+    $dateString = substr_replace($dateString, '-', 6, 0);
+    return substr_replace($dateString, '-', 4, 0);    
+}
+
+?>
+
 
 <section class="content">
 	<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">

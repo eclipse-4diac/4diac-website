@@ -5,15 +5,19 @@
 	
 	function createDescription($lines, $greetings){
 		$content = '<![CDATA[';
-		for ($x = 8; $x < count($lines); $x++) {
+		for ($x = 1; $x < count($lines); $x++) {
 			if (strpos($lines[$x], 'greeting.html') != false){
 			    $content .= $greetings;
 			}else{
 		  		$content .= $lines[$x];
 			}
 		}
-		$content .= ']]>';
-		return $content;
+		return $content . ']]>';
+	}
+	
+	function getNewsHeadline($line){
+	    $headline = explode('__FILE__, "', $line)[1]; //get the start of the headline
+	    return explode('"', $headline)[0];               //strip everything after the ending "
 	}
 	
 $rssfeed = '<?xml version="1.0" encoding="ISO-8859-1"?>';
@@ -31,7 +35,7 @@ $folder = glob('../news/*.php');
 foreach(array_reverse($folder) as $file){
 	$lines = file($file);
 	$rssfeed .= '<item>';
-	$rssfeed .= '<title>' . trim(strip_tags($lines[1])) . '</title>';
+	$rssfeed .= '<title>' . getNewsHeadline($lines[0]) . '</title>';
 	$rssfeed .= '<description>' . createDescription($lines, $greetings) . '</description>';
 	$rssfeed .= '<link> https://www.eclipse.org/4diac/en_news.php#' . basename($file,".php") . '</link>';
 	$rssfeed .= '<pubDate>' . date ("D, d M Y H:i:s T", filectime($file)) . '</pubDate>';

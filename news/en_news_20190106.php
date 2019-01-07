@@ -1,11 +1,4 @@
-<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	Improving 4diac Deployment
-</div>
-<div class="news">
-	<span class="left"><?php $date="2019-01-06 16:20"; echo $date;?></span> 
-	<span class="center"></span>	
-	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
-</div>
+<?php printNewsEntryHeader(__FILE__, "Improving 4diac Deployment"); ?>
 
 <p>In our currently running <a href="https://www.eclipse.org/4diac/en_news.php#en_news_20181203">usability survey</a> a hotspot for disappointment is showing up, namely the application deployment.  
 Interestingly we started on this already in the last release. With 4diac 1.10. the following improvements are available:</p>

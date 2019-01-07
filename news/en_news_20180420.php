@@ -1,11 +1,5 @@
-<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	The job's been done: 4diac 1.9.0 is ready for download!
-</div>
-<div class="news">
-	<span class="left"><?php $date="2018-04-20 14:00"; echo $date;?></span> 
-	<span class="center"><img src="img/release.png" alt="release" width="70"/></span>	
-	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
-</div>
+<?php printNewsEntryHeader(__FILE__, "The job's been done: 4diac 1.9.0 is ready for download!", "img/release.png"); ?>
+
 <p>Two years ago we started on a mission of not only finally bringing all 4diac code to Eclipse but also prepare the 4diac code for the next 10 years. 
 After 240 resolved issues and more 1000 commits we can say that this mission was accomplished!</p> 
 

@@ -1,11 +1,4 @@
-<div id="<?php echo basename(__FILE__,'.php');?>" class="newsheader">
-	4diac 1.10.0 Release is ready for download! 
-</div>
-<div class="news">
-	<span class="left"><?php $date="2018-11-29 21:01"; echo $date;?></span> 
-	<span class="center"><img src="img/release.png" alt="release" width="70"/></span>	
-	<span class="right">Age: <?php echo date_diff(date_create(date("Y-m-d h:i", strtotime($date))),date_create(date("Y-m-d h:i")))->format("%a days");?></span>
-</div>
+<?php printNewsEntryHeader(__FILE__, "4diac 1.10.0 Release is ready for download!", "img/release.png"); ?>
 
 <p>We are very proud to announce the 4diac 1.10.0 release!
 As with the 1.9.0 release we managed to get a bunch of cool new improvements into our two main 4diac components:</p>
