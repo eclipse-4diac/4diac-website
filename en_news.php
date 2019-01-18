@@ -1,6 +1,11 @@
 <html>
 <head>
-<?php include 'head.php';?>
+<?php 
+require_once("./resources/functions.php");
+
+include 'head.php';?>
+
+
 <title>4DIAC-News</title>
 <meta name="description" content="Updates from the 4DIAC community for the 4DIAC community"> 
 <meta name="keywords" content="updates, news, applications, noteworthy">
@@ -40,12 +45,6 @@ function printNewsEntryHeader($fileName, $HeadLine, $imgLink = null){
     echo date_diff(date_create($date),date_create(date("Y-m-d")))->format("%a days");
     echo '</span>';
     echo '</div>';
-}
-
-function getDateFromFileName($baseFileName) {
-    $dateString =  explode("_", $baseFileName)[2];
-    $dateString = substr_replace($dateString, '-', 6, 0);
-    return substr_replace($dateString, '-', 4, 0);    
 }
 
 ?>

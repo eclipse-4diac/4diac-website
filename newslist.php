@@ -16,8 +16,9 @@
 	
 	for ($i = 0; $i <= $newsEntries; $i++) {
 	    $file = $files[$i];
-	    echo '<div class="news-item"><a href="en_news.php#'. basename($file,".php");
-	    echo '"><div class="news-date">' . date ("d M Y", filectime($file)) . '</div>';
+	    $baseName = basename($file,".php");
+	    echo '<div class="news-item"><a href="en_news.php#'. $baseName;
+	    echo '"><div class="news-date">' . getDateFromFileName($baseName) . '</div>';
 	    $lines = file($file); 
 	    echo getNewsHeadline($lines[0]);
 	    echo '<div class="news-content">' . getNewsTextIntro($lines). '</div>';
