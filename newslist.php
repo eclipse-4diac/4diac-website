@@ -14,7 +14,7 @@
 	
 	$newsEntries = min(5, count($files));
 	
-	for ($i = 0; $i <= $newsEntries; $i++) {
+	for ($i = 0; $i < $newsEntries; $i++) {
 	    $file = $files[$i];
 	    $baseName = basename($file,".php");
 	    echo '<div class="news-item"><a href="en_news.php#'. $baseName;
