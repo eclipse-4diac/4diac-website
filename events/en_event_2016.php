@@ -1,4 +1,4 @@
-<!--h1>7<sup>th</sup> 4DIAC Users' Workshop</h1-->
+<!--7th 4DIAC Users' Workshop @ ETFA 2016-->
 <p>The 7<sup>th</sup> Users' Workshop is held in conjunction with the 21th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Berlin.</p>
 
 <p><b>Workshop Date:</b> 6th September 2016</p>
@@ -13,13 +13,13 @@
 			Morning <br>Session
 		</th>
 		<td>
-			<a href="uws/2016/UW_01_Zoitl.pdf">Welcome and Recent Activities of the 4DIAC Open Source Initiative</a>
+			<a href="events/docs/2016/UW_01_Zoitl.pdf">Welcome and Recent Activities of the 4DIAC Open Source Initiative</a>
 			<br><i>A. Zoitl (fortiss GmbH)</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="uws/2016/UW_02_Strasser.pdf">Agent-based local energy market control using 4DIAC</a>
+			<a href="events/docs/2016/UW_02_Strasser.pdf">Agent-based local energy market control using 4DIAC</a>
 			<br><i>C. Moyo, T. Strasser (AIT)</i>
 		</td>
 	</tr>
@@ -31,43 +31,43 @@
 	</tr>
 	<tr>
 		<td>
-			<a href="uws/2016/UW_04_Ebenhofer.pdf">Human-Robot Collaborative Assembly: 4DIAC as base Technology in the SYMBIO-TIC project</a>
+			<a href="events/docs/2016/UW_04_Ebenhofer.pdf">Human-Robot Collaborative Assembly: 4DIAC as base Technology in the SYMBIO-TIC project</a>
 			<br><i>Gerhard Ebenhofer (Profactor GmbH)</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="uws/2016/UW_05_Eisenmenger.pdf">Integrating FORTE with ROS</a>
+			<a href="events/docs/2016/UW_05_Eisenmenger.pdf">Integrating FORTE with ROS</a>
 			<br><i>Waldemar Eisenmenger (fortiss GmbH)</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="uws/2016/UW_06_Perez.pdf">Architecture for services composition in OPC UA Servers using FORTE</a>
+			<a href="events/docs/2016/UW_06_Perez.pdf">Architecture for services composition in OPC UA Servers using FORTE</a>
 			<br><i>Federico Perez(Escuela Superior de Ingenieros)</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="uws/2016/UW_07_Kadera.pdf">Integration of OPC UA with 4DIAC</a>
+			<a href="events/docs/2016/UW_07_Kadera.pdf">Integration of OPC UA with 4DIAC</a>
 			<br><i>Petr Kadera (Czech Institute of Informatics, Robotics, and Cybernetics Czech Technical University in Prague)</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="uws/2016/UW_08_Lindgren.pdf">Cert-4FUN, Towards a Certified Compiler backend for IEC 61499</a>
+			<a href="events/docs/2016/UW_08_Lindgren.pdf">Cert-4FUN, Towards a Certified Compiler backend for IEC 61499</a>
 			<br><i>Per Lindgren (Lulea University of Technology)</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="uws/2016/UW_09_Blech.pdf">Towards using Formal Behavioral Specifications in IEC 61499 for Remote Software Health Monitoring</a>
+			<a href="events/docs/2016/UW_09_Blech.pdf">Towards using Formal Behavioral Specifications in IEC 61499 for Remote Software Health Monitoring</a>
 			<br><i>Jan Olaf Blech RMIT</i>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="uws/2016/UW_10_Melik.pdf">4DIAC in Teaching - Lessons from Lab Exercises and Student Projects</a>
+			<a href="events/docs/2016/UW_10_Melik.pdf">4DIAC in Teaching - Lessons from Lab Exercises and Student Projects</a>
 			<br><i>Martin Melik Merkumians (Vienna University of Technology)</i>
 		</td>
 	</tr>
