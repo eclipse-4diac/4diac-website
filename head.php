@@ -6,9 +6,9 @@
 <script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
 
 <?php
-/*require_once ($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+require_once ($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
 $App = new App();
 $Theme = $App->getThemeClass("quicksilver");
-print $Theme->getGoogleTagManager();*/
+print $Theme->getGoogleTagManager();
 ?>
 
