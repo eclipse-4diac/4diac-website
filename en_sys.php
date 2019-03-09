@@ -40,11 +40,11 @@
 		<li>a status light which represents the state of the station</li>
 	</ul>
 	<figure class="single">
-		<img src="img/pickNplace.png" width="350px" alt="pick and place station"/>
+		<img src="img/pickNplace.png" alt="pick and place station"/>
 		<figcaption>Pick&amp;Place Station</figcaption>	
 	</figure>
 	<figure class="single">
-		<img src="img/pickNplaceHierarchy.png" width="350px" alt="pick and place station hierarchy"/>
+		<img src="img/pickNplaceHierarchy.png" alt="pick and place station hierarchy"/>
 		<figcaption>Hierarchically structured Pick&amp;Place Station</figcaption>
 	</figure></p>
 	
