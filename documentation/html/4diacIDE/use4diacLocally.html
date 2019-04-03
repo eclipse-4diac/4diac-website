@@ -1,7 +1,8 @@
 <!DOCTYPE html> 
 <!--
  Copyright (c) 2010 - 2017 TU Wien ACIN, fortiss GmbH
-               2018 Andrea Zoitl, Johannes Kepler University Linz
+               2018 Johannes Kepler University Linz
+               2018 - 2019 Andrea Zoitl
   
  All rights reserved. This program and the accompanying materials
  are made available under the terms of the Eclipse Public License v1.0
@@ -12,32 +13,32 @@
    Carolyn Oates, Alois Zoitl, Monika Wenger, Milan Vathoopan,
    Gerhard Ebenhofer, Gerd Kainz, Thomas Strasser, Jose Cabral
      - initial API and implementation and/or initial documentation
-   Andrea Zoitl - cleaning up tutorials for 1.10 release
+   Andrea Zoitl - cleaning up tutorials for 1.10 release, updated ToC
    Bianca Wiesmayr - minor text corrections
 -->
 
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Step 1 - Use 4diac locally</title>
+    <title>Step 1 - Use 4diac Locally</title>
     <link rel="stylesheet" type="text/css" href="../help.css" />
   </head>
   <body>
 
-    <h1 id="topOfPage">Step 1 - Use 4diac locally (Blinking tutorial)</h1>
+    <h1 id="topOfPage">Step 1 - Use 4diac Locally (Blinking Tutorial)</h1>
 
     <p>This page is part of a guide that gives a walk-through over the major 4diac IDE features.</p>
 
     <ol start="0">
-      <li><a href="../../html/4diacIDE/overview.html">Overview</a></li>
-      <li>Use 4diac IDE locally (YOU ARE HERE!)</li>
-      <li><a href="../../html/4diacIDE/distribute4diac.html">Create a distributed application</a></li>
-      <li><a href="../../html/4diacIDE/use4diacRemotely.html">Deploy remotely</a></li>
-      <li><a href="../../html/4diacIDE/createOwnTypes.html">Create your own Function Blocks</a></li>
-      <li><a href="../../html/4diacIDE/otherUseful.html">Other basic features</a></li>
-      <li><a href="../../html/4diacIDE/advancedFeatures.html">Advanced Features [optional]</a></li>
+      <li><a href="../../html/4diacIDE/overview.html">4diac IDE Overview</a></li>
+      <li>Use 4diac Locally (YOU ARE HERE!)</li>
+	  <li><a href="../../html/4diacIDE/distribute4diac.html">Distribute 4diac Applications</a></li>
+      <li><a href="../../html/4diacIDE/use4diacRemotely.html">Deploy Applications Remotely</a></li>
+      <li><a href="../../html/4diacIDE/createOwnTypes.html">Create Your own Function Block Types</a></li>
+      <li><a href="../../html/4diacIDE/otherUseful.html">Other Basic Features</a></li>
+      <li><a href="../../html/4diacIDE/advancedFeatures.html">Advanced Features</a></li>
     </ol>
-
+    
     <p>In this tutorial you create a simple Blinking application. It's the "Hello World" of automation programs, so it teaches the key aspects and workflow of 4diac IDE. The application will run locally, so no connection to any PLC or external hardware is needed. The architecture is shown below.</p>
 
     <img src="../../html/4diacIDE/img/locallyArchitecture.png" alt="architecture for the current step" />
@@ -45,7 +46,7 @@
     <p>After completing Step 0 switch to the system perspective using the <img src="../../html/4diacIDE/img/system.png" alt="System Perspective Button" class="inlineImg"/> Button.</p>
 
 <!--********************************************************************************************-->
-    <h2 id="createSystem">Create a new IEC 61499 System</h2>
+    <h2 id="createSystem">Create a new IEC&nbsp;61499 System</h2>
 
      <ol>
        <li>In the upper left corner of the system perspective there is the main menu. Create a new system by selecting
@@ -69,7 +70,7 @@
     Furthermore the <span class="view4diac">Type Navigator</span> allows to drag and drop types between projects as well as within a project to a different folder.</p>
 
 <!--********************************************************************************************-->
-    <h2 id="createNetwork">Create a FB network for the Blink application</h2>
+    <h2 id="createNetwork">Create a FB Network for the Blink Application</h2>
       <p>A double-click on an Application in the System Explorer tab on the left opens the Application Editor for this specific application in the editor area.</p>
       <ol>
         <li>Drag and Drop the following Function Blocks (FBs) to the Editor. Open the palette (if not already open) on the upper right of <b>editor area</b> by clicking on the left arrow or use the Type Library in the System Explorer. 
@@ -149,6 +150,8 @@
     <p>Device and Resource parameters can either be specified directly at each Device/Resource or via the Properties View. 
     The <span class="view4diac">Properties View</span> shows the parameters of a IEC 61499 Device/Resource (if it is selected either in the <span class="view4diac">System Configuration Editor</span> or in the <span class="view4diac">System Manager View</span>). 
     The most important parameters are the IP address and the port of the device management interface as they are required for the communication between the engineering tool and the Devices (e.g. Download of IEC 61499 Applications).</p>
+ 
+ <!--*********************-->
     
     <h3 id="deviceProfileConfiguration">Configuration of the Device's Configuration Profile</h3>
     <p>In order to support different device vendors' download mechanism you need to specify the device profile to be used for your device.
@@ -234,12 +237,12 @@
 </table>
 
 <!--********************************************************************************************-->
-     <h2 id="deployingToForte">Deploying application to 4diac FORTE</h2>
+     <h2 id="deployingToForte">Deploying Application to 4diac&nbsp;FORTE</h2>
      
      <p>In this step, the Blink application will be deployed to 4diac FORTE running locally on your computer.</p>
 
      <ol>
-       <li>You have to select a 4diac FORTE. 
+       <li>You have to select a 4diac&nbsp;FORTE. 
        <br/>You can either build your own 4diac FORTE as <a href="../../html/installation/install.html#ownFORTE">shown here</a> or you can download the 4diac FORTE that is provided for you for this tutorial on <a href="https://www.eclipse.org/4diac/en_dow.php">our Homepage</a>. 
        You can save the .exe wherever you like, we have chosen F:\4diac\4diac-ide\. 
        Go to <span class="menu4diac">Windows &rarr; Preferences &rarr; 4diac IDE &rarr; FORTE Preferences</span>, and in <span class="addressDoc">FORTE Location</span> look for the 4diac FORTE and then click <i>Apply and Close</i>. 
@@ -303,15 +306,15 @@
 
 <p>Now that you know how to do a centralized solution, let's try and distribute things:</p>
 
-<p><a href="../../html/4diacIDE/distribute4diac.html">Step 2 - Distribute 4diac applications</a></p>
+<p><a href="../../html/4diacIDE/distribute4diac.html">Step 2 - Distribute 4diac Applications</a></p>
 
-<p>If you want to go the back to see an overall overview of 4diac IDE, here's a link</p>
+<p>If you want to go the back to see an overall overview of 4diac&nbsp;IDE, here's a link</p>
 
-<p><a href="../../html/4diacIDE/overview.html">Step 0 - 4diac IDE - General View</a></p>
+<p><a href="../../html/4diacIDE/overview.html">Step 0 - 4diac&nbsp;IDE Overview</a></p>
 
 <p>If you want to go back to the Start Here page, we leave you here a fast access</p>
 
-<p><a href="../../html/startHere/startHere.html">Start Here page</a></p>
+<p><a href="../../html/startHere/startHere.html">Where to Start</a></p>
 
 <p class="goToTop"><a href="#topOfPage">Go to top</a></p>
 
