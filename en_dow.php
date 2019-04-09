@@ -84,7 +84,7 @@
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<h2>4diac FORTE 1.10.1</h2>	
-					<i>Sources of 4diac FORTE compilable for your system.</i>
+					<i>Packaged source code and selected binaries of 4diac FORTE.</i>
 				</td>
 				<td width="33%" style='padding-left:10px;'>
 					<h2>4diac Repositories</h2>
@@ -299,8 +299,10 @@
 					 	</li>
 				 	</ul>					
 				</td>
-			</tr>			
+			</tr>					
 </table>
+
+<p>The components of Eclipse 4diac are provided under <a href="https://www.eclipse.org/legal/epl-v10.html">EPLv1.0</a> (to be updated soon to EPLv2.0). </p>
 
 <h1>Show your 4diac use</h1>	
 <p>With these two stickers you can show the world that you are using 4diac. Put it on your web-page, flyers, controllers, laptops, t-shirts... <br/></p>
