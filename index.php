@@ -14,7 +14,7 @@
 
 <section class="left">
  <img style="max-width:100%;" src="img/application.png" alt="4diac's application domain"/><br/>
- <img style="padding-top:50px;align:center" src="img/Egg-incubation.png" alt="incubation egg"/>
+ <img style="padding-top:50px;align:center" src="https://projects.eclipse.org/sites/all/modules/custom/pmi/project_state/images/incubating.png" width="150" alt="incubation status"/>
 </section>
 
 <section class="content">

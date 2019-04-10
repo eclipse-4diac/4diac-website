@@ -121,7 +121,6 @@
 						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">4diac FORTE source</a></li>
 						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.examples.git">4diac example systems</a></li>
 					</ul>
-					Old <a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">example systems</a> repository still at Sourceforge.
 				</td>
 			</tr>
 			
@@ -299,6 +298,9 @@
 					 	</li>
 				 	</ul>					
 				</td>
+				<td width="33%" style='padding-left:10px; '>
+					Old <a href="http://sourceforge.net/p/fordiac/fordiac-systems/ci/default/tree/">example systems</a> repository at Sourceforge.
+				</td>			
 			</tr>					
 </table>
 
