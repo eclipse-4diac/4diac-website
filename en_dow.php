@@ -96,11 +96,11 @@
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<!--p style="color:rgba(255,149,14,1.0);font-weight:bold;text-align:center;">4diac IDE 1.9.0 M2 release on Eclipse under construction</p>-->
 					<ul id="nav">
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_win32.x86.zip">Windows 32-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_win32.x86_64.zip">Windows 64-bit</a></li>									
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.2_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.2_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.2_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.2_win32.x86.zip">Windows 32-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.2_win32.x86_64.zip">Windows 64-bit</a></li>									
 						<!--li>Nightly Build</li-->
 						<!--li>Update Site</li-->
 					</ul>
@@ -109,10 +109,10 @@
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.zip">Source</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.linux.x86_64.zip">Linux x86 64-bit</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.linux.arm.zip">Linux ARM</a></li>
-						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.win32.zip">Windows</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.2.zip">Source</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.2.linux.x86_64.zip">Linux x86 64-bit</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.2.linux.arm.zip">Linux ARM</a></li>
+						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.2.win32.zip">Windows</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
@@ -131,6 +131,15 @@
     						<ul id="nav">
     							<li class="expand">1.10 Releases
             						<ul id="nav">
+            							<li class="expand">4diac IDE 1.10.1
+                							<ul id="nav">
+												<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_win32.x86.zip">Windows 32-bit</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.1_win32.x86_64.zip">Windows 64-bit</a></li>									
+                        					</ul>
+	            						</li>                                    						
             							<li class="expand">4diac IDE 1.10.0
                 							<ul id="nav">
                         						<li><a href="http://download.eclipse.org/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.0_linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
@@ -248,6 +257,14 @@
     						<ul id="nav">
     							<li class="expand">1.10 Releases
     								<ul id="nav">
+    									<li class="expand">1.10.1    								
+            								<ul id="nav">
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.zip">Source</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.linux.x86_64.zip">Linux x86 64-bit</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.linux.arm.zip">Linux ARM</a></li>
+                        						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.1.win32.zip">Windows</a></li>
+                        					</ul>
+                    					</li>    								
     									<li class="expand">1.10.0
             								<ul id="nav">
                         						<li><a href="http://download.eclipse.org/4diac/releases/1.10/forte/forte-incubation_1.10.0.zip">Source</a></li>
