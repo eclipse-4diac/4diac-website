@@ -20,7 +20,7 @@
 
 
 <section class="content">
-	<h1>Example Projects</h1>
+	<h1>4diac <i>SYS</i> &ndash; Example Projects</h1>
 	
 	<h2>Systems provided by 4diac</h2>
 	<ul>

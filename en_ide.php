@@ -21,9 +21,20 @@
 
 
 <section class="content">
-	<h1>IEC 61499 Compliant Development Environment</h1>
-	<p>The 4DIAC IDE is an extensible, IEC 61499 compliant engineering environment for distributed control applications. The modelled applications can be downloaded to distributed field devices according the means defined by the IEC 61499 standard. The hardware capability definition allows to model the control hardware and its interconnections through networks.</p>
-	<p>The 4diac IDE is based on the Eclipse framework, which allows an easy integration of other plug-ins to the 4diac IDE providing new or extended functionality. IEC 61499 based systems follow an application centric design, which means that the application of the overall system is created at first. Each application is created by interconnecting the desired function blocks (FB) in terms of a function block network (FBN). As soon as the hardware structure is known it can be added to a project's system configuration and the already existing application can be distributed onto the available devices. The IDE provides the following features:</p>
+	<h1>4diac <i>IDE</i> &ndash; IEC 61499 Compliant Development Environment</h1>
+
+	<p>The 4DIAC IDE is an extensible, IEC 61499 compliant engineering environment for distributed control applications. 
+	The modelled applications can be downloaded to distributed field devices according the means defined by the IEC 61499 standard. 
+	The hardware capability definition allows to model the control hardware and its interconnections through networks.</p>
+
+	<img src="img/ide_screenshot.png" width="800px" alt="screenshot of the 4diac IDE engineering environment for distributed control systems showing the system explorer, the function block nework editor for applications, subapplications, and composite FBs, and an ECC editor modelling the state machine of basic function blocks"/>
+
+	<p>The 4diac IDE is based on the Eclipse framework, which allows an easy integration of other plug-ins to the 4diac IDE providing new or extended functionality. 
+	IEC 61499 based systems follow an application centric design, which means that the application of the overall system is created at first. 
+	Each application is created by interconnecting the desired function blocks (FB) in terms of a function block network (FBN). 
+	As soon as the hardware structure is known it can be added to a project's system configuration and the already existing application can be distributed onto the available devices.</p>
+	 
+	<p>The IDE provides the following features:</p>
 	<table>
 		<tr>
 			<td>
@@ -52,7 +63,6 @@
 			</td>
 		</tr>
 	</table>
-	<img src="img/ide_screenshot.png" width="800px" alt="screenshot of the 4diac IDE engineering environment for distributed control systems showing the system explorer, the function block nework editor for applications, subapplications, and composite FBs, and an ECC editor modelling the state machine of basic function blocks"/>
 </section>
 
 <?php include 'footer.php';?>
