@@ -11,6 +11,7 @@
 					<a href="https://www.xing.com/communities/groups/4diac-1076214"><img src="img/appbar.social.xing.png"/></a>
 					<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=4DIAC"><img src="img/appbar.bug.png"/></a>
 					<a href="http://eclipse.org/forums/eclipse.4diac"><img src="img/appbar.people.multiple.png"/></a>
+					<a href="https://mattermost.eclipse.org/eclipse/channels/4diac"><img src="img/appbar.mattermost.png" alt="mattermost logo"/></a>
 				</td>
 				<td id="width33">
 					<table style="float:right;">
@@ -24,7 +25,7 @@
 								<a href="http://www.eclipse.org/"><img src="img/eclipse.png"/></a>
 							</td>
 							<td class="right" style="text-align:left;padding-left:5px;">
-								<a href="http://www.eclipse.org/legal/copyright.php">Copyright</a></br>
+								<a href="http://www.eclipse.org/legal/copyright.php">Copyright</a><br/>
 								<a href="http://www.eclipse.org/legal/">Legal</a>
 							</td>
 						</tr>

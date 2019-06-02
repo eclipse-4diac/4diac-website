@@ -643,10 +643,11 @@ margin-bottom:5px;
 }
 
 .appdomain{
-margin:7px;
+margin:4px;
+margin-bottom:10px;
 margin-bottom:15px;
 background-color:white;
-width:127px;
+width:125px;
 height:100px;
 border-radius:15px;
 display:inline-block;

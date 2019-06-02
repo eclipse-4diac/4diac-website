@@ -13,8 +13,8 @@
 <section class="mainContent">
 
 <section class="left">
- <img style="max-width:100%;" src="img/application.png" alt="4diac's application domain"/><br/>
- <img style="padding-top:50px;align:center" src="https://projects.eclipse.org/sites/all/modules/custom/pmi/project_state/images/incubating.png" width="150" alt="incubation status"/>
+ <img style="max-width:75%;" src="img/application.png" alt="4diac's application domain"/><br/>
+ <img style="padding-top:20px;align:center;padding-bottom:10px;" src="https://projects.eclipse.org/sites/all/modules/custom/pmi/project_state/images/incubating.png" width="150" alt="incubation status"/>
 </section>
 
 <section class="content">
@@ -61,7 +61,7 @@ IEC 61499 defines a domain specific modeling language for developing distributed
 <section class="appdomain">
 <span><img src="img/robotics.png" alt="robotics" width="110"></span>
 </section>
-<br/>
+
 <section class="appdomain">
 <span><img src="img/process.png" alt="continouse and batch process automation" width="110"></span>
 </section>
