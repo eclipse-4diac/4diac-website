@@ -1,4 +1,4 @@
-<?php printNewsEntryHeader(__FILE__, "GSoC Project - First Phase Finished"); ?>
+<?php printNewsEntryHeader(__FILE__, "GSoC Project - First Phase Finished", "img/gsoc.svg"); ?>
 
 
 <p>Here is a new update on my GSoC project. 

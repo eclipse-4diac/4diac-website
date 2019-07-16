@@ -1,4 +1,4 @@
-<?php printNewsEntryHeader(__FILE__, "Status Update:  Dynamic Type Loading GSoC Project"); ?>
+<?php printNewsEntryHeader(__FILE__, "Status Update:  Dynamic Type Loading GSoC Project", "img/gsoc.svg"); ?>
 
 <p>My first two weeks of GSoC are now over and i have my first results to share with you. 
 If there are any questions, as always, feel free to ask over <a href="https://mattermost.eclipse.org/eclipse/channels/4diac">Mattermost</a> 
