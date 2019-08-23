@@ -99,8 +99,8 @@
 						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.3-linux.gtk.x86.tar.gz">Linux 32-bit</a></li>
 						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.3-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
 						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.3-macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.3-win32.x86.zip">Windows 32-bit</a></li>
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.3-win32.x86_64.zip">Windows 64-bit</a></li>									
+						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.3-win32.win32.x86.zip">Windows 32-bit</a></li>
+						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.10/4diac-ide/4diac-ide-incubation_1.10.3-win32.win32.x86_64.zip">Windows 64-bit</a></li>									
 						<!--li>Nightly Build</li-->
 						<!--li>Update Site</li-->
 					</ul>
