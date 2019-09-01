@@ -1,4 +1,4 @@
-<!--7th 4DIAC Users' Workshop @ ETFA 2016-->
+<h1>7<sup>th</sup> 4DIAC Users' Workshop @ ETFA 2016</h1>
 <p>The 7<sup>th</sup> Users' Workshop is held in conjunction with the 21th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Berlin.</p>
 
 <p><b>Workshop Date:</b> 6th September 2016</p>

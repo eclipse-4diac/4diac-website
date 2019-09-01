@@ -1,4 +1,4 @@
-<!--2nd 4DIAC Users' Workshop @ ETFA 2011-->
+<h1>2<sup>nd</sup> 4DIAC Users' Workshop @ ETFA 2011</h1>
 <p>The 2<sup>nd</sup> Users' Workshop has been hold in conjunction with the 16th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Toulouse.</p>
 
 <p><b>Workshop Date: 9th September 2011</b></p>

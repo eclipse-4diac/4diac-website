@@ -1,4 +1,4 @@
-<!--1st 4DIAC Users' Workshop @ ETFA 2010-->
+<h1>1<sup>st</sup> 4DIAC Users' Workshop @ ETFA 2010</h1>
 <p>The 1<sup>st</sup> Users' Workshop has been hold in conjunction with the 15th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Bilbao.</p>
 
 <p><b>Workshop Date: 16<sup>th</sup> September 2010</b></p>

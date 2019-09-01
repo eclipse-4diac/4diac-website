@@ -1,6 +1,9 @@
 <html>
 <head>
-<?php include 'head.php';?>
+<?php
+require_once("./resources/functions.php");
+include 'head.php';?>
+
 <link rel="stylesheet" type="text/css" href="help.css">
 <title>4DIAC Documentation</title>
 <meta name="4DIAC documentation providing help and to get started with 4DIAC"> 
@@ -51,31 +54,8 @@
     	    	echo $helpContent;
     	    	
     	    	
-    	    	function getHelpPageName($helpFileName, $defaultHelpFile){
-    	    	    /* the checks in this functions are based on an example from 
-    	    	     * Jörg Reinholz at the https://wiki.selfhtml.org/wiki/PHP/Tutorials/Templates/Dateien_mit_include_nachladen
-    	    	     * page provided as public domain. 
-    	    	     */ 
-    	    	    $helpFileNameCopy = $helpFileName;  //create copy for later chekcs
-    	    	    
-     	    	    //given file name must not contain ../, /. (hidden unix file), url (://) 
-    	    	    $arForbiddenStrings = array('../', '/.', '://', '\\\\', '//' );
-    	    	    //replace forbiden strings with nothing
-    	    	    $helpFileName=str_replace($arForbiddenStrings, '', $helpFileName);
-    	    	    
-    	    	    if(! $helpFileName == $helpFileNameCopy){
-    	    	        //there where bad strings in the given param, return the default help file
-    	    	        return $defaultHelpFile;
-    	    	    }
-    	    	    
-    	    	    $forbiddenChars='/[^A-Za-z0-9_.\/*+:,-]/';
-    	    	    if ( preg_match($forbiddenChars, $helpFileName) ) {
-    	    	        return $defaultHelpFile;
-    	    	    }
-    	    	    
-    	    	    if ( $helpFileName && '.' == $helpFileName{0} ) {
-    	    	        return $defaultHelpFile;
-    	    	    }
+    	    	function getHelpPageName($helpFileName, $defaultHelpFile){    	    	      	    	    
+    	    	    $helpFileName = checkPageName($helpFileName, $defaultHelpFile);
     	    	    
     	    	    //only allow a help file if it is also referenced in the toc
     	    	    if(!strpos(file_get_contents("documentation/html/toc.xml"), $helpFileName)){

@@ -1,4 +1,4 @@
-<!--Eclipse Insight: cross domain engineering-->
+<h1>Eclipse Insight: Cross Domain Engineering</h1>
 <h2>What is an Eclipse Insight?</h2>
 <p>Like an Eclipse DemoCamp, an Eclipse Insight is a collaborative event featuring technical talks and demonstrations from the Eclipse community. The topic of the event will be more focused on a certain technology area of the Eclipse ecosystem.</p>
 
