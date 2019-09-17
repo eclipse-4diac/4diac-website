@@ -4,7 +4,7 @@
 Up to now we have mostly interacted through our forum, mailing list and Mattermost channel. 
 With the 4days of 4diac summit we would like to change that, and bring you all together in one place.</p> 
 
-<p>Therefore, we invite you all to Linz from November 11 till November 14 to discuss and program with each other on new 4diac topics and applications.</p>
+<p>Therefore, we invite you all to Linz from November 11<sup>th</sup> till November 14<sup>th</sup> to discuss and program with each other on new 4diac topics and applications.</p>
 
 <p>We wanted to make the event as low barrier as possible: 
 So we provide the meeting rooms and coffee, and you bring your time and ideas. 

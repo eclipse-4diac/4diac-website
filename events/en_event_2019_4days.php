@@ -1,4 +1,5 @@
-<h1>4days of 4diac</h1>
+<h1>4days of 4diac<br/>
+<span style="color:rgba(255,149,14,1.0); font-size:14pt;font-weight:bold;">4 days for the 4diac community to meet and exchange!</span></h1>
 <h2>What is <i>4days of 4diac</i>?</h2>
 <p>It is a place for bringing 4diac users and contributors together to show, discuss and program with each other on new 4diac topics and applications.</p>
 
