@@ -18,7 +18,13 @@
 <h2>What is the program of <i>4days of 4diac</i>?</h2>
 <p><i>4days of 4diac</i> is for <b>you</b>! So <b>you</b> can define what we will do. Potential target topics may be for example:</p>
 <ul>
-	<li>Future of Eclipse 4diac</li>
+	<li>Future of Eclipse 4diac as a whole</li>
+	<li>Future of Eclipse 4diac IDE
+		<ul>
+			<li>What comes after GEF3? GEF5? Sprotty? Something else?</li>
+			<li>How to handle the discontinued AERI?</li>
+		</ul>
+	</li>
 	<li>Demonstration of the new features and improvements implemented the last releases</li>
 	<li>Best practices and design patterns</li>
 	<li>Usability issues in 4diac IDE</li>
