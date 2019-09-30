@@ -23,7 +23,7 @@
 	<h1>4diac <i>LIB</i> &ndash; IEC 61499 Function Block Library</h1>
 	<p>The 4diac function block library (4diac LIB) contains function blocks (FB) which are available on the 4diac FORTE and can therefore be used to create IEC 61499 compliant control applications.</p>
 
-	<p>The IEC 61499 standard provides three types of FBs. Basic function blocks (BFBs), composite function blocks (CFBs) and service interface function blocks (SIFBs). Each FB contains an interface and a body. The interface provides connection points for data transmission as well as event triggers. The body describes the entire behavior of the FB. For for CFBs this description is provided in terms of a FB-network (FBN), for BFBs in terms of an execution control chart (ECC) and for SIFBs in terms of a service sequence diagram which hides the entire code of the FB.</p>
+	<p>The IEC 61499 standard provides three types of FBs. Basic function blocks (BFBs), composite function blocks (CFBs) and service interface function blocks (SIFBs). Each FB contains an interface and a body. The interface provides connection points for data transmission as well as event triggers. The body describes the entire behavior of the FB. For CFBs this description is provided in terms of a FB-network (FBN), for BFBs in terms of an execution control chart (ECC) and for SIFBs in terms of a service sequence diagram which hides the entire code of the FB.</p>
 	
 	<img src="img/fbtypes.png" alt="The function block types of IEC 61499: composite function block, basic function block and service interface function block"/>
 	
