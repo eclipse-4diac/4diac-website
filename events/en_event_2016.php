@@ -1,4 +1,4 @@
-<h1>7<sup>th</sup> 4DIAC Users' Workshop @ ETFA 2016</h1>
+<h1>7<sup>th</sup> 4diac Users' Workshop @ ETFA 2016</h1>
 <p>The 7<sup>th</sup> Users' Workshop is held in conjunction with the 21th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Berlin.</p>
 
 <p><b>Workshop Date:</b> 6th September 2016</p>
@@ -67,7 +67,7 @@
 	</tr>
 	<tr>
 		<td>
-			<a href="events/docs/2016/UW_10_Melik.pdf">4DIAC in Teaching - Lessons from Lab Exercises and Student Projects</a>
+			<a href="events/docs/2016/UW_10_Melik.pdf">4diac in Teaching - Lessons from Lab Exercises and Student Projects</a>
 			<br><i>Martin Melik Merkumians (Vienna University of Technology)</i>
 		</td>
 	</tr>
@@ -77,13 +77,13 @@
 		</th>
 		<td>
 			<h3>Hands on Session</h3>
-			The afternoon is reserved for hands on and discussions where the 4DIAC team will be available for detailed discussions and explanation on using 4DIAC as well as on implementation details. The following topics can be covered but suggestions from the audience is welcome:
+			The afternoon is reserved for hands on and discussions where the 4diac team will be available for detailed discussions and explanation on using 4DIAC as well as on implementation details. The following topics can be covered but suggestions from the audience is welcome:
 			<ul>
-				<li>Short Introduction to IEC 61499 and 4DIAC</li> 
+				<li>Short Introduction to IEC 61499 and Eclipse 4diac</li> 
 				<li>Guided small control application example </li>
 				<li>Implementing a control application for a simulated press application</li> 
-				<li>Extending 4DIAC-IDE </li>
-				<li>Overview on FORTE </li>
+				<li>Extending 4diac IDE </li>
+				<li>Overview on 4diac FORTE </li>
 				<li>Real-time execution and communication architecture</li>
 			</ul> 
 		</td>
@@ -92,7 +92,7 @@
 
 
 <h2>Hardware Exhibition</h2>
-<p>An exhibition and interoperability panel of control devices executing IEC 61499 (based on 4DIAC) 
+<p>An exhibition and interoperability panel of control devices executing IEC 61499 (based on 4diac) 
 will be held in the first time during the workshop of 2016.</p>
 
 <h2>Workshop Organizers</h2>

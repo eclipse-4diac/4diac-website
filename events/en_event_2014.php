@@ -1,4 +1,4 @@
-<h1>5<sup>th</sup> 4DIAC Users' Workshop @ ETFA 2014</h1>
+<h1>5<sup>th</sup> 4diac Users' Workshop @ ETFA 2014</h1>
 <p>The 5<sup>th</sup> Users' Workshop has been hold in conjunction with the 19th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Barcelona.</p>
 
 <p><b>Workshop Date: 16th September 2014</b></p>

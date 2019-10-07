@@ -1,4 +1,4 @@
-<h1>3<sup>rd</sup> 4DIAC Users' Workshop @ ETFA 2012</h1>
+<h1>3<sup>rd</sup> 4diac Users' Workshop @ ETFA 2012</h1>
 <p>The 3<sup>rd</sup> Users' Workshop has been hold in conjunction with the 17th IEEE International Conference on Emerging Technologies and Factory Automation (ETFA) in Krak&oacute;w.</p>
 
 <p><b>Workshop Date: 21th September 2012</b></p>
@@ -66,7 +66,7 @@
 	</tr>
 	<tr>
 		<td>
-			Plenary Discussion - Future Development of 4DIAC:  Goals and Targets
+			Plenary Discussion - Future Development of 4diac:  Goals and Targets
 		</td>
 	</tr>
 </table>

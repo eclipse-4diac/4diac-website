@@ -6,8 +6,8 @@ require_once("./resources/functions.php");
 include 'head.php';?>
 
 
-<title>4DIAC-News</title>
-<meta name="description" content="Updates from the 4DIAC community for the 4DIAC community"> 
+<title>4diac News</title>
+<meta name="description" content="Updates from the 4diac community for the 4diac community"> 
 <meta name="keywords" content="updates, news, applications, noteworthy">
 
 <link rel="alternate" href="/feed/" title="4diac's News RSS feed" type="application/rss+xml" />

@@ -5,8 +5,8 @@ require_once("./resources/functions.php");
 include 'head.php';?>
 
 <link rel="stylesheet" type="text/css" href="help.css">
-<title>4DIAC Documentation</title>
-<meta name="4DIAC documentation providing help and to get started with 4DIAC"> 
+<title>Eclipse 4diac Documentation</title>
+<meta name="Eclipse 4diac's documentation providing help and to get started with Eclipse 4diac"> 
 <meta name="keywords" content="porting, tutorials, getting started, overview  ">
 
 <script type="text/javascript" src="jquery-1.6.2.js"></script>
