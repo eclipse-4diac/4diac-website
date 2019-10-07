@@ -2,7 +2,7 @@
 
 <p>We are very proud to announce the 4diac 1.11.0 release!</p>
 
-<p>With this release we officially updates to <a href="https://www.eclipse.org/legal/epl-2.0/faq.php">Eclipse Public License, Version 2.0!</a>
+<p>With this release we officially updated to <a href="https://www.eclipse.org/legal/epl-2.0/faq.php">Eclipse Public License, Version 2.0!</a>
    Apart from many bug fixes and improvements the main changes and new features in 4diac 1.11.0 are:</p>
 <ul>
 	<li><b>4diac IDE:</b>
