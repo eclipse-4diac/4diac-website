@@ -79,11 +79,11 @@
 		<table>
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac IDE 1.10.3</h2>
+					<h2>4diac IDE 1.11.0</h2>
 					<i>Development environment without 4diac FORTE executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac FORTE 1.10.3</h2>	
+					<h2>4diac FORTE 1.11.0</h2>	
 					<i>Packaged source code and selected binaries of 4diac FORTE.</i>
 				</td>
 				<td width="33%" style='padding-left:10px;'>
