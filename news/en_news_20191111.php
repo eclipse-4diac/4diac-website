@@ -1,4 +1,4 @@
-<?php printNewsEntryHeader(__FILE__, "4diac 1.11.0: First Maintenance Release for 4diac 1.11", "img/release.png"); ?>
+<?php printNewsEntryHeader(__FILE__, "4diac 1.11.1: First Maintenance Release for 4diac 1.11", "img/release.png"); ?>
 
 <p>We are proud to announce the first maintenance release for Eclipse 4diac 1.11 providing 13 bug fixes for 4diac IDE. 
 This include a fix for one of our nastiest bugs: the disappearing FB interface commands and types in the FB interface editor.</p> 
