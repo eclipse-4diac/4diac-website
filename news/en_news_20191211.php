@@ -1,4 +1,4 @@
-<?php printNewsEntryHeader(__FILE__, "VDMA IAS skills 61499 implementation is published", "img/uws.png"); ?>
+<?php printNewsEntryHeader(__FILE__, "VDMA IAS skills 61499 implementation is published"); ?>
 
 <p>The 4diac examples repository now contains <a href="https://git.eclipse.org/r/#/c/152743/">an example</a> on the first implementation of skills FBs, which is used in <a href="https://rua.vdma.org/en/viewer/-/v2article/render/25230733">Robotics + Automation OPC UA Demonstrator</a>.</p>
 
