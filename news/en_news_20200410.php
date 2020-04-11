@@ -1,6 +1,6 @@
 <?php printNewsEntryHeader(__FILE__, "4diac 1.12.0 Released!", "img/release.png"); ?>
 
-<p>We are very proud to announce the 4diac 1.11.0 release!</p>
+<p>We are very proud to announce the 4diac 1.12.0 release!</p>
 
 <p>Apart from many bug fixes and improvements, we also modernized the design of Applications and the System Configuration. 
    We could address 108 issues in the work for the new 4diac version.
