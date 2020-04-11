@@ -19,11 +19,11 @@
 				Did you know that drag and drop with the middle mouse button can be used to navigate through the application?
 				</li>
 	            <li>After viewing the contents of a subapplication, one commonly needs to jump back to the application. 
-	            For this use case, we implemented “Go to parent”, accessible via the context menu.</li>
+	            For this use case, we implemented &ldquo;Go to parent&rdquo;, accessible via the context menu.</li>
 	            <li>Working with subapplications is now more convenient. 
 	            An untyped subapplication can be saved as Type via the context menu. 
 	            Additionally, you may want to include variations to a Type. 
-	            For this use case, we implemented the “Detach from subapplication Type”-feature, 
+	            For this use case, we implemented the &ldquo;Detach from subapplication Type&rdquo;-feature, 
 	            which converts a type to an untyped subapplication.</li>
 	            <li>Many usability improvements:
 	                <ul>
