@@ -2,7 +2,7 @@
 
 <p>The Eclipse 4diac team is excited to announce that this year we again get the chance to work with a student in the 
 <a href="https://summerofcode.withgoogle.com/">Google Summer of Code program</a>: 
-<a href="https://www.aut.bme.hu/en/Staff/bacsisandor">S&aacute;ndor B&aacute;sic</a>  will be working on setting up an infrastructure for checking the correctness of IEC 61499 models using 
+<a href="https://www.aut.bme.hu/en/Staff/bacsisandor">S&aacute;ndor B&aacute;csi</a>  will be working on setting up an infrastructure for checking the correctness of IEC 61499 models using 
 <a href="https://projects.eclipse.org/projects/modeling.mdt.ocl">Object Constraint Language (OCL)</a>. 
 OCL can be a solution to find issues in IEC 61499 models since it provides capabilities for specifying generic constraints a model has to fulfill. 
 We hope that the work of S&aacute;ndor will give our users early feedback and with that improve the usability and user experience of 4diac IDE.</p>
