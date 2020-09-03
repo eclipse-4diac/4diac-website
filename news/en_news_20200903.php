@@ -6,7 +6,7 @@
 With a table layout and direct editing, it is almost self-explanatory and - hopefully - very easy to use. 
 Although we know that a detailed view like a table has the disadvantage of being somewhat confusing, especially with numerous data types, we decided to go for it and tackle this problem head on. 
 The solution we came up with is a new dropdown field:</p>
-<img alt="Dropdownfield with suggestions" width="700" src="news/figs/data_type_dropdown.PNG">
+<img alt="Dropdownfield with suggestions" width="350" src="news/figs/data_type_dropdown.PNG">
 <p>It is a search field with content proposal and the possibility to open a selection dialog, enabling you to filter through thousands of data types without breaking a sweat.</p>
 
 <p>Cheers,</p>
