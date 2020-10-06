@@ -10,7 +10,7 @@ function printNaNMainHeader(){
     echo '<head>';
     include '../../head.php';
     echo '<link rel="stylesheet" type="text/css" href="/4diac/newandnoteworthy/nan.css">';
-    echo '<title>New and Notweworthy in 4diac ' . $version . '</title>';
+    echo '<title>New and Noteworthy in 4diac ' . $version . '</title>';
     echo '<meta name="description" content="Upates the ' . $version . ' release of Eclipse 4diac brings.">'; 
     echo '</head>';
     echo '<body>';
