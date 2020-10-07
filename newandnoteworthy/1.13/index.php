@@ -13,6 +13,9 @@ printNaNMainHeader();
 		<li><a href="4diacIDE.php">New features in 4diac IDE</a></li>
     	<li><a href="4diacFORTE.php">New features in 4diac FORTE</a></li>
     </ul>
+    
+    <p>A complete list of all issues addressed in this release can be found <a href="https://projects.eclipse.org/projects/iot.4diac/releases/1.13.0/bugs">here</a>.
+    </p>
 
     <p>
         <b>Windows 10 users:</b> <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=548443">Windows 10 Defender significantly slows down Eclipse and therfore also 4diac IDE</a>. 
