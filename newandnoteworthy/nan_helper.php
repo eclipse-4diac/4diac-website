@@ -16,6 +16,11 @@ function printNaNMainHeader(){
     echo '<body>';
     include '../../header.html';
     
+    echo '<section class="img">';
+    echo '<img src="../../img/release.png"/>';
+    echo '</section>';
+    
+    
     echo '<section class="left">';
     echo ' <!-- currently empty left section -->';
     echo '</section>';
@@ -25,33 +30,21 @@ function printNaNMainHeader(){
 }
 
 function printNaNIDEHeader(){
-    $version = getVersion();
-    echo '<html>';
-    echo '<head>';
-    include '../../head.php';
-    echo '<link rel="stylesheet" type="text/css" href="/4diac/newandnoteworthy/nan.css">';
-    echo '<title>New and Notweworthy in 4diac IDE ' . $version . '</title>';
-    echo '<meta name="description" content="Upates the ' . $version . ' release of Eclipse 4diac IDE brings.">';
-    echo '</head>';
-    echo '<body>';
-    include '../../header.html';
-    
-    echo '<section class="left">';
-    echo ' <!-- currently empty left section -->';
-    echo '</section>';
-    
-    echo '<section class="content">';
-    echo '	<h1>Eclipse 4diac ' . $version . ' - New and Noteworthy in <br/>4diac IDE</h1>';
+    printNaNComponentHeader("IDE");
 }
     
 function printNaNFORTEHeader(){
+    printNaNComponentHeader("FORTE");
+}
+
+function printNaNComponentHeader($componentName){
     $version = getVersion();
     echo '<html>';
     echo '<head>';
     include '../../head.php';
     echo '<link rel="stylesheet" type="text/css" href="/4diac/newandnoteworthy/nan.css">';
-    echo '<title>New and Notweworthy in 4diac FORTE' . $version . '</title>';
-    echo '<meta name="description" content="Upates the' . $version . 'release of Eclipse 4diac FORTE brings.">';
+    echo '<title>New and Notweworthy in 4diac ' . $componentName . ' ' . $version . '</title>';
+    echo '<meta name="description" content="Upates the' . $version . 'release of Eclipse 4diac ' . $componentName . ' brings.">';
     echo '</head>';
     echo '<body>';
     include '../../header.html';
@@ -61,7 +54,7 @@ function printNaNFORTEHeader(){
     echo '</section>';
     
     echo '<section class="content">';
-    echo '	<h1>Eclipse 4diac ' . $version . ' - New and Noteworthy in <br/>4diac FORTE</h1>';
+    echo '	<h1>Eclipse 4diac ' . $version . ' - New and Noteworthy in <br/>4diac ' . $componentName . '</h1>';
 }
 
 function printNaNfooter(){

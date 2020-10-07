@@ -171,7 +171,7 @@ printNaNIDEHeader();
 			Update to Java 11
 		</td>
 		<td>
-		    4diac IDE no requires Java 11.
+		    4diac IDE now requires Java 11.
 		</td>
 	</tr>
 	<tr>
@@ -179,7 +179,7 @@ printNaNIDEHeader();
 			Update to Eclipse 2020-09
 		</td>
 		<td>
-		    4diac IDE has been updated to the Eclipse platform 2020-09.
+		    4diac IDE has been updated to use Eclipse Platform 2020-09.
 		</td>
 	</tr>
 	<tr>
