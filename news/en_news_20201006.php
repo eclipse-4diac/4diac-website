@@ -1,4 +1,4 @@
-<?php printNewsEntryHeader(__FILE__, "Eclipse 4diac 4diac at Open Platform Automation Forum 2020 in Shanghai"); ?>
+<?php printNewsEntryHeader(__FILE__, "Eclipse 4diac at Open Platform Automation Forum 2020 in Shanghai"); ?>
 
 <p>On 15th September, the open platform automation forum was held at <a href="http://www.ciif-expo.com/plus/list.php?tid=255">Shanghai Automation Fair 2020</a>. 
 The open platform automation forum aimed at promoting open technologies such as IEC 61499 and OPC UA for industrial automation. 
