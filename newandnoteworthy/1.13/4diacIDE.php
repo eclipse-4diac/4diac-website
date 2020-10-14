@@ -153,14 +153,6 @@ printNaNIDEHeader();
 		    A view for editing internal variables was added to the simple FB editor.
 		</td>
 	</tr>
-	<tr>
-		<td>
-			Lorem ipsum
-		</td>
-		<td>
-		    Lorem ipsum
-		</td>
-	</tr>
 </table>
 
 <h2 id="generalUpdates">General Updates</h2>
