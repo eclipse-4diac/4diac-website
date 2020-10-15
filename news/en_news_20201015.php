@@ -19,5 +19,6 @@ A full list of all bugs addressed in this release can be found on the <a href="h
 	<br>The 4diac Team</p>
 	
 <p>PS: With Eclipse 4diac 1.13.0 the 4diac IDE requires at least Java 11 installed on your machine! 
-If you download the official 4diac IDE package a correct Java version is already included.</p>
+If you download the official 4diac IDE package a correct Java version is already included.
+Many thanks to the <a href="https://www.eclipse.org/justj/" >Eclipse JustJ project</a> for that support.</p>
 <br/>
