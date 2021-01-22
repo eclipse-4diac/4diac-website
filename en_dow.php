@@ -79,7 +79,7 @@
 		<table>
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac IDE 1.13.0</h2>
+					<h2>4diac IDE 1.13.1</h2>
 					<i>Development environment without 4diac FORTE executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
@@ -95,9 +95,9 @@
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/4diac-ide/4diac-ide-incubation_1.13.0-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/4diac-ide/4diac-ide-incubation_1.13.0-macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/4diac-ide/4diac-ide-incubation_1.13.0-win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/4diac-ide/4diac-ide-incubation_1.13.1-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/4diac-ide/4diac-ide-incubation_1.13.1-macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/4diac-ide/4diac-ide-incubation_1.13.1-win32.win32.x86_64.zip">Windows 64-bit</a></li>									
 					</ul>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
@@ -122,6 +122,17 @@
     				<ul id="nav">
     					<li class="expand">Old 4diac IDE releases
     						<ul id="nav">
+    							<li class="expand">1.13 Releases
+            						<ul id="nav">
+		    							<li class="expand">4diac IDE 1.13.0            						
+											<ul id="nav">
+                        						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/4diac-ide/4diac-ide-incubation_1.13.0-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                        						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/4diac-ide/4diac-ide-incubation_1.13.0-macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                        						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/4diac-ide/4diac-ide-incubation_1.13.0-win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+                        					</ul>
+										</li>
+									</ul>    						
+    							</li>
     							<li class="expand">1.12 Releases
             						<ul id="nav">
 		    							<li class="expand">4diac IDE 1.12.2            						
