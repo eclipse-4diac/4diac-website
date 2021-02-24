@@ -14,6 +14,18 @@ printNaNIDEHeader();
 <table class=nan>
 	<tr>
 		<td>
+			Direct Edit for ECC Transitions
+		</td>
+		<td>
+		Creating ECCs with 4diac IDE has never been easier! 
+		The same convenient way of editing that you already know from event and algorithm selection within ECC actions, was added for ECC transitions. 
+		It is now also possible to set the condition event and expression directly at the transition by simply double clicking on the transition's condition.  
+		</td>
+	</tr>
+	
+	
+	<tr>
+		<td>
 			Lorem Ipsum
 		</td>
 		<td>
