@@ -17,14 +17,15 @@
 					<table style="float:right;">
 						<tr>
 							<td class="right" style="padding:0px;margin:0px;">
-								<a href="https://eclipse.org/security/">Eclipse Security</a>
 								<a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a><br/>
-								<a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a>
+								<a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a><br/>
+								<a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php">Code of Conduct</a>
 							</td>
 							<td class="right" style="padding:0px;margin:0px;">
-								<a href="http://www.eclipse.org/"><img src="/4diac/img/eclipse.png" alt="eclipse logo"/></a>
+								<a href="http://www.eclipse.org/"><img src="/4diac/img/eclipse_foundation_white.png" alt="eclipse foundation logo"/></a>
 							</td>
 							<td class="right" style="text-align:left;padding-left:5px;">
+								<a href="https://eclipse.org/security/">Eclipse Security</a><br/>
 								<a href="http://www.eclipse.org/legal/copyright.php">Copyright</a><br/>
 								<a href="http://www.eclipse.org/legal/">Legal</a>
 							</td>

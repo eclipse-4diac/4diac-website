@@ -19,7 +19,7 @@
 
 <section class="content">
 
-<h1>What is Eclipse 4diac?</h1>
+<h1>What is Eclipse 4diac&trade;?</h1>
 
 <h4>Eclipse 4diac&trade; provides an open source infrastructure <br>for distributed industrial process measurement and control systems <br>based on the IEC 61499 standard. 4diac includes:</h4>
 
