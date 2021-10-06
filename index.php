@@ -14,7 +14,6 @@
 
 <section class="left">
  <img style="max-width:75%;" src="img/application.png" alt="4diac's application domain"/><br/>
- <img style="padding-top:20px;align:center;padding-bottom:10px;" src="https://projects.eclipse.org/sites/all/modules/custom/pmi/project_state/images/incubating.png" width="150" alt="incubation status"/>
 </section>
 
 <section class="content">
