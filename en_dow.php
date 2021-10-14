@@ -79,11 +79,11 @@
 		<table>
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac IDE 1.14.0</h2>
+					<h2>4diac IDE 2.0.0</h2>
 					<i>Development environment without 4diac FORTE executables</i>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
-					<h2>4diac FORTE 1.14.0</h2>	
+					<h2>4diac FORTE 2.0.0</h2>	
 					<i>Packaged source code and selected binaries of 4diac FORTE.</i>
 				</td>
 				<td width="33%" style='padding-left:10px;'>
@@ -95,24 +95,24 @@
 			<tr>
 				<td width="33%" style='padding-right:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/4diac-ide/4diac-ide-incubation_1.14.0-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/4diac-ide/4diac-ide-incubation_1.14.0-macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/4diac-ide/4diac-ide-incubation_1.14.0-win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+						<li><a href="https://www.eclipse.org/downloads/download.php?file=/4diac/releases/2.0/4diac-ide/4diac-ide_2.0.0-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+						<li><a href="https://www.eclipse.org/downloads/download.php?file=/4diac/releases/2.0/4diac-ide/4diac-ide_2.0.0-macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+						<li><a href="https://www.eclipse.org/downloads/download.php?file=/4diac/releases/2.0/4diac-ide/4diac-ide_2.0.0-win32.win32.x86_64.zip">Windows 64-bit</a></li>									
 					</ul>
 				</td>
 				<td width="33%" style='padding-right:10px; padding-left:10px; border-right:2px solid rgba(255,149,14,1.0);'>
 					<ul id="nav">
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/forte/forte-incubation_1.14.0.zip">Source</a></li>
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/forte/forte-incubation_1.14.0.linux.x86_64.zip">Linux x86 64-bit</a></li>
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/forte/forte-incubation_1.14.0.linux.arm.zip">Linux ARM</a></li>
-						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/forte/forte-incubation_1.14.0.win32.zip">Windows</a></li>
+						<li><a href="https://www.eclipse.org/downloads/download.php?file=/4diac/releases/2.0/forte/forte_2.0.0.zip">Source</a></li>
+						<li><a href="https://www.eclipse.org/downloads/download.php?file=/4diac/releases/2.0/forte/forte_2.0.0.linux.x68_64.zip">Linux x86 64-bit</a></li>
+						<li><a href="https://www.eclipse.org/downloads/download.php?file=/4diac/releases/2.0/forte/forte_2.0.0.linux.arm.zip">Linux ARM</a></li>
+						<li><a href="https://www.eclipse.org/downloads/download.php?file=/4diac/releases/2.0/forte/forte_2.0.0.win32.zip">Windows</a></li>
 					</ul>
 				</td>
 				<td width="33%" style='padding-left:10px; '>
 					<ul id="nav">
-						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">4diac IDE source</a></li>
-						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">4diac FORTE source</a></li>
-						<li><a href="http://git.eclipse.org/c/4diac/org.eclipse.4diac.examples.git">4diac example systems</a></li>
+						<li><a href="https://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">4diac IDE source</a></li>
+						<li><a href="https://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">4diac FORTE source</a></li>
+						<li><a href="https://git.eclipse.org/c/4diac/org.eclipse.4diac.examples.git">4diac example systems</a></li>
 					</ul>
 				</td>
 			</tr>
@@ -122,6 +122,17 @@
     				<ul id="nav">
     					<li class="expand">Old 4diac IDE releases
     						<ul id="nav">
+    							<li class="expand">1.14 Releases
+            						<ul id="nav">
+		    							<li class="expand">4diac IDE 1.14.0
+				    						<ul id="nav">
+                        						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/4diac-ide/4diac-ide-incubation_1.14.0-linux.gtk.x86_64.tar.gz">Linux 64-bit</a></li>
+                        						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/4diac-ide/4diac-ide-incubation_1.14.0-macosx.cocoa.x86_64.dmg">Mac OS X</a></li>
+                        						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/4diac-ide/4diac-ide-incubation_1.14.0-win32.win32.x86_64.zip">Windows 64-bit</a></li>									
+                        					</ul>
+                    					</li>
+                					</ul>
+    							</li>    						
     							<li class="expand">1.13 Releases
             						<ul id="nav">
 		    							<li class="expand">4diac IDE 1.13.1
@@ -332,6 +343,14 @@
 					<ul id="nav">
     					<li class="expand">Old 4diac FORTE releases
     						<ul id="nav">
+    							<li class="expand">1.14 Releases   						
+                					<ul id="nav">
+                						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/forte/forte-incubation_1.14.0.zip">Source</a></li>
+                						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/forte/forte-incubation_1.14.0.linux.x86_64.zip">Linux x86 64-bit</a></li>
+                						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/forte/forte-incubation_1.14.0.linux.arm.zip">Linux ARM</a></li>
+                						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.14/forte/forte-incubation_1.14.0.win32.zip">Windows</a></li>
+                					</ul>
+                    			</li>						   						
     							<li class="expand">1.13 Releases
 									<ul id="nav">
                 						<li><a href="http://www.eclipse.org/downloads/download.php?file=/4diac/releases/1.13/forte/forte-incubation_1.13.0.zip">Source</a></li>

@@ -143,7 +143,7 @@ printNaNIDEHeader();
 </table>
 
 <h2 id="monitoring">Monitoring</h2>
-<table>
+<table  class=nan>
 	<tr>
 		<td>
 			Monitoring in Instance Viewers
@@ -182,7 +182,7 @@ printNaNIDEHeader();
 			Update to Eclipse 2021-06
 		</td>
 		<td>
-		    4diac IDE has been updated to use Eclipse Platform 2020-12.
+		    4diac IDE has been updated to use Eclipse Platform 2021-06.
 		</td>
 	</tr>
 	<tr>
