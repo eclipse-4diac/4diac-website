@@ -21,7 +21,7 @@
 </ul>
 
 
-<p>For details, please consider the release page of our <a href="../newandnoteworthy/2.0">New and Noteworthy</a>.</p>
+<p>For details, please consider the release page of our <a href="newandnoteworthy/2.0">New and Noteworthy</a>.</p>
 
 <p>We sincerely hope that you enjoy our graduation release. We are looking foward to sharing more documentation on the new features in the upcoming weeks.</p>
 
