@@ -27,7 +27,6 @@
 		<tr>
 			<td><h2 class="h2twocollumntable">Supported communication layers</h2>
 				<ul>
-					<li><a href="https://www.eclipse.org/eclipsescada/news/2014/08/29/wrapup__iot_top_level_project__syslog__relp___sfp__validation.html">EclipseSCADA SFP</a></li>
 					<li>Ethernet (TCP/UDP)</li>
 					<li>Ethernet PowerLink using <a href="http://sourceforge.net/projects/openpowerlink/">openPOWERLINK V1.8.0</a></li>
 					<li>FBDK ASN.1 encoding</li>
@@ -70,18 +69,10 @@
 			<td><h2 class="h2twocollumntable">Supported Programmable Logic Controllers (PLCs)</h2>
 				<ul>
 					<li><a href="http://www.bachmann.info/en/products/controller-system/">Bachmann electronic M1 PLC</a></li>
-					<li><a href="http://www.conmeleon.org/">CONMELEON C1</a></li>
 					<li><a href="http://raspberry-sps.de/">Raspberry-SPS</a></li>
 					<li><a href="http://global.wago.com/en/products/new-items/overview/pfc200-1.jsp">WAGO PFC200</a></li>
 					<li><a href="http://www.microcontrol.net/en/products/control-systems/umic200/">MicroControl uMIC.200</a></li>
 					<li><a href="https://www.insys-icom.de/icom-smartbox/container">icom MR-router series</a>
-					
-					<li>upcoming:
-						<ul>
-							<li><a href="http://www.advantech.com/products/">ADAM 3600</a></li>
-							<li>B&amp;R</li>
-							<li><a href="http://www.elrest-gmbh.com/">Robusto RMC 50x</a></li>
-						</ul></li>
 				</ul>
 			</td>
 		</tr>
