@@ -13,18 +13,18 @@
     <td>Tibalt:</td>
     <td> We are the R&amp;D team of HIITTECH (哈工智云) which is incubated from <a href="http://www.hrgrobotics.cn/en/">HIT robot group</a>. 
 		Our company is dedicated in delivering software solution for advanced process control. 
-		Currently, we are focusing on cement industry and circulate fluid bed (a kind of boiler).  
+		Currently, we are focusing on cement industry and circulate fluid bed (a kind of boiler).
 		I am the team leader. 
 		The team comprises of software engineers and service engineers.</td>
   </tr>
   <tr>
     <td>Alois:</td>
-    <td colspan="2">How did you learn  about IEC61499 and the Eclipse 4diac project?</td>
+    <td colspan="2">How did you learn about IEC 61499 and the Eclipse 4diac project?</td>
   </tr>
   <tr>
     <td>Tibalt:</td>
     <td colspan="2"> 
-    	We are a team experienced both in terminal units and SCADA systems applied in the electricity grid. 
+    	We are a team experienced both in terminal units and SCADA systems applied in the electricity grid. 
     	We have our own flow (graphical) programming platform to develop control logic in terminal units. 
     	The platform is a key to ensure quality for requirements different from batch to batch of hardware delivery. 
     	We are following the status of  IEC 61131 and IEC 61499 as they are the standard for industrial control languages. 
@@ -33,17 +33,16 @@
     	And after looked into the docs and codes, we decided to adopt 4diac as our control platform.</td>
   <tr>
     <td>Alois:</td>
-    <td colspan="2">You have contributed many bug fixes and enhancements to the 4diac project. So, what’s your team’s goal?</td>
+    <td colspan="2">You have contributed many bug fixes and enhancements to the 4diac project. So, what's your team's goal?</td>
   </tr>
   <tr>
     <td>Tibalt:</td>
     <td colspan="2"> 
-    When I am designing the architecture, I read from you and James Christensen that IEC 61499 is a standard for software reuse in embedded, 
-    distributed control systems.” 
-    This is what we are looking for, the philosophy, standard, graphical programming, and the open-source project. <br/>
-	
+    When I am designing the architecture, I read from you and James Christensen that IEC 61499 is a standard for software reuse in embedded, 
+    distributed control systems. 
+    This is what we are looking for, the philosophy, standard, graphical programming, and the open-source project.<br/>
 	We are feeding back with code for bug fix, enhancements, and suggestions to the 4diac project as we respect EPL license. 
-	We believe that the community’s prosperity could benefit all who are working with 4diac and IEC 61499. 
+	We believe that the community's prosperity could benefit all who are working with 4diac and IEC 61499. 
 	Our business value is in FBs we are encapsulated and total solution we delivered to our customer with HMI and big data database.</td>
   </tr>
 
@@ -64,7 +63,8 @@ And the RTE which could run cross platform including Linux, windows, freeRTOS an
   </tr>
   <tr>
     <td>Tibalt:</td>
-    <td colspan="2"> The way to composite function block is a little bit disturbing as we have done lots of CFBs. We hope to see the subapplication type soon. I heard that in 2.0.0 release, we can have subapplication type.
+    <td colspan="2"> The way to composite function block is a little bit disturbing as we have done lots of CFBs. We hope to see the subapplication type soon. 
+    I heard that in 2.0.0 release, we can have subapplication type.
 
   <tr>
     <td>Alois:</td>
@@ -73,11 +73,11 @@ And the RTE which could run cross platform including Linux, windows, freeRTOS an
   <tr>
     <td>Tibalt:</td>
     <td colspan="2"> 
-    First, every time we make a CFB, we need to generate cpp codes from IDE and compile them with source code of forte before it can be tested. 
+    First, every time we make a CFB, we need to generate cpp codes from IDE and compile them with source code of 4diac FORTE before it can be tested. 
     You know, the process can be done for several times to get the CFB ready to release even by an experienced engineer. 
     And even a tiny new requirement, for example change the pin name or add an output pin to give more details of failure execution, 
     we have to repeat the compilation process. 
-    Secondly, IDE cannot “watch” in the second tier of function block network, which means if there is a CFB embedded inside another CFB, 
+    Secondly, IDE cannot "watch" in the second tier of function block network, which means if there is a CFB embedded inside another CFB, 
     it is almost impossible to debug. 
     Engineers need a good way to encapsulate the FBs as we all know that a very big FBN is too complex to maintain. 
     We can make the basic blocks in IDE is a good start. 
