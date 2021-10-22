@@ -350,6 +350,10 @@ vertical-align:top;
 width:33%;
 }
 
+table.news  td, table.news th{
+padding:5px;   
+}
+
 section.content div > span{
 padding-top:5px;
 padding-left:5px;

@@ -1,4 +1,4 @@
-<?php printNewsEntryHeader(__FILE__, "Eclipse 4diac 2.0.0", "img/uws.png"); ?>
+<?php printNewsEntryHeader(__FILE__, "Eclipse 4diac 2.0.0", "img/release.png"); ?>
 
 <p>Have you been waiting for 4diac 2.0.0? It's finally here!</p>
 
