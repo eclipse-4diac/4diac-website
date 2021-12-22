@@ -7,7 +7,7 @@ table.nan {
 
 table.nan td {
     padding-bottom: 5px;
-    padding-right:15px;
+    padding-right: 15px;
 }
 
 table.nan td:first-child {
@@ -19,9 +19,25 @@ table.nan td:last-child {
 }
 
 table.nan tr {
-    border-bottom: 1px solid rgba(1,34,105,1.0);
+    border-bottom: 1px solid rgb(1,34,105,1.0);
 }
 
 table.nan tr:last-child {
     border-bottom: none;
 }​
+
+table.shortcut {
+    border-collapse: collapse;
+    width: 800px;
+}
+
+table.shortcut td {
+    padding-bottom: 5px;
+    padding-right: 15px;
+    border-bottom: 1px solid rgb(1,34,105,1.0);
+}
+
+table.shortcut td:first-child {
+    text-align:left;
+    width: 600px;
+}

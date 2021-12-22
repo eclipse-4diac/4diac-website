@@ -50,14 +50,6 @@ printNaNIDEHeader();
 	</tr>
 	<tr>
 		<td>
-			Refactoring
-		</td>
-		<td>
-		    Lorem Ipsum
-		</td>
-	</tr>	
-	<tr>
-		<td>
 			Bugfixes
 		</td>
 		<td>
@@ -132,14 +124,6 @@ printNaNIDEHeader();
 			This should further allow a flexible application development and to help structuring IEC 61499 applications.
 		</td>
 	</tr>
-	<tr>
-		<td>
-			Refactoring
-		</td>
-		<td>
-		    Lorem Ipsum
-		</td>
-	</tr>	
 </table>
 
 <h2 id="monitoring">Monitoring</h2>

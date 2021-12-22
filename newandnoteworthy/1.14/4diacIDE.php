@@ -22,30 +22,7 @@ printNaNIDEHeader();
 		It is now also possible to set the condition event and expression directly at the transition by simply double clicking on the transition's condition.  
 		</td>
 	</tr>
-	
-	
-	<tr>
-		<td>
-			Lorem Ipsum
-		</td>
-		<td>
-		    Lorem Ipsum
-		</td>
-	</tr>	
 </table>	
-
-<h2 id="fbtEditing">Type Editing</h2>
-<table class=nan>
-	<tr>
-		<td>
-			Lorem Ipsum
-		</td>
-		<td>
-		    Lorem Ipsum
-		</td>
-	</tr>
-
-</table>
 
 <h2 id="generalUpdates">General Updates</h2>
 

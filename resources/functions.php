@@ -34,7 +34,7 @@ function checkPageName($fileName, $defaultFile){
         return $defaultFile;
     }
     
-    if ( $fileName && '.' == $fileName{0} ) {
+    if ( $fileName && '.' == $fileName[0] ) {
         return $defaultFile;
     }
         
