@@ -46,10 +46,7 @@
 					<li><a href="http://www.windriver.com/products/vxworks/">VxWorks</a></li>
 					<li><a href="https://www.sysgo.com/products/pikeos-hypervisor/">PikeOS</a></li>
 					<li>Windows</li>
-					<li>upcoming:
-						<ul>
-							<li><a href="http://www.freertos.org/">freeRTOS</a></li>
-						</ul>
+					<li><a href="http://www.freertos.org/">freeRTOS</a></li>
 					</li>
 				</ul> 
 			</td>
