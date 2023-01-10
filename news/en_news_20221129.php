@@ -24,4 +24,3 @@ You can add items to it anytime.</p>
 <p>We look forward to talking with you all.</p>
 
 <?php include 'greeting.html';?>
-arr
