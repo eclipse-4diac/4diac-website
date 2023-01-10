@@ -10,4 +10,4 @@
 
 <p>We will post updates over the summer!</p>
 
-<?php include 'greeting.html';?>jk
+<?php include 'greeting.html';?>
