@@ -1,4 +1,4 @@
-<?php printNewsEntryHeader(__FILE__, "Sunsetting 4diac IDE’s Virtual DNS Infrastructure"); ?>
+<?php printNewsEntryHeader(__FILE__, "Sunsetting 4diac IDE's Virtual DNS Infrastructure"); ?>
 
 <p>
 In the beginning of 4diac IDE, we introduced Virtual DNS as a means to easily collect configuration values for IOs and communication FBs. 
@@ -13,7 +13,7 @@ With the next release it will not be available any more.
 </p>
 
 <p>
-If you want to try out our new global constants feature get <a href=”https://download.eclipse.org/4diac/updates/rc/”>4diac IDE’s latest RC build</a>.
+If you want to try out our new global constants feature get <a href=”https://download.eclipse.org/4diac/updates/rc/”>4diac IDE's latest RC build</a>.
 There, you can simply create a file with the extension <code>globalconsts</code> and open it in the default editor. In this editor, you can specify your constants textually:
 </p>
 
