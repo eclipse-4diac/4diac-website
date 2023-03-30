@@ -113,7 +113,7 @@
 						<li><a href="https://git.eclipse.org/c/4diac/org.eclipse.4diac.ide.git">4diac IDE source</a></li>
 						<li><a href="https://git.eclipse.org/c/4diac/org.eclipse.4diac.forte.git">4diac FORTE source</a></li>
 						<li><a href="https://github.com/eclipse-4diac/4diac-examples">4diac example systems</a></li>
-						<li><a href="https://github.com/eclipse/4diac-website">4diac website</a></li>
+						<li><a href="https://github.com/eclipse-4diac/4diac-website">4diac website</a></li>
 					</ul>
 				</td>
 			</tr>
