@@ -28,7 +28,7 @@
          	For asking questions and discussing 4diac related issues the <a href="http://eclipse.org/forums/eclipse.4diac">4diac discussion forum</a> is here for you.
          
          	<h3>Chat</h3>
-         	For a more interactive inter-action please try our <a href="https://mattermost.eclipse.org/eclipse/channels/4diac">Mattermost channel</a>.
+         	For a more interactive inter-action please try our <a href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org">Matrix channels</a>.
 		</td>
 
 		<td width="253" style='padding:0px 30px 0px 30px'>

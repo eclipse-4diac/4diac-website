@@ -8,10 +8,9 @@
 					<a href="https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g"><img src="/4diac/img/appbar.youtube.png" alt="youtube logo"/></a>
 					<a href="https://twitter.com/4diac"><img src="/4diac/img/appbar.social.twitter.png" alt="twitter log"/></a>
 					<a href="https://www.linkedin.com/grp/home?gid=6949091"><img src="/4diac/img/appbar.social.linkedin.png" alt="linkedin logo"/></a>
-					<a href="https://www.xing.com/communities/groups/4diac-1076214"><img src="/4diac/img/appbar.social.xing.png" alt="xing logo"/></a>
 					<a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=4DIAC"><img src="/4diac/img/appbar.bug.png" alt="bug icon"/></a>
 					<a href="http://eclipse.org/forums/eclipse.4diac"><img src="/4diac/img/appbar.people.multiple.png" alt="forum icon"/></a>
-					<a href="https://mattermost.eclipse.org/eclipse/channels/4diac"><img src="/4diac/img/appbar.mattermost.png" alt="mattermost logo"/></a>
+					<a href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org"><img src="/4diac/img/appbar.matrix.png" alt="matrix logo"/></a>
 				</td>
 				<td id="width33">
 					<table style="float:right;">
