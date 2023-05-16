@@ -98,7 +98,7 @@ $ mkdir build &amp;&amp; cd "build"</div>
 			<li>FORTE_COM_OPC_UA_LIB_DIR=C:\Users\USER\4diac\open62541\build\bin\Release</li>
 		</ul>
 	</li>
-	<li>Press <span class="button4diac">Configure</span> and make sure that <span class="specificText">FORTE_COM_OPC_UA_LIB</span> is set to <span class="fileLocation">open62541.dll</span></li>
+	<li>Press <span class="button4diac">Configure</span> and make sure that <span class="specificText">FORTE_COM_OPC_UA_LIB</span> is set to <span class="fileLocation">open62541.dll</span> or <span class="fileLocation">libopen62541.dll</span> depending on your operating system</li>
 	<li>Press <span class="button4diac">Configure</span>, then <span class="button4diac">Generate</span> and then <span class="button4diac">Open Project</span></li>
 	<li>Go to <span class="menu4diac">Build &rarr; Build Solution</span>. You may need to execute the command multiple times until all projects are built successfully. This will create <span class="folderLocation">$HOME/4diac/forte/build/Debug/forte.exe</span></li>
 	<li>In the forte VS Project, Set the PATH variable to include the path to the open62541.dll. Go to properties of <span class="specificText">forte</span>, <span class="specificText">Configuration Properties | Debugging | Environment</span> and add <span class="specificText">PATH=C:\Users\USER\4diac\open62541\build\bin\Release;%PATH%</span> (Set the correct user path!)
