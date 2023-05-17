@@ -1,4 +1,4 @@
-<?php printNewsEntryHeader(__FILE__, "Welcoming our 2023 GSoC contributors"); ?>
+<?php printNewsEntryHeader(__FILE__, "Welcoming our 2023 GSoC contributors", "img/gsoc.svg"); ?>
 
 <p>Dear 4diac community,
 </p>
@@ -9,9 +9,10 @@ We are pleased that two of the proposals submitted for Eclipse 4diac were accept
 The projects allow students to concentrate on open source contributions during their summer break, and provide a unique opportunity for projects like Eclipse 4diac to develop prototypes for new features.
 </p>
 
-<p>
-	Andrea, a second-year computer science student, will work on improving the quality of the IDE. Paul was already a participant of the program in 2022. This year, he will work on providing tools for developers of IEC 61499 applications to ensure their correctness.
-</p>
+<ul>
+ <li>Andrea, a second-year computer science student, will work on improving the quality of the IDE. </li>
+ <li>Paul was already a participant of the program in 2022. This year, he will work on providing tools for developers of IEC 61499 applications to ensure their correctness.</li>
+</ul>
 
 <p>
 Two of our committers will serve as mentors for our students. 
