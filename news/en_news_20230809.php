@@ -47,4 +47,4 @@ see Details: 	<li><a href="https://devcon.espressif.com/">DevCon23</a></li>
 
 
 Cheers,
-Franz Höpfinger in behalv of HR Agrartechnik GmbH
+Franz Höpfinger on behalv of HR Agrartechnik GmbH
