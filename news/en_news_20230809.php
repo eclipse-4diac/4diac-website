@@ -1,11 +1,11 @@
-<?php printNewsEntryHeader(__FILE__, "Guest Post: Eclipse 4diac™ for Agrimechatronics: The Project logiBUS®"); ?>
+<?php printNewsEntryHeader(__FILE__, "Guest Post: Eclipse 4diac&trade; for Agrimechatronics: The Project logiBUS&reg;"); ?>
 
 <p>
-The folks at HR Agrartechnik GmbH have been busy to port Eclipse 4diac™ FORTE to the ESP32 and integrate the ISOBUS (ISO 11783) protocol
+The folks at HR Agrartechnik GmbH have been busy to port Eclipse 4diac&trade; FORTE to the ESP32 and integrate the ISOBUS (ISO 11783) protocol
 over the last year. 
 </p>
 
-<p><img src="https://www.eclipse.org/4diac/news/figs/LogiBUS_Logo.svg" alt="logiBUS® Logo" width="125"/> is the Fusion of IEC 61499 programming and ISO 11783 compatibiltiy. 
+<p><img src="https://www.eclipse.org/4diac/news/figs/LogiBUS_Logo.svg" alt="logiBUS&reg; Logo" width="125"/> is the Fusion of IEC 61499 programming and ISO 11783 compatibiltiy. 
 </p>
 
 <p>ISOBUS, also known as ISO 11783, is a communication protocol standard developed for agricultural equipment to facilitate the exchange of data between different types of farm machinery and implements. The term "ISOBUS" stands for "ISO Bus," where ISO refers to the International Organization for Standardization, and "Bus" refers to a system of communication between multiple devices.
@@ -26,25 +26,25 @@ over the last year.
 
 <p>
 While exising ISOBUS Stacks require heavy C or C++ Programming as well as knowlege of both, the Bus Protocol and the Programming API of the corresponding ISOBUS Stack, 
-logiBUS® ease the same a log by covering the Complexity in IEC 61499 Function Blocks. 
+logiBUS&reg; ease the same a log by covering the Complexity in IEC 61499 Function Blocks. 
 Therefore the Programming of a ISOBUS Universal Terminal Softkey Input in Eclipse 4diac™ is the same as programming a digital input. Nothing new to learn. 
 </p>
 
 <p>
 A corresponding Website is under construction, but first examples are on the Page: </p>
 <ul>
-<li><a href="https://www.logibus.tech/">logiBUS®</a></li>
+<li><a href="https://www.logibus.tech/">logiBUS&reg;</a></li>
 </ul>
 
 
 <p>
 And, to support Open Source, some Customers agreed to publish their Projects: </p>
 <ul>
-	<li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SlurryTanker-sample">Eclipse 4diac™ SlurryTanker sample</a></li>
+	<li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SlurryTanker-sample">Eclipse 4diac&trade; SlurryTanker sample</a></li>
 </ul>
 
 <p>
-There will be a featured Speech about the basics of logiBUS® at the Espressif Developer
+There will be a featured Speech about the basics of logiBUS&reg; at the Espressif Developer
 Conference 2023 September 12, 14:30
 see Details:</p>
 <ul>
