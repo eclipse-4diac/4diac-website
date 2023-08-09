@@ -32,25 +32,24 @@ Therefore the Programming of a ISOBUS Universal Terminal Softkey Input in Eclips
 
 <p>
 A corresponding Website is under construction, but first examples are on the Page: </p>
-<ol>
+<ul>
 <li><a href="https://www.logibus.tech/">logiBUS®</a></li>
-</ol>
+</ul>
 
 
 <p>
 And, to support Open Source, some Customers agreed to publish their Projects: </p>
-<ol>
+<ul>
 	<li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SlurryTanker-sample">Eclipse 4diac™ SlurryTanker sample</a></li>
-</ol>
+</ul>
 
 <p>
 There will be a featured Speech about the basics of logiBUS® at the Espressif Developer
 Conference 2023 September 12, 14:30
 see Details:</p>
-<ol>
+<ul>
 	<li><a href="https://devcon.espressif.com/">DevCon23</a></li>
-</ol>
-
+</ul>
 
 
 <p>Cheers,<br>
