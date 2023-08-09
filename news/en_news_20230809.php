@@ -31,20 +31,30 @@ Therefore the Programming of a ISOBUS Universal Terminal Softkey Input in Eclips
 </p>
 
 <p>
-A corresponding Website is under construction, but first examples are on the Page: 	<li><a href="https://www.logibus.tech/">logiBUS®</a></li>
-</p>
+A corresponding Website is under construction, but first examples are on the Page: </p>
+<ol>
+<li><a href="https://www.logibus.tech/">logiBUS®</a></li>
+</ol>
+
 
 <p>
-And, to support Open Source, some Customers agreed to publish their Projects: <li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SlurryTanker-sample">Eclipse 4diac™ SlurryTanker sample</a></li>
-</p>
+And, to support Open Source, some Customers agreed to publish their Projects: </p>
+<ol>
+	<li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SlurryTanker-sample">Eclipse 4diac™ SlurryTanker sample</a></li>
+</ol>
 
 <p>
 There will be a featured Speech about the basics of logiBUS® at the Espressif Developer
 Conference 2023 September 12, 14:30
-see Details: 	<li><a href="https://devcon.espressif.com/">DevCon23</a></li>
+see Details:</p>
+<ol>
+	<li><a href="https://devcon.espressif.com/">DevCon23</a></li>
+</ol>
+
+
+
+<p>Cheers,<br>
+Franz Höpfinger on behalf of HR Agrartechnik GmbH
 </p>
+<br>
 
-
-
-Cheers,
-Franz Höpfinger on behalv of HR Agrartechnik GmbH
