@@ -26,7 +26,7 @@ over the last year.
 
 <p>
 While exising ISOBUS Stacks require heavy C or C++ Programming as well as knowlege of both, the Bus Protocol and the Programming API of the corresponding ISOBUS Stack, 
-logiBUS&reg; ease the same a log by covering the Complexity in IEC 61499 Function Blocks. 
+logiBUS&reg; ease the same a lot by covering the Complexity in IEC 61499 Function Blocks. 
 Therefore the Programming of a ISOBUS Universal Terminal Softkey Input in Eclipse 4diac™ is the same as programming a digital input. Nothing new to learn. 
 </p>
 
