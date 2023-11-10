@@ -4,6 +4,7 @@
 <title>4diac FORTE - The 4diac runtime environment</title>
 <meta name="description" content="The 4diac runtime environment (4diac FORTE) is a small portable implementation of an IEC 61499 runtime environment targeting small embedded control devices (16/32 Bit), implemented in C++. It supports online-reconfiguration of its applications and the real-time capable execution of all function block types provided by the IEC 61499 standard. With that 4diac FORTE abstracts vendor and device specific features away allowing to run the same control applications  on any device."> 
 <meta name="keywords" content="runtime environment, embedded devices, smart field devices, vendor neutral, c++, real-time execution, heterogenouse devices">
+<meta http-equiv='content-language' content='en-us'>
 </head>
 
 <body>

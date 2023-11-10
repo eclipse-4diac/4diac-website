@@ -4,7 +4,7 @@
 <title>4diac LIB: 4diac's IEC 61499 Function Block Library</title>
 <meta name="description" content="4diac's IEC 61499 function block (FB) library provides a large set of FBs helping you in developing your control applications. The library contains for example, FBs for event managment, configuring real-time execution behavior, all IEC 61131-3 FBs and functions, IO access, and communication handling."> 
 <meta name="keywords" content="function blocks, event management, IEC 61131-3, OSCAT, IO handling, EthernetPOWERLINK, IEC 61499 real-time handling, communication">
-
+<meta http-equiv='content-language' content='en-us'>
 </head>
 
 <body>

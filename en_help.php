@@ -6,8 +6,9 @@ include 'head.php';?>
 
 <link rel="stylesheet" type="text/css" href="help.css">
 <title>Eclipse 4diac Documentation</title>
-<meta name="Eclipse 4diac's documentation providing help and to get started with Eclipse 4diac"> 
+<meta name="description" content="Eclipse 4diac's documentation providing help and to get started with Eclipse 4diac"> 
 <meta name="keywords" content="porting, tutorials, getting started, overview  ">
+<meta http-equiv='content-language' content='en-us'>
 
 <script type="text/javascript" src="jquery-1.6.2.js"></script>
 

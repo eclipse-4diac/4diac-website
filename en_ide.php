@@ -4,7 +4,7 @@
 <title>4diac IDE</title>
 <meta name="description" content="4diac IDE is an integrated development environment for developing distributed control applications according to the models of IEC 61499. For modelled applications and application components (IEC 61499 function blocks) code is gneerated and they can be downaloded to distributed field devices according."> 
 <meta name="keywords" content="integrated development environment, model-driven development, domains specific models, developing distributed control applications, IEC 61499 editor, distributed system management, communication configuration">
-
+<meta http-equiv='content-language' content='en-us'>
 
 </head>
 

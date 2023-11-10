@@ -5,6 +5,7 @@
 <title>4diac Downloads</title>
 <meta name="description" content="Getting the latest version of the different components of 4diac."> 
 <meta name="keywords" content="4diac IDE, 4diac FORTE, source code">
+<meta http-equiv='content-language' content='en-us'>
 
 <script type="text/javascript">
 	$(document).ready(function() {
