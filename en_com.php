@@ -2,8 +2,9 @@
 <head>
 <?php include 'head.php';?>
 <title>4diac-Support</title>
-<meta name="4diac open source community helping new users applying 4diac for their applications as well as driving the further development of 4diac."> 
+<meta name="description" content="4diac open source community helping new users applying 4diac for their applications as well as driving the further development of 4diac."> 
 <meta name="keywords" content="open source community, mailing lists, forums, user support">
+<meta http-equiv='content-language' content='en-us'>
 </head>
 
 <body>

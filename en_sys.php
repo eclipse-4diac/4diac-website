@@ -5,6 +5,7 @@
 <title>4diac Systems</title>
 <meta name="description" content="4diac provides you with a set of example projects helping to learn IEC 61499 and 4diac. Furthernore these examples show different features of IEC 61499."> 
 <meta name="keywords" content="application examples, tutorials, IEC 61499 applications">
+<meta http-equiv='content-language' content='en-us'>
 </head>
 
 <body>

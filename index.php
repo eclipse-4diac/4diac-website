@@ -1,10 +1,11 @@
 <html>
 <head>
 <?php include 'head.php';?>
-<title>Eclipse 4diac - The Open Source Environment for Distributed Industrial Automation and Control Systems</title>
-<meta name="description" content="Eclipse 4diac(tm) is an open source PLC environment allowing to implement industrial control solutions in a vendor neutral way. 4diac implements IEC 61499 extending IEC 61131-3 with better support for controller to controller communication and dynamic reconfiguration. With that 4diac provides the infrastructure for industrie 4.0 and industrial IoT."> 
+<title>Eclipse 4diac(TM) - Open Source for Industrial Automation Systems</title>
+<meta name="description" content="Discover PLC programming leveraging IEC 61499—an extension to IEC 61131-3. Enhance controller communication for Industry 4.0 and Industrial IoT readiness.">
 <meta name="keywords" content="open source PLC, programmable logic controller, distributed control systems, networked embedded systems, distributed industrial process measurement and control systems, IEC 61499, IEC 61131-3, dynamic reconfiguration, industrial communication, industrie 4.0, smart manufacturing, controller to controller communication, indusrrial IoT, internet of things">
 <meta name="google-site-verification" content="v0F1VlYRwarfPpjribA2S4SBSl6ZvNtzautGKWO7juI" />
+<meta http-equiv='content-language' content='en-us'>
 </head>
 
 <body>
@@ -43,7 +44,7 @@ IEC 61499 defines a domain specific modeling language for developing distributed
 <br>the required infrastructure for Industrie 4.0 and industrial IoT applications.</h4>
 
 <section class="applicationdomains">
-<h1>Application Domains</h1>
+<h2 class="applicationdomains">Application Domains</h2>
 
 <section class="appdomain">
 <span><img src="img/building.png" alt="building automation" width="110"></span>
@@ -79,7 +80,7 @@ IEC 61499 defines a domain specific modeling language for developing distributed
     <a class="downloadbutton" href="https://www.eclipse.org/4diac/en_dow.php">
     	<div><i class="fa fa-download"></i> Download Now</div></a> 
     <section class="news">
-        <h1><a href="https://www.eclipse.org/4diac/feed"><i class="fa fa-rss"></i></a> Recent Posts</h1>
+        <h2><a href="https://www.eclipse.org/4diac/feed"><i class="fa fa-rss"></i></a> Recent Posts</h2>
     	<div class="news-list">
     		<?php include 'newslist.php'?>
     	</div>

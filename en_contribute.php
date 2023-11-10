@@ -2,15 +2,16 @@
 <head>
 <?php include 'head.php';?>
 <title>Contributing to Eclipse 4diac</title>
-<meta name="As open source project depends on the support of its userser and contributors. Learn hear how you can contribute to Eclispe 4diac"> 
+<meta name="description" content="As open source project depends on the support of its userser and contributors. Learn hear how you can contribute to Eclispe 4diac"> 
 <meta name="keywords" content="how to contribute, develop new featuers, fix bugs, triage bugs, extend documentation, dvelop demo applications">
+<meta http-equiv='content-language' content='en-us'>
 </head>
 
 <body>
 <?php include 'header.html';?>
 
 <section class="img">
-	<img src="img/community.png"/>
+	<img src="img/community.png" alt="Eclipse 4diac community"/>
 </section>
 
 <section class="left">

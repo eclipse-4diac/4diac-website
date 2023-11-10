@@ -10,6 +10,7 @@ include 'head.php';?>
 <meta name="description" content="Updates from the 4diac community for the 4diac community"> 
 <meta name="keywords" content="updates, news, applications, noteworthy">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv='content-language' content='en-us'>
 
 <link rel="alternate" href="/feed/" title="4diac's News RSS feed" type="application/rss+xml" />
 

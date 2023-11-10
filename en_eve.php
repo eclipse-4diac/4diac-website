@@ -6,7 +6,7 @@
 <title>4diac @ events</title>
 <meta name="description" content="The 4diac users' workshop brings the developers and users of 4diac together as the users are the main drivers of ongoing development activities. It provides a discussion platform to present achieved results based on the 4diac open source project. Moreover, new ideas and approaches as well as near future plans for 4diac can be discussed which turn this initiative into the position to become a larger framework for many application domains."> 
 <meta name="keywords" content="4diac users, discussion, usage example, idea exchange">
-
+<meta http-equiv='content-language' content='en-us'>
 </head>
 
 <body>
