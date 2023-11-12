@@ -1,6 +1,6 @@
 <?php printNewsEntryHeader(__FILE__, "Improving 4diac Deployment"); ?>
 
-<p>In our currently running <a href="https://www.eclipse.org/4diac/en_news.php#en_news_20181203">usability survey</a> a hotspot for disappointment is showing up, namely the application deployment.  
+<p>In our currently running <a href="https://eclipse.dev/4diac/en_news.php#en_news_20181203">usability survey</a> a hotspot for disappointment is showing up, namely the application deployment.  
 Interestingly we started on this already in the last release. With 4diac 1.10. the following improvements are available:</p>
 <ul>
 	<li><b>No more connection refused error messages:</b> 4diac IDE automatically deactivates monitoring if needed and after the deployment re-enables it.</li> 

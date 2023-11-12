@@ -37,7 +37,7 @@ foreach(array_reverse($folder) as $file){
 	$rssfeed .= '<item>';
 	$rssfeed .= '<title>' . getNewsHeadline($lines[0]) . '</title>';
 	$rssfeed .= '<description>' . createDescription($lines, $greetings) . '</description>';
-	$rssfeed .= '<link> https://www.eclipse.org/4diac/en_news.php#' . basename($file,".php") . '</link>';
+	$rssfeed .= '<link> https://eclipse.dev/4diac/en_news.php#' . basename($file,".php") . '</link>';
 	$rssfeed .= '<pubDate>' . date ("D, d M Y H:i:s T", filectime($file)) . '</pubDate>';
 	$rssfeed .= '</item>';
 }

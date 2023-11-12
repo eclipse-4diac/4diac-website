@@ -2,7 +2,7 @@
 
 
 <figure class="single">
-<img src="https://www.eclipse.org/4diac/news/figs/4diac_cake.png" width="150px" alt="Eclipse 4diac's birthday cake" />
+<img src="https://eclipse.dev/4diac/news/figs/4diac_cake.png" width="150px" alt="Eclipse 4diac's birthday cake" />
 </figure>
 
 

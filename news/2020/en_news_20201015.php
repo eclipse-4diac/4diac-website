@@ -8,7 +8,7 @@ These improvements are, for example, a modernized look and feel of the ECC edito
 advanced validation of basic function blocks, automatic layout of function block networks using the <a href="https://www.eclipse.org/elk/">Eclipse Layout Kernel</a>, 
 and many many usability improvements. 
 All these improvements should make your work with Eclipse 4diac much easier. 
-A detailed list of new and noteworthy features can be found at the <a href="https://www.eclipse.org/4diac/newandnoteworthy/1.13/">new and noteworthy page for the 1.13.0 release</a>.</p>
+A detailed list of new and noteworthy features can be found at the <a href="https://eclipse.dev/4diac/newandnoteworthy/1.13/">new and noteworthy page for the 1.13.0 release</a>.</p>
 
 <p>We could address 190 issues in the work for the new Eclipse 4diac version. 
 A full list of all bugs addressed in this release can be found on the <a href="https://projects.eclipse.org/projects/iot.4diac/releases/1.13.0/bugs">1.13.0 release page</a>.

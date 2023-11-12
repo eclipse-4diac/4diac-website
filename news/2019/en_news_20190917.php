@@ -11,7 +11,7 @@ So we provide the meeting rooms and coffee, and you bring your time and ideas.
 Our goal is turn this event into 4days of showing, discussing, planning, hacking, experimenting, learning with Eclipse 4diac.</p>
 
 <p>4 days for the 4diac community to meet and exchange! 
-For details on location, registration and programm please visit the <a href="https://www.eclipse.org/4diac/en_eve.php?event=2019_4days">4days of 4diac page</a>.</p>
+For details on location, registration and programm please visit the <a href="https://eclipse.dev/4diac/en_eve.php?event=2019_4days">4days of 4diac page</a>.</p>
 
 <p>We are looking forward to meet you in Linz,
 <br>The 4diac Team</p>

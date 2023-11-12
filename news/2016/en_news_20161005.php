@@ -10,7 +10,7 @@
 <p>At the 2016 4diac users' workshop we had again a great program. 
 It consisted of 4diac applications in smart grids and robot coordination control, utilizing OPC UA as communication protocol, 
 verified compilers and formal behavior specification, and experiences from using 4diac in teaching IEC 61499 lab courses. 
-The presentations are now available at the <a href="https://www.eclipse.org/4diac/en_uws.php">4diac users' workshop page<a>.</p>
+The presentations are now available at the <a href="https://eclipse.dev/4diac/en_uws.php">4diac users' workshop page<a>.</p>
 
 <p>Furthermore we had a live demo from <a href="http://www.conmeleon.org/">Conmeleon</a> showing how 4diac controlled lights 
 and interacted with <a href="http://www.openhab.org/">openHAB</a> in a home automation scenario.<p>

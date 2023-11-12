@@ -1,7 +1,7 @@
 <?php printNewsEntryHeader(__FILE__, "4diac 2.0.0 Release Feature Freeze Phase", "img/release.png"); ?>
 
 <p>As every year, the beginning of September starts the feature freeze phase for the 4diac autumn release.
-We have many new <a href="https://www.eclipse.org/4diac/newandnoteworthy/2.0/index.php">features</a> and 
+We have many new <a href="https://eclipse.dev/4diac/newandnoteworthy/2.0/index.php">features</a> and 
 <a href="https://projects.eclipse.org/projects/iot.4diac/releases/2.0.0/bugs">bug fixes</a> in this release:</p>
 
 <ul>

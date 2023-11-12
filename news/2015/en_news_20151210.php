@@ -8,7 +8,7 @@
 <p>Today we have a guest post entry from NOJA Power presenting their Smart Grid Automation (SGA) 
 Software based on 4DIAC:</p> 
 
-<p><center><img src="https://www.eclipse.org/4diac/news/figs/sga-banner.jpg" alt="NOJA Power sga banner" width="800"/></center></p>
+<p><center><img src="https://eclipse.dev/4diac/news/figs/sga-banner.jpg" alt="NOJA Power sga banner" width="800"/></center></p>
 
 <p>
 <a href="http://www.nojapower.com.au/index.html">NOJA Power</a> (NOJA) researches, develops, 
@@ -84,7 +84,7 @@ NOJA has plans to improve the offering including:
 <table><tr>
 	<td >
 	<figure>
-		<img src="https://www.eclipse.org/4diac/news/figs/SMG-screen.jpg" alt="NOJA Power Smart Grid Automation Software (Function Blocks)" width="350"/>
+		<img src="https://eclipse.dev/4diac/news/figs/SMG-screen.jpg" alt="NOJA Power Smart Grid Automation Software (Function Blocks)" width="350"/>
 		<figcaption>NOJA Power Smart Grid Automation Software (Function Blocks)</figcaption>
 	</figure>			  
 		</td>
@@ -92,7 +92,7 @@ NOJA has plans to improve the offering including:
 		</td>
     <td >
 <figure>
-		<img src="https://www.eclipse.org/4diac/news/figs/Load-Restore-Application.jpg" alt="NOJA Power Smart Grid Automation Software (Load Restore Application)" width="350"/>
+		<img src="https://eclipse.dev/4diac/news/figs/Load-Restore-Application.jpg" alt="NOJA Power Smart Grid Automation Software (Load Restore Application)" width="350"/>
 		<figcaption>NOJA Power Smart Grid Automation Software (Load Restore Application)</figcaption>
 	</figure>			 
 </td>

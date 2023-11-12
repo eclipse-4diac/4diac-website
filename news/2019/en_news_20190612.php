@@ -4,6 +4,6 @@
 
 <img src="news/figs/20190612_arrowheadWithOPCUAAtGothenburg.jpg" width="800"/>
 
-<p>The documentation about how to use this amazing library in 4diac can be found <a target="_blank" href="https://www.eclipse.org/4diac/en_help.php?helppage=html/communication/arrowhead.html ">here</a>. You can easily register your own services and look for orchestration rules for your devices.</p>
+<p>The documentation about how to use this amazing library in 4diac can be found <a target="_blank" href="https://eclipse.dev/4diac/en_help.php?helppage=html/communication/arrowhead.html ">here</a>. You can easily register your own services and look for orchestration rules for your devices.</p>
 
 <?php include 'greeting.html';?>

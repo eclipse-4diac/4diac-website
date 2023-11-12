@@ -33,7 +33,7 @@
 
 <h3>I like it already, how do I use it?</h3>
 
-<p>You need to use the develop branch of FORTE. The usage has changed a little, but the documentation is already up <a href="https://www.eclipse.org/4diac/en_help.php?helppage=html/communication/opc_ua_version1.html" target="_blank">online</a>. The main changes are which Function Blocks are used for different OPC UA capabilites and how does the ID looks like.</p>
+<p>You need to use the develop branch of FORTE. The usage has changed a little, but the documentation is already up <a href="https://eclipse.dev/4diac/en_help.php?helppage=html/communication/opc_ua_version1.html" target="_blank">online</a>. The main changes are which Function Blocks are used for different OPC UA capabilites and how does the ID looks like.</p>
 
 <p>So, please use it, test it and open bugs for it. And of course, if you want to contribute to it, please do it by pushing your changes to FORTE's branch "feature/MO44GA" which will trigger the CI.</p>
 
