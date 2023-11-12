@@ -14,7 +14,7 @@ The PLC received the commands from an HMI and sent its states back using MQTT me
 allowing the user to see in real-time the process steps of the prototype.</p>
 
 <figure class="single">
-	<img src="https://www.eclipse.org/4diac/news/figs/EclipseDemoCamp.png" width="600px" alt="4diac at Eclipse Demo Camp"/>
+	<img src="https://eclipse.dev/4diac/news/figs/EclipseDemoCamp.png" width="600px" alt="4diac at Eclipse Demo Camp"/>
 	<figcaption>4diac at Eclipse Demo Camp with IndraControl XM22 PLC from Bosch Rexroth controlling a 3D-printed prototype of a un/stacker module</figcaption>	
 </figure>
 

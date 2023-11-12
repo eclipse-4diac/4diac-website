@@ -13,7 +13,7 @@
 <?php include 'greeting.html';?>
 </td>
 		<td><figure>		
-	<img alt="3d printed factory model" src="https://www.eclipse.org/4diac/news/figs/spsIpcDrivesItaly.JPG" width="400"><br>
+	<img alt="3d printed factory model" src="https://eclipse.dev/4diac/news/figs/spsIpcDrivesItaly.JPG" width="400"><br>
 	<figcaption>3d printed factory model</figcaption>
 </figure></td>
 	</tr>

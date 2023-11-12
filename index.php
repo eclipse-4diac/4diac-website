@@ -77,10 +77,10 @@ IEC 61499 defines a domain specific modeling language for developing distributed
 
 
 <section class="right">
-    <a class="downloadbutton" href="https://www.eclipse.org/4diac/en_dow.php">
+    <a class="downloadbutton" href="https://eclipse.dev/4diac/en_dow.php">
     	<div><i class="fa fa-download"></i> Download Now</div></a> 
     <section class="news">
-        <h2><a href="https://www.eclipse.org/4diac/feed"><i class="fa fa-rss"></i></a> Recent Posts</h2>
+        <h2><a href="https://eclipse.dev/4diac/feed"><i class="fa fa-rss"></i></a> Recent Posts</h2>
     	<div class="news-list">
     		<?php include 'newslist.php'?>
     	</div>

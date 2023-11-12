@@ -5,7 +5,7 @@ The folks at HR Agrartechnik GmbH have been busy to port Eclipse 4diac&trade; FO
 over the last year. 
 </p>
 
-<p><img src="https://www.eclipse.org/4diac/news/figs/LogiBUS_Logo.svg" alt="logiBUS&reg; Logo" width="125"/> is the Fusion of IEC 61499 programming and ISO 11783 compatibiltiy. 
+<p><img src="https://eclipse.dev/4diac/news/figs/LogiBUS_Logo.svg" alt="logiBUS&reg; Logo" width="125"/> is the Fusion of IEC 61499 programming and ISO 11783 compatibiltiy. 
 </p>
 
 <p>ISOBUS, also known as ISO 11783, is a communication protocol standard developed for agricultural equipment to facilitate the exchange of data between different types of farm machinery and implements. The term "ISOBUS" stands for "ISO Bus," where ISO refers to the International Organization for Standardization, and "Bus" refers to a system of communication between multiple devices.

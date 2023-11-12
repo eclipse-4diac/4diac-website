@@ -17,7 +17,7 @@ Based on that feedback from the attendees whe have identified first topics to be
 <p>But there is plenty of space for more!</p>
 
 <p>For the spontaneous people: We still have places left! 
-You can register <a href="https://www.eclipse.org/4diac/en_eve.php?event=2019_4days">here</a>.</p>
+You can register <a href="https://eclipse.dev/4diac/en_eve.php?event=2019_4days">here</a>.</p>
 
 <p>Looking forward to meet you next week in Linz!
 <br>The 4diac Team</p>
