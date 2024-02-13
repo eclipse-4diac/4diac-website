@@ -49,6 +49,7 @@ Conference 2023 September 12, 14:30
 see Details:</p>
 <ul>
 	<li><a href="https://devcon.espressif.com/">DevCon23</a></li>
+	<li><a href="https://www.youtube.com/watch?v=MYUgwhLAroA">Devcon23 - Turning the ESP32 into a PLC with the Eclipse 4diac&trade; Framework: The Project logiBUS&reg; on YouTube</a></li>
 </ul>
 
 
