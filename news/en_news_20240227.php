@@ -11,6 +11,10 @@
 
 
 <img src="https://www.eclipse.org/4diac/news/figs/IMG_20240227_100459_022.jpg" alt="Award" width="125"/>
+<img src="https://www.eclipse.org/4diac/news/figs/16F0AB7B-BE87-4614-8CD5-C6F7C2AE31B9_1_105_c.jpeg" alt="Award" width="125"/>
+<img src="https://www.eclipse.org/4diac/news/figs/95B57F5B-7F53-419D-9C21-3873A6022D4C_1_105_c.jpeg" alt="Award" width="125"/>
+<img src="https://www.eclipse.org/4diac/news/figs/DBE0CE80-CD68-40E3-A701-E6AE181896AE_1_105_c.jpeg" alt="Award" width="125"/>
+<img src="https://www.eclipse.org/4diac/news/figs/F734F58A-2682-41E6-8CA8-4C466FF9B6B7_1_105_c.jpeg" alt="Award" width="125"/>
 
 
 
