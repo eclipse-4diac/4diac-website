@@ -14,9 +14,9 @@ You can now find all Eclipse 4diac repositories conveniently housed under the of
 
 <h3>What Does This Mean for You?</h3>
 <ul>
-	<il><b>Improved Accessibility:</b> Accessing, exploring, and contributing to Eclipse 4diac is now easier than ever with GitHub's intuitive interface and extensive documentation.</il>
-	<il><b>Enhanced Collaboration:</b> GitHub's powerful collaboration features empower developers worldwide to collaborate seamlessly on code, report issues, suggest enhancements, and engage in meaningful discussions.</il>
-	<il><b>Transparent Development:</b> Stay up-to-date with the latest developments, bug fixes, and feature enhancements through our transparent development process on GitHub. Follow along, provide feedback, and shape the future of Eclipse 4diac.</li>
+	<li><b>Improved Accessibility:</b> Accessing, exploring, and contributing to Eclipse 4diac is now easier than ever with GitHub's intuitive interface and extensive documentation.</li>
+	<li><b>Enhanced Collaboration:</b> GitHub's powerful collaboration features empower developers worldwide to collaborate seamlessly on code, report issues, suggest enhancements, and engage in meaningful discussions.</li>
+	<li><b>Transparent Development:</b> Stay up-to-date with the latest developments, bug fixes, and feature enhancements through our transparent development process on GitHub. Follow along, provide feedback, and shape the future of Eclipse 4diac.</li>
 </ul>
 
 <h3>Get Involved!</h3>
@@ -24,9 +24,9 @@ You can now find all Eclipse 4diac repositories conveniently housed under the of
 Whether you're a seasoned developer, an enthusiastic user, or simply curious about industrial automation and control systems, there are numerous ways to get involved with Eclipse 4diac:
 </p>
 <ul>
-	<il><b>Contribute Code:</b> Dive into our repositories, explore open issues, and submit pull requests to contribute code improvements, bug fixes, or new features.</il>
-	<il><b>Report Issues:</b> Encountered a bug or have an idea for improvement? Open an issue on GitHub, and let us know. Your feedback helps us continuously refine and enhance Eclipse 4diac.</il>
-	<il><b>Join the Discussion:</b> Engage with the Eclipse 4diac community on GitHub discussions. Share your experiences, ask questions, and connect with like-minded individuals passionate about industrial automation and control systems.</il>
+	<li><b>Contribute Code:</b> Dive into our repositories, explore open issues, and submit pull requests to contribute code improvements, bug fixes, or new features.</li>
+	<li><b>Report Issues:</b> Encountered a bug or have an idea for improvement? Open an issue on GitHub, and let us know. Your feedback helps us continuously refine and enhance Eclipse 4diac.</li>
+	<li><b>Join the Discussion:</b> Engage with the Eclipse 4diac community on GitHub discussions. Share your experiences, ask questions, and connect with like-minded individuals passionate about industrial automation and control systems.</li>
 </ul>
 
 <h3>Fork Us on GitHub!</h3>
