@@ -2,7 +2,7 @@
 
 <p>
 <a href="https://www.aimirimsti.com.br/en/solu%C3%A7%C3%B5es">Aimirim</a> would like to anounce what we consider a nice contribution to 4DIAC community.
-The <a href="https://github.com/Aimirim-STI/4diac-Plugin-UAORT">UAORT plug-in</a> is a lighhouse toward interoperability in IEC61499 allowing 4DIAC users deploy on UAO (Universal Automation) runtime.
+The <a href="https://github.com/Aimirim-STI/4diac-Plugin-UAORT">UAORT plug-in</a> is a lighthouse toward interoperability in IEC61499 allowing 4DIAC users deploy on UAO (Universal Automation) runtime.
 </p>
 <p>
 We understood that UAO is growing and the demand for this interoperability is growing also.
