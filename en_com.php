@@ -47,7 +47,7 @@
   	<p>In order to understand the modelling concepts used in Eclipse 4diac it is advisable to get familiar with the IEC 61499 reference model. The following resources provide more information about the IEC 61499 concept and the 4diac implementation:</p>
 		<ul>
       		<li><a href="https://en.wikipedia.org/wiki/IEC_61499">Wikipedia article on IEC 61499</a></li>
-      		<li><a href="en_help.php?helppage=html/before4DIAC/iec61499.html">Introduction to IEC 61499 in the Eclipse 4diac documentation</a>
+      		<li><a href="https://github.com/eclipse-4diac/4diac-documentation/blob/main/src/intro/iec61499.adoc">Introduction to IEC 61499 in the Eclipse 4diac documentation</a>
 			<li><a href="http://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601/ref=sr_1_1?ie=UTF8&qid=1438845779&sr=8-1&keywords=zoitl">Modelling Control Systems Using IEC 61499 by Robert W. Lewis and Alois Zoitl</a></li>
 			<li><a href="http://www.amazon.de/Real-Time-Execution-61499-Alois-Zoitl/dp/1934394270/ref=sr_1_3?ie=UTF8&qid=1438845779&sr=8-3&keywords=zoitl">Real-Time Execution for IEC 61499 by Alois Zoitl</a></li>
 			<li><a href="https://www.crcpress.com/Distributed-Control-Applications-Guidelines-Design-Patterns-and-Application/Zoitl-Strasser/9781482259056">Distributed Control Applications by Alois Zoitl and Thomas Strasser</a></li>
