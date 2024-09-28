@@ -1,6 +1,8 @@
 <?php printNewsEntryHeader(__FILE__, "Eclipse 4diac Weekly #2"); ?>
 
+<p>
 Update on what development happened across the Eclipse 4diac project in the week from September 13 to September 20, 2024.
+</p>
 
 <h3>Enhancements and Fixes in 4diac IDE</h3>
 <ul>
@@ -61,7 +63,7 @@ Update on what development happened across the Eclipse 4diac project in the week
   </li>
 </ul>
 
-
+<p>Many thanks to all contributors for their work and their feedback!</p>
 
 <?php include 'greeting.html';?>
 
