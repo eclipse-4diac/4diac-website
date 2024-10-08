@@ -2,7 +2,7 @@
 
 require_once("../resources/functions.php");
 
-header("Content-Type: application/rss+xml; charset=ISO-8859-1");
+header("Content-Type: application/rss+xml; charset=UTF-8");
 
 #small script to turn our news items into an rss feed to be included in blog agregators and news readers	
 	
@@ -20,7 +20,7 @@ header("Content-Type: application/rss+xml; charset=ISO-8859-1");
 	
 	
 	
-$rssfeed = '<?xml version="1.0" encoding="ISO-8859-1"?>';
+$rssfeed = '<?xml version="1.0" encoding="UTF-8"?>';
 $rssfeed .= '<rss version="2.0">';
 $rssfeed .= '<channel>';
 $rssfeed .= '<title>Eclipse 4diac News RSS feed</title>';
@@ -35,7 +35,7 @@ $folder = glob('../news/*.php');
 foreach(array_reverse($folder) as $file){
 	$lines = file($file);
 	$rssfeed .= '<item>';
-	$rssfeed .= '<title>' . getNewsHeadline($lines[0]) . '</title>';
+	$rssfeed .= '<title>' . strip_tags(html_entity_decode(getNewsHeadline($lines[0]), ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML401, 'UTF-8')) . '</title>';
 	$rssfeed .= '<description>' . createDescription($lines, $greetings) . '</description>';
 	$rssfeed .= '<link> https://eclipse.dev/4diac/en_news.php#' . basename($file,".php") . '</link>';
 	$rssfeed .= '<pubDate>' . date ("D, d M Y H:i:s T", filectime($file)) . '</pubDate>';
