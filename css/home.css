@@ -1,0 +1,41 @@
+.subscribe-btn {
+	display: block;
+	width: 100%;
+}
+
+.view-all-btn{
+	display: block;
+	width: 100%;
+	background-color: #012269;
+	border: 0px;
+}
+
+.news-btn-font{
+	font-size: 16px;	
+	font-weight: bold;
+}
+
+.news-view-all-font{
+	color: #012269;
+}
+
+.view-all-btn:hover {
+	background-color: #99a6c3;
+	}
+
+
+.featured-jumbotron .btn {
+	min-width:200px;
+	padding-left:0px;
+	padding-right:0px
+}
+				
+.featured-jumbotron.featured-jumbotron-dark .btn-primary {
+	background-color:#fff;
+	font-size:16px;
+	border:2px;
+	border-color:#ffb85e;
+	color:#012269;
+}
+			
+		

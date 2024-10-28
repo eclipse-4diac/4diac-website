@@ -1,625 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://eclipse.dev/4diac/</loc>
-  <changefreq>daily</changefreq>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/index.php</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_ide.php</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_rte.php</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_lib.php</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_sys.php</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_news.php</loc>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_com.php</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_contribute.php</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_dow.php</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/newandnoteworthy/2.0/</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php?event=2019_4days</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php?event=2019</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php?event=2016</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php?event=2015</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php?event=2014</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php?event=2013</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php?event=2012</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php?event=2011</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_eve.php?event=2010</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/contribute.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/startHere/startHere.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/before4DIAC/4diacFramework.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/install.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/legoMindstormEv3.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/raspi.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/raspberrySPS.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/wago.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/freeRTOSLwIP.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/pikeos_posix.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/visualStudio.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/visualStudioCode.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/eclipse.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/cygwin.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/minGW.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/docker.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/4diacIDE/overview.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/4diacIDE/use4diacLocally.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/4diacIDE/distribute4diac.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/4diacIDE/use4diacRemotely.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/4diacIDE/createOwnTypes.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/4diacIDE/otherUseful.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/4diacIDE/advancedFeatures.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/4diacIDE/dynamicTypeLoader.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/examples/examplesIndex.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/examples/xplus3.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/examples/pidMotor.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/examples/bbbTraficControl.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/parameters/parameters.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/parameters/plc01a1.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/communicationIndex.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/opc_ua_version1.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/http.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/ros.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/mqttPaho.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/simulation.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/tsn.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/fbdkip.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/modbus.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/opc.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/openPOWERLINK.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/xqueries.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/communication/arrowhead.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/faq/faq.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/developmentIndex.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/building4diac.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/ideUpdateTargetPlatform.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/swtBotTestsDocumentation.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/forte_struct.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/forte_monitoring.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/forte_communicationArchitecture.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/externalEvent_example.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/forte_codequality.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/legal.html</loc>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/newandnoteworthy/2.0/4diacIDE.php</loc>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/newandnoteworthy/2.0/4diacFORTE.php</loc>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2019/EclipseInsight_BaSys_DigitalTwin.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2019/EclipseInsight_IoT.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2016/UW_01_Zoitl.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2016/UW_02_Strasser.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2016/UW_04_Ebenhofer.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2016/UW_05_Eisenmenger.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2016/UW_06_Perez.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2016/UW_07_Kadera.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2016/UW_08_Lindgren.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2016/UW_09_Blech.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2016/UW_10_Melik.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2015/UW_01_Introduction.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2015/UW_02_Hadlich.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2015/UW_03_Kadera.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2015/UW_04_FedePerez.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2015/UW_05_PerLindgren.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2015/UW_06_Strasser.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2015/UW_07_ModularMaschines.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2014/4DIAC_Talk0_Welcome_OverviewAndUpdate.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2014/4DIAC_Talk1_Extending_4DIAC_with_a_partitioning_and_scheduling_tool.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2014/4DIAC_Talk2_Scheduling_IEC_61499_Function_Block_based_models_on_resource_constrained_platforms__MCUs.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2014/4DIAC_Talk3_Dynamically_loadable_Function_Block_types.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2014/4DIAC_Talk4_An_enhanced_communication_scheme_for_4DIAC.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2014/4DIAC_Talk5_Middleware_Architecture_for_CPPS_over_IEC61499.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2014/4DIAC_Talk6_Automatic_generation_of_distributed_communication_in_4DIAC.pdf</loc>
-  <lastmod>2023-07-10T14:14:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2013/01_Ebenhofer_Zoitl_Overview.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2013/02_Andren_SmartGrid.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2013/03_Domova_FASA.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2013/04_Patil_Load_Balancing.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2013/05_Perez_DDS.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2013/06_Lednicki_timing-iec-61499.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2012/1_Zoitl_Welcome_Overview.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2012/2_Campanelli_Integration_IEC61131-3_IEC61499.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2012/3_Andren_IEC61499_4DIAC_Lab_Automation.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2012/4_Sorouri_Interoperability_FORTE_SynchronousExecution.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2012/5_Strasser_4DIAC_Applications_for_Power_and_Energy_Domain.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2012/6_Hegny_Embedded_Energy_Efficiency_Industrial_Controller_Platform.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2012/8_Ebenhofer_Workflow_V03.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2012/9_Sousa_4DIAC_61131_integration.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2011/ETFA2011_4DIAC_UW_Talk_1_Valentini_Welcome.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2011/ETFA2011_4DIAC_UW_Talk_2_Zoitl_OverviewAndUpdate.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2011/ETFA2011_4DIAC_UW_Talk_6_Hofmann_NetworkLayer.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2011/ETFA2011_4DIAC_UW_Talk_4_Zoitl_EtherNetIP.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2011/ETFA2011_4DIAC_UW_Talk_5_Andren_POWERLINK-IEC61499_Integration.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2011/ETFA2011_4DIAC_UW_Talk_6_Moran_SIFB%20set%20for%20accessing%20Beckhoff%20controllers%20using%20ADS%20protocol.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2011/ETFA2011_4DIAC_UW_Talk_3_Hofmann_BinPicking.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2011/ETFA2011_4DIAC_UW_Talk_7_Zoitl_InjectionMoldingMachine.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2011/ETFA2011_4DIAC_UW_Talk_8_Strasser_IEC61499-4DIAC_SmartGrids_Applications.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2010/4DIAC_UM_Talk1_Hegny.ppt</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2010/4DIAC_UM_Talk2_Gerber_v02.pptx</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2010/4DIAC_UM_Talk3_Dai.pdf</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2010/4DIAC_UM_Talk4_Zoitl_v02.pptx</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2010/4DIAC_UM_Talk5_Fede.ppt</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2010/4DIAC_UM_Talk6_Mohamad_v02.pptx</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/events/docs/2010/4DIAC_UM_Talk7_Zoitl_v02.ppt</loc>
-  <lastmod>2023-07-10T14:14:18+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/installation/mindstorms.html</loc>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/development/contributeToForte.html</loc>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/en_help.php?helppage=html/about.htm</loc>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://eclipse.dev/4diac/newandnoteworthy/2.0/index.php</loc>
-  <priority>0.41</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
+    <lastmod>2024-10-25T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2024-10-25T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#7/</loc>
+    <lastmod>2024-10-25T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/</loc>
+    <lastmod>2024-10-25T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/download/</loc>
+    <lastmod>2024-10-21T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#6/</loc>
+    <lastmod>2024-10-18T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#5/</loc>
+    <lastmod>2024-10-11T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#4/</loc>
+    <lastmod>2024-10-04T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#3/</loc>
+    <lastmod>2024-09-26T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#2/</loc>
+    <lastmod>2024-09-20T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#1/</loc>
+    <lastmod>2024-09-13T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/announcements/</loc>
+    <lastmod>2024-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/2024/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibus-won-a-prestigious-award/</loc>
+    <lastmod>2024-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/4diac_forte/</loc>
+    <lastmod>2024-02-15T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/4diac_ide/</loc>
+    <lastmod>2024-02-15T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/4diac_lib/</loc>
+    <lastmod>2024-02-15T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/4diac_sys/</loc>
+    <lastmod>2024-02-15T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/</loc>
+    <lastmod>2024-02-15T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/etfa/etfa2012/</loc>
+    <lastmod>2024-02-13T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/workshops/2019_4days_of_4diac/</loc>
+    <lastmod>2024-02-13T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/etfa/etfa2013/</loc>
+    <lastmod>2024-02-13T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/etfa/etfa2014/</loc>
+    <lastmod>2024-02-13T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/etfa/etfa2015/</loc>
+    <lastmod>2024-02-13T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/etfa/etfa2016/</loc>
+    <lastmod>2024-02-13T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/workshops/2019_eclipse_insight/</loc>
+    <lastmod>2024-02-13T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/etfa/etfa2010/</loc>
+    <lastmod>2024-02-12T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/etfa/etfa2011/</loc>
+    <lastmod>2024-02-12T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/</loc>
+    <lastmod>2024-02-12T17:42:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2023/</loc>
+    <lastmod>2023-12-31T10:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/</loc>
+    <lastmod>2023-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibusreg/</loc>
+    <lastmod>2023-08-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2023/2023/you-cant-make-an-omelet-without-breaking-eggs/</loc>
+    <lastmod>2023-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/custom-jumbotron/</loc>
+    <lastmod>2022-03-07T08:00:00-24:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/contribute/</loc>
+    <lastmod>2020-03-01T16:09:45-04:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/</loc>
+    <lastmod>2020-03-01T16:09:45-04:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/support/</loc>
+    <lastmod>2020-03-01T16:09:45-04:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/membership_levels/</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/participation_levels/</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/tags/</loc>
+  </url>
 </urlset>
