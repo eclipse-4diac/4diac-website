@@ -9,36 +9,36 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Fri, 25 Oct 2024 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Eclipse 4diac Weekly #7</title>
-      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#7/</link>
+      <title>Eclipse 4diac Weekly 7</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/</link>
       <pubDate>Fri, 25 Oct 2024 17:00:00 +0000</pubDate>
       
         <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#7/</guid>
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/</guid>
       <description>Enhancements and Fixes in 4diac IDE Improvements and Fixes in 4diac IDE: Enhancements in Editor and UI functionality: Use Frameworkutil to create a dictionary in FordiacImageURL. Adjusted column width in Imports-Table to occupy the entire width. Fixed UpdateFbInterfaceChange to prevent duplicated creation. Modified Imports Table column width to fill entire width. Enabled recursive folder creation in type entry. Resolved generic datatype for automatic SubApp pin creation. Fixed System Explorer root content and label provider setup.</description>
     </item>
     
     <item>
-      <title>Eclipse 4diac Weekly #6</title>
-      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#6/</link>
+      <title>Eclipse 4diac Weekly 6</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/</link>
       <pubDate>Fri, 18 Oct 2024 17:00:00 +0000</pubDate>
       
         <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#6/</guid>
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/</guid>
       <description>Enhancements and Fixes in 4diac IDE Bug Fixes
 Fix deadlock when creating new type via quickfix Fix conflicts during nested unnecessary conversion quickfix Fix formatter preferences during quickfixes or refactoring Fix partial access on array subscript Fixed issue where Quick-Fix option did not show up in dirty Editor Fix cyclic resolution when creating resource descriptions Fix attribute lookup in importer Fix connection clipping with Insets for expanded SubappApp content Fix errors from consecutive type updates in open instance viewer Improvements to Connection and XML Handling</description>
     </item>
     
     <item>
-      <title>Eclipse 4diac Weekly #5</title>
-      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#5/</link>
+      <title>Eclipse 4diac Weekly 5</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-5/</link>
       <pubDate>Fri, 11 Oct 2024 17:00:00 +0000</pubDate>
       
         <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#5/</guid>
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-5/</guid>
       <description>Enhancements and Fixes in 4diac IDE New Features
 Added new functions F_NOW and F_NOW_MONOTONIC for timing.
 These functions return the current local date/time and monotonic clock value, respectively. Added a Build 4diac Forte Launcher.
@@ -47,50 +47,50 @@ FB Network Grid now follows IEC 61499 Coordinate System Resolution. Grid resolut
     </item>
     
     <item>
-      <title>Eclipse 4diac Weekly #4</title>
-      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#4/</link>
+      <title>Eclipse 4diac Weekly 4</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-4/</link>
       <pubDate>Fri, 04 Oct 2024 17:00:00 +0000</pubDate>
       
         <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#4/</guid>
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-4/</guid>
       <description>Enhancements and Fixes in 4diac IDE Fixes
 Fixed return type conversion in ST partitioner: Corrected an issue where the return type was set to ANY instead of null, causing problems during export. Fixed validation of assigned inputs from outside in ST editor. Fixed Quick-Fix to use the correct model element and ensure unsaved changes are preserved. Fixed issue where typing to invoke the new instance inserter caused the first character to be selected and overwritten.</description>
     </item>
     
     <item>
-      <title>Eclipse 4diac Weekly #3</title>
-      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#3/</link>
+      <title>Eclipse 4diac Weekly 3</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-3/</link>
       <pubDate>Thu, 26 Sep 2024 17:00:00 +0000</pubDate>
       
         <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#3/</guid>
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-3/</guid>
       <description>Enhancements and Fixes in 4diac IDE Fixes
 Fix THIS access in forte_ng export and ST editor Fix variable access for internal FBs in evaluator Fix result type of comparison with missing operand types in ST editor Fix result type of internal FB call in ST parser Fix null pointer caused by non-existing library Fix ClassCastException when opening ContextMenu on an errorMarker Fix type cast error when deleting a FBType Fixed label providers for Array variables Fixed CreateConnectionAtSubappInterface to also include array-datatype Fixed creation of pins with array-datatype when creating new SubApp Fixed update of Connection Label after expanding/collapsing a SubApp Fixed icons for SelectFBDialog in QuickFixOption Copying structs to other folder creates 2 identical structs (#514) Fix THIS access in forte_ng export and ST editor Improvements</description>
     </item>
     
     <item>
-      <title>Eclipse 4diac Weekly #2</title>
-      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#2/</link>
+      <title>Eclipse 4diac Weekly 2</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-2/</link>
       <pubDate>Fri, 20 Sep 2024 17:00:00 +0000</pubDate>
       
         <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#2/</guid>
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-2/</guid>
       <description>Enhancements and Fixes in 4diac IDE Function Block Changes and Updates
 Added a new scaling function block with enhanced features Updated fieldbus signal conversion function blocks: Refined input/output handling and updated comments for clarity Test and UI Enhancements
 Restructured SWTBot UI tests for better modularity and migrated them to the new architecture Enabled the cancel button for long-running export operations Improved handling of export threads and fixed race conditions related to UI interactions Fixes and Miscellaneous Updates</description>
     </item>
     
     <item>
-      <title>Eclipse 4diac Weekly #1</title>
-      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#1/</link>
+      <title>Eclipse 4diac Weekly 1</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-1/</link>
       <pubDate>Fri, 13 Sep 2024 17:00:00 +0000</pubDate>
       
         <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#1/</guid>
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-1/</guid>
       <description>Enhancements and Fixes in 4diac IDE Property Sheets
 Separated annotation model refresh in property sheets Avoided removing and re-adding annotations during live validation Export Functionality
 Disabled editing of the Message-Textfield in the export dialog Added handling for AttributeDeclaration and AutomationSystem in export Fixed &amp;ldquo;not responding&amp;rdquo; message on Windows during long-running exports Updated types to be exported in SIFB exporter Added export of global constant files Evaluator and Conversion Fixes

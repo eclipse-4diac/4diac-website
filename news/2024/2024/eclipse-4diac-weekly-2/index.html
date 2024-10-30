@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Eclipse 4diac Weekly #3 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #3 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #3 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly 2 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly 2 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly 2 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from September 20 to September 28, 2024.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 20 to September 28, 2024.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 20 to September 28, 2024.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from September 13 to September 20, 2024.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 13 to September 20, 2024.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 13 to September 20, 2024.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#3/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-2/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,10 +29,10 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#3/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-2/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1730326687">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1730327803">
 <script>
 	
 		var tableClasses = "table";
@@ -1222,7 +1222,7 @@
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#3/">Eclipse 4diac Weekly #3</a>
+              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-2/">Eclipse 4diac Weekly 2</a>
             </li>
           
           </ol>
@@ -1239,7 +1239,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly #3
+          Eclipse 4diac Weekly 2
         
       </h1>
     
@@ -1251,102 +1251,65 @@
   
 
 
-  <p>Update on what development happened across the Eclipse 4diac project in the week from September 20 to September 28, 2024.</p> 
+  <p>Update on what development happened across the Eclipse 4diac project in the week from September 13 to September 20, 2024.</p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>Fixes</strong></p>
+<p><strong>Function Block Changes and Updates</strong></p>
 <ul>
-<li>Fix THIS access in forte_ng export and ST editor</li>
-<li>Fix variable access for internal FBs in evaluator</li>
-<li>Fix result type of comparison with missing operand types in ST editor</li>
-<li>Fix result type of internal FB call in ST parser</li>
-<li>Fix null pointer caused by non-existing library</li>
-<li>Fix ClassCastException when opening ContextMenu on an errorMarker</li>
-<li>Fix type cast error when deleting a FBType</li>
-<li>Fixed label providers for Array variables</li>
-<li>Fixed CreateConnectionAtSubappInterface to also include array-datatype</li>
-<li>Fixed creation of pins with array-datatype when creating new SubApp</li>
-<li>Fixed update of Connection Label after expanding/collapsing a SubApp</li>
-<li>Fixed icons for SelectFBDialog in QuickFixOption</li>
-<li>Copying structs to other folder creates 2 identical structs (#514)</li>
-<li>Fix THIS access in forte_ng export and ST editor</li>
+<li>Added a new scaling function block with enhanced features</li>
+<li>Updated fieldbus signal conversion function blocks: Refined input/output handling and updated comments for clarity</li>
 </ul>
 </li>
 <li>
-<p><strong>Improvements</strong></p>
+<p><strong>Test and UI Enhancements</strong></p>
 <ul>
-<li>Reduce compiler warnings in 4diac IDE</li>
-<li>STOPWATCH: Add new events ET and RESET, update ECState positions, and implement reset functionality</li>
-<li>Refactor locking implementation in type entry to improve performance and avoid deadlocks</li>
-<li>Improvement of Layout of Table in LibrarySelection page</li>
-<li>Ignore dependencies internal to libraries</li>
-<li>Ant task to check for unused dependencies</li>
-<li>Add editor configuration in variable widget</li>
-<li>Use variable widget in launch configurations</li>
-<li>Recreated QuickFixWizard Dialog</li>
+<li>Restructured SWTBot UI tests for better modularity and migrated them to the new architecture</li>
+<li>Enabled the cancel button for long-running export operations</li>
+<li>Improved handling of export threads and fixed race conditions related to UI interactions</li>
 </ul>
 </li>
 <li>
-<p><strong>Features</strong></p>
+<p><strong>Fixes and Miscellaneous Updates</strong></p>
 <ul>
-<li>Added check to prevent ClassCastException</li>
-<li>Added support for copy and paste in tree nattable</li>
-<li>Add variable dialog for structured initial values in FB debug view</li>
-<li>Add variable dialog for structured initial values in graphical editors</li>
-<li>Add variable dialog for structured initial values in nat tables</li>
-<li>Add expand/collapse all in variable widget</li>
-<li>Add method to get children from variable in evaluator</li>
-<li>Add message for canceled export of single element</li>
-<li>Add message if cancel all button was used during export</li>
-<li>Changed RepairCommandHandler to QuickFixHandler</li>
-<li>Added new tests for variable operations</li>
-</ul>
-</li>
-<li>
-<p><strong>Refactorings</strong></p>
-<ul>
-<li>Cleanup for constructors of CreateInterfaceCommands</li>
-<li>Remove Main Code for Virtual Group Interface Experiment</li>
-<li>Refactoring of Strings for QuickFixWizard</li>
-<li>Replaced WSTRING with STRING in Wago FBs</li>
-</ul>
-</li>
-<li>
-<p><strong>Deprecations</strong></p>
-<ul>
-<li>Add deprecated annotation for searchApplication wrapper in ModelSearch</li>
+<li>Fixed issue where internal variables were added multiple times to the watch list</li>
+<li>Enhanced property sheet to display detailed edit part information such as connections and instances, with sorting options</li>
+<li>Updated 4diac FORTE Exporter name to indicate version 3.x compliance</li>
+<li>Formatted numbers in ST validator messages to avoid locale-based issues</li>
+<li>Fixed race condition in ST editor related to the Xtext framework adapter handling</li>
+<li>Reworked deployment data unit tests and improved testing for parameter writes</li>
+<li>Fixed name casing for error type entries and improved annotation handling in the UI</li>
+<li>Improved VarInOut pin handling in SubApp editors, fixing deletion issues</li>
+<li>Fixed PackageInfoWidget’s annotation handling, avoiding unnecessary dirty states in editors</li>
+<li>Removed outdated markers from tests affected by server Maven version incompatibilities</li>
+<li>Replaced magic strings with constants in Import-AntTask and improved library dependency resolution</li>
+<li>Fixed handling of &ldquo;Cancel&rdquo; button in IProgressMonitor for model search operations</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
 <li>
-<p><strong>Features</strong></p>
+<p><strong>Improvements in Signal Processing Library</strong></p>
 <ul>
-<li>Add generic event accessors to enable usage of network FBs as internal FBs</li>
+<li>Renamed signal processing module files for consistency</li>
+<li>Updated include paths for generated source files to streamline references</li>
+<li>Refactored signal processing functions and interfaces
+<ul>
+<li>Removed unused variables and connections</li>
+<li>Updated function interfaces for value conversion</li>
+<li>Enhanced code readability and organization</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p><strong>Improvements</strong></p>
+<p><strong>Bug Fixes and Compliance</strong></p>
 <ul>
-<li>Update compiler flags for ESP32 toolchains to remove deprecated declarations in C and C++ files</li>
-</ul>
-</li>
-<li>
-<p><strong>Cleanups</strong></p>
-<ul>
-<li>Clean main and init files across different architectures
-<ul>
-<li>Added missing flag for shared library</li>
-<li>Fixed Windows architecture declaration and cleaned up startuphook file</li>
-<li>Limited shared library test to only when FORTE is built as a shared library</li>
-<li>Moved signals hook to each architecture</li>
-<li>Exported Windows symbols for shared library</li>
-</ul>
-</li>
+<li>Fixed incorrect time conversion in the faketime module</li>
+<li>Fixed rounding behavior for real to integer conversions to conform to IEEE 754 (IEC 60559) and IEC 61131-3 standards</li>
 </ul>
 </li>
 </ul>
@@ -1518,7 +1481,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1730326689"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1730327805"></script>
   
 
   

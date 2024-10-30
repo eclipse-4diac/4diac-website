@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Eclipse 4diac Weekly #4 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #4 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #4 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly 6 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly 6 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly 6 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from September 27 to October 04, 2024.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 27 to October 04, 2024.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 27 to October 04, 2024.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from October 11 to October 18, 2024.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from October 11 to October 18, 2024.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from October 11 to October 18, 2024.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#4/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,10 +29,10 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#4/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1730326688">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1730327804">
 <script>
 	
 		var tableClasses = "table";
@@ -1222,7 +1222,7 @@
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-#4/">Eclipse 4diac Weekly #4</a>
+              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/">Eclipse 4diac Weekly 6</a>
             </li>
           
           </ol>
@@ -1239,7 +1239,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly #4
+          Eclipse 4diac Weekly 6
         
       </h1>
     
@@ -1251,105 +1251,102 @@
   
 
 
-  <p>Update on what development happened across the Eclipse 4diac project in the week from September 27 to October 04, 2024.</p> 
+  <p>Update on what development happened across the Eclipse 4diac project in the week from October 11 to October 18, 2024.</p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>Fixes</strong></p>
+<p><strong>Bug Fixes</strong></p>
 <ul>
-<li>Fixed return type conversion in ST partitioner: Corrected an issue where the return type was set to ANY instead of null, causing problems during export.</li>
-<li>Fixed validation of assigned inputs from outside in ST editor.</li>
-<li>Fixed Quick-Fix to use the correct model element and ensure unsaved changes are preserved.</li>
-<li>Fixed issue where typing to invoke the new instance inserter caused the first character to be selected and overwritten.</li>
-<li>Fixed item reference for manifest update button.</li>
-<li>Fixed several issues with configured STRUCT_DEMUXERs, including connection parsing and type updates for visible outputs.</li>
-<li>Fixed GEF API change issues.</li>
-<li>Fixed sorting issue in System Navigator, preventing folders from collapsing on file rename.</li>
-<li>Fixed Quickfix for refreshing monitoring elements when no graphical editor is open.</li>
-<li>Fixed type class caching in FB type entry.</li>
-<li>Fixed plug type creation in adapter type entry.</li>
+<li>Fix deadlock when creating new type via quickfix</li>
+<li>Fix conflicts during nested unnecessary conversion quickfix</li>
+<li>Fix formatter preferences during quickfixes or refactoring</li>
+<li>Fix partial access on array subscript</li>
+<li>Fixed issue where Quick-Fix option did not show up in dirty Editor</li>
+<li>Fix cyclic resolution when creating resource descriptions</li>
+<li>Fix attribute lookup in importer</li>
+<li>Fix connection clipping with Insets for expanded SubappApp content</li>
+<li>Fix errors from consecutive type updates in open instance viewer</li>
 </ul>
 </li>
 <li>
-<p><strong>Improvements</strong></p>
+<p><strong>Improvements to Connection and XML Handling</strong></p>
 <ul>
-<li>Added temporary flag for disabling the rename dialog.</li>
-<li>Changed UpdateFBInstanceChange to AbstractCommandChange.</li>
-<li>Added RampLimitFS FBType with setpoint ramping functionality, including event handling and value adjustments based on input parameters.</li>
-<li>Added Step mode to FollowConnectionHandlers.</li>
-<li>Added button to toggle Jump/Step mode for following connections.</li>
-<li>Improved System Navigator sorting for better folder handling.</li>
+<li>Preserve Connection Position on Type Update</li>
+<li>Reconnect Connection Preserves Connection in XML File</li>
 </ul>
 </li>
 <li>
-<p><strong>Deprecations</strong></p>
+<p><strong>Launcher and Device Management Enhancements</strong></p>
 <ul>
-<li>Deprecated &ldquo;editable&rdquo; type in type entries in favor of using TypeEntry.copyType() or directly getting the type from an editor.</li>
+<li>New Launcher that allows to Stop 4diac FORTEs</li>
+<li>Add device management executor service</li>
+<li>Refactor write FB parameter command in device management interactor</li>
+<li>Refactor monitoring commands in device management interactor</li>
 </ul>
 </li>
 <li>
-<p><strong>Other Updates</strong></p>
+<p><strong>Evaluator and Debug Improvements</strong></p>
 <ul>
-<li>Updated E_STOPWATCH FBType with new copyright information.</li>
-<li>Updated to maintain expanded state of Demuxer property sheet tree viewer.</li>
-<li>Added separate last modification stamp for type editable in entries.</li>
-<li>Removed extra synchronized in type entry subclasses.</li>
+<li>Add interface for evaluator debug target</li>
+<li>Refactor deployment FB evaluator to use new monitoring methods</li>
+<li>Add sanity checks for generic variables in evaluator</li>
+</ul>
+</li>
+<li>
+<p><strong>System Explorer and Editor Updates</strong></p>
+<ul>
+<li>Change system explorer navigation contents</li>
+<li>Show configurable FB / demux sections also in composite FBs</li>
+</ul>
+</li>
+<li>
+<p><strong>Quickfix and Refactoring Enhancements</strong></p>
+<ul>
+<li>Enable marker resolutions for configurable FBs</li>
+<li>Validate data type in configurable FBs</li>
+<li>Refactor marker resolutions (proper locking, command combination, save only when needed)</li>
+</ul>
+</li>
+<li>
+<p><strong>Timestamp and Timing Additions</strong></p>
+<ul>
+<li>Add startDate to timestamp function</li>
+<li>Add Timestamp</li>
+<li>Move E_STOPWATCH to timing folder</li>
+</ul>
+</li>
+<li>
+<p><strong>Miscellaneous Improvements</strong></p>
+<ul>
+<li>Reworked version info of assembling and splitting function blocks</li>
+<li>Added a check for error markers and disabled Map To option when there are errors</li>
+<li>Show full type name in missing type validation</li>
+<li>Move interpreter contribution from Debug to Run menu</li>
+<li>Refactor error handling of download runnable</li>
+<li>Remove obsolete delete system handler</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
 <li>
-<p><strong>New Functionalities</strong></p>
+<p><strong>New Function Blocks and Features</strong></p>
 <ul>
-<li>
-<p>Added RampLimitFS functionality for signal processing, including algorithms for fast/slow modes, step up/down actions, and loading setpoints.</p>
+<li>Added E_T_FF_SR_fbt function block, a mix between E_SR and E_T_FF</li>
+<li>Added startDate input</li>
+<li>Added TIMESTAMP_NS to the timing folder</li>
+</ul>
 </li>
 <li>
-<p>Added SCALE_LIM function block for signal processing with upper and lower limit scaling.</p>
-</li>
-<li>
-<p>Added SCALE function block for general signal processing.</p>
-</li>
-<li>
-<p>Added assembling functions:</p>
+<p><strong>Refactoring and Reorganization</strong></p>
 <ul>
-<li>ASSEMBLE_DWORD_FROM_BOOLS_fct</li>
-<li>ASSEMBLE_BYTE_FROM_QUARTERS_fct</li>
-<li>ASSEMBLE_WORD_FROM_BYTES_fct</li>
-<li>ASSEMBLE_DWORD_FROM_WORDS_fct</li>
-</ul>
-</li>
-<li>
-<p>Added splitting functions:</p>
-<ul>
-<li>SPLIT_DWORD_INTO_WORDS_fct</li>
-<li>SPLIT_BYTE_INTO_QUARTERS_fct</li>
-<li>SPLIT_BYTE_INTO_BOOLS_fct</li>
-<li>SPLIT_WORD_INTO_BYTES_fct</li>
+<li>Moved E_STOPWATCH into the timing folder</li>
 </ul>
 </li>
 </ul>
-</li>
-<li>
-<p><strong>Updates</strong></p>
-<ul>
-<li>Updated E_STOPWATCH FB with new events, handling logic, and state transitions, including algorithms for triggering and resetting the stopwatch.</li>
-<li>Updated Wago modules for current 4diac FORTE and changed WSTRING to STRING in Wago modules.</li>
-</ul>
-</li>
-<li>
-<p><strong>Fixes and Improvements</strong></p>
-<ul>
-<li>Fixed typo in slave macro and adjusted libraries for Wago.</li>
-<li>Called loadTerminalInformation after opening devices to display found devices with IDs.</li>
-<li>Cleaned up folders and removed non-modular Wago IOs.</li>
-<li>Migrated Wago modules.</li>
-</ul>
-</li>
-</ul>
+<p>Furthermore the work on our new web-page is now in a stage where it soon can go live.</p>
 <p>Many thanks to all contributors for their work and their feedback!</p>
  
 
@@ -1518,7 +1515,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1730326689"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1730327805"></script>
   
 
   
