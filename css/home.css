@@ -1,3 +1,9 @@
+.header-default-bg-img .featured-jumbotron {
+    background-image: url(../img/4diac-home-bg_blue.jpg?281f3578e8c92caaa2691632d0fb4065);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .subscribe-btn {
 	display: block;
 	width: 100%;
