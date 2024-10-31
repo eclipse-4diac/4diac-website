@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Eclipse 4diac</title>
-    <link>https://eclipse.dev/4diac/</link>
-    <description>Recent content on Eclipse 4diac</description>
+    <title>4diac Community on Eclipse 4diac</title>
+    <link>https://eclipse.dev/4diac/categories/4diac-community/</link>
+    <description>Recent content in 4diac Community on Eclipse 4diac</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
-    <lastBuildDate>Sun, 01 Mar 2020 16:09:45 -0400</lastBuildDate><atom:link href="https://eclipse.dev/4diac/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diac-community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Look for Eclipse 4diac!</title>
       <link>https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/</link>
