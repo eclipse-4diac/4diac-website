@@ -8,6 +8,18 @@
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster><atom:link href="https://eclipse.dev/4diac/membership_levels/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>New Look for Eclipse 4diac!</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/</link>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/</guid>
+      <description>We’re thrilled to announce a refresh for the Eclipse 4diac project, featuring a modernized logo and a revamped website built on Hugo. Our new site design enhances accessibility, speed, and functionality, aiming to deliver a smoother experience for our community.
+The redesigned website provides a streamlined interface, making it easier for users to navigate project resources, find documentation, and stay updated with the latest releases and events. This update reflects our dedication to supporting the growing industrial automation ecosystem and advancing open-source development for all users.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly 7</title>
       <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/</link>
       <pubDate>Fri, 25 Oct 2024 17:00:00 +0000</pubDate>
