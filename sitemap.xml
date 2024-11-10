@@ -2,20 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
+    <lastmod>2024-11-08T17:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://eclipse.dev/4diac/categories/</loc>
-    <lastmod>2024-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-08T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-9/</loc>
+    <lastmod>2024-11-08T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2024/</loc>
+    <lastmod>2024-11-08T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/</loc>
     <lastmod>2024-10-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/</loc>
     <lastmod>2024-10-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/news/2024/</loc>
-    <lastmod>2024-10-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
-    <lastmod>2024-10-25T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/</loc>
     <lastmod>2024-10-25T17:00:00+00:00</lastmod>
