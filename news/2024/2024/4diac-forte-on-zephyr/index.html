@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Guest Post: Eclipse 4diac for Agrimechatronics: The Project LogiBUS&amp;reg; | The Eclipse Foundation</title>
-<meta property="og:title" content="Guest Post: Eclipse 4diac for Agrimechatronics: The Project LogiBUS&amp;reg; | The Eclipse Foundation" />
-<meta name="twitter:title" content="Guest Post: Eclipse 4diac for Agrimechatronics: The Project … | The Eclipse Foundation" />
+<title>Eclipse 4diac Welcomes Zephyr Support to Empower Small Embedded Systems With IEC 61499 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Welcomes Zephyr Support to Empower Small Embedded Systems With IEC 61499 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Welcomes Zephyr Support to Empower Small Embedded … | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="The Eclipse 4diac community is thrilled to announce that [Dirk O. Kaar](mailto:dok_at_dok-net.net) contributed a port of 4diac FORTE to …">
+<meta property="og:description" content="The Eclipse 4diac community is thrilled to announce that [Dirk O. Kaar](mailto:dok_at_dok-net.net) contributed a port of 4diac FORTE to …">
+<meta name="twitter:description" content="The Eclipse 4diac community is thrilled to announce that [Dirk O. Kaar](mailto:dok_at_dok-net.net) contributed a port of 4diac FORTE to …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibusreg/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/4diac-forte-on-zephyr/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,11 +29,11 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibusreg/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/4diac-forte-on-zephyr/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1731436553">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1731436553">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1731436551">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1731436551">
 <script>
 	
 		var tableClasses = "table";
@@ -1218,12 +1218,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/news/2023/">News 2023</a>
+              <a href="https://eclipse.dev/4diac/news/2024/">News 2024</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibusreg/">Guest Post: Eclipse 4diac for Agrimechatronics: The Project LogiBUS&amp;reg;</a>
+              <a href="https://eclipse.dev/4diac/news/2024/2024/4diac-forte-on-zephyr/">Eclipse 4diac Welcomes Zephyr Support to Empower Small Embedded Systems With IEC 61499</a>
             </li>
           
           </ol>
@@ -1240,7 +1240,7 @@
     
       <h1>
         
-          Guest Post: Eclipse 4diac for Agrimechatronics: The Project LogiBUS&amp;reg;
+          Eclipse 4diac Welcomes Zephyr Support to Empower Small Embedded Systems With IEC 61499
         
       </h1>
     
@@ -1248,54 +1248,32 @@
 
 
   
-  <p>The folks at HR Agrartechnik GmbH have been busy to port Eclipse 4diac™ FORTE to the ESP32 and integrate the ISOBUS (ISO 11783) protocol
-over the last year.</p>
-<p>
 
-<img 
-    src="/4diac/img/news/LogiBUS_Logo.svg" 
-    alt="logiBUS" 
-    style="
-        max-width: 18%; 
-        max-height: ; 
-        margin: ; 
-        margin-top: ; 
-        margin-left: ; 
-        margin-right: ;
-        margin-bottom: ; 
-        display: ;" 
-    class=""
->
-
- is the Fusion of IEC 61499 programming and ISO 11783 compatibiltiy.</p>
-<p>ISOBUS, also known as ISO 11783, is a communication protocol standard developed for agricultural equipment to facilitate the exchange of data between different types of farm machinery and implements. The term &ldquo;ISOBUS&rdquo; stands for &ldquo;ISO Bus,&rdquo; where ISO refers to the International Organization for Standardization, and &ldquo;Bus&rdquo; refers to a system of communication between multiple devices.</p>
-<p>The goal of ISOBUS is to enable interoperability and compatibility among various agricultural devices from different manufacturers. This standard allows tractors, combines, sprayers, seeders, and other agricultural implements to communicate and share information seamlessly. This information exchange can include data such as equipment status, operational settings, and control commands.</p>
-<p>ISOBUS provides a standardized physical connection, usually implemented through a standard connector, and a set of communication protocols that allow different devices to exchange information. This can improve efficiency on the farm by enabling operators to control and monitor various implements from within the tractor cab, reducing the need for multiple displays and control interfaces.</p>
-<p>The ISOBUS standard defines different layers of communication, such as the physical layer (defining the connector and cabling), the data link layer (defining how data is packaged and transmitted), and the application layer (defining the structure and content of the data exchanged).</p>
-<p>In summary, ISOBUS (ISO 11783) is a standardized communication protocol used in the agricultural industry to enable different types of farm equipment to communicate and share data, ultimately leading to improved efficiency and ease of use for operators.</p>
-<p>While exising ISOBUS Stacks require heavy C or C++ Programming as well as knowlege of both, the Bus Protocol and the Programming API of the corresponding ISOBUS Stack,
-logiBUS® ease the same a lot by covering the Complexity in IEC 61499 Function Blocks.
-Therefore the Programming of a ISOBUS Universal Terminal Softkey Input in Eclipse 4diac™ is the same as programming a digital input. Nothing new to learn.</p>
-<p>A corresponding Website is under construction, but first examples are on the Page:</p>
-<ul>
-<li><a href="https://www.logibus.tech/">logiBUS®</a></li>
-</ul>
-<p>And, to support Open Source, some Customers agreed to publish their Projects:</p>
-<ul>
-<li><a href="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SlurryTanker-sample">Eclipse 4diac™ SlurryTanker sample</a></li>
-</ul>
-<p>There will be a featured Speech about the basics of logiBUS® at the Espressif Developer
-Conference 2023 September 12, 14:30
-see Details:</p>
-<ul>
-<li><a href="https://devcon.espressif.com/">DevCon23</a></li>
-<li><a href="https://www.youtube.com/watch?v=MYUgwhLAroA">Devcon23 - Turning the ESP32 into a PLC with the Eclipse 4diac™ Framework: The Project logiBUS® on YouTube</a></li>
-</ul>
-<p>Cheers, <br>
+  
 
 
-Franz Höpfinger on behalf of HR Agrartechnik GmbH</p>
+  <p>The Eclipse 4diac community is thrilled to announce that <a href="mailto:dok_at_dok-net.net">Dirk O. Kaar</a> contributed a port of 4diac FORTE to <a href="https://zephyrproject.org/">Zephyr</a>. We&rsquo;re immensely grateful for the effort that has made this achievement possible.</p> 
 
+
+<p>In particular, special thanks go to <a href="https://www.kt-elektronik.de/">KT Elektronik</a>, as they enabled Dirk O Kaar&rsquo;s work on this contribution as part of his employment.
+This propelled our integration with Zephyr forward.</p>
+<p>This exciting development opens up new possibilities for industrial control systems and automation professionals,
+fostering increased efficiency and flexibility in their projects.
+This integration enables industrial automation developers to leverage the power of Zephyr in their projects within the Eclipse 4diac ecosystem.</p>
+<p>With the addition of Zephyr support, Eclipse 4diac users gain access to a robust and scalable real-time operating system that is perfectly suited for applications in the industrial automation domain.
+Zephyr&rsquo;s lightweight and efficient architecture allows it to run on a wide range of microcontrollers and small footprint devices, making it an ideal choice for resource-constrained environments.</p>
+<p>To get started with Eclipse 4diac&rsquo;s Zephyr support, get the latest 4diac FORTE development branch from
+<a href="https://github.com/eclipse-4diac/4diac-forte/tree/develop">4diac FORTE&rsquo;s Github repository</a> and the documentation provided in
+the <a href="https://github.com/eclipse-4diac/4diac-forte/blob/develop/src/arch/zephyr/README.md">Readme.MD</a> for 4diac FORTE’s Zephyr directory.</p>
+<p>For using the latest 4diac FORTE develop version you also need a newer 4diac IDE.
+We recommend using our <a href="https://download.eclipse.org/4diac/updates/milestone/">pre-built milestone version</a>, which gives you a sneak preview of the amazing upcoming 4diac IDE features.</p>
+ 
+
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
+  
 
   
 

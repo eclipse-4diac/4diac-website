@@ -9,6 +9,18 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac at SPS 2024 with Aimirim and Universal Automation</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-at-sps-2024/</link>
+      <pubDate>Mon, 11 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-at-sps-2024/</guid>
+      <description>We are excited to share that Aimirim is representing the Eclipse 4diac project at SPS 2024 in Nuremberg, Germany! Together with UniversalAutomation.org, Aimirim is demonstrating real-world applications of our industry automation technology.
+At the Universal Automation booth, Aimirim showcases how their 4diac IDE plugin enables seamless deployment to the Universal Automation runtime environment, aligning with open automation standards like IEC 61499. This setup forms the backbone of Aimirim’s Industry 4.0 solutions for software-defined facilities.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #9</title>
       <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-9/</link>
       <pubDate>Fri, 08 Nov 2024 17:00:00 +0000</pubDate>
@@ -144,6 +156,18 @@ Fixed name collision between cached global variables in ST evaluator Fixed initi
       <guid>https://eclipse.dev/4diac/news/2024/2024/save-the-date-4days-of-eclipse-4diac-winter-school-february-11-14-2025/</guid>
       <description>We are excited to announce that Bianca Wiesmayr, Lisa Sonnleithner, and Alois Zoitl form the LIT Cyber-Physical Systems Lab will organize the 4days of Eclipse 4diac Winter School from February 11-14, 2025 in Linz, Austria!
 What to expect? This winter school offers an in-depth exploration of IEC 61499 and Eclipse 4diac. Whether you are a newcomer eager to learn or a seasoned user looking to deepen your knowledge, this event is designed for every one of you.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Welcomes Zephyr Support to Empower Small Embedded Systems with IEC 61499</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/4diac-forte-on-zephyr/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/4diac-forte-on-zephyr/</guid>
+      <description>In particular, special thanks go to KT Elektronik, as they enabled Dirk O Kaar&amp;rsquo;s work on this contribution as part of his employment. This propelled our integration with Zephyr forward.
+This exciting development opens up new possibilities for industrial control systems and automation professionals, fostering increased efficiency and flexibility in their projects. This integration enables industrial automation developers to leverage the power of Zephyr in their projects within the Eclipse 4diac ecosystem.</description>
     </item>
     
     <item>
