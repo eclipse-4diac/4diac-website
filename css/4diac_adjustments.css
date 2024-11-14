@@ -88,7 +88,7 @@ h6 {
     background-color: #012269;
     color: #ff950e;
     margin-bottom: 0;
-    padding-top: 100px;
+    padding-top: 4.5rem;;
     text-align: left
 }
 
@@ -120,7 +120,8 @@ h6 {
 
 .featured-jumbotron .featured-jumbotron-subtitle {
     font-size: 1.8rem;
-    font-weight: 400
+    font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 .featured-jumbotron .featured-jumbotron-tagline,

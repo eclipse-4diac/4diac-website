@@ -33,6 +33,19 @@ Update type preserves pin attributes, fixing lost attributes when updating a typ
     </item>
     
     <item>
+      <title>Eclipse 4diac Weekly 8</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/</link>
+      <pubDate>Fri, 01 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/</guid>
+      <description>Enhancements and Fixes in 4diac IDE New Functionalities
+Added new FBType RangeBasedPulse for distance-based impulse generation. Implemented snap-to-grid functionality for: Context menu FB creation. New SubApp, Group, and Comment elements. Paste action. Drag-and-drop FB creation. Direct edit-created elements. Enhancements
+Changed visibility attribute for VarInOuts in the Importer and Exporter for accurate saves. Adjusted Imports-Table column to occupy the full width. Updated InsertFB handler to support new FB direct editing. Added recursive parent folder creation in type entries.</description>
+    </item>
+    
+    <item>
       <title>New Look for Eclipse 4diac!</title>
       <link>https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/</link>
       <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
@@ -53,19 +66,6 @@ The redesigned website provides a streamlined interface, making it easier for us
       
       <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/</guid>
       <description>Enhancements and Fixes in 4diac IDE Improvements and Fixes in 4diac IDE: Enhancements in Editor and UI functionality: Use Frameworkutil to create a dictionary in FordiacImageURL. Adjusted column width in Imports-Table to occupy the entire width. Fixed UpdateFbInterfaceChange to prevent duplicated creation. Modified Imports Table column width to fill entire width. Enabled recursive folder creation in type entry. Resolved generic datatype for automatic SubApp pin creation. Fixed System Explorer root content and label provider setup.</description>
-    </item>
-    
-    <item>
-      <title>Eclipse 4diac Weekly 8</title>
-      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/</link>
-      <pubDate>Fri, 25 Oct 2024 17:00:00 +0000</pubDate>
-      
-        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
-      
-      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/</guid>
-      <description>Enhancements and Fixes in 4diac IDE New Functionalities
-Added new FBType RangeBasedPulse for distance-based impulse generation. Implemented snap-to-grid functionality for: Context menu FB creation. New SubApp, Group, and Comment elements. Paste action. Drag-and-drop FB creation. Direct edit-created elements. Enhancements
-Changed visibility attribute for VarInOuts in the Importer and Exporter for accurate saves. Adjusted Imports-Table column to occupy the full width. Updated InsertFB handler to support new FB direct editing. Added recursive parent folder creation in type entries.</description>
     </item>
     
     <item>
