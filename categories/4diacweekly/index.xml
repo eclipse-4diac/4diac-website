@@ -7,7 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
-    <lastBuildDate>Mon, 11 Nov 2024 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Nov 2024 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #11</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-11/</link>
+      <pubDate>Fri, 22 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-11/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Evaluator Improvements:
+Avoid unnecessary allocations when parsing values. Avoid unnecessary initialization of variables when a value is supplied, adding copy constructors for struct and array variables. Use evaluator cache when adding or updating watches. Monitoring Enhancements:
+Use a fixed delay instead of a fixed rate for polling to prevent overruns. Fix polling interval overflow. Disable changed value detection for sub-variables to prevent flickering in the Variables view.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #10</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-10/</link>
+      <pubDate>Fri, 15 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-10/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Editable Columns
+Made all columns editable except for the &amp;ldquo;visible&amp;rdquo; column while connected. Added &amp;ldquo;type&amp;rdquo; as an editable column. Outline and Property Sheet Enhancements
+Forwarded outline selection to the property sheet, reflecting changes in the type editor and property sheets. Added a sorter for the outline view to organize FB types better. Reworked presentation of attributes in the outline to include name, type, and value, and, for typed attributes, the package name.</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac at SPS 2024 with Aimirim and Universal Automation</title>
       <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-at-sps-2024/</link>
