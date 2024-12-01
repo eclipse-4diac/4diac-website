@@ -21,6 +21,18 @@ Use a fixed delay instead of a fixed rate for polling to prevent overruns. Fix p
     </item>
     
     <item>
+      <title>Eclipse 4diac Weekly #12</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/</link>
+      <pubDate>Fri, 22 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Bug Fixes
+Propagate initial values when renaming pins. Correct marker updates when holding a resource lock. Fix missing variable initializers in forte_ng export. Resolve NullPointerException when retrieving result types for incomplete expressions. Avoid reacting to file changes in the FB type Xtext editor. Ensure synchronization in the Structured Text editor inside the FB type editor. Fix invalid category in the convertToSubapp command. Address validation for duplicate internal attribute names.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #10</title>
       <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-10/</link>
       <pubDate>Fri, 15 Nov 2024 17:00:00 +0000</pubDate>
