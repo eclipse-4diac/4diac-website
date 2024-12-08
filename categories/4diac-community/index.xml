@@ -9,6 +9,29 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diac-community/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #13</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-13/</link>
+      <pubDate>Fri, 06 Dec 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-13/</guid>
+      <description>Enhancements and Fixes in 4diac IDE General Clean-Up Removed outdated execution runtime launcher classes. Removed obsolete extensions for old monitoring. Removed unnecessary throws declarations in the debug model. Cleaned messages file of systemmanagement.ui plugin. Fixed warnings and Sonar issues in systemmanagement.ui. Removed last remnants of the virtual group interface code. Cleaned up layout class and refined connection and FB layout configurations. Mapping Enhancements Fixed parameter handling in MappingTargetCreator. Enabled automatic connection creation for mapped FBs during mapping.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #12</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/</link>
+      <pubDate>Fri, 29 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Bug Fixes
+Propagate initial values when renaming pins. Correct marker updates when holding a resource lock. Fix missing variable initializers in forte_ng export. Resolve NullPointerException when retrieving result types for incomplete expressions. Avoid reacting to file changes in the FB type Xtext editor. Ensure synchronization in the Structured Text editor inside the FB type editor. Fix invalid category in the convertToSubapp command. Address validation for duplicate internal attribute names.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #11</title>
       <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-11/</link>
       <pubDate>Fri, 22 Nov 2024 17:00:00 +0000</pubDate>
@@ -19,18 +42,6 @@
       <description>Enhancements and Fixes in 4diac IDE Evaluator Improvements:
 Avoid unnecessary allocations when parsing values. Avoid unnecessary initialization of variables when a value is supplied, adding copy constructors for struct and array variables. Use evaluator cache when adding or updating watches. Monitoring Enhancements:
 Use a fixed delay instead of a fixed rate for polling to prevent overruns. Fix polling interval overflow. Disable changed value detection for sub-variables to prevent flickering in the Variables view.</description>
-    </item>
-    
-    <item>
-      <title>Eclipse 4diac Weekly #12</title>
-      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/</link>
-      <pubDate>Fri, 22 Nov 2024 17:00:00 +0000</pubDate>
-      
-        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
-      
-      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/</guid>
-      <description>Enhancements and Fixes in 4diac IDE Bug Fixes
-Propagate initial values when renaming pins. Correct marker updates when holding a resource lock. Fix missing variable initializers in forte_ng export. Resolve NullPointerException when retrieving result types for incomplete expressions. Avoid reacting to file changes in the FB type Xtext editor. Ensure synchronization in the Structured Text editor inside the FB type editor. Fix invalid category in the convertToSubapp command. Address validation for duplicate internal attribute names.</description>
     </item>
     
     <item>

@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>New Look for Eclipse 4diac! | The Eclipse Foundation</title>
-<meta property="og:title" content="New Look for Eclipse 4diac! | The Eclipse Foundation" />
-<meta name="twitter:title" content="New Look for Eclipse 4diac! | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #13 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #13 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #13 | The Eclipse Foundation" />
 
-<meta name="description" content="Eclipse 4diac reveals a fresh logo and redesigned website powered by Hugo, enhancing accessibility and user experience.">
-<meta property="og:description" content="Eclipse 4diac reveals a fresh logo and redesigned website powered by Hugo, enhancing accessibility and user experience.">
-<meta name="twitter:description" content="Eclipse 4diac reveals a fresh logo and redesigned website powered by Hugo, enhancing accessibility and user experience.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from November 29 to December 06, 2024.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 29 to December 06, 2024.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 29 to December 06, 2024.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-13/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,11 +29,11 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-13/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1733692901">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1733692901">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1733692902">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1733692902">
 <script>
 	
 		var tableClasses = "table";
@@ -1263,7 +1263,7 @@
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/">New Look for Eclipse 4diac!</a>
+              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-13/">Eclipse 4diac Weekly #13</a>
             </li>
           
           </ol>
@@ -1280,7 +1280,7 @@
     
       <h1>
         
-          New Look for Eclipse 4diac!
+          Eclipse 4diac Weekly #13
         
       </h1>
     
@@ -1292,13 +1292,68 @@
   
 
 
-  <p>Eclipse 4diac reveals a fresh logo and redesigned website powered by Hugo, enhancing accessibility and user experience.</p> 
+  <p>Update on what development happened across the Eclipse 4diac project in the week from November 29 to December 06, 2024.</p> 
 
 
-<p>We’re thrilled to announce a refresh for the Eclipse 4diac project, featuring a modernized logo and a revamped website built on <a href="https://gohugo.io/">Hugo</a>. Our new site design enhances accessibility, speed, and functionality, aiming to deliver a smoother experience for our community.</p>
-<p>The redesigned website provides a streamlined interface, making it easier for users to navigate project resources, find documentation, and stay updated with the latest releases and events. This update reflects our dedication to supporting the growing industrial automation ecosystem and advancing open-source development for all users.</p>
-<p>Explore the new look and feel of the Eclipse 4diac website and let us know your thoughts!</p>
-<p>Many thanks to <a href="https://www.linkedin.com/in/andrea-zoitl-15434732a/">Andrea</a> for providing the base work of setting everything up!</p>
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<h3 id="general-clean-up">General Clean-Up</h3>
+<ul>
+<li>Removed outdated execution runtime launcher classes.</li>
+<li>Removed obsolete extensions for old monitoring.</li>
+<li>Removed unnecessary throws declarations in the debug model.</li>
+<li>Cleaned messages file of <code>systemmanagement.ui</code> plugin.</li>
+<li>Fixed warnings and Sonar issues in <code>systemmanagement.ui</code>.</li>
+<li>Removed last remnants of the virtual group interface code.</li>
+<li>Cleaned up layout class and refined connection and FB layout configurations.</li>
+</ul>
+<h3 id="mapping-enhancements">Mapping Enhancements</h3>
+<ul>
+<li>Fixed parameter handling in <code>MappingTargetCreator</code>.</li>
+<li>Enabled automatic connection creation for mapped FBs during mapping.</li>
+<li>Prevented inout connections across subapp borders.</li>
+<li>Added functionality to create mapping target FBs if absent.</li>
+<li>Improved handling of typed subapp networks during mapping to avoid unnecessary loading.</li>
+</ul>
+<h3 id="monitoring-improvements">Monitoring Improvements</h3>
+<ul>
+<li>Enhanced variable view with a find action override for both monitoring and evaluator debugging.</li>
+<li>Resolved duplicate watches issue when monitoring multiple devices.</li>
+</ul>
+<h3 id="validation-and-debugging">Validation and Debugging</h3>
+<ul>
+<li>Restarted validation jobs canceled due to priority reads.</li>
+<li>Added a quick fix for missing export builders.</li>
+<li>Introduced configuration and validation for 4diac project nature, including Xtext support.</li>
+</ul>
+<h3 id="system-editor-revamp">System Editor Revamp</h3>
+<ul>
+<li>Moved application renaming and commenting features from the system explorer to the system editor.</li>
+<li>Reworked system editor to manage the application list exclusively (create, delete, reorder).</li>
+<li>Removed outdated actions, such as <code>NewApplicationWizard</code>, align actions from the toolbar, and rename functionality in the system explorer.</li>
+</ul>
+<h3 id="type-library-updates">Type Library Updates</h3>
+<ul>
+<li>Fixed issues with marker creation in the type library after resource updates.</li>
+<li>Addressed problems with the ST parser meta-model, re-adding necessary Xtext project configurations.</li>
+</ul>
+<h3 id="miscellaneous-enhancements">Miscellaneous Enhancements</h3>
+<ul>
+<li>Improved error handling during type updates and refactorings:
+<ul>
+<li>Copied pin instance comments and propagated initial values for renamed pins.</li>
+<li>Enhanced handling of attribute copying for error markers.</li>
+</ul>
+</li>
+<li>Fixed port locations for negative graph coordinates.</li>
+<li>Tweaked layout configuration for FB blocks, reducing width requirements.</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<h3 id="memory-and-resource-management">Memory and Resource Management</h3>
+<ul>
+<li>Removed all <code>delete[]</code> usage in interface setup, improving memory handling.</li>
+<li>Fixed issues with string node IDs in the object struct helper for better reliability.</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
  
 
 <p>Cheers,<br>
@@ -1509,7 +1564,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1733692903"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1733692904"></script>
   
 
   
