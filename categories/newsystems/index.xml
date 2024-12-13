@@ -9,6 +9,18 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/newsystems/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #14</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-14/</link>
+      <pubDate>Fri, 13 Dec 2024 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-14/</guid>
+      <description>Enhancements and Fixes in 4diac IDE News Post for Eclipse 4diac Enhancements:
+Updated evaluator for the new simple FB standard: Added EC state handling. Updated related tests. Optimized Sys file generation: Excluded mapped entities to reduce file size and potential git conflicts. Enhanced ST validation for the new simple FB standard: Updated validation messages and quick fixes. Adjusted constants, variables, and methods. Improved algorithm filtering logic and handling of missing algorithms.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #13</title>
       <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-13/</link>
       <pubDate>Fri, 06 Dec 2024 17:00:00 +0000</pubDate>
