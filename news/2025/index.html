@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Eclipse 4diac Weekly 8 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly 8 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly 8 | The Eclipse Foundation" />
+<title>News 2025 | The Eclipse Foundation</title>
+<meta property="og:title" content="News 2025 | The Eclipse Foundation" />
+<meta name="twitter:title" content="News 2025 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from October 25 to November 1, 2024.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from October 25 to November 1, 2024.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from October 25 to November 1, 2024.">
+<meta name="description" content="Eclipse 4diac News 2025.">
+<meta property="og:description" content="Eclipse 4diac News 2025.">
+<meta name="twitter:description" content="Eclipse 4diac News 2025.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,11 +29,11 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1736325236">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1736325236">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1736325239">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1736325239">
 <script>
 	
 		var tableClasses = "table";
@@ -1245,8 +1245,6 @@
             
               
             
-              
-            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
@@ -1257,13 +1255,8 @@
             </li>
           
             
-            <li >
-              <a href="https://eclipse.dev/4diac/news/2024/">News 2024</a>
-            </li>
-          
-            
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/">Eclipse 4diac Weekly 8</a>
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
           </ol>
@@ -1280,7 +1273,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly 8
+          News 2025
         
       </h1>
     
@@ -1288,91 +1281,22 @@
 
 
   
-
+   
   
-
-
-  <p>Update on what development happened across the Eclipse 4diac project in the week from October 25 to November 1, 2024.</p> 
-
-
-<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
-<ul>
-<li>
-<p><strong>New Functionalities</strong></p>
-<ul>
-<li>Added new FBType <code>RangeBasedPulse</code> for distance-based impulse generation.</li>
-<li>Implemented snap-to-grid functionality for:
-<ul>
-<li>Context menu FB creation.</li>
-<li>New SubApp, Group, and Comment elements.</li>
-<li>Paste action.</li>
-<li>Drag-and-drop FB creation.</li>
-<li>Direct edit-created elements.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Enhancements</strong></p>
-<ul>
-<li>Changed visibility attribute for <code>VarInOuts</code> in the Importer and Exporter for accurate saves.</li>
-<li>Adjusted Imports-Table column to occupy the full width.</li>
-<li>Updated <code>InsertFB</code> handler to support new FB direct editing.</li>
-<li>Added recursive parent folder creation in type entries.</li>
-</ul>
-</li>
-<li>
-<p><strong>Bug Fixes</strong></p>
-<ul>
-<li>Fixed duplicated creation of <code>UpdateFbInterfaceChange</code>.</li>
-<li>Corrected root content setup in System Explorer for proper label and trigger point.</li>
-<li>Resolved generic datatype in automatic subapp pin creation.</li>
-<li>Prevented table view display for SubApp Type Pins.</li>
-<li>Fixed usage of deprecated editable targets in annotation and marker models.</li>
-<li>Deprecated and cleaned up marker helper methods.</li>
-<li>Fixed missing dependency in <code>subapptypeeditor</code> manifest.</li>
-<li>Removed unnecessary manifests for non-Fordiac projects.</li>
-</ul>
-</li>
-<li>
-<p><strong>Technical Adjustments</strong></p>
-</li>
-<li>
-<p><code>ECCEditorEditDomain</code> now delays model request until necessary, resolving issue #672.</p>
-</li>
-<li>
-<p>Improved parsing and memory management:</p>
-<ul>
-<li>Removed redundant list in <code>parseSubApp()</code>.</li>
-<li>Corrected use of externalized string constants.</li>
-</ul>
-</li>
-</ul>
-<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
-<ul>
-<li>
-<p><strong>Upgraded 4diac FORTE to support the new API of <a href="https://www.open62541.org/">open62541</a> version 1.4</strong></p>
-<ul>
-<li>Refactored OPC UA server configuration to align with open62541 1.4.</li>
-<li>Enhanced custom hostname handling to comply with open62541 1.4 requirements.</li>
-<li>Switched to <code>unordered_map</code> in the Abstract OPC UA Handler for performance improvement.</li>
-<li>Fixed memory leak in UA Logger.</li>
-</ul>
-</li>
-<li>
-<p><strong>Build Improvements</strong></p>
-<ul>
-<li>Enabled option to compile only the C library when selected.</li>
-</ul>
-</li>
-</ul>
-<p>Many thanks to all contributors for their work and their feedback!</p>
- 
-
-<p>Cheers,<br>
-      The Eclipse 4diac Team
-</p>
- 
+  
+    
+      
+<div class="news-list">
+  <a href=" /4diac/news/2025/2025/eclipse-4diac-weekly-16/" class="media media-link match-height-item">
+    <p class="media-date">Friday, Jan 3, 2025</p>
+    <h4 class="media-heading">Eclipse 4diac Weekly #16</h4>
+    <p class="media-text">Enhancements and Fixes in 4diac IDE Usability Enhancements
+Improved FB Debug View by using Watch colors consistently. Reworked Open Type Dialog to reduce blocking behavior, enhancing performance. Added new icon for library directories. Changed default Watch colors for better contrast on light themes and introduced styles for dark themes. Added settings for monitoring text colors. Error Handling and Validation
+Improved error handling in value converters to avoid null pointer exceptions (NPEs) and enhanced error messages during array and struct parsing.</p>
+  </a>
+</div>
+    
+    
   
 
   
