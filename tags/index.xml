@@ -8,6 +8,18 @@
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster><atom:link href="https://eclipse.dev/4diac/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>4 Weeks to the 4days of Eclipse 4diac Winter School</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/4weeksto4d4d/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/4weeksto4d4d/</guid>
+      <description>Why should you care about IEC 61499? Because it revolutionizes how we design distributed control systems by offering modular, reusable components that seamlessly integrate into various environments. Imagine developing a smart factory system where machines communicate efficiently and adapt to changes in real-time.
+With 4diac IDE, you’ll not only model these systems but also simulate, test, and deploy them effectively. Ever wondered how to manage complex industrial processes with minimal downtime?</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #16</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-16/</link>
       <pubDate>Fri, 03 Jan 2025 07:00:00 +0000</pubDate>
