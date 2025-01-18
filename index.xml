@@ -9,6 +9,17 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Sun, 01 Mar 2020 16:09:45 -0400</lastBuildDate><atom:link href="https://eclipse.dev/4diac/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #18</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-18/</link>
+      <pubDate>Fri, 17 Jan 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-18/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Enhancements Debugging Improvements: Add toggle value for all BOOL variables, including struct members. Editor Updates: Reworked System Editor: Added scrollbar for smaller screens. Moved applications and the system configuration to the top. Children of typed subapps are now correctly opened in the type editor. Added jump mode navigation for struct members. Programming and Formatting: Reworked comment auto-wrap in the ST formatter: Introduced fixed comment line width.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #17</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-17/</link>
       <pubDate>Fri, 10 Jan 2025 07:00:00 +0000</pubDate>
