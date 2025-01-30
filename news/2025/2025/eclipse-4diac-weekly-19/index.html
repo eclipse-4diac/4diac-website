@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Guest Post: Eclipse 4diac in Elektor Mag | The Eclipse Foundation</title>
-<meta property="og:title" content="Guest Post: Eclipse 4diac in Elektor Mag | The Eclipse Foundation" />
-<meta name="twitter:title" content="Guest Post: Eclipse 4diac in Elektor Mag | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #19 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #19 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #19 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from January 17 to January 24, 2025.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 17 to January 24, 2025.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 17 to January 24, 2025.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-19/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,11 +29,11 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-19/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1738266937">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1738266937">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1738266938">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1738266938">
 <script>
 	
 		var tableClasses = "table";
@@ -1258,12 +1258,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/news/2023/">News 2023</a>
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/">Guest Post: Eclipse 4diac in Elektor Mag</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-19/">Eclipse 4diac Weekly #19</a>
             </li>
           
           </ol>
@@ -1280,7 +1280,7 @@
     
       <h1>
         
-          Guest Post: Eclipse 4diac in Elektor Mag
+          Eclipse 4diac Weekly #19
         
       </h1>
     
@@ -1288,22 +1288,148 @@
 
 
   
-  <h2 id="guest-post-eclipse-4diactrade-in-elektor-mag">Guest Post: Eclipse 4diac™ in Elektor mag</h2>
-<p><em><strong>there is a featured Article in Elektor about Eclipse 4diac™ and logiBUS®</strong></em></p>
+
+  
+
+
+  <p>Update on what development happened across the Eclipse 4diac project in the week from January 17 to January 24, 2025.</p> 
+
+
+<h2 id="eclipse-4diac-ide-updates">Eclipse 4diac IDE Updates</h2>
 <ul>
-<li><a href="https://www.elektormagazine.de/news/jetzt-erhaltlich-elektor-sonderheft-gastredaktion-von-espressif">News in German</a></li>
-<li><a href="https://www.espressif.com/en/news/Elektor_Espressif_Collab">News in English</a></li>
-<li><a href="https://www.youtube.com/watch?v=WCOCC8zqapI">youtube News in English</a></li>
-<li><a href="https://www.elektormagazine.de/magazine/elektor-329">Magazine in German</a></li>
-<li><a href="https://www.elektormagazine.com/magazine/elektor-328">Magazine in English</a></li>
-<li><a href="https://www.elektormagazine.de/magazine/elektor-329/62575">Article in German</a></li>
-<li><a href="https://www.elektormagazine.com/magazine/elektor-328/62438">Article in English</a></li>
+<li>
+<p><strong>Function Blocks</strong></p>
+<ul>
+<li>Updated E_SPLIT function block description and comments:
+<ul>
+<li>Improved clarity in the Function attribute.</li>
+<li>Updated comments to reflect functionality accurately.</li>
 </ul>
-<p>Cheers, <br>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Storage and Validation Enhancements</strong></p>
+<ul>
+<li>Updated storage format.</li>
+<li>Ignored excess elements in array initializers in the evaluator.</li>
+<li>Validated no value for variables with variable array bounds (<code>*</code>):
+<ul>
+<li>Added helper for type declaration parsing.</li>
+<li>Improved regex handling for variable bounds.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Fixed infinite recursion for subapp connections in monitoring.</li>
+<li>Corrected copy/paste behavior for types with the same name from different packages.</li>
+<li>Fixed issues pasting into empty NatTable.</li>
+</ul>
+</li>
+<li>
+<p><strong>Improvements in NatTable</strong></p>
+<ul>
+<li>Changed copy/paste behavior for rows to handle imports.</li>
+</ul>
+</li>
+<li>
+<p><strong>External Source Handling</strong></p>
+<ul>
+<li>Warnings are now ignored by default in external source folders.</li>
+</ul>
+</li>
+<li>
+<p><strong>Coordinate System Updates</strong></p>
+<ul>
+<li>Reworked collision and size calculations to align with IEC 61499 coordinates.</li>
+</ul>
+</li>
+<li>
+<p><strong>Struct Muxer Improvements</strong></p>
+<ul>
+<li>Ensured no additional padding, maintaining proper grid alignment.</li>
+</ul>
+</li>
+<li>
+<p><strong>Variable View Enhancements</strong></p>
+<ul>
+<li>Improved variable value editing:
+<ul>
+<li>Added shortcuts to change variable values.</li>
+<li>Allowed changing multiple values simultaneously.</li>
+<li>Introduced simplified input dialogs for single values.</li>
+<li>Added structured edit dialogs for structured and multiple variables.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Text Editor Enhancements</strong></p>
+<ul>
+<li>Added a text action bar contributor for multi-page type editors.</li>
+</ul>
+</li>
+<li>
+<p><strong>Qualified Name Management</strong></p>
+<ul>
+<li>Cleaned up and refactored the <code>QualNameChangeListener</code> and related components:
+<ul>
+<li>Introduced a manager for listening to qualified name changes.</li>
+<li>Implemented support for updating the plant hierarchy with qualified name changes.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Collision Detection</strong></p>
+<ul>
+<li>Correctly handled right interface bar collisions in expanded subapps.</li>
+</ul>
+</li>
+<li>
+<p><strong>Memory Boundary Settings</strong></p>
+<ul>
+<li>Removed outdated memory boundary settings for better compatibility with modern JVMs.</li>
+</ul>
+</li>
+</ul>
+<h2 id="eclipse-4diac-forte-updates">Eclipse 4diac FORTE Updates</h2>
+<ul>
+<li>
+<p><strong>Struct Support Enhancements</strong></p>
+<ul>
+<li>Refactored connection closing to support nested structs.</li>
+<li>Refactored <code>setMemberValues</code> for nested struct compatibility.</li>
+<li>Refactored <code>getRDBufferIndexFromNodeId</code> for nested structs.</li>
+<li>Refactored initialization of <code>RDBuffer</code> to support nested structs.</li>
+<li>Added support for sending data with nested structs.</li>
+<li>Organized nested struct members in a new struct action info.</li>
+</ul>
+</li>
+<li>
+<p><strong>Command Parsing</strong></p>
+<ul>
+<li>Moved command parsing outside of the <code>DEV_MGR</code> class:
+<ul>
+<li>Replaced the <code>IBootFileCallback</code> class with a callback function.</li>
+<li>Simplified and modularized the command parsing process.</li>
+<li>Implemented feedback from pull requests and improved logging.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
 
-
-Franz Höpfinger on behalf of HR Agrartechnik GmbH</p>
-
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
+  
 
   
 
@@ -1502,7 +1628,7 @@ Franz Höpfinger on behalf of HR Agrartechnik GmbH</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1738266937"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1738266938"></script>
   
 
   
