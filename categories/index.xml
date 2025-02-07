@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
-    <lastBuildDate>Fri, 24 Jan 2025 07:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Jan 2025 07:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #20</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-20/</link>
+      <pubDate>Fri, 31 Jan 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-20/</guid>
+      <description>Eclipse 4diac IDE Updates Usability &amp;amp; UI Improvements
+Pressing Enter now moves to the next editable cell in the variables dialog. Introduced a feature to open types directly in the editor from the instance viewer. Unified the preference page setup and removed unnecessary plugin activators. Editor &amp;amp; Code Handling Enhancements
+Fixed issues with special characters $ and \ in comments to prevent misinterpretation during replacements. Improved ST resource saving by using a copy of internal elements for reconciling and simplifying the load process.</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac Weekly #19</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-19/</link>
