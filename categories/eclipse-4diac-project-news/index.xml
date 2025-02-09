@@ -9,6 +9,18 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac FORTE Build Environment Release beta-2025-02</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-fbe-release-beta-2025-02/</link>
+      <pubDate>Sun, 09 Feb 2025 14:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-fbe-release-beta-2025-02/</guid>
+      <description>Eclipse 4diac FORTE Build Environment (FBE) Released! 4diac FBE has been part of the Eclipse 4diac project for a while, and several users have started using it and providing valuable feedback. Today is the very first official (pre-)release, containing lots of quality-of-life improvements to make the 4diac FBE experience as nice as possible.
+To download this release, head over to https://github.com/eclipse-4diac/4diac-fbe/releases and get 4diac-fbe-beta-2025-02.zip. Make sure you get the correct file, do NOT fetch the source code archives.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #20</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-20/</link>
       <pubDate>Fri, 31 Jan 2025 07:00:00 +0000</pubDate>
