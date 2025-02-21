@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Guest Post: Eclipse 4diac in Elektor Mag | The Eclipse Foundation</title>
-<meta property="og:title" content="Guest Post: Eclipse 4diac in Elektor Mag | The Eclipse Foundation" />
-<meta name="twitter:title" content="Guest Post: Eclipse 4diac in Elektor Mag | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #21 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #21 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #21 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from January 31 to February 07, 2025.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 31 to February 07, 2025.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 31 to February 07, 2025.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-21/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,11 +29,11 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-21/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1740153837">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1740153837">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1740153836">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1740153836">
 <script>
 	
 		var tableClasses = "table";
@@ -1258,12 +1258,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/news/2023/">News 2023</a>
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/">Guest Post: Eclipse 4diac in Elektor Mag</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-21/">Eclipse 4diac Weekly #21</a>
             </li>
           
           </ol>
@@ -1280,7 +1280,7 @@
     
       <h1>
         
-          Guest Post: Eclipse 4diac in Elektor Mag
+          Eclipse 4diac Weekly #21
         
       </h1>
     
@@ -1288,22 +1288,147 @@
 
 
   
-  <h2 id="guest-post-eclipse-4diactrade-in-elektor-mag">Guest Post: Eclipse 4diac™ in Elektor mag</h2>
-<p><em><strong>there is a featured Article in Elektor about Eclipse 4diac™ and logiBUS®</strong></em></p>
+
+  
+
+
+  <p>Update on what development happened across the Eclipse 4diac project in the week from January 31 to February 07, 2025.</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
-<li><a href="https://www.elektormagazine.de/news/jetzt-erhaltlich-elektor-sonderheft-gastredaktion-von-espressif">News in German</a></li>
-<li><a href="https://www.espressif.com/en/news/Elektor_Espressif_Collab">News in English</a></li>
-<li><a href="https://www.youtube.com/watch?v=WCOCC8zqapI">youtube News in English</a></li>
-<li><a href="https://www.elektormagazine.de/magazine/elektor-329">Magazine in German</a></li>
-<li><a href="https://www.elektormagazine.com/magazine/elektor-328">Magazine in English</a></li>
-<li><a href="https://www.elektormagazine.de/magazine/elektor-329/62575">Article in German</a></li>
-<li><a href="https://www.elektormagazine.com/magazine/elektor-328/62438">Article in English</a></li>
+<li>
+<p><strong>System Explorer Enhancements</strong></p>
+<ul>
+<li>Added a refresh mechanism to display the manifest in the system explorer.</li>
 </ul>
-<p>Cheers, <br>
+</li>
+<li>
+<p><strong>Error Handling and QuickFixes</strong></p>
+<ul>
+<li>Introduced error markers with QuickFix support for attributes.
+<ul>
+<li>An error marker is created when an attribute is deleted from the type library.</li>
+<li>Supported QuickFixes:
+<ul>
+<li>Change attribute type (atp).</li>
+<li>Create attribute type.</li>
+<li>Suggest best-fitting attribute type.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Improved Search and Navigation</strong></p>
+<ul>
+<li>Added data type attributes as children in the DataTypeInstance Search.</li>
+</ul>
+</li>
+<li>
+<p><strong>Refinements to Qualified Names</strong></p>
+<ul>
+<li>Made <em>Flatten</em> and <em>New Subapplication</em> a <code>QualNameAffectedCommand</code>.</li>
+<li>Cleaned up qualified name change handling.</li>
+<li>Cached new qualified names for plant hierarchy updates.</li>
+<li>Modified <code>MoveAndReconnectCommand</code> and <code>ChangeNameCommand</code> to use a new interface.</li>
+<li>Extended <code>QualNameAffectedCommand</code> to handle multiple elements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Build System and Deployment</strong></p>
+<ul>
+<li>Added missing <code>plugin.properties</code> to the binary build.</li>
+<li>Fixed missing output in the process console for deployment.
+<ul>
+<li>Resolved an issue where deployment considered itself terminated too early, leading to missing console output.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Structured Text (ST) Editor Enhancements</strong></p>
+<ul>
+<li>Fixed file editor input for the ST editor.
+<ul>
+<li>Restored support for plain file editor inputs in the resource-for-editor-input factory.</li>
+</ul>
+</li>
+<li>Improved proposals for global constants in the ST editor.
+<ul>
+<li>Proposals now use qualified names and import the enclosing type.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Global Constants Enhancements</strong></p>
+<ul>
+<li>Added refactoring support for global constants types.</li>
+<li>Updated global constants in the type library.</li>
+<li>Added validation and QuickFix for global constants declaration names.</li>
+<li>Encapsulated global constants in the namespace of the enclosing type.</li>
+</ul>
+</li>
+<li>
+<p><strong>Code Editor Improvements</strong></p>
+<ul>
+<li>Avoided duplicate imports from content assist or QuickFixes.</li>
+<li>Fixed attribute and variable dependencies.
+<ul>
+<li>Reduced unnecessary parsing of internal attributes.</li>
+<li>Fixed missing dependencies for initial values.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Workspace and Resource Management</strong></p>
+<ul>
+<li>Added <em>workingSets</em> as a second root content option.</li>
+<li>Fixed logic for selecting the correct <code>XtextResourceSet</code>.</li>
+<li>Added <code>attribute_type</code> to <code>ResourceSetInitializer</code>.</li>
+<li>Fixed an incorrect resource file extension.</li>
+<li>Unified file extension handling in <code>ResourceSetFactoryRegistry</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Code Formatting and Parsing</strong></p>
+<ul>
+<li>Fixed wrong exception type for parse errors in the evaluator.</li>
+<li>Prevented negative values for indentation during reformatting.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ant Build and Automation</strong></p>
+<ul>
+<li>Implemented changes for the local Ant build.</li>
+<li>Added an Ant task for resaving an entire project type library.</li>
+<li>Refactored the base class for Ant block modification.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li><strong>Startup Behavior for EInit Events (#298)</strong>
+<ul>
+<li>Implemented initial support for <em>EInit</em> event-based startup behavior.</li>
+<li>Optimized memory allocation to occur only if a function block (FB) contains an <em>EInit</em> event.</li>
+<li>Introduced an event type trigger FB.</li>
+<li>Added connection tracking setup for <code>genfb</code>.</li>
+<li>Moved the trigger function to <code>E_TRIG</code> and eliminated the use of external events.</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
 
-
-Franz Höpfinger on behalf of HR Agrartechnik GmbH</p>
-
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
+  
 
   
 
@@ -1502,7 +1627,7 @@ Franz Höpfinger on behalf of HR Agrartechnik GmbH</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1740153839"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1740153836"></script>
   
 
   

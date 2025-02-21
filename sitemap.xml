@@ -2,20 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://eclipse.dev/4diac/categories/4diacfbe/</loc>
-    <lastmod>2025-02-09T14:00:00+00:00</lastmod>
+    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
+    <lastmod>2025-02-14T07:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2025-02-14T07:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-22/</loc>
+    <lastmod>2025-02-14T07:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/</loc>
+    <lastmod>2025-02-14T07:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/4diacfbe/</loc>
     <lastmod>2025-02-09T14:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-fbe-release-beta-2025-02/</loc>
     <lastmod>2025-02-09T14:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/news/2025/</loc>
-    <lastmod>2025-02-09T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
-    <lastmod>2025-01-31T07:00:00+00:00</lastmod>
+    <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-21/</loc>
+    <lastmod>2025-02-07T07:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-20/</loc>
     <lastmod>2025-01-31T07:00:00+00:00</lastmod>
