@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Eclipse 4diac Weekly 3 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly 3 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly 3 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #23 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #23 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #23 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from September 20 to September 28, 2024.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 20 to September 28, 2024.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 20 to September 28, 2024.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from February 14 to February 21, 2025.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 14 to February 21, 2025.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 14 to February 21, 2025.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-3/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-23/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,11 +29,11 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-3/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-23/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1740171340">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1740171340">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1740171342">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1740171342">
 <script>
 	
 		var tableClasses = "table";
@@ -1262,12 +1262,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/news/2024/">News 2024</a>
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-3/">Eclipse 4diac Weekly 3</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-23/">Eclipse 4diac Weekly #23</a>
             </li>
           
           </ol>
@@ -1284,7 +1284,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly 3
+          Eclipse 4diac Weekly #23
         
       </h1>
     
@@ -1296,102 +1296,101 @@
   
 
 
-  <p>Update on what development happened across the Eclipse 4diac project in the week from September 20 to September 28, 2024.</p> 
+  <p>Update on what development happened across the Eclipse 4diac project in the week from February 14 to February 21, 2025.</p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>Fixes</strong></p>
+<p><strong>Improvements &amp; Fixes</strong></p>
 <ul>
-<li>Fix THIS access in forte_ng export and ST editor</li>
-<li>Fix variable access for internal FBs in evaluator</li>
-<li>Fix result type of comparison with missing operand types in ST editor</li>
-<li>Fix result type of internal FB call in ST parser</li>
-<li>Fix null pointer caused by non-existing library</li>
-<li>Fix ClassCastException when opening ContextMenu on an errorMarker</li>
-<li>Fix type cast error when deleting a FBType</li>
-<li>Fixed label providers for Array variables</li>
-<li>Fixed CreateConnectionAtSubappInterface to also include array-datatype</li>
-<li>Fixed creation of pins with array-datatype when creating new SubApp</li>
-<li>Fixed update of Connection Label after expanding/collapsing a SubApp</li>
-<li>Fixed icons for SelectFBDialog in QuickFixOption</li>
-<li>Copying structs to other folder creates 2 identical structs (#514)</li>
-<li>Fix THIS access in forte_ng export and ST editor</li>
+<li>Red error markers now show for invalid hidden connection labels.</li>
+<li>Preserve tree top item in struct manipulator section.</li>
+<li>Improved dependency tracking for plant hierarchy.</li>
+<li>Fixed missing interface when copying internal FBs in the property sheet.</li>
+<li>Fixed NPEs related to type loading in various components.</li>
+<li>Avoid flooding logs when display is disposed in debug code mining.</li>
+<li>Fixed scope issues for adapter features in ST parser.</li>
+<li>Fixed recurring notifications for missing type entries.</li>
+<li>Fixed compiler warnings and improved build scripts.</li>
+<li>Improved event handling and refactoring support.</li>
 </ul>
 </li>
 <li>
-<p><strong>Improvements</strong></p>
+<p><strong>New Features</strong></p>
 <ul>
-<li>Reduce compiler warnings in 4diac IDE</li>
-<li>STOPWATCH: Add new events ET and RESET, update ECState positions, and implement reset functionality</li>
-<li>Refactor locking implementation in type entry to improve performance and avoid deadlocks</li>
-<li>Improvement of Layout of Table in LibrarySelection page</li>
-<li>Ignore dependencies internal to libraries</li>
-<li>Ant task to check for unused dependencies</li>
-<li>Add editor configuration in variable widget</li>
-<li>Use variable widget in launch configurations</li>
-<li>Recreated QuickFixWizard Dialog</li>
+<li><strong>New Event Function Blocks</strong>
+<ul>
+<li>Added <code>E_MERGE3</code> (merges three input events).</li>
+<li>Added <code>E_SPLIT3</code> (splits one event into three output events).</li>
+<li>Added <code>E_MERGE_2</code>, <code>E_SPLIT_2</code>, <code>E_SPLIT_3</code> with updated XML structure.</li>
+</ul>
+</li>
+<li><strong>New Multiplexer &amp; Demultiplexer Function Blocks</strong>
+<ul>
+<li>Added <code>E_MUX</code> and <code>E_MUX8</code> for event multiplexing.</li>
+<li>Added <code>E_DEMUX8</code> for event demultiplexing.</li>
+<li>Updated <code>E_DEMUX</code>, <code>E_MUX</code>, <code>E_MUX8</code> function blocks.</li>
+</ul>
+</li>
+<li><strong>New Blinking Signal Blocks</strong>
+<ul>
+<li>Added <code>E_BLINK</code> and <code>E_BLINK_TRAIN</code> function blocks for simulated blinking signals.</li>
+</ul>
+</li>
+<li><strong>New Wizard for Creating Example-Based Projects</strong>
+<ul>
+<li>Allows users to select and import example projects from a predefined set.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p><strong>Features</strong></p>
+<p><strong>UI &amp; UX Enhancements</strong></p>
 <ul>
-<li>Added check to prevent ClassCastException</li>
-<li>Added support for copy and paste in tree nattable</li>
-<li>Add variable dialog for structured initial values in FB debug view</li>
-<li>Add variable dialog for structured initial values in graphical editors</li>
-<li>Add variable dialog for structured initial values in nat tables</li>
-<li>Add expand/collapse all in variable widget</li>
-<li>Add method to get children from variable in evaluator</li>
-<li>Add message for canceled export of single element</li>
-<li>Add message if cancel all button was used during export</li>
-<li>Changed RepairCommandHandler to QuickFixHandler</li>
-<li>Added new tests for variable operations</li>
+<li>Updated the <strong>4diac IDE logo</strong> in the intro and about sections.</li>
+<li>Improved <strong>navigation menus</strong> and <strong>context menu ordering</strong>.</li>
+<li>Added <strong>line numbers in Model Search</strong> for ST Code.</li>
+<li>Enhanced <strong>GraphicalViewer handling</strong> to prevent null references.</li>
 </ul>
 </li>
 <li>
-<p><strong>Refactorings</strong></p>
+<p><strong>Refactoring &amp; Storage Format Updates</strong></p>
 <ul>
-<li>Cleanup for constructors of CreateInterfaceCommands</li>
-<li>Remove Main Code for Virtual Group Interface Experiment</li>
-<li>Refactoring of Strings for QuickFixWizard</li>
-<li>Replaced WSTRING with STRING in Wago FBs</li>
-</ul>
-</li>
-<li>
-<p><strong>Deprecations</strong></p>
-<ul>
-<li>Add deprecated annotation for searchApplication wrapper in ModelSearch</li>
+<li>Updated event types to <code>EInit</code> on <code>INIT/INITO</code> across multiple folders (<code>net</code>, <code>utils</code>, <code>math</code>, <code>storage</code>).</li>
+<li>Renamed event demultiplexers and multiplexers to include version numbers.</li>
+<li>Improved <strong>rename refactoring</strong> for function block parameters.</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
 <li>
-<p><strong>Features</strong></p>
+<p><strong>New Function Blocks</strong></p>
 <ul>
-<li>Add generic event accessors to enable usage of network FBs as internal FBs</li>
+<li>Added <code>E_TABLE</code> and <code>E_N_TABLE</code> event blocks.</li>
+<li>Added <code>E_T_FF_SR</code> event function block.</li>
+<li>Added <code>E_DEMUX8</code> event demultiplexer.</li>
 </ul>
 </li>
 <li>
 <p><strong>Improvements</strong></p>
 <ul>
-<li>Update compiler flags for ESP32 toolchains to remove deprecated declarations in C and C++ files</li>
+<li>Added <strong><code>E_BLINK</code> functionality</strong> in the new signals module.</li>
+<li>Refactored event handling and data connections in <code>E_TRAIN</code>.</li>
+<li>Updated copyright and licensing information.</li>
 </ul>
 </li>
-<li>
-<p><strong>Cleanups</strong></p>
-<ul>
-<li>Clean main and init files across different architectures
-<ul>
-<li>Added missing flag for shared library</li>
-<li>Fixed Windows architecture declaration and cleaned up startuphook file</li>
-<li>Limited shared library test to only when FORTE is built as a shared library</li>
-<li>Moved signals hook to each architecture</li>
-<li>Exported Windows symbols for shared library</li>
 </ul>
-</li>
+<h2 id="enhancements-and-fixes-in-4diac-fbe">Enhancements and Fixes in 4diac FBE</h2>
+<ul>
+<li><strong>Build System &amp; Documentation Updates</strong>
+<ul>
+<li>Improved build script configurations.</li>
+<li>Fixed formatting and typos in documentation.</li>
+<li>Updated README with <strong>Jenkins CI build badge</strong>.</li>
+<li>Improved cross-compiler descriptions and test improvements.</li>
+<li>Added <strong>new logging features</strong> for improved debugging.</li>
 </ul>
 </li>
 </ul>

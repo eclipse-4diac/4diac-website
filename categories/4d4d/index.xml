@@ -9,6 +9,18 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4d4d/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #23</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-23/</link>
+      <pubDate>Fri, 21 Feb 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-23/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Improvements &amp;amp; Fixes
+Red error markers now show for invalid hidden connection labels. Preserve tree top item in struct manipulator section. Improved dependency tracking for plant hierarchy. Fixed missing interface when copying internal FBs in the property sheet. Fixed NPEs related to type loading in various components. Avoid flooding logs when display is disposed in debug code mining. Fixed scope issues for adapter features in ST parser.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #22</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-22/</link>
       <pubDate>Fri, 14 Feb 2025 07:00:00 +0000</pubDate>
