@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>New Look for Eclipse 4diac! | The Eclipse Foundation</title>
-<meta property="og:title" content="New Look for Eclipse 4diac! | The Eclipse Foundation" />
-<meta name="twitter:title" content="New Look for Eclipse 4diac! | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #24 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #24 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #24 | The Eclipse Foundation" />
 
-<meta name="description" content="Eclipse 4diac reveals a fresh logo and redesigned website powered by Hugo, enhancing accessibility and user experience.">
-<meta property="og:description" content="Eclipse 4diac reveals a fresh logo and redesigned website powered by Hugo, enhancing accessibility and user experience.">
-<meta name="twitter:description" content="Eclipse 4diac reveals a fresh logo and redesigned website powered by Hugo, enhancing accessibility and user experience.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from February 21 to February 28, 2025.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 21 to February 28, 2025.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 21 to February 28, 2025.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-24/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,7 +29,7 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-24/" />
 
 
 <link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1741120678">
@@ -1262,12 +1262,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/news/2024/">News 2024</a>
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/">New Look for Eclipse 4diac!</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-24/">Eclipse 4diac Weekly #24</a>
             </li>
           
           </ol>
@@ -1284,7 +1284,7 @@
     
       <h1>
         
-          New Look for Eclipse 4diac!
+          Eclipse 4diac Weekly #24
         
       </h1>
     
@@ -1296,13 +1296,122 @@
   
 
 
-  <p>Eclipse 4diac reveals a fresh logo and redesigned website powered by Hugo, enhancing accessibility and user experience.</p> 
+  <p>Update on what development happened across the Eclipse 4diac project in the week from February 21 to February 28, 2025.</p> 
 
 
-<p>We’re thrilled to announce a refresh for the Eclipse 4diac project, featuring a modernized logo and a revamped website built on <a href="https://gohugo.io/">Hugo</a>. Our new site design enhances accessibility, speed, and functionality, aiming to deliver a smoother experience for our community.</p>
-<p>The redesigned website provides a streamlined interface, making it easier for users to navigate project resources, find documentation, and stay updated with the latest releases and events. This update reflects our dedication to supporting the growing industrial automation ecosystem and advancing open-source development for all users.</p>
-<p>Explore the new look and feel of the Eclipse 4diac website and let us know your thoughts!</p>
-<p>Many thanks to <a href="https://www.linkedin.com/in/andrea-zoitl-15434732a/">Andrea</a> for providing the base work of setting everything up!</p>
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<ul>
+<li>
+<p><strong>Refactoring and Usability Improvements</strong></p>
+<ul>
+<li>Fixed refactoring issues when the file is not read-only.</li>
+<li>Added a shortcut for renaming elements in refactoring.</li>
+<li>Do not use linked editing for interface refactorings in the ST editor.</li>
+<li>Fixed comment indentation in the ST formatter.</li>
+</ul>
+</li>
+<li>
+<p><strong>Model Search Enhancements</strong></p>
+<ul>
+<li>Added interface value matching in the model search.</li>
+<li>Enabled searching for global constants in initial values of FB types.</li>
+<li>Added support for model search of global constants.</li>
+<li>Included line numbers for ST code in the model search.</li>
+</ul>
+</li>
+<li>
+<p><strong>Plant Hierarchy and Deletion Handling</strong></p>
+<ul>
+<li>Added a delete participant to check plant hierarchy when deleting a file.</li>
+<li>Allowed deletion participant enablement only for sub and system files.</li>
+<li>Added a cache for deleted leaves and an operation to add leaves at specific levels.</li>
+<li>Implemented <code>QualNameChangeListener</code> to update plant hierarchy on delete, undo, and redo.</li>
+<li>Added dependency tracking for plant hierarchy in the builder.</li>
+<li>Introduced a plant hierarchy build configuration and a builder participant.</li>
+</ul>
+</li>
+<li>
+<p><strong>Deployment and Watchpoints</strong></p>
+<ul>
+<li>Added watchpoints and watchpoint pinning support in deployment launch configuration.</li>
+</ul>
+</li>
+<li>
+<p><strong>Editor and Interface Improvements</strong></p>
+<ul>
+<li>Fixed opening root networks for CFBs and Typed Subapps.</li>
+<li>Added a method to reveal type editor pages.</li>
+<li>Updated context menu order for better usability.</li>
+</ul>
+</li>
+<li>
+<p><strong>FB and Event Type Updates</strong></p>
+<ul>
+<li>Updated <code>Port</code> FB: changed port type from <code>WSTRING</code> to <code>STRING</code>.</li>
+<li>Renamed event multiplexer and demultiplexer types to include version numbers.</li>
+<li>Added new event multiplexor FB types <code>E_MUX</code> and <code>E_MUX8</code>.</li>
+<li>Updated event types to <code>EInit</code> in multiple folders for consistency.</li>
+</ul>
+</li>
+<li>
+<p><strong>Infrastructure and Build System</strong></p>
+<ul>
+<li>Fixed compiler warnings related to missing directories.</li>
+<li>Manually applied dependabot updates to the develop branch.</li>
+<li>Added export attributes in the build path.</li>
+</ul>
+</li>
+<li>
+<p><strong>Other Enhancements</strong></p>
+<ul>
+<li>Fixed an issue where saving dirty resources before launch was not prompted.</li>
+<li>Improved handling of hidden connection labels with error markers.</li>
+<li>Added a folder to enable deletion of multiple library elements at once.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li>
+<p><strong>Memory Optimization and Performance</strong></p>
+<ul>
+<li>Reworked XML response generation to reuse allocated memory, improving speed and reducing memory consumption.</li>
+</ul>
+</li>
+<li>
+<p><strong>Event Handling and Function Blocks</strong></p>
+<ul>
+<li>Updated <code>FB_RANDOM</code> and <code>DualHysteresis</code> to use <code>EInit</code>.</li>
+<li>Adapted the EliteBoard module to the new software structure.</li>
+</ul>
+</li>
+<li>
+<p><strong>Infrastructure Improvements</strong></p>
+<ul>
+<li>Updated <code>CStringDictionary</code> interface to a static function call API.</li>
+<li>Converted <code>fixedcapvector</code> to align with <code>std::inplace_vector</code>.</li>
+<li>Ported event handler to <code>std::unique_ptr</code> for better memory management.</li>
+<li>Merged <code>.tpp</code> files into corresponding <code>.hpp</code> files.</li>
+</ul>
+</li>
+<li>
+<p><strong>Debugging and Device Management</strong></p>
+<ul>
+<li>Added a debug device with support for remote control and breakpoints.</li>
+<li>Enhanced OPC UA manager to accept extra methods.</li>
+</ul>
+</li>
+<li>
+<p><strong>Code Refactoring and Cleanup</strong></p>
+<ul>
+<li>Renamed <code>src/core/utils</code> to <code>src/core/util</code> for consistency with the <code>forte::util</code> namespace.</li>
+<li>Removed compiler warnings and improved deprecation messages.</li>
+<li>Used <code>std::vector/inplace_vector</code> for string dictionary storage.</li>
+<li>Standardized usage of <code>new/delete</code> on POSIX and Windows platforms.</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
  
 
 <p>Cheers,<br>
