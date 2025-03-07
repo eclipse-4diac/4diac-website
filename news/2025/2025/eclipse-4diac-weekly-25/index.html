@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Eclipse 4diac Weekly #21 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #21 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #21 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #25 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #25 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #25 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from January 31 to February 07, 2025.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 31 to February 07, 2025.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 31 to February 07, 2025.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from February 28 to March 07, 2025.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 28 to March 07, 2025.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 28 to March 07, 2025.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-21/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-25/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,7 +29,7 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-21/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-25/" />
 
 
 <link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1741381033">
@@ -1267,7 +1267,7 @@
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-21/">Eclipse 4diac Weekly #21</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-25/">Eclipse 4diac Weekly #25</a>
             </li>
           
           </ol>
@@ -1284,7 +1284,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly #21
+          Eclipse 4diac Weekly #25
         
       </h1>
     
@@ -1296,132 +1296,104 @@
   
 
 
-  <p>Update on what development happened across the Eclipse 4diac project in the week from January 31 to February 07, 2025.</p> 
+  <p>Update on what development happened across the Eclipse 4diac project in the week from February 28 to March 07, 2025.</p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>System Explorer Enhancements</strong></p>
+<p><strong>Structured Text (ST) Parser Improvements</strong></p>
 <ul>
-<li>Added a refresh mechanism to display the manifest in the system explorer.</li>
+<li>Fixed type usage with semi-qualified names.</li>
+<li>Ensured correct imports for global constants (e.g., <code>util::Math::PI</code>).</li>
 </ul>
 </li>
 <li>
-<p><strong>Error Handling and QuickFixes</strong></p>
+<p><strong>Refactoring and Code Cleanup</strong></p>
 <ul>
-<li>Introduced error markers with QuickFix support for attributes.
-<ul>
-<li>An error marker is created when an attribute is deleted from the type library.</li>
-<li>Supported QuickFixes:
-<ul>
-<li>Change attribute type (atp).</li>
-<li>Create attribute type.</li>
-<li>Suggest best-fitting attribute type.</li>
-</ul>
-</li>
-</ul>
-</li>
+<li>General refactoring and minor fixes.</li>
+<li>Removed redundant methods in <code>ResourceTypeExporter</code>.</li>
+<li>Removed DOCTYPE entry from resource export for consistency.</li>
 </ul>
 </li>
 <li>
-<p><strong>Improved Search and Navigation</strong></p>
+<p><strong>Resource Handling Enhancements</strong></p>
 <ul>
-<li>Added data type attributes as children in the DataTypeInstance Search.</li>
+<li>Implemented <code>ResourceTypeExporter</code> and modified save method.</li>
+<li>Fixed resource naming bug.</li>
 </ul>
 </li>
 <li>
-<p><strong>Refinements to Qualified Names</strong></p>
+<p><strong>Improved Model and UI Features</strong></p>
 <ul>
-<li>Made <em>Flatten</em> and <em>New Subapplication</em> a <code>QualNameAffectedCommand</code>.</li>
-<li>Cleaned up qualified name change handling.</li>
-<li>Cached new qualified names for plant hierarchy updates.</li>
-<li>Modified <code>MoveAndReconnectCommand</code> and <code>ChangeNameCommand</code> to use a new interface.</li>
-<li>Extended <code>QualNameAffectedCommand</code> to handle multiple elements.</li>
+<li>Implemented rename and move participants for subapps, systems, and folders.</li>
+<li>Changed default scope in model search to project.</li>
+<li>Moved color preferences to theme colors.</li>
+<li>Renamed and moved message properties files.</li>
 </ul>
 </li>
 <li>
-<p><strong>Build System and Deployment</strong></p>
+<p><strong>Event Type and Connection Enhancements</strong></p>
 <ul>
-<li>Added missing <code>plugin.properties</code> to the binary build.</li>
-<li>Fixed missing output in the process console for deployment.
-<ul>
-<li>Resolved an issue where deployment considered itself terminated too early, leading to missing console output.</li>
-</ul>
-</li>
+<li>Added <code>GenericClassName</code> attribute to event types (<code>'GEN_E_MUX'</code>).</li>
+<li>Handled generic <code>Event</code> type in crossing subapp connections.</li>
+<li>Allowed connections to/from generic <code>Event</code> type.</li>
 </ul>
 </li>
 <li>
-<p><strong>Structured Text (ST) Editor Enhancements</strong></p>
+<p><strong>Contract Support and Editor Updates</strong></p>
 <ul>
-<li>Fixed file editor input for the ST editor.
-<ul>
-<li>Restored support for plain file editor inputs in the resource-for-editor-input factory.</li>
-</ul>
-</li>
-<li>Improved proposals for global constants in the ST editor.
-<ul>
-<li>Proposals now use qualified names and import the enclosing type.</li>
-</ul>
-</li>
+<li>Added contract support in SubApps.</li>
+<li>Added editor to new contract dialog.</li>
+<li>Removed unused and outdated contract tests.</li>
 </ul>
 </li>
 <li>
-<p><strong>Global Constants Enhancements</strong></p>
+<p><strong>Bug Fixes and Other Improvements</strong></p>
 <ul>
-<li>Added refactoring support for global constants types.</li>
-<li>Updated global constants in the type library.</li>
-<li>Added validation and QuickFix for global constants declaration names.</li>
-<li>Encapsulated global constants in the namespace of the enclosing type.</li>
-</ul>
-</li>
-<li>
-<p><strong>Code Editor Improvements</strong></p>
-<ul>
-<li>Avoided duplicate imports from content assist or QuickFixes.</li>
-<li>Fixed attribute and variable dependencies.
-<ul>
-<li>Reduced unnecessary parsing of internal attributes.</li>
-<li>Fixed missing dependencies for initial values.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Workspace and Resource Management</strong></p>
-<ul>
-<li>Added <em>workingSets</em> as a second root content option.</li>
-<li>Fixed logic for selecting the correct <code>XtextResourceSet</code>.</li>
-<li>Added <code>attribute_type</code> to <code>ResourceSetInitializer</code>.</li>
-<li>Fixed an incorrect resource file extension.</li>
-<li>Unified file extension handling in <code>ResourceSetFactoryRegistry</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>Code Formatting and Parsing</strong></p>
-<ul>
-<li>Fixed wrong exception type for parse errors in the evaluator.</li>
-<li>Prevented negative values for indentation during reformatting.</li>
-</ul>
-</li>
-<li>
-<p><strong>Ant Build and Automation</strong></p>
-<ul>
-<li>Implemented changes for the local Ant build.</li>
-<li>Added an Ant task for resaving an entire project type library.</li>
-<li>Refactored the base class for Ant block modification.</li>
+<li>Fixed NPE without snapshot in delta in ST import updater.</li>
+<li>Exported 4diac FORTE Core Includes with full source directory.</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
-<li><strong>Startup Behavior for EInit Events (#298)</strong>
+<li>
+<p><strong>Type Handling and Naming Fixes</strong></p>
 <ul>
-<li>Implemented initial support for <em>EInit</em> event-based startup behavior.</li>
-<li>Optimized memory allocation to occur only if a function block (FB) contains an <em>EInit</em> event.</li>
-<li>Introduced an event type trigger FB.</li>
-<li>Added connection tracking setup for <code>genfb</code>.</li>
-<li>Moved the trigger function to <code>E_TRIG</code> and eliminated the use of external events.</li>
+<li>Fixed generic type creation for packages (#311).</li>
+<li>Improved handling of long type names for configurable demuxers.</li>
+</ul>
+</li>
+<li>
+<p><strong>Build System and Multi-Device Enhancements</strong></p>
+<ul>
+<li>Updated to latest development version and fixed <code>#ifdef</code> issues.</li>
+<li>Added proper default name for devices in CMake.</li>
+<li>Removed default fake timer and moved it into the device.</li>
+<li>Added multi-device support.</li>
+</ul>
+</li>
+<li>
+<p><strong>IO Configuration Enhancements</strong></p>
+<ul>
+<li>Made <code>getId</code> method private.</li>
+<li>Added <code>getId</code> method to determine ID for IO configuration reference.</li>
+<li>Used non-empty <code>PARAMS</code> input as ID for IO mapping.</li>
+</ul>
+</li>
+<li>
+<p><strong>ADS Support Updates</strong></p>
+<ul>
+<li>Generated ADS FBT files (<code>ADS_SERVER_CONFIG</code>, <code>SET_LOCAL_ADS_ADDRESS</code>) from IDE to also use <code>EInit</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Event Demultiplexer Cleanup</strong></p>
+<ul>
+<li>Removed unused <code>E_DEMUX8</code> component.</li>
+<li>Cleaned up <code>CMakeLists</code> and updated source file references.</li>
+<li><code>GEN_E_DEMUX_fbt</code> replaces the removed demultiplexer.</li>
 </ul>
 </li>
 </ul>

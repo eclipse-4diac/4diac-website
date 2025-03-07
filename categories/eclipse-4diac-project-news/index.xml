@@ -9,6 +9,21 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #25</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-25/</link>
+      <pubDate>Fri, 07 Mar 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-25/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Structured Text (ST) Parser Improvements
+Fixed type usage with semi-qualified names. Ensured correct imports for global constants (e.g., util::Math::PI). Refactoring and Code Cleanup
+General refactoring and minor fixes. Removed redundant methods in ResourceTypeExporter. Removed DOCTYPE entry from resource export for consistency. Resource Handling Enhancements
+Implemented ResourceTypeExporter and modified save method. Fixed resource naming bug. Improved Model and UI Features
+Implemented rename and move participants for subapps, systems, and folders.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #24</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-24/</link>
       <pubDate>Fri, 28 Feb 2025 07:00:00 +0000</pubDate>
