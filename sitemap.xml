@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://eclipse.dev/4diac/categories/4diaccommunity/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-virtual-community-meeting/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/</loc>
+    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
     <lastmod>2025-03-21T07:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/categories/</loc>
-    <lastmod>2025-03-21T07:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-27/</loc>
-    <lastmod>2025-03-21T07:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/news/2025/</loc>
     <lastmod>2025-03-21T07:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-26/</loc>
