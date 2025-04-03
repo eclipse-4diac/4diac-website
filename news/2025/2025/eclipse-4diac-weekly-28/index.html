@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Eclipse 4diac Weekly #12 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #12 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #12 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #28 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #28 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #28 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from November 22 to November 29, 2024.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 22 to November 29, 2024.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 22 to November 29, 2024.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from March 21 to March 28, 2025.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from March 21 to March 28, 2025.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from March 21 to March 28, 2025.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-28/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,7 +29,7 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-28/" />
 
 
 <link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1743711411">
@@ -1262,12 +1262,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/news/2024/">News 2024</a>
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/">Eclipse 4diac Weekly #12</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-28/">Eclipse 4diac Weekly #28</a>
             </li>
           
           </ol>
@@ -1284,7 +1284,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly #12
+          Eclipse 4diac Weekly #28
         
       </h1>
     
@@ -1296,7 +1296,7 @@
   
 
 
-  <p>Update on what development happened across the Eclipse 4diac project in the week from November 22 to November 29, 2024.</p> 
+  <p>Update on what development happened across the Eclipse 4diac project in the week from March 21 to March 28, 2025.</p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
@@ -1304,33 +1304,42 @@
 <li>
 <p><strong>Bug Fixes</strong></p>
 <ul>
-<li>Propagate initial values when renaming pins.</li>
-<li>Correct marker updates when holding a resource lock.</li>
-<li>Fix missing variable initializers in <code>forte_ng</code> export.</li>
-<li>Resolve NullPointerException when retrieving result types for incomplete expressions.</li>
-<li>Avoid reacting to file changes in the FB type Xtext editor.</li>
-<li>Ensure synchronization in the Structured Text editor inside the FB type editor.</li>
-<li>Fix invalid category in the <code>convertToSubapp</code> command.</li>
-<li>Address validation for duplicate internal attribute names.</li>
-<li>Maintain table stability during refresh by managing scrolling.</li>
-<li>Prevent preloading mapped subapp networks during import.</li>
+<li>Fixed a crash when deleting an input primitive.</li>
+<li>Fixed undo functionality for retain properties.</li>
+<li>Fixed non-existing plant hierarchy producing a null pointer exception when deleting expanded subapplications.</li>
 </ul>
 </li>
 <li>
-<p><strong>Code Quality Improvements</strong></p>
+<p><strong>Improvements</strong></p>
 <ul>
-<li>Remove duplicate extension parser for FBT files in the interpreter.</li>
-<li>Eliminate duplicate <code>STAlgorithm</code> package in the ST editor.</li>
-<li>Update <code>plugin.xml</code> for the renamed <code>EditUntypedSubappInterfaceEventSection</code>.</li>
+<li>Prevented Arrays of Structs from being expandable in Struct Demuxers.</li>
+<li>Added visible children to Struct_Demux type instance names.</li>
+<li>Improved contract creation workflow:
+<ul>
+<li>Fixed layout issues with contract figures.</li>
+<li>Fixed contract line breaks not saving.</li>
+<li>Improved contract creation and decision dialogs.</li>
+<li>Added scoping for pins in contracts.</li>
+<li>Fixed crashes in contract editor quick fixes and cell editor.</li>
+</ul>
+</li>
+<li>Changed dialog preferences to provide simpler information as a restart is no longer needed.</li>
 </ul>
 </li>
 <li>
-<p><strong>Enhancements</strong></p>
+<p><strong>New Features</strong></p>
 <ul>
-<li>Add logging support to the library manager.</li>
-<li>Override <code>basicSetTypeEditable</code> to correctly update system entries after refactoring.</li>
-<li>Divide update changes into separate rename and delete operations.</li>
-<li>Ensure correct editor input across all editors.</li>
+<li>Implemented project-specific settings</li>
+<li>Added validators for <code>SingleEvent</code> and <code>Repetition</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Refactoring &amp; Maintenance</strong></p>
+<ul>
+<li>Changed Ant task to work with type file endings.</li>
+<li>Updated <code>actions/upload-artifact</code> to version 4.6.2.</li>
+<li>Ignored warnings from <code>src-gen</code> directories.</li>
+<li>Only used Move Participant for IEC 61499 type files.</li>
 </ul>
 </li>
 </ul>
@@ -1339,19 +1348,32 @@
 <li>
 <p><strong>Bug Fixes</strong></p>
 <ul>
-<li>Resolve a compilation error in Visual Studio 2022.</li>
-<li>Fix an incorrectly assigned namespace index.</li>
-<li>Address segmentation fault in <code>Config_EMB_RES</code>.</li>
+<li>Fixed an issue where configured data ports were not properly set to configured member references.</li>
+<li>Fixed CTF tracer tests.</li>
 </ul>
 </li>
 <li>
 <p><strong>Improvements</strong></p>
 <ul>
-<li>Disable Powerlink in the continuous integration pipeline.</li>
-<li>Clean and improve the tracer functionality.</li>
+<li>Refactored <code>createInterfaceSpec</code> to support configured structs.</li>
+<li>Refactored <code>getStructNameId</code> to use <code>std::string_view</code>.</li>
+<li>Reworked tracing for reading and writing data:
+<ul>
+<li>Better encapsulated tracing functionality.</li>
+<li>Facilitated future improvements to connection handling.</li>
 </ul>
 </li>
 </ul>
+</li>
+<li>
+<p><strong>Code Maintenance</strong></p>
+<ul>
+<li>Prepared for a major change in traces with minor initial modifications.</li>
+<li>Updated generated WagoBus FBT files from the IDE to use <code>EInit</code>.</li>
+</ul>
+</li>
+</ul>
+<p>These updates bring various performance enhancements, improved validation, and better modularization to the Eclipse 4diac ecosystem.</p>
 <p>Many thanks to all contributors for their work and their feedback!</p>
  
 
@@ -1558,7 +1580,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1743711411"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1743711412"></script>
   
 
   

@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
-    <lastBuildDate>Fri, 21 Mar 2025 07:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Mar 2025 07:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #28</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-28/</link>
+      <pubDate>Fri, 28 Mar 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-28/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Bug Fixes
+Fixed a crash when deleting an input primitive. Fixed undo functionality for retain properties. Fixed non-existing plant hierarchy producing a null pointer exception when deleting expanded subapplications. Improvements
+Prevented Arrays of Structs from being expandable in Struct Demuxers. Added visible children to Struct_Demux type instance names. Improved contract creation workflow: Fixed layout issues with contract figures. Fixed contract line breaks not saving. Improved contract creation and decision dialogs.</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac Virtual Community Meeting</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-virtual-community-meeting/</link>
