@@ -9,6 +9,19 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/newsystems/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #29</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-29/</link>
+      <pubDate>Fri, 04 Apr 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-29/</guid>
+      <description>Enhancements and Fixes in 4diac IDE General Cleanup
+Cleanup contract plugins Cleanup BulkEditor Delete incomplete test for currently unused class. Bug Fixes
+Fix access mode for statements in ST parser Fix type path for array types in forte_ng export Fix network interpreter test cases Updated test cases for experimental FB Network interpreter Removed deprecated methods Fix getSystem() null pointer in DiagramEditor Fixed Initial Column to use correct project for PreferenceStore Fixed Attribute/Type Selection for AttributeTable in BulkEditor ** ST and Model Enhancements **</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #28</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-28/</link>
       <pubDate>Fri, 28 Mar 2025 07:00:00 +0000</pubDate>
