@@ -21,6 +21,17 @@ Fix access mode for statements in ST parser Fix type path for array types in for
     </item>
     
     <item>
+      <title>Proposal Upgrade 4diac FORTE to C&#43;&#43;20</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/proposal-upgrade-4diac-forte-to-c-20/</link>
+      <pubDate>Fri, 04 Apr 2025 14:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/proposal-upgrade-4diac-forte-to-c-20/</guid>
+      <description>As this may impact many of our users, especially on more exotic platform we are seeking for your feedback this issue: https://github.com/eclipse-4diac/4diac-forte/issues/399</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #28</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-28/</link>
       <pubDate>Fri, 28 Mar 2025 07:00:00 +0000</pubDate>
