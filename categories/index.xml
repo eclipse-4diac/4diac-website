@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
-    <lastBuildDate>Fri, 04 Apr 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Apr 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #30</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-30/</link>
+      <pubDate>Fri, 11 Apr 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-30/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Improved Type System Infrastructure
+Introduced hash generation for library elements based only on type-relevant content. Ensured type library refresh and stability when opening projects or handling invalid build paths. Added error handling for missing TypeEntry and invalid editor references. Better Tooling &amp;amp; Automation
+Added a project property page for configuring automatic type export: Includes default exporter preference, export filter selection, and support for relative paths.</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac Weekly #29</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-29/</link>
