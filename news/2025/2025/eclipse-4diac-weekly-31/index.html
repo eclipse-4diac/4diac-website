@@ -7,13 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>4diacFORTE | The Eclipse Foundation</title>
-<meta property="og:title" content="4diacFORTE | The Eclipse Foundation" />
-<meta name="twitter:title" content="4diacFORTE | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #31 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #31 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #31 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from April 11 to April 18, 2025.">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from April 11 to April 18, 2025.">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from April 11 to April 18, 2025.">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/categories/4diacforte/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-31/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,9 +29,7 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/categories/4diacforte/" />
-
-<link rel="alternate" href="/4diac/categories/4diacforte/index.xml" type="application/rss+xml" title="">
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-31/" />
 
 
 <link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1745259748">
@@ -1261,18 +1259,25 @@
             
               
             
+              
+            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/categories/">Categories</a>
+              <a href="https://eclipse.dev/4diac/news/">News</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/categories/4diacforte/">4diacFORTE</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-31/">Eclipse 4diac Weekly #31</a>
             </li>
           
           </ol>
@@ -1289,7 +1294,7 @@
     
       <h1>
         
-          4diacFORTE
+          Eclipse 4diac Weekly #31
         
       </h1>
     
@@ -1297,20 +1302,97 @@
 
 
   
-   
+
   
-  
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/proposal-upgrade-4diac-forte-to-c-20/" class="media media-link match-height-item">
-    <p class="media-date">Friday, Apr 4, 2025</p>
-    <h4 class="media-heading">Proposal Upgrade 4diac FORTE to C++20</h4>
-    <p class="media-text">As this may impact many of our users, especially on more exotic platform we are seeking for your feedback this issue: https://github.com/eclipse-4diac/4diac-forte/issues/399</p>
-  </a>
-</div>
-    
-    
+
+
+  <p>Update on what development happened across the Eclipse 4diac project in the week from April 11 to April 18, 2025.</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<ul>
+<li>
+<p><strong>Structured Text (ST) improvements</strong></p>
+<ul>
+<li>Fixed missing feature in ST model issues.</li>
+<li>Corrected access mode handling for statements in the ST parser.</li>
+</ul>
+</li>
+<li>
+<p><strong>Type and Project Handling</strong></p>
+<ul>
+<li>Fixed errors when creating types in non-existing folders.</li>
+<li>Ensured type library is refreshed when a project is opened.</li>
+<li>Fixed NPE in type library due to missing build path.</li>
+<li>Correctly handled type paths for array types in <code>forte_ng</code> export.</li>
+<li>Fixed handling when toggling expanded subapps before updating them with a type.</li>
+<li>Restored reverted changes post-freeze and fixed related issues.</li>
+</ul>
+</li>
+<li>
+<p><strong>Editor and UI Improvements</strong></p>
+<ul>
+<li>Improved handling of dependency updates during editor closing to avoid NPEs.</li>
+<li>Reworked <code>FordiacEditorMatchingStrategy</code> for improved robustness.</li>
+<li>Corrected use of <code>TypeEntry</code> in Type Editor to avoid NPEs.</li>
+<li>Removed dummy preference accesses in expanded subapp interfacebar layout.</li>
+<li>Cleaned up layout and resize commands for subapps.</li>
+<li>Enabled hierarchy delete updates for typed subapps.</li>
+<li>Reworked max length value preferences and aligned diagram/grid settings with Eclipse guidelines.</li>
+<li>Removed project preference dependencies from the Debug view.</li>
+<li>Fixed initialization of max width for watch values in monitoring.</li>
+<li>Added dispose checks during System Explorer refresh.</li>
+<li>Validated that project is not only open but also exists.</li>
+</ul>
+</li>
+<li>
+<p><strong>Build &amp; Dependency Management</strong></p>
+<ul>
+<li>Fixed GitLab downloader preferences with default settings.</li>
+<li>Updated GitHub action: <code>actions/setup-java</code> from 4.7.0 to 4.7.1.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li>
+<p><strong>C++20 Compatibility</strong></p>
+<ul>
+<li>Set minimum required C++ standard to C++20.</li>
+<li>Fixed deprecation warnings for operations between different enumeration types.</li>
+<li>Removed unsupported <code>u8</code> string literal assignments to <code>std::string</code>.</li>
+<li>Cast <code>char16_t</code> to <code>uint16_t</code> to avoid deleted <code>operator&lt;&lt;</code> in boost tests.</li>
+</ul>
+</li>
+<li>
+<p><strong>Runtime Behavior</strong></p>
+<ul>
+<li>Fixed one cycle delay in timer processing for short-timed FBs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Code Quality and Maintenance</strong></p>
+<ul>
+<li>Explicitly set file encoding to UTF-8.</li>
+<li>Refactored interface specification creation to support configured structs.</li>
+<li>Set configured data ports to member references.</li>
+<li>Optimized <code>getStructNameId</code> using <code>std::string_view</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>New Features</strong></p>
+<ul>
+<li>Added support for Replay algorithm and device.</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
+
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
   
 
   

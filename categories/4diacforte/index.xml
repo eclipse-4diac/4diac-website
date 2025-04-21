@@ -9,6 +9,19 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Fri, 04 Apr 2025 14:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacforte/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #31</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-31/</link>
+      <pubDate>Fri, 18 Apr 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-31/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Structured Text (ST) improvements
+Fixed missing feature in ST model issues. Corrected access mode handling for statements in the ST parser. Type and Project Handling
+Fixed errors when creating types in non-existing folders. Ensured type library is refreshed when a project is opened. Fixed NPE in type library due to missing build path. Correctly handled type paths for array types in forte_ng export. Fixed handling when toggling expanded subapps before updating them with a type.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #30</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-30/</link>
       <pubDate>Fri, 11 Apr 2025 17:00:00 +0000</pubDate>
