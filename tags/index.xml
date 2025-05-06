@@ -8,6 +8,34 @@
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster><atom:link href="https://eclipse.dev/4diac/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #33</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-33/</link>
+      <pubDate>Fri, 02 May 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-33/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Browser &amp;amp; UI Fixes
+Switched default browser on Windows to Internet Explorer temporarily. Fixed exception in Nebula RichTextEditor and updated its target platform. Contract Editor Improvements
+Fixed command visibility and enhanced Xtext grammar: Decimal parsing fixed Enums introduced Improved property names Added once and sequence properties to the model Execution &amp;amp; FB Support
+Fixed wrong algorithm execution. Added ECState handling for SimpleFBs. Replaced stream usage with list.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #32</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-32/</link>
+      <pubDate>Fri, 25 Apr 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-32/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Search improvements
+Select search results in Structured Text. Switch search backend to fordiac TextMatch. Add type information to search matches. Library handling
+External libraries are extracted as read-only. Standard libraries are made read-only through decoration. Editors handle read-only behavior; library contents are protected from deletion. Preparation for future doSaveAs() support. Structured Text and Subapp improvements
+Add list support for VarConfig entries in typed Subapps. Define EInit event type for all INIT/INITO events in templates.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #31</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-31/</link>
       <pubDate>Fri, 18 Apr 2025 17:00:00 +0000</pubDate>
