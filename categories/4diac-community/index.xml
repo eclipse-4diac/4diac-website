@@ -9,6 +9,44 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diac-community/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #35</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-35/</link>
+      <pubDate>Fri, 16 May 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-35/</guid>
+      <description>Enhancements and Fixes in 4diac IDE 4diac FORTE Export Improvements
+Fixed null pointer exceptions when handling comments inside Composite FBs. Corrected variable declaration order for InOut FBs. Fixed handling of ARRAY string IDs for array interface elements. Reworked output parameter generation for better semantic alignment. Changed Structured Text argument mapping to use ITypedElement. Function Block and Library Updates
+Added eIO Function Blocks to the type library. Removed QI and QO ports and related service sequences from configuration FBs.</description>
+    </item>
+    
+    <item>
+      <title>Introducing Our New Committer Martin Jobst</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/introducing-our-new-committer-martin-jobst/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/introducing-our-new-committer-martin-jobst/</guid>
+      <description>Martin is a freelance computer scientist from Germany, with nearly a decade of experience contributing to Eclipse 4diac. His expertise spans low-level embedded development, distributed systems, model-based engineering, compiler design, databases, and network security.
+His major contributions to Eclipse 4diac include:
+The implementation of large parts of the IEC 61131-3 Structured Text (ST) editor Development of the integrated debugging environment for IEC 61499 function blocks Work on the exporter, deployment, and monitoring infrastructure for the FORTE runtime Enhancements to the core classes and data types in FORTE These features are all available in the current 4diac IDE and 4diac FORTE 3.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #34</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-34/</link>
+      <pubDate>Fri, 09 May 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-34/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Model and Export Enhancements
+Removed unused timestamps from the Data response model and EventOccurrence model. Added startTime and duration attributes to the model. Implemented a new type export builder and extracted the exporter from the export wizard. Added CBasicFB::setInitialValues in the 4diac FORTE exporter to ensure ECC state reset. Used absolute data port index for read/writeData in the forte_ng exporter. Encapsulated global constants in the forte_ng export.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #33</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-33/</link>
       <pubDate>Fri, 02 May 2025 17:00:00 +0000</pubDate>

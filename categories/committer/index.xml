@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>committer on Eclipse 4diac</title>
+    <link>https://eclipse.dev/4diac/categories/committer/</link>
+    <description>Recent content in committer on Eclipse 4diac</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
+    <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
+    <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/committer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #35</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-35/</link>
+      <pubDate>Fri, 16 May 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-35/</guid>
+      <description>Enhancements and Fixes in 4diac IDE 4diac FORTE Export Improvements
+Fixed null pointer exceptions when handling comments inside Composite FBs. Corrected variable declaration order for InOut FBs. Fixed handling of ARRAY string IDs for array interface elements. Reworked output parameter generation for better semantic alignment. Changed Structured Text argument mapping to use ITypedElement. Function Block and Library Updates
+Added eIO Function Blocks to the type library. Removed QI and QO ports and related service sequences from configuration FBs.</description>
+    </item>
+    
+    <item>
+      <title>Introducing Our New Committer Martin Jobst</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/introducing-our-new-committer-martin-jobst/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/introducing-our-new-committer-martin-jobst/</guid>
+      <description>Martin is a freelance computer scientist from Germany, with nearly a decade of experience contributing to Eclipse 4diac. His expertise spans low-level embedded development, distributed systems, model-based engineering, compiler design, databases, and network security.
+His major contributions to Eclipse 4diac include:
+The implementation of large parts of the IEC 61131-3 Structured Text (ST) editor Development of the integrated debugging environment for IEC 61499 function blocks Work on the exporter, deployment, and monitoring infrastructure for the FORTE runtime Enhancements to the core classes and data types in FORTE These features are all available in the current 4diac IDE and 4diac FORTE 3.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #34</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-34/</link>
+      <pubDate>Fri, 09 May 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-34/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Model and Export Enhancements
+Removed unused timestamps from the Data response model and EventOccurrence model. Added startTime and duration attributes to the model. Implemented a new type export builder and extracted the exporter from the export wizard. Added CBasicFB::setInitialValues in the 4diac FORTE exporter to ensure ECC state reset. Used absolute data port index for read/writeData in the forte_ng exporter. Encapsulated global constants in the forte_ng export.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #33</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-33/</link>
+      <pubDate>Fri, 02 May 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-33/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Browser &amp;amp; UI Fixes
+Switched default browser on Windows to Internet Explorer temporarily. Fixed exception in Nebula RichTextEditor and updated its target platform. Contract Editor Improvements
+Fixed command visibility and enhanced Xtext grammar: Decimal parsing fixed Enums introduced Improved property names Added once and sequence properties to the model Execution &amp;amp; FB Support
+Fixed wrong algorithm execution. Added ECState handling for SimpleFBs. Replaced stream usage with list.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #32</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-32/</link>
+      <pubDate>Fri, 25 Apr 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-32/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Search improvements
+Select search results in Structured Text. Switch search backend to fordiac TextMatch. Add type information to search matches. Library handling
+External libraries are extracted as read-only. Standard libraries are made read-only through decoration. Editors handle read-only behavior; library contents are protected from deletion. Preparation for future doSaveAs() support. Structured Text and Subapp improvements
+Add list support for VarConfig entries in typed Subapps. Define EInit event type for all INIT/INITO events in templates.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #31</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-31/</link>
+      <pubDate>Fri, 18 Apr 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-31/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Structured Text (ST) improvements
+Fixed missing feature in ST model issues. Corrected access mode handling for statements in the ST parser. Type and Project Handling
+Fixed errors when creating types in non-existing folders. Ensured type library is refreshed when a project is opened. Fixed NPE in type library due to missing build path. Correctly handled type paths for array types in forte_ng export. Fixed handling when toggling expanded subapps before updating them with a type.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #30</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-30/</link>
+      <pubDate>Fri, 11 Apr 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-30/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Improved Type System Infrastructure
+Introduced hash generation for library elements based only on type-relevant content. Ensured type library refresh and stability when opening projects or handling invalid build paths. Added error handling for missing TypeEntry and invalid editor references. Better Tooling &amp;amp; Automation
+Added a project property page for configuring automatic type export: Includes default exporter preference, export filter selection, and support for relative paths.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #29</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-29/</link>
+      <pubDate>Fri, 04 Apr 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-29/</guid>
+      <description>Enhancements and Fixes in 4diac IDE General Cleanup
+Cleanup contract plugins Cleanup BulkEditor Delete incomplete test for currently unused class. Bug Fixes
+Fix access mode for statements in ST parser Fix type path for array types in forte_ng export Fix network interpreter test cases Updated test cases for experimental FB Network interpreter Removed deprecated methods Fix getSystem() null pointer in DiagramEditor Fixed Initial Column to use correct project for PreferenceStore Fixed Attribute/Type Selection for AttributeTable in BulkEditor ** ST and Model Enhancements **</description>
+    </item>
+    
+    <item>
+      <title>Proposal Upgrade 4diac FORTE to C&#43;&#43;20</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/proposal-upgrade-4diac-forte-to-c-20/</link>
+      <pubDate>Fri, 04 Apr 2025 14:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/proposal-upgrade-4diac-forte-to-c-20/</guid>
+      <description>As this may impact many of our users, especially on more exotic platform we are seeking for your feedback this issue: https://github.com/eclipse-4diac/4diac-forte/issues/399</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #28</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-28/</link>
+      <pubDate>Fri, 28 Mar 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-28/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Bug Fixes
+Fixed a crash when deleting an input primitive. Fixed undo functionality for retain properties. Fixed non-existing plant hierarchy producing a null pointer exception when deleting expanded subapplications. Improvements
+Prevented Arrays of Structs from being expandable in Struct Demuxers. Added visible children to Struct_Demux type instance names. Improved contract creation workflow: Fixed layout issues with contract figures. Fixed contract line breaks not saving. Improved contract creation and decision dialogs.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Virtual Community Meeting</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-virtual-community-meeting/</link>
+      <pubDate>Sun, 23 Mar 2025 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-virtual-community-meeting/</guid>
+      <description>The next Eclipse 4diac Virtual Community Meeting will be held on April 10th, 5pm CET.
+You can join the meeting via this Zoom Link
+Our planned agenda is as follows:
+Introduction of the attendees Overview on Eclipse 4diac and the planned next steps Community Q&amp;amp;A We use a publicly available document to manage the meeting’s agenda. You can add items to it anytime.
+We look forward to an insightful discussion with all of you!</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #27</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-27/</link>
+      <pubDate>Fri, 21 Mar 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-27/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Monitoring Enhancements:
+Show last forced value during monitoring. Add a clear force command for better control. Code Quality and Bug Fixes:
+Fix potential null pointer in LibraryManager and improve link resolution. Remove workaround for inaccessible Xtext editor method. Fix follow connection handler for blocks with only inout variables. Consider only visible candidates for unresolved references in ST parser. Fix access mode for member access expressions in ST utilities.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #26</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-26/</link>
+      <pubDate>Fri, 14 Mar 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-26/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Function Block Network Enhancements
+Boolean connections can now be negated. Contract Editor and Grammar Improvements
+Corrected caching and resource mapping in contract creation. Fixed contract grammar to allow offset intervals. Resolved contract editor crash when applying quickfix. Improved handling of non-proper intervals. Added scoping for pins in contracts. Fixed issues with contract figure layout, line breaks, and new contract creation for subapp pins. Debugging and Monitoring Enhancements</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #25</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-25/</link>
+      <pubDate>Fri, 07 Mar 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-25/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Structured Text (ST) Parser Improvements
+Fixed type usage with semi-qualified names. Ensured correct imports for global constants (e.g., util::Math::PI). Refactoring and Code Cleanup
+General refactoring and minor fixes. Removed redundant methods in ResourceTypeExporter. Removed DOCTYPE entry from resource export for consistency. Resource Handling Enhancements
+Implemented ResourceTypeExporter and modified save method. Fixed resource naming bug. Improved Model and UI Features
+Implemented rename and move participants for subapps, systems, and folders.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #24</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-24/</link>
+      <pubDate>Fri, 28 Feb 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-24/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Refactoring and Usability Improvements
+Fixed refactoring issues when the file is not read-only. Added a shortcut for renaming elements in refactoring. Do not use linked editing for interface refactorings in the ST editor. Fixed comment indentation in the ST formatter. Model Search Enhancements
+Added interface value matching in the model search. Enabled searching for global constants in initial values of FB types. Added support for model search of global constants.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #23</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-23/</link>
+      <pubDate>Fri, 21 Feb 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-23/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Improvements &amp;amp; Fixes
+Red error markers now show for invalid hidden connection labels. Preserve tree top item in struct manipulator section. Improved dependency tracking for plant hierarchy. Fixed missing interface when copying internal FBs in the property sheet. Fixed NPEs related to type loading in various components. Avoid flooding logs when display is disposed in debug code mining. Fixed scope issues for adapter features in ST parser.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #22</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-22/</link>
+      <pubDate>Fri, 14 Feb 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-22/</guid>
+      <description>4days of Eclipse 4diac Winter School From February 10 to 14 the 4days of Eclipse 4diac Winter School took place at Johannes Kepler University Linz.
+Enhancements and Fixes in 4diac IDE SubApp and System Explorer Improvements
+Fixed SubApp opening in the plant hierarchy for unloaded SubAppNetwork. Added a refresh mechanism to display the manifest in the system explorer. Event Function Blocks
+Added new event function blocks: E_MERGE3: Merges three input events.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac FORTE Build Environment Release beta-2025-02</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-fbe-release-beta-2025-02/</link>
+      <pubDate>Sun, 09 Feb 2025 14:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-fbe-release-beta-2025-02/</guid>
+      <description>Eclipse 4diac FORTE Build Environment (FBE) Released! 4diac FBE has been part of the Eclipse 4diac project for a while, and several users have started using it and providing valuable feedback. Today is the very first official (pre-)release, containing lots of quality-of-life improvements to make the 4diac FBE experience as nice as possible.
+To download this release, head over to https://github.com/eclipse-4diac/4diac-fbe/releases and get 4diac-fbe-beta-2025-02.zip. Make sure you get the correct file, do NOT fetch the source code archives.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #21</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-21/</link>
+      <pubDate>Fri, 07 Feb 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-21/</guid>
+      <description>Enhancements and Fixes in 4diac IDE System Explorer Enhancements
+Added a refresh mechanism to display the manifest in the system explorer. Error Handling and QuickFixes
+Introduced error markers with QuickFix support for attributes. An error marker is created when an attribute is deleted from the type library. Supported QuickFixes: Change attribute type (atp). Create attribute type. Suggest best-fitting attribute type. Improved Search and Navigation
+Added data type attributes as children in the DataTypeInstance Search.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #20</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-20/</link>
+      <pubDate>Fri, 31 Jan 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-20/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Usability &amp;amp; UI Improvements
+Pressing Enter now moves to the next editable cell in the variables dialog. Introduced a feature to open types directly in the editor from the instance viewer. Unified the preference page setup and removed unnecessary plugin activators. Editor &amp;amp; Code Handling Enhancements
+Fixed issues with special characters $ and \ in comments to prevent misinterpretation during replacements. Improved ST resource saving by using a copy of internal elements for reconciling and simplifying the load process.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #19</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-19/</link>
+      <pubDate>Fri, 24 Jan 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-19/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Function Blocks
+Updated E_SPLIT function block description and comments: Improved clarity in the Function attribute. Updated comments to reflect functionality accurately. Storage and Validation Enhancements
+Updated storage format. Ignored excess elements in array initializers in the evaluator. Validated no value for variables with variable array bounds (*): Added helper for type declaration parsing. Improved regex handling for variable bounds. Bug Fixes
+Fixed infinite recursion for subapp connections in monitoring.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #18</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-18/</link>
+      <pubDate>Fri, 17 Jan 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-18/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Enhancements Debugging Improvements: Add toggle value for all BOOL variables, including struct members. Editor Updates: Reworked System Editor: Added scrollbar for smaller screens. Moved applications and the system configuration to the top. Children of typed subapps are now correctly opened in the type editor. Added jump mode navigation for struct members. Programming and Formatting: Reworked comment auto-wrap in the ST formatter: Introduced fixed comment line width.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #17</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-17/</link>
+      <pubDate>Fri, 10 Jan 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-17/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Improvements
+Added a separate warning for truncating literal conversions, including exceptions for semantically relevant cases. Improved type inference for nested binary expressions by ensuring operand types are converted to required unsigned or bit types before determining the common result type. Fixed the equivalent unsigned type for INT. Enhanced graphical editor appearance for fractional native scaling by using the exact swt.autoScaling parameter, improving drawing aspect ratios on non-integer scaling settings (e.</description>
+    </item>
+    
+    <item>
+      <title>4 Weeks to the 4days of Eclipse 4diac Winter School</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/4weeksto4d4d/</link>
+      <pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/4weeksto4d4d/</guid>
+      <description>Why should you care about IEC 61499? Because it revolutionizes how we design distributed control systems by offering modular, reusable components that seamlessly integrate into various environments. Imagine developing a smart factory system where machines communicate efficiently and adapt to changes in real-time.
+With 4diac IDE, you’ll not only model these systems but also simulate, test, and deploy them effectively. Ever wondered how to manage complex industrial processes with minimal downtime?</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #16</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-16/</link>
+      <pubDate>Fri, 03 Jan 2025 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-16/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Usability Enhancements
+Improved FB Debug View by using Watch colors consistently. Reworked Open Type Dialog to reduce blocking behavior, enhancing performance. Added new icon for library directories. Changed default Watch colors for better contrast on light themes and introduced styles for dark themes. Added settings for monitoring text colors. Error Handling and Validation
+Improved error handling in value converters to avoid null pointer exceptions (NPEs) and enhanced error messages during array and struct parsing.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #15</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-15/</link>
+      <pubDate>Fri, 20 Dec 2024 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-15/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Improved Block Layout Options Added wrapping and compacting options for the block layout to reduce width and provide better, more compact layouts. UI Enhancements Internal attributes are now hidden in tree views, ensuring a cleaner and more user-friendly interface. Library Management Updates Changed linked library location in projects. Removed SystemPaletteManagement and replaced explicit strings with TypeLibraryTags references. Adjusted associated test cases. Refactoring Enhancements Added pre-checks for syntax and linking errors before Structured Text (ST) refactoring, notifying users of potential inaccuracies.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #14</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-14/</link>
+      <pubDate>Fri, 13 Dec 2024 07:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-14/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Enhancements:
+Updated evaluator for the new simple FB standard: Added EC state handling. Updated related tests. Optimized Sys file generation: Excluded mapped entities to reduce file size and potential git conflicts. Enhanced ST validation for the new simple FB standard: Updated validation messages and quick fixes. Adjusted constants, variables, and methods. Improved algorithm filtering logic and handling of missing algorithms. Introduced new attribute handling in CreateAttributeCommand.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #13</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-13/</link>
+      <pubDate>Fri, 06 Dec 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-13/</guid>
+      <description>Enhancements and Fixes in 4diac IDE General Clean-Up Removed outdated execution runtime launcher classes. Removed obsolete extensions for old monitoring. Removed unnecessary throws declarations in the debug model. Cleaned messages file of systemmanagement.ui plugin. Fixed warnings and Sonar issues in systemmanagement.ui. Removed last remnants of the virtual group interface code. Cleaned up layout class and refined connection and FB layout configurations. Mapping Enhancements Fixed parameter handling in MappingTargetCreator. Enabled automatic connection creation for mapped FBs during mapping.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #12</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/</link>
+      <pubDate>Fri, 29 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-12/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Bug Fixes
+Propagate initial values when renaming pins. Correct marker updates when holding a resource lock. Fix missing variable initializers in forte_ng export. Resolve NullPointerException when retrieving result types for incomplete expressions. Avoid reacting to file changes in the FB type Xtext editor. Ensure synchronization in the Structured Text editor inside the FB type editor. Fix invalid category in the convertToSubapp command. Address validation for duplicate internal attribute names.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #11</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-11/</link>
+      <pubDate>Fri, 22 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-11/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Evaluator Improvements:
+Avoid unnecessary allocations when parsing values. Avoid unnecessary initialization of variables when a value is supplied, adding copy constructors for struct and array variables. Use evaluator cache when adding or updating watches. Monitoring Enhancements:
+Use a fixed delay instead of a fixed rate for polling to prevent overruns. Fix polling interval overflow. Disable changed value detection for sub-variables to prevent flickering in the Variables view.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #10</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-10/</link>
+      <pubDate>Fri, 15 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-10/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Editable Columns
+Made all columns editable except for the &amp;ldquo;visible&amp;rdquo; column while connected. Added &amp;ldquo;type&amp;rdquo; as an editable column. Outline and Property Sheet Enhancements
+Forwarded outline selection to the property sheet, reflecting changes in the type editor and property sheets. Added a sorter for the outline view to organize FB types better. Reworked presentation of attributes in the outline to include name, type, and value, and, for typed attributes, the package name.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac at SPS 2024 with Aimirim and Universal Automation</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-at-sps-2024/</link>
+      <pubDate>Mon, 11 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-at-sps-2024/</guid>
+      <description>We are excited to share that Aimirim is representing the Eclipse 4diac project at SPS 2024 in Nuremberg, Germany! Together with UniversalAutomation.org, Aimirim is demonstrating real-world applications of our industry automation technology.
+At the Universal Automation booth, Aimirim showcases how their 4diac IDE plugin enables seamless deployment to the Universal Automation runtime environment, aligning with open automation standards like IEC 61499. This setup forms the backbone of Aimirim’s Industry 4.0 solutions for software-defined facilities.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #9</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-9/</link>
+      <pubDate>Fri, 08 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-9/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Bug Fixes
+Update type preserves pin attributes, fixing lost attributes when updating a type. Ignore non-type files when manually creating type entries. Fix invalid thread access issues in refresh functions. Corrected attribute names for comment writing. Added missing cast from bit values to boolean type. Fix missing editor input in instance viewers to prevent NPE in context menu. Addressed type renaming issues in structured text (ST) declarations.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly 8</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/</link>
+      <pubDate>Fri, 01 Nov 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/</guid>
+      <description>Enhancements and Fixes in 4diac IDE New Functionalities
+Added new FBType RangeBasedPulse for distance-based impulse generation. Implemented snap-to-grid functionality for: Context menu FB creation. New SubApp, Group, and Comment elements. Paste action. Drag-and-drop FB creation. Direct edit-created elements. Enhancements
+Changed visibility attribute for VarInOuts in the Importer and Exporter for accurate saves. Adjusted Imports-Table column to occupy the full width. Updated InsertFB handler to support new FB direct editing. Added recursive parent folder creation in type entries.</description>
+    </item>
+    
+    <item>
+      <title>New Look for Eclipse 4diac!</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/</link>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/new-look-for-eclipse-4diac/</guid>
+      <description>We’re thrilled to announce a refresh for the Eclipse 4diac project, featuring a modernized logo and a revamped website built on Hugo. Our new site design enhances accessibility, speed, and functionality, aiming to deliver a smoother experience for our community.
+The redesigned website provides a streamlined interface, making it easier for users to navigate project resources, find documentation, and stay updated with the latest releases and events. This update reflects our dedication to supporting the growing industrial automation ecosystem and advancing open-source development for all users.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly 7</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/</link>
+      <pubDate>Fri, 25 Oct 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Improvements and Fixes in 4diac IDE: Enhancements in Editor and UI functionality: Use Frameworkutil to create a dictionary in FordiacImageURL. Adjusted column width in Imports-Table to occupy the entire width. Fixed UpdateFbInterfaceChange to prevent duplicated creation. Modified Imports Table column width to fill entire width. Enabled recursive folder creation in type entry. Resolved generic datatype for automatic SubApp pin creation. Fixed System Explorer root content and label provider setup.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly 6</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/</link>
+      <pubDate>Fri, 18 Oct 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Bug Fixes
+Fix deadlock when creating new type via quickfix Fix conflicts during nested unnecessary conversion quickfix Fix formatter preferences during quickfixes or refactoring Fix partial access on array subscript Fixed issue where Quick-Fix option did not show up in dirty Editor Fix cyclic resolution when creating resource descriptions Fix attribute lookup in importer Fix connection clipping with Insets for expanded SubappApp content Fix errors from consecutive type updates in open instance viewer Improvements to Connection and XML Handling</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly 5</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-5/</link>
+      <pubDate>Fri, 11 Oct 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-5/</guid>
+      <description>Enhancements and Fixes in 4diac IDE New Features
+Added new functions F_NOW and F_NOW_MONOTONIC for timing.
+These functions return the current local date/time and monotonic clock value, respectively. Added a Build 4diac Forte Launcher.
+New launch configuration to build preconfigured 4diac FORTE using the cmake &amp;ndash;build command. UI/UX Enhancements
+FB Network Grid now follows IEC 61499 Coordinate System Resolution. Grid resolution matches the size difference between pins, ensuring cleaner drawings and more precise FB positioning.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly 4</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-4/</link>
+      <pubDate>Fri, 04 Oct 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-4/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Fixes
+Fixed return type conversion in ST partitioner: Corrected an issue where the return type was set to ANY instead of null, causing problems during export. Fixed validation of assigned inputs from outside in ST editor. Fixed Quick-Fix to use the correct model element and ensure unsaved changes are preserved. Fixed issue where typing to invoke the new instance inserter caused the first character to be selected and overwritten.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly 3</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-3/</link>
+      <pubDate>Thu, 26 Sep 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-3/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Fixes
+Fix THIS access in forte_ng export and ST editor Fix variable access for internal FBs in evaluator Fix result type of comparison with missing operand types in ST editor Fix result type of internal FB call in ST parser Fix null pointer caused by non-existing library Fix ClassCastException when opening ContextMenu on an errorMarker Fix type cast error when deleting a FBType Fixed label providers for Array variables Fixed CreateConnectionAtSubappInterface to also include array-datatype Fixed creation of pins with array-datatype when creating new SubApp Fixed update of Connection Label after expanding/collapsing a SubApp Fixed icons for SelectFBDialog in QuickFixOption Copying structs to other folder creates 2 identical structs (#514) Fix THIS access in forte_ng export and ST editor Improvements</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly 2</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-2/</link>
+      <pubDate>Fri, 20 Sep 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-2/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Function Block Changes and Updates
+Added a new scaling function block with enhanced features Updated fieldbus signal conversion function blocks: Refined input/output handling and updated comments for clarity Test and UI Enhancements
+Restructured SWTBot UI tests for better modularity and migrated them to the new architecture Enabled the cancel button for long-running export operations Improved handling of export threads and fixed race conditions related to UI interactions Fixes and Miscellaneous Updates</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly 1</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-1/</link>
+      <pubDate>Fri, 13 Sep 2024 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-1/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Property Sheets
+Separated annotation model refresh in property sheets Avoided removing and re-adding annotations during live validation Export Functionality
+Disabled editing of the Message-Textfield in the export dialog Added handling for AttributeDeclaration and AutomationSystem in export Fixed &amp;ldquo;not responding&amp;rdquo; message on Windows during long-running exports Updated types to be exported in SIFB exporter Added export of global constant files Evaluator and Conversion Fixes
+Fixed name collision between cached global variables in ST evaluator Fixed initial values for sampling FB evaluator Fixed comparison with negative zero for reals according to IEEE 754 standards Fixed rounding mode for real to integer conversions to round towards the nearest even integer UI and Testing Improvements</description>
+    </item>
+    
+    <item>
+      <title>Save the Date: 4days of Eclipse 4diac Winter School - February 11-14, 2025</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/save-the-date-4days-of-eclipse-4diac-winter-school-february-11-14-2025/</link>
+      <pubDate>Tue, 10 Sep 2024 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/save-the-date-4days-of-eclipse-4diac-winter-school-february-11-14-2025/</guid>
+      <description>We are excited to announce that Bianca Wiesmayr, Lisa Sonnleithner, and Alois Zoitl form the LIT Cyber-Physical Systems Lab will organize the 4days of Eclipse 4diac Winter School from February 11-14, 2025 in Linz, Austria!
+What to expect? This winter school offers an in-depth exploration of IEC 61499 and Eclipse 4diac. Whether you are a newcomer eager to learn or a seasoned user looking to deepen your knowledge, this event is designed for every one of you.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Welcomes Zephyr Support to Empower Small Embedded Systems with IEC 61499</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/4diac-forte-on-zephyr/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/4diac-forte-on-zephyr/</guid>
+      <description>In particular, special thanks go to KT Elektronik, as they enabled Dirk O Kaar&amp;rsquo;s work on this contribution as part of his employment. This propelled our integration with Zephyr forward.
+This exciting development opens up new possibilities for industrial control systems and automation professionals, fostering increased efficiency and flexibility in their projects. This integration enables industrial automation developers to leverage the power of Zephyr in their projects within the Eclipse 4diac ecosystem.</description>
+    </item>
+    
+    <item>
+      <title>Guest Post: Eclipse 4diac for Agrimechatronics: The Project logiBUS won a prestigious award</title>
+      <link>https://eclipse.dev/4diac/news/2024/2024/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibus-won-a-prestigious-award/</link>
+      <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2024/2024/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibus-won-a-prestigious-award/</guid>
+      <description>is the Fusion of IEC 61499 programming and ISO 11783 compatibiltiy.
+Now logiBUS® won a prestigious award: &amp;ldquo;Award for innovative digital farming&amp;rdquo; it was awarded at the 44th Annual Conference at the University of Hohenheim of the Society for Information Technology in Agriculture, Forestry and the Food Industry e.V.
+Cheers, Franz Höpfinger on behalf of HR Agrartechnik GmbH</description>
+    </item>
+    
+    <item>
+      <title>Guest Post: Eclipse 4diac in Elektor mag</title>
+      <link>https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/</link>
+      <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/</guid>
+      <description>Guest Post: Eclipse 4diac™ in Elektor mag there is a featured Article in Elektor about Eclipse 4diac™ and logiBUS®
+News in German News in English youtube News in English Magazine in German Magazine in English Article in German Article in English Cheers, Franz Höpfinger on behalf of HR Agrartechnik GmbH</description>
+    </item>
+    
+    <item>
+      <title>Guest Post: Eclipse 4diac for Agrimechatronics: The Project logiBUS&amp;reg;</title>
+      <link>https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibusreg/</link>
+      <pubDate>Sat, 19 Aug 2023 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibusreg/</guid>
+      <description>The folks at HR Agrartechnik GmbH have been busy to port Eclipse 4diac™ FORTE to the ESP32 and integrate the ISOBUS (ISO 11783) protocol over the last year.
+is the Fusion of IEC 61499 programming and ISO 11783 compatibiltiy.
+ISOBUS, also known as ISO 11783, is a communication protocol standard developed for agricultural equipment to facilitate the exchange of data between different types of farm machinery and implements. The term &amp;ldquo;ISOBUS&amp;rdquo; stands for &amp;ldquo;ISO Bus,&amp;rdquo; where ISO refers to the International Organization for Standardization, and &amp;ldquo;Bus&amp;rdquo; refers to a system of communication between multiple devices.</description>
+    </item>
+    
+    <item>
+      <title>You Can&#39;t Make an Omelet Without Breaking Eggs!</title>
+      <link>https://eclipse.dev/4diac/news/2023/2023/you-cant-make-an-omelet-without-breaking-eggs/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2023/2023/you-cant-make-an-omelet-without-breaking-eggs/</guid>
+      <description>For 4diac FORTE, API stability was always our major concern.
+However, this came at a cost (e.g., performance, memory usage, memory-safety). Therefore, we decided that we need to do a major rework of 4diac FORTE for the next release!
+The first results are already looking very promising. We get twice the speed for FB algorithm execution and reduced the runtime overhead (event and connection processing) by 30%. We hope for more progress to come in the next weeks.</description>
+    </item>
+    
+  </channel>
+</rss>
