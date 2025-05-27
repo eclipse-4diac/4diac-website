@@ -9,6 +9,18 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Sun, 23 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diaccommunity/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #36</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-36/</link>
+      <pubDate>Fri, 23 May 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-36/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Editor and UI Enhancements
+Added a preference for automatic connection of event pins. FBs inserted into an execution chain are now automatically connected at the end. Implemented inserting function blocks after a selected predecessor. &amp;ldquo;Connect Through&amp;rdquo; now works during deletion ensuring event chains. Improved handling of search results in Structured Text: Automatically selects search result. Search now uses 4diac TextMatch. Matches include a type indicating the editor marker.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #35</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-35/</link>
       <pubDate>Fri, 16 May 2025 17:00:00 +0000</pubDate>
