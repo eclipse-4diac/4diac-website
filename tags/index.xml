@@ -8,6 +8,20 @@
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster><atom:link href="https://eclipse.dev/4diac/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #37</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-37/</link>
+      <pubDate>Fri, 30 May 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-37/</guid>
+      <description>Enhancements and Fixes in 4diac IDE FBNetwork Interpreter Support for FunctionFBType
+Structured Text (ST) Editor Enhancements:
+Correct handling of parameters with variable-length arrays. Improved escaping of newline characters (e.g., \n now maps to $L instead of $N). Restructured preferences and property pages: Unified layout across ST-related settings. Removed obsolete ST core and Xtext compiler pages. Project-specific configuration support. Monitoring and Debugging Fixes:
+Improved in-out pin handling in watch views for variable-length arrays.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #36</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-36/</link>
       <pubDate>Fri, 23 May 2025 17:00:00 +0000</pubDate>
