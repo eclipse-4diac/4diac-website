@@ -9,6 +9,17 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/newsystems/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Next Eclipse 4diac Virtual Community Meeting</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/next-eclipse-4diac-virtual-community-meeting/</link>
+      <pubDate>Mon, 02 Jun 2025 12:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/next-eclipse-4diac-virtual-community-meeting/</guid>
+      <description>We aim to present recent changes in the Eclipse 4diac environment and project team. We will demonstrate notable features and provide tips and tricks. Our committer Jörg Walter will present his recent work on using the build environment to facilitate creating your own 4diac FORTE. Following up on initial insights in our previous community evening, our committer Martin Jobst will present the new Structured Text editor, which has excellent editing capabilities that resemble those available for general-purpose programming languages.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #37</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-37/</link>
       <pubDate>Fri, 30 May 2025 17:00:00 +0000</pubDate>
