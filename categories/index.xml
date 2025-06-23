@@ -22,6 +22,20 @@ Fixed missing type hash in forte_ng export for functions Improved forte_ng expor
     </item>
     
     <item>
+      <title>Eclipse 4diac Weekly #39</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-39/</link>
+      <pubDate>Fri, 13 Jun 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-39/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Improved Adapter Export and Validation
+Updated Function Block (FB) exporter to support the new adapter design. Updated adapter code generator to follow the new architecture used in 4diac FORTE. Added validation to prevent illegal use of variable-length variables. openPOWERLINK Support for 4diac 3.0.0
+Added missing FBs for openPOWERLINK integration and ensured proper package naming. Enhancements and Fixes in 4diac FORTE Refactoring and Cleanup
+Removed single linked list from the Windows Sercomm layer.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #38</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-38/</link>
       <pubDate>Fri, 06 Jun 2025 17:00:00 +0000</pubDate>
