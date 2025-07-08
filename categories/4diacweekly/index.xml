@@ -7,7 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>4diac-dev@eclipse.org (Eclipse 4diac Team)</managingEditor>
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
-    <lastBuildDate>Fri, 20 Jun 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 04 Jul 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #42</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-42/</link>
+      <pubDate>Fri, 04 Jul 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-42/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Structured Text and Function Enhancements
+Implemented &amp;ldquo;Find References&amp;rdquo; for structured text functions. Enabled search functionality within algorithm and function ST editors. Library and Type System Improvements
+Added missing event-driven function blocks to Library 3.0.0. Added new eIO 3.0.0 function block set. Fixed an issue where type updates affected saved varconfig entries. Improved varconfig import handling to correctly parse configurations. UI and Editor Fixes
+Fixed a bug with disposed text controls in the initial value cell editor for structured types.</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac Weekly #40</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-40/</link>
