@@ -22,6 +22,19 @@ Fixed a bug with disposed text controls in the initial value cell editor for str
     </item>
     
     <item>
+      <title>Eclipse 4diac Weekly #41</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-41/</link>
+      <pubDate>Fri, 27 Jun 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-41/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Library Handling Overhaul
+Introduced a new builder for external libraries. Removed outdated components: library change listener, plugin activator, TypeLibraryStarter extension point, and event broker. Added marker resolution to assist users in adding the new builder when needed. Adjusted existing tests to reflect the updated library handling approach. Deployment &amp;amp; Package Name Fixes
+Corrected package names in several contexts: EMB_RES in device creation and deployment evaluation.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #40</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-40/</link>
       <pubDate>Fri, 20 Jun 2025 17:00:00 +0000</pubDate>

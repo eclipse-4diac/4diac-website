@@ -7,13 +7,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Eclipse 4diac Weekly #11 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #11 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #11 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #41 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #41 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #41 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from November 15 to November 22, 2024.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 15 to November 22, 2024.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 15 to November 22, 2024.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from June 20 to June 27, 2025.
+
+This week in Eclipse 4diac: 4diac IDE received …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from June 20 to June 27, 2025.
+
+This week in Eclipse 4diac: 4diac IDE received …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from June 20 to June 27, 2025.
+
+This week in Eclipse 4diac: 4diac IDE received …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -21,7 +27,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-11/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-41/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -29,7 +35,7 @@
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-11/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-41/" />
 
 
 <link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1751963958">
@@ -1272,12 +1278,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/news/2024/">News 2024</a>
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-11/">Eclipse 4diac Weekly #11</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-41/">Eclipse 4diac Weekly #41</a>
             </li>
           
           </ol>
@@ -1294,7 +1300,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly #11
+          Eclipse 4diac Weekly #41
         
       </h1>
     
@@ -1306,106 +1312,106 @@
   
 
 
-  <p>Update on what development happened across the Eclipse 4diac project in the week from November 15 to November 22, 2024.</p> 
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from June 20 to June 27, 2025.</p>
+<p>This week in Eclipse 4diac: 4diac IDE received updates to the external library handling, improved SubApp support in the Bulk Editor, and better drag-and-drop behavior in the System Explorer. The connection layout algorithm now supports user-defined timeouts and considers comment fields during routing. In 4diac FORTE, clang-format integration was added along with fixes for debug-level logging in IEC 61131-3 function blocks.</p>
+</p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>Evaluator Improvements:</strong></p>
+<p><strong>Library Handling Overhaul</strong></p>
 <ul>
-<li>Avoid unnecessary allocations when parsing values.</li>
-<li>Avoid unnecessary initialization of variables when a value is supplied, adding copy constructors for struct and array variables.</li>
-<li>Use evaluator cache when adding or updating watches.</li>
+<li>Introduced a new builder for external libraries.</li>
+<li>Removed outdated components: library change listener, plugin activator, TypeLibraryStarter extension point, and event broker.</li>
+<li>Added marker resolution to assist users in adding the new builder when needed.</li>
+<li>Adjusted existing tests to reflect the updated library handling approach.</li>
 </ul>
 </li>
 <li>
-<p><strong>Monitoring Enhancements:</strong></p>
+<p><strong>Deployment &amp; Package Name Fixes</strong></p>
 <ul>
-<li>Use a fixed delay instead of a fixed rate for polling to prevent overruns.</li>
-<li>Fix polling interval overflow.</li>
-<li>Disable changed value detection for sub-variables to prevent flickering in the Variables view.</li>
-<li>Detect remote disconnects of devices.</li>
-<li>Fix updates for terminated debug targets to prevent unnecessary watch updates.</li>
-</ul>
-</li>
-<li>
-<p><strong>Structured Text (ST) Editor:</strong></p>
+<li>Corrected package names in several contexts:
 <ul>
-<li>Add a performance mode.</li>
-<li>Add a cache for expected types.</li>
-<li>Prefer signed literals in the absence of an expected type in the parser.</li>
-<li>Fix result types for logical and range operators.</li>
-<li>Fix operator applicability checks to ensure valid result types for unary and binary operations.</li>
-<li>Avoid acquiring locks for model listeners if they are empty in the Xtext document.</li>
-<li>Override the document locker from the Xtext document.</li>
-<li>Avoid using the &ldquo;resolve all&rdquo; option to reduce excessive diagnostics.</li>
-<li>Implement lazy linking for resources.</li>
-<li>Use lazy evaluation for result types of standard functions.</li>
-<li>Avoid file change refreshes in the FB type editor.</li>
-</ul>
-</li>
-<li>
-<p><strong>FB Network Viewer and System UI:</strong></p>
-<ul>
-<li>Fix position restoration after type updates by reducing asynchronous behavior.</li>
-<li>Fix broken connection checking for CFB and Typed SubApp instances.</li>
-<li>Removed outdated handlers and action providers from the system explorer, such as <code>RenameSystem</code> and <code>SystemExporerNewActionProvider</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>Attribute and Property Handling:</strong></p>
-<ul>
-<li>Ensure attributes are shown for <code>var_in_out</code> pins for inputs.</li>
-<li>Allow <code>ConfigurableObjects</code> to be selected in the attribute property sheet.</li>
-<li>Use an internal typed attribute for <code>INOUT_VISIBLE_OUT</code> to harmonize XML output.</li>
-</ul>
-</li>
-<li>
-<p><strong>Function Block Types:</strong></p>
-<ul>
-<li>Update <code>RangeBasedPulse</code> FBType to include a comment attribute.</li>
-<li>Rename a file to remove extra spaces and update algorithm logic for <code>RangeBasedPulse</code>.</li>
-</ul>
-</li>
-<li>
-<p><strong>Bug Fixes:</strong></p>
-<ul>
-<li>Fix watches for internal variables and function blocks (FBs) in monitoring.</li>
-<li>Fix the initial value hiding bug when setting <code>Varinouts</code> invisible and correct <code>addPinIndicators</code>.</li>
-<li>Fix removal of the watchpoint annotation overlay image caused by outdated code references.</li>
-<li>Add a null check for importing <code>InternalFB</code> objects with no type.</li>
-<li>Avoid unnecessary imports during dependency resolution.</li>
-<li>Remove incorrect usage of type editor input in debugging.</li>
-</ul>
-</li>
-<li>
-<p><strong>Refactoring and Code Improvements:</strong></p>
-<ul>
-<li>Refactor the callable interface in the model to include varargs, typed elements, and full type names for ST variables.</li>
-<li>Add a common cache for header and implementation templates in <code>forte_ng</code> export.</li>
-<li>Update <code>ChangeConfigurationViewer</code> to work with <code>IFordiacPreviewChange</code>.</li>
+<li><code>EMB_RES</code> in device creation and deployment evaluation.</li>
+<li><code>FORTE_PC</code> in deployment evaluation.</li>
+<li><code>E_RESTART</code> in EMB_RES for version 3.0.0.</li>
 </ul>
 </li>
 </ul>
-<h2 id="enhancements-and-fixes-in-4diac-ide-1">Enhancements and Fixes in 4diac IDE</h2>
-<ul>
+</li>
 <li>
-<p><strong>New Functionality:</strong></p>
+<p><strong>System Explorer Enhancements</strong></p>
 <ul>
-<li>Added a distance module featuring <code>RangeBasedPulse</code> functionality.</li>
+<li>Improved drag-and-drop behavior:
+<ul>
+<li>Files can now be dragged between different 4diac IDE instances <a href="https://github.com/eclipse-4diac/4diac-ide/issues/1285">#1285</a>.</li>
+<li>Non-IEC 61499 files are now supported.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p><strong>Updated to support the Zephyr 3.7 LTS release:</strong></p>
+<p><strong>Bulk Editor and SubApp Improvements</strong></p>
 <ul>
-<li>Adapted code to align with the latest API changes in FORTE.</li>
+<li>Introduced option to open BulkEditor with pre-selected SubApps as scope.</li>
+<li>Added &ldquo;Collapse all&rdquo; and &ldquo;Expand all&rdquo; buttons to the SubApp hierarchy selection dialog.</li>
+<li>Display text for selected hierarchies and restored initial selections for better usability.</li>
+<li>Added a new SubApp-hierarchy scope option for the BulkEditor.</li>
 </ul>
 </li>
 <li>
-<p><strong>Bug Fixes:</strong></p>
+<p><strong>Connection Layout Enhancements</strong></p>
 <ul>
-<li>Fixed an issue in the local communication layer by using the group identifier for deregistration instead of a pointer to a vector entry. This prevents invalid pointer usage when groups are created or deleted.</li>
+<li>Added user-configurable timeout for the connection layout algorithm to better support large or complex networks.</li>
+<li>Comments are now included as nodes in the layout graph to improve connection routing.</li>
+</ul>
+</li>
+<li>
+<p><strong>Model Handling &amp; Refactoring</strong></p>
+<ul>
+<li>Switched model search internals to use <code>Map&lt;EObject&gt;</code> for improved efficiency.</li>
+<li>Cached type entries in refactoring commands to avoid URI-related errors during move operations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Other Fixes and Improvements</strong></p>
+<ul>
+<li>Fixed issue with multiple file moves not updating instances properly.</li>
+<li>Fixed unescaped quotes in string value converter.</li>
+<li>Upgraded Eclipse ELK to the 0.10.0 release.</li>
+<li>Build and Plugin Management
+<ul>
+<li>Fixed missing version for <code>build-helper-maven-plugin</code> to ensure proper Tycho build support.</li>
+<li>Moved user-visible strings to <code>plugin.properties</code> for better internationalization.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li>
+<p><strong>Code Quality and Formatting</strong></p>
+<ul>
+<li>Added a GitHub workflow with <code>clang-format</code> to enforce coding style.</li>
+<li>Reformatted the entire codebase to match <code>clang-format</code> rules.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Fixed a compile error in the IEC 61131-3 package when using debug log level:
+<ul>
+<li>Updated <code>genbitbase_fbt</code> and <code>GEN_ADD_fbt</code> to use the correct DEVLOG_DEBUG interface.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation</strong></p>
+<ul>
+<li>Improved the <code>README.md</code> for better clarity and project onboarding.</li>
 </ul>
 </li>
 </ul>
@@ -1615,7 +1621,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1751963958"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1751963959"></script>
   
 
   
