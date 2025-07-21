@@ -9,6 +9,20 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diac-community/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>One-Click Issue Reporting from Error Dialog</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/one-click-issue-reporting-from-error-dialog/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/one-click-issue-reporting-from-error-dialog/</guid>
+      <description>We enhanced the &amp;ldquo;Report Issue&amp;rdquo; button of the error indication dialog that appears when an unhandled exception occurs. Clicking this button will open a new GitHub issue with the most relevant information already filled in:
+Exception message Stack trace This helps us diagnose problems faster and reduces the effort for users when something goes wrong.
+No more copy-pasting logs or trying to describe what happened—just click and report.
+This is part of our ongoing efforts to improve stability and user experience.</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #42</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-42/</link>
       <pubDate>Fri, 04 Jul 2025 17:00:00 +0000</pubDate>
