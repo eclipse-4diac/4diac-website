@@ -9,6 +9,44 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diac-community/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Celebrating 18 Years of Eclipse 4diac</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/celebrating-18-years-of-eclipse-4diac/</link>
+      <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/celebrating-18-years-of-eclipse-4diac/</guid>
+      <description>Throwback to INDIN 2007: The very first public presentation of 4diac. What began as an academic prototype has, over the years, grown into a mature, open-source framework for distributed industrial automation based on IEC 61499.
+Then and Now To highlight how far we&amp;rsquo;ve come, here’s a comparison of the very first 4diac IDE version and the current release: Since that first presentation, 4diac has made significant progress:
+In 2007, we released the first version under the name 4diac.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #44</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-44/</link>
+      <pubDate>Fri, 18 Jul 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-44/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Graphical Editor and UI Improvements
+Improved scroll positioning when opening graphical editors to center selected elements. Fixed exception when resizing a dynamic NatTable with 0 rows. Ensured save and build are triggered before rename refactoring. Reworked layout graph generation for libavoid to avoid invalid root graphs. BulkEditor Enhancements
+Added: Undo/Redo support. Sorting of columns. Dynamic NatTable for attribute search. Attribute creation and deletion. Advanced attribute options.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #43</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-43/</link>
+      <pubDate>Fri, 11 Jul 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-43/</guid>
+      <description>Enhancements and Fixes in 4diac IDE System Explorer &amp;amp; Navigator
+Fix: Working sets and resource content no longer conflict when shown as root in the system explorer. Correct system explorer refresh on marker changes. Cleanup: Removed root content from navigator and replaced it with resource content. Removed DistributedSystemListener, which caused UI flickering and tree reordering. Added: Missing working set filters needed for working set content support. Type Management &amp;amp; Editors</description>
+    </item>
+    
+    <item>
       <title>One-Click Issue Reporting from Error Dialog</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/one-click-issue-reporting-from-error-dialog/</link>
       <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
