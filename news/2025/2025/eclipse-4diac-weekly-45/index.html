@@ -7,19 +7,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Eclipse 4diac Weekly #43 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #43 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #43 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #45 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #45 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #45 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from July 04 to July 11, 2025.
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from July 18 to July 25, 2025.
 
-This week in Eclipse 4diac: The 4diac IDE has …">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from July 04 to July 11, 2025.
+This week&#39;s development work focused on …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from July 18 to July 25, 2025.
 
-This week in Eclipse 4diac: The 4diac IDE has …">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from July 04 to July 11, 2025.
+This week&#39;s development work focused on …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from July 18 to July 25, 2025.
 
-This week in Eclipse 4diac: The 4diac IDE has …">
+This week&#39;s development work focused on …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -27,7 +27,7 @@ This week in Eclipse 4diac: The 4diac IDE has …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@ECDTools" />
 <meta name="twitter:creator" content="@ECDTools" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-43/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-45/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -35,7 +35,7 @@ This week in Eclipse 4diac: The 4diac IDE has …">
 
 <meta name="generator" content="Hugo 0.110.0">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-43/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-45/" />
 
 
 <link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1753718279">
@@ -1283,7 +1283,7 @@ This week in Eclipse 4diac: The 4diac IDE has …">
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-43/">Eclipse 4diac Weekly #43</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-45/">Eclipse 4diac Weekly #45</a>
             </li>
           
           </ol>
@@ -1300,7 +1300,7 @@ This week in Eclipse 4diac: The 4diac IDE has …">
     
       <h1>
         
-          Eclipse 4diac Weekly #43
+          Eclipse 4diac Weekly #45
         
       </h1>
     
@@ -1312,111 +1312,102 @@ This week in Eclipse 4diac: The 4diac IDE has …">
   
 
 
-  <p><p>Update on what development happened across the Eclipse 4diac project in the week from July 04 to July 11, 2025.</p>
-<p>This week in Eclipse 4diac: The 4diac IDE has received major cleanups in the system explorer, improved type handling, better support for working sets, and a new bug reporting feature that helps users prefill GitHub issues with useful context. 4diac FORTE enhancements include configurable OPC UA alarm parameters and streamlined coding conventions.</p>
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from July 18 to July 25, 2025.</p>
+<p>This week&rsquo;s development work focused on improving editor behavior, refining code through cleanup and refactoring, and extending functionality across both 4diac IDE and 4diac FORTE.
+Several enhancements were made to avoid unnecessary reloads in editors, simplify test infrastructure, and introduce new function blocks.
+4diac FORTE saw continued work on OPC UA integration and function block consistency, along with the removal of legacy configuration options and build system improvements.</p>
 </p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>System Explorer &amp; Navigator</strong></p>
+<p><strong>Editor Reliability and Synchronization</strong></p>
 <ul>
-<li>Fix:
-<ul>
-<li>Working sets and resource content no longer conflict when shown as root in the system explorer.</li>
-<li>Correct system explorer refresh on marker changes.</li>
-</ul>
-</li>
-<li>Cleanup:
-<ul>
-<li>Removed root content from navigator and replaced it with resource content.</li>
-<li>Removed <code>DistributedSystemListener</code>, which caused UI flickering and tree reordering.</li>
-</ul>
-</li>
-<li>Added:
-<ul>
-<li>Missing working set filters needed for working set content support.</li>
-</ul>
-</li>
+<li>Postpone navigation location updates of the type entry adapter to part activation to avoid wrong editor activation.</li>
+<li>Moved bulk editor reload checks to the same infrastructure as editor activation handling.</li>
+<li>Avoid triggering false editor reloads when a type is first loaded by checking if the type was actually reloaded.</li>
 </ul>
 </li>
 <li>
-<p><strong>Type Management &amp; Editors</strong></p>
+<p><strong>Initial Value Editing</strong></p>
 <ul>
-<li>Refactor:
-<ul>
-<li>Extracted the Xtext type editor page to be reused beyond the FB type editor.</li>
-<li>Improved the <code>CommonElementImporter</code> handling of <code>TypedSubApp</code> VarConfig pins.</li>
-<li>Introduced <code>ResourceTypeExporter</code> to <code>FordiacTypeResource</code>.</li>
-</ul>
-</li>
-<li>Robustness:
-<ul>
-<li>Catch all exceptions when loading types to improve logging and resilience.</li>
-</ul>
-</li>
+<li>Use empty values instead of placeholders like &ldquo;computing&rdquo; or &ldquo;too large&rdquo; when editing initial values.</li>
 </ul>
 </li>
 <li>
-<p><strong>Interpreter</strong></p>
+<p><strong>Code Cleanup</strong></p>
 <ul>
-<li>Avoid network copying in the interpreter.</li>
-<li>Added support for untyped <code>SubApp</code>s.</li>
+<li>Remove unused methods in <code>FBNetworkImporter</code>.</li>
+<li>Delete unused error marker resolver.</li>
+<li>Fix SonarLint issues and clean up code in Bulk Editor.</li>
 </ul>
 </li>
 <li>
-<p><strong>UI &amp; Usability</strong></p>
+<p><strong>Refactoring Enhancements</strong></p>
 <ul>
-<li>Improved:
-<ul>
-<li><code>VarConfig</code> property sheet to more generically handle <code>VarConfigSection</code> elements.</li>
-<li>Copying behavior in NatTable even when no cell is selected.</li>
-<li>Connection layout configuration with a new timeout preference.</li>
-</ul>
-</li>
-<li>Fixes:
-<ul>
-<li>Missing <code>plugin.properties</code> in binary distribution (<a href="https://github.com/eclipse-4diac/4diac-ide/issues/1432">#1432</a>).</li>
-<li>Fixed a missing import.</li>
-<li>Updated package metadata for 1.0.0-style declaration.</li>
-</ul>
-</li>
+<li>Consider unused imports in related resources during refactoring.</li>
+<li>Automatically remove unused imports when moving types within the same package.</li>
 </ul>
 </li>
 <li>
-<p><strong>Error Reporting</strong></p>
+<p><strong>Testing and Build Improvements</strong></p>
 <ul>
-<li>New Feature:
-<ul>
-<li>Bug report dialog now pre-fills GitHub issues with error details and stack traces.</li>
-<li>Fixed link to the contributor page.</li>
-</ul>
-</li>
+<li>Combine trivial parameterized tests into simpler forms to reduce build output and improve build times.</li>
 </ul>
 </li>
 <li>
-<p><strong>Other</strong></p>
+<p><strong>Function Block Extensions</strong></p>
 <ul>
-<li>Upgrade:   Integrated Eclipse ELK 0.10.0 release.</li>
+<li>Add generic <code>SEND_RECV</code> communication block for duplex communication.</li>
+<li>Add <code>F_ANY_AS_STRING</code> function block.</li>
+</ul>
+</li>
+<li>
+<p><strong>Other Fixes</strong></p>
+<ul>
+<li>Prevent <code>IdentifierVerifier</code> from allowing dots in identifiers.</li>
+<li>Provide extension providers for resource, device, and segment types.</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
-<li><strong>OPC UA A&amp;C Layer:</strong>
+<li>
+<p><strong>Function Block and Interface Updates</strong></p>
 <ul>
-<li>Made alarm severity level and alarm messages configurable via IEC 61499.</li>
+<li>Update description of <code>FORTE_QD</code> to clarify it provides access to double word (QD) physical outputs.</li>
+<li>Add access to digital inputs via index for greater flexibility.</li>
+<li>Rename data input prefix from <code>IN_</code> to <code>IN</code> for consistency.</li>
+<li>Configure default event type of <code>E_TRIG</code> to <code>EInit</code>.</li>
 </ul>
 </li>
-<li><strong>Elite board:</strong>
+<li>
+<p><strong>OPC UA Improvements</strong></p>
 <ul>
-<li>Updated to use the new adapter implementation.</li>
+<li>Add input arguments to OPC UA device manager query methods.</li>
+<li>Add methods to query FB types, data types, and global constant types.</li>
+<li>Remove <code>-forte_[PORT]</code> suffix from custom OPC UA server hostnames.</li>
+<li>Make OPC UA alarm messages and severity levels configurable.</li>
+<li>Fix issue with re-creating existing alarm types after redeployment.</li>
 </ul>
 </li>
-<li><strong>Coding Guidelines:</strong>
+<li>
+<p><strong>Build and Configuration Updates</strong></p>
 <ul>
-<li>Removed type name prefixes like <code>C</code> for classes and <code>T</code> for typedefs in accordance with updated coding rules.</li>
+<li>Remove obsolete CMake option <code>FORTE_SUPPORT_MONITORING</code>.</li>
+<li>Enable system tests in the multi-platform CMake workflow.</li>
+<li>Improve string escaping in CMake arguments and disable <code>SimpleMultiTest</code> on Windows.</li>
+</ul>
+</li>
+<li>
+<p><strong>Code Cleanup and Maintenance</strong></p>
+<ul>
+<li>Refactor and clean up the A&amp;C layer.</li>
+<li>Adjust formatting in <code>evt_REQ</code> event handler methods.</li>
+<li>Fix typo in a comment (replacing &ldquo;AND&rdquo; with &ldquo;ADD&rdquo;).</li>
+<li>Only update any-source connections if the destination is not any.</li>
+<li>Use proper template types to avoid assignment mismatches.</li>
 </ul>
 </li>
 </ul>

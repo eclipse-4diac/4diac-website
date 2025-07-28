@@ -9,6 +9,19 @@
     <webMaster>4diac-dev@eclipse.org (Eclipse 4diac Team)</webMaster>
     <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacanniversary/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #45</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-45/</link>
+      <pubDate>Fri, 25 Jul 2025 17:00:00 +0000</pubDate>
+      
+        <author>4diac-dev@eclipse.org (Eclipse 4diac Team)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-45/</guid>
+      <description>Enhancements and Fixes in 4diac IDE Editor Reliability and Synchronization
+Postpone navigation location updates of the type entry adapter to part activation to avoid wrong editor activation. Moved bulk editor reload checks to the same infrastructure as editor activation handling. Avoid triggering false editor reloads when a type is first loaded by checking if the type was actually reloaded. Initial Value Editing
+Use empty values instead of placeholders like &amp;ldquo;computing&amp;rdquo; or &amp;ldquo;too large&amp;rdquo; when editing initial values.</description>
+    </item>
+    
+    <item>
       <title>Celebrating 18 Years of Eclipse 4diac</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/celebrating-18-years-of-eclipse-4diac/</link>
       <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
