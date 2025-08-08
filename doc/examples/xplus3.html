@@ -1,0 +1,1764 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+
+
+
+  
+
+
+<title>X&#43;3 Tutorial | The Eclipse Foundation</title>
+<meta property="og:title" content="X&#43;3 Tutorial | The Eclipse Foundation" />
+<meta name="twitter:title" content="X&#43;3 Tutorial | The Eclipse Foundation" />
+
+<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
+
+<meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@eclipsefdn" />
+<meta name="twitter:creator" content="@eclipsefdn" />
+<meta property="og:url" content="https://eclipse.dev/4diac/doc/examples/xplus3.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Eclipse 4diac" />
+<meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
+
+
+<meta name="generator" content="Hugo 0.144.2">
+
+<link rel="canonical" href="https://eclipse.dev/4diac/doc/examples/xplus3.html" />
+
+
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1754684699">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1754684699">
+<script>
+	
+		var tableClasses = "table";
+	
+</script>
+
+
+
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" type="text/css"/>
+
+  
+
+</head>
+<body >
+  
+
+
+
+
+
+
+
+
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="header-wrapper header-wrapper header-default-bg-img featured-jumbotron-bottom-shape" id="header">
+  
+
+
+
+
+
+<div class="header-toolbar">
+    <div class="container">
+        <div class="header-toolbar-row">
+            <div class="toolbar-btn toolbar-search-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-search" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="Search"
+                >
+                    <i class="fa fa-search fa-lg" aria-role="none"></i>
+                </button>
+                <div 
+                    class="toolbar-search-bar-wrapper dropdown-menu dropdown-menu-right"
+                    aria-labelledby="toolbar-search"
+                >
+                      <form action="https://www.eclipse.org/home/search" method="get">
+                    <div class="search-bar">
+                        <input class="search-bar-input" name="q" placeholder="Search" />
+                        <button>
+                            <i class="fa fa-search" type="submit"></i>
+                        </button>
+                    </div>
+                      </form>
+                </div>
+            </div>
+            <div class="toolbar-btn toolbar-user-menu-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-user-menu" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="User Menu"
+                >
+                    <i class="fa fa-user fa-lg"></i>
+                </button>
+                <ul class="toolbar-user-menu dropdown-menu dropdown-menu-right text-center"
+                    aria-labelledby="toolbar-user-menu">
+                    <li>
+                        <a href="https://accounts.eclipse.org/user">
+                            <i class="fa fa-user"></i>
+                            View My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://accounts.eclipse.org/user/edit">
+                            <i class="fa fa-edit"></i>
+                            Edit My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a class="toolbar-manage-cookies">
+                            <i class="fa fa-wrench"></i>
+                            Manage Cookies
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header-navbar-wrapper">
+    <div class="container">
+        <div class="header-navbar">
+            <div class="header-navbar-brand">
+                <a class="logo-wrapper" href="/4diac" title="Eclipse 4diac">
+                    <img src="/4diac/img/4diac_Logo_2024.svg" alt="" width="55%" />
+                </a>
+            </div>
+            
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="header-navbar-nav">
+    <ul class="header-navbar-nav-links">
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="fordiac-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Eclipse 4diac
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/news" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    News
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="events-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Events
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/support" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Support
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/contribute" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Contribute
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="documentation-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Documentation
+                    </button>
+                
+            </li>
+        
+    </ul>
+</nav>
+
+
+
+
+
+            <div class="header-navbar-end">
+                
+                   <a 
+                  class="header-navbar-end-download-btn btn btn-primary" 
+                  href="/4diac/download/" 
+                   >
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download
+                  </a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+                    <i class="fa fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+    
+
+
+
+
+<nav class="mobile-menu hidden" aria-expanded="false">
+    <ul>
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="fordiac-menu">
+      <span>Eclipse 4diac</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="fordiac-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-ide-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Development Environment</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-ide-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_ide">
+                      4diac IDE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-forte-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Run-Time Environment</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-forte-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_forte">
+                      4diac FORTE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-lib-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Function Block Library</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-lib-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_lib">
+                      4diac LIB
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-sys-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Example Projects</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-sys-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_sys">
+                      4diac SYS
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/news">News</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="events-menu">
+      <span>Events</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="events-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-winterschools-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Winter Schools</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-winterschools-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/4diacwinterschool">
+                      1st 4days of Eclipse 4diac Winter School, 2025
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-community-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Community Events</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-community-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/virt-community">
+                      Eclipse 4diac Virtual Community Meetings
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_4days_of_4diac">
+                      4days of 4diac, 2019
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_eclipse_insight">
+                      Eclipse Insight: Cross Domain Engineering, 2019
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-etfa_workshops-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>ETFA Workshops</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-etfa_workshops-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2016">
+                      7th 4diac Users&#39; Workshop @ ETFA 2016
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2015">
+                      6th 4diac Users&#39; Workshop @ ETFA 2015
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2014">
+                      5th 4diac Users&#39; Workshop @ ETFA 2014
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2013">
+                      4th 4diac Users&#39; Workshop @ ETFA 2013
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2012">
+                      3rd 4diac Users&#39; Workshop @ ETFA 2012
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2011">
+                      2nd 4diac Users&#39; Workshop @ ETFA 2011
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2010">
+                      1st 4diac Users&#39; Workshop @ ETFA 2010
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/support">Support</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/contribute">Contribute</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="documentation-menu">
+      <span>Documentation</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="documentation-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-getting_started-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Getting Started</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-getting_started-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc">
+                      Documentation Start
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/iec61499.html">
+                      Learn about IEC 61499
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/4diacframework.html">
+                      Understand the Eclipse 4diac Framework
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-using-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Using Eclipse 4diac</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-using-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/tutorials/overview.html">
+                      Step by Step Tutorials
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/installation/installation.html">
+                      Install Eclipse 4diac
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/examples/examples.html">
+                      4diac IDE Examples
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/faq.html">
+                      Frequently Asked Questions
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-details-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Details</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-details-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/io_config/io_config.html">
+                      IO Configuration for the Different Platforms
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/communication/communication.html">
+                      Communication Protocols
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/development/development.html">
+                      Development of 4diac FORTE and 4diac IDE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eclipsefdn-mega-menu">
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="fordiac-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Eclipse 4diac</p>
+                <p class="mega-menu-submenu-featured-story-text">      Eclipse 4diac™ provides an open source infrastructure
+      for distributed industrial process measurement and control systems
+      based on the IEC 61499 standard.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Development Environment</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_ide">4diac IDE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Run-Time Environment</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_forte">4diac FORTE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Function Block Library</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_lib">4diac LIB</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Example Projects</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_sys">4diac SYS</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="news-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="events-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Events</p>
+                <p class="mega-menu-submenu-featured-story-text">    Eclipse 4diac™ has been founded to support research activities and industrial adoption of distributed automation systems. 
+    Over time 4diac grew with new versions, improvements and new features for the modeling of distributed automation systems. 
+    Moreover, a special focus was the performance improvement of the runtime system. Even more important, 4diac as an 
+    IEC 61499-compliant distributed control environment for industrial and research applications has proven 
+    to be a stable basis for further research towards the next generation of distributed automation and control systems based 
+    on open standards. To get in contact with its users and share results and future plans 4diac participates at different events, 
+    which are collected here:
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Winter Schools</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/4diacwinterschool">1st 4days of Eclipse 4diac Winter School, 2025</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Community Events</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/virt-community">Eclipse 4diac Virtual Community Meetings</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_4days_of_4diac">4days of 4diac, 2019</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_eclipse_insight">Eclipse Insight: Cross Domain Engineering, 2019</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">ETFA Workshops</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2016">7th 4diac Users&#39; Workshop @ ETFA 2016</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2015">6th 4diac Users&#39; Workshop @ ETFA 2015</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2014">5th 4diac Users&#39; Workshop @ ETFA 2014</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2013">4th 4diac Users&#39; Workshop @ ETFA 2013</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2012">3rd 4diac Users&#39; Workshop @ ETFA 2012</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2011">2nd 4diac Users&#39; Workshop @ ETFA 2011</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2010">1st 4diac Users&#39; Workshop @ ETFA 2010</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="support-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Support</p>
+                <p class="mega-menu-submenu-featured-story-text">    support 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="contribute-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Contribute</p>
+                <p class="mega-menu-submenu-featured-story-text">    contribute to 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="documentation-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Documentation</p>
+                <p class="mega-menu-submenu-featured-story-text">    Documentation for Eclipse 4diac. 
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Getting Started</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc">Documentation Start</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/iec61499.html">Learn about IEC 61499</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/4diacframework.html">Understand the Eclipse 4diac Framework</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Using Eclipse 4diac</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/tutorials/overview.html">Step by Step Tutorials</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/installation/installation.html">Install Eclipse 4diac</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/examples/examples.html">4diac IDE Examples</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/faq.html">Frequently Asked Questions</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Details</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/io_config/io_config.html">IO Configuration for the Different Platforms</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/communication/communication.html">Communication Protocols</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/development/development.html">Development of 4diac FORTE and 4diac IDE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<main>
+  <div class="container padding-bottom-30">
+    
+      <div class="row">
+        <div class="col-md-18">
+    
+    
+      
+
+
+
+
+
+
+
+<div class="default-breadcrumbs hidden-print" id="breadcrumb">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-24">
+        <ol aria-label="Breadcrumb" class="breadcrumb">
+          
+            
+              
+            
+              
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
+            </li>
+          
+            
+            <li  class="active" aria-current="page">
+              <a href="https://eclipse.dev/4diac/doc/examples/xplus3.html">X&#43;3 Tutorial</a>
+            </li>
+          
+          </ol>
+          
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+
+    
+      <h1>
+        
+          X&#43;3 Tutorial
+        
+      </h1>
+    
+
+
+
+  
+  <div class="sect1">
+<h2 id="_explore_an_existing_system">Explore an Existing System</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This example gives you an overview of how to work with Eclipse 4diac by examining and deploying the <span class="element61499">System</span> <span class="element4diac">Xplus3</span> and <span class="element61499">Application</span> <span class="element4diac">Xplus3Application</span>.
+The <span class="element61499">System</span> consists of two <span class="element61499">Devices</span>, after examining the mapping of the <span class="element61499">Application</span> parts to the <span class="element61499">Resources</span>, we will set the preferences required and test it.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Task of the X+3 example: calculate and display X+3.</p>
+</li>
+<li>
+<p>You can get the <span class="element4diac">Xplus3 System</span> from the <a href="https://github.com/eclipse-4diac/4diac-examples">Eclipse 4diac Examples Github Repository</a>.</p>
+</li>
+<li>
+<p>Examines a simple IEC 61499 <span class="element61499">Application</span> with 2 <span class="element61499">Devices</span>.</p>
+</li>
+<li>
+<p>The communication between the different <span class="element61499">Devices</span> is integrated within the <span class="element61499">Resource</span>.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_explore_existing_application"><a id="application"></a>Explore Existing Application</h3>
+<div class="paragraph">
+<p>A IEC 61499 <span class="element61499">Application</span> is designed independent of <span class="element61499">Devices</span> and <span class="element61499">Resources</span>.
+The <span class="element61499">Application</span> FBs are mapped to the <span class="element61499">Resource</span> of a <span class="element61499">Device</span> they will run on after building the application.
+Click on the arrow beside the <span class="element4diac">Xplus3 System</span> and double-click to open the <span class="element4diac">Application</span> called <span class="element4diac">Xplus3Application</span>
+NOTE: depending on your operating system, a single click may be sufficient where double clicks are mentioned in this tutorial.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/xplus3/x3_application.png" alt="X+3 TestApplication"/></span></p>
+</div>
+<div class="paragraph">
+<p>There are 3 groups of Function Blocks connected. The specific color of a Function Block shows that this block is mapped to a <span class="element61499">Device</span>.
+The two different colors of the FBs indicate that they are mapped to two different <span class="element61499">Devices</span>, so the <span class="element61499">Application</span> is distributed.
+The dashed line connections are just information.
+We will see how the data is passed between <span class="element61499">Devices</span> in <span class="element61499">Resources</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <span class="element61499">Applications</span> IOs are on one <span class="element61499">Device</span> and the calculation (X+3) is on the 2nd <span class="element61499">Device</span>.
+Mouse over often provides extra information like a data variable’s type.
+When exploring the <span class="element61499">Application</span> it can be figured out that there are three types of Function Blocks used:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="element4diac">IN_ANY</span> and <span class="element4diac">OUT_ANY</span> are the input/output, which visualize the input value and the calculation result.
+The input <span class="element4diac">QI</span> is an input qualifier that allows the Function Block to work if its <span class="specificText">true</span>.
+It is used to turn-off Function Blocks when a predecessor Function Block has an error.
+In our <span class="element61499">Application</span> the <span class="element4diac">OUT_BOOL.QI</span> is set to <span class="specificText">1</span>.</p>
+</li>
+<li>
+<p><span class="element4diac">F_ADD</span> adds two <span class="element4diac">ANY</span> inputs together.
+One value comes from the input connection and the other is a hard-coded constant</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_explore_existing_system_configuration"><a id="systemManagement"></a>Explore Existing System Configuration</h3>
+<div class="paragraph">
+<p>Within the <span class="element61499">System</span> called <span class="specificText">Xplus3</span> there is the <span class="element4diac">System Configuration</span>.
+Click once on <span class="element4diac">System Configuration</span> (on left) and keep expanding the <span class="element4diac">System Configuration</span> by clicking the arrows on the left.
+This shows the <span class="element61499">Devices</span> and <span class="element61499">Resources</span> used.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/xplus3/x3_systemConfiguration.png" alt="System Configuration"/></span></p>
+</div>
+<div class="sect3">
+<h4 id="_explore_existing_devices"><a id="devices"></a>Explore Existing <span class="element61499">Devices</span></h4>
+<div class="paragraph">
+<p>Double click on <span class="element4diac">System Configuration</span> to open the <span class="element4diac">System Configuration</span> model that shows the <span class="element61499">System</span>, the <span class="element61499">Devices</span>, their <span class="element61499">Resources</span> and the communication network the <span class="element61499">Devices</span> are connected to.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/xplus3/x3_system.png" alt="The X+3 System"/></span></p>
+</div>
+<div class="paragraph">
+<p>There are two <span class="element4diac">Devices</span> connected via an Ethernet segment.
+You have to know what <span class="element4diac">Devices</span> you are using.
+Here it is:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><span class="specificText">MICROCONTROLLER</span> remote device (<span class="element4diac">RMT_DEV</span>) (uses 4diac FORTE).
+The IEC 61499 system used by this <span class="element61499">Application</span> <span class="element4diac">Xplus3Application</span> is Posix FORTE on a PC, but it could be a real microcontroller like ARM7 in Lego Mindstorms as well.</p>
+</li>
+<li>
+<p><span class="specificText">PC</span> remote frame (<span class="element4diac">RMT_FRAME</span>) (uses FBDK).
+The IEC 61499 <span class="element61499">System</span> used by this <span class="element61499">Application</span> <span class="element4diac">Xplus3Application</span> is FBDK via its runtime, FBRT.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Click on the <span class="element61499">Device</span> name in main window to look at the <span class="view4diac">Device’s properties</span> bottom window.
+It is important to set the property Misc/Profile to HOLOBLOC.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_explore_existing_resources"><a id="resources"></a> Explore Existing Resources</h4>
+<div class="paragraph">
+<p>In this <span class="element61499">System</span> each <span class="element61499">Device</span> has a Manager and 1 <span class="element61499">Resource</span>, that <span class="element61499">Applications</span> can be mapped to.
+If you have not yet done so, click on the arrow at the left side of <span class="element4diac">System Configuration</span> to see the <span class="element61499">Devices</span> (<span class="element4diac">MICROCONTROLLER</span>; <span class="element4diac">PC</span>).
+In the same way, expand the <span class="element61499">Devices</span> (<span class="element4diac">MICROCONTROLLER</span>; <span class="element4diac">PC</span>) to see their <span class="element61499">Resource(s)</span>.
+Double-click on the <span class="element61499">Resource</span> names (<span class="element4diac">CALC</span>, <span class="element4diac">VIS</span>) to see what Function Blocks are mapped to the <span class="element61499">Resource</span>.
+For the <span class="element4diac">CALC Resource</span>, it looks like this: <span class="element4diac">System Configuration</span> → <span class="element4diac">MICROCONTROLLER</span> → <span class="element4diac">CALC</span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/xplus3/x3_microcontroller.png" alt="Resource on the Microcontroller"/></span></p>
+</div>
+<div class="paragraph">
+<p>And for the <span class="element4diac">VIS Resource</span>, like this:
+<span class="element4diac">System Configuration</span> → <span class="element4diac">PC</span> → <span class="element4diac">VIS</span></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/xplus3/x3_pc.png" alt="Resource on the PC"/></span></p>
+</div>
+<div class="paragraph">
+<p>Note the <span class="element4diac">PUBLISH_1</span> and <span class="element4diac">SUBSCRIBE_1</span> Function Blocks that are used to send data between <span class="element61499">Devices</span> or <span class="element61499">Resources</span>.
+The <span class="specificText">_1</span> is the number of data items being sent / received.
+<span class="element4diac">INT2INT</span> is used multiple times.
+You may ask yourself:
+Why convert an <span class="element4diac">INT</span> to an <span class="element4diac">INT</span> - isn’t that the same thing!?</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Do a mouse over of the data output <span class="element4diac">IN_ANY.OUT</span> in <span class="element4diac">VIS</span>.
+Note its type: It is <span class="element4diac">ANY</span>.</p>
+</li>
+<li>
+<p>Do a mouse over of the data output <span class="element4diac">PUBLISH_1_0.SD_1</span>.
+Note its type: It is <span class="element4diac">ANY</span>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>So, when the output type is <span class="element4diac">ANY</span> and the input type is <span class="element4diac">ANY</span>, how can the actual data type be known?
+This is why we need a conversion Function Block like <span class="element4diac">INT2INT</span> with <span class="element4diac">ANY</span> input and an actual data type for output.
+Function Blocks using an <span class="element4diac">ANY</span> type for input or output have to tell the Function Blocks the type in and the following Function Blocks the type out.
+For regular Function Blocks the input type must match its type.
+Look back at the <span class="element61499">Application</span>, where all 3 parts Input, Output and calculation appear together.
+Notice that the Publish and Subscribe Function Blocks used to exchange data between <span class="element61499">Resources</span> of a <span class="element61499">Device</span> are in the <span class="element61499">Resource</span> directly.
+This makes the <span class="element61499">Application</span> less cluttered and more clearly understandable.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deploy_your_application"><a id="deployment"></a>Deploy Your Application</h3>
+<div class="paragraph">
+<p>Switch to the <span class="view4diac">Deployment perspective</span> and set the runtime preferences.
+The following settings are under <span class="menu4diac">Window → Preferences → 4diac IDE</span>.
+For further details on setting these locations see <a href="../tutorials/overview.html#properties">4diac IDE Properties</a>.
+To run the test, the locations of the IEC 61499 executables for the <span class="element61499">Devices</span> used are required.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="element4diac">MICROCONTROLLER.CALC</span> uses 4diac FORTE.
+Therefore, the location of <code>forte.exe</code> must be set within the 4diac FORTE preferences.
+Typically, this is somewhere below <code>/runtime/FORTE/</code>.
+Relative paths do not work in all setups, it is recommended to specify an absolute path here.</p>
+</li>
+<li>
+<p><span class="element4diac">PC.VIS</span> uses FBRT.
+Therefore, the location of <code>fbrt.jar</code> must be set in FBRT preferences.
+Typically, this path is <code>./runtime/FBRT/fbrt.jar</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>With the preferences set correctly for the IEC 61499 <span class="element61499">System</span> on the 2 <span class="element61499">Devices</span> you can now test.
+Click the Open perspective button on top of the title bar and add Deployment in the perspective window.
+The Open Perspective button of the Deployment perspective will be found besides the <span class="button4diac">System</span> perspective Button</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/xplus3/x3_deployment.png" alt="Deployment of the X+3 Application"/></span></p>
+</div>
+<div class="paragraph">
+<p>To download and test your IEC 61499 <span class="element61499">Application</span>:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Check the <span class="element4diac">System Xplus3</span> and notice the <span class="element61499">Devices</span> show up under the <span class="element61499">System</span>, but not the <span class="element61499">Application</span> mapped to the <span class="element61499">Devices</span>.</p>
+</li>
+<li>
+<p>Press the Launch FBRT button. Note that the <span class="element61499">Device</span> and port number match the properties of the <span class="element61499">Device</span> using FBRT (i.e., <span class="element4diac">PC</span>) in <span class="element4diac">System Configuration</span>.
+The console output from the FBRT is shown on the bottom right and an empty Java window will open.</p>
+</li>
+<li>
+<p>Press the Launch FORTE button. Note that the host and port number match the properties of the <span class="element61499">Device</span> using 4diac FORTE (i.e., <span class="element4diac">MICROCONTROLLER</span>) in <span class="element4diac">System Configuration</span>.
+Again, console output is shown on the bottom right.
+The console output of 4diac FORTE is dependent on the log-level that has been configured with CMake.
+The default configuration is LOGDEBUG.
+It lists debug information.</p>
+</li>
+<li>
+<p>When launching FBRT or 4diac FORTE for the first time, a system firewall configuration window may pop up.
+You should allow network access that the 2 <span class="element61499">Devices</span> are able to communicate with each other over Ethernet.</p>
+</li>
+<li>
+<p>Press Download and notice the Deployment Console output on the right.</p>
+</li>
+<li>
+<p>Click on the Java application window (<span class="element4diac">RMT-FRAME</span>).
+Resize it if necessary to see the contents.
+Enter an integer in the top field and press the enter key.
+The result is shown in the bottom field:
+It should be the value you entered plus three.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_where_to_go_from_here">Where to go from here?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Go back to Examples index:</p>
+</div>
+<div class="paragraph">
+<p><a href="./examples.html">Examples Index</a></p>
+</div>
+<div class="paragraph">
+<p>If you want to go back to the Start Here page, we leave you here a fast
+access</p>
+</div>
+<div class="paragraph">
+<p><a href="../doc_overview.html">Start Here page</a></p>
+</div>
+<div class="paragraph">
+<p><a href="#topOfPage">Go to top</a></p>
+</div>
+</div>
+</div>
+
+
+  
+
+    
+
+
+     
+      
+      </div>
+        <div class="col-md-6  padding-bottom-30">
+          
+            
+
+
+
+
+
+
+  
+
+  
+    
+  
+  
+  
+
+  
+
+
+
+          
+        </div>
+      </div>
+    
+  </div>
+</main>
+  
+  
+  
+
+
+
+
+  
+
+<p id="back-to-top">
+  <a class="visible-xs" href="#">Back to the top</a>
+</p>
+<footer class="footer" id="footer">
+  <div class="container">
+    
+
+<div class="footer-end-social-container margin-bottom-30">
+  
+
+
+
+
+
+
+
+
+
+
+<div class="footer-end-social">
+    <p class="footer-end-social-text hidden-xs">Follow Us:</p>
+    <ul class="footer-end-social-links list-inline">
+        <li>
+            <a class="link-unstyled" href="https://x.com/4diac" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.youtube.com/@4diac177" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.linkedin.com/groups/6949091/" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        </li>
+    </ul>
+    <p class="footer-end-social-text hidden-xs">Support:</p>
+    <ul class="footer-end-social-links list-inline">
+    	<li>
+            <a class="link-unstyled" href="https://github.com/eclipse-4diac" title="Eclipse 4diac Github Organization">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Github Organization</span>
+                </span>
+            </a>
+        </li> 
+    	<li>
+            <a class="link-unstyled" href="https://dev.eclipse.org/mailman/listinfo/4diac-dev" title="Eclipse 4diac Developer Mailinglist">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Developer Mailinglist</span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        	<a class="link-unstyled" href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org"  title="Eclipse 4diac Matrix Channels">
+        		<img src="/4diac/img/matrix.png" alt="Eclipse 4diac Matrix Channels"/></a>
+            <span class="sr-only">Eclipse 4diac Matrix Channels</span>
+        </li>
+    </ul>
+</div>
+
+
+</div>
+
+
+    <div class="footer-sections row equal-height-md font-bold">
+        
+        <div class="col-md-15">
+          <div class="row">
+            
+
+
+  
+  <section id="footer-legal" class="footer-section col-sm-8">
+    <div class="menu-heading">Legal</div>
+    <ul class="nav">
+      <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+      <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+      <li><a href="https://www.eclipse.org/legal/compliance/">Compliance</a></li>
+      <li><a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php">Code of Conduct</a></li>
+      <li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
+      <li><a class="toolbar-manage-cookies" href="#" onclick="event.preventDefault()">Manage Cookies</a></li>
+    </ul>
+  </section>
+
+
+ 
+ <section id="footer-more" class="footer-section col-sm-8">
+   <div class="menu-heading">More</div>
+   <ul class="nav">
+     <li><a href="https://www.eclipse.org/security/">Report a Vulnerability</a></li>
+     <li><a href="https://status.eclipse.org/">Service Status</a></li>
+     
+     <li><a href="/4diac/support">Support</a></li>
+   </ul>
+ </section>
+
+
+          </div>
+        </div>
+        
+
+
+
+
+  <div id="footer-end" class="footer-section col-md-8 col-md-offset-1 col-sm-24">
+    
+  </div>
+
+
+    </div>
+    
+
+
+
+<div class="col-sm-24 margin-top-20">
+  <div class="row">
+    <div id="copyright" class="col-sm-16">
+      <p id="copyright-text">Copyright &copy; Eclipse Foundation AISBL. All Rights Reserved.</p>
+    </div>
+    
+  </div>
+</div>
+
+    <a href="#" class="scrollup">Back to the top</a>
+  </div>
+</footer>
+
+
+
+
+  
+  <div id="footer-js">
+  
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1754684722"></script>
+  
+
+  
+  
+
+  
+  <script>
+  (function($, document) {
+    
+    
+  })(jQuery, document);
+  </script>
+
+  
+</div>
+
+</body>
+</html>
+

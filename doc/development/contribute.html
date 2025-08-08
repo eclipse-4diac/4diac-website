@@ -1,0 +1,2256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+
+
+
+  
+
+
+<title>Contributing to Eclipse 4diac | The Eclipse Foundation</title>
+<meta property="og:title" content="Contributing to Eclipse 4diac | The Eclipse Foundation" />
+<meta name="twitter:title" content="Contributing to Eclipse 4diac | The Eclipse Foundation" />
+
+<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
+
+<meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@eclipsefdn" />
+<meta name="twitter:creator" content="@eclipsefdn" />
+<meta property="og:url" content="https://eclipse.dev/4diac/doc/development/contribute.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Eclipse 4diac" />
+<meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
+
+
+<meta name="generator" content="Hugo 0.144.2">
+
+<link rel="canonical" href="https://eclipse.dev/4diac/doc/development/contribute.html" />
+
+
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1754684685">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1754684685">
+<script>
+	
+		var tableClasses = "table";
+	
+</script>
+
+
+
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" type="text/css"/>
+
+  
+
+</head>
+<body >
+  
+
+
+
+
+
+
+
+
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="header-wrapper header-wrapper header-default-bg-img featured-jumbotron-bottom-shape" id="header">
+  
+
+
+
+
+
+<div class="header-toolbar">
+    <div class="container">
+        <div class="header-toolbar-row">
+            <div class="toolbar-btn toolbar-search-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-search" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="Search"
+                >
+                    <i class="fa fa-search fa-lg" aria-role="none"></i>
+                </button>
+                <div 
+                    class="toolbar-search-bar-wrapper dropdown-menu dropdown-menu-right"
+                    aria-labelledby="toolbar-search"
+                >
+                      <form action="https://www.eclipse.org/home/search" method="get">
+                    <div class="search-bar">
+                        <input class="search-bar-input" name="q" placeholder="Search" />
+                        <button>
+                            <i class="fa fa-search" type="submit"></i>
+                        </button>
+                    </div>
+                      </form>
+                </div>
+            </div>
+            <div class="toolbar-btn toolbar-user-menu-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-user-menu" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="User Menu"
+                >
+                    <i class="fa fa-user fa-lg"></i>
+                </button>
+                <ul class="toolbar-user-menu dropdown-menu dropdown-menu-right text-center"
+                    aria-labelledby="toolbar-user-menu">
+                    <li>
+                        <a href="https://accounts.eclipse.org/user">
+                            <i class="fa fa-user"></i>
+                            View My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://accounts.eclipse.org/user/edit">
+                            <i class="fa fa-edit"></i>
+                            Edit My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a class="toolbar-manage-cookies">
+                            <i class="fa fa-wrench"></i>
+                            Manage Cookies
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header-navbar-wrapper">
+    <div class="container">
+        <div class="header-navbar">
+            <div class="header-navbar-brand">
+                <a class="logo-wrapper" href="/4diac" title="Eclipse 4diac">
+                    <img src="/4diac/img/4diac_Logo_2024.svg" alt="" width="55%" />
+                </a>
+            </div>
+            
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="header-navbar-nav">
+    <ul class="header-navbar-nav-links">
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="fordiac-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Eclipse 4diac
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/news" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    News
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="events-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Events
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/support" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Support
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/contribute" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Contribute
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="documentation-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Documentation
+                    </button>
+                
+            </li>
+        
+    </ul>
+</nav>
+
+
+
+
+
+            <div class="header-navbar-end">
+                
+                   <a 
+                  class="header-navbar-end-download-btn btn btn-primary" 
+                  href="/4diac/download/" 
+                   >
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download
+                  </a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+                    <i class="fa fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+    
+
+
+
+
+<nav class="mobile-menu hidden" aria-expanded="false">
+    <ul>
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="fordiac-menu">
+      <span>Eclipse 4diac</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="fordiac-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-ide-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Development Environment</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-ide-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_ide">
+                      4diac IDE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-forte-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Run-Time Environment</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-forte-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_forte">
+                      4diac FORTE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-lib-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Function Block Library</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-lib-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_lib">
+                      4diac LIB
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-sys-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Example Projects</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-sys-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_sys">
+                      4diac SYS
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/news">News</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="events-menu">
+      <span>Events</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="events-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-winterschools-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Winter Schools</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-winterschools-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/4diacwinterschool">
+                      1st 4days of Eclipse 4diac Winter School, 2025
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-community-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Community Events</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-community-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/virt-community">
+                      Eclipse 4diac Virtual Community Meetings
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_4days_of_4diac">
+                      4days of 4diac, 2019
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_eclipse_insight">
+                      Eclipse Insight: Cross Domain Engineering, 2019
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-etfa_workshops-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>ETFA Workshops</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-etfa_workshops-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2016">
+                      7th 4diac Users&#39; Workshop @ ETFA 2016
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2015">
+                      6th 4diac Users&#39; Workshop @ ETFA 2015
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2014">
+                      5th 4diac Users&#39; Workshop @ ETFA 2014
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2013">
+                      4th 4diac Users&#39; Workshop @ ETFA 2013
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2012">
+                      3rd 4diac Users&#39; Workshop @ ETFA 2012
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2011">
+                      2nd 4diac Users&#39; Workshop @ ETFA 2011
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2010">
+                      1st 4diac Users&#39; Workshop @ ETFA 2010
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/support">Support</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/contribute">Contribute</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="documentation-menu">
+      <span>Documentation</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="documentation-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-getting_started-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Getting Started</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-getting_started-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc">
+                      Documentation Start
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/iec61499.html">
+                      Learn about IEC 61499
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/4diacframework.html">
+                      Understand the Eclipse 4diac Framework
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-using-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Using Eclipse 4diac</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-using-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/tutorials/overview.html">
+                      Step by Step Tutorials
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/installation/installation.html">
+                      Install Eclipse 4diac
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/examples/examples.html">
+                      4diac IDE Examples
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/faq.html">
+                      Frequently Asked Questions
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-details-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Details</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-details-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/io_config/io_config.html">
+                      IO Configuration for the Different Platforms
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/communication/communication.html">
+                      Communication Protocols
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/development/development.html">
+                      Development of 4diac FORTE and 4diac IDE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eclipsefdn-mega-menu">
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="fordiac-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Eclipse 4diac</p>
+                <p class="mega-menu-submenu-featured-story-text">      Eclipse 4diac™ provides an open source infrastructure
+      for distributed industrial process measurement and control systems
+      based on the IEC 61499 standard.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Development Environment</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_ide">4diac IDE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Run-Time Environment</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_forte">4diac FORTE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Function Block Library</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_lib">4diac LIB</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Example Projects</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_sys">4diac SYS</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="news-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="events-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Events</p>
+                <p class="mega-menu-submenu-featured-story-text">    Eclipse 4diac™ has been founded to support research activities and industrial adoption of distributed automation systems. 
+    Over time 4diac grew with new versions, improvements and new features for the modeling of distributed automation systems. 
+    Moreover, a special focus was the performance improvement of the runtime system. Even more important, 4diac as an 
+    IEC 61499-compliant distributed control environment for industrial and research applications has proven 
+    to be a stable basis for further research towards the next generation of distributed automation and control systems based 
+    on open standards. To get in contact with its users and share results and future plans 4diac participates at different events, 
+    which are collected here:
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Winter Schools</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/4diacwinterschool">1st 4days of Eclipse 4diac Winter School, 2025</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Community Events</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/virt-community">Eclipse 4diac Virtual Community Meetings</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_4days_of_4diac">4days of 4diac, 2019</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_eclipse_insight">Eclipse Insight: Cross Domain Engineering, 2019</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">ETFA Workshops</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2016">7th 4diac Users&#39; Workshop @ ETFA 2016</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2015">6th 4diac Users&#39; Workshop @ ETFA 2015</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2014">5th 4diac Users&#39; Workshop @ ETFA 2014</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2013">4th 4diac Users&#39; Workshop @ ETFA 2013</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2012">3rd 4diac Users&#39; Workshop @ ETFA 2012</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2011">2nd 4diac Users&#39; Workshop @ ETFA 2011</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2010">1st 4diac Users&#39; Workshop @ ETFA 2010</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="support-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Support</p>
+                <p class="mega-menu-submenu-featured-story-text">    support 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="contribute-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Contribute</p>
+                <p class="mega-menu-submenu-featured-story-text">    contribute to 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="documentation-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Documentation</p>
+                <p class="mega-menu-submenu-featured-story-text">    Documentation for Eclipse 4diac. 
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Getting Started</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc">Documentation Start</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/iec61499.html">Learn about IEC 61499</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/4diacframework.html">Understand the Eclipse 4diac Framework</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Using Eclipse 4diac</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/tutorials/overview.html">Step by Step Tutorials</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/installation/installation.html">Install Eclipse 4diac</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/examples/examples.html">4diac IDE Examples</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/faq.html">Frequently Asked Questions</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Details</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/io_config/io_config.html">IO Configuration for the Different Platforms</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/communication/communication.html">Communication Protocols</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/development/development.html">Development of 4diac FORTE and 4diac IDE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<main>
+  <div class="container padding-bottom-30">
+    
+      <div class="row">
+        <div class="col-md-18">
+    
+    
+      
+
+
+
+
+
+
+
+<div class="default-breadcrumbs hidden-print" id="breadcrumb">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-24">
+        <ol aria-label="Breadcrumb" class="breadcrumb">
+          
+            
+              
+            
+              
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
+            </li>
+          
+            
+            <li  class="active" aria-current="page">
+              <a href="https://eclipse.dev/4diac/doc/development/contribute.html">Contributing to Eclipse 4diac</a>
+            </li>
+          
+          </ol>
+          
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+
+    
+      <h1>
+        
+          Contributing to Eclipse 4diac
+        
+      </h1>
+    
+
+
+
+  
+  <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The projects 4diac IDE and 4diac FORTE are stored as a Git repository in the Eclipse platform.
+It’s open source, so you can download the project and you can even change things and improve it.
+But of course, it’s not that simple, otherwise changes would be added without any control and could mess up the code.
+If you wish to report a bug, see the section <a href="#BugReport">Bug report</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_git_repository">Git repository</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you don’t know what Git is, don’t worry, we have all been there.
+Basically, Git is a distributed system that is used to control various versions of anything,
+but mostly of software code. The code is stored in a so-called repository which contains all files related to the software.
+After changing the code, instead of saving new files (fileV1, fileV2, fileFinalVersion, fileThisIsReallyTheFinalVersion, fileThisIsReallyTheFinalVersion2) in a new folder, you just &#34;commit&#34; the change and the changes are saved in the repository.
+To see older versions of the software, you go to the specific commit.
+The good thing about Git is the word &#34;distributed&#34; in its definition (I bet you didn’t notice it).
+There’s not only one repository, but anyone who wishes to contribute to the repository, copies the whole content of the repository to his/her computer and works there, changes there and commits there.
+Then, the user pushes to the repository where he/she copied from.</p>
+</div>
+<div class="paragraph">
+<p>This is only the basic principle of Git, but it should give an idea of how it works.
+The step-by-step tutorial following below helps to set up Git for your first contributions.
+Plenty of information online helps to learn more about Git.
+Instead of starting from zero, I would recommend having a look at <a href="https://git-scm.com/" class="bare">https://git-scm.com/</a> where you can download everything necessary to start contributing to any Git project.
+The documentation <a href="https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf">book</a> about Git provides a good overview.
+Although the book is very long, you’ll only need Chapters 1 and 2 to understand how Git works, and Chapter 3 to understand branches.</p>
+</div>
+<div class="paragraph">
+<p>But I should warn you, young padawan, learning Git is hard.
+It’s a very powerful tool, but it takes time to understand it.
+Simply, read the basics and follow the step-to-step guide.
+It is not necessary to try to understand everything before jumping to contributions.
+The best teacher is practice, so use 4diac FORTE or 4diac IDE as your example for practicing.
+You can’t break anything.
+Git is bullet-proof.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_github">Github</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You know how Git works, and have maybe already used it.
+But now, a new player is in the game: Github.
+What is it?
+When someone, a programmer with the best intentions, wants to contribute to 4diac FORTE code, s/he clones the Github repository, makes changes, commits, and then pushes the changes to the repository in the Eclipse Foundation.
+But of course, the change doesn’t go directly to the repository.
+First, it has to be accepted by the people in charge of 4diac FORTE or 4diac IDE.
+Therefore, the contributors create a pull request on Github.
+Github automatically checks legal requirements (copyright headers!), and then notifies the people responsible of Eclipse 4diac that some new change has arrived.
+They then visit Github, see the new pull request, and can accept or deny it.
+Most of the time you will get comments to improve your code.
+Easy, right?</p>
+</div>
+<div class="paragraph">
+<p>But to better understand Github, it’s better to work with it.
+Create a Github account on www.github.com.
+We’ll go step-by-step toward pushing code to Github in order to contribute to Eclipse 4diac.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_help_4diacide_and_4diacforte_now">Help 4diac IDE and 4diac FORTE - NOW!</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As said before, we’ll learn to contribute to 4diac IDE and 4diac FORTE step-by-step.
+However, if you want to contribute, you’ll need to sign some <a href="#ECA">legal documents</a> online.
+If you don’t wish to sign them, you can still get the code of 4diac IDE or 4diac FORTE and play with it.</p>
+</div>
+<div class="sect2">
+<h3 id="_create_an_eclipse_account"><a id="EclipseAccount"></a>Create an Eclipse account</h3>
+<div class="paragraph">
+<p>First of all, you should create an Eclipse account.
+All commits that are created by Eclipse accounts without signed ECA will be rejected automatically.
+If you don’t want to contribute, but just want to download the code and play around, skip to the next step.</p>
+</div>
+<div class="paragraph">
+<p>To create the Eclipse account, simply go to <a href="https://www.eclipse.org/" class="bare">https://www.eclipse.org/</a> and click &#34;Create Account&#34; on the top-right of the page.
+Then, just fill in the information to create an account.
+The email address indicated during account registration should also be used later in Git.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_submit_bug_reports"><a id="BugReport"></a>Submit bug reports</h3>
+<div class="paragraph">
+<p>If you notice an issue related to Eclipse 4diac, you should report an issue on the Github issue tracker.
+This will help the project - even if you have no idea how to fix it!
+For 4diac IDE, follow: <a href="https://github.com/eclipse-4diac/4diac-ide/issues" class="bare">https://github.com/eclipse-4diac/4diac-ide/issues</a> - for 4diac FORTE, follow: <a href="https://github.com/eclipse-4diac/4diac-forte/issues" class="bare">https://github.com/eclipse-4diac/4diac-forte/issues</a>
+You can report issues and suggestions for 4diac IDE, 4diac FORTE, the webpage, etc. after logging into your (new) Github account.
+The title of the bug or feature request should be concise and descriptive.
+Further details are then added in the description field.
+Provide all information required to understand and possibly also reproduce a bug.
+Add your operating system if there is an issue with installation or graphical user interfaces - this may help to reproduce your bug.
+Don’t hesitate to also report minor issues.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sign_the_eca"><a id="ECA"></a>Sign the ECA</h3>
+<div class="paragraph">
+<p>The next step is to sign the ECA (Eclipse Contributor Agreement).
+This is mandatory in order to contribute to the projects.
+Go to the ECA <a href="https://eclipse.org/legal/ECA.php">page</a> to read it and learn more about it.
+The ECA protects for example copyrights. Basically, when you sign it, you declare that you have full rights of every contributed change, which helps protecting intellectual property, including your own.
+If your contribution is part of your work at some company, you should talk first with your superior and the legal department to fully understand how to approach this.</p>
+</div>
+<div class="paragraph">
+<p>The signing is done online after logging in to your account and selecting the &#34;Eclipse Contributor Agreement&#34;.
+You need to check boxes and complete a textbox with &#34;I AGREE&#34;.
+There’s no tangible outcome.
+Eclipse stores your information together with the version of the ECA that you signed.
+You can print the ECA, but you won’t get a certificate to print that says that you signed it.
+Your account will show that you have signed the ECA and there’s a tool in Eclipse validating whether an account has signed it.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_use_egit_to_contribute_preparations"><a id="EGit"></a>Use EGit to contribute: Preparations</h3>
+<div class="paragraph">
+<p>The first example uses Eclipse and all the Git work will be done using EGit, normally installed automatically together with the Eclipse IDE.
+If you think GUI is for weaks and a real programmer should use command line, you can follow the instructions given <a href="#CommandLine">below</a>.
+Nevertheless, users without command line experience should stick to Eclipse.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Get all required software</p>
+<div class="paragraph">
+<p>The first thing to do is to get all the software.
+For 4diac FORTE download Eclipse for C and install it.
+The installation of the toolchain is described xref:../installation/installation.adoc#ownIDE[here].
+If you already have an Eclipse IDE but it&#39;s not configured for C, you don’t need to download another Eclipse, but only the C++ plugin. See a tutorial <a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.cdt.doc.user%2Fgetting_started%2Fcdt_w_install_cdt.htm">here</a>.
+To install Eclipse IDE for developing 4diac IDE use this <a href="../development/building4diac.html#buildFromSource">instruction</a>.
+EGit should be installed automatically with your Eclipse, otherwise follow the steps <a href="http://www.vogella.com/tutorials/EclipseGit/article.html#eclipseinstallationgit">here</a> to install it.</p>
+</div>
+</li>
+<li>
+<p>Configure EGit</p>
+<div class="paragraph">
+<p>The first thing to do in EGit is to configure the user settings.
+The main items are the name and email address.
+This information is attached to your commits.
+To do that, just follow the simple steps in Section 4.2 of the same <a href="http://www.vogella.com/tutorials/EclipseGit/article.html#eclipseinstallationgit">link</a> as above.
+In particular, open Window → Preferences → Team → Git → Configuration in Eclipse.
+Click &#34;Add Entry…​&#34; to open a dialog box for a key-value pair.
+As a key enter <code>email</code> and as value enter the email address of your Eclipse account.
+Click &#34;Add&#34; and add another entry.
+The  second entry consists of the key <code>name</code> and your full name as value.
+As you created the Eclipse account and signed the ECA in the previous <a href="#ECA">step</a>, you must use the same email address.</p>
+</div>
+</li>
+<li>
+<p>Download 4diac FORTE or 4diac IDE repository</p>
+<div class="paragraph">
+<p>In Eclipse, go to File → Import…​→ Git → Projects from Git.
+Click Next and then select Clone URI.
+Next, paste <a href="https://github.com/eclipse-4diac/4diac-forte.git" class="bare">https://github.com/eclipse-4diac/4diac-forte.git</a> or <a href="https://github.com/eclipse-4diac/4diac-ide.git" class="bare">https://github.com/eclipse-4diac/4diac-ide.git</a> in the URI field and then Next.
+Eclipse will connect to the repository and retrieve all its branches.
+Select all and click Next.
+The branches represent various development stages.
+For small updates/fixes to the current version, you can use the branch with the latest version number.
+Select the destination folder of the repository in your local machine and click Next.
+Wait while the repository is being downloaded. Click Next until the assistant is finished.</p>
+</div>
+</li>
+<li>
+<p>(Optional) Look around and move between branches</p>
+<div class="paragraph">
+<p>Now you have the newest 4diac FORTE or 4diac IDE code.
+After downloading the code of a project, look around first.
+Check the folders, read the  documentation and readme files.
+Try to understand the folders and hierarchies.</p>
+</div>
+<div class="paragraph">
+<p>Right-click on a project in the Eclipse package explorer and select Team.
+There you find all possible commands for EGit.
+Team → Show in History will show you all the commits in the current branch.
+Normally, master is the main branch. If 4diac FORTE has another branch, and you want to work with it, you’ll have to create a local branch that serves as reference of the original branch.
+That is, the Eclipse repository has a master branch (seen as origin/master), and for example a develop branch (seen as origin/develop).
+But you, locally, have only a master branch (seen as master).
+This local master is a reference to the origin/master and everything you change on it, will be then pushed to the origin/master.
+But if you want to work on the origin/develop branch, you’ll need to create a local branch that references it.
+Details on branches can be found in the <a href="https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf">book</a> mentioned above  (chapter 3).</p>
+</div>
+<div class="paragraph">
+<p>Right-click on the project → Team → Switch To → Other…​.
+There you’ll see the local and remote branches.
+Select the remote branch you want to work on, for example origin/develop, and click Checkout.
+You’ll get a message saying that you can watch the remote branch, or you can create a new branch locally to work on it.
+Click on &#34;Checkout as New Local Branch&#34; and then select a name for the local branch.
+Usually, the name of the original branch is copied, therefore, we’ll call it develop (without the part &#34;origin/&#34;) and click finish.
+Now you can switch between the branches, and the changes in each one will be reflected in the corresponding origin.</p>
+</div>
+<div class="paragraph">
+<p>The projects follows the workflow shown <a href="http://nvie.com/posts/a-successful-git-branching-model/">here</a>.
+Basically, the master branch is used to release versions and the development of new stuff.
+You should always branch out from develop to work on something new.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_create_contributions_with_eclipse_and_egit">Create contributions with Eclipse and EGit</h3>
+<div class="paragraph">
+<p>After you downloaded the current code, you can start creating contributions.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Find a bug to work on</p>
+<div class="paragraph">
+<p>In order to contribute, you need to first find a bug to work on.
+Larger changes should be related to a bug recorded in the issue tracker.
+You can look into the code and find something wrong or you can go to the list of bugs on Github and see the ones that refer to the 4diac  IDE or 4diac FORTE project.
+If you find an error, or even missing documentation, you should report the bug.
+In order to learn how to contribute you may want to edit some documentation.
+Maybe you find a typo or you’d like to add some details.
+Bug fixes are a metric that shows how the software development progresses.
+But be aware that when reporting a bug, it should have a clear way of fixing it.
+For a reported bug such as &#34;Missing documentation&#34;, it is unclear when the bugfix is complete.
+Therefore, state for example which documentation is missing.</p>
+</div>
+</li>
+<li>
+<p>Make changes and prepare to commit</p>
+<div class="paragraph">
+<p>Now you actually change the code.
+Open the files you want to change and edit them.
+Try to change less then 1000 lines in one commit in order to keep individual commits small.
+Larger edits can be split to several commits.</p>
+</div>
+<div class="paragraph">
+<p>Open the Git Staging View in Eclipse by going to Window → Show View → Other…​ → Git → Git Staging.
+In the Unstaged Changes you see all the files that were changed.
+Right-click on them and then Add to index.
+The selected files will be moved to Staged Changes.</p>
+</div>
+</li>
+<li>
+<p>Commit the changes</p>
+<div class="paragraph">
+<p>Committing changes is a very important step.
+The changes are first committed locally.
+The commit message is essential for pushing to Github, you can find example messages below.
+In Github, the commit is first verified to ensure that everything is fine and the changes are then accepted.
+The commit message is created in the Git Staging View and consists of two parts: the subject and the body.
+The parts are separated by an empty line.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The subject must contain a short explanation of what the commit contains.
+Try to keep it shorter than 50 characters and, for better readability, start the message with a capital letter.
+Don’t use a period at the end of the subject.</p>
+</li>
+<li>
+<p>The body contains all the explanation of what was done.
+Use it to explain what and why, but not how.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>If CommitOne is rejected (erroneous code, missing information, etc.), you must revise the commit and amend (overwrite) the CommitOne.
+This generates CommitTwo. (You could also delete CommitOne completely, and create a new commit as CommitTwo).
+Remember that CommitTwo is a completely new commit.
+CommitTwo must have the Change-Id that Gerrit generated for CommitOne (Go to the Gerrit webpage, find the change of CommitOne and you’ll see its Change-Id).
+When you push CommitTwo, it won’t create a new entry in Gerrit.
+Instead, CommitTwo will appear below CommitOne on the same page. Now CommitTwo is waiting to be accepted.</p>
+</div>
+<div class="paragraph">
+<p>+
+Example for CommitOne:</p>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Change the initial value of temp variable
+
+The initial value of the temp variable was changed to 1 instead of zero
+because of weather conditions</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+
+With the message done, click commit.</p>
+</div>
+<div class="paragraph">
+<p>+
+Example for CommitTwo:</p>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Change the initial value of temp variable
+
+The initial value of the temp variable was changed to 2 instead of zero
+because of weather conditions</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+
+With the message done, click commit.
+. Push the commit</p>
+</div>
+<div class="paragraph">
+<p>+
+In the History View you can see the new commit you have just added.
+You can access this view by changing the tab from &#34;Git Staging&#34; to &#34;History&#34;.
+So far, the commit is only stored locally, and no one else knows about it.
+It’s time to push it to the repository in Eclipse.
+Right-click on your last commit → Push commit…​. A dialog opens.
+With the configurations shown, you are trying to push to the develop branch of the Gerrit called <code>refs/heads/develop</code>.
+The push confirmation notifies that a new branch is being created.
+Don’t worry about that, and click Finish.
+Enter the password again, and then the push should succeed.
+If anything fails, the error appears in the log.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_option_2_git_on_command_line">Option 2: Git on command line</h3>
+<div class="paragraph">
+<p>Use Git on the command line instead of <a href="#EGit">EGit</a> (this one is for the reckless, the knights of the keyboard and especially those afraid of mice).</p>
+</div>
+<div class="paragraph">
+<p>The following instructions apply to Debian-based Linux systems such as LinuxMint or Ubuntu.
+It is assumed that you have already created your Eclipse account and signed the ECA as described <a href="#EclipseAccount">above</a>.
+Also the same <a href="#FindBug">rules</a> for creating a bug report and working on the 4diac FORTE or 4diac IDE code apply.
+Of course, you can decide yourself which editor you want to use for coding.
+There are a lot of possibilities out there: VI, Emacs and many more.
+For code compilation and linking on a Linux system, the GNU compiler suite usually is the best choice.
+But the details on that won’t be addressed here.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Check and install Git command line tools</p>
+<div class="paragraph">
+<p>If you are unsure whether the Git command line tools are already installed on your Linux box, you can enter the following command on Debian based distributions (e.g., LinuxMint, Ubuntu):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/$ dpkg --get-selections | grep git</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If Git tools are already installed, you should get a reply such as:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>git  install
+git-core  install
+git-gui  install
+git-man  install
+git-review  install
+gitk  install</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you don’t see the output above, you’ll need to install the Git tools with the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/$ sudo apt-get update &amp;&amp; sudo apt-get install git</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Clone 4diac FORTE ord 4diac IDE repository to a directory of your choice</p>
+<div class="paragraph">
+<p>First, create a directory in your own home directory and change to it.
+In my example, this is <code>⁄home⁄johndoe⁄develop⁄repos</code>, but you can also choose another.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/$ mkdir -p develop/repos
+johndoe@linuxmint ~/$ cd develop/repos</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now it’s time to clone the sources. In the following example the repository URL for 4diac FORTE is used.
+For 4diac IDE use <a href="https://git.eclipse.org/r/4diac/org.eclipse.4diac.ide" class="bare">https://git.eclipse.org/r/4diac/org.eclipse.4diac.ide</a> instead.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos$ git clone https://git.eclipse.org/r/4diac/org.eclipse.4diac.forte
+Cloning into &#39;org.eclipse.4diac.forte&#39;...
+remote: Counting objects: 1, done
+remote: Finding sources: 100% (1/1)
+Receiving objects: 100% (2283/2283), 1.27 MiB | 458.00 KiB/s, done.
+remote: Total 2283 (delta 0), reused 2283 (delta 0)
+Resolving deltas: 100% (1445/1445), done.
+Checking connectivity... done.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After cloning, you can have a look at the branches of the repository, but first you’ll have to change to the new 4diac FORTE source directory created automatically.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos$ cd org.eclipse.4diac.forte
+johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git branch -a
+* master
+remotes/origin/1.8.x
+remotes/origin/HEAD → origin/master
+remotes/origin/OPC_UA
+remotes/origin/develop
+remotes/origin/master</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The &#34;*&#34; indicates the current active branch.
+Now switch to the &#34;develop&#34; branch, because this is the one, where the commits are supposed to go.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git checkout develop
+Branch develop set up to track remote branch develop from origin.
+Switched to a new branch &#39;develop&#39;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Configure your Git installation to work with Gerrit code review</p>
+<div class="paragraph">
+<p>You should have already created your Eclipse account and Gerrit login, following the description above.
+Let’s assume that your email account is <code>john.doe@example.com</code> and the login for Gerrit is <code>jdoexy5</code>.
+We’ll set this in the git configuration first.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git config --global user.email &#34;john.doe@example.com&#34;
+johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git config --global user.name &#34;jdoexy5&#34;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Please note that <code>git config --global</code> settings are generally stored within a user-specific configuration file.
+This file is named <code>.gitconfig</code> and is stored in your own home directory and not in the 4diac FORTE repository.
+We’ll now create an SSH public key which you need to upload to your Gerrit account later on.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ cd ~/.ssh
+johndoe@linuxmint ~/.ssh $ ssh-keygen -t rsa -C &#34;john.doe@example.com&#34;
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/johndoe/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/johndoe/.ssh/id_rsa.
+Your public key has been saved in /home/johndoe/.ssh/id_rsa.pub.
+The key fingerprint is:
+4d:c7:4f:8f:71:07:89:cb:c9:dc:e5:ad:54:77:9a:64 john.doe@example.com</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can just accept the default key file location by hitting the return key.
+The Eclipse foundation strongly recommends to use a passphrase for additional security.
+Now copy the newly created public SSH key to your Gerrit account at eclipse.org. Display the contents of the public key file with the following command:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/.ssh $ cat id_rsa.pub</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Copy everything displayed into your clipboard from the start (including ssh-rsa) to the end (including <code>john.doe@example.com</code>).
+Now login to your gerit account at eclipse.org, click on the small arrow next to your user name displayed in the top-right corner and choose &#34;Settings&#34;.
+In the menu on the left, choose &#34;SSH Public Keys&#34; and click on &#34;Add key…​&#34;.
+Now paste everything from the clipboard into the text field and click &#34;Add&#34;.
+Your public key should appear in the list now. We’ll check now, whether Gerrit is accepting your key properly.
+Let’s do a small ssh login test.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/.ssh $ ssh -p 29418 jdoexy5@git.eclipse.org
+The authenticity of host &#39;[git.eclipse.org]:29418 ([198.41.30.196]:29418)&#39; can&#39;t be established.
+RSA key fingerprint is 1a:b6:dc:be:0e:1f:ab:01:70:aa:43:82:4d:54:51:37.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added &#39;[git.eclipse.org]:29418,[198.41.30.196]:29418&#39; (RSA) to the list of known hosts.
+
+**** Welcome to Gerrit Code Review ****
+
+Hi John, you have successfully connected over SSH.
+
+Unfortunately, interactive shells are disabled.
+To clone a hosted Git repository, use:
+
+git clone ssh://jdoexy5@git.eclipse.org:29418/REPOSITORY_NAME.git
+
+Connection to git.eclipse.org closed.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You’ll have to configure the Gerrit Push URL within your Git configuration.
+Change to the hidden Git directory within the 4diac FORTE repository and edit the file named &#34;config&#34;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/.ssh $ cd ..
+johndoe@linuxmint ~/ $ cd develop/repos/org.eclipse.4diac.forte/.git
+johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte/.git $ nano config</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following screenshot indicates the parts you need to add or change.
+Save and exit afterwards.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/cmdPushUrlConfig.png" alt="Configure Gerrit Push URL"/></span></p>
+</div>
+</li>
+<li>
+<p>Create your own commit message template (optional)</p>
+<div class="paragraph">
+<p>You can create a commit message template file, which will be used everytime you do a new commit.
+You can add helpful comments, so that you don’t forget important contents of the message or even add text, which should be part of every commit message. It’s just up to you.
+Change to your home directory and create a new file called <code>.git_commit_msg_template</code> with your favorite text editor.
+Here I used nano for convenience.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte/.git $ cd /home/johndoe
+johndoe@linuxmint ~/ $ nano .git_commit_msg_template</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The following screenshot shows some example content.
+See <a href="#CommitChanges">above</a> for more details of the message guide</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/cmdCreateCommitMsgTemplate.png" alt="Example of commit message template contents"/></span></p>
+</div>
+</li>
+<li>
+<p>Do your first command line commit</p>
+<div class="paragraph">
+<p>A new commit should always be in relation to a bug in Bugzilla as already mentioned <a href="#FindBug">above</a>.
+A bug can also add new functionality to 4diac FORTE.
+A single commit should not contain more than 1000 lines of code (yes, you are right, this was already mentioned above, but you can never emphasize this too often).
+A good approach to check whether something was changed in your local 4diac FORTE sources and needs to be committed is the git status command.
+You should change to your local 4diac FORTE Git repository first.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git status
+On branch develop
+Your branch is up-to-date with &#39;origin/develop&#39;.
+
+Untracked files:
+(use &#34;git add file...&#34; to include in what will be committed)
+
+src/modules/conmeleon_c1/
+
+nothing added to commit but untracked files present (use &#34;git add&#34; to track)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the example above, I only added an empty directory, which is now recognized by Git as untracked.
+If you want to add some new files, just copy them to your local 4diac FORTE repository or edit existing files.
+Git will recognize the changes and you’ll see the files with the &#34;git status&#34; command.
+To be able to commit anything, the respective files need to be added first.
+In this way, the files will be moved to the so called staging area.
+So flex your fingers and add properly.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git add src/modules/conmeleon_c1/util
+johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git status
+On branch develop
+Your branch is up-to-date with &#39;origin/develop&#39;.
+
+Changes to be committed:
+(use &#34;git reset HEAD file...&#34; to unstage)
+
+new file: src/modules/conmeleon_c1/util/fileres.cpp
+new file: src/modules/conmeleon_c1/util/fileres.h
+new file: src/modules/conmeleon_c1/util/uncopyable.h
+
+Untracked files:
+(use &#34;git add file...&#34; to include in what will be committed)
+
+src/modules/conmeleon_c1/CMakeLists.txt
+src/modules/conmeleon_c1/gpio/
+src/modules/conmeleon_c1/processinterface.cpp
+src/modules/conmeleon_c1/processinterface.h
+src/modules/conmeleon_c1/spi/</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now we do the commit itself.
+Don’t forget the -s option for automatic sign-off which is required by the org.eclipse.4diac.forte project and to follow the <a href="#CommitChanges">message guide</a> if you didn’t do it already as a template.
+After the git commit command the default editor will be opened with your commit message template and you have to enter the message information (Bugzilla ID, what was changed and why and the URL to the bugzilla entry).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git commit -s
+[develop 3a8de79] [495477] Add conmeleon support to forte
+3 files changed, 272 insertions(+)
+create mode 100644 src/modules/conmeleon_c1/util/fileres.cpp
+create mode 100644 src/modules/conmeleon_c1/util/fileres.h
+create mode 100644 src/modules/conmeleon_c1/util/uncopyable.h</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>So far so good. This was not really a big deal, was it?
+The next step is pushing to Gerrit code review and then your new code will be scrutinized by the never sleeping eyes of the project code reviewer.</p>
+</div>
+</li>
+<li>
+<p>Push to Gerrit</p>
+<div class="paragraph">
+<p>This is not difficult, if you followed the steps above.
+You are just a single command away from finishing.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>johndoe@linuxmint ~/develop/repos/org.eclipse.4diac.forte $ git push origin HEAD:refs/for/develop
+Password for &#39;https://jdoexy5@git.eclipse.org&#39;:
+Counting objects: 38, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 3.84 KiB | 0 bytes/s, done.
+Total 9 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3)
+remote: Processing changes: new: 1, refs: 1, done
+remote: ----------
+remote: Reviewing commit: 3a8de79f
+remote: Authored by: jdoexy5 (john.doe@example.com)
+remote:
+remote: The author is not a committer on the project.
+remote: The author has a current Contributor License Agreement (CLA) on file.
+remote: The author has &#34;signed-off&#34; on the contribution.
+remote:
+remote: This commit passes Eclipse validation.
+remote:
+remote: New Changes:
+remote: https://git.eclipse.org/r/74832 [495477] Add conmeleon support to forte
+remote:
+To https://jdoexy5@git.eclipse.org/r/4diac/org.eclipse.4diac.forte
+* [new branch] HEAD → refs/for/develop</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You did it, good job!
+Now it’s the reviewer’s turn and you’ll see his or her comments in the Gerrit code review webpage.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_things_to_keep_in_mind_for_contributions">Things to keep in mind for contributions:</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>When creating new files for the project, add the copyright terms at the beginning.
+Following the year of modification, add the name.
+Additionally, add your name below &#34;Contributors&#34;, together with a short description of your contribution.
+Example code:</p>
+<div class="listingblock">
+<div class="content">
+<pre>{year} {owner}[ and others]
+
+This program and the accompanying materials are made available under the
+terms of the Eclipse Public License 2.0 which is available at
+http://www.eclipse.org/legal/epl-2.0.
+
+SPDX-License-Identifier: EPL-2.0
+
+Contributors:
+{name} - initial API and implementation</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Always contribute to a bug.</p>
+</li>
+<li>
+<p>Put the bug number between brackets in the subject of the commit message, and the link to the bug in the footer.</p>
+</li>
+<li>
+<p>Don’t forget to sign the commit.</p>
+</li>
+<li>
+<p>Use the Gerrit <a href="https://git.eclipse.org/r">website</a> to see the commits you pushed and their status.</p>
+</li>
+<li>
+<p>Don’t be afraid of contributing code.</p>
+</li>
+<li>
+<p>Use the forums in case of doubt.</p>
+</li>
+<li>
+<p>Find more info <a href="https://wiki.eclipse.org/Development_Resources/Contributing_via_Git">here</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_where_to_go_from_here">Where to go from here?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Back to Development index:</p>
+</div>
+<div class="paragraph">
+<p><a href="./development.html">Development Index</a></p>
+</div>
+<div class="paragraph">
+<p>If you want to go back to the Start Here page, we leave you here a fast access:</p>
+</div>
+<div class="paragraph">
+<p><a href="../doc_overview.html">Start Here page</a></p>
+</div>
+<div class="paragraph">
+<p>Or <a href="#topOfPage">Go to top</a></p>
+</div>
+</div>
+</div>
+
+
+  
+
+    
+
+
+     
+      
+      </div>
+        <div class="col-md-6  padding-bottom-30">
+          
+            
+
+
+
+
+
+
+  
+
+  
+    
+  
+  
+  
+
+  
+
+
+
+          
+        </div>
+      </div>
+    
+  </div>
+</main>
+  
+  
+  
+
+
+
+
+  
+
+<p id="back-to-top">
+  <a class="visible-xs" href="#">Back to the top</a>
+</p>
+<footer class="footer" id="footer">
+  <div class="container">
+    
+
+<div class="footer-end-social-container margin-bottom-30">
+  
+
+
+
+
+
+
+
+
+
+
+<div class="footer-end-social">
+    <p class="footer-end-social-text hidden-xs">Follow Us:</p>
+    <ul class="footer-end-social-links list-inline">
+        <li>
+            <a class="link-unstyled" href="https://x.com/4diac" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.youtube.com/@4diac177" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.linkedin.com/groups/6949091/" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        </li>
+    </ul>
+    <p class="footer-end-social-text hidden-xs">Support:</p>
+    <ul class="footer-end-social-links list-inline">
+    	<li>
+            <a class="link-unstyled" href="https://github.com/eclipse-4diac" title="Eclipse 4diac Github Organization">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Github Organization</span>
+                </span>
+            </a>
+        </li> 
+    	<li>
+            <a class="link-unstyled" href="https://dev.eclipse.org/mailman/listinfo/4diac-dev" title="Eclipse 4diac Developer Mailinglist">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Developer Mailinglist</span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        	<a class="link-unstyled" href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org"  title="Eclipse 4diac Matrix Channels">
+        		<img src="/4diac/img/matrix.png" alt="Eclipse 4diac Matrix Channels"/></a>
+            <span class="sr-only">Eclipse 4diac Matrix Channels</span>
+        </li>
+    </ul>
+</div>
+
+
+</div>
+
+
+    <div class="footer-sections row equal-height-md font-bold">
+        
+        <div class="col-md-15">
+          <div class="row">
+            
+
+
+  
+  <section id="footer-legal" class="footer-section col-sm-8">
+    <div class="menu-heading">Legal</div>
+    <ul class="nav">
+      <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+      <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+      <li><a href="https://www.eclipse.org/legal/compliance/">Compliance</a></li>
+      <li><a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php">Code of Conduct</a></li>
+      <li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
+      <li><a class="toolbar-manage-cookies" href="#" onclick="event.preventDefault()">Manage Cookies</a></li>
+    </ul>
+  </section>
+
+
+ 
+ <section id="footer-more" class="footer-section col-sm-8">
+   <div class="menu-heading">More</div>
+   <ul class="nav">
+     <li><a href="https://www.eclipse.org/security/">Report a Vulnerability</a></li>
+     <li><a href="https://status.eclipse.org/">Service Status</a></li>
+     
+     <li><a href="/4diac/support">Support</a></li>
+   </ul>
+ </section>
+
+
+          </div>
+        </div>
+        
+
+
+
+
+  <div id="footer-end" class="footer-section col-md-8 col-md-offset-1 col-sm-24">
+    
+  </div>
+
+
+    </div>
+    
+
+
+
+<div class="col-sm-24 margin-top-20">
+  <div class="row">
+    <div id="copyright" class="col-sm-16">
+      <p id="copyright-text">Copyright &copy; Eclipse Foundation AISBL. All Rights Reserved.</p>
+    </div>
+    
+  </div>
+</div>
+
+    <a href="#" class="scrollup">Back to the top</a>
+  </div>
+</footer>
+
+
+
+
+  
+  <div id="footer-js">
+  
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1754684696"></script>
+  
+
+  
+  
+
+  
+  <script>
+  (function($, document) {
+    
+    
+  })(jQuery, document);
+  </script>
+
+  
+</div>
+
+</body>
+</html>
+

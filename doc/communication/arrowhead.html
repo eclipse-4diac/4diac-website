@@ -1,0 +1,1963 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+
+
+
+  
+
+
+<title>How to Use Eclipse 4diac&#39;s Arrowhead Library | The Eclipse Foundation</title>
+<meta property="og:title" content="How to Use Eclipse 4diac&#39;s Arrowhead Library | The Eclipse Foundation" />
+<meta name="twitter:title" content="How to Use Eclipse 4diac&#39;s Arrowhead Library | The Eclipse Foundation" />
+
+<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
+
+<meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@eclipsefdn" />
+<meta name="twitter:creator" content="@eclipsefdn" />
+<meta property="og:url" content="https://eclipse.dev/4diac/doc/communication/arrowhead.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Eclipse 4diac" />
+<meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
+
+
+<meta name="generator" content="Hugo 0.144.2">
+
+<link rel="canonical" href="https://eclipse.dev/4diac/doc/communication/arrowhead.html" />
+
+
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1754684700">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1754684700">
+<script>
+	
+		var tableClasses = "table";
+	
+</script>
+
+
+
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" type="text/css"/>
+
+  
+
+</head>
+<body >
+  
+
+
+
+
+
+
+
+
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="header-wrapper header-wrapper header-default-bg-img featured-jumbotron-bottom-shape" id="header">
+  
+
+
+
+
+
+<div class="header-toolbar">
+    <div class="container">
+        <div class="header-toolbar-row">
+            <div class="toolbar-btn toolbar-search-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-search" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="Search"
+                >
+                    <i class="fa fa-search fa-lg" aria-role="none"></i>
+                </button>
+                <div 
+                    class="toolbar-search-bar-wrapper dropdown-menu dropdown-menu-right"
+                    aria-labelledby="toolbar-search"
+                >
+                      <form action="https://www.eclipse.org/home/search" method="get">
+                    <div class="search-bar">
+                        <input class="search-bar-input" name="q" placeholder="Search" />
+                        <button>
+                            <i class="fa fa-search" type="submit"></i>
+                        </button>
+                    </div>
+                      </form>
+                </div>
+            </div>
+            <div class="toolbar-btn toolbar-user-menu-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-user-menu" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="User Menu"
+                >
+                    <i class="fa fa-user fa-lg"></i>
+                </button>
+                <ul class="toolbar-user-menu dropdown-menu dropdown-menu-right text-center"
+                    aria-labelledby="toolbar-user-menu">
+                    <li>
+                        <a href="https://accounts.eclipse.org/user">
+                            <i class="fa fa-user"></i>
+                            View My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://accounts.eclipse.org/user/edit">
+                            <i class="fa fa-edit"></i>
+                            Edit My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a class="toolbar-manage-cookies">
+                            <i class="fa fa-wrench"></i>
+                            Manage Cookies
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header-navbar-wrapper">
+    <div class="container">
+        <div class="header-navbar">
+            <div class="header-navbar-brand">
+                <a class="logo-wrapper" href="/4diac" title="Eclipse 4diac">
+                    <img src="/4diac/img/4diac_Logo_2024.svg" alt="" width="55%" />
+                </a>
+            </div>
+            
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="header-navbar-nav">
+    <ul class="header-navbar-nav-links">
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="fordiac-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Eclipse 4diac
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/news" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    News
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="events-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Events
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/support" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Support
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/contribute" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Contribute
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="documentation-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Documentation
+                    </button>
+                
+            </li>
+        
+    </ul>
+</nav>
+
+
+
+
+
+            <div class="header-navbar-end">
+                
+                   <a 
+                  class="header-navbar-end-download-btn btn btn-primary" 
+                  href="/4diac/download/" 
+                   >
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download
+                  </a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+                    <i class="fa fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+    
+
+
+
+
+<nav class="mobile-menu hidden" aria-expanded="false">
+    <ul>
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="fordiac-menu">
+      <span>Eclipse 4diac</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="fordiac-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-ide-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Development Environment</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-ide-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_ide">
+                      4diac IDE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-forte-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Run-Time Environment</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-forte-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_forte">
+                      4diac FORTE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-lib-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Function Block Library</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-lib-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_lib">
+                      4diac LIB
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-sys-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Example Projects</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-sys-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_sys">
+                      4diac SYS
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/news">News</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="events-menu">
+      <span>Events</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="events-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-winterschools-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Winter Schools</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-winterschools-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/4diacwinterschool">
+                      1st 4days of Eclipse 4diac Winter School, 2025
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-community-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Community Events</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-community-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/virt-community">
+                      Eclipse 4diac Virtual Community Meetings
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_4days_of_4diac">
+                      4days of 4diac, 2019
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_eclipse_insight">
+                      Eclipse Insight: Cross Domain Engineering, 2019
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-etfa_workshops-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>ETFA Workshops</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-etfa_workshops-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2016">
+                      7th 4diac Users&#39; Workshop @ ETFA 2016
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2015">
+                      6th 4diac Users&#39; Workshop @ ETFA 2015
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2014">
+                      5th 4diac Users&#39; Workshop @ ETFA 2014
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2013">
+                      4th 4diac Users&#39; Workshop @ ETFA 2013
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2012">
+                      3rd 4diac Users&#39; Workshop @ ETFA 2012
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2011">
+                      2nd 4diac Users&#39; Workshop @ ETFA 2011
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2010">
+                      1st 4diac Users&#39; Workshop @ ETFA 2010
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/support">Support</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/contribute">Contribute</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="documentation-menu">
+      <span>Documentation</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="documentation-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-getting_started-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Getting Started</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-getting_started-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc">
+                      Documentation Start
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/iec61499.html">
+                      Learn about IEC 61499
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/4diacframework.html">
+                      Understand the Eclipse 4diac Framework
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-using-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Using Eclipse 4diac</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-using-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/tutorials/overview.html">
+                      Step by Step Tutorials
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/installation/installation.html">
+                      Install Eclipse 4diac
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/examples/examples.html">
+                      4diac IDE Examples
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/faq.html">
+                      Frequently Asked Questions
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-details-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Details</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-details-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/io_config/io_config.html">
+                      IO Configuration for the Different Platforms
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/communication/communication.html">
+                      Communication Protocols
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/development/development.html">
+                      Development of 4diac FORTE and 4diac IDE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eclipsefdn-mega-menu">
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="fordiac-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Eclipse 4diac</p>
+                <p class="mega-menu-submenu-featured-story-text">      Eclipse 4diac™ provides an open source infrastructure
+      for distributed industrial process measurement and control systems
+      based on the IEC 61499 standard.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Development Environment</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_ide">4diac IDE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Run-Time Environment</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_forte">4diac FORTE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Function Block Library</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_lib">4diac LIB</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Example Projects</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_sys">4diac SYS</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="news-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="events-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Events</p>
+                <p class="mega-menu-submenu-featured-story-text">    Eclipse 4diac™ has been founded to support research activities and industrial adoption of distributed automation systems. 
+    Over time 4diac grew with new versions, improvements and new features for the modeling of distributed automation systems. 
+    Moreover, a special focus was the performance improvement of the runtime system. Even more important, 4diac as an 
+    IEC 61499-compliant distributed control environment for industrial and research applications has proven 
+    to be a stable basis for further research towards the next generation of distributed automation and control systems based 
+    on open standards. To get in contact with its users and share results and future plans 4diac participates at different events, 
+    which are collected here:
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Winter Schools</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/4diacwinterschool">1st 4days of Eclipse 4diac Winter School, 2025</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Community Events</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/virt-community">Eclipse 4diac Virtual Community Meetings</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_4days_of_4diac">4days of 4diac, 2019</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_eclipse_insight">Eclipse Insight: Cross Domain Engineering, 2019</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">ETFA Workshops</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2016">7th 4diac Users&#39; Workshop @ ETFA 2016</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2015">6th 4diac Users&#39; Workshop @ ETFA 2015</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2014">5th 4diac Users&#39; Workshop @ ETFA 2014</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2013">4th 4diac Users&#39; Workshop @ ETFA 2013</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2012">3rd 4diac Users&#39; Workshop @ ETFA 2012</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2011">2nd 4diac Users&#39; Workshop @ ETFA 2011</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2010">1st 4diac Users&#39; Workshop @ ETFA 2010</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="support-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Support</p>
+                <p class="mega-menu-submenu-featured-story-text">    support 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="contribute-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Contribute</p>
+                <p class="mega-menu-submenu-featured-story-text">    contribute to 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="documentation-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Documentation</p>
+                <p class="mega-menu-submenu-featured-story-text">    Documentation for Eclipse 4diac. 
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Getting Started</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc">Documentation Start</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/iec61499.html">Learn about IEC 61499</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/4diacframework.html">Understand the Eclipse 4diac Framework</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Using Eclipse 4diac</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/tutorials/overview.html">Step by Step Tutorials</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/installation/installation.html">Install Eclipse 4diac</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/examples/examples.html">4diac IDE Examples</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/faq.html">Frequently Asked Questions</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Details</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/io_config/io_config.html">IO Configuration for the Different Platforms</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/communication/communication.html">Communication Protocols</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/development/development.html">Development of 4diac FORTE and 4diac IDE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<main>
+  <div class="container padding-bottom-30">
+    
+      <div class="row">
+        <div class="col-md-18">
+    
+    
+      
+
+
+
+
+
+
+
+<div class="default-breadcrumbs hidden-print" id="breadcrumb">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-24">
+        <ol aria-label="Breadcrumb" class="breadcrumb">
+          
+            
+              
+            
+              
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
+            </li>
+          
+            
+            <li  class="active" aria-current="page">
+              <a href="https://eclipse.dev/4diac/doc/communication/arrowhead.html">How to Use Eclipse 4diac&#39;s Arrowhead Library</a>
+            </li>
+          
+          </ol>
+          
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+
+    
+      <h1>
+        
+          How to Use Eclipse 4diac&#39;s Arrowhead Library
+        
+      </h1>
+    
+
+
+
+  
+  <div class="sect1">
+<h2 id="_introduction"><a id="intro"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>4diac FORTE supports communication with the ServiceRegisty, Orchestrator, Authorization and EventHandler core system of the Arrowhead Framework version 4.1.2 using HTTP-JSON and OPCUA-JSON.</p>
+</div>
+<div class="paragraph">
+<p>The <a href="https://github.com/arrowhead-f/core-java">Arrowhead Framework (AF)</a> is a framework that provides interoperability between services in a Service Oriented Architectue (SOA).
+The actual scope and its definition are not easy to understand at first and its documentation does not always help, so the following paragraph will try explain the basics of the AF.</p>
+</div>
+<div class="paragraph">
+<p>The AF is a set of interfaces, rules and documentation system that allow devices to provide and consume services.
+The AF defines types in an abstract way for Services, Cloud, System and others concepts.</p>
+</div>
+<div class="paragraph">
+<p>The AF also stablish that there should be at least 3 main systems (also called core systems) in a local cloud:
+ServiceRegistry system (allows to register, unregister and query for services), Orchestrator system (allows to find provided services that were designated to devices to consume) and the Authorization System (manages all authorization needed between devices and services).
+These systems, together with others that aren’t mandatory, provide a set of defined services, which of course are defined using the interfaces and types of the AF.
+The documentation of each system can be found in the folder for it in the <a href="https://github.com/arrowhead-f/core-java/tree/master/documentation">github repository</a>.
+It’s important to note at this point that all services defined for the core systems are implementation-independent, but HTTP/JSON is the first and the de-facto official implementation, but the services could use other communication and modeling protocols.</p>
+</div>
+<div class="paragraph">
+<p>The service that your system will produce or consume is not defined in the AF, but how you should document it, it is.</p>
+</div>
+<div class="paragraph">
+<p>The basic sequence for having a service being produced and consumed in the AF is the following:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Configure your local cloud: First, you need to tell the Authorization System which services are allowed to be consumed by which system and to the Orchestrator System where are the sevice providers for the consumers (IP and Port).</p>
+</li>
+<li>
+<p>When the service provider is connected to the local cloud, it should register to the Service Registry.</p>
+</li>
+<li>
+<p>The service consumer will do the same. In addition, it will contact the Orchestrator asking for the endpoint of the service provider.</p>
+</li>
+<li>
+<p>The Orchestrator will look in its private database (configured in point 1) for the endoint of the service provider, and check with the Authorization System if the consumer is allowed to consume from the provider.</p>
+</li>
+<li>
+<p>If yes, the Orchestrator answers the consumer (point 3) with the endpoint of the service provider.</p>
+</li>
+<li>
+<p>The service consumer connects to the service provider using the endpoint given in point 5, and consumes the services.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>As seen before, the service interface between the consumer and provider is not fixed and the AF has nothing to do with it. The AF provides the support to register services, and look for them.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Important</div>
+</td>
+<td class="content">
+The developed 4diac’s Arrowhead library provides the FBs and AF types to communicate to the official <a href="https://github.com/arrowhead-f/core-java">Arrowhead Framework</a> version 4.1.2.
+The new version 4.1.3 of the AF is in another repository and the API has changed so it’s not compatible with the 4diac’s library.
+The provided library can be used with HTTP using the provided link before, or OPC UA, but for that you need to use this special fork which extends the AF with OPC UA interfaces.
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enabling_the_arrowhead_module_in_4diacforte">Enabling the Arrowhead Module in 4diac FORTE</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The first thing that’s needed is to have a version of 4diac FORTE with the Arrowhead Module enabled. For that, you’ll need to compile your own 4diac FORTE.
+To do that, follow these <a href="../installation/installation.html#ownFORTE">steps</a> and in CMake set the variable <code>FORTE_MODULE_Arrowhead</code> and <code>FORTE_COM_HTTP</code> or/and <code>FORTE_COM_OPC_UA</code> to TRUE.</p>
+</div>
+<div class="paragraph">
+<p>After 4diac FORTE compiles, you’ll be ready to use the FBs library in 4diac IDE.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fbs_in_4diacide">FBs in 4diac IDE</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The 4diac IDE is where the library of Function Blocks were defined, and it was done in three levels.
+In the lowest level, helper Function Blocks allow the user to create the Arrowhead Framework types using standard types from IEC 61499.
+The following figure shows the Function Block to create an Arrowhead Cloud type, which can later be connected to the upper levels.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/arrowhead/typeHelper.png" alt="Type helper for an Arrowhead Cloud"/></span></p>
+</div>
+<div class="paragraph">
+<p>On the second level, the actual Arrowhead services were implemented.
+These Function Blocks offer an adapter following the IEC 61499 standard, in order to decouple the abstract definition of services from the actual implementation.
+As an example, the following figure shows the Function Block to register and unregister a service in the Service Registry.
+The data inputs are a Service Registry Entry type (protocol independent) and the endpoint to connect to.
+The “registerService” adapter on the below right side, offers a plug to the actual implementation of the communication, passing all needed data.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/arrowhead/abstractRegisterService.png" alt="Abstract definition of the Register Service offered by the Service Registry core system"/></span></p>
+</div>
+<div class="paragraph">
+<p>The socket for this adapter is given by each implementation. The next figure shows the Function Block that implements the actual HTTP communication to the Service Registry (there’s one with the same interface for OPC UA but different internal implementation).
+Its only input is the socket adapter, the counter part of the plug adapter from the previous figure.
+By connecting them, the information is passed to this Function Block that handles the communication.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/arrowhead/httpRegisterService.png" alt="Register Service implementation in HTTP Rest"/></span></p>
+</div>
+<div class="paragraph">
+<p>This decoupled architecture allows to quickly implement another type of communication.
+For example, to connect to the Service Registry with an OPC UA interface, only the Function Block in the last figure needed to be re-implemented with the specifics of OPC UA.</p>
+</div>
+<div class="paragraph">
+<p>On the top most level, sub-applications were implemented in order to facilitate the user using the library.
+For example, for registering a service, instead of building from the lowest level, which requires many Function Blocks and connections, an encapsulated sub-application is provided that offers all parameters for it.
+The following figure shows the sub-application with all parameters to register and unregister a service using HTTP.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/arrowhead/httpRegisterServiceFull.png" alt="Sub-application for registering a service using HTTP"/></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_purpose_of_available_fbs_in_the_arrowhead_library">Purpose of available FBs in the Arrowhead Library</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following gives information about the purpose of all FBs and SubApps in the library.
+The parameters of each one of them is documented in the FBs and SubApps itself.</p>
+</div>
+<div class="paragraph">
+<p>The ones marked like <span class="specificText">this text</span> are the top level, and usually, the only ones that you need in order to quickly use the
+library.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Common</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FieldsToArrowheadCloud: Translate individual fields to an ArrowheadCloud type</p>
+</li>
+<li>
+<p>FieldsToArrowheadService: Translate individual fields to an ArrowheadService type</p>
+</li>
+<li>
+<p>FieldsToArrowheadSystem: Translate individual fields to an ArrowheadSystem type</p>
+</li>
+<li>
+<p>JSON</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ANYToJSON: Transform 61499 types to JSON format</p>
+</li>
+<li>
+<p>GetArrayResponseFromJSON: Transform a HTTP response to an array</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Service Registry</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FieldsToServiceQueryForm: Translate individual fields to a Service Query Form type</p>
+</li>
+<li>
+<p>FieldsToServiceRegistryEntry: Translate individual fields to a Service Registry type</p>
+</li>
+<li>
+<p>GetEndpointFromServiceRegistry: Get the IP:PORT/URI endpoint from a Service Registry Entry</p>
+</li>
+<li>
+<p>QueryService: Query Service Function Block</p>
+</li>
+<li>
+<p>QueryServicesAdp: Query services adapter</p>
+</li>
+<li>
+<p>RegisterService: Register Service Function Block</p>
+</li>
+<li>
+<p>RegisterServiceAdp: Register Service Adapter</p>
+</li>
+<li>
+<p>ServiceRegistryEntry2ServiceRegistryEntry: Helper FB to set the connection to a Service Registry Entry type</p>
+</li>
+<li>
+<p>HTTP</p>
+<div class="ulist">
+<ul>
+<li>
+<p>QueryServiceHTTP: Query for Services using HTTP</p>
+</li>
+<li>
+<p><span class="specificText">QueryServiceHTTPSub: Query services using HTTP with the service defined</span></p>
+</li>
+<li>
+<p><span class="specificText">QueryServiceHTTPSubFull: Query services using HTTP with all service’s fields to be defined</span></p>
+</li>
+<li>
+<p>[.specificText]#RegisterMultipleServicesHTTP: Register many services with different serviceDefinition and serviceURI #</p>
+</li>
+<li>
+<p><span class="specificText">RegisterServiceFullHTTP: Register a Service using HTTP. All possible parameters are available to be set</span></p>
+</li>
+<li>
+<p>RegisterServiceHTTP: Register Service using HTTP</p>
+</li>
+<li>
+<p><span class="specificText">RegisterServicePartialHTTP: Register a Service using HTTP. The system information is encapsulated</span></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>OpcUa</p>
+<div class="ulist">
+<ul>
+<li>
+<p>QueryServiceOpcUa: Query for Services using OpcUa</p>
+</li>
+<li>
+<p><span class="specificText">QueryServiceOpcUaSub: Query services using OpcUa with the service defined</span></p>
+</li>
+<li>
+<p><span class="specificText">QueryServiceOpcUaSubFull: Query services using OpcUa with all service’s fields to be defined</span></p>
+</li>
+<li>
+<p>[.specificText]#RegisterMultipleServicesOpcUa: Register many services with different serviceDefinition and serviceURI #</p>
+</li>
+<li>
+<p><span class="specificText">RegisterServiceFullOpcUa: Register a Service using OpcUa. All possible parameters are available to be set</span></p>
+</li>
+<li>
+<p>RegisterServiceOpcUa: Register Service using OpcUa</p>
+</li>
+<li>
+<p><span class="specificText">RegisterServicePartialOpcUa: Register a Service using OpcUa. The system information is encapsulated</span></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Orchestrator</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FieldsPreferredProvider: Translate individual fields to a PreferredProvider type</p>
+</li>
+<li>
+<p>FieldsToServiceRequestForm: Translate individual fields to a ServiceRequestForm type</p>
+</li>
+<li>
+<p><span class="specificText">GetEndpointFromOrchestration: Get the IP:PORT/URI endpoint from an Orchestration Form</span></p>
+</li>
+<li>
+<p>OrchestrationForm2OrchestrationForm: Helper FB to set the connection  to a Orchestration Form type</p>
+</li>
+<li>
+<p>OrchestratorRequestAdp: Request orchestration adapter</p>
+</li>
+<li>
+<p>RequestOrchestrationForm: Request Orchestration Function Block</p>
+</li>
+<li>
+<p>HTTP</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="specificText">GetEndpointFromOrchestrationHTTPPartial: Get the endpoint at INDEX from a request orchestration response</span></p>
+</li>
+<li>
+<p><span class="specificText">GetEndpointFromOrchestrationHTTPFull: Get the endpoint at INDEX from a request orchestration response</span></p>
+</li>
+<li>
+<p>RequestOrchestrationHTTP: Request Orchestration Function Block using HTTP</p>
+</li>
+<li>
+<p><span class="specificText">RequestOrchestrationHTTPPartial: Request Orchestration using HTTP with all fields from services to be set</span></p>
+</li>
+<li>
+<p><span class="specificText">RequestOrchestrationHTTPFull: Request Orchestration using HTTP with all fields from services, system and cloud to be set</span></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>OpcUa</p>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="specificText">GetEndpointFromOrchestrationOpcUaPartial: Get the endpoint at INDEX from a request orchestration response</span></p>
+</li>
+<li>
+<p><span class="specificText">GetEndpointFromOrchestrationOpcUaFull: Get the endpoint at INDEX from a request orchestration response</span></p>
+</li>
+<li>
+<p>RequestOrchestrationOpcUa: Request Orchestration Function Block using OpcUa</p>
+</li>
+<li>
+<p><span class="specificText">RequestOrchestrationOpcUaPartial: Request Orchestration using OpcUa with all fields from services to be set</span></p>
+</li>
+<li>
+<p><span class="specificText">RequestOrchestrationOpcUaFull: Request Orchestration using OpcUa with all fields from services, system and cloud to be set</span></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Event Handler</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ArrowheadPublish: Publish event Function Block</p>
+</li>
+<li>
+<p>ArrowheadPublishAdp: Publish event adapter</p>
+</li>
+<li>
+<p>FieldsToArrowheadEvent: Transform individual fields to an Arrowhead Event type</p>
+</li>
+<li>
+<p>FieldsToEventFilter: Transform individual fields to an Arrowhead Event Filter type</p>
+</li>
+<li>
+<p>FieldsToPublishEvent: Transform individual fields to an Arrowhead Publish Event</p>
+</li>
+<li>
+<p>SubscribeEvent: Subscribe Event Function Block</p>
+</li>
+<li>
+<p>SubscribeEventAdp: Subscribe event adapter</p>
+</li>
+<li>
+<p>HTTP</p>
+<div class="ulist">
+<ul>
+<li>
+<p>PublishEventHTTP: Publish event using HTTP</p>
+</li>
+<li>
+<p><span class="specificText">PublishEventHTTPFull: Publish Event using HTTP.
+All possible parameters are available to be set</span></p>
+</li>
+<li>
+<p><span class="specificText">PublishEventHTTPPartial: Publish Event using HTTP.
+The system and event information are encapsulated</span></p>
+</li>
+<li>
+<p>SubscribeEventHTTP: Subscribe event using HTTP</p>
+</li>
+<li>
+<p><span class="specificText">SubscribeEventHTTPFull: Publish event using HTTP.
+The consumer is encapsulated</span></p>
+</li>
+<li>
+<p><span class="specificText">SubscribeEventHTTPPartial:Publish event using HTTP.
+The consumer is encapsulated</span></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>OpcUa</p>
+<div class="ulist">
+<ul>
+<li>
+<p>PublishEventOpcUa: Publish event using OpcUa</p>
+</li>
+<li>
+<p><span class="specificText">PublishEventOpcUaFull: Publish Event using OpcUa.
+All possible parameters are available to be set</span></p>
+</li>
+<li>
+<p><span class="specificText">PublishEventOpcUaPartial: Publish Event using OpcUa.
+The system and event information are encapsulated</span></p>
+</li>
+<li>
+<p>SubscribeEventOpcUa: Subscribe event using OpcUa</p>
+</li>
+<li>
+<p><span class="specificText">SubscribeEventOpcUaFull: Publish event using OpcUa.
+The consumer is encapsulated</span></p>
+</li>
+<li>
+<p><span class="specificText">SubscribeEventOpcUaPartial:Publish event using
+OpcUa. The consumer is encapsulated</span></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_examples_and_function_blocks">Examples and Function Blocks</h3>
+<div class="paragraph">
+<p>To see some examples on how the Function Blocks are used, you can check the <a href="https://github.com/eclipse-4diac/4diac-examples">Eclipse 4diac examples repository</a>.
+The FBs are not directly to be found in 4diac IDE, but you’ll find them in the example repository.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_where_to_go_from_here">Where to go from here?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Go back to Protocols index:<br/>
+<a href="./communication.html">Communication Index</a></p>
+</li>
+<li>
+<p>If you want to go back to the Start Here page, we leave you here a fast access<br/>
+<a href="../doc_overview.html">Start Here page</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Or <a href="#topOfPage">Go to top</a></p>
+</div>
+</div>
+</div>
+
+
+  
+
+    
+
+
+     
+      
+      </div>
+        <div class="col-md-6  padding-bottom-30">
+          
+            
+
+
+
+
+
+
+  
+
+  
+    
+  
+  
+  
+
+  
+
+
+
+          
+        </div>
+      </div>
+    
+  </div>
+</main>
+  
+  
+  
+
+
+
+
+  
+
+<p id="back-to-top">
+  <a class="visible-xs" href="#">Back to the top</a>
+</p>
+<footer class="footer" id="footer">
+  <div class="container">
+    
+
+<div class="footer-end-social-container margin-bottom-30">
+  
+
+
+
+
+
+
+
+
+
+
+<div class="footer-end-social">
+    <p class="footer-end-social-text hidden-xs">Follow Us:</p>
+    <ul class="footer-end-social-links list-inline">
+        <li>
+            <a class="link-unstyled" href="https://x.com/4diac" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.youtube.com/@4diac177" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.linkedin.com/groups/6949091/" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        </li>
+    </ul>
+    <p class="footer-end-social-text hidden-xs">Support:</p>
+    <ul class="footer-end-social-links list-inline">
+    	<li>
+            <a class="link-unstyled" href="https://github.com/eclipse-4diac" title="Eclipse 4diac Github Organization">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Github Organization</span>
+                </span>
+            </a>
+        </li> 
+    	<li>
+            <a class="link-unstyled" href="https://dev.eclipse.org/mailman/listinfo/4diac-dev" title="Eclipse 4diac Developer Mailinglist">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Developer Mailinglist</span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        	<a class="link-unstyled" href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org"  title="Eclipse 4diac Matrix Channels">
+        		<img src="/4diac/img/matrix.png" alt="Eclipse 4diac Matrix Channels"/></a>
+            <span class="sr-only">Eclipse 4diac Matrix Channels</span>
+        </li>
+    </ul>
+</div>
+
+
+</div>
+
+
+    <div class="footer-sections row equal-height-md font-bold">
+        
+        <div class="col-md-15">
+          <div class="row">
+            
+
+
+  
+  <section id="footer-legal" class="footer-section col-sm-8">
+    <div class="menu-heading">Legal</div>
+    <ul class="nav">
+      <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+      <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+      <li><a href="https://www.eclipse.org/legal/compliance/">Compliance</a></li>
+      <li><a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php">Code of Conduct</a></li>
+      <li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
+      <li><a class="toolbar-manage-cookies" href="#" onclick="event.preventDefault()">Manage Cookies</a></li>
+    </ul>
+  </section>
+
+
+ 
+ <section id="footer-more" class="footer-section col-sm-8">
+   <div class="menu-heading">More</div>
+   <ul class="nav">
+     <li><a href="https://www.eclipse.org/security/">Report a Vulnerability</a></li>
+     <li><a href="https://status.eclipse.org/">Service Status</a></li>
+     
+     <li><a href="/4diac/support">Support</a></li>
+   </ul>
+ </section>
+
+
+          </div>
+        </div>
+        
+
+
+
+
+  <div id="footer-end" class="footer-section col-md-8 col-md-offset-1 col-sm-24">
+    
+  </div>
+
+
+    </div>
+    
+
+
+
+<div class="col-sm-24 margin-top-20">
+  <div class="row">
+    <div id="copyright" class="col-sm-16">
+      <p id="copyright-text">Copyright &copy; Eclipse Foundation AISBL. All Rights Reserved.</p>
+    </div>
+    
+  </div>
+</div>
+
+    <a href="#" class="scrollup">Back to the top</a>
+  </div>
+</footer>
+
+
+
+
+  
+  <div id="footer-js">
+  
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1754684727"></script>
+  
+
+  
+  
+
+  
+  <script>
+  (function($, document) {
+    
+    
+  })(jQuery, document);
+  </script>
+
+  
+</div>
+
+</body>
+</html>
+

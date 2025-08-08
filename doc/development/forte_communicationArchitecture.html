@@ -1,0 +1,2084 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+
+
+
+  
+
+
+<title>Communication Architecture | The Eclipse Foundation</title>
+<meta property="og:title" content="Communication Architecture | The Eclipse Foundation" />
+<meta name="twitter:title" content="Communication Architecture | The Eclipse Foundation" />
+
+<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
+
+<meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@eclipsefdn" />
+<meta name="twitter:creator" content="@eclipsefdn" />
+<meta property="og:url" content="https://eclipse.dev/4diac/doc/development/forte_communicationArchitecture.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Eclipse 4diac" />
+<meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
+
+
+<meta name="generator" content="Hugo 0.144.2">
+
+<link rel="canonical" href="https://eclipse.dev/4diac/doc/development/forte_communicationArchitecture.html" />
+
+
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1754684686">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1754684686">
+<script>
+	
+		var tableClasses = "table";
+	
+</script>
+
+
+
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" type="text/css"/>
+
+  
+
+</head>
+<body >
+  
+
+
+
+
+
+
+
+
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="header-wrapper header-wrapper header-default-bg-img featured-jumbotron-bottom-shape" id="header">
+  
+
+
+
+
+
+<div class="header-toolbar">
+    <div class="container">
+        <div class="header-toolbar-row">
+            <div class="toolbar-btn toolbar-search-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-search" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="Search"
+                >
+                    <i class="fa fa-search fa-lg" aria-role="none"></i>
+                </button>
+                <div 
+                    class="toolbar-search-bar-wrapper dropdown-menu dropdown-menu-right"
+                    aria-labelledby="toolbar-search"
+                >
+                      <form action="https://www.eclipse.org/home/search" method="get">
+                    <div class="search-bar">
+                        <input class="search-bar-input" name="q" placeholder="Search" />
+                        <button>
+                            <i class="fa fa-search" type="submit"></i>
+                        </button>
+                    </div>
+                      </form>
+                </div>
+            </div>
+            <div class="toolbar-btn toolbar-user-menu-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-user-menu" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="User Menu"
+                >
+                    <i class="fa fa-user fa-lg"></i>
+                </button>
+                <ul class="toolbar-user-menu dropdown-menu dropdown-menu-right text-center"
+                    aria-labelledby="toolbar-user-menu">
+                    <li>
+                        <a href="https://accounts.eclipse.org/user">
+                            <i class="fa fa-user"></i>
+                            View My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://accounts.eclipse.org/user/edit">
+                            <i class="fa fa-edit"></i>
+                            Edit My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a class="toolbar-manage-cookies">
+                            <i class="fa fa-wrench"></i>
+                            Manage Cookies
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header-navbar-wrapper">
+    <div class="container">
+        <div class="header-navbar">
+            <div class="header-navbar-brand">
+                <a class="logo-wrapper" href="/4diac" title="Eclipse 4diac">
+                    <img src="/4diac/img/4diac_Logo_2024.svg" alt="" width="55%" />
+                </a>
+            </div>
+            
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="header-navbar-nav">
+    <ul class="header-navbar-nav-links">
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="fordiac-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Eclipse 4diac
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/news" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    News
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="events-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Events
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/support" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Support
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/contribute" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Contribute
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="documentation-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Documentation
+                    </button>
+                
+            </li>
+        
+    </ul>
+</nav>
+
+
+
+
+
+            <div class="header-navbar-end">
+                
+                   <a 
+                  class="header-navbar-end-download-btn btn btn-primary" 
+                  href="/4diac/download/" 
+                   >
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download
+                  </a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+                    <i class="fa fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+    
+
+
+
+
+<nav class="mobile-menu hidden" aria-expanded="false">
+    <ul>
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="fordiac-menu">
+      <span>Eclipse 4diac</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="fordiac-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-ide-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Development Environment</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-ide-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_ide">
+                      4diac IDE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-forte-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Run-Time Environment</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-forte-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_forte">
+                      4diac FORTE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-lib-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Function Block Library</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-lib-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_lib">
+                      4diac LIB
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-sys-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Example Projects</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-sys-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_sys">
+                      4diac SYS
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/news">News</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="events-menu">
+      <span>Events</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="events-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-winterschools-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Winter Schools</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-winterschools-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/4diacwinterschool">
+                      1st 4days of Eclipse 4diac Winter School, 2025
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-community-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Community Events</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-community-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/virt-community">
+                      Eclipse 4diac Virtual Community Meetings
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_4days_of_4diac">
+                      4days of 4diac, 2019
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_eclipse_insight">
+                      Eclipse Insight: Cross Domain Engineering, 2019
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-etfa_workshops-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>ETFA Workshops</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-etfa_workshops-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2016">
+                      7th 4diac Users&#39; Workshop @ ETFA 2016
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2015">
+                      6th 4diac Users&#39; Workshop @ ETFA 2015
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2014">
+                      5th 4diac Users&#39; Workshop @ ETFA 2014
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2013">
+                      4th 4diac Users&#39; Workshop @ ETFA 2013
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2012">
+                      3rd 4diac Users&#39; Workshop @ ETFA 2012
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2011">
+                      2nd 4diac Users&#39; Workshop @ ETFA 2011
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2010">
+                      1st 4diac Users&#39; Workshop @ ETFA 2010
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/support">Support</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/contribute">Contribute</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="documentation-menu">
+      <span>Documentation</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="documentation-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-getting_started-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Getting Started</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-getting_started-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc">
+                      Documentation Start
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/iec61499.html">
+                      Learn about IEC 61499
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/4diacframework.html">
+                      Understand the Eclipse 4diac Framework
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-using-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Using Eclipse 4diac</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-using-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/tutorials/overview.html">
+                      Step by Step Tutorials
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/installation/installation.html">
+                      Install Eclipse 4diac
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/examples/examples.html">
+                      4diac IDE Examples
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/faq.html">
+                      Frequently Asked Questions
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-details-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Details</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-details-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/io_config/io_config.html">
+                      IO Configuration for the Different Platforms
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/communication/communication.html">
+                      Communication Protocols
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/development/development.html">
+                      Development of 4diac FORTE and 4diac IDE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eclipsefdn-mega-menu">
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="fordiac-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Eclipse 4diac</p>
+                <p class="mega-menu-submenu-featured-story-text">      Eclipse 4diac™ provides an open source infrastructure
+      for distributed industrial process measurement and control systems
+      based on the IEC 61499 standard.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Development Environment</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_ide">4diac IDE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Run-Time Environment</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_forte">4diac FORTE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Function Block Library</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_lib">4diac LIB</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Example Projects</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_sys">4diac SYS</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="news-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="events-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Events</p>
+                <p class="mega-menu-submenu-featured-story-text">    Eclipse 4diac™ has been founded to support research activities and industrial adoption of distributed automation systems. 
+    Over time 4diac grew with new versions, improvements and new features for the modeling of distributed automation systems. 
+    Moreover, a special focus was the performance improvement of the runtime system. Even more important, 4diac as an 
+    IEC 61499-compliant distributed control environment for industrial and research applications has proven 
+    to be a stable basis for further research towards the next generation of distributed automation and control systems based 
+    on open standards. To get in contact with its users and share results and future plans 4diac participates at different events, 
+    which are collected here:
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Winter Schools</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/4diacwinterschool">1st 4days of Eclipse 4diac Winter School, 2025</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Community Events</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/virt-community">Eclipse 4diac Virtual Community Meetings</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_4days_of_4diac">4days of 4diac, 2019</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_eclipse_insight">Eclipse Insight: Cross Domain Engineering, 2019</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">ETFA Workshops</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2016">7th 4diac Users&#39; Workshop @ ETFA 2016</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2015">6th 4diac Users&#39; Workshop @ ETFA 2015</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2014">5th 4diac Users&#39; Workshop @ ETFA 2014</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2013">4th 4diac Users&#39; Workshop @ ETFA 2013</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2012">3rd 4diac Users&#39; Workshop @ ETFA 2012</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2011">2nd 4diac Users&#39; Workshop @ ETFA 2011</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2010">1st 4diac Users&#39; Workshop @ ETFA 2010</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="support-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Support</p>
+                <p class="mega-menu-submenu-featured-story-text">    support 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="contribute-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Contribute</p>
+                <p class="mega-menu-submenu-featured-story-text">    contribute to 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="documentation-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Documentation</p>
+                <p class="mega-menu-submenu-featured-story-text">    Documentation for Eclipse 4diac. 
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Getting Started</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc">Documentation Start</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/iec61499.html">Learn about IEC 61499</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/4diacframework.html">Understand the Eclipse 4diac Framework</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Using Eclipse 4diac</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/tutorials/overview.html">Step by Step Tutorials</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/installation/installation.html">Install Eclipse 4diac</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/examples/examples.html">4diac IDE Examples</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/faq.html">Frequently Asked Questions</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Details</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/io_config/io_config.html">IO Configuration for the Different Platforms</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/communication/communication.html">Communication Protocols</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/development/development.html">Development of 4diac FORTE and 4diac IDE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<main>
+  <div class="container padding-bottom-30">
+    
+      <div class="row">
+        <div class="col-md-18">
+    
+    
+      
+
+
+
+
+
+
+
+<div class="default-breadcrumbs hidden-print" id="breadcrumb">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-24">
+        <ol aria-label="Breadcrumb" class="breadcrumb">
+          
+            
+              
+            
+              
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
+            </li>
+          
+            
+            <li  class="active" aria-current="page">
+              <a href="https://eclipse.dev/4diac/doc/development/forte_communicationArchitecture.html">Communication Architecture</a>
+            </li>
+          
+          </ol>
+          
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+
+    
+      <h1>
+        
+          Communication Architecture
+        
+      </h1>
+    
+
+
+
+  
+  <div class="sect1">
+<h2 id="_layered_network_interface">Layered Network Interface</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The network interface is designed to be as flexible as possible.
+This means that the integration of new protocols should be easy to implement and that the reuse of implemented protocols is kept as high as possible.
+The basis for the network interface is the implementation of the layer design pattern.
+Every layer takes the role of one of the OSI-layers.
+The interface between every layer is defined for all layers.
+Thus, it is basically allowed to implement more or less layers from the OSI-layer model.</p>
+</div>
+<div class="paragraph">
+<p>An overview of the network interface is shown in Figure 1.
+The figure shows the different class types and the basic interaction of those.
+The function block class (CCommFB) is the only class which interacts with IEC 61499 applications, and has to be able to send and receive IEC 61499 events.
+The function block class and the layer classes are interacting by the following functions, a detailed description is given in the this section:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>openConnection</code>: Called by the function block to open a connection, has to be implemented by every layer and by the network stack.</p>
+</li>
+<li>
+<p><code>closeConnection</code>: Called by the function block to close a connection, has to be implemented by every layer and by the network stack.</p>
+</li>
+<li>
+<p><code>sendData</code>: Called by the function block to send a message over the network, has to be implemented by every layer and by the network stack.</p>
+</li>
+<li>
+<p><code>recvData</code>: Called when new messages are received from the network, has to be implemented by every layer.</p>
+</li>
+<li>
+<p><code>processInterrupt</code>: Called from the network stack when a layer needs to process data.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_configuration_of_function_blocks">Configuration of Function Blocks</h3>
+<div class="paragraph">
+<p>There are a lot of options how to implement an ID.
+A very convenient way to specify the protocol, is used in the URLs of web pages: a web browser uses the first part of the URL to identify the protocol, for example http:// or ftp://.
+To be able to specify more protocols, a more flexible way to specify protocols is needed.
+The following specification allows to specify all layers of the OSI-model.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>protocol</code>: string to identify the protocol</p>
+</li>
+<li>
+<p><code>parameter</code>: vendor specific string</p>
+</li>
+<li>
+<p><code>ID: `{protocol[parameter].}protocol[parameter]</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The following example uses this specification to describe a connection with an ASN.1 encoding and an TCP connection as transport layer:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>fbdk[].ip[192.168.20.1:61499]</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The naming of the layers is specified in the comlayersmanager.cpp file which will be generated accordingly to the settings in CMake.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_network_layer"><a id="networkLayer"></a>Network Layer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>One network layer takes the role of one OSI layer.
+As there is no information which layer will be implemented, a generic interface has been chosen for all layers.
+The generic interface only defines basic functions: open connection, close connection, send data, receive data and generic interrupts.
+The functions are discussed in detail in the following sections.
+There are also three roles a layer can take: top layer, middle layer and bottom layer.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Top Layer: The top layer is able to access the data ports of a function block directly and the send function is only used to indicate that all data ports are ready to be sent.</p>
+</li>
+<li>
+<p>Middle Layer: For the middle layer, all functions defined in the generic interface must be implemented.
+In most cases the middle layer adds some extra information to a message, like an encoding, compression, session information etc.</p>
+</li>
+<li>
+<p>Bottom Layer: The bottom layer is able to directly access the network.
+The bottom layer also has to be able to get data asynchronously from the network.
+The bottom layer will, in most cases, not implement recvData function, as this is handled directly by the network interface.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/Network_overview.png" alt="Network overview"/>
+</div>
+<div class="title">Figure 1. Overview of the Network Layer</div>
+</div>
+<div class="sect2">
+<h3 id="_open_connection"><a id="openConnection"></a>Open Connection</h3>
+<div class="paragraph">
+<p>The layer function openConnection is used to initialize the current layer.
+The layer gets two types of information, first the parameter for the initialization and a second parameter to create the bottom layer.
+A layer does not know anything about the layer beneath it, therefore a factory class has to create the beneath layer.
+The beneath layer is created with the second parameter of the openConnection function, if this is 0 no more layers below will be created.
+The openConnection function is called when the function block receives an INIT+ event.
+The function can also fail, for example, when the network device is not ready.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/OpenConnection.png" alt="OpenConnection"/>
+</div>
+<div class="title">Figure 2. Open connection successful</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/OpenConnectionFailed.png" alt="OpenConnectionFailed"/>
+</div>
+<div class="title">Figure 3. Open connection failed</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_close_connection"><a id="closeConnection"></a>Close Connection</h3>
+<div class="paragraph">
+<p>The closeConnection function is dependent to the openConnection function.
+The function closes all beneath layers and then closes the own connection.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/CloseConnection.png" alt="Figure 4"/>
+</div>
+<div class="title">Figure 4. Sequence diagram of closing a connection</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_send_data"><a id="sendData"></a>Send Data</h3>
+<div class="paragraph">
+<p>This function can be implemented in three ways, as top, middle or bottom layer.
+The basic functionality of the function is to get data from the above layer, pack it and send it to the beneath layer.
+The middle layer is the most flexible layer, as it is possible to add additional middle layers to almost every stack.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The implementation of the top layer only differs, by whom and how the function is called.
+A top layer is called from the function block and has to get the information directly from the function block.</p>
+</li>
+<li>
+<p>The bottom layer has to write the data to the network.
+Therefore, the sendData function will not call another sendData function like on the top or middle layer.
+In most cases, the data is sent by the operating system, by calling an API function of the operating system.</p>
+</li>
+<li>
+<p>The message is passed from one layer to the next until the last layer is reached.
+The last layer (bottom layer), sends the message to the network and returns a confirm event to the function block.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/SendData.png" alt="Figure 5"/>
+</div>
+<div class="title">Figure 5. Send data on an established connection</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_receive_data"><a id="receiveData"></a>Receive Data</h3>
+<div class="paragraph">
+<p>The recvData function is split into the same parts as the sendData function.
+The top and middle layer are similar to the sendData function, only the bottom layer needs additional discussion.</p>
+</div>
+<div class="paragraph">
+<p>The problem of the bottom layer is that the system has to generate an interrupt.
+A message from the network can be detected by an interrupt, polling or a system call which waits until new data is received.
+The execution thread of the function block cannot be used because that thread is used to execute the function blocks.
+If the function block thread was used, function blocks would not be executed while waiting for an event from the network.</p>
+</div>
+<div class="paragraph">
+<p>To solve this, 4diac FORTE implements an External Event Handler in charge of processing external interrupts and starting the event chain execution threads.</p>
+</div>
+<div class="paragraph">
+<p>An interrupt based receiving of data is shown in Figure 6.
+First of all, the network triggers an interrupt at the External Event Handler.
+This communicates the event to the bottom layer and starts an execution event chain.
+The bottom layer then invokes the function block thread by calling <code>interruptCommFB(..)</code>.
+Once the Function Block receives the External Event it will call the processInterrupt function of the network layer.
+Process interrupt will be usually done at the bottom or middle layer depending on how the data is processed.
+Afterwards, the <code>recvData(..)</code> function will be called from lower to upper layer until the FunctionBlock receives the data and emits the CNF+/IND+ signal</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/RecvData.png" alt="Figure 6"/>
+</div>
+<div class="title">Figure 6. Receive data of an established connection</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_generic_interrupt"><a id="genericInterrupt"></a>Generic Interrupt</h3>
+<div class="paragraph">
+<p>Receiving data is a special case of a generic interrupt.
+The generic interrupt can also be used to receive errors of the network, like a lost connection.
+In the same way as in the example of receiving data, the external event handler informs the bottom network layer which invokes the function block interrupt (or in some cases an intermediate layer) and starts the event chain.
+Then, after receiving the External Event signal, the function block sends the processInterrupt() to the network layer, which returns an  <code>INIT-</code> event indicating a lost connection.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/AsyncError.png" alt="Figure 7"/>
+</div>
+<div class="title">Figure 7. Connection abort interrupt from network interface</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_function_blocks"><a id="functionBlocks"></a>Function Blocks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The implementation of the function blocks is based on the compliance profile.
+It is kept simple, the only implementation is the right handling of input/output events and the instantiation of function blocks with variable data input/output count.
+The event handling is described in this section.
+This is the part which interacts directly with the network interface.</p>
+</div>
+<div class="paragraph">
+<p>Even though the event names of the function blocks are not the same, the network interface only supports two forms of events:
+initialization events and request events.
+The events can be refined in two aspects: input/output events, and as successful/not successful.</p>
+</div>
+<div class="paragraph">
+<p>Events received/sent by a network function block.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Event name</th>
+<th class="tableblock halign-left valign-top">I/O names</th>
+<th class="tableblock halign-left valign-top">Direction</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Init Positive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INIT+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open new connection</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Init Negative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INIT-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Close connection, or connection terminated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Request Positive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">REQ+/RSP+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Request Negative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">REQ-/RSP-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Input</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ignore value</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Init Positive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INITO+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New connection established</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Init Negative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INITO-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connection closed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm Positive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CNF+/IND+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">New data available</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm Negative</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CNF-/IND-</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Output</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Received data is invalid or
+connection error without connection closed</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_events_to_the_network_interface">Events to the Network Interface</h3>
+<div class="paragraph">
+<p>The event direction, from the function block to the network interface is a simple function call.
+The Init Positive event leads to a openConnection call, the Init Negative event leads to a closeConnection call.
+The Request Positive call is either used to allow new receive events, if used in a server or subscriber, or to submit a send call, if used in a client or publisher.
+The Request Negative event is not handled, because it indicates invalid data at the function block input port.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_events_of_the_network_interface">Events of the Network Interface</h3>
+<div class="paragraph">
+<p>There are two events which triggers the network interface: in response to an input event or asynchronously triggered by the network interface.</p>
+</div>
+<div class="paragraph">
+<p>In most cases an input event leads to a corresponding output event, for example, an Init Positive input event will trigger an Init Positive output event as soon as the connection is established.
+To simplify the generation of events, all functions described in section <a href="#networkLayer">Network Layer</a> are able to return an event with a corresponding status message.
+The currently supported events are listed in <a href="#event_from_network">table</a>.
+The return events are prioritized, because it is possible that one layer returns a positive, but the underneath layer returns a negative send events: in this case, the worst case returned.
+It is also possible to not return any event.
+This is used, if the network interface does not trigger any event.</p>
+</div>
+<div class="paragraph">
+<p>Events returned by a layer function call, ordered ascending by priority:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 33.3333%;"/>
+<col style="width: 33.3334%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Event</th>
+<th class="tableblock halign-left valign-top">Symbol</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No Event</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_Nothing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No event is triggered</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Init Positive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_InitOk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connection established</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Process Data Positive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_ProcessDataOk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data processed successfully</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Init Invalid ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_InitInvalidId</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid ID while opening connection</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Init Terminated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_InitTerminated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connection closed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invalid Object</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_ProcessDataInvalidObject</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data processing failure due to invalid object</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Type Error</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_ProcessDataDataTypeError</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data processing failure due to data type error</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Inhibited</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_ProcessDataInhibited</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trying to send data without permission</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Socket Error</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_ProcessDataNoSocket</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data processing failure due to missing Socket</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Send Failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_ProcessDataSendFailed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data was not send correctly</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Receive Failed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">e_ProcessDataRecvFailed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data was not received correctly</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The second way to generate an output event is an event, asynchronously triggered by the network interface.
+This issue is covered by the interrupt design pattern, described in <a href="#receiveData">Receive Data</a>.
+An asynchronous event can be triggered in two cases, if data was received or a network error happened.
+The output event is triggered when the stackProcess function is finished.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_network_stack">Network Stack</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The network stack describes a container of layers, which is used by the function block to send messages to the network.
+It is basically the interface of the function block, which sends to the network interface.
+For the network layers, the stack is the interface for accessing the function block and its resources.
+The network stack is responsible for the acquisition of the function block thread and the correct execution of the interrupt routines.</p>
+</div>
+<div class="paragraph">
+<p>At the moment, the network stack is used for these described functions.
+The network stack is also used for feature extension, if a layers needs to manage resources.
+A possible feature is a memory management unit, where all layers request memory from a single pool.
+This brings a refined control of the memory usage per network stack.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_layer_factory">Layer Factory</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It is not possible to instantiate a generic stack without the configuration by the engineer, because this would mean the loss of flexibility.
+Therefore the stack must be built at runtime.
+This means, that it is not known, which layers are instantiated.
+The generic design pattern to solve such a situation is a factory.</p>
+</div>
+<div class="paragraph">
+<p>The factory does not only create a new layer, it also initializes it.
+The above layer is informed by the new layer beneath it and the new layer is initialized with the parameter string and the corresponding network stack.
+This layer structure is a tree-pattern.
+Every layer only has one layer above, but it can have more than one layer beneath it.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_classes_and_methods"><a id="classesAndMethods"></a>Classes and methods:</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_ccomlayersmanager">CComLayersManager:</h3>
+<div class="paragraph">
+<p>Creates new connections requested by the FB and implements the factory design pattern.</p>
+</div>
+<div class="sect3">
+<h4 id="_methods">Methods:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>static CComLayer* createCommunicationLayer(char <strong>paLayerIdentifier, CComLayer</strong> paUpperLayer, CCommFB * paComFB)</code>:<br/>
+Creates a network Layer.
+Parameter paLayerIdentifier is used to create all underneath layers, paUpperLayer is used to send data to the above layer, and paComFB is the responsible Function Block.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ccomlayer">CComLayer:</h3>
+<div class="paragraph">
+<p>This class implements one layer of the network stack.
+In most cases this class packs or unpacks data into a bigger frame.
+The last layer accesses the network.
+In the last layer the recvData function is not used.</p>
+</div>
+<div class="sect3">
+<h4 id="_methods_2">Methods:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>EComResponse openConnection(char *paConnectionParams, char *paRemainingConnectionID)</code>:<br/>
+This function will configure this layer and if necessary create necessary bottom layers.
+The <code>paConnectionParams</code> is used to configure the implemented layer, and <code>paRemainingConnectionID</code> ids configuration data of layers below this one.
+If <code>0</code> or <code>paRemainingConnectionID</code> equals &#39;0x00&#39; than there is no further layer below this one.
+Returns status of the opening process (<code>e_InitOk</code>).</p>
+</li>
+<li>
+<p><code>virtual void closeConnection() = 0</code>:<br/>
+Virtual function.
+Implementations of this function should perform the actions necessary for closing the layer and then call the closeConnection() of the  bottom layer.</p>
+</li>
+<li>
+<p><code>virtual EComResponse sendData(void *paData, unsigned int paSize) = 0</code>:<br/>
+Virtual function.
+Takes the given data and performs the necessary process for sending data.
+Parameter <code>paData</code> is the pointer to the data to be sent and <code>paSize</code> is the size of the data.
+It returns the status of the sending process.</p>
+</li>
+<li>
+<p><code>virtual EComResponse recvData(const void *paData, unsigned int paSize) = 0</code>:<br/>
+Virtual function.
+Takes the given data and performs the necessary process for receiving data.
+Parameter <code>paData</code> is the pointer to the data received and <code>paSize</code> is the size of the data received.
+It returns the status of the receiving process.</p>
+</li>
+<li>
+<p><code>virtual EComResponse processInterrupt()</code>:<br/>
+Virtual function.
+Used to finish the data received in a context outside the communication interrupt.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ccommfb">CCommFB:</h3>
+<div class="paragraph">
+<p>This class is the function block, which uses the network stack for sending and receiving data.
+The function block has to be able to start a new event chain, otherwise it is not possible to switch between the interrupt thread and the execution thread of the resource.
+We only show a few of the methods here, for more information check source code.</p>
+</div>
+<div class="sect3">
+<h4 id="_methods_3">Methods:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>void interruptCommFB(CComLayer *paComLayer)</code>:<br/>
+Starts a new event chain.
+This function is used to change the thread from the <code>interruptCommFB()</code> call to the thread which executes the resource in which the function block is created.</p>
+</li>
+<li>
+<p><code>getFBTypeId(void)</code>:
+This method is used by the Query command to get the instances correct type name (e.g. &#34;CLIENT_3_2&#34;).</p>
+</li>
+<li>
+<p><code>EComServiceType getComServiceType()</code>:<br/>
+Returns if the FB is of Publisher, Subscriber, Server or Client type.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_where_to_go_from_here">Where to go from here?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Go back to Development index:</p>
+</div>
+<div class="paragraph">
+<p><a href="./development.html">Development Index</a></p>
+</div>
+<div class="paragraph">
+<p>If you want to go back to the Start Here page, we leave you here a fast access</p>
+</div>
+<div class="paragraph">
+<p><a href="../doc_overview.html">Start Here page</a></p>
+</div>
+<div class="paragraph">
+<p>Or <a href="#topOfPage">Go to top</a></p>
+</div>
+</div>
+</div>
+
+
+  
+
+    
+
+
+     
+      
+      </div>
+        <div class="col-md-6  padding-bottom-30">
+          
+            
+
+
+
+
+
+
+  
+
+  
+    
+  
+  
+  
+
+  
+
+
+
+          
+        </div>
+      </div>
+    
+  </div>
+</main>
+  
+  
+  
+
+
+
+
+  
+
+<p id="back-to-top">
+  <a class="visible-xs" href="#">Back to the top</a>
+</p>
+<footer class="footer" id="footer">
+  <div class="container">
+    
+
+<div class="footer-end-social-container margin-bottom-30">
+  
+
+
+
+
+
+
+
+
+
+
+<div class="footer-end-social">
+    <p class="footer-end-social-text hidden-xs">Follow Us:</p>
+    <ul class="footer-end-social-links list-inline">
+        <li>
+            <a class="link-unstyled" href="https://x.com/4diac" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.youtube.com/@4diac177" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.linkedin.com/groups/6949091/" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        </li>
+    </ul>
+    <p class="footer-end-social-text hidden-xs">Support:</p>
+    <ul class="footer-end-social-links list-inline">
+    	<li>
+            <a class="link-unstyled" href="https://github.com/eclipse-4diac" title="Eclipse 4diac Github Organization">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Github Organization</span>
+                </span>
+            </a>
+        </li> 
+    	<li>
+            <a class="link-unstyled" href="https://dev.eclipse.org/mailman/listinfo/4diac-dev" title="Eclipse 4diac Developer Mailinglist">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Developer Mailinglist</span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        	<a class="link-unstyled" href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org"  title="Eclipse 4diac Matrix Channels">
+        		<img src="/4diac/img/matrix.png" alt="Eclipse 4diac Matrix Channels"/></a>
+            <span class="sr-only">Eclipse 4diac Matrix Channels</span>
+        </li>
+    </ul>
+</div>
+
+
+</div>
+
+
+    <div class="footer-sections row equal-height-md font-bold">
+        
+        <div class="col-md-15">
+          <div class="row">
+            
+
+
+  
+  <section id="footer-legal" class="footer-section col-sm-8">
+    <div class="menu-heading">Legal</div>
+    <ul class="nav">
+      <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+      <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+      <li><a href="https://www.eclipse.org/legal/compliance/">Compliance</a></li>
+      <li><a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php">Code of Conduct</a></li>
+      <li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
+      <li><a class="toolbar-manage-cookies" href="#" onclick="event.preventDefault()">Manage Cookies</a></li>
+    </ul>
+  </section>
+
+
+ 
+ <section id="footer-more" class="footer-section col-sm-8">
+   <div class="menu-heading">More</div>
+   <ul class="nav">
+     <li><a href="https://www.eclipse.org/security/">Report a Vulnerability</a></li>
+     <li><a href="https://status.eclipse.org/">Service Status</a></li>
+     
+     <li><a href="/4diac/support">Support</a></li>
+   </ul>
+ </section>
+
+
+          </div>
+        </div>
+        
+
+
+
+
+  <div id="footer-end" class="footer-section col-md-8 col-md-offset-1 col-sm-24">
+    
+  </div>
+
+
+    </div>
+    
+
+
+
+<div class="col-sm-24 margin-top-20">
+  <div class="row">
+    <div id="copyright" class="col-sm-16">
+      <p id="copyright-text">Copyright &copy; Eclipse Foundation AISBL. All Rights Reserved.</p>
+    </div>
+    
+  </div>
+</div>
+
+    <a href="#" class="scrollup">Back to the top</a>
+  </div>
+</footer>
+
+
+
+
+  
+  <div id="footer-js">
+  
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1754684703"></script>
+  
+
+  
+  
+
+  
+  <script>
+  (function($, document) {
+    
+    
+  })(jQuery, document);
+  </script>
+
+  
+</div>
+
+</body>
+</html>
+
