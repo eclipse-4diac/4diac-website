@@ -10,6 +10,114 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/newsystems/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #48</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-48/</link>
+      <pubDate>Fri, 15 Aug 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-48/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Typed Subapps Support&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for deploying and evaluating typed Subapps.&lt;/li&gt;
+&lt;li&gt;Introduced instance property pages for typed Subapps.&lt;/li&gt;
+&lt;li&gt;Improved visibility configuration: In/Out pins can only be hidden for untyped Subapps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Editor and Refactoring Enhancements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prevent editor reloads during refactoring to avoid race conditions.&lt;/li&gt;
+&lt;li&gt;Avoid redundant reload dialogs when saving modified types.&lt;/li&gt;
+&lt;li&gt;Introduced grouped model edits by URI for better handling of complex refactorings.&lt;/li&gt;
+&lt;li&gt;Fixed loss of struct MUX configuration and updates during refactoring.&lt;/li&gt;
+&lt;li&gt;Improved rename behavior for structured algorithm fields (no exceptions raised).&lt;/li&gt;
+&lt;li&gt;Fixed code folding in algorithms and methods to avoid overlapping regions.&lt;/li&gt;
+&lt;li&gt;Added better diagnostics for missing type loads when chaining resources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Follow Connection Improvements&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #47</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-47/</link>
+      <pubDate>Fri, 08 Aug 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-47/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Working Sets Support&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed the Bulk Editor to open correctly when using working sets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Graphical Editor Enhancements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved feedback when resizing blocks:
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;margin-border&lt;/strong&gt; is now shown for function blocks during resize.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved block movement behavior:
+&lt;ul&gt;
+&lt;li&gt;Moving blocks with cloning active is now correctly handled.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added &lt;strong&gt;ghost figures&lt;/strong&gt; when dragging blocks to visualize movement.&lt;/li&gt;
+&lt;li&gt;Collision feedback was improved:
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;color change&lt;/strong&gt; indicates when dragged elements would collide.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Figures with margin&lt;/strong&gt; now show potential collisions while dragging.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Test Reliability&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed tests to work correctly in &lt;strong&gt;Release mode&lt;/strong&gt; by replacing &lt;code&gt;BOOST_ASSERT&lt;/code&gt; (which is disabled in Release builds) with &lt;code&gt;BOOST_REQUIRE&lt;/code&gt;, ensuring that side effects and conditions are still verified.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #46</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-46/</link>
+      <pubDate>Fri, 01 Aug 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-46/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Model Robustness and Validation Enhancements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Interface elements are now required to always have a type.&lt;/li&gt;
+&lt;li&gt;The type of event and data pins is enforced to never be &lt;code&gt;null&lt;/code&gt;, with assertions added to help catch violations.&lt;/li&gt;
+&lt;li&gt;InOut variable copying now assigns a temporary &lt;code&gt;ANY&lt;/code&gt; type during EcoreUtil.Copier operations to avoid &lt;code&gt;null&lt;/code&gt; references.&lt;/li&gt;
+&lt;li&gt;Fixed missing event types in evaluator tests.&lt;/li&gt;
+&lt;li&gt;Updated tests to reflect enforced non-null interface element types.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Graphical Editor Improvements&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #45</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-45/</link>
       <pubDate>Fri, 25 Jul 2025 17:00:00 +0000</pubDate>
