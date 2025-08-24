@@ -10,6 +10,37 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacide/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #49</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-49/</link>
+      <pubDate>Fri, 22 Aug 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-49/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Structured Text improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Regenerated ST model and parser.&lt;/li&gt;
+&lt;li&gt;Variable declarations in ST now include the data type.&lt;/li&gt;
+&lt;li&gt;Fixed save actions triggering during reload in the ST editor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Model editing and refactoring enhancements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Converted delete refactorings to use &lt;code&gt;ModelEdit&lt;/code&gt;, including attribute deletions and internal FB deletions.&lt;/li&gt;
+&lt;li&gt;Added support for showing model edits in the refactoring preview.&lt;/li&gt;
+&lt;li&gt;Introduced &lt;code&gt;ConfigurableModelEdit&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;NO_CHANGE&lt;/code&gt; default from several &lt;code&gt;ConfigurableChange&lt;/code&gt; instances for more consistent behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;FollowConnection improvements&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #48</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-48/</link>
       <pubDate>Fri, 15 Aug 2025 17:00:00 +0000</pubDate>
