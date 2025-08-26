@@ -41,8 +41,8 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/communication/xqueries.html" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756056790">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756056790">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756207034">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756207034">
 <script>
 	
 		var tableClasses = "table";
@@ -1313,10 +1313,14 @@ The component is controlled by a specific function block, which produces XQuerie
 </div>
 <div class="paragraph">
 <p>The section is divided into three parts.
-The first part explains how to build the 4diac FORTE to run an application which sends XQueries.
+The first part explains how to build 4diac FORTE to run an application which sends XQueries.
 The second part explains how to setup your BaseX database.
 And the third part shows how to create an application within the 4diac IDE which sends XQueries.
 The example AutomationML file as well as this implementation has been realized as part of the <a href="https://www.basys40.de/">BaSys4.0 project</a>, which receives funding of the <a href="https://www.bmbf.de/en/index.html">Federal Ministry of Education and Research</a>.</p>
+</div>
+<div class="paragraph">
+<p>This integration has been tested on Ubuntu 24.04 with BaseX 10.4.
+Please use a BaseX server of the same version than the client.</p>
 </div>
 </div>
 </div>
@@ -1324,9 +1328,14 @@ The example AutomationML file as well as this implementation has been realized a
 <h2 id="_build_4diacforte_to_run_an_application_which_sends_xqueries"><a id="build"></a>Build 4diac FORTE to run an Application which sends XQueries</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>At first checkout <a href="https://github.com/BaseXdb/basex">BaseX from GitHub</a> to get the C API from BaseX.
+<p>There are two possibilities to build 4diac FORTE, either manually by setting the cmake options or by the 4diac FBE.</p>
+</div>
+<div class="sect2">
+<h3 id="_build_4diac_forte_manually">Build 4diac FORTE manually</h3>
+<div class="paragraph">
+<p>At first download the version with the desired tag of <a href="https://github.com/BaseXdb/basex/tags">BaseX from GitHub</a> to get the C API from BaseX.
 In the downloaded folder you find the C API under <code>…​/basex-api/src/main/c</code>.
-Please consider that with the officially available C API from BaseX the authentification to a BaseX database currently fails under Windows.</p>
+The version of the C API should match the version of your BaseX server.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1362,13 +1371,32 @@ Afterwards press the <em>Generate</em> button of the CMake GUI.
 Then build the 4diac FORTE.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_build_with_4diac_fbe">Build with 4diac FBE</h3>
+<div class="paragraph">
+<p>To compile 4diac FORTE with the build environment, create a configuration that contains the following dependencies as well as the communication system <code>XquerClient</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>DEPS=libressl
+DEPS=basex@10.4
+
+COM=ETH,FBDK,LOCAL,XqueryClient</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Follow the instructions shown on the GitHub repository of the <a href="https://github.com/eclipse-4diac/4diac-fbe">4diac FBE</a>.
+The configuration folder of the 4diac FBE also contains an example configuration <code>test-xquery.txt</code>.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect1">
 <h2 id="_setup_your_basex_database"><a id="basex"></a>Setup your BaseX Database</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Get BaseX for your system from <a href="http://basex.org/download/">here</a>.
-After starting BaseX, load your AutomationML or XML file into BaseX by clicking <em>Database/open and manage</em>.
+After starting the BaseX, load your AutomationML or XML file into BaseX by clicking <em>Database/open and manage</em>.
 As an example AutomationML file you can use the <a href="./img/xquery/BaSys_PalletSystem_Model.aml"><em>Pallet System Model</em></a>.
 This example AutomationML file has been created during the <a href="https://www.basys40.de/">BaSys4.0 project</a>, which receives funding of the <a href="https://www.bmbf.de/en/index.html">Federal Ministry of Education and Research</a>.
 Within the <em>General</em> tab enter the path to your file and select the proper input format.
@@ -1380,7 +1408,8 @@ To create it, select <em>command</em> within the drop down under the menubar and
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&gt; create user admin &gt; grant write to admin</pre>
+<pre>&gt; create user test
+&gt; grant write to test</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1389,7 +1418,7 @@ For further explanation or in case of any problems please have a look at the <a 
 </div>
 <div class="paragraph">
 <p>To start the entire BaseX server change to the <em>bin</em> directory of your BaseX installation.
-Start the BaseX server there. The output should be the BaseX version and the port where you can reach to your database.</p>
+Start the BaseX server there. The output should be the BaseX version and the port where you can reach your database.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1412,7 +1441,8 @@ Replace the version number of the following line by the version number of the JA
 <div class="sectionbody">
 <div class="paragraph">
 <p>To send XQueries to your database, create a proper basic function block, which produces the desired XQueries.
-The following images show a possible interface and execution control chart for a basic function block which fetches values from your BaseX database during initialization.</p>
+The following images show a possible interface and execution control chart for a basic function block which fetches values from your BaseX database during initialization.
+A proper example, called <code>Xquery</code>, is also provided within the <a href="https://github.com/eclipse-4diac/4diac-examples">4diac examples repository</a>.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/xquery/testFB.png" alt="Test function block to send XQueries"/></span>
@@ -1420,29 +1450,26 @@ The following images show a possible interface and execution control chart for a
 </div>
 <div class="paragraph">
 <p>The algorithm <em>getVMax</em> contains an XQuery which is supposed to calculate the maximum speed of a roller conveyor from values of the database.
-Since the 4diac IDE currently does not provide support for an XQuery algorithm language, you have to use <em>AnyText</em> as algorithm language. The <em>AnyText</em> language is interpreted as C++ code during export of your function block.
+Since the 4diac IDE currently does not provide support for an XQuery algorithm language, you have to provide it as a String.
 Your XQuery is assigned to the desired STRING output of your basic function block, in this case <em>xVMax</em>.
 In case you also want to replace certain elements in your XQuery, maybe by values from your function block’s interface, you have to split the String.
-The interface value is then added as parameter of the <em>append</em> method, supported by the 4diac FORTE, e.g. <em>name().getValue()</em>.
+The interface value is then added as parameter of the <em>CONCAT</em> function, supported by the 4diac FORTE, e.g. <em>name</em>.
 The rest of your XQuery is appended afterwards.
-This could look like the following algorithm code for <em>getVMax</em>.</p>
+Consider that any special character has to be escaped by a $ as it is shown within following algorithm code for <em>getVMax</em>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>st_xVMax() = CIEC_STRING(&#34;xquery &#34;);
-st_xVMax().append(&#34;let $name := &#39;&#34;);
-st_xVMax().append(st_name().getValue());
-st_xVMax().append(&#34;&#39; &#34;
-  &#34;let $component := //InstanceHierarchy/*/InternalElement[@Name=$name] &#34;
-  &#34;let $compType := tokenize($component/RoleRequirements/@RefBaseRoleClassPath/data(),&#39;/&#39;)[last()] &#34;
-  &#34;let $rollerTable :=  $component/InternalElement/RoleRequirements[contains(@RefBaseRoleClassPath,&#39;RollConveyor&#39;)]/.. &#34;
-  &#34;let $rollDiameter := $rollerTable/Attribute[@Name=&#39;RollDiameter&#39;]/Value/data() &#34;
-  &#34;let $link := tokenize($component/InternalLink/@RefPartnerSideA/data(),&#39;:&#39;)[1] &#34;
-  &#34;let $motor := //InternalElement[@ID=$link]/RoleRequirements[contains(@RefBaseRoleClassPath,&#39;ElectricMotor&#39;)]/.. &#34;
-  &#34;let $gearFactor := $motor/Attribute[@Name=&#39;Gearfactor&#39;]/Value/data() &#34;
-  &#34;let $rotSpeed := $motor/Attribute[@Name=&#39;Rotational Speed&#39;]/Value/data() &#34;
-  &#34;let $linSpeed :=  $rotSpeed div (60.0 * $gearFactor) * (2.0 * 3.1416 * 0.5 * $rollDiameter) &#34;
-  &#34;return round-half-to-even($linSpeed, 3)&#34;);</pre>
+<pre>xVMax := CONCAT(&#39;xquery &#39;, STRING#&#39;let $$name := $&#39;&#39;, name, STRING#&#39;$&#39; &#39;,
+	&#39;let $$component := //InstanceHierarchy/*/InternalElement[@Name=$$name] &#39;,
+	&#39;let $$compType := tokenize($$component/RoleRequirements/@RefBaseRoleClassPath/data(),$&#39;/$&#39;)[last()] &#39;,
+	&#39;let $$rollerTable :=  $$component/InternalElement/RoleRequirements[contains(@RefBaseRoleClassPath,$&#39;RollConveyor$&#39;)]/.. &#39;,
+	&#39;let $$rollDiameter := $$rollerTable/Attribute[@Name=$&#39;RollDiameter$&#39;]/Value/data() &#39;,
+	&#39;let $$link := tokenize($$component/InternalLink/@RefPartnerSideA/data(),$&#39;:$&#39;)[1] &#39;,
+	&#39;let $$motor := //InternalElement[@ID=$$link]/RoleRequirements[contains(@RefBaseRoleClassPath,$&#39;ElectricMotor$&#39;)]/.. &#39;,
+	&#39;let $$gearFactor := $$motor/Attribute[@Name=$&#39;Gearfactor$&#39;]/Value/data() &#39;,
+	&#39;let $$rotSpeed := $$motor/Attribute[@Name=$&#39;Rotational Speed$&#39;]/Value/data() &#39;,
+	STRING#&#39;let $$linSpeed :=  $$rotSpeed div (60.0 * $$gearFactor) * (2.0 * 3.1416 * 0.5 * $$rollDiameter) &#39;,
+	STRING#&#39;return round-half-to-even($$linSpeed, 3)&#39;);</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1450,16 +1477,12 @@ st_xVMax().append(&#34;&#39; &#34;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>st_xPredecessor() = CIEC_STRING(&#34;xquery &#34;);
-st_xPredecessor().append(&#34;let $name := &#39;&#34;);
-st_xPredecessor().append(st_name().getValue());
-st_xPredecessor().append(&#34;&#39; &#34;
-  &#34;let $links := //InstanceHierarchy/InternalElement/InternalLink &#34;
-  &#34;let $cp := //InstanceHierarchy/*/InternalElement[@Name=$name] &#34;
-  &#34;let $id := $cp/@ID/data() &#34;
-  &#34;let $succId := tokenize($links[contains(@RefPartnerSideB, $id)]/@RefPartnerSideA, &#39;:&#39;)[1] &#34;
-  &#34;let $successor := //InstanceHierarchy/*/InternalElement[@ID=$succId] &#34;
-  &#34;return $successor/@Name/data() &#34;);</pre>
+<pre>xPredecessor := CONCAT(STRING#&#39;xquery &#39;, STRING#&#39;let $$name := $&#39;&#39;, name, STRING#&#39;$&#39; &#39;,
+	STRING#&#39;let $$links := //InstanceHierarchy/InternalElement/InternalLink &#39;,
+	STRING#&#39;let $$cp := //InstanceHierarchy/*/InternalElement[@Name=$$name] &#39;, STRING#&#39;let $$id := $$cp/@ID/data() &#39;,
+	STRING#&#39;let $$succId := tokenize($$links[contains(@RefPartnerSideB, $$id)]/@RefPartnerSideA, $&#39;:$&#39;)[1] &#39;,
+	STRING#&#39;let $$successor := //InstanceHierarchy/*/InternalElement[@ID=$$succId] &#39;,
+	STRING# &#39;return $$successor/@Name/data() &#39;);</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1467,23 +1490,19 @@ st_xPredecessor().append(&#34;&#39; &#34;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>st_xSuccessor() = CIEC_STRING(&#34;xquery &#34;);
-st_xSuccessor().append(&#34;let $name := &#39;&#34;);
-st_xSuccessor().append(st_name().getValue());
-st_xSuccessor().append(&#34;&#39; &#34;
-  &#34;let $links := //InstanceHierarchy/InternalElement/InternalLink &#34;
-  &#34;let $cp := //InstanceHierarchy/*/InternalElement[@Name=$name] &#34;
-  &#34;let $id := $cp/@ID/data() &#34;
-  &#34;let $succId := tokenize($links[contains(@RefPartnerSideA, $id)]/@RefPartnerSideB, &#39;:&#39;)[1] &#34;
-  &#34;let $successor := //InstanceHierarchy/*/InternalElement[@ID=$succId] &#34;
-  &#34;return $successor/@Name/data() &#34;);</pre>
+<pre>xSuccessor := CONCAT(&#39;xquery &#39;, STRING#&#39;let $$name := $&#39;&#39;, name, STRING#&#39;$&#39; &#39;,
+	STRING#&#39;let $$links := //InstanceHierarchy/InternalElement/InternalLink &#39;,
+	STRING#&#39;let $$cp := //InstanceHierarchy/*/InternalElement[@Name=$$name] &#39;, STRING#&#39;let $$id := $$cp/@ID/data() &#39;,
+	STRING#&#39;let $$succId := tokenize($$links[contains(@RefPartnerSideA, $$id)]/@RefPartnerSideB, $&#39;:$&#39;)[1] &#39;,
+	STRING#&#39;let $$successor := //InstanceHierarchy/*/InternalElement[@ID=$$succId] &#39;,
+	STRING# &#39;return $$successor/@Name/data() &#39;);</pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Please consider that your XQuery is dependent on the data structure of your database.
 In this case it is the structure of an AutomationML file for a <a href="./img/xquery/BaSys_PalletSystem_Model.aml"><em>Pallet System</em></a>.
 After you have created your test function block, export it and build your 4diac FORTE with it.
-Please have a look at the <a href="../installation/installation.html#ownFORTE">build instructions</a> if you do not know how to build your own function block.</p>
+Please have a look at the <a href="../installation/installation.html#ownFORTE">build instructions</a> if you do not know how to build your own function block, or use the 4diac FBE.</p>
 </div>
 <div class="paragraph">
 <p>Now you can use your test function block within an application.
@@ -1497,13 +1516,13 @@ Within this application a roller conveyor is initialized by its maximum speed, a
 <p><span class="image"><img src="img/xquery/testApp.png" alt="Test function block to send XQueries"/></span></p>
 </div>
 <div class="paragraph">
-<p>The <code>ID</code> input of the <code>CLIENT_1</code> function block contains a variable <code>%local%</code> which is replaced by a proper value during deployment.
+<p>The <code>ID</code> input of the <code>CLIENT_1</code> function block contains a constant <code>virtuals::local</code> which is replaced by the corresponding value during deployment.
 The <code>ID</code> is configured with the protocol name, the IP address of the computer, where your BaseX database is running, the port where your BaseX server listens for requests, the name of your database, a user name and a password.
 For the example database running on your local machine, the <code>ID</code> can be as follows:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>xquery[127.0.0.1:1984; BaSys_PalletSystem_Model; admin; admin]</pre>
+<pre>xquery[127.0.0.1:1984; BaSys_PalletSystem_Model; test; test]</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1518,7 +1537,7 @@ INFO: T#00ms: Using default bootfile location: forte.fboot
 INFO: T#00ms: Boot file forte.fboot could not be opened. Skipping...
 INFO: T#0100722ms: Connection closed by peer
 INFO: T#0100737ms: Connected to DB.
-INFO: T#0101026ms: DB BaSys_PalletSystem_Model opend..</pre>
+INFO: T#0101026ms: DB BaSys_PalletSystem_Model opend.</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1542,7 +1561,7 @@ INFO: T#0101026ms: DB BaSys_PalletSystem_Model opend..</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>Or <a href="#topOfPage">Go to top</a></p>
+<p>Or <a href="#top">Go to top</a></p>
 </div>
 </div>
 </div>
@@ -1745,7 +1764,7 @@ INFO: T#0101026ms: DB BaSys_PalletSystem_Model opend..</pre>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756056792"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756207059"></script>
   
 
   

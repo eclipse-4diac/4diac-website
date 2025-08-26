@@ -320,6 +320,8 @@
     <loc>https://eclipse.dev/4diac/support/</loc>
     <lastmod>2020-03-01T16:09:45-04:00</lastmod>
   </url><url>
+    <loc>https://eclipse.dev/4diac/doc/io_config/wago/</loc>
+  </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/xqueries.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/development/forte_codequality.html</loc>
@@ -396,7 +398,11 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/openPOWERLINK.html</loc>
   </url><url>
+    <loc>https://eclipse.dev/4diac/doc/other_features/overview.html</loc>
+  </url><url>
     <loc>https://eclipse.dev/4diac/doc/io_config/PiFace.html</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/doc/other_features/replayDebugger.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/io_config/RevolutionPi.html</loc>
   </url><url>

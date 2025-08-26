@@ -41,8 +41,8 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/installation/pikeos_posix.html" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756056759">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756056759">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756207036">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756207036">
 <script>
 	
 		var tableClasses = "table";
@@ -1593,11 +1593,10 @@ Rename &#34;partition name&#34; and &#34;partition id&#34; eg. to &#34;posix2&#3
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 20%;"/>
-<col style="width: 20%;"/>
-<col style="width: 20%;"/>
-<col style="width: 20%;"/>
-<col style="width: 20%;"/>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
 </colgroup>
 <thead>
 <tr>
@@ -1605,7 +1604,6 @@ Rename &#34;partition name&#34; and &#34;partition id&#34; eg. to &#34;posix2&#3
 <th class="tableblock halign-left valign-top">Value</th>
 <th class="tableblock halign-left valign-top">Example for QEMU with Usermode NW</th>
 <th class="tableblock halign-left valign-top">Example for QEMU with TUN/TAP NW</th>
-<th class="tableblock halign-left valign-top"></th>
 </tr>
 </thead>
 <tbody>
@@ -1614,14 +1612,18 @@ Rename &#34;partition name&#34; and &#34;partition id&#34; eg. to &#34;posix2&#3
 <td class="tableblock halign-left valign-top"><p class="tableblock">e.g. &#34;POSIX Process&#34; +1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">10.0.2.17</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">192.168.0.4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Netmask</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Netmask</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">255.x.x.x</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">255.255.255.0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">255.255.255.0</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Gateway address</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Gateway in target NW to reach the host</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10.0.2.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">192.168.0.1</p></td>
 </tr>
 </tbody>
 </table>
@@ -1946,7 +1948,7 @@ This Make-target stub allows to adapt the generated &#34;muxa.xml&#34; to user m
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756056768"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756207056"></script>
   
 
   
