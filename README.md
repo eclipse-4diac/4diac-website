@@ -1,6 +1,6 @@
 # Eclipse 4diac Website
 
-This repository contains the generated web page of the [Eclipse 4diac Project](https://eclipse.dev/4diac).
+This repository contains the generated web page of the [Eclipse 4diac Project](https://eclipse.dev/4diac/).
 
 
 ## How to Contribute

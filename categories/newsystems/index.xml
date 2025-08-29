@@ -559,7 +559,7 @@ Clicking this button will open a new GitHub issue with the most relevant informa
 &lt;li&gt;Following up on initial insights in our previous community evening, our committer Martin Jobst will present the new Structured Text editor, which has excellent editing capabilities that resemble those available for general-purpose programming languages. The sophisticated features can greatly reduce engineering time.&lt;/li&gt;
 &lt;li&gt;We will have enough time for questions and comments from the audience.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Find the details and the Zoom link at our &lt;a href=&#34;https://eclipse.dev/4diac/events/virt-community&#34;&gt;virtual community events page&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;Find the details and the Zoom link at our &lt;a href=&#34;https://eclipse.dev/4diac/events/virt-community/&#34;&gt;virtual community events page&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1146,7 +1146,7 @@ Clicking this button will open a new GitHub issue with the most relevant informa
       
       <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-22/</guid>
       <description>&lt;h2 id=&#34;4days-of-eclipse-4diac-winter-school&#34;&gt;4days of Eclipse 4diac Winter School&lt;/h2&gt;
-&lt;p&gt;From February 10 to 14 the &lt;a href=&#34;https://eclipse.dev/4diac/events/4diacwinterschool&#34;&gt;4days of Eclipse 4diac Winter School&lt;/a&gt; took place at Johannes Kepler University Linz.&lt;/p&gt;
+&lt;p&gt;From February 10 to 14 the &lt;a href=&#34;https://eclipse.dev/4diac/events/4diacwinterschool/&#34;&gt;4days of Eclipse 4diac Winter School&lt;/a&gt; took place at Johannes Kepler University Linz.&lt;/p&gt;
 &lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1437,7 +1437,7 @@ Linux users also run &lt;code&gt;compile.cmd&lt;/code&gt;. Read &lt;code&gt;READ
       <guid>https://eclipse.dev/4diac/news/2025/2025/4weeksto4d4d/</guid>
       <description>&lt;p&gt;Why should you care about IEC 61499? Because it revolutionizes how we design distributed control systems by offering modular, reusable components that seamlessly integrate into various environments.
 Imagine developing a smart factory system where machines communicate efficiently and adapt to changes in real-time.&lt;/p&gt;
-&lt;p&gt;With &lt;a href=&#34;https://eclipse.dev/4diac/4diac_ide&#34;&gt;4diac IDE&lt;/a&gt;, you’ll not only model these systems but also simulate, test, and deploy them effectively.
+&lt;p&gt;With &lt;a href=&#34;https://eclipse.dev/4diac/4diac_ide/&#34;&gt;4diac IDE&lt;/a&gt;, you’ll not only model these systems but also simulate, test, and deploy them effectively.
 Ever wondered how to manage complex industrial processes with minimal downtime?
 This event demonstrates how IEC 61499’s event-driven architecture ensures optimal performance and resource utilization.&lt;/p&gt;</description>
     </item>
