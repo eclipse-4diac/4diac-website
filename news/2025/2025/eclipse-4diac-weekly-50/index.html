@@ -16,13 +16,19 @@
   
 
 
-<title>HTTP | The Eclipse Foundation</title>
-<meta property="og:title" content="HTTP | The Eclipse Foundation" />
-<meta name="twitter:title" content="HTTP | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #50 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #50 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #50 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from August 22 to August 29, 2025.
+
+This week brought a broad range of updates …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from August 22 to August 29, 2025.
+
+This week brought a broad range of updates …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from August 22 to August 29, 2025.
+
+This week brought a broad range of updates …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/doc/communication/HTTP.html" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-50/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,11 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/doc/communication/HTTP.html" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-50/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756451376">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756451376">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756742418">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756742418">
 <script>
 	
 		var tableClasses = "table";
@@ -1268,18 +1274,25 @@
             
               
             
+              
+            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
+              <a href="https://eclipse.dev/4diac/news/">News</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/doc/communication/HTTP.html">HTTP</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-50/">Eclipse 4diac Weekly #50</a>
             </li>
           
           </ol>
@@ -1296,7 +1309,7 @@
     
       <h1>
         
-          HTTP
+          Eclipse 4diac Weekly #50
         
       </h1>
     
@@ -1304,122 +1317,114 @@
 
 
   
-  <div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>This section shows how to make applications communicate using the HTTP protocol.
-You should use the client and server FBs according to your needs.
-Publish and Subscribe blocks are currently not supported.
-Currently only <code>GET</code>, <code>POST</code> or <code>PUT</code> requests are supported.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_configuration">Configuration</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>4diac Forte must be compiled from source code for the HTTP module to work.
-Follow the <a href="../installation/installation.html#ownFORTE">steps to build your own FBs</a>.
-In the step 3 where the features to be compiled are selected, select also <code>FORTE_COM_HTTP</code>.
-Then follow the same procedure, compile 4diac FORTE, et voilà, you have HTTP support on your 4diac FORTE.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_client">Client</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To realize an HTTP client, a client function block is needed with 3 SD inputs and 2 RD outputs, otherwise the runtime should log an error.
-The SDs are expected to be of type <code>STRING</code> or <code>WSTRING</code>, whereas the RDs are expected to be of type <code>STRING</code>.
-Currently only GET, PUT and POST are supported.
-The ID input of the client function block should be specified as follows:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>http[IP:PORT/PATH;POST|PUT|GET;content-type]</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The <code>IP:PORT</code> specifies the IP address and the port of the remote endpoint. The <code>PATH</code> specifies the path on the server to reach and is separated from the port by a slash. As request type <code>POST</code> or <code>PUT</code> or  <code>GET</code> can be used, and should be written written in capital letters. The request type is mandatory.
-The <code>content-type</code> represents the HTTP content-type of the packet to be sent, but is optional. Default <code>content-type</code> is <code>text/html</code>. Examples for the ID input are the following:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>http[34.231.219.193:80/get;GET;text/html]</code> → send GET request with text/html content type</p>
-</li>
-<li>
-<p><code>http[34.231.219.193:80/put;PUT;application/json]</code> → send PUT request, with application/json content type</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The first SD can be used for authentication, but can also be left empty in case the corresponding server does not require this. The second SD can be used for parameters, where the parameters should be separated by the HTML representation for <em>&amp;</em>, which is <code>&amp;amp;</code>. This second SD can also be left empty when no parameters are needed. The third SD input is used for the body, that is supposed to be sent. Examples for the three SD inputs are as follows:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>authentication: <code>Token enterTheTokenProvidedByTheServerHere</code></p>
-</li>
-<li>
-<p>parameters: <code>org=organization&amp;amp;bucket=sensors</code></p>
-</li>
-<li>
-<p>body: <code>airSensors,sensor_id=TLM0201 temperature=73.97038159354763,humidity=35.23103248356096,co=0.48445310567793615</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Both RDs are used for the server’s response.
-The first RD is used for the response code, whereas the second RD is used for the body of the server’s response.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_server">Server</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>To realize an HTTP server, a server function block is needed with 1 SD input for the body of the response it creates.
-The SD input expects type <code>STRING</code> or <code>WSTRING</code>.
-The ID input of the server function block should be specified as follows:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>http[PATH]</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The specified <code>PATH</code> is added to the server at startup.
-The server FB will trigger an event when the <code>PATH</code> is accessed with a GET request.
-Server responses use HTTP version <code>HTTP/1.1</code> and content-type <code>text/plain</code> as default.
-If parameters are provided, they should match the number of RDs of the function block and should be of type (name=value&amp;…​.).
-The &#34;&amp;&#34; should be used to define more than one parameter.
-The name is actually not used.
-The values are stored in the RDs in the order they arrived and treated as <code>STRING</code> values.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_where_to_go_from_here">Where to go from here?</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Go back to Protocols index:<br/>
-<a href="./communication.html">Communication Index</a></p>
-</li>
-<li>
-<p>If you want to go back to the Start Here page, we leave you here a fast access:<br/>
-<a href="../doc_overview.html">Start Here page</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Or <a href="#top">Go to top</a></p>
-</div>
-</div>
-</div>
 
+  
+
+
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from August 22 to August 29, 2025.</p>
+<p>This week brought a broad range of updates to Eclipse 4diac, covering both 4diac IDE and 4diac FORTE improvements.
+The changes span from bug fixes and usability enhancements to infrastructure updates and larger new features.</p>
+</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<ul>
+<li>
+<p><strong>Build and Platform</strong></p>
+<ul>
+<li>Added buildid configuration to the product file, making the buildid available in <code>config.ini</code> and the startup logfile.</li>
+<li>Use Internet Explorer as the browser engine on Windows due to an SWT issue with Edge (#1565).</li>
+<li>Bumped <code>actions/setup-java</code> from 4.7.1 to 5.0.0.</li>
+</ul>
+</li>
+<li>
+<p><strong>Editing and Modeling</strong></p>
+<ul>
+<li>Fixed copy/paste in the untyped SubApp data-output section.</li>
+<li>Fixed copying of connection attributes when updating FBs.</li>
+<li>Improved type handling by replacing <code>getType</code> with more efficient <code>typeEntry</code> functions.</li>
+<li>Provided locale-independent FB position export (#1573).</li>
+<li>Checked import requirements for destination elements in <code>PasteCommand</code>.</li>
+<li>Fixed merge issues in <code>plugin.properties</code> of the model plugin.</li>
+</ul>
+</li>
+<li>
+<p><strong>Libraries and Configurations</strong></p>
+<ul>
+<li>Removed obsolete dependency from events to IEC 61131-3 in the typelib.</li>
+<li>Removed erroneous <code>F_SUB</code> in <code>E_N_TABLE</code>.</li>
+<li>Added missing <code>GPIOChip</code> config FB.</li>
+<li>Regenerated library element and ST model.</li>
+<li>Updated ST parser and evaluator to use library elements as element types.</li>
+</ul>
+</li>
+<li>
+<p><strong>Debugging Enhancements</strong></p>
+<ul>
+<li>Introduced replay debugging infrastructure:
+<ul>
+<li>Added replay debugging methods to the deployment interface and OPC UA.</li>
+<li>Added replay navigator, views, widgets, and special watch factories.</li>
+<li>Added debugging targets, devices, tab configuration, and skeleton plugins.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Other Fixes</strong></p>
+<ul>
+<li>Fixed incorrect red highlight in VAR Configs editor when changing initial values.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li>
+<p><strong>Core and Architecture</strong></p>
+<ul>
+<li>Reworked <code>mainparam_utils</code> to use self-registration.</li>
+<li>Set <code>_WIN32_WINNT</code> version for Win32 builds.</li>
+<li>Moved default HTTP listen port to the configure file.</li>
+<li>Removed obsolete <code>stringdict</code> options and refactoring scripts.</li>
+<li>Changed default support for custom serializable data types to OFF, moved support handling to <code>forte_config.h</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Header and Structure Changes</strong></p>
+<ul>
+<li>Moved <code>TNameIdentifier</code> to <code>mgmcmd.h</code> and modernized definition.</li>
+<li>Moved ST helper includes to <code>iec61131_functions.h</code>.</li>
+<li>Moved <code>devlog</code> from arch to core/util.</li>
+<li>Moved <code>timerha</code> from arch to core.</li>
+<li>Moved <code>datatype.h</code> from arch to core and modernized C++.</li>
+</ul>
+</li>
+<li>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li>Fixed build issues with OPC UA.</li>
+<li>Removed erroneous <code>F_SUB</code> in <code>E_N_TABLE</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Library Consolidation</strong></p>
+<ul>
+<li>Consolidated communication libraries.</li>
+<li>Consolidated modules libraries.</li>
+<li>Consolidated standard function block libraries.</li>
+<li>Consolidated core libraries.</li>
+<li>Consolidated architecture libraries.</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
+
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
+  
 
   
 
@@ -1618,7 +1623,7 @@ The values are stored in the RDs in the order they arrived and treated as <code>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756451381"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756742418"></script>
   
 
   

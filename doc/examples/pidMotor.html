@@ -41,8 +41,8 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/examples/pidMotor.html" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756451344">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756451344">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756742364">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756742364">
 <script>
 	
 		var tableClasses = "table";
@@ -1500,7 +1500,7 @@ The output limitation is straightforward, but the windup solution can be confusi
 What is done is to activate the integration part only when the desired output is inside the limits (in the <code>ELSE</code>), <code>OR</code> when it is outside the limits <code>AND</code> the error is forcing the way back inside the limits.</p>
 </div>
 <div class="paragraph">
-<p>Information about anti-windup can for example be found <a href="https://pdfs.semanticscholar.org/9774/270fa07e4be5dbe77dc7bf2a285167b82b68.pdf">here.</a></p>
+<p>Information about anti-windup can for example be found <a href="https://www.semanticscholar.org/paper/Anti-windup-Schemes-for-Proportional-Integral-and-Ghoshal-John/9774270fa07e4be5dbe77dc7bf2a285167b82b68?p2df">here.</a></p>
 </div>
 <div class="paragraph">
 <p>With the algorithms done, the FB is ready to be exported and compiled with 4diac FORTE.</p>
@@ -1517,7 +1517,7 @@ Choose where to export and then click Finish.</p>
 </div>
 <div class="paragraph">
 <p>To get the source code ready for compiling your 4diac FORTE with the created FB, the generated .cpp and .h files have to be added to the CMake configuration.
-The easiest way to do that is to put both files into the folder src/modules/lms_ev3 and add a file CMakeLists.txt in that folder, with the following line at the end:</p>
+The easiest way to do that is to put both files into the folder <code>src/modules/lms_ev3</code> and add a file <code>CMakeLists.txt</code> in that folder, with the following line at the end:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -1528,7 +1528,7 @@ The easiest way to do that is to put both files into the folder src/modules/lms_
 <p>The next thing to do is to compile 4diac FORTE for the EV3.
 The easiest way to do it is to copy all the code to the EV3, get the compiling tools inside the EV3 and compile it.
 The process is really slow compared if it is done in a normal computer, but for compiling once it is much faster than setting all the cross-compiling environment explained <a href="http://www.ev3dev.org/docs/tutorials/using-brickstrap-to-cross-compile/">here.</a>
-More details are presented in the <a href="../installation/legoMindstormEv3.adoc#ev3_introduction">section</a> above.</p>
+More details are presented in the <a href="../installation/legoMindstormEv3.html#ev3_introduction">section</a> above.</p>
 </div>
 </div>
 </div>
@@ -1631,7 +1631,7 @@ In Windows machines, the used Multicast address is not always detected and the p
 application in the PC.
 This happens often if the PC is connected to the EV3 through an ad-hoc connection.
 To overcome this, try adding the address route with gateway to your own machine in the as presented in the Troubleshooting part at the bottom of the
-<a href="./bbbTrafficControl.adoc#troubleshooting">Traffic Control with BBB example</a>
+<a href="./bbbTrafficControl.html#troubleshooting">Traffic Control with BBB example</a>
 </td>
 </tr>
 </tbody></table>
@@ -1678,7 +1678,7 @@ With these values, the PID controller is again tested and the result is as follo
 <p>Go back to Examples index:</p>
 </div>
 <div class="paragraph">
-<p><a href="./examples.adoc">Examples Index</a></p>
+<p><a href="./examples.html">Examples Index</a></p>
 </div>
 <div class="paragraph">
 <p>If you want to go back to the Start Here page, we leave you here a fast access</p>
@@ -1890,7 +1890,7 @@ With these values, the PID controller is again tested and the result is as follo
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756451358"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756742372"></script>
   
 
   

@@ -10,6 +10,39 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacide/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #50</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-50/</link>
+      <pubDate>Fri, 29 Aug 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-50/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Build and Platform&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added buildid configuration to the product file, making the buildid available in &lt;code&gt;config.ini&lt;/code&gt; and the startup logfile.&lt;/li&gt;
+&lt;li&gt;Use Internet Explorer as the browser engine on Windows due to an SWT issue with Edge (#1565).&lt;/li&gt;
+&lt;li&gt;Bumped &lt;code&gt;actions/setup-java&lt;/code&gt; from 4.7.1 to 5.0.0.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Editing and Modeling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed copy/paste in the untyped SubApp data-output section.&lt;/li&gt;
+&lt;li&gt;Fixed copying of connection attributes when updating FBs.&lt;/li&gt;
+&lt;li&gt;Improved type handling by replacing &lt;code&gt;getType&lt;/code&gt; with more efficient &lt;code&gt;typeEntry&lt;/code&gt; functions.&lt;/li&gt;
+&lt;li&gt;Provided locale-independent FB position export (#1573).&lt;/li&gt;
+&lt;li&gt;Checked import requirements for destination elements in &lt;code&gt;PasteCommand&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed merge issues in &lt;code&gt;plugin.properties&lt;/code&gt; of the model plugin.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Libraries and Configurations&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #49</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-49/</link>
       <pubDate>Fri, 22 Aug 2025 17:00:00 +0000</pubDate>

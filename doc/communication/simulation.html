@@ -41,8 +41,8 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/communication/simulation.html" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756451329">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756451329">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1756742403">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1756742403">
 <script>
 	
 		var tableClasses = "table";
@@ -1420,7 +1420,7 @@ TANK_LEVEL_IN (IW) and FILL_VALVE (QW) are the FBs that are the input and output
 <p><span class="image"><img src="img/fmi/application.png" alt="controller implemented in Eclipse 4diac"/></span></p>
 </div>
 <div class="paragraph">
-<p>Once both system are exported as FMUs, they can be co-simulated using the <a href="https://github.com/into-cps/intocps-ui">INTO-CPS</a> tool.
+<p>Once both system are exported as FMUs, they can be co-simulated using the <a href="https://github.com/INTO-CPS-Association/into-cps-application">INTO-CPS</a> tool.
 Inputs and outputs of both model are connected properly (sensor of the level of the tank to the input of the controller, and the output of the controller to the actuator of the valve of the tank).
 Since the Kp, Ki and Kd of the PID controller are literals, they’re treated as parameters, which can be set in every co-simulation, making it easier to tune it.</p>
 </div>
@@ -1450,7 +1450,7 @@ The 4diac FMU also help finding bugs in your application to see if it behaves ar
 <div class="sectionbody">
 <div class="paragraph">
 <p>Eclipse 4diac user Marc Jakobi developed a communicating library in Matlab, which allows connecting IEC 61499 control applications with simulation models in Matlab.
-The library, which is available as open source, implements the Client/Server protocol defined in the <a href="http://www.holobloc.com/doc/ita/index.htm">IEC 61499 compliance profile for feasibility demonstrations</a>.
+The library, which is available as open source, implements the Client/Server protocol defined in the <a href="https://www.holobloc.com/doc/ita/index.htm">IEC 61499 compliance profile for feasibility demonstrations</a>.
 Therefore, on the 4diac side you just need to insert a server communication function block.
 For detailed documentation as well as the library code, please have a look at the <a href="https://github.com/MrcJkb/tcpip4diac">tcpip4diac project on GitHub</a>.</p>
 </div>
@@ -1675,7 +1675,7 @@ For detailed documentation as well as the library code, please have a look at th
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756451340"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1756742414"></script>
   
 
   

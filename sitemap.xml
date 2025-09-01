@@ -3,15 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
-    <lastmod>2025-08-22T17:00:00+00:00</lastmod>
+    <lastmod>2025-08-29T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/categories/</loc>
-    <lastmod>2025-08-22T17:00:00+00:00</lastmod>
+    <lastmod>2025-08-29T17:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-49/</loc>
-    <lastmod>2025-08-22T17:00:00+00:00</lastmod>
+    <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-50/</loc>
+    <lastmod>2025-08-29T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/</loc>
+    <lastmod>2025-08-29T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-49/</loc>
     <lastmod>2025-08-22T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-48/</loc>
@@ -322,6 +325,8 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/io_config/wago/</loc>
   </url><url>
+    <loc>https://eclipse.dev/4diac/doc/specs/</loc>
+  </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/xqueries.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/development/forte_codequality.html</loc>
@@ -370,7 +375,7 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/tsn.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/communication/HTTP.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/communication/http.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/io_config/io_config.html</loc>
   </url><url>
@@ -440,7 +445,7 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/tags/</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/intro/4diacframework.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/intro/4diacFramework.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/tutorials/tutorials.html</loc>
   </url><url>
