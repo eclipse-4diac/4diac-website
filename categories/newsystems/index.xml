@@ -10,6 +10,19 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 20 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/newsystems/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Tune In! Announcing the New Eclipse 4diac™ Podcast</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/tune-in-announcing-the-new-eclipse-4diac-podcast/</link>
+      <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/tune-in-announcing-the-new-eclipse-4diac-podcast/</guid>
+      <description>&lt;p&gt;That&amp;rsquo;s right, now you can &lt;strong&gt;take Eclipse 4diac™ with you on the go!&lt;/strong&gt; Whether you&amp;rsquo;re commuting, working in the lab, or simply relaxing, you can play our podcast on your Android Auto, Apple CarPlay, Alexa, or wherever you enjoy your audio content.&lt;/p&gt;
+&lt;h3 id=&#34;what-to-expect-from-our-first-episode&#34;&gt;What to Expect from Our First Episode&lt;/h3&gt;
+&lt;p&gt;In our inaugural episode, we lay the groundwork for understanding the modern industrial landscape. We begin by discussing the foundational &lt;strong&gt;IEC 61131-3 standard for PLC programming&lt;/strong&gt;. You&amp;rsquo;ll learn that a &lt;strong&gt;PLC is, basically, a small computer used in industry&lt;/strong&gt; with inputs and outputs for controlling various systems. We&amp;rsquo;ll explain how PLCs are &lt;strong&gt;programmed according to the required application&lt;/strong&gt; using an &lt;strong&gt;IDE (integrated development environment) supplied by the PLC vendor&lt;/strong&gt;. These IDEs run on your normal computer and allow for &lt;strong&gt;coding your application and then uploading it to the PLC&lt;/strong&gt;. We&amp;rsquo;ll also touch upon the &lt;strong&gt;five different programming languages&lt;/strong&gt; part of the IEC 61131-3 standard, including &lt;strong&gt;Ladder Diagram (LD)&lt;/strong&gt; and &lt;strong&gt;Function Block Diagram (FBD)&lt;/strong&gt;. You&amp;rsquo;ll understand how &lt;strong&gt;Function Blocks (FBs)&lt;/strong&gt; in this context can be interpreted as &lt;strong&gt;functions you can call&lt;/strong&gt;, with inputs corresponding to parameters and outputs to return values.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #50</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-50/</link>
       <pubDate>Fri, 29 Aug 2025 17:00:00 +0000</pubDate>
