@@ -57,14 +57,18 @@
 }	
 	
 .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-link-group a:nth-child(2) {
-  background-color: #ccd3e1;
+  background-color: #d3d9e6;
 }			
 
 .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-link-group a:nth-child(3) {
-  background-color: #b3bdd2;
+  background-color: #c1cadc;
 }
 		
 .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-link-group a:nth-child(4) {
+  background-color: #adb9d0;
+}
+
+.featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-link-group a:nth-child(5) {
   background-color: #99a7c3;
 }
 
@@ -76,7 +80,7 @@
   .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-lead-text {
     font-size: 2.4rem;
     font-weight: 300;
-    max-width: 20%;
+    max-width: 16%;
     padding: 1rem 1rem 1rem 0;
     text-align: right;
   }

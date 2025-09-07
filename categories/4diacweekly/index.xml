@@ -8,7 +8,47 @@
     <language>en</language>
     <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
-    <lastBuildDate>Fri, 29 Aug 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Sep 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #51</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-51/</link>
+      <pubDate>Fri, 05 Sep 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-51/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Contract Checking and Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added ID relation for causal reaction/age.&lt;/li&gt;
+&lt;li&gt;Added dynamic contract checks for:
+&lt;ul&gt;
+&lt;li&gt;causal reaction/age&lt;/li&gt;
+&lt;li&gt;ages&lt;/li&gt;
+&lt;li&gt;reactions&lt;/li&gt;
+&lt;li&gt;single events&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added support for jitter in repetitions.&lt;/li&gt;
+&lt;li&gt;Improved contract rule printing.&lt;/li&gt;
+&lt;li&gt;Added warnings for duplicate elements in sets.&lt;/li&gt;
+&lt;li&gt;Added visualization for dynamic check results.&lt;/li&gt;
+&lt;li&gt;Added menu entry for running dynamic contract checks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Diagram and Export&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added diagram SVG export.&lt;/li&gt;
+&lt;li&gt;Improved diagram SVG export.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Editor and Property Sheets&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Tune In! Announcing the New Eclipse 4diac™ Podcast</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/tune-in-announcing-the-new-eclipse-4diac-podcast/</link>

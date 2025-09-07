@@ -2,20 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
+    <lastmod>2025-09-05T17:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://eclipse.dev/4diac/categories/</loc>
-    <lastmod>2025-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-05T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-51/</loc>
+    <lastmod>2025-09-05T17:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/</loc>
+    <lastmod>2025-09-05T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/categories/eclipse-4diacpodcast/</loc>
     <lastmod>2025-09-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/news/2025/</loc>
-    <lastmod>2025-09-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/tune-in-announcing-the-new-eclipse-4diac-podcast/</loc>
     <lastmod>2025-09-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
-    <lastmod>2025-08-29T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-50/</loc>
     <lastmod>2025-08-29T17:00:00+00:00</lastmod>
@@ -259,6 +262,9 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2024/2024/guest-post-eclipse-4diac-for-agrimechatronics-the-project-logibus-won-a-prestigious-award/</loc>
     <lastmod>2024-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/4diac_fbe/</loc>
+    <lastmod>2024-02-15T10:00:00-04:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/4diac_forte/</loc>
     <lastmod>2024-02-15T10:00:00-04:00</lastmod>
