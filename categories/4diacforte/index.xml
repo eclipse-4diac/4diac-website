@@ -10,6 +10,39 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Fri, 04 Apr 2025 14:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacforte/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac at ETFA 2025</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-at-etfa-2025/</link>
+      <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-at-etfa-2025/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Bianca Wiesmayr&lt;/strong&gt; delivered a keynote in the workshop &lt;em&gt;“Advancing Industrial Automation: Best Practices and Innovations with IEC 61499”&lt;/em&gt; on:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;“Building an Open-Source Infrastructure for IEC 61499 Research, Evaluation, and Standardization – 18 Years of Eclipse 4diac”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;
+
+&lt;img 
+    src=&#34;https://eclipse.dev/4diac/img/news/ETFA2025_Bianca.jpeg&#34; 
+    alt=&#34;Bianca Wiesmayr presenting at ETFA 2025&#34; 
+    style=&#34;
+        max-width: 50%; 
+        max-height: ; 
+        margin: ; 
+        margin-top: ; 
+        margin-left: ; 
+        margin-right: ;
+        margin-bottom: ; 
+        display: ;&#34; 
+    class=&#34;&#34;
+&gt;
+
+ &lt;br&gt;
+ 
+&lt;/p&gt;
+&lt;p&gt;Her talk reflected on the unique journey of Eclipse 4diac — from its beginnings as a research prototype to becoming a cornerstone for &lt;strong&gt;open-source industrial automation&lt;/strong&gt;, widely used in research, teaching, and industry.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #51</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-51/</link>
       <pubDate>Fri, 05 Sep 2025 17:00:00 +0000</pubDate>
