@@ -8,7 +8,83 @@
     <language>en</language>
     <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
-    <lastBuildDate>Tue, 09 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Sep 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #52</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-52/</link>
+      <pubDate>Fri, 12 Sep 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-52/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Editor Improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed issues with the &amp;ldquo;Change Type&amp;rdquo; dialog, including type changes between FB and SubApp.&lt;/li&gt;
+&lt;li&gt;Fixed undo context matching in the Xtext type editor and improved handling of embedded editors.&lt;/li&gt;
+&lt;li&gt;Cleaned command stack handling for multipage editors and reduced unnecessary dirty property notifications.&lt;/li&gt;
+&lt;li&gt;Added exception check when saving in &lt;code&gt;AbstractTypeEditor&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Fixed index and display issues in VarConfigs and ST code references.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Command Stack Refactoring&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced &lt;code&gt;OperationHistoryCommandStack&lt;/code&gt; and &lt;code&gt;LibraryElementUndoContext&lt;/code&gt; for consistent undo/redo across graphical and type editors.&lt;/li&gt;
+&lt;li&gt;Removed outdated &lt;code&gt;getSystem&lt;/code&gt; method from editors and eliminated the &lt;code&gt;CommandStack&lt;/code&gt; from the AutomationSystem.&lt;/li&gt;
+&lt;li&gt;Updated type and library element handling with &lt;code&gt;TypeEntryDataHandler&lt;/code&gt; using &lt;code&gt;EObjects&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Features &amp;amp; Enhancements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for package names in resource types in deployment using &lt;code&gt;::&lt;/code&gt; separator.&lt;/li&gt;
+&lt;li&gt;Improved attribute handling: inherit attributes can now be defined, copied on instance creation, and trigger warnings instead of errors.&lt;/li&gt;
+&lt;li&gt;Added manifest download support to &lt;code&gt;IArchiveDownloader&lt;/code&gt; for faster dependency resolution.&lt;/li&gt;
+&lt;li&gt;Reworked generation of &lt;code&gt;CMakeLists.txt&lt;/code&gt; and export structure for &lt;code&gt;forte_ng&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build &amp;amp; Platform Updates&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded build system to Tycho 5.0.&lt;/li&gt;
+&lt;li&gt;Removed deprecated GEF Classic source features from the target platform.&lt;/li&gt;
+&lt;li&gt;Fixed compliance with stricter Java rules.&lt;/li&gt;
+&lt;li&gt;Added helper utilities for library element, file, and project access.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Build System &amp;amp; Options&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Set minimum CMake version to 3.30 and defined C++ standard via target compile features.&lt;/li&gt;
+&lt;li&gt;Reworked options: &lt;code&gt;FORTE_STACKTRACE&lt;/code&gt;, &lt;code&gt;FORTE_LOGLEVEL&lt;/code&gt;, and &lt;code&gt;FORTE_RTTI_AND_EXCEPTIONS&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated CMake project options and added dependency checks.&lt;/li&gt;
+&lt;li&gt;Removed &lt;code&gt;forte-global&lt;/code&gt; target and &lt;code&gt;typeinit&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Removed overrides for &lt;code&gt;operator new&lt;/code&gt;/&lt;code&gt;delete&lt;/code&gt; in favor of standard operators.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architecture &amp;amp; Code Structure&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reorganized source and include file structure across core, arch, stdfblib, modules, and com layers.&lt;/li&gt;
+&lt;li&gt;Added explicit namespaces to modules and stdfblib.&lt;/li&gt;
+&lt;li&gt;Added dependencies between libraries for cleaner build organization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Features &amp;amp; Fixes&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for generic FBs with packages in typelib.&lt;/li&gt;
+&lt;li&gt;Fixed issues in OPC UA integration: includes, string ID concatenation, error messages, and redundant architecture definitions.&lt;/li&gt;
+&lt;li&gt;Reworked OPC UA nodesets and types to use self-registration.&lt;/li&gt;
+&lt;li&gt;Fixed and improved CTF tracing and replay.&lt;/li&gt;
+&lt;li&gt;Updated type names across tests, systemtests, modules, and stdfblib.&lt;/li&gt;
+&lt;li&gt;Hidden resource internals for better encapsulation.&lt;/li&gt;
+&lt;li&gt;Added findTabs ignore file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac at ETFA 2025</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-at-etfa-2025/</link>
