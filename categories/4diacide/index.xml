@@ -10,6 +10,39 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacide/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #53</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-53/</link>
+      <pubDate>Fri, 19 Sep 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-53/</guid>
+      <description>&lt;p&gt;🎉 This post marks the &lt;strong&gt;one-year anniversary of the Eclipse 4diac weekly news&lt;/strong&gt; — thank you for following along!&lt;/p&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Attribute handling and UI&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added label and improved layout for general Attribute-Targets&lt;/li&gt;
+&lt;li&gt;Added null-checks and fixed layout in AttributeTargetSection&lt;/li&gt;
+&lt;li&gt;Switched to &lt;code&gt;CompoundCommand&lt;/code&gt; for more consistent command handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Import, build, and libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed import copy when &lt;code&gt;compilerinfo&lt;/code&gt; is null&lt;/li&gt;
+&lt;li&gt;Removed outdated &lt;code&gt;APPEND_STRING&lt;/code&gt; FBs from utils library (replaced by IEC 61131-3 &lt;code&gt;CONCAT&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Cleaned 3.0 typelib (removed unused storage FBs, reorganized &lt;code&gt;FB_RANDOM&lt;/code&gt;, removed empty math lib)&lt;/li&gt;
+&lt;li&gt;Fixed Nebula update site&lt;/li&gt;
+&lt;li&gt;Upgraded to Eclipse Nebula Widgets 3.2 (removed IE workaround, fixed richtext issue)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;GitLab downloader&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #52</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-52/</link>
       <pubDate>Fri, 12 Sep 2025 17:00:00 +0000</pubDate>
