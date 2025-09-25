@@ -1,0 +1,85 @@
+.header-default-bg-img .featured-jumbotron {
+    background-image: url(../img/4diac-home-bg_blue.jpg?281f3578e8c92caaa2691632d0fb4065);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.card-container .glyph-highlight{
+    left:calc(90% - 75px);
+    position:absolute;
+    text-align:center;
+    top:10px
+  }
+  
+.card-container .glyph-highlight .glyph-container{
+    background-color:#ff950e;
+    color:#fff;font-size:3em;
+    height:40px;padding:0px 0px 5px;
+    width:75px
+  }
+  
+.card-container .glyph-highlight .glyph-container img{
+  max-height:100%;
+  max-width:100%;
+  vertical-align:text-bottom
+}
+  
+.card-container .glyph-highlight .glyph-bottom{
+  border:37.5px solid transparent;
+  border-top:18.75px solid #ff950e;
+  height:0;
+  width:0
+}
+
+.card-container .card-panel.with-glyph .panel-body {
+  margin-top:5px
+}
+
+h3 {
+  color: #505050
+}
+
+
+.btn-info {
+  margin-right: 10px;
+  background-color: #012269;
+  color: #fff;
+  border: none;
+}
+
+.btn-info.focus,
+.btn-info:focus {
+  background-color: #99a6c3;
+}
+
+.btn-info:hover {
+  background-color: #99a6c3;
+  color: #fff
+}
+
+.btn-info.active,
+.btn-info:active,
+.open>.dropdown-toggle.btn-info {
+  background-color: #99a6c3;
+  background-image: none;
+  color: #fff
+}
+
+.btn-info.disabled.focus,
+.btn-info.disabled:focus,
+.btn-info.disabled:hover,
+.btn-info[disabled].focus,
+.btn-info[disabled]:focus,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info.focus,
+fieldset[disabled] .btn-info:focus,
+fieldset[disabled] .btn-info:hover {
+    background-color: #99a6c3;
+}
+
+.label-info[href]:focus,
+.label-info[href]:hover {
+    background-color: #99a6c3
+}
+
