@@ -10,6 +10,41 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Tue, 27 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/announcements/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #54</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-54/</link>
+      <pubDate>Fri, 26 Sep 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-54/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Graphical editor improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed FB width calculation for FBs without input/output events&lt;/li&gt;
+&lt;li&gt;Provided better logging and early failure if EditParts cannot be created&lt;/li&gt;
+&lt;li&gt;Avoided unnecessary refreshes when inserting FBs&lt;/li&gt;
+&lt;li&gt;Ensured graphical annotations used as model children have EditParts&lt;/li&gt;
+&lt;li&gt;ContentAdapter now checks if EditPart is active before refreshing&lt;/li&gt;
+&lt;li&gt;Fixed grid dash pattern depending on clip rectangle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Type export improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Moved function declarations into namespaces&lt;/li&gt;
+&lt;li&gt;Escaped C++ namespace keywords&lt;/li&gt;
+&lt;li&gt;Used namespace blocks in source templates&lt;/li&gt;
+&lt;li&gt;Updated forte namespace&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;find_package&lt;/code&gt; for external libraries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Type handling and FB rendering&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #53</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-53/</link>
       <pubDate>Fri, 19 Sep 2025 17:00:00 +0000</pubDate>

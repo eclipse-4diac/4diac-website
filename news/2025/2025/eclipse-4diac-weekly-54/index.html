@@ -16,13 +16,19 @@
   
 
 
-<title>News 2025 | The Eclipse Foundation</title>
-<meta property="og:title" content="News 2025 | The Eclipse Foundation" />
-<meta name="twitter:title" content="News 2025 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #54 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #54 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #54 | The Eclipse Foundation" />
 
-<meta name="description" content="Eclipse 4diac News 2025.">
-<meta property="og:description" content="Eclipse 4diac News 2025.">
-<meta name="twitter:description" content="Eclipse 4diac News 2025.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from September 19 to September 26, 2025.
+
+This week’s updates focus on …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 19 to September 26, 2025.
+
+This week’s updates focus on …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 19 to September 26, 2025.
+
+This week’s updates focus on …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-54/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,11 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-54/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1759171002">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1759171002">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1759171003">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1759171003">
 <script>
 	
 		var tableClasses = "table";
@@ -1268,6 +1274,8 @@
             
               
             
+              
+            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
@@ -1278,8 +1286,13 @@
             </li>
           
             
-            <li  class="active" aria-current="page">
+            <li >
               <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
+            </li>
+          
+            
+            <li  class="active" aria-current="page">
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-54/">Eclipse 4diac Weekly #54</a>
             </li>
           
           </ol>
@@ -1296,7 +1309,7 @@
     
       <h1>
         
-          News 2025
+          Eclipse 4diac Weekly #54
         
       </h1>
     
@@ -1304,169 +1317,99 @@
 
 
   
-   
+
   
-  
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/eclipse-4diac-weekly-38/" class="media media-link match-height-item">
-    <p class="media-date">Friday, Jun 6, 2025</p>
-    <h4 class="media-heading">Eclipse 4diac Weekly #38</h4>
-    <p class="media-text">Update on what development happened across the Eclipse 4diac project in the week from May 30 to June 6, 2025.
 
-This week&#39;s updates bring notable cleanups, UI improvements, and enhancements across both the 4diac IDE and 4diac FORTE. 
-For 4diac IDE, the team streamlined function block libraries, improved property sheet behavior, and introduced a new contract check system. 
-4diac FORTE received major CMake cleanups, refined its type system, and improved handling of variable arrays.
+
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from September 19 to September 26, 2025.</p>
+<p>This week’s updates focus on improving 4diac IDE graphical editing, type handling, and forte_ng export, as well as enhancing 4diac FORTE’s OPC UA A&amp;C layer, namespaces, and module structure.</p>
+</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<ul>
+<li>
+<p><strong>Graphical editor improvements</strong></p>
+<ul>
+<li>Fixed FB width calculation for FBs without input/output events</li>
+<li>Provided better logging and early failure if EditParts cannot be created</li>
+<li>Avoided unnecessary refreshes when inserting FBs</li>
+<li>Ensured graphical annotations used as model children have EditParts</li>
+<li>ContentAdapter now checks if EditPart is active before refreshing</li>
+<li>Fixed grid dash pattern depending on clip rectangle</li>
+</ul>
+</li>
+<li>
+<p><strong>Type export improvements</strong></p>
+<ul>
+<li>Moved function declarations into namespaces</li>
+<li>Escaped C++ namespace keywords</li>
+<li>Used namespace blocks in source templates</li>
+<li>Updated forte namespace</li>
+<li>Added <code>find_package</code> for external libraries</li>
+</ul>
+</li>
+<li>
+<p><strong>Type handling and FB rendering</strong></p>
+<ul>
+<li>FBItemProvider now uses <code>TypeImageProvider</code></li>
+<li>Reworked <code>FBShape</code> to use only <code>TypeEntry</code>, improving efficiency</li>
+</ul>
+</li>
+<li>
+<p><strong>Other fixes</strong></p>
+<ul>
+<li>Fixed import table refresh issues</li>
+<li>Fixed exception when identification is null</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li>
+<p><strong>OPC UA Alarms &amp; Condition Layer updates</strong></p>
+<ul>
+<li>Added support for resetting Active state</li>
+<li>First data input in A&amp;C Layer now used as Alarm switch</li>
+<li>Refactored A&amp;C Layer port name fetching to use parent</li>
+</ul>
+</li>
+<li>
+<p><strong>Module and CMake improvements</strong></p>
+<ul>
+<li>Adopted modules to new CMake structure (e.g., eliteboard module)</li>
+<li>Removed old &ldquo;forte&rdquo; style CMake</li>
+</ul>
+</li>
+<li>
+<p><strong>Communication layers</strong></p>
+<ul>
+<li>Added CAN communication layer for Linux</li>
+</ul>
+</li>
+<li>
+<p><strong>Namespace management</strong></p>
+<ul>
+<li>Removed redundant namespace qualifiers in multiple modules</li>
+<li>Added missing namespaces in core, tests, HTTP, OPC UA, hardware, utils, and signalprocessing</li>
+<li>Used namespace blocks in source files</li>
+<li>Moved <code>forte::core</code> namespace to <code>forte</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Type fixes</strong></p>
+<ul>
+<li>Fixed array typedefs</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
+
+<p>Cheers,<br>
+      The Eclipse 4diac Team
 </p>
-  </a>
-</div>
-
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/next-eclipse-4diac-virtual-community-meeting/" class="media media-link match-height-item">
-    <p class="media-date">Monday, Jun 2, 2025</p>
-    <h4 class="media-heading">Next Eclipse 4diac Virtual Community Meeting</h4>
-    <p class="media-text">On June 4, 2025, we have our 3rd virtual community evening. We have the program ready for this week!</p>
-  </a>
-</div>
-
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/eclipse-4diac-weekly-37/" class="media media-link match-height-item">
-    <p class="media-date">Friday, May 30, 2025</p>
-    <h4 class="media-heading">Eclipse 4diac Weekly #37</h4>
-    <p class="media-text">Update on what development happened across the Eclipse 4diac project in the week from May 23 to May 30, 2025.
-
-This week&#39;s Eclipse 4diac updates bring improvements to 4diac IDE including 
-support for FunctionFBType in the FB Network interpreter, significant improvements to the Structured Text editor, and smarter monitoring and bulk editing features.
-On 4diac FORTE side the improvements are to store type hashes for FBs, data types, and adapters, streamlined build support with fixes for string escapes and improved CI integration, and a more flexible Generic FB architecture.
-</p>
-  </a>
-</div>
-
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/eclipse-4diac-weekly-36/" class="media media-link match-height-item">
-    <p class="media-date">Friday, May 23, 2025</p>
-    <h4 class="media-heading">Eclipse 4diac Weekly #36</h4>
-    <p class="media-text">Update on what development happened across the Eclipse 4diac project in the week from May 16 to May 23, 2025.
-
-This week&#39;s Eclipse 4diac updates bring improvements to 4diac IDE including enhanced Structured Text search, refined deployment and monitoring with support for negated connections, and improved model editing and validation. 
-On 4diac FORTE side the improvements are better tracing, cleaner data handling, and streamlined build support with fixes for string escapes and improved CI integration.
-</p>
-  </a>
-</div>
-
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/eclipse-4diac-weekly-35/" class="media media-link match-height-item">
-    <p class="media-date">Friday, May 16, 2025</p>
-    <h4 class="media-heading">Eclipse 4diac Weekly #35</h4>
-    <p class="media-text">Update on what development happened across the Eclipse 4diac project in the week from May 9 to May 16, 2025.
-
-This week&#39;s Eclipse 4diac updates bring improvements to 4diac IDE including enhanced Structured Text export, improved monitoring stability, and refined function block configuration and type library handling. On 4diac FORTE side the improvements are better modular IO integration, support for non-finite floating-point values, and modernization of internal data structures using standard C&#43;&#43;.
-</p>
-  </a>
-</div>
-
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/introducing-our-new-committer-martin-jobst/" class="media media-link match-height-item">
-    <p class="media-date">Wednesday, May 14, 2025</p>
-    <h4 class="media-heading">Introducing Our New Committer Martin Jobst</h4>
-    <p class="media-text">We’re happy to welcome [**Martin Jobst**](https://github.com/mx990), a long-time contributor and expert in embedded systems, as a new committer to the Eclipse 4diac project!
-</p>
-  </a>
-</div>
-
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/eclipse-4diac-weekly-34/" class="media media-link match-height-item">
-    <p class="media-date">Friday, May 9, 2025</p>
-    <h4 class="media-heading">Eclipse 4diac Weekly #34</h4>
-    <p class="media-text">Update on what development happened across the Eclipse 4diac project in the week from May 2 to May 9, 2025.
-
-This week&#39;s Eclipse 4diac updates include improvements to 4diac IDE such as enhanced type export, improved UI for function block networks, and better support for modeling timing information. Meanwhile, 4diac FORTE benefits from significant modernization and performance optimizations, including memory-efficient data structures, simplified code architecture, and improved support for hardware devices.
-</p>
-  </a>
-</div>
-
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/eclipse-4diac-weekly-33/" class="media media-link match-height-item">
-    <p class="media-date">Friday, May 2, 2025</p>
-    <h4 class="media-heading">Eclipse 4diac Weekly #33</h4>
-    <p class="media-text">Update on what development happened across the Eclipse 4diac project in the week from April 25 to May 2, 2025.
-
-This week&#39;s Eclipse 4diac updates include improvements to 4diac IDE such as improved contract editing with new properties and grammar fixes, enhanced validation for negated connections, and better support for Simple Function Blocks in the IDE. 
-On 4diac FORTE side, code has been cleaned up by replacing temporary BOOL objects and removing unused includes.
-</p>
-  </a>
-</div>
-
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/eclipse-4diac-weekly-32/" class="media media-link match-height-item">
-    <p class="media-date">Friday, Apr 25, 2025</p>
-    <h4 class="media-heading">Eclipse 4diac Weekly #32</h4>
-    <p class="media-text">Update on what development happened across the Eclipse 4diac project in the week from April 18 to April 25, 2025.
-
-This week&#39;s Eclipse 4diac updates include improvements to the 4diac IDE, such as enhanced search functionality, read-only handling for libraries. In 4diac FORTE, connection handling was extensively reworked to introduce delegating connections, optimize performance, and simplify the management of connections.
-  
-</p>
-  </a>
-</div>
-
-    
-      
-<div class="news-list">
-  <a href=" /4diac/news/2025/2025/eclipse-4diac-weekly-31/" class="media media-link match-height-item">
-    <p class="media-date">Friday, Apr 18, 2025</p>
-    <h4 class="media-heading">Eclipse 4diac Weekly #31</h4>
-    <p class="media-text">Update on what development happened across the Eclipse 4diac project in the week from April 11 to April 18, 2025.</p>
-  </a>
-</div>
-
-    
-    
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/4diac/news/2025/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/4diac/news/2025/page/2/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/4diac/news/2025/" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/4diac/news/2025/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item">
-        <a href="/4diac/news/2025/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
-      </li>
-      <li class="page-item">
-        <a href="/4diac/news/2025/page/5/" aria-label="Page 5" class="page-link" role="button">5</a>
-      </li>
-      <li class="page-item">
-        <a href="/4diac/news/2025/page/4/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/4diac/news/2025/page/5/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
+ 
   
 
   
@@ -1666,7 +1609,7 @@ This week&#39;s Eclipse 4diac updates include improvements to the 4diac IDE, suc
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1759171002"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1759171004"></script>
   
 
   
