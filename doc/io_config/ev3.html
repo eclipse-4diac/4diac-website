@@ -1,0 +1,2249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+
+
+
+  
+
+
+<title>Lego Mindstorms EV3 | The Eclipse Foundation</title>
+<meta property="og:title" content="Lego Mindstorms EV3 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Lego Mindstorms EV3 | The Eclipse Foundation" />
+
+<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
+
+<meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@eclipsefdn" />
+<meta name="twitter:creator" content="@eclipsefdn" />
+<meta property="og:url" content="https://eclipse.dev/4diac/doc/io_config/ev3.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Eclipse 4diac" />
+<meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
+
+
+<meta name="generator" content="Hugo 0.144.2">
+
+<link rel="canonical" href="https://eclipse.dev/4diac/doc/io_config/ev3.html" />
+
+
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1759498882">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1759498882">
+<script>
+	
+		var tableClasses = "table";
+	
+</script>
+
+
+
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" type="text/css"/>
+
+  
+
+</head>
+<body >
+  
+
+
+
+
+
+
+
+
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="header-wrapper header-wrapper header-default-bg-img featured-jumbotron-bottom-shape" id="header">
+  
+
+
+
+
+
+<div class="header-toolbar">
+    <div class="container">
+        <div class="header-toolbar-row">
+            <div class="toolbar-btn toolbar-search-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-search" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="Search"
+                >
+                    <i class="fa fa-search fa-lg" aria-role="none"></i>
+                </button>
+                <div 
+                    class="toolbar-search-bar-wrapper dropdown-menu dropdown-menu-right"
+                    aria-labelledby="toolbar-search"
+                >
+                      <form action="https://www.eclipse.org/home/search" method="get">
+                    <div class="search-bar">
+                        <input class="search-bar-input" name="q" placeholder="Search" />
+                        <button>
+                            <i class="fa fa-search" type="submit"></i>
+                        </button>
+                    </div>
+                      </form>
+                </div>
+            </div>
+            <div class="toolbar-btn toolbar-user-menu-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-user-menu" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="User Menu"
+                >
+                    <i class="fa fa-user fa-lg"></i>
+                </button>
+                <ul class="toolbar-user-menu dropdown-menu dropdown-menu-right text-center"
+                    aria-labelledby="toolbar-user-menu">
+                    <li>
+                        <a href="https://accounts.eclipse.org/user">
+                            <i class="fa fa-user"></i>
+                            View My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://accounts.eclipse.org/user/edit">
+                            <i class="fa fa-edit"></i>
+                            Edit My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a class="toolbar-manage-cookies">
+                            <i class="fa fa-wrench"></i>
+                            Manage Cookies
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header-navbar-wrapper">
+    <div class="container">
+        <div class="header-navbar">
+            <div class="header-navbar-brand">
+                <a class="logo-wrapper" href="/4diac/" title="Eclipse 4diac">
+                    <img src="/4diac/img/4diac_Logo_2024.svg" alt="" width="55%" />
+                </a>
+            </div>
+            
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="header-navbar-nav">
+    <ul class="header-navbar-nav-links">
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="fordiac-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Eclipse 4diac
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/news/" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    News
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="events-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Events
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/support/" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Support
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/contribute/" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Contribute
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="documentation-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Documentation
+                    </button>
+                
+            </li>
+        
+    </ul>
+</nav>
+
+
+
+
+
+            <div class="header-navbar-end">
+                
+                   <a 
+                  class="header-navbar-end-download-btn btn btn-primary" 
+                  href="/4diac/download/" 
+                   >
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download
+                  </a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+                    <i class="fa fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+    
+
+
+
+
+<nav class="mobile-menu hidden" aria-expanded="false">
+    <ul>
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="fordiac-menu">
+      <span>Eclipse 4diac</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="fordiac-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-projects-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Explore Eclipse 4diac</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-projects-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_ide/">
+                      4diac IDE
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_forte/">
+                      4diac FORTE
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_fbe/">
+                      4diac FBE
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_lib/">
+                      4diac LIB
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_sys/">
+                      4diac SYS
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-community-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Our Community</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-community-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/team/">
+                      Committers
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://dev.eclipse.org/mailman/listinfo/4diac-dev">
+                      Mailing List
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org">
+                      Matrix Chat
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/support/#discussions">
+                      Q&amp;A / Discussions
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://github.com/eclipse-4diac">
+                      Report an Issue
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/news/">News</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="events-menu">
+      <span>Events</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="events-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-winterschools-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Winter Schools</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-winterschools-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/4diacwinterschool/">
+                      1st 4days of Eclipse 4diac Winter School, 2025
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-community-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Community Events</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-community-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/virt-community/">
+                      Eclipse 4diac Virtual Community Meetings
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_4days_of_4diac/">
+                      4days of 4diac, 2019
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_eclipse_insight/">
+                      Eclipse Insight: Cross Domain Engineering, 2019
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-etfa_workshops-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>ETFA Workshops</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-etfa_workshops-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2016/">
+                      7th 4diac Users&#39; Workshop @ ETFA 2016
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2015/">
+                      6th 4diac Users&#39; Workshop @ ETFA 2015
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2014/">
+                      5th 4diac Users&#39; Workshop @ ETFA 2014
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2013/">
+                      4th 4diac Users&#39; Workshop @ ETFA 2013
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2012/">
+                      3rd 4diac Users&#39; Workshop @ ETFA 2012
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2011/">
+                      2nd 4diac Users&#39; Workshop @ ETFA 2011
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2010/">
+                      1st 4diac Users&#39; Workshop @ ETFA 2010
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/support/">Support</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/contribute/">Contribute</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="documentation-menu">
+      <span>Documentation</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="documentation-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-getting_started-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Getting Started</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-getting_started-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/">
+                      Documentation Start
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/iec61499.html">
+                      Learn about IEC 61499
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/intro/4diacframework.html">
+                      Understand the Eclipse 4diac Framework
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-using-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Using Eclipse 4diac</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-using-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/tutorials/overview.html">
+                      Step by Step Tutorials
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/installation/installation.html">
+                      Install Eclipse 4diac
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/examples/examples.html">
+                      4diac IDE Examples
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/faq.html">
+                      Frequently Asked Questions
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="doc-details-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Details</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="doc-details-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/io_config/io_config.html">
+                      IO Configuration for the Different Platforms
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/communication/communication.html">
+                      Communication Protocols
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/doc/development/development.html">
+                      Development of 4diac FORTE and 4diac IDE
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eclipsefdn-mega-menu">
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="fordiac-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Eclipse 4diac</p>
+                <p class="mega-menu-submenu-featured-story-text">      Eclipse 4diac™ provides an open source infrastructure
+      for distributed industrial process measurement and control systems
+      based on the IEC 61499 standard.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Explore Eclipse 4diac</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_ide/">4diac IDE</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_forte/">4diac FORTE</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_fbe/">4diac FBE</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_lib/">4diac LIB</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_sys/">4diac SYS</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Our Community</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/team/">Committers</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://dev.eclipse.org/mailman/listinfo/4diac-dev">Mailing List</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org">Matrix Chat</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/support/#discussions">Q&amp;A / Discussions</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://github.com/eclipse-4diac">Report an Issue</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="news-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="events-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Events</p>
+                <p class="mega-menu-submenu-featured-story-text">    Eclipse 4diac™ has been founded to support research activities and industrial adoption of distributed automation systems. 
+    Over time 4diac grew with new versions, improvements and new features for the modeling of distributed automation systems. 
+    Moreover, a special focus was the performance improvement of the runtime system. Even more important, 4diac as an 
+    IEC 61499-compliant distributed control environment for industrial and research applications has proven 
+    to be a stable basis for further research towards the next generation of distributed automation and control systems based 
+    on open standards. To get in contact with its users and share results and future plans 4diac participates at different events, 
+    which are collected here:
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Winter Schools</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/4diacwinterschool/">1st 4days of Eclipse 4diac Winter School, 2025</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Community Events</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/virt-community/">Eclipse 4diac Virtual Community Meetings</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_4days_of_4diac/">4days of 4diac, 2019</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_eclipse_insight/">Eclipse Insight: Cross Domain Engineering, 2019</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">ETFA Workshops</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2016/">7th 4diac Users&#39; Workshop @ ETFA 2016</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2015/">6th 4diac Users&#39; Workshop @ ETFA 2015</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2014/">5th 4diac Users&#39; Workshop @ ETFA 2014</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2013/">4th 4diac Users&#39; Workshop @ ETFA 2013</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2012/">3rd 4diac Users&#39; Workshop @ ETFA 2012</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2011/">2nd 4diac Users&#39; Workshop @ ETFA 2011</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2010/">1st 4diac Users&#39; Workshop @ ETFA 2010</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="support-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Support</p>
+                <p class="mega-menu-submenu-featured-story-text">    support 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="contribute-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Contribute</p>
+                <p class="mega-menu-submenu-featured-story-text">    contribute to 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="documentation-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Documentation</p>
+                <p class="mega-menu-submenu-featured-story-text">    Documentation for Eclipse 4diac. 
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Getting Started</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/">Documentation Start</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/iec61499.html">Learn about IEC 61499</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/intro/4diacframework.html">Understand the Eclipse 4diac Framework</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Using Eclipse 4diac</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/tutorials/overview.html">Step by Step Tutorials</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/installation/installation.html">Install Eclipse 4diac</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/examples/examples.html">4diac IDE Examples</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/faq.html">Frequently Asked Questions</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Details</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/doc/io_config/io_config.html">IO Configuration for the Different Platforms</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/communication/communication.html">Communication Protocols</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/doc/development/development.html">Development of 4diac FORTE and 4diac IDE</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<main>
+  <div class="container padding-bottom-30">
+    
+      <div class="row">
+        <div class="col-md-18">
+    
+    
+      
+
+
+
+
+
+
+
+<div class="default-breadcrumbs hidden-print" id="breadcrumb">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-24">
+        <ol aria-label="Breadcrumb" class="breadcrumb">
+          
+            
+              
+            
+              
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
+            </li>
+          
+            
+            <li  class="active" aria-current="page">
+              <a href="https://eclipse.dev/4diac/doc/io_config/ev3.html">Lego Mindstorms EV3</a>
+            </li>
+          
+          </ol>
+          
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+
+    
+      <h1>
+        
+          Lego Mindstorms EV3
+        
+      </h1>
+    
+
+
+
+  
+  <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section is a reference of the parameters that can be used in 4diac FORTE to access the I/O of the LMSEV3.
+Reading this section carefully without using them could be quite boring and even useless, because the details will be forgotten if not used.
+We recommend to give a quick reading in order to know what can be accessed using 4diac FORTE.
+The <a href="../examples/pidmotor.html">example</a> presents the control of a motor using a PID controller.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_standard_access"><a id="ev3_standard_parameters"></a>Standard Access</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_transparent_access">Transparent Access</h3>
+<div class="paragraph">
+<p>The standard access refers to the access through well defined I/O blocks, that allow transparency in the access of I/O in different platforms.
+Each block supports different parameters in the PARAM input, which defines the I/O of the system that will be accessed.
+The blocks used to control the I/O are named with two capital letters.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The first letter indicates the direction:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Q: output</p>
+</li>
+<li>
+<p>I: input</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>The second letter indicates the size of it:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>X: boolean</p>
+</li>
+<li>
+<p>W: Word (16 bits)</p>
+</li>
+<li>
+<p>D: Double (32 bits)</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>So, for example a boolean input is read using the functional block IX.
+The output word, for example the PWM value of a motor is controlled with a QW block. Not all sizes are implemented in all platforms.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_parameters_for_the_lego_mindstorms_ev3">Parameters for the Lego Mindstorms EV3</h3>
+<div class="paragraph">
+<p>The parameters for the Lego Mindstorms EV3 were designed for general use, and extension of them is easy to achieve.
+The format of the parameters follow 2 important rules:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The only capital letters allowed are the A,B,C,D when used to define the output ports of the EV3 (outA, outB, outC, outD).</p>
+</li>
+<li>
+<p>The parameters are given in three parts separated by points:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>port.typeOfIO.specific</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>port</p>
+<div class="paragraph">
+<p>The first part of the parameter specifies the port of the Input or Output.
+For the EV3, the possible values are [in1 | in2 | in3 | in4 | outA | outB | outC | outD | emb].
+The first eight are directly related to the actual ports of the EV3.
+The &#39;emb&#39; port refers to anything that can be managed in the EV3 but not in the I/O ports, until now the leds and buttons, but in the future the screen and speaker would also be reference with the &#39;emb&#39; port.</p>
+</div>
+</li>
+<li>
+<p>typeOfIO</p>
+<div class="paragraph">
+<p>The second part, specifies what is actually connected to the specified port.
+The possible values are [sensor | sensorw | button | led | motor].
+The difference between &#39;sensor&#39; and &#39;sensorw&#39; is that &#39;sensor&#39; is used for boolean sensors, and &#39;sensorw&#39; for sensors which values are words (16 bits).
+The &#39;led&#39; and &#39;button&#39; are used to control the embedded leds and buttons of the EV3.
+&#39;motor&#39; is used for connected motors in any of the outputs.</p>
+</div>
+<div class="paragraph">
+<p>It must be clear that not all of the types can be used with any port.
+For example a led is only an output, so if used with a input, for example IX it won’t intialize.
+Also, if used to control as a word QW, it won’t initialize either.</p>
+</div>
+</li>
+<li>
+<p>specific</p>
+<div class="paragraph">
+<p>As its name says, this third parameter has no general form, and can also be formed of other several parameters separated by points(as in case of the led). Depending of the second parameter, the allowed values for this one are different, and it will be seen in the follow section.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_specific_parameters">Specific Parameters</h3>
+<div class="paragraph">
+<p>For each possible typeOfIO, the list of possible specific part of the parameters are presented, followed by the limitations and examples.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>led (output only):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>right.red</p>
+</li>
+<li>
+<p>right.green</p>
+</li>
+<li>
+<p>left.red</p>
+</li>
+<li>
+<p>left.green</p>
+<div class="paragraph">
+<p>Each specific is used to control each one of the four leds available.
+The orange led doesn’t exist, but is the sum of red + green, so in order to turn on an orange light of the left for example, both the green and red of the left must be turned on.</p>
+</div>
+<div class="paragraph">
+<p>Limitation: &#39;led&#39; must be used with QX and with the &#39;emb&#39; port.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+</li>
+<li>
+<p>emb.led.right.red</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>button (input only):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>up</p>
+</li>
+<li>
+<p>down</p>
+</li>
+<li>
+<p>left</p>
+</li>
+<li>
+<p>right</p>
+</li>
+<li>
+<p>enter</p>
+</li>
+<li>
+<p>backspace</p>
+<div class="paragraph">
+<p>Reads the buttons of the EV3.</p>
+</div>
+<div class="paragraph">
+<p>Limitation: &#39;button&#39; must be used with IX and with the &#39;emb&#39; port.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+</li>
+<li>
+<p>emb.button.enter</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>sensorw:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>[0-N] (input only)</p>
+</li>
+<li>
+<p>mode (input or output)</p>
+<div class="paragraph">
+<p>The sensorw is used with sensors that read a word value instead of a boolean and normally are more complex than regular touch sensors (boolean).
+Each sensor specifies how it retrieves the data, how many values and the format of it.
+Specifications of the supported sensors by the ev3dev are listed <a href="http://www.ev3dev.org/docs/sensors/">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>Each one of the sensors&#39; values is stored in a different file in the EV3.
+The specific [0-N] determines which file it is.
+For example the GYRO sensor can show the angle and the rotation speed.
+The values are store in value0 and value1 files, so to access just the rotation speed, the &#39;1&#39; specific must be used.
+The actual value must be checked in the link above.</p>
+</div>
+<div class="paragraph">
+<p>The &#39;mode&#39; specific is used to change the mode of the sensor according to its specification.
+As an input, mode will retrieve the mode in which the sensor is working, and as output, the mode will be changed.
+The mode are mirrored using a 0 index according to the specification of the sensor.</p>
+</div>
+<div class="paragraph">
+<p>Limitation: sensorw cannot be used with boolean blocks (QX or IX).
+It must be used with an in[1-4] port, but is not restricted to input or output blocks when the specific &#34;mode&#34; is used.</p>
+</div>
+<div class="paragraph">
+<p>Limitation: the specific [0-N] can be used only as input, and the number shouldn’t be greater than the allowed by the sensor in the mode that’s working at the moment of initialization.</p>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="paragraph">
+<p>Let’s see an example of using the GYRO sensor specified <a href="http://www.ev3dev.org/docs/sensors/lego-ev3-gyro-sensor/">here</a>.
+The GYRO works in GYRO-ANG by default, showing only one value, then the only possible parameter is:</p>
+</div>
+</li>
+<li>
+<p>in1.sensorw.0 (IW)</p>
+<div class="paragraph">
+<p>If a 1 instead of a 0 were used, the initialization would have failed.</p>
+</div>
+<div class="paragraph">
+<p>If the mode of the sensor wants to be retrieve, the &#34;mode&#34; specific should be used with the input IW.</p>
+</div>
+</li>
+<li>
+<p>in1.sensorw.mode (IW)</p>
+<div class="paragraph">
+<p>Because the GYRO sensor by default is in GYRO-ANG and GYRO-ANG is the first of the list according to the link above, the FB will read a 0 (0-index from the list in the link).</p>
+</div>
+<div class="paragraph">
+<p>If then the sensor’s mode is changed using a QW with &#34;mode&#34; specific</p>
+</div>
+</li>
+<li>
+<p>in1.sensorw.mode (QW)</p>
+<div class="paragraph">
+<p>and writing a value 3 (0-index mode), the sensor’s mode will change to GYRO-G&amp;A wich shows 2 values, angle and rotation speed.
+After changing the mode, two IW blocks with parameters</p>
+</div>
+</li>
+<li>
+<p>in1.sensorw.0 (IW)</p>
+</li>
+<li>
+<p>in1.sensorw.1 (IW)</p>
+<div class="paragraph">
+<p>will retrieve the both values.</p>
+</div>
+<div class="paragraph">
+<p>ATTENTION: To get the rotation speed, the block with parameter &#34;in1.sensorw.1&#34; must be initialized AFTER the mode has been changed, because before changing the mode, the file for the rotation speed doesn’t exist in the system and cannot be read.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>sensor (input only):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>[0-N]</p>
+<div class="paragraph">
+<p>Used to control touch sensor (binary). sensor&#39; specific is a subset of sensorw&#39; specific.
+It doesn’t allow mode, and even though the value is always stored in &#39;0&#39;, the &#39;0&#39; specific must be used for two mainly reasons:
+1. To have a standardized way of showing the parameters, and 2. to avoid problems in the future where a new sensor is stored in &#39;1&#39; instead of &#39;0&#39;.</p>
+</div>
+<div class="paragraph">
+<p>+
+Limitations: &#39;sensor&#39; must be used with QX and with an in[1-4] port.</p>
+</div>
+<div class="paragraph">
+<p>+
+Example:</p>
+</div>
+</li>
+<li>
+<p>in2.sensor.0</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>motor</p>
+<div class="ulist">
+<ul>
+<li>
+<p>enable (output boolean only)</p>
+</li>
+<li>
+<p>reset (output boolean only)</p>
+</li>
+<li>
+<p>stop (output word only)</p>
+</li>
+<li>
+<p>pwm (input word or output word only)</p>
+</li>
+<li>
+<p>position (input or output double word only)</p>
+</li>
+<li>
+<p>speed (input word only)</p>
+</li>
+<li>
+<p>rot (input word only)</p>
+<div class="paragraph">
+<p>The &#39;enable&#39; controls the state of the motor according to the OUT input of QX.
+A TRUE value turns ON the motor and a FALSE value turns it OFF.
+It must be used with QX.</p>
+</div>
+<div class="paragraph">
+<p>The &#39;reset&#39; zeroes the position, pwm and speed values, and turn off the motor with a TRUE value in OUT.
+A FALSE value in OUT has no effect.
+It must be used with QX</p>
+</div>
+<div class="paragraph">
+<p>The &#39;stop&#39; specific must not be confused with stopping the motor, because it specifies the way the motor behaves when PWM is zero according to the value written to OUT.
+It must be used with QW</p>
+</div>
+</li>
+<li>
+<p>0: [coast]: Removes power from the motor. The motor will freely coast to a stop.</p>
+</li>
+<li>
+<p>1: [brake]: Removes power from the motor and creates a passive electrical load.
+This is usually done by shorting the motor terminals together.
+This load will absorb the energy from the rotation of the motors and cause the motor to stop more quickly than coasting.</p>
+</li>
+<li>
+<p>3: [hold]: Causes the motor to actively try to hold the current position.
+If an external force tries to turn the motor, the motor will &#34;push back&#34; to maintain its position.</p>
+<div class="paragraph">
+<p>The &#39;pwm&#39; reads the current pwm when using with IW of the motor or writes the desired pwm for the motor when using with QW.</p>
+</div>
+<div class="paragraph">
+<p>The &#39;position&#39; reads the current position of the motor.
+In how many steps a rotation is divided, can be read from using the &#39;rot&#39; specific.
+It must be used with ID.
+The position can be written, which sets the position to the desired value.</p>
+</div>
+<div class="paragraph">
+<p>The &#39;speed&#39; reads the current speed in positions per second.
+It must be used with IW.</p>
+</div>
+<div class="paragraph">
+<p>The &#39;rot&#39; reads the motor specification of how many steps are in one turn of the motor.
+This can be read from the specifications of the motor normally and it’s not necessary to add the block in an application just to read this information.
+It must be used with IW.</p>
+</div>
+<div class="paragraph">
+<p>Limitations: Event though each specific has its limitation regarding the type of block to use with, the typeOfIO &#34;motor&#34; must be used with one of the outputs of the EV3 out[A-B]</p>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+</li>
+<li>
+<p>outB.motor.enable (QX)</p>
+</li>
+<li>
+<p>outB.motor.pwm (QW writes the desired pwm, IW reads the actual pwm)</p>
+</li>
+<li>
+<p>outB.motor.position (ID)</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ev3_cheatsheet">I/O Cheatsheet</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section doesn’t add any new information, but summarize which parameters and FB should be used with each I/O.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Touch sensor connected to an input port.
+It must be used with IX</p>
+<div class="ulist">
+<ul>
+<li>
+<p>in[X].sensor.[Y]</p>
+<div class="paragraph">
+<p>where X is the number of the input in the EV3 (1-4) and Y is the value number where to read from according to the sensor.
+Read the specification of the sensor to be sure. Start trying from 0 if no information is available.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>One of the 6 buttons of the EV3. It must be used with IX</p>
+<div class="ulist">
+<ul>
+<li>
+<p>emb.button.[up | down | left | right | enter | backspace]</p>
+<div class="paragraph">
+<p>Only one of the inputs can be selected for each IX.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Led of the EV3. It must be used with QX.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>emb.led.[right | left].[red | green]</p>
+<div class="paragraph">
+<p>The orange led does not exist, but is the sum of green + red.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Motor connected to an output port.
+The FB to use depends on the parameter of the motor that wants to be handled.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Turn ON/OFF the motor. It must be used with QX.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>out[X].motor.enable</p>
+<div class="paragraph">
+<p>Where X is the output capital letter of the EV3 (A-D, in uppercase).
+A TRUE value in OUT input turns the motor ON, and a FALSE value turns the motor OFF.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Reset the motor variables and stop. It must be used with QX.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>out[X].motor.reset</p>
+<div class="paragraph">
+<p>Where X is the output capital letter of the EV3 (A-D, in uppercase).
+A TRUE value in OUT resets all of the motor parameter attributes to their default values.
+This will also have the effect of stopping the motor.
+A FALSE value doesn’t have any effect.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Read current duty cycle (pwm) from a motor. It must be used with IW.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>out[X].motor.pwm</p>
+<div class="paragraph">
+<p>Where X is the output letter of the EV3 (A-D, in uppercase).
+The read value is between -100 and 100.
+It might seem confusing reading an input from an output but even though the signal is from an output, it is an input to the system.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Read the current speed of the motor. It must be used with IW.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>out[X].motor.speed</p>
+<div class="paragraph">
+<p>Where X is the output letter of the EV3 (A-D, in uppercase).
+It reads the velocity in steps per second.
+How many steps are in one turn of the motor can be read with the parameter &#34;rot&#34; (see next).
+If a motor has 360 steps in one turn and the speed is 720, then the speed is 2 rotations per second.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Read the number of steps in each turn. It must be used with IW.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>out[X].motor.rot</p>
+<div class="paragraph">
+<p>Where X is the output letter of the EV3 (A-D, in uppercase).
+This value  is fixed in the motor and can be found in the specifications of the motor and it normally shouldn’t be used in an application.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Read the current position of the motor. It must be used with ID.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>out[X].motor.position</p>
+<div class="paragraph">
+<p>Where X is the output letter of the EV3 (A-D, in uppercase).
+If the motor was in position 0 and the &#34;rot&#34; parameter returns 360, then it makes 3 turns, the position will be 1080.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Write the position of a motor. It must be used with QD.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>out[X].motor.position</p>
+<div class="paragraph">
+<p>Where X is the output letter of the EV3 (A-D, in uppercase).
+Sets the current position to a specific value.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Write a desired duty cycle (pwm) for a motor. It must be used with QW.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>out[X].motor.pwm</p>
+<div class="paragraph">
+<p>Where X is the output letter of the EV3 (A-D, in uppercase).
+The value range should be between -100 and 100.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Specify a desired behaviour when the pwm is set to 0. It must be used with QW.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>out[X].motor.stop</p>
+<div class="paragraph">
+<p>Where X is the output letter of the EV3 (A-D, in uppercase).
+Possible values are 0, 1 and 2:</p>
+</div>
+</li>
+<li>
+<p>0: [coast]: Removes power from the motor. The motor will freely coast to a stop.</p>
+</li>
+<li>
+<p>1: [brake]: Removes power from the motor and creates a passive electrical load.
+This is usually done by shorting the motor terminals together.
+This load will absorb the energy from the rotation of the motors and cause the motor to stop more quickly than coasting.</p>
+</li>
+<li>
+<p>3: [hold]: Causes the motor to actively try to hold the current position.
+If an external force tries to turn the motor, the motor will push back to maintain its position.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>sensor with values of 16 bits (not touch sensor)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Read a sensor value. It must be used with IW.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>in[X].sensorw.[Y]</p>
+<div class="paragraph">
+<p>where X is the number of the input in the EV3 (1-4) and Y is the value number where to read from according to the sensor.
+Read the specification of the sensor to be sure. Start trying from 0 if no information is available.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Read a sensor’s mode. It must be used with IW.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>in[X].sensorw.mode</p>
+<div class="paragraph">
+<p>where X is the number of the input in the EV3 (1-4).
+The read value is an index number according to the list of modes of the sensor.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Write a sensor’s mode. It must be used with QW.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>in[X].sensorw.mode</p>
+<div class="paragraph">
+<p>where X is the number of the input in the EV3 (1-4).
+The value to be written should be the index number according to the list of modes of the sensor.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_custom_access"><a id="ev3_custom_parameters"></a>Custom Access</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The custom access allows the user to access part of the system that are not implemented in the standard access.
+Care must be taken, since critical part of the system might be accessed.
+For each block, the specification of the new inputs and outputs are given.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>fileWriter: Block to write to any file in the system. The special
+inputs are:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FILE_NAME: absolut path of the file.</p>
+<div class="paragraph">
+<p>Example: /sys/class/tacho-motor/motor1/command</p>
+</div>
+</li>
+<li>
+<p>S1: String to write to the file</p>
+<div class="paragraph">
+<p>Example: run-direct</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>fileReader: Block to read from any file in the system.
+The special inputs and outpus are:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>FILE_NAME [input]: absolut path of the file.</p>
+<div class="paragraph">
+<p>Example: /sys/class/tacho-motor/motor1/duty_cycle</p>
+</div>
+</li>
+<li>
+<p>S1 [output]: String read from the file</p>
+<div class="paragraph">
+<p>Example: 58</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_where_to_go_from_here">Where to go from here?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can see the supported protocols:</p>
+</div>
+<div class="paragraph">
+<p><a href="../communication/communication.html">Supported Communication Protocols</a></p>
+</div>
+<div class="paragraph">
+<p>You can see the examples:</p>
+</div>
+<div class="paragraph">
+<p><a href="../examples/examples.html">4diac Examples</a></p>
+</div>
+<div class="paragraph">
+<p>If you want to go back to the Where to Start page, we leave you here a fast access</p>
+</div>
+<div class="paragraph">
+<p><a href="../doc_overview.html">Where to Start</a></p>
+</div>
+<div class="paragraph">
+<p>Or <a href="#top">Go to top</a></p>
+</div>
+</div>
+</div>
+
+
+  
+
+    
+
+
+     
+      
+      </div>
+        <div class="col-md-6  padding-bottom-30">
+          
+            
+
+
+
+
+
+
+  
+
+  
+    
+  
+  
+  
+
+  
+
+
+
+          
+        </div>
+      </div>
+    
+  </div>
+</main>
+  
+  
+  
+
+
+
+
+  
+
+<p id="back-to-top">
+  <a class="visible-xs" href="#">Back to the top</a>
+</p>
+<footer class="footer" id="footer">
+  <div class="container">
+    
+
+<div class="footer-end-social-container margin-bottom-30">
+  
+
+
+
+
+
+
+
+
+
+
+<div class="footer-end-social">
+    <p class="footer-end-social-text hidden-xs">Follow Us:</p>
+    <ul class="footer-end-social-links list-inline">
+        <li>
+            <a class="link-unstyled" href="https://x.com/4diac" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.youtube.com/@4diac177" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.linkedin.com/groups/6949091/" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        </li>
+    </ul>
+    <p class="footer-end-social-text hidden-xs">Support:</p>
+    <ul class="footer-end-social-links list-inline">
+    	<li>
+            <a class="link-unstyled" href="https://github.com/eclipse-4diac" title="Eclipse 4diac Github Organization">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Github Organization</span>
+                </span>
+            </a>
+        </li> 
+    	<li>
+            <a class="link-unstyled" href="https://dev.eclipse.org/mailman/listinfo/4diac-dev" title="Eclipse 4diac Developer Mailinglist">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Developer Mailinglist</span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        	<a class="link-unstyled" href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org"  title="Eclipse 4diac Matrix Channels">
+        		<img src="/4diac/img/matrix.png" alt="Eclipse 4diac Matrix Channels"/></a>
+            <span class="sr-only">Eclipse 4diac Matrix Channels</span>
+        </li>
+    </ul>
+</div>
+
+
+</div>
+
+
+    <div class="footer-sections row equal-height-md font-bold">
+        
+        <div class="col-md-15">
+          <div class="row">
+            
+
+
+  
+  <section id="footer-legal" class="footer-section col-sm-8">
+    <div class="menu-heading">Legal</div>
+    <ul class="nav">
+      <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+      <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+      <li><a href="https://www.eclipse.org/legal/compliance/">Compliance</a></li>
+      <li><a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php">Code of Conduct</a></li>
+      <li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
+      <li><a class="toolbar-manage-cookies" href="#" onclick="event.preventDefault()">Manage Cookies</a></li>
+    </ul>
+  </section>
+
+
+ 
+ <section id="footer-more" class="footer-section col-sm-8">
+   <div class="menu-heading">More</div>
+   <ul class="nav">
+     <li><a href="https://www.eclipse.org/security/">Report a Vulnerability</a></li>
+     <li><a href="https://www.eclipsestatus.io/">Service Status</a></li>
+     
+     <li><a href="/4diac/support/">Support</a></li>
+   </ul>
+ </section>
+
+
+          </div>
+        </div>
+        
+
+
+
+
+  <div id="footer-end" class="footer-section col-md-8 col-md-offset-1 col-sm-24">
+    
+  </div>
+
+
+    </div>
+    
+
+
+
+<div class="col-sm-24 margin-top-20">
+  <div class="row">
+    <div id="copyright" class="col-sm-16">
+      <p id="copyright-text">Copyright &copy; Eclipse Foundation AISBL. All Rights Reserved.</p>
+    </div>
+    
+  </div>
+</div>
+
+    <a href="#" class="scrollup">Back to the top</a>
+  </div>
+</footer>
+
+
+
+
+  
+  <div id="footer-js">
+  
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1759498887"></script>
+  
+
+  
+  
+
+  
+  <script>
+  (function($, document) {
+    
+    
+  })(jQuery, document);
+  </script>
+
+  
+</div>
+
+</body>
+</html>
+

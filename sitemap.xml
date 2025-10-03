@@ -353,8 +353,6 @@
     <loc>https://eclipse.dev/4diac/support/</loc>
     <lastmod>2020-03-01T16:09:45-04:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/io_config/wago/</loc>
-  </url><url>
     <loc>https://eclipse.dev/4diac/doc/specs/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/xqueries.html</loc>
@@ -365,7 +363,7 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/installation/docker.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/installation/freeRTOSLwIP.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/installation/freertos_lwip.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/installation/wago.html</loc>
   </url><url>
@@ -375,13 +373,13 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/simulation.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/development/forte_communicationArchitecture.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/development/forte_communicationarchitecture.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/installation/eclipse.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/installation/visualStudio.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/installation/visualstudio.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/installation/visualStudioCode.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/installation/visualstudiocode.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/development/contribute.html</loc>
   </url><url>
@@ -397,7 +395,7 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/examples/examples.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/development/externalEvent_example.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/development/externalevent_example.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/fbdkip.html</loc>
   </url><url>
@@ -411,82 +409,84 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/intro/iec61499.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/examples/pidMotor.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/examples/pidmotor.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/installation/installation.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/io_config/EV3.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/io_config/ev3.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/development/libraryManagement.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/development/librarymanagement.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/modbus.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/development/forte_monitoring.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/communication/mqttPaho.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/communication/mqttpaho.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/io_config/Odroid.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/io_config/odroid.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/communication/opcDA.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/communication/opcda.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/communication/opcUA.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/communication/opcua.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/communication/openPOWERLINK.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/communication/openpowerlink.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/other_features/overview.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/io_config/PiFace.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/io_config/piface.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/other_features/replayDebugger.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/other_features/replaydebugger.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/io_config/RevolutionPi.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/io_config/revolutionpi.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/examples/bbbTrafficControl.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/examples/bbbtrafficcontrol.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/installation/pikeos_posix.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/installation/minGW.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/installation/mingw.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/installation/bootWithForte.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/installation/bootwithforte.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/tutorials/overview.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/tutorials/use4diacLocally.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/tutorials/use4diaclocally.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/tutorials/distribute4diac.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/tutorials/use4diacRemotely.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/tutorials/use4diacremotely.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/tutorials/createOwnTypes.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/tutorials/createowntypes.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/tutorials/otherUseful.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/tutorials/otheruseful.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/tutorials/advancedFeatures.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/tutorials/advancedfeatures.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/tutorials/dynamicTypeLoader.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/tutorials/dynamictypeloader.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/communication.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/development/swtBotTestsDocumentation.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/development/swtbottestsdocumentation.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/development/swtBotTestsStructure.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/development/swtbottestsstructure.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/io_config/SysFs.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/io_config/sysfs.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/tags/</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/intro/4diacFramework.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/intro/4diacframework.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/tutorials/tutorials.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/development/ideUpdateTargetPlatform.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/development/ideUpdatetargetplatform.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/io_config/plc01a1.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/installation/legoMindstormEv3.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/installation/legomindstormev3.html</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/doc/io_config/wago_pfc200.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/examples/xplus3.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/io_config/uMIC.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/io_config/umic.html</loc>
   </url>
 </urlset>
