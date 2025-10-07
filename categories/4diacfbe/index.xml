@@ -10,6 +10,49 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Sun, 09 Feb 2025 14:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacfbe/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #55</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-55/</link>
+      <pubDate>Fri, 03 Oct 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-55/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;BlockFBNetworkElement refactoring&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced &lt;code&gt;BlockFBNetworkElement&lt;/code&gt; for interface-providing elements&lt;/li&gt;
+&lt;li&gt;Changed all usages of &lt;code&gt;getFBNetworkElement&lt;/code&gt; to &lt;code&gt;getBlockFBNetworkElement&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reworked commands, handlers, actions, and property sheets for the new block model&lt;/li&gt;
+&lt;li&gt;Reworked edit parts, policies, debug, and deploy plugins&lt;/li&gt;
+&lt;li&gt;Reworked model search and remaining FB interpreter&lt;/li&gt;
+&lt;li&gt;Fixed BlockFBNetworkElement issues and enablement check in map handler&lt;/li&gt;
+&lt;li&gt;Updated &lt;code&gt;AbstractUpdateFBNElementCommand&lt;/code&gt; with helpers for mixed FBs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Other improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated internal references to new &lt;code&gt;EMB_RES&lt;/code&gt; namespace&lt;/li&gt;
+&lt;li&gt;Renamed Hardware lib to System lib with dependency to event lib&lt;/li&gt;
+&lt;li&gt;Disabled forcing of InOut variables&lt;/li&gt;
+&lt;li&gt;Fixed renaming struct not updating all references&lt;/li&gt;
+&lt;li&gt;Added support for composite types in network traces&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;CompositeFBTypeRuntime&lt;/code&gt; to model&lt;/li&gt;
+&lt;li&gt;Renamed &lt;code&gt;org.eclipse.fordiac.ide.emf.compare.MatchEngine&lt;/code&gt; package to follow Java conventions&lt;/li&gt;
+&lt;li&gt;Exported translatable string&lt;/li&gt;
+&lt;li&gt;Cleaned issues reported by Sonar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Core improvements&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #54</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-54/</link>
       <pubDate>Fri, 26 Sep 2025 17:00:00 +0000</pubDate>

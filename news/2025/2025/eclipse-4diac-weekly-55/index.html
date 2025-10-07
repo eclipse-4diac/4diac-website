@@ -16,13 +16,19 @@
   
 
 
-<title>Updating the Target Platform Used by 4diac IDE | The Eclipse Foundation</title>
-<meta property="og:title" content="Updating the Target Platform Used by 4diac IDE | The Eclipse Foundation" />
-<meta name="twitter:title" content="Updating the Target Platform Used by 4diac IDE | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #55 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #55 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #55 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from September 26 to October 03, 2025.
+
+This week brought major progress in the …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 26 to October 03, 2025.
+
+This week brought major progress in the …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from September 26 to October 03, 2025.
+
+This week brought major progress in the …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/doc/development/ideUpdatetargetplatform.html" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-55/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,11 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/doc/development/ideUpdatetargetplatform.html" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-55/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1759818439">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1759818439">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1759818637">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1759818637">
 <script>
 	
 		var tableClasses = "table";
@@ -1268,18 +1274,25 @@
             
               
             
+              
+            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
+              <a href="https://eclipse.dev/4diac/news/">News</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/doc/development/ideUpdatetargetplatform.html">Updating the Target Platform Used by 4diac IDE</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-55/">Eclipse 4diac Weekly #55</a>
             </li>
           
           </ol>
@@ -1296,7 +1309,7 @@
     
       <h1>
         
-          Updating the Target Platform Used by 4diac IDE
+          Eclipse 4diac Weekly #55
         
       </h1>
     
@@ -1304,69 +1317,77 @@
 
 
   
-  <div class="paragraph">
-<p>For upgrading to new Eclipse platform versions the following steps need to be done:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Update org.eclipse.fordiac.ide.product.target in the org.eclipse.fordiac.ide.product plug-in</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Locate <a href="https://github.com/eclipse-4diac/4diac-ide/blob/develop/plugins/org.eclipse.fordiac.ide.product/org.eclipse.fordiac.ide.product.target" class="bare">https://github.com/eclipse-4diac/4diac-ide/blob/develop/plugins/org.eclipse.fordiac.ide.product/org.eclipse.fordiac.ide.product.target</a></p>
-</li>
-<li>
-<p>Open it in a plain text editor</p>
-</li>
-<li>
-<p>Go through all entries check for new urls and new versions</p>
-</li>
-<li>
-<p>At the end open the <code>org.eclipse.fordiac.ide.product.target</code> in the target editor to verify all upgrades work. Resolve any problems accordingly</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Update pom.xml in the 4diac IDE’s source root directory.
-At least the following steps have to be done:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Check tycho.version</p>
-</li>
-<li>
-<p>Update tycho-repo.url to the new target platform version</p>
-</li>
-<li>
-<p>Check org.eclipse.equinox.executable version range.
-  Attention this has to be done on two places in the file.<br/>
-For the version check the latest <a href="https://download.eclipse.org/eclipse/downloads/">release overview page</a>.
-There check for <em>Eclipse Platform Launcher Executables</em>.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Regenerate all model and model edit code from the models plug-in.</p>
-</li>
-<li>
-<p>Run product from Eclipse IDE using product editor, i.e., press the synchronize button and then the &#34;Launch an Eclipse Application&#34;</p>
-</li>
-<li>
-<p>Run Maven install for pom.xml in the 4diac IDE’s source root directory locally</p>
-</li>
-<li>
-<p>Test if the generated product can be executed. The generated products are in:<br/>
-`/org.eclipse.4diac.ide/plugins/org.eclipse.fordiac.ide.product/target/products/org.eclipse.fordiac.ide.product</p>
-</li>
-<li>
-<p>Push to Gerrit so that CI build can also check if it is working</p>
-</li>
-</ul>
-</div>
 
+  
+
+
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from September 26 to October 03, 2025.</p>
+<p>This week brought major progress in the ongoing refactoring of the 4diac IDE with the transition to the new <code>BlockFBNetworkElement</code> model, alongside several fixes and improvements in 4diac FORTE and updates to the documentation.</p>
+</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<ul>
+<li>
+<p><strong>BlockFBNetworkElement refactoring</strong></p>
+<ul>
+<li>Introduced <code>BlockFBNetworkElement</code> for interface-providing elements</li>
+<li>Changed all usages of <code>getFBNetworkElement</code> to <code>getBlockFBNetworkElement</code></li>
+<li>Reworked commands, handlers, actions, and property sheets for the new block model</li>
+<li>Reworked edit parts, policies, debug, and deploy plugins</li>
+<li>Reworked model search and remaining FB interpreter</li>
+<li>Fixed BlockFBNetworkElement issues and enablement check in map handler</li>
+<li>Updated <code>AbstractUpdateFBNElementCommand</code> with helpers for mixed FBs</li>
+</ul>
+</li>
+<li>
+<p><strong>Other improvements</strong></p>
+<ul>
+<li>Updated internal references to new <code>EMB_RES</code> namespace</li>
+<li>Renamed Hardware lib to System lib with dependency to event lib</li>
+<li>Disabled forcing of InOut variables</li>
+<li>Fixed renaming struct not updating all references</li>
+<li>Added support for composite types in network traces</li>
+<li>Added <code>CompositeFBTypeRuntime</code> to model</li>
+<li>Renamed <code>org.eclipse.fordiac.ide.emf.compare.MatchEngine</code> package to follow Java conventions</li>
+<li>Exported translatable string</li>
+<li>Cleaned issues reported by Sonar</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li>
+<p><strong>Core improvements</strong></p>
+<ul>
+<li>Fixed string id mutex initialization</li>
+<li>Ensured values of in-out connections are written if not connected</li>
+<li>Stored symbolic references in resource initial values (only when Idle)</li>
+<li>Reworked variable access in FBs and structured types to allow member access</li>
+</ul>
+</li>
+<li>
+<p><strong>Refactoring and cleanup</strong></p>
+<ul>
+<li>Changed Hardware lib to System lib (CMake and namespaces updated)</li>
+<li>Fixed namespaces in Embrick and C interface modules</li>
+<li>Adopted Zephyr module to the new CMake structure</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-the-documentation">Enhancements and Fixes in the Documentation</h2>
+<ul>
+<li>Harmonized all file names to lowercase to avoid broken Hugo links when the documentation is integrated into the web-page</li>
+<li>Reworked installation instructions to reflect updated 4diac FORTE build infrastructure and removed obsolete content</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
+
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
+  
 
   
 
@@ -1565,7 +1586,7 @@ There check for <em>Eclipse Platform Launcher Executables</em>.</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1759818468"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1759818637"></script>
   
 
   
