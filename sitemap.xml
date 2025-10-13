@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://eclipse.dev/4diac/categories/4diacspecs/</loc>
+    <lastmod>2025-10-13T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2025-10-13T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/tags/communication-modelling/</loc>
+    <lastmod>2025-10-13T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-white-paper-on-improved-iec-61499-communication-modelling/</loc>
+    <lastmod>2025-10-13T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/tags/iec-61499/</loc>
+    <lastmod>2025-10-13T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/</loc>
+    <lastmod>2025-10-13T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/tags/research/</loc>
+    <lastmod>2025-10-13T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/tags/</loc>
+    <lastmod>2025-10-13T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/tags/white-paper/</loc>
+    <lastmod>2025-10-13T09:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
     <lastmod>2025-10-10T17:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/categories/</loc>
-    <lastmod>2025-10-10T17:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-56/</loc>
-    <lastmod>2025-10-10T17:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/news/2025/</loc>
     <lastmod>2025-10-10T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-55/</loc>
@@ -476,8 +497,6 @@
     <loc>https://eclipse.dev/4diac/doc/development/swtbottestsstructure.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/io_config/sysfs.html</loc>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/tags/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/intro/4diacframework.html</loc>
   </url><url>

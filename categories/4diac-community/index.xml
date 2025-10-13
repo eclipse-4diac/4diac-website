@@ -10,6 +10,18 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diac-community/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac White Paper on Improved IEC 61499 Communication Modelling</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-white-paper-on-improved-iec-61499-communication-modelling/</link>
+      <pubDate>Mon, 13 Oct 2025 09:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-white-paper-on-improved-iec-61499-communication-modelling/</guid>
+      <description>&lt;p&gt;The white paper, authored by &lt;strong&gt;Friederike Bruns&lt;/strong&gt; and &lt;strong&gt;Alois Zoitl&lt;/strong&gt;, proposes an extension to the IEC 61499 standard introducing messages and channels as explicit modelling concepts for communication across devices. With this approach, developers can capture &lt;strong&gt;timing&lt;/strong&gt;, &lt;strong&gt;quality of service (QoS)&lt;/strong&gt;, and &lt;strong&gt;synchronization&lt;/strong&gt; aspects directly in their application and system models.&lt;/p&gt;
+&lt;p&gt;By making communication a first-class modelling concept, distributed automation systems can be described more precisely, supporting &lt;strong&gt;platform independence, analysis, and reconfiguration&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #56</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-56/</link>
       <pubDate>Fri, 10 Oct 2025 17:00:00 +0000</pubDate>
