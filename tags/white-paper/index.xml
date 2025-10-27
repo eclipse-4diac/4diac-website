@@ -10,6 +10,45 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/white-paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac 3.0 Enters Feature Freeze!</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-3.0-enters-feature-freeze/</link>
+      <pubDate>Mon, 27 Oct 2025 09:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-3.0-enters-feature-freeze/</guid>
+      <description>&lt;p&gt;Over this period, we’ve seen more than &lt;strong&gt;5800 commits in 4diac IDE&lt;/strong&gt; and &lt;strong&gt;1400 commits in 4diac FORTE&lt;/strong&gt; — a tremendous community effort to modernize, optimize, and extend the capabilities of Eclipse 4diac.&lt;/p&gt;
+&lt;p&gt;With the feature freeze in place, our focus now shifts to &lt;strong&gt;stabilization and polishing&lt;/strong&gt; to ensure a solid and reliable 3.0 release, planned for about three weeks from now.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;highlights-of-eclipse-4diac-30&#34;&gt;Highlights of Eclipse 4diac 3.0&lt;/h2&gt;
+&lt;p&gt;This release brings a wealth of new functionality, improved usability, and major internal modernization across all core components.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #57</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-57/</link>
+      <pubDate>Fri, 17 Oct 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-57/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stability and robustness improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hardened multiple UI components such as &lt;code&gt;ZoomComboContributionItem&lt;/code&gt;, &lt;code&gt;DiagramOutlinePage&lt;/code&gt;, and various editors against race conditions and out-of-order refreshes&lt;/li&gt;
+&lt;li&gt;Added error-page handling and recovery for failed type or system editor loading, including a new &lt;strong&gt;Open Text Editor&lt;/strong&gt; button for error situations&lt;/li&gt;
+&lt;li&gt;Fixed issues such as incorrect pin names for error markers, NPEs in templates without manifests, and crashes in label providers or refactor testers&lt;/li&gt;
+&lt;li&gt;Improved operation history handling to prevent missing post-execute events when the history is full&lt;/li&gt;
+&lt;li&gt;Ensured proper nature validation when project files change and fixed color rendering for error/warning cells in the NatTable editor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Model and importer updates&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac White Paper on Improved IEC 61499 Communication Modelling</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-white-paper-on-improved-iec-61499-communication-modelling/</link>
       <pubDate>Mon, 13 Oct 2025 09:00:00 +0000</pubDate>
