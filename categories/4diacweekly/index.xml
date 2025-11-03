@@ -8,7 +8,36 @@
     <language>en</language>
     <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
-    <lastBuildDate>Fri, 17 Oct 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Oct 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #59</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-59/</link>
+      <pubDate>Fri, 31 Oct 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-59/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Enhanced transition condition support&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added full support for transition conditions in refactoring, validation, the ST resource, and the builder&lt;/li&gt;
+&lt;li&gt;Displayed warnings and error overlays directly on transitions, including tooltips with diagnostic messages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Annotation model performance and responsiveness&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Optimized annotation event handling for faster access and UI updates&lt;/li&gt;
+&lt;li&gt;Moved annotation updates to background jobs and dispatched UI events asynchronously for better responsiveness&lt;/li&gt;
+&lt;li&gt;Avoided full reloads of the annotation model on save by using incremental refreshes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Export and dependency management&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac 3.0 Enters Feature Freeze!</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-3.0-enters-feature-freeze/</link>
@@ -22,6 +51,30 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;highlights-of-eclipse-4diac-30&#34;&gt;Highlights of Eclipse 4diac 3.0&lt;/h2&gt;
 &lt;p&gt;This release brings a wealth of new functionality, improved usability, and major internal modernization across all core components.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #58</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-58/</link>
+      <pubDate>Fri, 24 Oct 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-58/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Editor stability and refactoring improvements&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Synchronized all Xtext editors before performing move or rename refactorings to prevent race conditions&lt;/li&gt;
+&lt;li&gt;Used the open editor input for Xtext refactorings to ensure consistent state between editors&lt;/li&gt;
+&lt;li&gt;Deferred handler activation until focus is gained in embedded Xtext editors to avoid premature triggers&lt;/li&gt;
+&lt;li&gt;Prevented duplicate type entry adapters and redundant file notifications, reducing UI thread race conditions&lt;/li&gt;
+&lt;li&gt;Avoided unnecessary resets during validation job disposal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Export and model fixes&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
