@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/events/4diacwinterschool/program/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1762167142">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1762167142">
-<link rel="stylesheet" href="/4diac/css/4daysofe4.css?v=1762167142">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1762249075">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1762249075">
+<link rel="stylesheet" href="/4diac/css/4daysofe4.css?v=1762249075">
 <script>
 	
 		var tableClasses = "table";
@@ -1496,60 +1496,42 @@ span.eclipsefdn-agenda-legend-icon-ind::after {
   
     
 
-  <div class="row content-nav-tab-toggle margin-top-0">
-    <div class="visible-xs">
-      <div class="vertical-align">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-agenda">
-          <p class="nav-label"><strong>Session tracks</strong></p>
-          <div class="hamburger-wrapper">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="navbar-collapse collapse" id="navbar-agenda">
-      <ul class="nav nav-tabs solstice-tabs content-nav-tab" role="tablist">
+  <div id="navbar-agenda">
+    <ul class="nav nav-tabs solstice-tabs content-nav-tab" role="tablist">
       
         <li role="presentation"class="active">
-          <a href="#agenda-sessions-0" data-toggle="tab" aria-controls="agenda-sessions-0" role="tab">
+          <a href="#agenda-sessions-mo-10.02" data-toggle="tab" aria-controls="agenda-sessions-mo-10.02" role="tab">
             Mo, 10.02
           </a>
         </li>
       
         <li role="presentation">
-          <a href="#agenda-sessions-1" data-toggle="tab" aria-controls="agenda-sessions-1" role="tab">
+          <a href="#agenda-sessions-tu-11.02" data-toggle="tab" aria-controls="agenda-sessions-tu-11.02" role="tab">
             Tu, 11.02
           </a>
         </li>
       
         <li role="presentation">
-          <a href="#agenda-sessions-2" data-toggle="tab" aria-controls="agenda-sessions-2" role="tab">
+          <a href="#agenda-sessions-we-12.02" data-toggle="tab" aria-controls="agenda-sessions-we-12.02" role="tab">
             We, 12.02
           </a>
         </li>
       
         <li role="presentation">
-          <a href="#agenda-sessions-3" data-toggle="tab" aria-controls="agenda-sessions-3" role="tab">
+          <a href="#agenda-sessions-th-13.02" data-toggle="tab" aria-controls="agenda-sessions-th-13.02" role="tab">
             Th, 13.02
           </a>
         </li>
       
         <li role="presentation">
-          <a href="#agenda-sessions-4" data-toggle="tab" aria-controls="agenda-sessions-4" role="tab">
+          <a href="#agenda-sessions-fr-14.02" data-toggle="tab" aria-controls="agenda-sessions-fr-14.02" role="tab">
             Fr, 14.02
           </a>
         </li>
       
-      </ul>
-    </div>
+    </ul>
   </div>
-  <div class="content-nav-tab-body tab-content no-gutters-mobile padding-40 margin-bottom-30" id="tabs-content">
+  <div class="content-nav-tab-body tab-content no-gutters-mobile margin-bottom-30" id="tabs-content">
   
 
   
@@ -1733,7 +1715,7 @@ span.eclipsefdn-agenda-legend-icon-ind::after {
 
     
     
-      <div role="tabpanel" class="tab-pane tab-pane active" id="agenda-sessions-0">
+      <div role="tabpanel" class="tab-pane active" id="agenda-sessions-mo-10.02">
     
   <div class="eclipsefdn-agenda-schedule">
     <table class="table">
@@ -2061,7 +2043,7 @@ span.eclipsefdn-agenda-legend-icon-ind::after {
 
     
     
-      <div role="tabpanel" class="tab-pane tab-pane" id="agenda-sessions-1">
+      <div role="tabpanel" class="tab-pane" id="agenda-sessions-tu-11.02">
     
   <div class="eclipsefdn-agenda-schedule">
     <table class="table">
@@ -2432,7 +2414,7 @@ span.eclipsefdn-agenda-legend-icon-ind::after {
 
     
     
-      <div role="tabpanel" class="tab-pane tab-pane" id="agenda-sessions-2">
+      <div role="tabpanel" class="tab-pane" id="agenda-sessions-we-12.02">
     
   <div class="eclipsefdn-agenda-schedule">
     <table class="table">
@@ -2827,7 +2809,7 @@ span.eclipsefdn-agenda-legend-icon-ind::after {
 
     
     
-      <div role="tabpanel" class="tab-pane tab-pane" id="agenda-sessions-3">
+      <div role="tabpanel" class="tab-pane" id="agenda-sessions-th-13.02">
     
   <div class="eclipsefdn-agenda-schedule">
     <table class="table">
@@ -3249,7 +3231,7 @@ span.eclipsefdn-agenda-legend-icon-ind::after {
 
     
     
-      <div role="tabpanel" class="tab-pane tab-pane" id="agenda-sessions-4">
+      <div role="tabpanel" class="tab-pane" id="agenda-sessions-fr-14.02">
     
   <div class="eclipsefdn-agenda-schedule">
     <table class="table">
@@ -3425,6 +3407,29 @@ Communication layers can be presentation layer protocols, like JSON, XML, the IE
   
 </div>
 
+<script>
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hash = window.location.hash;
+  if (hash && hash.startsWith('#agenda-session')) {
+    const targetId = 'navbar-agenda';
+    let element = document.getElementById(targetId);
+    if (!element) {
+      element = document.getElementById('navbar-agenda');
+    }
+    if (element) {
+      setTimeout(() => {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+  }
+});
+</script>
+
 
 
 <div class="modal fade " id="eclipsefdn-modal-event-session" tabindex="-1" role="dialog">
@@ -3462,8 +3467,13 @@ Communication layers can be presentation layer protocols, like JSON, XML, the IE
   <div class="row margin-top-30 margin-bottom-30" id="alois-zoitl">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./azoitl.png"
-        title="Alois Zoitl" />
+      <figure>
+        <img class="img-responsive" 
+             src="./azoitl.png"
+             alt="Alois Zoitl" 
+             title="Alois Zoitl" />
+        <figcaption class="sr-only">Alois Zoitl</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3483,8 +3493,13 @@ He has been convenor of the IEC SC65B/WG15 working group since 2015.</p>
   <div class="row margin-top-30 margin-bottom-30" id="benjamin-muttenthaler">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./benjamin_muttenthaler.jpg"
-        title="Benjamin Muttenthaler" />
+      <figure>
+        <img class="img-responsive" 
+             src="./benjamin_muttenthaler.jpg"
+             alt="Benjamin Muttenthaler" 
+             title="Benjamin Muttenthaler" />
+        <figcaption class="sr-only">Benjamin Muttenthaler</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3500,8 +3515,13 @@ He has been convenor of the IEC SC65B/WG15 working group since 2015.</p>
   <div class="row margin-top-30 margin-bottom-30" id="bianca-wiesmayr">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./bwiesmayr.jpeg"
-        title="Bianca Wiesmayr" />
+      <figure>
+        <img class="img-responsive" 
+             src="./bwiesmayr.jpeg"
+             alt="Bianca Wiesmayr" 
+             title="Bianca Wiesmayr" />
+        <figcaption class="sr-only">Bianca Wiesmayr</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3522,8 +3542,13 @@ He has been convenor of the IEC SC65B/WG15 working group since 2015.</p>
   <div class="row margin-top-30 margin-bottom-30" id="ernst-blecha">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./ernst_blecha.jpg"
-        title="Ernst Blecha" />
+      <figure>
+        <img class="img-responsive" 
+             src="./ernst_blecha.jpg"
+             alt="Ernst Blecha" 
+             title="Ernst Blecha" />
+        <figcaption class="sr-only">Ernst Blecha</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3541,8 +3566,13 @@ He has been convenor of the IEC SC65B/WG15 working group since 2015.</p>
   <div class="row margin-top-30 margin-bottom-30" id="franz-h%C3%B6pfinger">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./franz_h%c3%b6pfinger.jpeg"
-        title="Franz Höpfinger" />
+      <figure>
+        <img class="img-responsive" 
+             src="./franz_h%c3%b6pfinger.jpeg"
+             alt="Franz Höpfinger" 
+             title="Franz Höpfinger" />
+        <figcaption class="sr-only">Franz Höpfinger</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3559,8 +3589,13 @@ He has been convenor of the IEC SC65B/WG15 working group since 2015.</p>
   <div class="row margin-top-30 margin-bottom-30" id="friederike-bruns">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./FBr.jpg"
-        title="Friederike Bruns" />
+      <figure>
+        <img class="img-responsive" 
+             src="./FBr.jpg"
+             alt="Friederike Bruns" 
+             title="Friederike Bruns" />
+        <figcaption class="sr-only">Friederike Bruns</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3580,8 +3615,13 @@ He has been convenor of the IEC SC65B/WG15 working group since 2015.</p>
   <div class="row margin-top-30 margin-bottom-30" id="j%C3%B6rg-walter">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./jwalter.jpeg"
-        title="Jörg Walter" />
+      <figure>
+        <img class="img-responsive" 
+             src="./jwalter.jpeg"
+             alt="Jörg Walter" 
+             title="Jörg Walter" />
+        <figcaption class="sr-only">Jörg Walter</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3601,8 +3641,13 @@ He has been convenor of the IEC SC65B/WG15 working group since 2015.</p>
   <div class="row margin-top-30 margin-bottom-30" id="marco-jahn">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./marco_jahn.png"
-        title="Marco Jahn" />
+      <figure>
+        <img class="img-responsive" 
+             src="./marco_jahn.png"
+             alt="Marco Jahn" 
+             title="Marco Jahn" />
+        <figcaption class="sr-only">Marco Jahn</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3620,8 +3665,13 @@ He has been convenor of the IEC SC65B/WG15 working group since 2015.</p>
   <div class="row margin-top-30 margin-bottom-30" id="martin-melik-merkumians">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./martin_melik_merkumians.jpg"
-        title="Martin Melik Merkumians" />
+      <figure>
+        <img class="img-responsive" 
+             src="./martin_melik_merkumians.jpg"
+             alt="Martin Melik Merkumians" 
+             title="Martin Melik Merkumians" />
+        <figcaption class="sr-only">Martin Melik Merkumians</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3638,8 +3688,13 @@ Before joining electrify smart energy GmbH he was the head of the research group
   <div class="row margin-top-30 margin-bottom-30" id="michael-oberlehner">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./oberlehner_michael.jpg"
-        title="Michael Oberlehner" />
+      <figure>
+        <img class="img-responsive" 
+             src="./oberlehner_michael.jpg"
+             alt="Michael Oberlehner" 
+             title="Michael Oberlehner" />
+        <figcaption class="sr-only">Michael Oberlehner</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3658,8 +3713,13 @@ Before joining electrify smart energy GmbH he was the head of the research group
   <div class="row margin-top-30 margin-bottom-30" id="oscar-miguel-escrig">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./oscar_escrig.jpg"
-        title="Oscar Miguel Escrig" />
+      <figure>
+        <img class="img-responsive" 
+             src="./oscar_escrig.jpg"
+             alt="Oscar Miguel Escrig" 
+             title="Oscar Miguel Escrig" />
+        <figcaption class="sr-only">Oscar Miguel Escrig</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3677,8 +3737,13 @@ Before joining electrify smart energy GmbH he was the head of the research group
   <div class="row margin-top-30 margin-bottom-30" id="pedro-ricardo-corr%C3%AAa-souza">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./pedro_aimirim.jpg"
-        title="Pedro Ricardo Corrêa Souza" />
+      <figure>
+        <img class="img-responsive" 
+             src="./pedro_aimirim.jpg"
+             alt="Pedro Ricardo Corrêa Souza" 
+             title="Pedro Ricardo Corrêa Souza" />
+        <figcaption class="sr-only">Pedro Ricardo Corrêa Souza</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -3694,8 +3759,13 @@ Before joining electrify smart energy GmbH he was the head of the research group
   <div class="row margin-top-30 margin-bottom-30" id="thomas-strasser">
     <div class="eclipsefdn-user-bios-picture col-xs-24 col-sm-6">
       
-      <img class="img-responsive" src="./ThomasStrasser.webp"
-        title="Thomas Strasser" />
+      <figure>
+        <img class="img-responsive" 
+             src="./ThomasStrasser.webp"
+             alt="Thomas Strasser" 
+             title="Thomas Strasser" />
+        <figcaption class="sr-only">Thomas Strasser</figcaption>
+      </figure>
       
     </div>
     <div class="eclipsefdn-user-bios-info col-xs-24 col-sm-18">
@@ -4019,7 +4089,7 @@ Before joining electrify smart energy GmbH he was the head of the research group
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1762167142"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1762249075"></script>
   
 
   
