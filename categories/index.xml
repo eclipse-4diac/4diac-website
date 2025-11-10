@@ -8,7 +8,43 @@
     <language>en</language>
     <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
-    <lastBuildDate>Fri, 31 Oct 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Nov 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac FBE 3.0 Enters Beta Stage!</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-fbe-3.0-enters-beta-stage/</link>
+      <pubDate>Mon, 10 Nov 2025 09:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-fbe-3.0-enters-beta-stage/</guid>
+      <description>&lt;p&gt;4diac FBE builds 4diac FORTE fully automatically, no manual downloads or installs of third-party software needed. It manages multiple 4diac FORTE configurations for multiple target machines and operating systems on a single developer machine.&lt;/p&gt;
+&lt;p&gt;It supports x86_64 Linux, x86_64 Windows and ARM64-based MacOS machines as developer machines, and it can cross-build 4diac FORTE binaries for pretty much all relevant MacOS, Windows and Linux targets, including single-board computers like the Raspberry Pi and legacy hardware.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #60</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-60/</link>
+      <pubDate>Fri, 07 Nov 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-60/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Improved validation and error handling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Validation now only runs on &lt;strong&gt;opened projects&lt;/strong&gt;, avoiding unnecessary checks.&lt;/li&gt;
+&lt;li&gt;Prevented &lt;strong&gt;follow-up errors&lt;/strong&gt; caused by missing types or instances.&lt;/li&gt;
+&lt;li&gt;Fixed &lt;strong&gt;null pointer exceptions&lt;/strong&gt; in connection handling and deployment data computation.&lt;/li&gt;
+&lt;li&gt;Stabilized type hashing by preserving the &lt;strong&gt;order of “With” elements&lt;/strong&gt;, ensuring deterministic results.&lt;/li&gt;
+&lt;li&gt;Avoided creating error marker elements for &lt;strong&gt;missing types&lt;/strong&gt; to reduce visual clutter.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Enhanced type and annotation management&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac Weekly #59</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-59/</link>
