@@ -403,6 +403,12 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/specs/</loc>
   </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacfbe/</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacforte/</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacide/</loc>
+  </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/xqueries.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/development/forte_codequality.html</loc>
@@ -437,6 +443,8 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/doc_overview.html</loc>
   </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/</loc>
+  </url><url>
     <loc>https://eclipse.dev/4diac/doc/faq.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/events/virt-community/</loc>
@@ -470,6 +478,8 @@
     <loc>https://eclipse.dev/4diac/doc/development/forte_monitoring.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/mqttpaho.html</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/io_config/odroid.html</loc>
   </url><url>
