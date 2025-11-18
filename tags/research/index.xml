@@ -10,6 +10,39 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #61</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-61/</link>
+      <pubDate>Fri, 14 Nov 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-61/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Enhancements to type library handling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added name references for entries of referenced type libraries.&lt;/li&gt;
+&lt;li&gt;Added notifications for changes to referenced type library entries.&lt;/li&gt;
+&lt;li&gt;Added referenced projects to the type library.&lt;/li&gt;
+&lt;li&gt;Improved handling of &lt;strong&gt;concurrent updates&lt;/strong&gt; in the type library manager.&lt;/li&gt;
+&lt;li&gt;Avoided creating or deleting markers for &lt;strong&gt;foreign projects&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Refactoring, importing, and version handling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed invalid thread access that occurred when saving editors during refactoring.&lt;/li&gt;
+&lt;li&gt;Improved matching of &lt;strong&gt;version ranges&lt;/strong&gt; in 4diac FORTE export by switching to &lt;code&gt;AnyNewerVersion&lt;/code&gt; compatibility for CMake.&lt;/li&gt;
+&lt;li&gt;Improved lookup of &lt;strong&gt;unqualified data types&lt;/strong&gt;, now correctly falling back to imports and defaulting &lt;code&gt;null&lt;/code&gt; to &lt;code&gt;ANY&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Avoided unnecessary pin updates for configurable types during datatype refactorings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Execution and interpretation fixes&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac FBE 3.0 Enters Beta Stage!</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-fbe-3.0-enters-beta-stage/</link>
       <pubDate>Mon, 10 Nov 2025 09:00:00 +0000</pubDate>

@@ -16,13 +16,19 @@
   
 
 
-<title>Guest Post: Eclipse 4diac in Elektor Mag | The Eclipse Foundation</title>
-<meta property="og:title" content="Guest Post: Eclipse 4diac in Elektor Mag | The Eclipse Foundation" />
-<meta name="twitter:title" content="Guest Post: Eclipse 4diac in Elektor Mag | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #61 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #61 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #61 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from November 07 to November 14, 2025.
+
+This week brings improvements across …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 07 to November 14, 2025.
+
+This week brings improvements across …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 07 to November 14, 2025.
+
+This week brings improvements across …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-61/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,11 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-61/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1763496139">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1763496139">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1763496140">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1763496140">
 <script>
 	
 		var tableClasses = "table";
@@ -1291,12 +1297,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/news/2023/">News 2023</a>
+              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2023/2023/guest-post-eclipse-4diac-in-elektor-mag/">Guest Post: Eclipse 4diac in Elektor Mag</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-61/">Eclipse 4diac Weekly #61</a>
             </li>
           
           </ol>
@@ -1313,7 +1319,7 @@
     
       <h1>
         
-          Guest Post: Eclipse 4diac in Elektor Mag
+          Eclipse 4diac Weekly #61
         
       </h1>
     
@@ -1321,22 +1327,131 @@
 
 
   
-  <h2 id="guest-post-eclipse-4diac-in-elektor-mag">Guest Post: Eclipse 4diac™ in Elektor mag</h2>
-<p><em><strong>there is a featured Article in Elektor about Eclipse 4diac™ and logiBUS®</strong></em></p>
+
+  
+
+
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from November 07 to November 14, 2025.</p>
+<p>This week brings improvements across all Eclipse 4diac main components — 4diac IDE, 4diac FORTE, and 4diac FBE — with a strong focus on robustness, correctness, and smoother developer workflows.</p>
+</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
-<li><a href="https://www.elektormagazine.de/news/jetzt-erhaltlich-elektor-sonderheft-gastredaktion-von-espressif">News in German</a></li>
-<li><a href="https://www.espressif.com/en/news/Elektor_Espressif_Collab">News in English</a></li>
-<li><a href="https://www.youtube.com/watch?v=WCOCC8zqapI">youtube News in English</a></li>
-<li><a href="https://www.elektormagazine.de/magazine/elektor-329">Magazine in German</a></li>
-<li><a href="https://www.elektormagazine.com/magazine/elektor-328">Magazine in English</a></li>
-<li><a href="https://www.elektormagazine.de/magazine/elektor-329/62575">Article in German</a></li>
-<li><a href="https://www.elektormagazine.com/magazine/elektor-328/62438">Article in English</a></li>
+<li>
+<p><strong>Enhancements to type library handling</strong></p>
+<ul>
+<li>Added name references for entries of referenced type libraries.</li>
+<li>Added notifications for changes to referenced type library entries.</li>
+<li>Added referenced projects to the type library.</li>
+<li>Improved handling of <strong>concurrent updates</strong> in the type library manager.</li>
+<li>Avoided creating or deleting markers for <strong>foreign projects</strong>.</li>
 </ul>
-<p>Cheers, <br>
+</li>
+<li>
+<p><strong>Refactoring, importing, and version handling</strong></p>
+<ul>
+<li>Fixed invalid thread access that occurred when saving editors during refactoring.</li>
+<li>Improved matching of <strong>version ranges</strong> in 4diac FORTE export by switching to <code>AnyNewerVersion</code> compatibility for CMake.</li>
+<li>Improved lookup of <strong>unqualified data types</strong>, now correctly falling back to imports and defaulting <code>null</code> to <code>ANY</code>.</li>
+<li>Avoided unnecessary pin updates for configurable types during datatype refactorings.</li>
+</ul>
+</li>
+<li>
+<p><strong>Execution and interpretation fixes</strong></p>
+<ul>
+<li>Added <code>ServiceInterfaceFBTypeRuntime</code> to the network interpreter to avoid exceptions when SI FBs appear in networks.</li>
+<li>Fixed missing link between events and instances in generated network traces.</li>
+</ul>
+</li>
+<li>
+<p><strong>Interface and annotation correctness</strong></p>
+<ul>
+<li>Fixed handling of <strong>With</strong> changes so that interface modifications now trigger proper type updates (#1815).</li>
+<li>Corrected placement of <strong>watchpoint annotations</strong> on FB instances.</li>
+<li>Hardened shutdown logic to avoid selection/update notifications triggering errors on Linux (#1808).</li>
+</ul>
+</li>
+<li>
+<p><strong>General improvements</strong></p>
+<ul>
+<li>LibraryBuilder now properly reports removed links and exports all strings.</li>
+<li>Harmonized plugin versions for the FB interpreter design component.</li>
+<li>Cleaned up various command implementations.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li>
+<p><strong>Structured Text (ST) improvements</strong></p>
+<ul>
+<li>Fixed output parameter handling in ST event accessors.</li>
+<li>Corrected ST output assignment behavior involving generic types.</li>
+<li>Added type traits and concepts for generic data types.</li>
+</ul>
+</li>
+<li>
+<p><strong>Function Block behavior fixes</strong></p>
+<ul>
+<li>Corrected the transition in <code>E_TON</code> to ensure the proper event (<code>EO0</code>) fires when <code>R</code> is triggered.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-fbe">Enhancements and Fixes in 4diac FBE</h2>
+<ul>
+<li>
+<p><strong>Build and tooling updates for 3.0</strong></p>
+<ul>
+<li>Updated 4diac FORTE and 4diac toolchain for the 3.0 release.</li>
+<li>Improved warning visibility in <code>compile.sh</code> and enabled SSL certificate verification.</li>
+<li>Multiple portability fixes for Windows and macOS (libpcap, openpowerlink, paho.mqtt.c, libmodbus).</li>
+</ul>
+</li>
+<li>
+<p><strong>Configuration and packaging improvements</strong></p>
+<ul>
+<li>Switched debug config to <code>RelWithDebInfo</code>.</li>
+<li>Reduced Windows executable size.</li>
+<li>Improved handling of toolchain folders, presets, and compdb.</li>
+<li>Added support for multiple IO modules and pre-downloaded file detection.</li>
+<li>Improved dynamic link bundling and installer robustness.</li>
+</ul>
+</li>
+<li>
+<p><strong>Module and recipe updates</strong></p>
+<ul>
+<li>Removed obsolete features, added a new module example.</li>
+<li>Added BaseX recipe for XQueryClient.</li>
+<li>Updated numerous dependencies and libraries:
+<ul>
+<li>libmodbus → v3.1.11</li>
+<li>libpcap → v1.10.5</li>
+<li>libressl → v4.2.0</li>
+<li>paho.mqtt.c → v1.3.15</li>
+<li>boost → v1.89.0</li>
+<li>bzip2 → updated &amp; new download location</li>
+<li>open62541 → 1.4.14</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Miscellaneous</strong></p>
+<ul>
+<li>Updated build recipes, tests, placeholders, and configuration files.</li>
+<li>Improved logging, messaging, and portability across scripts and build tools.</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
 
-
-Franz Höpfinger on behalf of HR Agrartechnik GmbH</p>
-
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
+  
 
   
 
@@ -1535,7 +1650,7 @@ Franz Höpfinger on behalf of HR Agrartechnik GmbH</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1763496139"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1763496140"></script>
   
 
   
