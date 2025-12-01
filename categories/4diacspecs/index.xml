@@ -10,6 +10,69 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacspecs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #63</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-63/</link>
+      <pubDate>Fri, 28 Nov 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-63/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Monitoring &amp;amp; Visibility&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Filter monitoring to block FB network elements only.&lt;/li&gt;
+&lt;li&gt;Fix visibility handling for &lt;code&gt;VarInOut&lt;/code&gt; outputs after restart.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Member Access Pin Handling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Correct handling of member access pins when saving and parsing.&lt;/li&gt;
+&lt;li&gt;Fix duplicate connections created for output member access pins.&lt;/li&gt;
+&lt;li&gt;Check if connecting to a member access pin is valid.&lt;/li&gt;
+&lt;li&gt;Support full type names in type prefixes for generic variables.&lt;/li&gt;
+&lt;li&gt;Support full type names for struct and enum values.&lt;/li&gt;
+&lt;li&gt;Rework visibility storage for Member Access pins.&lt;/li&gt;
+&lt;li&gt;Correct visibility saving for MemberAccessPins in XML.&lt;/li&gt;
+&lt;li&gt;Fix tooltip and max string size for member access pins.&lt;/li&gt;
+&lt;li&gt;Show initial values for member access pins.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Structured Text (ST) Improvements&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #62</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-62/</link>
+      <pubDate>Fri, 21 Nov 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-62/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Member access pin support&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fully reworked interface list handling for correct management of member access pins.&lt;/li&gt;
+&lt;li&gt;Improved helper methods and updated instance handling to correctly reflect struct member access.&lt;/li&gt;
+&lt;li&gt;Included member access pins in &lt;code&gt;getAllInterfaceElements&lt;/code&gt; and switched the result to a stream for easier and more efficient use.&lt;/li&gt;
+&lt;li&gt;Fixed search and copying logic in the &lt;code&gt;InterfaceListCopier&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Enabled deployment and connection creation for member access connections.&lt;/li&gt;
+&lt;li&gt;Shown member access pins in the FB Network.&lt;/li&gt;
+&lt;li&gt;Correctly exported and parsed connections to/from member access pins.&lt;/li&gt;
+&lt;li&gt;Correctly parsed visible member pins for struct members.&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;ContainerVarDeclaration&lt;/code&gt; as a new interface element for holding visible children.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;General type and model handling&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #61</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-61/</link>
       <pubDate>Fri, 14 Nov 2025 17:00:00 +0000</pubDate>
