@@ -324,3 +324,12 @@ a:visited {
     overflow-wrap: anywhere;
     word-break: break-word;
 }
+
+.card-container .card-panel .panel-body p {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.card-container .card-panel .panel-body {
+  padding: 0 1em 0em;
+}
