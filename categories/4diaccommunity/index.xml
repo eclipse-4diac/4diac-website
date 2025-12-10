@@ -10,6 +10,32 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 02 Jun 2025 12:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diaccommunity/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #64</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-64/</link>
+      <pubDate>Fri, 05 Dec 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-64/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Type &amp;amp; Instance Handling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed drag-and-drop creation of typed subapp instances (#1917).&lt;/li&gt;
+&lt;li&gt;Disabled &lt;code&gt;RenameElement&lt;/code&gt; for FCT and added selection feedback for InterfaceElements in the FCT TypeEditor.&lt;/li&gt;
+&lt;li&gt;Added filtering of own type in NewInstanceEditor and removed TSA usage inside CFBs.&lt;/li&gt;
+&lt;li&gt;Added checks preventing insertion of TSA into CFBs and fixed self-insertion handling.&lt;/li&gt;
+&lt;li&gt;Fixed creation of duplicate ConfigurableFB-specific attributes.&lt;/li&gt;
+&lt;li&gt;Fixed handling of missing configurable FB types and preserved attributes when updating FBs coming from error markers.&lt;/li&gt;
+&lt;li&gt;Corrected special handling of FBs by checking package names to avoid false matches.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Editor, UI &amp;amp; Property Improvements&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #63</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-63/</link>
       <pubDate>Fri, 28 Nov 2025 17:00:00 +0000</pubDate>

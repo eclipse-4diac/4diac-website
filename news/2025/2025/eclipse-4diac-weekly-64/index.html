@@ -16,13 +16,19 @@
   
 
 
-<title>Eclipse 4diac Weekly #16 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #16 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #16 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #64 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #64 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #64 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from December 20, 2024 to January 03, 2025.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from December 20, 2024 to January 03, 2025.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from December 20, 2024 to January 03, 2025.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from November 28 to December 05, 2025.
+
+This week’s updates bring a wide range …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 28 to December 05, 2025.
+
+This week’s updates bring a wide range …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 28 to December 05, 2025.
+
+This week’s updates bring a wide range …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-16/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-64/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,11 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-16/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-64/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1765378723">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1765378723">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1765378725">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1765378725">
 <script>
 	
 		var tableClasses = "table";
@@ -1296,7 +1302,7 @@
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-16/">Eclipse 4diac Weekly #16</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-64/">Eclipse 4diac Weekly #64</a>
             </li>
           
           </ol>
@@ -1313,7 +1319,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly #16
+          Eclipse 4diac Weekly #64
         
       </h1>
     
@@ -1325,67 +1331,91 @@
   
 
 
-  <p>Update on what development happened across the Eclipse 4diac project in the week from December 20, 2024 to January 03, 2025.</p> 
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from November 28 to December 05, 2025.</p>
+<p>This week’s updates bring a wide range of improvements for 4diac IDE, including fixes in type handling, enhanced search and navigation, and better deployment and export workflows.
+4diac FORTE also received important updates, improving OPC UA deployment and fixing installation issues across multiple communication modules.</p>
+</p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>Usability Enhancements</strong></p>
+<p><strong>Type &amp; Instance Handling</strong></p>
 <ul>
-<li>Improved FB Debug View by using Watch colors consistently.</li>
-<li>Reworked Open Type Dialog to reduce blocking behavior, enhancing performance.</li>
-<li>Added new icon for library directories.</li>
-<li>Changed default Watch colors for better contrast on light themes and introduced styles for dark themes.</li>
-<li>Added settings for monitoring text colors.</li>
+<li>Fixed drag-and-drop creation of typed subapp instances (#1917).</li>
+<li>Disabled <code>RenameElement</code> for FCT and added selection feedback for InterfaceElements in the FCT TypeEditor.</li>
+<li>Added filtering of own type in NewInstanceEditor and removed TSA usage inside CFBs.</li>
+<li>Added checks preventing insertion of TSA into CFBs and fixed self-insertion handling.</li>
+<li>Fixed creation of duplicate ConfigurableFB-specific attributes.</li>
+<li>Fixed handling of missing configurable FB types and preserved attributes when updating FBs coming from error markers.</li>
+<li>Corrected special handling of FBs by checking package names to avoid false matches.</li>
 </ul>
 </li>
 <li>
-<p><strong>Error Handling and Validation</strong></p>
+<p><strong>Editor, UI &amp; Property Improvements</strong></p>
 <ul>
-<li>Improved error handling in value converters to avoid null pointer exceptions (NPEs) and enhanced error messages during array and struct parsing.</li>
-<li>Fixed conversion of prefixed values in structs and arrays to handle type prefixes (e.g., <code>T#</code>, <code>DATE#</code>) correctly.</li>
-<li>Added validations and quick fixes for package declarations in the Structured Text (ST) editor, ensuring alignment with folder structures (disabled by default).</li>
+<li>Added “Go To Attribute” support for markers in typed subapp networks.</li>
+<li>Restored composite type network traces.</li>
+<li>Added TypeHash attributes to adapter types (ATimeOut, ARTimeOut).</li>
+<li>Improved attribute visibility: refresh on undo/redo, hide/show commands, and correct updates of visibility tables.</li>
+<li>Basic setup for member-access pin configuration in <code>F_MOVE</code>.</li>
+<li>Updated preference pages to avoid unnecessary FieldEditor pages.</li>
 </ul>
 </li>
 <li>
-<p><strong>Bug Fixes</strong></p>
+<p><strong>Search &amp; Navigation</strong></p>
 <ul>
-<li>Corrected segment checks in <code>ConnectionRoutingData</code> for floating-point coordinates.</li>
-<li>Fixed error pin display logic for non-system attributes, including <code>VarInOut</code>, <code>Event</code>, and Input/Output Pins.</li>
-<li>Resolved issues with renamed methods and typos (e.g., in <code>DataTypeInstanceSearch</code>).</li>
-<li>Fixed handling of <code>EditPartViewers</code> when their <code>EditPartFactory</code> editor is null, preventing NPEs.</li>
-<li>Improved handling of binary expression types to ensure operand compatibility and fixed type inference for call arguments to avoid recursion issues.</li>
+<li>Added search-pin reference handler, moved it to search plugin, and enabled single-file search in ModelSearch.</li>
 </ul>
 </li>
 <li>
-<p><strong>Clean-ups and Refactoring</strong></p>
+<p><strong>Deployment &amp; Export</strong></p>
 <ul>
-<li>Removed unnecessary <code>EditorInputFactories</code> as part of breadcrumb editor optimization.</li>
-<li>Refactored mapping commands to use a common <code>MappingTargetCreator</code> helper class.</li>
-<li>Removed redundant configuration updates in <code>ConfigurableFB</code> mapping generation.</li>
-<li>Harmonized Maven GitHub workflows for release and development branches.</li>
+<li>Refactored OPC UA deployment response handling.</li>
+<li>Updated export builder with improved error reporting, incremental build support, full build option, case-insensitive extension checks, and reorganized property pages.</li>
+<li>Moved type export property page to the 4diac category.</li>
+<li>Fixed updating of type entries during rename quickfixes.</li>
 </ul>
 </li>
 <li>
-<p><strong>New Features</strong></p>
+<p><strong>Drag &amp; Drop &amp; Network Behavior</strong></p>
 <ul>
-<li>Added all 4diac IDE type files as XML content with appropriate bindings for editor compatibility.</li>
-<li>Updated exporter to use fully qualified names (FQN) for attributes with <code>attributeDeclarations</code>.</li>
+<li>Disabled adapter creation via drag &amp; drop in all FB networks (#1845).</li>
+<li>Cleaned up DnD handling to prevent broken networks.</li>
 </ul>
 </li>
 <li>
-<p><strong>Testing</strong></p>
+<p><strong>Quickfixes &amp; Refactoring</strong></p>
 <ul>
-<li>Added tests for type inference in the Structured Text (ST) parser.</li>
+<li>Improved rename quickfixes.</li>
+<li>Removed automatic type renaming in favor of explicit quickfixes.</li>
+<li>Cleaned up <code>FordiacResourceChangeListener</code>.</li>
+<li>Improved handling of type/file name mismatches.</li>
+</ul>
+</li>
+<li>
+<p><strong>Miscellaneous</strong></p>
+<ul>
+<li>Removed LUA exporter from UI (#809).</li>
+<li>Added commands for showing/hiding member access pins.</li>
+<li>Ensured correct refresh of member access property sheets on visibility changes.</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
-<li><strong>OPC UA Improvments</strong>
+<li>
+<p><strong>OPC UA Deployment</strong></p>
 <ul>
-<li>Reworked the creation of OPC UA Struct Types and Instances to support nested structures.</li>
+<li>Refactored query methods to use response status correctly.</li>
+<li>Fixed errors in <code>QueryDataType</code> handling.</li>
+</ul>
+</li>
+<li>
+<p><strong>Communication Layers &amp; Modules</strong></p>
+<ul>
+<li>Ported the CAN layer to the new communication factory.</li>
+<li>Fixed missing installation commands in CMake for several communication modules (CAN, HTTP, Modbus, MQTT-Paho, OPC, TSN, XQuery).</li>
 </ul>
 </li>
 </ul>
@@ -1595,7 +1625,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1765378723"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1765378725"></script>
   
 
   
