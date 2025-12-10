@@ -10,6 +10,27 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/communication-modelling/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac 3.0 Released!</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-3.0-released/</link>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-3.0-released/</guid>
+      <description>&lt;p&gt;👉 Try it now from our &lt;a href=&#34;https://eclipse.dev/4diac/download&#34;&gt;Downloads page&lt;/a&gt; and read all details in the &lt;a href=&#34;https://eclipse.dev/4diac/new-and-noteworthy/3.0/&#34;&gt;New &amp;amp; Noteworthy&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;a-major-milestone-for-the-4diac-ecosystem&#34;&gt;A Major Milestone for the 4diac Ecosystem&lt;/h2&gt;
+&lt;p&gt;The Eclipse 4diac 3.0 release marks the largest update we have ever delivered.
+Over the course of this release cycle, we completed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;5974 commits on the 4diac IDE&lt;/li&gt;
+&lt;li&gt;1537 commits on 4diac FORTE&lt;/li&gt;
+&lt;li&gt;A brand-new component: 4diac FBE, our flexible build environment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the final weeks before release we focused heavily on stabilization, fixing a large number of issues and polishing the user experience across all components.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #64</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-64/</link>
       <pubDate>Fri, 05 Dec 2025 17:00:00 +0000</pubDate>

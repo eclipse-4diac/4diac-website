@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-3.0-released/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/releases/</loc>
+    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
     <lastmod>2025-12-05T17:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/categories/</loc>
-    <lastmod>2025-12-05T17:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-64/</loc>
-    <lastmod>2025-12-05T17:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/news/2025/</loc>
     <lastmod>2025-12-05T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-63/</loc>
@@ -24,9 +30,6 @@
     <lastmod>2025-11-14T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-fbe-3.0-enters-beta-stage/</loc>
-    <lastmod>2025-11-10T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/categories/releases/</loc>
     <lastmod>2025-11-10T09:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-60/</loc>
@@ -417,9 +420,15 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacfbe/</loc>
   </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.1/4diacfbe/</loc>
+  </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacforte/</loc>
   </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.1/4diacforte/</loc>
+  </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacide/</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.1/4diacide/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/xqueries.html</loc>
   </url><url>
@@ -456,6 +465,8 @@
     <loc>https://eclipse.dev/4diac/doc/doc_overview.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.1/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/faq.html</loc>
   </url><url>
