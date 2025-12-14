@@ -10,6 +10,31 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #65</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-65/</link>
+      <pubDate>Fri, 12 Dec 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-65/</guid>
+      <description>&lt;h2 id=&#34;-eclipse-4diac-30-was-released-on-december-10th-&#34;&gt;🎉 &lt;strong&gt;Eclipse 4diac 3.0 was released on December 10th!&lt;/strong&gt; 🎉&lt;/h2&gt;
+&lt;p&gt;With this major milestone reached, the focus now shifts to consolidation, bug fixes, and incremental improvements across the entire Eclipse 4diac ecosystem.&lt;/p&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ST, parsing, and type handling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Validate ST expressions for side effects in the parser&lt;/li&gt;
+&lt;li&gt;Fix parsing of query type responses for data types, adapters, and global constants&lt;/li&gt;
+&lt;li&gt;Gracefully handle empty type hash attributes&lt;/li&gt;
+&lt;li&gt;Add literal types to XMI export&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Copy, refactoring, and model consistency&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac 3.0 Released!</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-3.0-released/</link>
       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
