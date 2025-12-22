@@ -10,6 +10,29 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4d4d/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #66</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-66/</link>
+      <pubDate>Fri, 19 Dec 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-66/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Type system and model consistency&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed handling of different type responses in query results, ensuring all parsed responses are correctly reflected in the response model (#1776).&lt;/li&gt;
+&lt;li&gt;Improved adapter type change handling across all FB types, ensuring model updates are properly propagated to editors.&lt;/li&gt;
+&lt;li&gt;Corrected error event pin handling when changing adapter types in CFBs, avoiding spurious pins (#1916).&lt;/li&gt;
+&lt;li&gt;Introduced dedicated instance and full-copy methods for interface lists to prevent incomplete or incorrect copying.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Refactoring, copy, and rename robustness&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #65</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-65/</link>
       <pubDate>Fri, 12 Dec 2025 17:00:00 +0000</pubDate>
