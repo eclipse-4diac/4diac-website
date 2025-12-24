@@ -2,25 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://eclipse.dev/4diac/news/2025/2025/4diac-ide-3.0.1-maintenance-release/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2025/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/releases/</loc>
+    <lastmod>2025-12-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
     <lastmod>2025-12-19T17:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/categories/</loc>
-    <lastmod>2025-12-19T17:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-66/</loc>
-    <lastmod>2025-12-19T17:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/news/2025/</loc>
     <lastmod>2025-12-19T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-65/</loc>
     <lastmod>2025-12-12T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-3.0-released/</loc>
-    <lastmod>2025-12-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/categories/releases/</loc>
     <lastmod>2025-12-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-64/</loc>
@@ -432,6 +435,8 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.1/4diacforte/</loc>
   </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0.1/4diacide/</loc>
+  </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacide/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.1/4diacide/</loc>
@@ -464,6 +469,8 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/development/contribute.html</loc>
   </url><url>
+    <loc>https://eclipse.dev/4diac/doc/tutorials/opcuadeployment.html</loc>
+  </url><url>
     <loc>https://eclipse.dev/4diac/doc/development/development.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/</loc>
@@ -471,6 +478,8 @@
     <loc>https://eclipse.dev/4diac/doc/doc_overview.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0.1/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.1/</loc>
   </url><url>
@@ -483,6 +492,8 @@
     <loc>https://eclipse.dev/4diac/doc/development/externalevent_example.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/fbdkip.html</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/doc/other_features/gitissuereporting.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/arrowhead.html</loc>
   </url><url>
@@ -517,8 +528,6 @@
     <loc>https://eclipse.dev/4diac/doc/communication/opcua.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/openpowerlink.html</loc>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/doc/other_features/overview.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/io_config/piface.html</loc>
   </url><url>

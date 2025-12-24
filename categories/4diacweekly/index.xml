@@ -10,6 +10,19 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Fri, 19 Dec 2025 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>4diac IDE 3.0.1 – Maintenance Release</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/4diac-ide-3.0.1-maintenance-release/</link>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/4diac-ide-3.0.1-maintenance-release/</guid>
+      <description>&lt;p&gt;A major focus of this release is improved behavior on &lt;strong&gt;modern and high-DPI display setups&lt;/strong&gt;. Several issues affecting zooming, scaling, and positioning in graphical editors have been resolved, resulting in more predictable editing behavior across platforms.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Structured Text&lt;/strong&gt; editor has also been stabilized with fixes that prevent invalid code generation and improve robustness when working with incompatible types.&lt;/p&gt;
+&lt;p&gt;In addition, this release addresses a number of &lt;strong&gt;model consistency and UI robustness issues&lt;/strong&gt;, including more reliable adapter type handling, improved editor lifecycle management, and better behavior in edge cases across debugging and table-based views.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #66</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-66/</link>
       <pubDate>Fri, 19 Dec 2025 17:00:00 +0000</pubDate>
