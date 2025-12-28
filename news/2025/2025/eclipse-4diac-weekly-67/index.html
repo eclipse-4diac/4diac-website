@@ -16,19 +16,19 @@
   
 
 
-<title>Eclipse 4diac Weekly #63 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #63 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #63 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #67 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #67 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #67 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from November 21 to November 28, 2025.
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from December 19 to December 26, 2025.
 
-This week’s Eclipse 4diac updates bring …">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 21 to November 28, 2025.
+This week’s changes further refine …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from December 19 to December 26, 2025.
 
-This week’s Eclipse 4diac updates bring …">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from November 21 to November 28, 2025.
+This week’s changes further refine …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from December 19 to December 26, 2025.
 
-This week’s Eclipse 4diac updates bring …">
+This week’s changes further refine …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -36,7 +36,7 @@ This week’s Eclipse 4diac updates bring …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-63/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-67/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -44,7 +44,7 @@ This week’s Eclipse 4diac updates bring …">
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-63/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-67/" />
 
 
 <link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1766965747">
@@ -1302,7 +1302,7 @@ This week’s Eclipse 4diac updates bring …">
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-63/">Eclipse 4diac Weekly #63</a>
+              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-67/">Eclipse 4diac Weekly #67</a>
             </li>
           
           </ol>
@@ -1319,7 +1319,7 @@ This week’s Eclipse 4diac updates bring …">
     
       <h1>
         
-          Eclipse 4diac Weekly #63
+          Eclipse 4diac Weekly #67
         
       </h1>
     
@@ -1331,103 +1331,91 @@ This week’s Eclipse 4diac updates bring …">
   
 
 
-  <p><p>Update on what development happened across the Eclipse 4diac project in the week from November 21 to November 28, 2025.</p>
-<p>This week’s Eclipse 4diac updates bring substantial robustness improvements to 4diac IDE, especially around member access pins, refactoring, monitoring, deployment, and ST tooling.
-4diac FORTE receives targeted fixes for response handling and type-hash reporting.</p>
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from December 19 to December 26, 2025.</p>
+<p>This week’s changes further refine usability and robustness across Eclipse 4diac.
+4diac IDE received important fixes for scaling, positioning, ST editor stability, and internationalization,
+while 4diac FORTE extends byte-handling capabilities and improves OPC UA internals.
+Documentation got a section on OPC UA deployment.</p>
 </p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>Monitoring &amp; Visibility</strong></p>
+<p><strong>Maintenance release</strong></p>
 <ul>
-<li>Filter monitoring to block FB network elements only.</li>
-<li>Fix visibility handling for <code>VarInOut</code> outputs after restart.</li>
+<li>Released <strong>4diac IDE 3.0.1</strong>, focusing on bug fixes for the 3.0 release.</li>
 </ul>
 </li>
 <li>
-<p><strong>Member Access Pin Handling</strong></p>
+<p><strong>Data handling and libraries</strong></p>
 <ul>
-<li>Correct handling of member access pins when saving and parsing.</li>
-<li>Fix duplicate connections created for output member access pins.</li>
-<li>Check if connecting to a member access pin is valid.</li>
-<li>Support full type names in type prefixes for generic variables.</li>
-<li>Support full type names for struct and enum values.</li>
-<li>Rework visibility storage for Member Access pins.</li>
-<li>Correct visibility saving for MemberAccessPins in XML.</li>
-<li>Fix tooltip and max string size for member access pins.</li>
-<li>Show initial values for member access pins.</li>
+<li>Corrected byte assembly logic to properly assemble four bytes into a DWORD.</li>
+<li>Added support for splitting a DWORD into individual bytes, improving low-level data manipulation utilities.</li>
+<li>Updated copyright and versioning information for the affected functions.</li>
 </ul>
 </li>
 <li>
-<p><strong>Structured Text (ST) Improvements</strong></p>
+<p><strong>Graphical editing and scaling</strong></p>
 <ul>
-<li>Fix ST documentation hover for variables.</li>
-<li>Fix ST documentation hover for functions.</li>
-<li>Fix compilation issues in ST quickfix providers.</li>
+<li>Fixed handling of zoom and scaling when adjusting bendpoints, improving behavior on HiDPI systems (#1978).</li>
+<li>Corrected FB insert positioning to properly account for parent scaling.</li>
+<li>Reworked <code>SetPositionCommand</code> to rely on correctly translated GEF constraints and better handle screen resolution.</li>
 </ul>
 </li>
 <li>
-<p><strong>Refactoring &amp; Copy Handling</strong></p>
+<p><strong>Exporter and operations</strong></p>
 <ul>
-<li>Remove unintended renaming during copy refactoring.</li>
-<li>Improve and clean up copy refactoring.</li>
-<li>Ensure file copy happens during refactoring.</li>
-<li>Fix loading of copy processor participants.</li>
-<li>Fix copy nature IDs and participant behavior.</li>
-<li>Use <code>Objects.equals</code> to avoid NPEs.</li>
-<li>Add copy refactoring to system explorer:
-<ul>
-<li>Update package names when types are copied.</li>
-<li>Add “copy package name” action.</li>
-</ul>
-</li>
+<li>Refactored the exporter infrastructure by removing the no-longer-needed abstract exporter.</li>
+<li>Improved progress handling by using sub-monitors to properly react to cancelled operations.</li>
 </ul>
 </li>
 <li>
-<p><strong>Connections &amp; Mapping</strong></p>
+<p><strong>ST editor stability and correctness</strong></p>
 <ul>
-<li>Fix broken connection repair handler to validate selection types.</li>
-<li>Fix validation of InOut variables inside subapps.</li>
-<li>Handle mapping of connection attributes (#1542).</li>
-<li>Fix exporting of large files.</li>
-<li>Correct adapter FB plug/socket interfaces on create &amp; update.</li>
+<li>Fixed invalid generic type creation in the “missing variable” quickfix, falling back to compatible concrete types.</li>
+<li>Prevented null pointer exceptions when handling incompatible types in the ST editor.</li>
 </ul>
 </li>
 <li>
-<p><strong>Deployment &amp; Error Handling</strong></p>
+<p><strong>Internationalization and UI polish</strong></p>
 <ul>
-<li>Improve error messages for parameter write failures.</li>
-<li>Adjust deployment exception handling to reveal root cause.</li>
-<li>Add configurable maximum total request size for deployment.</li>
-<li>Log failed write requests.</li>
-<li>Directly update expected type in embedded field editor.</li>
-</ul>
-</li>
-<li>
-<p><strong>General Fixes &amp; Cleanup</strong></p>
-<ul>
-<li>Fix focus handling for <code>InitialValueStructuredCellEditor</code>.</li>
-<li>Fix JUnit build failures with Eclipse 2025-12; pin to JUnit 5 and update Tycho.</li>
-<li>Code cleanup for Sonar-reported issues.</li>
-<li>Clean up <code>FordiacResourceChangeListener</code>.</li>
-<li>Upgraded Xtend Maven plugin to 2.41.0.</li>
+<li>Exported additional translatable strings and explicitly marked non-translatable ones.</li>
+<li>Updated the splash screen to version 3.0.1.</li>
+<li>Synced bundled documentation with the latest upstream fixes.</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
 <li>
-<p><strong>Error &amp; Response Handling</strong></p>
+<p><strong>Function library enhancements</strong></p>
 <ul>
-<li>Ensure long error responses are correctly embedded in overall responses.</li>
+<li>Added <code>SPLIT_DWORD_INTO_BYTES</code> to complement existing byte assembly functionality.</li>
+<li>Corrected documentation for <code>ASSELE_DWORD_FROM_BYTES</code> to reflect the correct byte count.</li>
+<li>Aligned internal logic and interface declarations for consistency.</li>
 </ul>
 </li>
 <li>
-<p><strong>Type Hash Diagnostics</strong></p>
+<p><strong>OPC UA improvements</strong></p>
 <ul>
-<li>On mismatched type hashes, return the available type together with its actual hash.</li>
+<li>Cleaned up the query type implementation in the OPC UA manager for clearer and more robust behavior.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-documentation">Enhancements and Fixes in 4diac Documentation</h2>
+<ul>
+<li>
+<p><strong>OPC UA deployment</strong></p>
+<ul>
+<li>Added new documentation describing OPC UA deployment.</li>
+<li>Updated tutorials to reference the new OPC UA deployment documentation.</li>
+</ul>
+</li>
+<li>
+<p><strong>General fixes</strong></p>
+<ul>
+<li>Corrected a broken GitHub access token hyperlink.</li>
 </ul>
 </li>
 </ul>

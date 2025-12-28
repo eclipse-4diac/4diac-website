@@ -10,6 +10,42 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/communication-modelling/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #67</title>
+      <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-67/</link>
+      <pubDate>Fri, 26 Dec 2025 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-67/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Maintenance release&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Released &lt;strong&gt;4diac IDE 3.0.1&lt;/strong&gt;, focusing on bug fixes for the 3.0 release.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Data handling and libraries&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Corrected byte assembly logic to properly assemble four bytes into a DWORD.&lt;/li&gt;
+&lt;li&gt;Added support for splitting a DWORD into individual bytes, improving low-level data manipulation utilities.&lt;/li&gt;
+&lt;li&gt;Updated copyright and versioning information for the affected functions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Graphical editing and scaling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed handling of zoom and scaling when adjusting bendpoints, improving behavior on HiDPI systems (#1978).&lt;/li&gt;
+&lt;li&gt;Corrected FB insert positioning to properly account for parent scaling.&lt;/li&gt;
+&lt;li&gt;Reworked &lt;code&gt;SetPositionCommand&lt;/code&gt; to rely on correctly translated GEF constraints and better handle screen resolution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Exporter and operations&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>4diac IDE 3.0.1 – Maintenance Release</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/4diac-ide-3.0.1-maintenance-release/</link>
       <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
