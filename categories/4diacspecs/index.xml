@@ -10,6 +10,37 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacspecs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #68</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-68/</link>
+      <pubDate>Fri, 09 Jan 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-68/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Platform &amp;amp; build infrastructure&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded to the &lt;strong&gt;Eclipse 2026-03 target platform&lt;/strong&gt;, simplifying builds by removing obsolete dependency checks.&lt;/li&gt;
+&lt;li&gt;Fixed missing &lt;code&gt;plugin.properties&lt;/code&gt; entry in build properties of the model UI plugin.&lt;/li&gt;
+&lt;li&gt;Added additional Maven configuration for Sonar analysis.&lt;/li&gt;
+&lt;li&gt;Resolved most Sonar-reported issues in the application plugin and UI tests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Graphical editing &amp;amp; positioning&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed pixel scaling issues and stabilized &lt;code&gt;SetPositionCommand&lt;/code&gt; tests.&lt;/li&gt;
+&lt;li&gt;Corrected automatic FB insertion behavior for empty subapps.&lt;/li&gt;
+&lt;li&gt;Improved undo behavior when creating connections via connection markers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Connections &amp;amp; markers&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #67</title>
       <link>https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-67/</link>
       <pubDate>Fri, 26 Dec 2025 17:00:00 +0000</pubDate>

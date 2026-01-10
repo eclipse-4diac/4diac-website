@@ -16,13 +16,19 @@
   
 
 
-<title>Eclipse 4diac Weekly 6 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly 6 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly 6 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #68 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #68 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #68 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from October 11 to October 18, 2024.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from October 11 to October 18, 2024.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from October 11 to October 18, 2024.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from December 26, 2026 to January 09, 2026.
+
+This two-week focuses on keeping …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from December 26, 2026 to January 09, 2026.
+
+This two-week focuses on keeping …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from December 26, 2026 to January 09, 2026.
+
+This two-week focuses on keeping …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-68/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,11 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-68/" />
 
 
-<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1768050634">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1768050634">
+<link rel="stylesheet" href="https://eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/astro.min.css?v=1768050637">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1768050637">
 <script>
 	
 		var tableClasses = "table";
@@ -1278,8 +1284,6 @@
             
               
             
-              
-            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
@@ -1290,13 +1294,8 @@
             </li>
           
             
-            <li >
-              <a href="https://eclipse.dev/4diac/news/2024/">News 2024</a>
-            </li>
-          
-            
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-6/">Eclipse 4diac Weekly 6</a>
+              <a href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-68/">Eclipse 4diac Weekly #68</a>
             </li>
           
           </ol>
@@ -1313,7 +1312,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly 6
+          Eclipse 4diac Weekly #68
         
       </h1>
     
@@ -1325,102 +1324,57 @@
   
 
 
-  <p>Update on what development happened across the Eclipse 4diac project in the week from October 11 to October 18, 2024.</p> 
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from December 26, 2026 to January 09, 2026.</p>
+<p>This two-week focuses on keeping the Eclipse 4diac IDE aligned with the latest Eclipse platform while further polishing graphical editing, connection handling, and build quality.
+Alongside the upgrade to a new target platform, several usability issues were fixed and internal tooling was cleaned up.</p>
+</p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>Bug Fixes</strong></p>
+<p><strong>Platform &amp; build infrastructure</strong></p>
 <ul>
-<li>Fix deadlock when creating new type via quickfix</li>
-<li>Fix conflicts during nested unnecessary conversion quickfix</li>
-<li>Fix formatter preferences during quickfixes or refactoring</li>
-<li>Fix partial access on array subscript</li>
-<li>Fixed issue where Quick-Fix option did not show up in dirty Editor</li>
-<li>Fix cyclic resolution when creating resource descriptions</li>
-<li>Fix attribute lookup in importer</li>
-<li>Fix connection clipping with Insets for expanded SubappApp content</li>
-<li>Fix errors from consecutive type updates in open instance viewer</li>
+<li>Upgraded to the <strong>Eclipse 2026-03 target platform</strong>, simplifying builds by removing obsolete dependency checks.</li>
+<li>Fixed missing <code>plugin.properties</code> entry in build properties of the model UI plugin.</li>
+<li>Added additional Maven configuration for Sonar analysis.</li>
+<li>Resolved most Sonar-reported issues in the application plugin and UI tests.</li>
 </ul>
 </li>
 <li>
-<p><strong>Improvements to Connection and XML Handling</strong></p>
+<p><strong>Graphical editing &amp; positioning</strong></p>
 <ul>
-<li>Preserve Connection Position on Type Update</li>
-<li>Reconnect Connection Preserves Connection in XML File</li>
+<li>Fixed pixel scaling issues and stabilized <code>SetPositionCommand</code> tests.</li>
+<li>Corrected automatic FB insertion behavior for empty subapps.</li>
+<li>Improved undo behavior when creating connections via connection markers.</li>
 </ul>
 </li>
 <li>
-<p><strong>Launcher and Device Management Enhancements</strong></p>
+<p><strong>Connections &amp; markers</strong></p>
 <ul>
-<li>New Launcher that allows to Stop 4diac FORTEs</li>
-<li>Add device management executor service</li>
-<li>Refactor write FB parameter command in device management interactor</li>
-<li>Refactor monitoring commands in device management interactor</li>
+<li>Reworked utility markers and stylers, improving structure and reuse of existing marker infrastructure.</li>
+<li>Switched utility markers to the Eclipse marker infrastructure.</li>
+<li>Added a base handler and source marker handler for graphical markers.</li>
+<li>Ensured connection endpoint markers are removed after successful connection creation.</li>
+<li>Allowed marked connection creation in both directions.</li>
+<li>Refined modifier-key handling so event creation mode only activates when <strong>Ctrl</strong> is pressed alone.</li>
 </ul>
 </li>
 <li>
-<p><strong>Evaluator and Debug Improvements</strong></p>
+<p><strong>Type system &amp; model fixes</strong></p>
 <ul>
-<li>Add interface for evaluator debug target</li>
-<li>Refactor deployment FB evaluator to use new monitoring methods</li>
-<li>Add sanity checks for generic variables in evaluator</li>
+<li>Fixed handling of <code>VAR_IN_OUT</code> pins in plug type interfaces (#1997).</li>
+<li>Added member access pins to the <code>InitialValueHelper</code>.</li>
 </ul>
 </li>
 <li>
-<p><strong>System Explorer and Editor Updates</strong></p>
+<p><strong>Internal cleanups</strong></p>
 <ul>
-<li>Change system explorer navigation contents</li>
-<li>Show configurable FB / demux sections also in composite FBs</li>
-</ul>
-</li>
-<li>
-<p><strong>Quickfix and Refactoring Enhancements</strong></p>
-<ul>
-<li>Enable marker resolutions for configurable FBs</li>
-<li>Validate data type in configurable FBs</li>
-<li>Refactor marker resolutions (proper locking, command combination, save only when needed)</li>
-</ul>
-</li>
-<li>
-<p><strong>Timestamp and Timing Additions</strong></p>
-<ul>
-<li>Add startDate to timestamp function</li>
-<li>Add Timestamp</li>
-<li>Move E_STOPWATCH to timing folder</li>
-</ul>
-</li>
-<li>
-<p><strong>Miscellaneous Improvements</strong></p>
-<ul>
-<li>Reworked version info of assembling and splitting function blocks</li>
-<li>Added a check for error markers and disabled Map To option when there are errors</li>
-<li>Show full type name in missing type validation</li>
-<li>Move interpreter contribution from Debug to Run menu</li>
-<li>Refactor error handling of download runnable</li>
-<li>Remove obsolete delete system handler</li>
+<li>Extracted handler service access into a helper.</li>
+<li>Removed unused methods and performed general code cleanup.</li>
 </ul>
 </li>
 </ul>
-<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
-<ul>
-<li>
-<p><strong>New Function Blocks and Features</strong></p>
-<ul>
-<li>Added E_T_FF_SR_fbt function block, a mix between E_SR and E_T_FF</li>
-<li>Added startDate input</li>
-<li>Added TIMESTAMP_NS to the timing folder</li>
-</ul>
-</li>
-<li>
-<p><strong>Refactoring and Reorganization</strong></p>
-<ul>
-<li>Moved E_STOPWATCH into the timing folder</li>
-</ul>
-</li>
-</ul>
-<p>Furthermore the work on our new web-page is now in a stage where it soon can go live.</p>
 <p>Many thanks to all contributors for their work and their feedback!</p>
  
 
@@ -1627,7 +1581,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1768050634"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1768050637"></script>
   
 
   
