@@ -1,0 +1,86 @@
+/* ==========================================================================
+   4diac CSS Variables
+   Color palette for Eclipse 4diac website
+   ========================================================================== */
+
+:root {
+  /* -----------------------------------------------------
+   * 4diac Blue
+   * ----------------------------------------------------- */
+  --4diac-blue-ultra-dark: #001a3f;
+  --4diac-blue: #012269;
+  --4diac-blue-medium-1: #334e87;
+  --4diac-blue-medium-2: #5a78aa;
+  --4diac-blue-light: #99a6c3;
+  --4diac-blue-pale: #d2dceb;
+  --4diac-blue-tint: #eaf0f8;
+
+  /* -----------------------------------------------------
+   * 4diac Orange
+   * ----------------------------------------------------- */
+  --4diac-orange-ultra-dark: #9a5600;
+  --4diac-orange-dark: #e0820c;
+  --4diac-orange: #ff950e;
+  --4diac-orange-light: #ffb85a;
+  --4diac-orange-soft: #ffe6c7;
+  --4diac-orange-pale: #ffedcc;
+  --4diac-orange-tint: #fff6ec;
+
+  /* -----------------------------------------------------
+   * 4diac Lime
+   * ----------------------------------------------------- */
+  --4diac-lime-ultra-dark: #3f5f00;
+  --4diac-lime-dark: #6ea11f;
+  --4diac-lime: #8cc82d;
+  --4diac-lime-light: #b5e26a;
+  --4diac-lime-soft: #e7f4cf;
+  --4diac-lime-pale: #eef8dc;
+  --4diac-lime-tint: #f6fbef;
+
+  /* -----------------------------------------------------
+   * 4diac Gray
+   * ----------------------------------------------------- */
+  --4diac-gray-ultra-dark: #1a1a1a;
+  --4diac-gray-dark: #323232;
+  --4diac-gray-dark-mid: #666666;
+  --4diac-gray: #999999;
+  --4diac-gray-light: #cccccc;
+  --4diac-gray-pale: #e6e6e6;
+  --4diac-gray-tint: #f5f5f5;
+
+  /* -----------------------------------------------------
+   * Semantic color aliases
+   * ----------------------------------------------------- */
+  --bg: #fff;
+  --bg-muted: var(--4diac-gray-tint);
+  --bg-accent: var(--4diac-orange-tint);
+
+  --text: var(--4diac-gray-dark-mid);
+  --text-muted: var(--4diac-gray-dark);
+  --text-on-dark: #fff;
+
+  --link: var(--4diac-blue);
+  --heading: var(--4diac-blue);
+
+  /* -----------------------------------------------------
+   * Spacing
+   * ----------------------------------------------------- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  --container-padding: 15px;
+  --container-padding-lg: 20px;
+
+  /* -----------------------------------------------------
+   * Typography scale
+   * ----------------------------------------------------- */
+  --text-base: 14px;
+  --text-lg: 1.6rem;
+  --text-xl: 1.8rem;
+  --text-2xl: 2.4rem;
+  --text-3xl: 3rem;
+  --text-4xl: 4rem;
+}

@@ -1,22 +1,40 @@
+@import url("4diac_variables.css");
 
+/* ==========================================================================
+   4diac Global CSS Adjustments
+   Overrides for Eclipse Astro theme
 
+   Breakpoints (mobile-first):
+   - 768px:  Tablet
+   - 992px:  Desktop
+   - 1200px: Large desktop
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Base Typography & Colors
+   -------------------------------------------------------------------------- */
 body {
-    background-color: #fff;
-    color: rgb(80, 80, 80, 1.0);
-    font-family: Roboto, Libre Franklin, Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Roboto, Libre Franklin, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.42857143;
 }
 
 a {
-    color: #012269;
-    text-decoration: none
+  color: var(--link);
+  text-decoration: none;
 }
 
 a:focus,
 a:hover {
-    color: #012269;
-    text-decoration: underline
+  color: var(--link);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link);
 }
 
 .h1,
@@ -31,305 +49,337 @@ h3,
 h4,
 h5,
 h6 {
-    color: #012269;
-    font-family: inherit;
-    font-weight: 300;
-    line-height: 1.1
+  color: var(--heading);
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.1;
 }
 
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
 .btn-primary {
-    background-color: #ff950e;
-    border-color: #ff950e;
-    color: #fff
+  background-color: var(--4diac-orange);
+  border-color: var(--4diac-orange);
+  color: var(--text-on-dark);
 }
 
 .btn-primary:hover {
-    background-color: #d07a0b;
-    border-color: #d07a0b;
-    color: #fff
+  background-color: var(--4diac-orange-dark);
+  border-color: var(--4diac-orange-dark);
+  color: var(--text-on-dark);
 }
 
+/* --------------------------------------------------------------------------
+   Header & Navigation
+   -------------------------------------------------------------------------- */
 .header-wrapper .nav-link-active:after,
 .header-wrapper .nav-link-active:before {
-    animation-duration: .2s;
-    animation-name: header-fade-in;
-    background-color: rgba(255, 149, 14, 1.0);
-    content: "";
+  animation-duration: 0.2s;
+  animation-name: header-fade-in;
+  background-color: var(--4diac-orange);
+  content: "";
+  display: inline-block;
+  position: absolute;
+  z-index: 1000;
+}
+
+.header-navbar-nav {
+  margin-right: 1rem;
+}
+
+.header-navbar-end {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.header-navbar-end-download-btn {
+  white-space: nowrap;
+}
+
+/* Tablet+ header layout */
+@media (min-width: 768px) {
+  .header-wrapper .header-navbar-nav {
+    align-items: stretch;
+    display: flex;
+  }
+
+  .header-wrapper .header-navbar-nav-links {
+    display: flex;
+  }
+
+  .header-wrapper .header-navbar-nav-links > * {
+    margin-right: 1rem;
+  }
+
+  .header-wrapper .header-navbar-end-download-btn {
     display: inline-block;
-    position: absolute;
-    z-index: 1000
+    font-weight: 700;
+  }
+
+  .header-wrapper .mobile-menu-btn {
+    display: none;
+  }
 }
 
-@media (min-width:768px) {
-    .header-wrapper .header-navbar-nav {
-        align-items: stretch;
-        display: flex
-    }
-
-    .header-wrapper .header-navbar-nav-links {
-        display: flex
-    }
-
-    .header-wrapper .header-navbar-nav-links>* {
-        margin-right: 1rem
-    }
-
-    .header-wrapper .header-navbar-end-download-btn {
-        display: inline-block;
-        font-weight: 700;
-    }
-
-    .header-wrapper .mobile-menu-btn {
-        display: none
-    }
+/* Desktop logo sizing */
+@media (min-width: 992px) {
+  .header-navbar-brand .logo-wrapper img {
+    max-height: 60px;
+    width: auto;
+    height: auto;
+  }
 }
 
+/* --------------------------------------------------------------------------
+   Jumbotron / Featured Banner
+   -------------------------------------------------------------------------- */
 .featured-jumbotron {
-    background-color: #012269;
-    color: #ff950e;
-    margin-bottom: 0;
-    padding-top: 4.5rem;;
-    text-align: left
+  background-color: var(--4diac-blue);
+  color: var(--4diac-orange);
+  margin-bottom: 0;
+  padding-top: var(--space-xl);
+  text-align: left;
 }
 
 .header-default-bg-img .featured-jumbotron:before {
-    background: linear-gradient(0deg, #012269 20%, transparent);
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%
+  background: linear-gradient(0deg, var(--4diac-blue) 20%, transparent);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .featured-jumbotron .featured-jumbotron-headline,
 .featured-jumbotron .featured-jumbotron-subtitle,
 .featured-jumbotron .featured-jumbotron-tagline {
-    text-shadow: 0 0 16px #012269, 0 0 16px #012269, 0 0 16px #012269, 0 0 16px #012269
+  text-shadow: 0 0 16px var(--4diac-blue), 0 0 16px var(--4diac-blue),
+    0 0 16px var(--4diac-blue), 0 0 16px var(--4diac-blue);
 }
 
 .featured-jumbotron .featured-jumbotron-headline,
 .featured-jumbotron .h1,
 .featured-jumbotron h1 {
-    color: #ff950e;
-    font-size: 4rem;
-    font-weight: 400;
-    letter-spacing: normal;
-    margin-bottom: 1rem
+  color: var(--4diac-orange);
+  font-size: var(--text-4xl);
+  font-weight: 400;
+  letter-spacing: normal;
+  margin-bottom: var(--space-sm);
 }
 
 .featured-jumbotron .featured-jumbotron-subtitle {
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
+  font-size: var(--text-xl);
+  font-weight: 400;
+  margin-bottom: var(--space-lg);
 }
 
 .featured-jumbotron .featured-jumbotron-tagline,
 .featured-jumbotron .featured-jumbotron-tagline p {
-    font-size: 3rem
+  font-size: var(--text-3xl);
 }
 
 .featured-jumbotron .featured-jumbotron-links {
-    margin-bottom: 4rem
+  margin-bottom: var(--space-xl);
 }
 
+/* --------------------------------------------------------------------------
+   News List
+   -------------------------------------------------------------------------- */
 .news-list .media-link {
-    background-color: #f5f5f5;
-    color: #484848;
-    display: block;
-    margin-bottom: 10px;
-    padding: 30px
+  background-color: var(--bg-muted);
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 10px;
+  padding: 30px;
 }
 
 .news-list .media-link:hover {
-    background-color: #fff3e3;
-    color: #484848;
-    text-decoration: none
+  background-color: var(--bg-accent);
+  color: var(--text-muted);
+  text-decoration: none;
 }
 
+/* --------------------------------------------------------------------------
+   Menu Heading Decorations
+   -------------------------------------------------------------------------- */
 .menu-heading:before {
-    background-color: rgba(51, 78, 135, 1.0);
-    border-radius: 50%;
-    bottom: -.5rem;
-    content: "";
-    display: inline-block;
-    height: 1rem;
-    left: 0;
-    position: absolute;
-    width: 1rem
+  background-color: var(--4diac-blue-medium-1);
+  border-radius: 50%;
+  bottom: -0.5rem;
+  content: "";
+  display: inline-block;
+  height: 1rem;
+  left: 0;
+  position: absolute;
+  width: 1rem;
 }
 
 .menu-heading:after {
-    background-color: rgba(51, 78, 135, 1.0);
-    content: "";
-    display: block;
-    height: 1px;
-    margin-left: auto;
-    margin-top: 1.25rem;
-    width: 100%
+  background-color: var(--4diac-blue-medium-1);
+  content: "";
+  display: block;
+  height: 1px;
+  margin-left: auto;
+  margin-top: 1.25rem;
+  width: 100%;
 }
 
-a:visited {
-    color: #012269
-}
-
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
 #footer {
-  color: #012269;
+  color: var(--heading);
 }
 
-@media (min-width: 992px) {
-    .header-navbar-brand .logo-wrapper img {
-        max-height: 60px;
-        width: auto;
-        height: auto;
-    }
-}
-
-.header-navbar-nav {
-    margin-right: 1rem;
-}
-
-.header-navbar-end {
-    margin-left: auto;
-    flex-shrink: 0;
-}
-
-.header-navbar-end-download-btn {
-    white-space: nowrap;
-}
-
+/* --------------------------------------------------------------------------
+   Mobile Layout (max-width: 991px)
+   Responsive adjustments for mobile devices
+   -------------------------------------------------------------------------- */
 @media (max-width: 991px) {
-    body {
-        overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
-    .header-navbar {
-        overflow: hidden;
-        max-height: none;
-    }
-    .header-navbar-brand {
-        margin-right: 5px;
-        overflow: visible;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        height: 60px;
-    }
+  .header-navbar {
+    overflow: hidden;
+    max-height: none;
+  }
+  .header-navbar-brand {
+    margin-right: 5px;
+    overflow: visible;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
 
-    .header-navbar-brand .logo-wrapper {
-        display: flex;
-        align-items: center;
-        height: 100%;
-    }
+  .header-navbar-brand .logo-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
 
-    .header-navbar-brand .logo-wrapper img {
-        max-height: 50px;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-    }
+  .header-navbar-brand .logo-wrapper img {
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
 
-    .header-navbar-nav {
-        overflow-x: hidden;
-        overflow-y: auto;
-        max-height: calc(100vh - 80px);
-    }
+  .header-navbar-nav {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+  }
 
-    .header-navbar-end {
-        width: 100%;
-        padding: 0.5rem 0;
-        overflow: visible;
-    }
+  .header-navbar-end {
+    width: 100%;
+    padding: 0.5rem 0;
+    overflow: visible;
+  }
 
-    .header-navbar-end .btn {
-        width: 100%;
-        white-space: nowrap;
-        overflow: visible;
-    }
+  .header-navbar-end .btn {
+    width: 100%;
+    white-space: nowrap;
+    overflow: visible;
+  }
 
-    .card-container.col-xs-24.col-sm-6,
-    .card-container.col-xs-24.col-sm-5 {
-        max-width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .card-container.col-xs-24.col-sm-6,
+  .card-container.col-xs-24.col-sm-5 {
+    max-width: 100%;
+    padding-left: var(--container-padding-lg);
+    padding-right: var(--container-padding-lg);
+  }
 
-    .featured-jumbotron .featured-story-jumbotron {
-        margin-bottom: 2rem;
-    }
+  .featured-jumbotron .featured-story-jumbotron {
+    margin-bottom: var(--space-lg);
+  }
 
-    .featured-jumbotron .featured-jumbotron-end-custom {
-        max-width: 100%;
-        padding: 0 15px;
-        margin-top: 2rem;
-    }
+  .featured-jumbotron .featured-jumbotron-end-custom {
+    max-width: 100%;
+    padding: 0 var(--container-padding);
+    margin-top: var(--space-lg);
+  }
 
-    .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-lead-text {
-        margin-bottom: 1rem;
-        padding: 1rem 0;
-        text-align: center;
-        width: 100%;
-        order: 1;
-        font-size: 2rem;
-    }
+  .featured-jumbotron
+    .featured-jumbotron-end-custom
+    .custom-jumbotron-end-lead-text {
+    margin-bottom: var(--space-sm);
+    padding: var(--space-sm) 0;
+    text-align: center;
+    width: 100%;
+    order: 1;
+    font-size: var(--text-lg);
+  }
 
-    .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-link-group {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 2rem;
-        width: 100%;
-        order: 2;
-    }
-
-    .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-link-group > a {
-        padding: 1.5rem 1rem;
-    }
-
-    .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-link-group a:active .link-overlay,
-    .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-link-group a:focus .link-overlay,
-    .featured-jumbotron .featured-jumbotron-end-custom .custom-jumbotron-end-link-group a:hover .link-overlay {
-        display: none !important;
-    }
-}
-
-.news-cards-row {
-    /* neutralize Bootstrap .row negative margins when not inside .container
-     not the cleanest fix */
+  .featured-jumbotron
+    .featured-jumbotron-end-custom
+    .custom-jumbotron-end-link-group {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-bottom: var(--space-lg);
+    width: 100%;
+    order: 2;
+  }
+
+  .featured-jumbotron
+    .featured-jumbotron-end-custom
+    .custom-jumbotron-end-link-group
+    > a {
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .featured-jumbotron
+    .featured-jumbotron-end-custom
+    .custom-jumbotron-end-link-group
+    a:active
+    .link-overlay,
+  .featured-jumbotron
+    .featured-jumbotron-end-custom
+    .custom-jumbotron-end-link-group
+    a:focus
+    .link-overlay,
+  .featured-jumbotron
+    .featured-jumbotron-end-custom
+    .custom-jumbotron-end-link-group
+    a:hover
+    .link-overlay {
+    display: none !important;
+  }
 }
 
-@media (min-width: 768px) {
-        .news-cards-row {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
+/* --------------------------------------------------------------------------
+   News Cards & Card Panels
+   -------------------------------------------------------------------------- */
+.news-cards-row {
+  /* Neutralize Bootstrap .row negative margins when not inside .container */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
 }
+
 @media (min-width: 1200px) {
-        .news-cards-row {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+  .news-cards-row {
+    padding-left: var(--container-padding-lg);
+    padding-right: var(--container-padding-lg);
+  }
 }
 
-/* Allow button text wrapping inside news cards.
- In the theme Solstice, the class .btn enforces white-space: nowrap
- This fixed the wrapping of the <a> inside the news cards
- We should swtich to a custom class for the news card buttons
- */
+/* Override .btn white-space: nowrap to allow button text wrapping */
 .news-cards-row .card-panel .btn {
-    white-space: normal;
-    overflow-wrap: anywhere;
-    word-break: break-word;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.card-container .card-panel .panel-body {
+  padding: 0 1em 0;
 }
 
 .card-container .card-panel .panel-body p {
   margin-top: 15px;
-  margin-bottom: 0px;
-}
-
-.card-container .card-panel .panel-body {
-  padding: 0 1em 0em;
+  margin-bottom: 0;
 }
