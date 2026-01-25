@@ -10,6 +10,114 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Sun, 01 Mar 2020 16:09:45 -0400</lastBuildDate><atom:link href="https://eclipse.dev/4diac/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #70</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-70/</link>
+      <pubDate>Fri, 23 Jan 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-70/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Type System &amp;amp; Library Infrastructure&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed obsolete editable type entries and adapter-related functionality.&lt;/li&gt;
+&lt;li&gt;Introduced a unified &lt;em&gt;library element provider&lt;/em&gt; and integrated it across:
+&lt;ul&gt;
+&lt;li&gt;Decorators and content providers&lt;/li&gt;
+&lt;li&gt;Refactorings and quick fixes&lt;/li&gt;
+&lt;li&gt;Bulk editor&lt;/li&gt;
+&lt;li&gt;Type and system editors&lt;/li&gt;
+&lt;li&gt;ST editor&lt;/li&gt;
+&lt;li&gt;Debug UI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added supporting infrastructure for library elements:
+&lt;ul&gt;
+&lt;li&gt;Dependency tracker and updater&lt;/li&gt;
+&lt;li&gt;Activation listener&lt;/li&gt;
+&lt;li&gt;State listener&lt;/li&gt;
+&lt;li&gt;Undo manager&lt;/li&gt;
+&lt;li&gt;Sub-editor input&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Editor &amp;amp; Viewer Behavior&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed editor and viewer background handling to consistently use theme colors, ensuring correct appearance in dark mode and clear differentiation between editor and viewer.&lt;/li&gt;
+&lt;li&gt;Fixed moving blocks between editors.&lt;/li&gt;
+&lt;li&gt;Enabled seamless connections between graphical editors.&lt;/li&gt;
+&lt;li&gt;Improved connection feedback when crossing viewer borders.&lt;/li&gt;
+&lt;li&gt;Re-enabled canvas panning via middle mouse button and space + left mouse button.&lt;/li&gt;
+&lt;li&gt;Removed now unnecessary drag-and-drop handling due to improved direct editor interaction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Interaction &amp;amp; Usability Improvements&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Maintenance Release</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-maintenance-release/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-maintenance-release/</guid>
+      <description>&lt;h2 id=&#34;highlights-of-4diac-ide-302-fixes&#34;&gt;Highlights of 4diac IDE 3.0.2 fixes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed issues when changing FB types from data to adapter connections (and vice versa).&lt;/li&gt;
+&lt;li&gt;Corrected the FORTE code generator to include missing package names in internal FB configuration strings.&lt;/li&gt;
+&lt;li&gt;Reset variables without explicit defaults correctly in the evaluator.&lt;/li&gt;
+&lt;li&gt;Improved AttributeSearch to consider fully qualified attribute names, including package names.&lt;/li&gt;
+&lt;li&gt;Fixed setting of VarConfig in FBTypes.&lt;/li&gt;
+&lt;li&gt;Prevented recursive insertion of FBs and typed subapps into themselves.&lt;/li&gt;
+&lt;li&gt;Gracefully handle circular dependencies when loading types, logging warnings and creating error types.&lt;/li&gt;
+&lt;li&gt;Limited GitHub URL error reporting to 4k characters to avoid overly long stack traces.&lt;/li&gt;
+&lt;li&gt;Fixed issues in OCL checks, including warnings about double quotes and subapp-invariant repairs for untyped subapps (#1850).&lt;/li&gt;
+&lt;li&gt;Ensured plugin.properties of the model UI plugin is included in the build, restoring missing UI text.&lt;/li&gt;
+&lt;li&gt;Corrected handling of VAR_IN_OUTs in Plug Type Interfaces.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;highlights-of-4diac-forte-fixes&#34;&gt;Highlights of 4diac FORTE fixes:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Corrected IO FBs to include the package name, fixing issues with package-scoped references.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #69</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-69/</link>
+      <pubDate>Fri, 16 Jan 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-69/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Platform &amp;amp; Build&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the IDE to the Eclipse 2026-03 target platform, simplifying dependency checks reducing build and update effort.&lt;/li&gt;
+&lt;li&gt;Added additional Maven configuration to improve Sonar integration.&lt;/li&gt;
+&lt;li&gt;Fixed missing &lt;code&gt;plugin.properties&lt;/code&gt; entry in the model UI plugin build configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Modeling &amp;amp; Editor Behavior&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed incorrect handling of &lt;code&gt;VAR_IN_OUT&lt;/code&gt; variables in the Plug Type Interface (issue #1997).&lt;/li&gt;
+&lt;li&gt;Fixed automatic FB insertion into empty subapplications.&lt;/li&gt;
+&lt;li&gt;Added a &lt;code&gt;MemberAccess&lt;/code&gt; pin to the &lt;code&gt;InitialValueHelper&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Connection Creation &amp;amp; Markers&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #68</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-68/</link>
       <pubDate>Fri, 09 Jan 2026 17:00:00 +0000</pubDate>
