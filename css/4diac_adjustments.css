@@ -28,14 +28,17 @@ a {
 }
 
 a:focus,
-a:hover {
-  color: var(--link);
-  text-decoration: underline;
+a:hover,
+a:visited:hover {
+  color: var(--4diac-orange);
+  text-decoration: none; 
 }
 
 a:visited {
   color: var(--link);
 }
+
+
 
 .h1,
 .h2,

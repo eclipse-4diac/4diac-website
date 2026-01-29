@@ -3,4 +3,22 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
+
+h2[class^="icon-"]::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  margin-right: 0.45em;
+  font-size: 0.85em;
+  color: var(--4diac-lime-dark);
+}
+
+.icon-start::before        { content: "\f14e"; } 
+.icon-dev::before          { content: "\f121"; } 
+.icon-quality::before      { content: "\f188"; } 
+.icon-ux::before           { content: "\f1fc"; } 
+.icon-fb::before           { content: "\f12e"; } 
+.icon-docs::before         { content: "\f02d"; } 
+.icon-l10n::before         { content: "\f0ac"; } 
+.icon-industry::before     { content: "\f275"; } 
+.icon-guide::before        { content: "\f0ae"; } 
