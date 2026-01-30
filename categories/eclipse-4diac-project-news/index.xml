@@ -10,6 +10,89 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #71</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-71/</link>
+      <pubDate>Fri, 30 Jan 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-71/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Editor, refactoring, and model robustness&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed undo context handling in the bulk editor to correctly integrate with other editors and dirty-state tracking.&lt;/li&gt;
+&lt;li&gt;Switched rename and move refactorings to model-based edits and ensured explicit builds are scheduled afterward.&lt;/li&gt;
+&lt;li&gt;Fixed issues with recursive members in structs and avoided unnecessary notifications in type entries.&lt;/li&gt;
+&lt;li&gt;Refactored and fixed system creation after recent infrastructure changes.&lt;/li&gt;
+&lt;li&gt;Restored correct “Copy Project” behavior in the System Explorer paste action.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Library element and type handling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed disconnected library elements during disposal in the type editor.&lt;/li&gt;
+&lt;li&gt;Corrected dependency updates in the library element provider.&lt;/li&gt;
+&lt;li&gt;Removed obsolete system access from the System Manager, consolidating handling in the type library.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UI, usability, and visual improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved interface bar visuals with a cleaner appearance and enhanced dark mode support.&lt;/li&gt;
+&lt;li&gt;Fixed input updates for sub-editors in the breadcrumb editor.&lt;/li&gt;
+&lt;li&gt;Improved export feedback by showing ignored files and informational messages in the export status dialog.&lt;/li&gt;
+&lt;li&gt;Fixed texts and removed outdated icons for configurable FBs and container variables.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function blocks, initial values, and validation&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added documentation comments for RS and SR bistable latch function blocks.&lt;/li&gt;
+&lt;li&gt;Disallowed recursive members in structs.&lt;/li&gt;
+&lt;li&gt;Improved handling of inherited initial values on generic variables.&lt;/li&gt;
+&lt;li&gt;Added configurable severities for initial values on generic variables.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Debugging and tooling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Prepared replay debugging support for use with the interpreter in the GUI, including:
+&lt;ul&gt;
+&lt;li&gt;Integration of a tracer reader from Trace Compass.&lt;/li&gt;
+&lt;li&gt;Clear separation between simulator and interpreter components.&lt;/li&gt;
+&lt;li&gt;Support for selecting local or remote simulators.&lt;/li&gt;
+&lt;li&gt;Ensured listeners are removed safely only if projects still exist.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Miscellaneous fixes&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated generic class naming for array-to-value conversion.&lt;/li&gt;
+&lt;li&gt;Fixed dependency update initialization in library element handling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data conversion and utility functions&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactored and fixed &lt;code&gt;VALUES2ARRAY&lt;/code&gt; and &lt;code&gt;ARRAY2VALUES&lt;/code&gt; to improve correctness and maintainability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diagnostics and usability&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a helpful startup message for common issues when device creation fails due to missing shared libraries or linker flags.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code cleanup and consistency&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Renamed the RT_Bridge class to &lt;code&gt;GEN_RT_Bridge&lt;/code&gt; and aligned all related declarations.&lt;/li&gt;
+&lt;li&gt;Fixed missing includes in the embrick module to restore successful builds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #70</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-70/</link>
       <pubDate>Fri, 23 Jan 2026 17:00:00 +0000</pubDate>

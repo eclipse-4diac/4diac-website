@@ -16,19 +16,19 @@
   
 
 
-<title>Eclipse 4diac Weekly #37 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #37 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #37 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #71 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #71 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #71 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from May 23 to May 30, 2025.
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from January 23, 2026 to January 30, 2026.
 
-This week&#39;s Eclipse 4diac updates bring …">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from May 23 to May 30, 2025.
+This week’s updates focus on …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 23, 2026 to January 30, 2026.
 
-This week&#39;s Eclipse 4diac updates bring …">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from May 23 to May 30, 2025.
+This week’s updates focus on …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 23, 2026 to January 30, 2026.
 
-This week&#39;s Eclipse 4diac updates bring …">
+This week’s updates focus on …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -36,7 +36,7 @@ This week&#39;s Eclipse 4diac updates bring …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-37/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-71/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -44,11 +44,11 @@ This week&#39;s Eclipse 4diac updates bring …">
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-37/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-71/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1769815420">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1769815420">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1769815421">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1769815421">
 <script>
 	
 		var tableClasses = "table";
@@ -1286,8 +1286,6 @@ This week&#39;s Eclipse 4diac updates bring …">
             
               
             
-              
-            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
@@ -1298,13 +1296,8 @@ This week&#39;s Eclipse 4diac updates bring …">
             </li>
           
             
-            <li >
-              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
-            </li>
-          
-            
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-37/">Eclipse 4diac Weekly #37</a>
+              <a href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-71/">Eclipse 4diac Weekly #71</a>
             </li>
           
           </ol>
@@ -1323,7 +1316,7 @@ This week&#39;s Eclipse 4diac updates bring …">
     
       <h1>
         
-          Eclipse 4diac Weekly #37
+          Eclipse 4diac Weekly #71
         
       </h1>
     
@@ -1335,111 +1328,81 @@ This week&#39;s Eclipse 4diac updates bring …">
   
 
 
-  <p><p>Update on what development happened across the Eclipse 4diac project in the week from May 23 to May 30, 2025.</p>
-<p>This week&rsquo;s Eclipse 4diac updates bring improvements to 4diac IDE including
-support for FunctionFBType in the FB Network interpreter, significant improvements to the Structured Text editor, and smarter monitoring and bulk editing features.
-On 4diac FORTE side the improvements are to store type hashes for FBs, data types, and adapters, streamlined build support with fixes for string escapes and improved CI integration, and a more flexible Generic FB architecture.</p>
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from January 23, 2026 to January 30, 2026.</p>
+<p>This week’s updates focus on robustness and usability improvements in the 4diac IDE, with refinements across refactoring, library element handling, system management, UI consistency, and replay debugging support.
+4diac FORTE complements this with targeted fixes and cleanups around array/value conversions, diagnostics, and code consistency.</p>
 </p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
-<li>
-<p><strong>FBNetwork Interpreter Support for <code>FunctionFBType</code></strong></p>
+<li><strong>Editor, refactoring, and model robustness</strong>
+<ul>
+<li>Fixed undo context handling in the bulk editor to correctly integrate with other editors and dirty-state tracking.</li>
+<li>Switched rename and move refactorings to model-based edits and ensured explicit builds are scheduled afterward.</li>
+<li>Fixed issues with recursive members in structs and avoided unnecessary notifications in type entries.</li>
+<li>Refactored and fixed system creation after recent infrastructure changes.</li>
+<li>Restored correct “Copy Project” behavior in the System Explorer paste action.</li>
+</ul>
 </li>
-<li>
-<p><strong>Structured Text (ST) Editor Enhancements:</strong></p>
+<li><strong>Library element and type handling</strong>
 <ul>
-<li>Correct handling of parameters with variable-length arrays.</li>
-<li>Improved escaping of newline characters (e.g., <code>\n</code> now maps to <code>$L</code> instead of <code>$N</code>).</li>
-<li>Restructured preferences and property pages:
+<li>Fixed disconnected library elements during disposal in the type editor.</li>
+<li>Corrected dependency updates in the library element provider.</li>
+<li>Removed obsolete system access from the System Manager, consolidating handling in the type library.</li>
+</ul>
+</li>
+<li><strong>UI, usability, and visual improvements</strong>
 <ul>
-<li>Unified layout across ST-related settings.</li>
-<li>Removed obsolete ST core and Xtext compiler pages.</li>
-<li>Project-specific configuration support.</li>
+<li>Improved interface bar visuals with a cleaner appearance and enhanced dark mode support.</li>
+<li>Fixed input updates for sub-editors in the breadcrumb editor.</li>
+<li>Improved export feedback by showing ignored files and informational messages in the export status dialog.</li>
+<li>Fixed texts and removed outdated icons for configurable FBs and container variables.</li>
+</ul>
+</li>
+<li><strong>Function blocks, initial values, and validation</strong>
+<ul>
+<li>Added documentation comments for RS and SR bistable latch function blocks.</li>
+<li>Disallowed recursive members in structs.</li>
+<li>Improved handling of inherited initial values on generic variables.</li>
+<li>Added configurable severities for initial values on generic variables.</li>
+</ul>
+</li>
+<li><strong>Debugging and tooling</strong>
+<ul>
+<li>Prepared replay debugging support for use with the interpreter in the GUI, including:
+<ul>
+<li>Integration of a tracer reader from Trace Compass.</li>
+<li>Clear separation between simulator and interpreter components.</li>
+<li>Support for selecting local or remote simulators.</li>
+<li>Ensured listeners are removed safely only if projects still exist.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>
-<p><strong>Monitoring and Debugging Fixes:</strong></p>
+<li><strong>Miscellaneous fixes</strong>
 <ul>
-<li>Improved in-out pin handling in watch views for variable-length arrays.</li>
-<li>Fixed StackOverflow error for SubApps with self-loops.</li>
-</ul>
-</li>
-<li>
-<p><strong>Bulk Editor Improvements:</strong></p>
-<ul>
-<li>Enhanced Application search accuracy.</li>
-<li>Added status indicators and warnings for dirty editors.</li>
-<li>Support for change tracking from other open editors via <code>TypeEntryAdapter</code>.</li>
-<li>Option to exclude Linked Elements from searches.</li>
-<li><code>FindEditor</code> now returns all matching editors instead of just the first.</li>
-</ul>
-</li>
-<li>
-<p><strong>General Fixes and Improvements:</strong></p>
-<ul>
-<li>Type hashes for FBs and data types are now exported.</li>
-<li>Fixed block margin settings in project-specific configurations.</li>
-<li>Improved behavior of <code>MarkPredecessor</code> in context menus.</li>
+<li>Updated generic class naming for array-to-value conversion.</li>
+<li>Fixed dependency update initialization in library element handling.</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
-<li>
-<p><strong>Type Hash-Based Query and Validation:</strong></p>
+<li><strong>Data conversion and utility functions</strong>
 <ul>
-<li>Introduced type hash validation during FB Type creation.</li>
-<li>Added new query commands for Adapter Types, Data Types, and FB Types.</li>
-<li>All query commands optionally support type hash verification for improved integrity.</li>
+<li>Refactored and fixed <code>VALUES2ARRAY</code> and <code>ARRAY2VALUES</code> to improve correctness and maintainability.</li>
 </ul>
 </li>
-<li>
-<p><strong>Runtime and Type Library Updates:</strong></p>
+<li><strong>Diagnostics and usability</strong>
 <ul>
-<li>Type entries cleaned and optimized:
-<ul>
-<li>Removed virtual inheritance.</li>
-<li>Introduced <code>constexpr</code> where applicable.</li>
+<li>Added a helpful startup message for common issues when device creation fails due to missing shared libraries or linker flags.</li>
 </ul>
 </li>
-<li>Reworked type library to use STL:
+<li><strong>Code cleanup and consistency</strong>
 <ul>
-<li>More type-safe.</li>
-<li>Better encapsulation.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Generic FB (GEN FB) Improvements:</strong></p>
-<ul>
-<li>Delegated pin creation to subclasses.</li>
-<li><code>CommFB</code> and <code>RT_Bridge</code> reworked to match new GEN FB concept.</li>
-<li><strong>Note:</strong> Adapter support is temporarily broken and will be addressed in a follow-up update.</li>
-</ul>
-</li>
-<li>
-<p><strong>Build System and CI Enhancements:</strong></p>
-<ul>
-<li>Introduced standardized CMake presets for CI builds.</li>
-<li>Added timeouts to C library tests to avoid stalled builds.</li>
-<li>Enabled verbose test output in GitHub CI runs.</li>
-</ul>
-</li>
-<li>
-<p><strong>Cleanups and Legacy Removal:</strong></p>
-<ul>
-<li>Removed <code>SinglyListLink</code> from OPC UA layer.</li>
-<li>Deprecated build options removed:
-<ul>
-<li><code>FORTE_USE_WSTRING_DATATYPE</code></li>
-<li><code>FORTE_UNICODE_SUPPORT</code></li>
-</ul>
-</li>
+<li>Renamed the RT_Bridge class to <code>GEN_RT_Bridge</code> and aligned all related declarations.</li>
+<li>Fixed missing includes in the embrick module to restore successful builds.</li>
 </ul>
 </li>
 </ul>
@@ -1656,7 +1619,7 @@ On 4diac FORTE side the improvements are to store type hashes for FBs, data type
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1769815420"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1769815421"></script>
   
 
   
