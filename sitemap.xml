@@ -443,8 +443,6 @@
     <loc>https://eclipse.dev/4diac/support/</loc>
     <lastmod>2020-03-01T16:09:45-04:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/specs/</loc>
-  </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacfbe/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.1/4diacfbe/</loc>
@@ -511,7 +509,7 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/fbdkip.html</loc>
   </url><url>
-    <loc>https://eclipse.dev/4diac/doc/other_features/gitissuereporting.html</loc>
+    <loc>https://eclipse.dev/4diac/doc/tutorials/gitissuereporting.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/communication/arrowhead.html</loc>
   </url><url>
@@ -558,6 +556,8 @@
     <loc>https://eclipse.dev/4diac/doc/installation/pikeos_posix.html</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/installation/mingw.html</loc>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/doc/specs/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/doc/installation/bootwithforte.html</loc>
   </url><url>

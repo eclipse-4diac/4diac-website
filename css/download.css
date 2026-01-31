@@ -69,34 +69,3 @@
 .glyph-container a:visited {
   color: white;
 }
-
-#main-sidebar .main-sidebar-item>a {
-    background: #012269;
-}
-
-#main-sidebar a,
-#main-sidebar a:hover {
-    color: #012269
-}
-
-#main-sidebar {
-    color: #012269
-}
-
-#main-sidebar .main-sidebar-heading{
-	content: "\f135"; /* Unicode for the Font Awesome rocket icon */
-	font-weight: 700;
-	font-size: large;	
-}
-
-#main-sidebar .main-sidebar-item>a.main-sidebar-item-active,
-#main-sidebar .main-sidebar-item>a:hover,
-#main-sidebar .main-sidebar-item>a[aria-expanded=true] {
-    background-color: #ff950e
-}
-
-@media (min-width:992px) {
-    #main-sidebar:before {
-        background-color: #fff3e3;
-    }
-}
