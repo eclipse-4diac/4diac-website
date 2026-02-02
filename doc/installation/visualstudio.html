@@ -41,8 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/installation/visualstudio.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1769898425">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1769898425">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1770043231">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1770043231">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1770043231">
 <script>
 	
 		var tableClasses = "table";
@@ -787,19 +788,19 @@
               >
                 
                   <li>
-                    <a class="mobile-menu-item" href="/4diac/doc/tutorials/overview.html">
+                    <a class="mobile-menu-item" href="/4diac/doc/tutorials/">
                       Step by Step Tutorials
                     </a>
                   </li>
                 
                   <li>
-                    <a class="mobile-menu-item" href="/4diac/doc/installation/installation.html">
+                    <a class="mobile-menu-item" href="/4diac/doc/installation/">
                       Install Eclipse 4diac
                     </a>
                   </li>
                 
                   <li>
-                    <a class="mobile-menu-item" href="/4diac/doc/examples/examples.html">
+                    <a class="mobile-menu-item" href="/4diac/doc/examples/">
                       4diac IDE Examples
                     </a>
                   </li>
@@ -830,19 +831,19 @@
               >
                 
                   <li>
-                    <a class="mobile-menu-item" href="/4diac/doc/io_config/io_config.html">
+                    <a class="mobile-menu-item" href="/4diac/doc/io_config/">
                       IO Configuration for the Different Platforms
                     </a>
                   </li>
                 
                   <li>
-                    <a class="mobile-menu-item" href="/4diac/doc/communication/communication.html">
+                    <a class="mobile-menu-item" href="/4diac/doc/communication/">
                       Communication Protocols
                     </a>
                   </li>
                 
                   <li>
-                    <a class="mobile-menu-item" href="/4diac/doc/development/development.html">
+                    <a class="mobile-menu-item" href="/4diac/doc/development/">
                       Development of 4diac FORTE and 4diac IDE
                     </a>
                   </li>
@@ -1166,15 +1167,15 @@
                         <ul>
                             
                                 <li>
-                                    <a href="/4diac/doc/tutorials/overview.html">Step by Step Tutorials</a>
+                                    <a href="/4diac/doc/tutorials/">Step by Step Tutorials</a>
                                 </li>
                             
                                 <li>
-                                    <a href="/4diac/doc/installation/installation.html">Install Eclipse 4diac</a>
+                                    <a href="/4diac/doc/installation/">Install Eclipse 4diac</a>
                                 </li>
                             
                                 <li>
-                                    <a href="/4diac/doc/examples/examples.html">4diac IDE Examples</a>
+                                    <a href="/4diac/doc/examples/">4diac IDE Examples</a>
                                 </li>
                             
                                 <li>
@@ -1189,15 +1190,15 @@
                         <ul>
                             
                                 <li>
-                                    <a href="/4diac/doc/io_config/io_config.html">IO Configuration for the Different Platforms</a>
+                                    <a href="/4diac/doc/io_config/">IO Configuration for the Different Platforms</a>
                                 </li>
                             
                                 <li>
-                                    <a href="/4diac/doc/communication/communication.html">Communication Protocols</a>
+                                    <a href="/4diac/doc/communication/">Communication Protocols</a>
                                 </li>
                             
                                 <li>
-                                    <a href="/4diac/doc/development/development.html">Development of 4diac FORTE and 4diac IDE</a>
+                                    <a href="/4diac/doc/development/">Development of 4diac FORTE and 4diac IDE</a>
                                 </li>
                             
                         </ul>
@@ -1280,6 +1281,8 @@
             
               
             
+              
+            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
@@ -1287,6 +1290,11 @@
             
             <li >
               <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/doc/installation/">Installation</a>
             </li>
           
             
@@ -1322,7 +1330,7 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>The following describes how to compile 4diac FORTE with win32-architecture using Visual Studio.
-In the installation tutorial <a href="./installation.html#ownFORTE">(back)</a> you find more details on building your own 4diac FORTE.
+In the installation tutorial <a href="./overview.html#ownFORTE">(back)</a> you find more details on building your own 4diac FORTE.
 Additionally, other tools are described there.</p>
 </div>
 <div class="admonitionblock important">
@@ -1344,7 +1352,7 @@ See for example <a href="http://stackoverflow.com/questions/12970293/why-microso
 <h2 id="_building_a_ms_visual_studio_project_for_4diacforte_with_cmake">Building a MS Visual Studio Project for 4diac FORTE with CMake</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In the <a href="./installation.html#ownFORTE">installation tutorial</a>, the steps on building a project with CMake are described in detail.
+<p>In the <a href="./overview.html#ownFORTE">installation tutorial</a>, the steps on building a project with CMake are described in detail.
 To use Visual Studio, you need to however select the tool MS Visual Studio.
 The correct architecture is Win32.</p>
 </div>
@@ -1365,7 +1373,7 @@ Press the <span class="button4diac">Finish</span> button afterwards.</p>
 </li>
 <li>
 <p>For the option <span class="specificText">FORTE_ARCHITECTURE</span>, select Win32.
-Other modules and configurations options can be set following the tutorial step <a href="./installation.html#generateFilesForCompiling">Build a project with CMake</a>.</p>
+Other modules and configurations options can be set following the tutorial step <a href="./overview.html#generateFilesForCompiling">Build a project with CMake</a>.</p>
 </li>
 <li>
 <p>Press the <span class="button4diac">Configure</span> button, check red rows and repeat this until no row appears red. Afterwards, press the button <span class="button4diac">Generate</span>.</p>
@@ -1422,7 +1430,7 @@ A file <code>forte.exe</code> should be generated in <code>FORTE_FOLDER_ROOT/bin
 <p>If you want to build a 4diac FORTE, here is a quick link back:</p>
 </div>
 <div class="paragraph">
-<p><a href="./installation.html">Install Eclipse 4diac</a></p>
+<p><a href="./overview.html">Install Eclipse 4diac</a></p>
 </div>
 <div class="paragraph">
 <p>After you installed all required tools, it’s time to start using them.
@@ -2158,7 +2166,7 @@ access</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1769898456"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1770043234"></script>
   
 
   

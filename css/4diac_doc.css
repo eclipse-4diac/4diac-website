@@ -1,0 +1,12 @@
+
+
+span.image {
+  display: block;
+  max-width: 100%;
+}
+
+span.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
