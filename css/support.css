@@ -13,9 +13,11 @@
   }
   
 .card-container .glyph-highlight .glyph-container{
-    background-color:#ff950e;
-    color:#fff;font-size:3em;
-    height:40px;padding:0px 0px 5px;
+    background-color: var(--4diac-orange);
+    color:#fff;
+    font-size:3em;
+    height:40px;
+    padding:0px 0px 5px;
     width:75px
   }
   
@@ -27,7 +29,7 @@
   
 .card-container .glyph-highlight .glyph-bottom{
   border:37.5px solid transparent;
-  border-top:18.75px solid #ff950e;
+  border-top:18.75px solid var(--4diac-orange);
   height:0;
   width:0
 }
@@ -36,8 +38,7 @@
   margin-top:5px
 }
 
-h3 {
-  color: #505050
+.panel-body ul {
+   padding-left: 1.2em;
 }
-
 

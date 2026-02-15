@@ -8,7 +8,137 @@
     <language>en</language>
     <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
-    <lastBuildDate>Fri, 30 Jan 2026 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Feb 2026 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #73</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-73/</link>
+      <pubDate>Fri, 13 Feb 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-73/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Preferences &amp;amp; issue reporting&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added preference for manually configuring the GitHub issue URL&lt;/li&gt;
+&lt;li&gt;Added preference qualifier parameter to the GitHub issue creator for third-party plugin integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Type system &amp;amp; model robustness&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added search references for InternalFBs&lt;/li&gt;
+&lt;li&gt;Fixed parameter dependency handling for functions and methods in &lt;code&gt;forte_ng&lt;/code&gt; export&lt;/li&gt;
+&lt;li&gt;Replaced fragile &lt;code&gt;eContainer()&lt;/code&gt; usages with &lt;code&gt;getInterfaceList()&lt;/code&gt; or &lt;code&gt;getBlockElement()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fixed filter handling for type entry notifications during dependency updates&lt;/li&gt;
+&lt;li&gt;Detected and prevented recursion during dependency updates&lt;/li&gt;
+&lt;li&gt;Fixed adapter exceptions interfering with type entry operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Editing, commands &amp;amp; policies&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #72</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-72/</link>
+      <pubDate>Fri, 06 Feb 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-72/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Structured data &amp;amp; model correctness&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed equals checks in structured values&lt;/li&gt;
+&lt;li&gt;Fixed follow / go-to pin handling for expanded struct member pins&lt;/li&gt;
+&lt;li&gt;Allow unset type in &lt;code&gt;F_MOVE&lt;/code&gt; instances&lt;/li&gt;
+&lt;li&gt;Added helper methods for value handling and array size computation in the model&lt;/li&gt;
+&lt;li&gt;Added lower and upper bound function blocks (&lt;code&gt;F_LOWER_BOUND&lt;/code&gt;, &lt;code&gt;F_UPPER_BOUND&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Refactoring &amp;amp; editing&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Use model edits for connection refactoring&lt;/li&gt;
+&lt;li&gt;Improved connection refactoring stability&lt;/li&gt;
+&lt;li&gt;Improved undo and job scheduling behavior during refactorings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Library &amp;amp; dependency management&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed invalid thread access in library element dependency updater&lt;/li&gt;
+&lt;li&gt;Extracted permission-related functions from &lt;code&gt;LibraryManager&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Extracted marker-related functions from &lt;code&gt;LibraryManager&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fixed library builder to detect broken links&lt;/li&gt;
+&lt;li&gt;Created library download package&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UI &amp;amp; visual improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added new shadow and comment header to expanded subapps&lt;/li&gt;
+&lt;li&gt;Introduced a soft drop shadow around the main page&lt;/li&gt;
+&lt;li&gt;Modernized page border and page comment visuals (including dark mode)&lt;/li&gt;
+&lt;li&gt;Removed custom &lt;code&gt;MarqueeRectangleFigure&lt;/code&gt; in favor of GEF Classic implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Usability &amp;amp; workflow&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved URL truncation for manual issue reporting&lt;/li&gt;
+&lt;li&gt;ExportBuilder now reports build cancellation correctly&lt;/li&gt;
+&lt;li&gt;Use modification timestamps to check for content existence&lt;/li&gt;
+&lt;li&gt;Added progress monitor handling where missing&lt;/li&gt;
+&lt;li&gt;Run GitHub workflows on all branches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform &amp;amp; infrastructure&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Externalized user-facing UI strings to &lt;code&gt;plugin.properties&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Adjusted product configuration to the latest Eclipse platform setup&lt;/li&gt;
+&lt;li&gt;Set priority and scheduling rules for OCL jobs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;IEC 61131-3 &amp;amp; data handling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added missing &lt;code&gt;REAL&lt;/code&gt; definitions for &lt;code&gt;TRUNC_*&lt;/code&gt; IEC 61131-3 functions&lt;/li&gt;
+&lt;li&gt;Updated InOut array bounds based on reference values with variable bounds&lt;/li&gt;
+&lt;li&gt;Added getter for defining values of InOut connections and improved naming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Runtime &amp;amp; platform fixes&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Initialized thread stack as &lt;code&gt;nullptr&lt;/code&gt; to avoid unnecessary memory usage in FreeRTOS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CI &amp;amp; maintenance&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Run GitHub workflows on all branches&lt;/li&gt;
+&lt;li&gt;Bumped &lt;code&gt;cpp-linter-action&lt;/code&gt; from 2.16.6 to 2.16.7&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-the-documentation&#34;&gt;Enhancements and Fixes in the Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Navigation &amp;amp; layout&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed CSS and breadcrumb generation for documentation pages&lt;/li&gt;
+&lt;li&gt;Introduced dedicated &lt;code&gt;_index.adoc&lt;/code&gt; files for improved navigation structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Usability&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added the new documentation sidebar to the documentation header for clearer structure and orientation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac Weekly #71</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-71/</link>
