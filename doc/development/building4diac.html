@@ -16,9 +16,9 @@
   
 
 
-<title>Building and Running 4diac IDE | The Eclipse Foundation</title>
-<meta property="og:title" content="Building and Running 4diac IDE | The Eclipse Foundation" />
-<meta name="twitter:title" content="Building and Running 4diac IDE | The Eclipse Foundation" />
+<title>Building and Running 4diac IDE | The Eclipse Foundation</title>
+<meta property="og:title" content="Building and Running 4diac IDE | The Eclipse Foundation" />
+<meta name="twitter:title" content="Building and Running 4diac IDE | The Eclipse Foundation" />
 
 <meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
 <meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/development/building4diac.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1771331128">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1771331128">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1771331128">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1771703156">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1771703156">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1771703156">
 <script>
 	
 		var tableClasses = "table";
@@ -1299,7 +1299,7 @@
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/doc/development/building4diac.html">Building and Running 4diac IDE</a>
+              <a href="https://eclipse.dev/4diac/doc/development/building4diac.html">Building and Running 4diac IDE</a>
             </li>
           
           </ol>
@@ -1318,7 +1318,7 @@
     
       <h1>
         
-          Building and Running 4diac IDE
+          Building and Running 4diac IDE
         
       </h1>
     
@@ -1329,25 +1329,25 @@
   <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>You have 2 options for building and running 4diac IDE:</p>
+<p>You have 2 options for building and running 4diac IDE:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><a href="#buildFromSource">Building and Running 4diac IDE from Source</a></p>
+<p><a href="#buildFromSource">Building and Running 4diac IDE from Source</a></p>
 </li>
 <li>
-<p><a href="#buildBinary">Building a Binary 4diac IDE Package from Source</a></p>
+<p><a href="#buildBinary">Building a Binary 4diac IDE Package from Source</a></p>
 </li>
 </ol>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_1_building_and_running_4diacide_from_source"><a id="buildFromSource"></a>1 Building and Running 4diac IDE from Source</h2>
+<h2 id="_1_building_and_running_4diac_ide_from_source"><a id="buildFromSource"></a>1 Building and Running 4diac IDE from Source</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Run through the following steps to build and execute the 4diac IDE from source:</p>
+<p>Run through the following steps to build and execute the 4diac IDE from source:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1355,7 +1355,7 @@
 <p><a href="#devEnvironment">Get the development environment</a></p>
 </li>
 <li>
-<p><a href="#checkOutRepos">Check out the 4diac IDE repository</a></p>
+<p><a href="#checkOutRepos">Check out the 4diac IDE repository</a></p>
 </li>
 <li>
 <p><a href="#importPlugins">Import plug-ins into workspace</a></p>
@@ -1399,9 +1399,9 @@ Use <span class="specificText">Eclipse Modeling Tools</span> edition.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_1_2_check_out_the_4diacide_repository"><a id="checkOutRepos"></a>1.2 Check out the 4diac IDE Repository</h3>
+<h3 id="_1_2_check_out_the_4diac_ide_repository"><a id="checkOutRepos"></a>1.2 Check out the 4diac IDE Repository</h3>
 <div class="paragraph">
-<p>This section shows how to check out (clone) the 4diac IDE repository.
+<p>This section shows how to check out (clone) the 4diac IDE repository.
 You will need <a href="https://git-scm.com/downloads">Git</a> to download it by using the <code>clone</code> command from Git to the repository <code><a href="https://github.com/eclipse-4diac/4diac-ide.git" class="bare">https://github.com/eclipse-4diac/4diac-ide.git</a></code>.
 If you’re using the terminal, do:</p>
 </div>
@@ -1517,9 +1517,20 @@ You should get three research results: 1. <span class="specificText">API Baselin
 </li>
 </ol>
 </div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>Note: If you get an error in the &#34;Problems&#34; view stating &#34;There is a possible API baseline mismatch …​&#34;, you can safely ignore this message.
+<p>If you get an error in the &#34;Problems&#34; view stating &#34;There is a possible API baseline mismatch …​&#34;, you can safely ignore this message.
 This message will not prevent the IDE from building successfully.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 <div class="sect2">
@@ -1533,10 +1544,53 @@ This message will not prevent the IDE from building successfully.</p>
 </div>
 </li>
 <li>
-<p>Wait until the target platform is resolved or press <span class="button4diac">Reload</span> and wait until it is resolved</p>
+<p>Wait until the target platform is resolved or press <span class="button4diac">Reload</span> and wait until it is resolved.</p>
 </li>
 <li>
 <p>Press <span class="button4diac">Set as Active Target Platform</span> within the upper right corner and wait until the workspace is built.</p>
+</li>
+<li>
+<p>To use 4diac IDE directly in development mode, you need to provide a <strong>type library</strong> and <strong>templates</strong>. These are located in the <code>data</code> directory of your cloned repository.</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Navigate to <code>org.eclipse.fordiac.ide/data/</code> in your file explorer and copy the <code>template</code> and <code>typelibrary</code> folders.</p>
+</li>
+<li>
+<p>Navigate to your active Eclipse workspace folder.</p>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The <code>.metadata</code> folder inside the workspace is hidden by default.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Windows:</strong> Enable &#34;Hidden items&#34; in the View menu of File Explorer.</p>
+</li>
+<li>
+<p><strong>macOS:</strong> Press <code>Command + Shift + .</code> to toggle hidden files.</p>
+</li>
+<li>
+<p><strong>Linux (Gnome):</strong> Press <code>Ctrl + H</code> to show hidden files.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</li>
+<li>
+<p>Paste the copied folders into the following directory: <code>.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/</code></p>
+</li>
+</ol>
+</div>
 </li>
 </ol>
 </div>
@@ -1546,33 +1600,27 @@ This message will not prevent the IDE from building successfully.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>To use 4diac IDE directly under this (development) Eclipse you need a type library and templates.
-Both are part of the 4diac IDE repository and can be found in the <code>data</code> directory.
-In order that your development 4diac IDE can find this they have to put into the directory where the target platform is stored.
-For that copy the <code>template</code> and the <code>typelibrary</code> directory into the <code>.metadata/.plugins/org.eclipse.pde.core/.bundle_pool</code> directory.</p>
-</li>
-<li>
-<p>Open the <code>org.eclipse.fordiac.ide.product</code> from the <code>org.eclipse.fordiac.ide.product</code> plug-in.</p>
+<p>Open the <code>org.eclipse.fordiac.ide.product</code> file from the <code>org.eclipse.fordiac.ide.product</code> plug-in.</p>
 <div class="paragraph">
 <p><span class="image"><img src="img/productConfigKepler.png" alt="Eclipse product configuration"/></span></p>
 </div>
 </li>
 <li>
-<p>In the <span class="menu4diac">Testing</span> Section of the <span class="tab4diac">Overview</span> tab press <span class="button4diac">Synchronize</span></p>
+<p>In the <span class="menu4diac">Testing</span> section of the <span class="tab4diac">Overview</span> tab, press <span class="button4diac">Synchronize</span>.</p>
 </li>
 <li>
-<p>Press <span class="button4diac">Launch an Eclipse Application</span> in the <span class="view4diac">Overview</span></p>
+<p>Press <span class="button4diac">Launch an Eclipse Application</span> in the <span class="view4diac">Overview</span> tab.</p>
 </li>
 </ol>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_building_your_own_4diacide"><a id="buildingIDE"></a>Building your own 4diac IDE</h3>
+<h3 id="_building_your_own_4diac_ide"><a id="buildingIDE"></a>Building your own 4diac IDE</h3>
 <div class="paragraph">
-<p>A big drawback for running 4diac IDE from source is that you need at least 2 Eclipse instances running.
+<p>A big drawback for running 4diac IDE from source is that you need at least 2 Eclipse instances running.
 Especially on systems with little memory this can be an issue.
 If you still want to keep up with the developments performed in the Git repository it makes sense to build a binary package.
-See <a href="#buildBinary">Building a binary 4diac IDE package from source</a> for details on how this can be achieved.</p>
+See <a href="#buildBinary">Building a binary 4diac IDE package from source</a> for details on how this can be achieved.</p>
 </div>
 <div class="paragraph">
 <p>In addition we offer a nightly build of 4diac IDE <a href="https://download.eclipse.org/4diac/updates/nightly/">here</a>.</p>
@@ -1584,17 +1632,17 @@ See <a href="#buildBinary">Building a binary 4diac IDE package from source</a> 
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2_building_a_binary_4diacide_package_from_source"><a id="buildBinary"></a>2 Building a Binary 4diac IDE Package from Source</h2>
+<h2 id="_2_building_a_binary_4diac_ide_package_from_source"><a id="buildBinary"></a>2 Building a Binary 4diac IDE Package from Source</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For building a binary 4diac IDE package from the source code the best is to use the Maven configuration which is also used to build 4diac IDE on our build server.
+<p>For building a binary 4diac IDE package from the source code the best is to use the Maven configuration which is also used to build 4diac IDE on our build server.
 A modern Eclipse IDE comes with Maven integration out of the box.
-Then the necessary steps for generating binary 4diac IDE packages are:</p>
+Then the necessary steps for generating binary 4diac IDE packages are:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Have the 4diac IDE source code in an Eclipse workspace as described in <a href="#buildFromSource">Building and Running 4diac IDE from Source</a></p>
+<p>Have the 4diac IDE source code in an Eclipse workspace as described in <a href="#buildFromSource">Building and Running 4diac IDE from Source</a></p>
 </li>
 <li>
 <p>Go to the root project <code>org.eclipse.fordiac.ide</code> and right-click on the pom.xml</p>
@@ -1608,7 +1656,7 @@ Then the necessary steps for generating binary 4diac IDE packages are:</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>Alternatively you can run <code>.mvn .install</code>  on the command line in the root folder of 4diac IDE source code.</p>
+<p>Alternatively you can run <code>.mvn .install</code>  on the command line in the root folder of 4diac IDE source code.</p>
 </div>
 </div>
 </div>
@@ -2343,7 +2391,7 @@ Then the necessary steps for generating binary 4diac IDE packages are:</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1771331132"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1771703162"></script>
   
 
   

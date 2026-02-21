@@ -10,6 +10,41 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacide/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #74</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-74/</link>
+      <pubDate>Fri, 20 Feb 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-74/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Textual Editor &amp;amp; ST Tooling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Filter unrelated markers in textual editor tabs&lt;/li&gt;
+&lt;li&gt;Added language-aware task markers for the ST editor&lt;/li&gt;
+&lt;li&gt;Introduced common marker types shared across ST languages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Markers &amp;amp; Error Reporting&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enabled custom plugins to register their own error reporting integrations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Refactoring &amp;amp; Project Structure&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added folder rename refactoring including automatic update of type references and package names&lt;/li&gt;
+&lt;li&gt;Display library version information in the explorer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Graphical Editing &amp;amp; Commands&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #73</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-73/</link>
       <pubDate>Fri, 13 Feb 2026 17:00:00 +0000</pubDate>
