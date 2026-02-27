@@ -10,6 +10,22 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 14 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/committer/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac 3.1 Development Milestone: Feature Freeze</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-development-milestone-feature-freeze/</link>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-development-milestone-feature-freeze/</guid>
+      <description>&lt;p&gt;The 3.1 release introduces several architectural and usability enhancements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;4diac IDE:&lt;/strong&gt; Improved Struct Member Access for &lt;code&gt;F_MOVE&lt;/code&gt; blocks, support for Folder Refactoring, and a refined user interface including drop shadows and optimized Dark Mode support.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4diac FORTE:&lt;/strong&gt; A modularized IEC 61131-3 function library, memory optimizations for FreeRTOS targets, and expanded OPC UA Alarm handling for SIFB-based implementations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The final release is scheduled for March 11, 2026. Detailed information on these changes is available on the &lt;a href=&#34;https://eclipse.dev/4diac/new-and-noteworthy/3.1/&#34;&gt;New and Noteworthy pages&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #74</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-74/</link>
       <pubDate>Fri, 20 Feb 2026 17:00:00 +0000</pubDate>

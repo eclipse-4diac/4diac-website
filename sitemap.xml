@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
-    <lastmod>2026-02-20T17:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-development-milestone-feature-freeze/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/releases/</loc>
+    <lastmod>2026-02-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
     <lastmod>2026-02-20T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-74/</loc>
@@ -24,9 +30,6 @@
     <lastmod>2026-01-23T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/eclipse-4diac-maintenance-release/</loc>
-    <lastmod>2026-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/categories/releases/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-69/</loc>
@@ -453,8 +456,6 @@
     <lastmod>2020-03-01T16:09:45-04:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacfbe/</loc>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.1/4diacfbe/</loc>
   </url><url>
     <loc>https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacforte/</loc>
   </url><url>

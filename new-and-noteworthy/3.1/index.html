@@ -41,8 +41,8 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/new-and-noteworthy/3.1/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1771703213">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1771703213">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1772186558">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1772186558">
 <script>
 	
 		var tableClasses = "table";
@@ -1347,8 +1347,39 @@ Eclipse 4diac can be downloaded from the project's <a href="/4diac/download">dow
         
         
         <h2 id="4diacide">4diac IDE</h2>
-        <ul>
-<li>In <code>F_MOVE</code> instances configured with a struct data type the members of the struct can be accessed individually</li>
+        <p>The 3.1 release of the 4diac IDE focuses on modernizing the user interface and providing more powerful tools for managing complex projects and data structures.</p>
+<h3 id="highlights">Highlights</h3>
+<h4 id="struct-member-access--f_move-improvements">Struct Member Access &amp; F_MOVE Improvements</h4>
+<p>Working with complex data structures is now significantly more intuitive. The <code>F_MOVE</code> block and other generic variables now fully support <strong>Member Access Pins</strong>.</p>
+<ul>
+<li><strong>Direct Configuration:</strong> Users can now configure pins for specific struct members directly on <code>F_MOVE</code> blocks.</li>
+<li><strong>Recursive Resolution:</strong> The &ldquo;Follow/Go-to pin&rdquo; handlers now recursively resolve member pins, even for deeply nested struct members.</li>
+<li><strong>Validation:</strong> Connections to member access pins are validated against the underlying struct field type to prevent mapping errors.</li>
+</ul>
+<h4 id="enhanced-folder-refactoring">Enhanced Folder Refactoring</h4>
+<p>Managing large libraries is now easier with support for <strong>Move and Rename refactoring for folders</strong>. The IDE automatically updates all internal type references and package names for the types contained within the affected folders.</p>
+<h3 id="user-interface--experience">User Interface &amp; Experience</h3>
+<ul>
+<li><strong>Modernized Look:</strong> A new soft drop shadow has been introduced around the main pages. The interface bars for SubApps and CFBs have been cleaned up by removing unnecessary borders.</li>
+<li><strong>Seamless Graphical Editing:</strong>
+<ul>
+<li>Connections can now be created across different graphical editor boundaries.</li>
+<li>Re-enabled canvas panning using <strong>Middle Mouse</strong> or <strong>Space + Left Mouse</strong>.</li>
+</ul>
+</li>
+<li><strong>Improved Screen Scaling (HiDPI):</strong> Reworked graphical commands to use absolute positions and sizes, ensuring a stable UI on high-resolution displays.</li>
+<li><strong>Dark Mode Optimizations:</strong> Added dedicated dark mode colors for interface bars, comment figures, and NatTable tree arrows to improve readability.</li>
+</ul>
+<h3 id="functional-improvements">Functional Improvements</h3>
+<ul>
+<li><strong>Advanced Event Connection Logic:</strong> When inserting a Function Block into an execution chain, the IDE now intelligently picks the first output event that already has an existing connection as the source.</li>
+<li><strong>ST Editor Enhancements:</strong> Added language-aware task markers (e.g., TODOs) and common marker types shared across all Structured Text languages.</li>
+<li><strong>Deployment Initial Values:</strong> A new &ldquo;Initial Values&rdquo; tab has been added to deployment launch configurations, including support for member input variables.</li>
+</ul>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li><strong>Stable Type Hashes:</strong> Switched hash generation from XMI to IEC 61499 XML to prevent &ldquo;unstable&rdquo; hashes caused by local file references.</li>
+<li><strong>Security:</strong> Added path normalization before unzipping files to prevent &ldquo;Zip Slip&rdquo; vulnerabilities.</li>
 </ul>
 
       
@@ -1359,16 +1390,38 @@ Eclipse 4diac can be downloaded from the project's <a href="/4diac/download">dow
         
         
         <h2 id="4diacforte">4diac FORTE</h2>
-        
-      
-    
-      
-      
-        
-        
-        
-        <h2 id="4diacfbe">4diac FBE</h2>
-        
+        <p>The 3.1 release of 4diac FORTE introduces significant architectural cleanups, specifically targeting library modularity and communication efficiency.</p>
+<h3 id="core-architecture">Core Architecture</h3>
+<h4 id="iec-61131-3-function-library-modularization">IEC 61131-3 Function Library Modularization</h4>
+<p>The standard function library has undergone a major refactoring. Functions are now split into individual headers. This modularity:</p>
+<ul>
+<li>Improves compile times.</li>
+<li>Allows for more granular inclusion of only the required math and conversion functions.</li>
+<li>Cleanly separates math definitions from conversion logic.</li>
+</ul>
+<h4 id="memory--performance-optimizations">Memory &amp; Performance Optimizations</h4>
+<ul>
+<li><strong>FreeRTOS Integration:</strong> Optimized thread stack initialization to prevent unnecessary memory allocation. In FreeRTOS, the stack is now initialized as <code>nullptr</code> when only the size is required, saving valuable RAM on embedded targets.</li>
+<li><strong>String Efficiency:</strong> Migrated several internal helpers to use <code>std::string_view</code> to avoid temporary string allocations during object lookup and creation.</li>
+</ul>
+<h3 id="opc-ua--communication">OPC UA &amp; Communication</h3>
+<ul>
+<li><strong>Alarm &amp; Condition Support:</strong> Refactored the OPC UA Alarm state fetching and object creation to better support SIFB-based alarm handling.</li>
+<li><strong>Namespace Handling:</strong> Updated the namespace delimiter for struct type handling to ensure better compatibility with standard OPC UA clients.</li>
+<li><strong>Startup Diagnostics:</strong> Added detailed help messages when FORTE is unable to create a device due to missing shared libraries or linker flag issues.</li>
+</ul>
+<h3 id="new-function-blocks--logic">New Function Blocks &amp; Logic</h3>
+<ul>
+<li><strong>New Blocks:</strong> Added <code>SPLIT_DWORD_INTO_BYTES</code> and updated <code>ASSEMBLE_DWORD_FROM_BYTES</code> for consistent 4-byte handling.</li>
+<li><strong>Composite FB Enhancements:</strong> Added support for <strong>delegating connections</strong> within Composite FBs, including improved handling of SIFBs inside CFBs and outgoing events.</li>
+<li><strong>Generic Array Handling:</strong> Improved <code>VALUES2ARRAY</code> and <code>ARRAY2VALUES</code> logic for updating InOut array bounds from reference values with variable bounds.</li>
+</ul>
+<h3 id="releng--documentation">Releng &amp; Documentation</h3>
+<ul>
+<li><strong>CI/CD:</strong> GitHub workflows now run on all branches to ensure stability across the development lifecycle.</li>
+<li><strong>Doxygen:</strong> Major cleanup of the Doxyfile and documentation paths for the standard function library (<code>stdfblib</code>).</li>
+</ul>
+
       
     
   
@@ -1579,7 +1632,7 @@ Eclipse 4diac can be downloaded from the project's <a href="/4diac/download">dow
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1771703213"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1772186562"></script>
   
 
   
