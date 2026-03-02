@@ -16,19 +16,19 @@
   
 
 
-<title>Eclipse 4diac Weekly #46 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #46 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #46 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #75 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #75 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #75 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from July 25 to August 1, 2025.
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from February 20 to February 27, 2026.
 
-The latest updates to Eclipse 4diac bring …">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from July 25 to August 1, 2025.
+This week’s updates focus on major …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 20 to February 27, 2026.
 
-The latest updates to Eclipse 4diac bring …">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from July 25 to August 1, 2025.
+This week’s updates focus on major …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 20 to February 27, 2026.
 
-The latest updates to Eclipse 4diac bring …">
+This week’s updates focus on major …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -36,7 +36,7 @@ The latest updates to Eclipse 4diac bring …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-46/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-75/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -44,7 +44,7 @@ The latest updates to Eclipse 4diac bring …">
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-46/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-75/" />
 
 
 <link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1772452252">
@@ -1286,8 +1286,6 @@ The latest updates to Eclipse 4diac bring …">
             
               
             
-              
-            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
@@ -1298,13 +1296,8 @@ The latest updates to Eclipse 4diac bring …">
             </li>
           
             
-            <li >
-              <a href="https://eclipse.dev/4diac/news/2025/">News 2025</a>
-            </li>
-          
-            
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-46/">Eclipse 4diac Weekly #46</a>
+              <a href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-75/">Eclipse 4diac Weekly #75</a>
             </li>
           
           </ol>
@@ -1323,7 +1316,7 @@ The latest updates to Eclipse 4diac bring …">
     
       <h1>
         
-          Eclipse 4diac Weekly #46
+          Eclipse 4diac Weekly #75
         
       </h1>
     
@@ -1335,94 +1328,141 @@ The latest updates to Eclipse 4diac bring …">
   
 
 
-  <p><p>Update on what development happened across the Eclipse 4diac project in the week from July 25 to August 1, 2025.</p>
-<p>The latest updates to Eclipse 4diac bring improvements to 4diac IDE&rsquo;s type handling, graphical editor usability, and code generation logic.
-On the 4diac FORTE side, a powerful new communication infrastructure has been introduced, including TCP/UDP support and a generic <code>SEND_RECV</code> block.</p>
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from February 20 to February 27, 2026.</p>
+<p>This week’s updates focus on major internal robustness improvements, enhanced refactoring support, and continued modernization of the 4diac IDE UI.
+4diac FORTE advances OPC UA alarm handling and communication extensibility, while documentation improves developer onboarding.</p>
 </p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p><strong>Model Robustness and Validation Enhancements</strong></p>
+<p><strong>Type System &amp; Error Type Handling</strong></p>
 <ul>
-<li>Interface elements are now required to always have a type.</li>
-<li>The type of event and data pins is enforced to never be <code>null</code>, with assertions added to help catch violations.</li>
-<li>InOut variable copying now assigns a temporary <code>ANY</code> type during EcoreUtil.Copier operations to avoid <code>null</code> references.</li>
-<li>Fixed missing event types in evaluator tests.</li>
-<li>Updated tests to reflect enforced non-null interface element types.</li>
+<li>Reworked error type handling and inheritance hierarchy</li>
+<li>Added dedicated error library elements when types cannot be loaded</li>
+<li>Filtered error types in type library and removed obsolete entries</li>
+<li>Improved validation with early detection of type cast errors</li>
+<li>Fixed interface handling for error types</li>
+<li>Added notifications for type name and comment changes</li>
+<li>Reload type entries correctly during dependency updates</li>
+<li>Created type entries for specific type classes</li>
 </ul>
 </li>
 <li>
-<p><strong>Graphical Editor Improvements</strong></p>
+<p><strong>Project References &amp; Build Handling</strong></p>
 <ul>
-<li>Dragging of function block network elements now uses a <strong>margin</strong> for better collision handling.</li>
-<li>Improved model size calculation for collision detection by properly considering pin ordering.</li>
-<li>Scrolling during dragging now works for <strong>Comments</strong>, <strong>Groups</strong>, and <strong>Devices</strong> by moving <code>ScrollingDragTracker</code> to a shared superclass.</li>
+<li>Improved referenced project handling and manifest integration</li>
+<li>Trigger full builds when project references change</li>
+<li>Enhanced library manager handling of referenced projects</li>
+<li>Cleaned up helper methods and documentation</li>
 </ul>
 </li>
 <li>
-<p><strong>Import and Type Handling</strong></p>
+<p><strong>Refactoring &amp; Model Editing</strong></p>
 <ul>
-<li>Imports now ignore types from variables in typed instances, since those are declared in the type itself.</li>
-<li>Fixed an issue where error type entries had no URI by using the type name as a fallback.</li>
-<li>Added a method to retrieve file extensions for type entries.</li>
+<li>Added support for folder move refactoring with automatic reference updates</li>
+<li>Improved duplicate name validation (case-insensitive)</li>
+<li>Cleared editor mappings correctly when systems are reset</li>
+<li>Added helper methods and improved handling of member access parameters</li>
+<li>Split model search lines for structured text code</li>
 </ul>
 </li>
 <li>
-<p><strong>Usability and Code Improvements</strong></p>
+<p><strong>ECC Editor Improvements</strong></p>
 <ul>
-<li>Struct variables are now shown in <strong>declaration order</strong>, improving consistency with model definitions.</li>
-<li>Enhanced OPC UA executor with new <strong>query methods</strong>.</li>
-<li>Improved call request handling by adding a <strong>hash</strong> and using structured responses.</li>
-<li>Log messages now include <strong>formatted types</strong> and no longer use constant IDs.</li>
+<li>Migrated ECC state creation to position-based commands</li>
+<li>Removed screen coordinate dependencies from CreateECStateCommand</li>
+<li>Updated creation tools and layout policies accordingly</li>
+<li>Fixed modulo freeform figure handling</li>
+</ul>
+</li>
+<li>
+<p><strong>Adapters &amp; Interface Improvements</strong></p>
+<ul>
+<li>Added parameter support for AdapterDeclaration import/export</li>
+<li>Fixed wrong device pin names</li>
+<li>Correctly updated untyped SubApp interfaces when hiding pins</li>
+<li>Improved automatic event connection handling considering event types</li>
+</ul>
+</li>
+<li>
+<p><strong>UI &amp; Visual Modernization</strong></p>
+<ul>
+<li>Reworked comment figure aligned with new design language</li>
+<li>Improved NatTable dark mode visuals and tree arrows</li>
+<li>Migrated to Draw2d FigureUtilities lighter/darker implementation</li>
+<li>Replaced legacy shadow borders with modern Draw2d shadows</li>
+<li>Fixed layouts in device and resource property sheets</li>
+<li>Removed obsolete interface sections and unused adapters</li>
+</ul>
+</li>
+<li>
+<p><strong>Localization &amp; Internationalization</strong></p>
+<ul>
+<li>Externalized user-facing strings in:
+<ul>
+<li>application plugin</li>
+<li>structured text editors and core UI plugins</li>
+<li>global constants editor</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Library &amp; Type Entry Robustness</strong></p>
+<ul>
+<li>Checked file existence before loading type entries</li>
+<li>Removed obsolete null checks</li>
+<li>Improved dependency update handling</li>
+<li>Added cleanup and validation logic for library elements</li>
+</ul>
+</li>
+<li>
+<p><strong>Deployment &amp; Runtime Integration</strong></p>
+<ul>
+<li>Upgraded FBRT launcher and updated FBDK2 device profile</li>
+<li>Enforced UI-thread execution for selectViewObject</li>
+</ul>
+</li>
+<li>
+<p><strong>Testing &amp; CI</strong></p>
+<ul>
+<li>Added unit tests and test project for MapToCommand</li>
+<li>Updated GitHub test result publishing action</li>
+</ul>
+</li>
+<li>
+<p><strong>Editor Stability Fixes</strong></p>
+<ul>
+<li>Fixed bulk editor discard/dirty handling</li>
+<li>Fixed device/resource property sheet layout issues</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
 <li>
-<p><strong>New Communication Infrastructure</strong></p>
+<p><strong>OPC UA Alarm &amp; SIFB Improvements</strong></p>
 <ul>
-<li>Introduced a new communication layer with:
-<ul>
-<li>support for <strong>asynchronous and polled</strong> operation,</li>
-<li><strong>minimum/maximum receive size</strong> configuration,</li>
-<li><strong>event configuration</strong> flexibility,</li>
-<li><strong>type-safe</strong> communication channels with <strong>self-registration</strong>.</li>
-</ul>
-</li>
-<li>Includes:
-<ul>
-<li><code>raw</code> channel for STRING communication,</li>
-<li><code>null</code> channel for testing, usable via <code>raw[].null[]</code>.</li>
-</ul>
-</li>
-<li>Implemented <strong>TCP and UDP communication channels</strong> for both:
-<ul>
-<li><strong>POSIX</strong> platforms,</li>
-<li><strong>Win32</strong> platforms.</li>
-</ul>
-</li>
-<li>Added tests for:
-<ul>
-<li><strong>TCP and UDP communication channels</strong>,</li>
-<li><strong>null communication channel</strong>,</li>
-<li><strong>raw channel</strong> with fixed-size configuration.</li>
-</ul>
-</li>
+<li>Refactored alarm state fetching</li>
+<li>Reworked OPC UA alarm object creation for SIFB usage</li>
+<li>Refactored alarm type creation for improved reuse</li>
 </ul>
 </li>
 <li>
-<p><strong>SEND_RECV Block</strong></p>
+<p><strong>Communication FB Extensibility</strong></p>
 <ul>
-<li>Added a new <strong>generic <code>SEND_RECV</code> function block</strong> for independent sending and receiving on duplex channels.</li>
+<li>Allowed overriding of <code>getNumSD()</code> and <code>getNumRD()</code> in BaseCommFB subclasses</li>
 </ul>
 </li>
-<li>
-<p><strong>Build System Improvements</strong></p>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-documentation">Enhancements and Fixes in 4diac Documentation</h2>
 <ul>
-<li>Added <strong>fake timer support</strong> to the new CMake approach and fixed related errors with other fake components.</li>
+<li><strong>Developer Experience</strong>
+<ul>
+<li>Enhanced development mode setup instructions for 4diac IDE</li>
+<li>Added guidance for handling hidden files and required directory setup</li>
 </ul>
 </li>
 </ul>
