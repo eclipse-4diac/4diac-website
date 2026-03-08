@@ -10,6 +10,37 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/iec-61499/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #76</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-76/</link>
+      <pubDate>Fri, 06 Mar 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-76/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Structured Text &amp;amp; Expression Handling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for providing expected types in the ST model&lt;/li&gt;
+&lt;li&gt;Provided expected type information during XMI export to ensure correct typing of initializer expressions&lt;/li&gt;
+&lt;li&gt;Added exception handling for out-of-bounds array access in the evaluator&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Model &amp;amp; Interface Handling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Switched to &lt;code&gt;EcoreUtil.copy&lt;/code&gt; for full interface duplication to ensure complete copies&lt;/li&gt;
+&lt;li&gt;Improved mapping of FBs with member access pins&lt;/li&gt;
+&lt;li&gt;Fixed containment handling of &lt;code&gt;VarConfigParameter&lt;/code&gt; in the Initial Value Editor&lt;/li&gt;
+&lt;li&gt;Added getters for old and new data types in &lt;code&gt;ChangeDataTypeCommand&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Type Validation &amp;amp; Hashing&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #75</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-75/</link>
       <pubDate>Fri, 27 Feb 2026 17:00:00 +0000</pubDate>

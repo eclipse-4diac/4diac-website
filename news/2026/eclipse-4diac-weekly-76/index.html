@@ -16,13 +16,19 @@
   
 
 
-<title>MQTT With Eclipse Paho | The Eclipse Foundation</title>
-<meta property="og:title" content="MQTT With Eclipse Paho | The Eclipse Foundation" />
-<meta name="twitter:title" content="MQTT With Eclipse Paho | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #76 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #76 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #76 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from February 27 to March 06, 2026.
+
+This week’s updates to Eclipse 4diac …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 27 to March 06, 2026.
+
+This week’s updates to Eclipse 4diac …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from February 27 to March 06, 2026.
+
+This week’s updates to Eclipse 4diac …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/doc/communication/mqttpaho.html" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-76/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,12 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/doc/communication/mqttpaho.html" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-76/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1773001374">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1773001374">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1773001374">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1773001433">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1773001433">
 <script>
 	
 		var tableClasses = "table";
@@ -1281,25 +1286,18 @@
             
               
             
-              
-            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
-            </li>
-          
-            
-            <li >
-              <a href="https://eclipse.dev/4diac/doc/communication/">Communication</a>
+              <a href="https://eclipse.dev/4diac/news/">News</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/doc/communication/mqttpaho.html">MQTT With Eclipse Paho</a>
+              <a href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-76/">Eclipse 4diac Weekly #76</a>
             </li>
           
           </ol>
@@ -1318,7 +1316,7 @@
     
       <h1>
         
-          MQTT With Eclipse Paho
+          Eclipse 4diac Weekly #76
         
       </h1>
     
@@ -1326,139 +1324,103 @@
 
 
   
-  <div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>This section will show you how to make applications communicate using <a href="https://eclipse.dev/paho/">MQTT Paho</a>.
-4diac FORTE uses a layered communication architecture.
-For MQTT Paho, a bottom layer has been realized, connecting MQTT Paho and the FBDK layer.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tbody><tr>
-<td class="icon">
-<div class="title">Important</div>
-</td>
-<td class="content">
-Please consider that with the current implementation it is not possible to connect to more than one MQTT Paho broker on one Device.
-</td>
-</tr>
-</tbody></table>
-</div>
-<div class="paragraph">
-<p>Since you need MQTT Paho, you need to install the libraries in your computer.
-Therefore you need to download the code and compile it.
-You will need the same tools needed for 4diac FORTE (git, cmake, compilers).
-The process is based on the normal compilation of 4diac FORTE, but the MQTT feature is enabled.
-<a href="../installation/overview.html#ownFORTE">Here’s</a> a quick link to 4diac FORTE’s compilation.
-For the installation please follow the next steps:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Checkout and build MQTT Paho (if you are using Windows, some commands might change):</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ git clone https://github.com/eclipse/paho.mqtt.c.git $ cd paho.mqtt.c</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Use CMake to generate the files to compile in a similar way you would use for compiling 4diac FORTE.
-The options in CMake for Paho are less and easy to understand.
-You will export the files to <code>[binPaho]</code>.
-Then do</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ cd [binPaho] $ make</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Configure 4diac FORTE compilation files by starting CMake as you usually and follow the next steps:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Check <code>FORTE_COM_PAHOMQTT</code> in CMake</p>
-</li>
-<li>
-<p>Set <code>FORTE_COM_PAHOMQTT_INCLUDE_DIR</code> in CMake to the folder where the header files of Paho are.</p>
-</li>
-<li>
-<p>Verify that the library specified in <code>FORTE_COM_PAHOMQTT_LIB</code> has the same name as the one you compiled.
-If not, change it.</p>
-</li>
-<li>
-<p>Set <code>FORTE_COM_PAHOMQTT_LIB_DIR</code> to the folder where <code>FORTE_COM_PAHOMQTT_LIB</code> is located.</p>
-</li>
-<li>
-<p>Configure CMake until nothing is marked red afterwards generate with CMake.</p>
-</li>
-<li>
-<p>Build 4diac FORTE</p>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>In case you use MQTT Paho on a Virtual Machine use NAT and configure forwarding for port 1883, which is the default port on a MQTT Paho broker.
-IP addresses for the forwarding can be empty.</p>
-</li>
-<li>
-<p>To communicate with MQTT Paho use the Publish/Subscribe Function Blocks of 4diac FORTE and configure its ID data input as follows:</p>
-<div class="listingblock">
-<div class="content">
-<pre>raw[].mqtt[tcp://ip:port, cientID, topic]</pre>
-</div>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="img/mqttExample.png" alt="Example of MQTT"/></span></p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tbody><tr>
-<td class="icon">
-<div class="title">Caution</div>
-</td>
-<td class="content">
-When using the <code>raw[]</code> layer in your <code>ID</code>, the <code>RD_1</code> of your subscriber and the <code>SD_1</code> of your publishers must be connected to a STRING  type data.
-Also, you can only use <code>PUBLISHER_1</code> and <code>SUSBCRIBER_1</code>, not others function blocks wit more inputs or outputs.
-</td>
-</tr>
-</tbody></table>
-</div>
-<div class="paragraph">
-<p>The main reason for this additional <code>raw</code> parameter is that mqtt does not define a payload format.
-With the additional param you specify in 4diac IDE a so called communication layer to be used on top of MQTT.
-This communication layer is now in charge of taking the data from IEC 61499 and generate an according payload format or take the payload and transform it for the FB’s outputs.
-The raw-layer is just accepting strings and sends the raw string content.</p>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_where_to_go_from_here">Where to go from here?</h2>
-<div class="sectionbody">
-<div class="ulist">
+
+  
+
+
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from February 27 to March 06, 2026.</p>
+<p>This week’s updates to Eclipse 4diac prepare the upcoming 3.1 release with improvements to the Structured Text model, XMI export correctness, deployment stability, and UI consistency.
+Documentation was also improved with streamlined contributing guidelines.</p>
+</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
 <li>
-<p>Go back to Protocols index:<br/>
-<a href="./overview.html">Communication Index</a></p>
+<p><strong>Structured Text &amp; Expression Handling</strong></p>
+<ul>
+<li>Added support for providing expected types in the ST model</li>
+<li>Provided expected type information during XMI export to ensure correct typing of initializer expressions</li>
+<li>Added exception handling for out-of-bounds array access in the evaluator</li>
+</ul>
 </li>
 <li>
-<p>If you want to go back to the Start Here page, we leave you here a fast access<br/>
-<a href="../doc_overview.html">Start Here page</a></p>
+<p><strong>Model &amp; Interface Handling</strong></p>
+<ul>
+<li>Switched to <code>EcoreUtil.copy</code> for full interface duplication to ensure complete copies</li>
+<li>Improved mapping of FBs with member access pins</li>
+<li>Fixed containment handling of <code>VarConfigParameter</code> in the Initial Value Editor</li>
+<li>Added getters for old and new data types in <code>ChangeDataTypeCommand</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Type Validation &amp; Hashing</strong></p>
+<ul>
+<li>Added validation for invalid internal FB types</li>
+<li>Filtered invalid internal FB types in property sheets</li>
+<li>Updated type hashing to only consider <code>Negate</code> and <code>Retain</code> attributes</li>
+</ul>
+</li>
+<li>
+<p><strong>Graphical Editor &amp; ECC Improvements</strong></p>
+<ul>
+<li>Fixed refresh handling of <code>with</code> connections to avoid overlap</li>
+<li>Modernized and harmonized ECC colors and added dark mode variants</li>
+</ul>
+</li>
+<li>
+<p><strong>Deployment &amp; Export</strong></p>
+<ul>
+<li>Fixed escaping of <code>&amp;</code> characters in deployment XML requests</li>
+<li>Ensured XMI exporter dialogs run in the UI display thread</li>
+</ul>
+</li>
+<li>
+<p><strong>Project Setup &amp; Usability</strong></p>
+<ul>
+<li>Fixed project wizard startup when no system libraries are present</li>
+</ul>
+</li>
+<li>
+<p><strong>UI &amp; Release Preparation</strong></p>
+<ul>
+<li>Added splash screen for the 3.1 release</li>
+<li>Updated plugin versions and dependencies for the 3.1 release</li>
+</ul>
+</li>
+<li>
+<p><strong>Testing &amp; Build Infrastructure</strong></p>
+<ul>
+<li>Stabilized parameterized test names in <code>ValueConverterTest</code></li>
+<li>Upgraded target platform to JUnit 6.0.3</li>
+<li>Updated GitHub Actions <code>upload-artifact</code> workflow</li>
+</ul>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>Or <a href="#top">Go to top</a></p>
-</div>
-</div>
-</div>
+<h2 id="enhancements-and-fixes-in-4diac-documentation">Enhancements and Fixes in 4diac Documentation</h2>
+<ul>
+<li>
+<p><strong>Contribution Workflow</strong></p>
+<ul>
+<li>Reworked contributing guidelines to streamline structure and align with GitHub workflows</li>
+<li>Reduced duplication across existing <code>CONTRIBUTING.md</code> files</li>
+</ul>
+</li>
+<li>
+<p><strong>Maintenance</strong></p>
+<ul>
+<li>Fixed link to the communication whitepaper</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
 
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
+  
 
   
 
@@ -1490,516 +1452,6 @@ The raw-layer is just accepting strings and sends the raw string content.</p>
   
   
 
-  
-    <aside class="main-sidebar-default-margin" id="main-sidebar">
-      
-        
-          <ul class="ul-left-nav" id="leftnav" role="tablist" aria-multiselectable="true">
-            <li class="main-sidebar-main-item main-sidebar-item-indented separator">
-              
-                <a class="main-sidebar-heading link-unstyled" href="/4diac/doc">
-                  Documentation
-                </a>
-              
-            </li>
-            
-              
-              
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-getting-started" aria-expanded="false" aria-controls="sb-doc-getting-started">
-                      <span>Getting Started</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-getting-started">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/intro/iec61499.html" target="_self">IEC 61499 101</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/intro/4diacframework.html" target="_self">4diac Framework</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-install" aria-expanded="false" aria-controls="sb-doc-install">
-                      <span>Installation</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-install">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/installation/overview.html#_4diacide" target="_self">4diac IDE</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/installation/overview.html#_4diacforte" target="_self">4diac FORTE</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/installation/docker.html" target="_self">4diac FORTE as docker</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/installation/bootwithforte.html" target="_self">Autostart 4diac FORTE on Linux</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-tutorials" aria-expanded="false" aria-controls="sb-doc-tutorials">
-                      <span>Tutorials</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-tutorials">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/overview.html" target="_self">Step 0 - 4diac IDE Overview</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/use4diaclocally.html" target="_self">Step 1 - Use 4diac Locally (Blinking Tutorial)</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/distribute4diac.html" target="_self">Step 2 - Distribute 4diac Applications</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/use4diacremotely.html" target="_self">Step 3 - Deploy Applications Remotely</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/createowntypes.html" target="_self">Step 4 - Create Your own Function Block Types</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/otheruseful.html" target="_self">Step 5 - Other Basic Features</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/advancedfeatures.html" target="_self">Step 6 - Advanced Features</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/other_features/replaydebugger.html" target="_self">Replay Debugger</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/opcuadeployment.html" target="_self">Deploying Applications with OPC UA</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/gitissuereporting.html" target="_self">Git Issue Reporting</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-examples" aria-expanded="false" aria-controls="sb-doc-examples">
-                      <span>Examples</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-examples">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/examples/xplus3.html" target="_self">X&#43;3</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/examples/pidmotor.html" target="_self">PID control on Lego Mindstorm&#39;s Motor</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/examples/bbbtrafficcontrol.html" target="_self">Traffic control example running on a BBB</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-io" aria-expanded="false" aria-controls="sb-doc-io">
-                      <span>IO Access</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-io">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/io_config/plc01a1.html" target="_self">PLC01A1</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/io_config/revolutionpi.html" target="_self">Revolution Pi</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/io_config/wago_pfc200.html" target="_self">Wago PFC200</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-                  
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled main-sidebar-item-active" role="button" data-toggle="collapse" href="#sb-doc-com" aria-expanded="true" aria-controls="sb-doc-com">
-                      <span>Communication Protocols</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse in" id="sb-doc-com">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/opcua.html" target="_self">OPCA UA</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled main-sidebar-item-active" href="/4diac/doc/communication/mqttpaho.html" target="_self">MQTT with Eclipse Paho</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/modbus.html" target="_self">Modbus</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/http.html" target="_self">HTTP</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/opcda.html" target="_self">OPC DA</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/tsn.html" target="_self">TSN</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/openpowerlink.html" target="_self">openPOWERLINK</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/simulation.html" target="_self">Communicating with Simulation Tools</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/xqueries.html" target="_self">Access BaseX Database with XQuery</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/arrowhead.html" target="_self">Arrowhead</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-spec" aria-expanded="false" aria-controls="sb-doc-spec">
-                      <span>Eclipse 4diac Specifications</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-spec">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/specs/fbrunscommunicationmodelwp.pdf" target="_self">Modelling Network Communication in IEC 61499</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-dev" aria-expanded="false" aria-controls="sb-doc-dev">
-                      <span>Development Documentation</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-dev">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/building4diac.html" target="_self">Building and Running 4diac IDE from Source</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/swtbottestsdocumentation.html" target="_self">SWTBot testing</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/forte_monitoring.html" target="_self">Monitoring</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/forte_communicationarchitecture.html" target="_self">4diac FORTE Communication Architecture</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/externalevent_example.html" target="_self">External Event SIFB</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/forte_codequality.html" target="_self">Assuring 4diac FORTE Code Quality</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/contribute.html" target="_self">Contributing to Eclipse 4diac</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" href="/4diac/doc/faq.html">
-                      <div>
-                        <span class="main-sidebar-item-pre" aria-hidden="true">
-                          
-                        </span>
-                        FAQs
-                      </div>
-                    </a>
-                  </li>
-                
-              </li>
-            
-          </ul>
-        
-      
-    </aside>
   
 
 
@@ -2175,7 +1627,7 @@ The raw-layer is just accepting strings and sends the raw string content.</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1773001387"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1773001434"></script>
   
 
   
