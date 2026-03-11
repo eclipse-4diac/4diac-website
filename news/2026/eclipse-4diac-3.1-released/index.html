@@ -16,13 +16,16 @@
   
 
 
-<title>Eclipse 4diac Weekly 7 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly 7 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly 7 | The Eclipse Foundation" />
+<title>Eclipse 4diac 3.1 Released! | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac 3.1 Released! | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac 3.1 Released! | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from October 18 to October 25, 2024.">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from October 18 to October 25, 2024.">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from October 18 to October 25, 2024.">
+<meta name="description" content="The Eclipse 4diac community is happy to announce the release of Eclipse 4diac 3.1, including updates to both the 4diac IDE and 4diac FORTE.
+This release …">
+<meta property="og:description" content="The Eclipse 4diac community is happy to announce the release of Eclipse 4diac 3.1, including updates to both the 4diac IDE and 4diac FORTE.
+This release …">
+<meta name="twitter:description" content="The Eclipse 4diac community is happy to announce the release of Eclipse 4diac 3.1, including updates to both the 4diac IDE and 4diac FORTE.
+This release …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +33,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-released/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,11 +41,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-released/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1773264185">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1773264185">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1773264188">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1773264188">
 <script>
 	
 		var tableClasses = "table";
@@ -1280,8 +1283,6 @@
             
               
             
-              
-            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
@@ -1292,13 +1293,8 @@
             </li>
           
             
-            <li >
-              <a href="https://eclipse.dev/4diac/news/2024/">News 2024</a>
-            </li>
-          
-            
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-7/">Eclipse 4diac Weekly 7</a>
+              <a href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-released/">Eclipse 4diac 3.1 Released!</a>
             </li>
           
           </ol>
@@ -1317,7 +1313,7 @@
     
       <h1>
         
-          Eclipse 4diac Weekly 7
+          Eclipse 4diac 3.1 Released!
         
       </h1>
     
@@ -1329,66 +1325,27 @@
   
 
 
-  <p>Update on what development happened across the Eclipse 4diac project in the week from October 18 to October 25, 2024.</p> 
+  <p>The Eclipse 4diac community is happy to announce the release of Eclipse 4diac 3.1, including updates to both the 4diac IDE and 4diac FORTE.
+This release introduces improvements to the development experience in 4diac  IDE as well as architectural and performance enhancements in 4diac FORTE runtime.</p> 
 
 
-<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<h2 id="highlights-4diac-ide">Highlights 4diac IDE:</h2>
 <ul>
-<li><strong>Improvements and Fixes in 4diac IDE:</strong>
+<li><strong>Improved Struct Member Access:</strong> <code>F_MOVE</code> and generic variables now fully support member access pins for easier handling of structured data types.</li>
+<li><strong>Enhanced Folder Refactoring:</strong> Move and rename refactoring for folders automatically updates internal type references and package names.</li>
+<li><strong>User Interface Improvements:</strong> A modernized UI, improved HiDPI support, better dark mode integration, and smoother graphical editing interactions.</li>
+<li><strong>Improved Stability and Security:</strong> Numerous bug fixes, more stable type hashing, and improved archive extraction security.</li>
+</ul>
+<h2 id="highlights-4diac-forte">Highlights 4diac FORTE:</h2>
 <ul>
-<li><strong>Enhancements in Editor and UI functionality:</strong>
-<ul>
-<li>Use Frameworkutil to create a dictionary in FordiacImageURL.</li>
-<li>Adjusted column width in Imports-Table to occupy the entire width.</li>
-<li>Fixed UpdateFbInterfaceChange to prevent duplicated creation.</li>
-<li>Modified Imports Table column width to fill entire width.</li>
-<li>Enabled recursive folder creation in type entry.</li>
-<li>Resolved generic datatype for automatic SubApp pin creation.</li>
-<li>Fixed System Explorer root content and label provider setup.</li>
-<li>Ensured SubApp Type Pins table visibility settings.</li>
-<li>Prevented self-lookup in multi-page editor outline.</li>
-<li>Addressed attribute lookup in FB networks by linking to sub-importers.</li>
-<li>Enhanced reload mechanism for the attribute editor with varied composites.</li>
-<li>Implemented IPersistable in TypeEditorInput to restore editor states.</li>
-<li>Reworked DescriptionEditor to support all element types.</li>
+<li><strong>Modularized IEC 61131-3 Function Library:</strong> Standard functions are now split into individual headers, improving compile times and enabling more granular inclusion of required functionality.</li>
+<li><strong>Memory &amp; Performance Optimizations:</strong> Improvements such as optimized FreeRTOS thread stack initialization and the use of <code>std::string_view</code> reduce memory usage and unnecessary allocations.</li>
+<li><strong>OPC UA Improvements:</strong> Refactoring of alarm handling and namespace management improves interoperability with OPC UA clients.</li>
+<li><strong>New Function Blocks &amp; Runtime Enhancements</strong> – Added new utility blocks and improved support for delegating connections in Composite Function Blocks.</li>
 </ul>
-</li>
-<li><strong>Structural Changes in Type Editing Infrastructure:</strong>
-<ul>
-<li>Moved get/setDocumentation methods to LibraryElement for broader use.</li>
-<li>Removed Title Label from StructComposite for flexibility in usage.</li>
-<li>Migrated AttributeTypeEditor and DataTypeEditor to the new Type Editing Infrastructure.</li>
-<li>Centralized type saving logic from FBTypeEditor to AbstractTypeEditor.</li>
-<li>Added enablement to the type editor page extension point.</li>
-<li>Extracted common type editor functionalities into AbstractTypeEditor class.</li>
-</ul>
-</li>
-<li><strong>Refinements for Editing and Selection:</strong>
-<ul>
-<li>Enabled package refactoring with move-to-package feature.</li>
-<li>Improved System Explorer label providers to show accurate icons and warnings.</li>
-<li>Optimized outline selection response in FB Type Xtext editor tab.</li>
-<li>Enhanced marker management with direct thread updating under resource lock.</li>
-</ul>
-</li>
-<li><strong>Error Handling and Quick-Fixes:</strong>
-<ul>
-<li>Resolved type-check error messages for InOut connections.</li>
-<li>Improved error messages and formatting preferences for quickfixes and refactorings.</li>
-<li>Refined handling of markers and resolution logic for configurable FBs.</li>
-<li>Fixed deadlock during type creation with quickfixes and array subscript access issues.</li>
-</ul>
-</li>
-<li><strong>Tests and UI Enhancements:</strong>
-<ul>
-<li>Re-enabled Basic2FBNetwork tests with new movement and selection methods.</li>
-<li>Enhanced FB movement methods in SWTBot for readability in UI tests.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>Many thanks to all contributors for their work and their feedback!</p>
+<p>For a complete overview of all improvements, please see the <a href="/4diac/new-and-noteworthy/3.1/">New and Noteworthy page</a> for this release.</p>
+<p>You can download the latest version from our <a href="/4diac/download/">Download page</a>.</p>
+<p>As always, feedback, bug reports, and contributions are highly welcome. If you would like to get involved in the project, visit our GitHub repositories or join the community discussions.</p>
  
 
 <p>Cheers,<br>
@@ -1602,7 +1559,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1773264185"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1773264188"></script>
   
 
   
