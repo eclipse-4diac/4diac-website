@@ -16,13 +16,19 @@
   
 
 
-<title>4d4d | The Eclipse Foundation</title>
-<meta property="og:title" content="4d4d | The Eclipse Foundation" />
-<meta name="twitter:title" content="4d4d | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #77 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #77 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #77 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from March 06 to March 13, 2026.
+
+This week’s highlight was the 3.1 release. …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from March 06 to March 13, 2026.
+
+This week’s highlight was the 3.1 release. …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from March 06 to March 13, 2026.
+
+This week’s highlight was the 3.1 release. …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/categories/4d4d/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-77/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,13 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/categories/4d4d/" />
-
-<link rel="alternate" href="/4diac/categories/4d4d/index.xml" type="application/rss+xml" title="">
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-77/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1774108775">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1774108775">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1774108848">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1774108848">
 <script>
 	
 		var tableClasses = "table";
@@ -1288,12 +1292,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/categories/">Categories</a>
+              <a href="https://eclipse.dev/4diac/news/">News</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/categories/4d4d/">4d4d</a>
+              <a href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-77/">Eclipse 4diac Weekly #77</a>
             </li>
           
           </ol>
@@ -1312,7 +1316,7 @@
     
       <h1>
         
-          4d4d
+          Eclipse 4diac Weekly #77
         
       </h1>
     
@@ -1320,22 +1324,137 @@
 
 
   
-   
-  
-  
-    <div class="news-list">
-      
-        
 
-<a href=" /4diac/news/2025/2025/4weeksto4d4d/" class="media media-link match-height-item">
-  <p class="media-date">Friday, Jan 10, 2025</p>
-  <h4 class="media-heading">4 Weeks to the 4days of Eclipse 4diac Winter School</h4>
-  <p class="media-text">Discover the power of IEC 61499 and the Eclipse 4diac at the [4days of Eclipse 4diac Winter School](/4diac/events/4diacwinterschool/), a premier event for industrial automation enthusiasts.</p>
-</a>
+  
 
-      
-    </div>
-    
+
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from March 06 to March 13, 2026.</p>
+<p>This week’s highlight was the 3.1 release. But after the release is before the next release.
+In 4diac IDE we worked on visual improvements, mapping behavior, and interpreter groundwork in the 4diac IDE.
+4diac FORTE, documentation, and FBE mainly receive maintenance updates and alignment with the new contributing guidelines.</p>
+</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<ul>
+<li>
+<p><strong>Visual Improvements &amp; UI Modernization</strong></p>
+<ul>
+<li>Cleaned up color handling for devices, segments, resources, and FBs</li>
+<li>Introduced improved visual representation of mapped FBs (device-colored bar)</li>
+<li>MappingEditPart now correctly reacts to device color changes</li>
+<li>Improved comment visuals (hover feedback, default size, multi-line rendering)</li>
+<li>Fixed display and navigation of hidden error connections between subapps</li>
+<li>Fixed layout and resizing behavior for expanded subapps and groups</li>
+</ul>
+</li>
+<li>
+<p><strong>Mapping &amp; Model Behavior</strong></p>
+<ul>
+<li>Correctly update mapping state</li>
+<li>Fixed struct creation command handling for member access pins (including nested structs)</li>
+<li>Fixed type matching in automatic event connections</li>
+</ul>
+</li>
+<li>
+<p><strong>ECC Editor Improvements</strong></p>
+<ul>
+<li>Fixed zoom-aware coordinate translation in state and transition creation tools</li>
+<li>Improved coordinate handling for ECC editing</li>
+</ul>
+</li>
+<li>
+<p><strong>Interpreter &amp; Deployment Framework (Foundations)</strong></p>
+<ul>
+<li>Introduced initial infrastructure for interpreter-based deployment:
+<ul>
+<li>Interpreter device management interactor</li>
+<li>Skeleton for interpreter deployment plugin</li>
+<li>Supporting helper and data classes</li>
+<li>Separation of device and resource simulator interfaces</li>
+<li>Recursive runtime creation and execution separation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Performance &amp; Usability</strong></p>
+<ul>
+<li>Disabled expensive “affected type search” on save to improve responsiveness</li>
+<li>Fixed feature text handling in presence of comments</li>
+<li>Improved quickfix formatting (newline handling)</li>
+</ul>
+</li>
+<li>
+<p><strong>Model &amp; Code Cleanups</strong></p>
+<ul>
+<li>Removed obsolete abstractions (<code>createFigureForModel</code>)</li>
+<li>Simplified GEF integration using standard figure creation</li>
+<li>Cleaned target platform definition (removed unused attributes)</li>
+<li>Removed explicit JUnit dependency versions</li>
+<li>Fixed dependency issues in ST editor workflow</li>
+</ul>
+</li>
+<li>
+<p><strong>Comment Handling &amp; Export</strong></p>
+<ul>
+<li>Fixed loading and export/import of comments (including escaping issues)</li>
+<li>Improved display of comments in System Explorer</li>
+</ul>
+</li>
+<li>
+<p><strong>Release Preparation</strong></p>
+<ul>
+<li>Updated plugin versions for the 3.2 release cycle</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li>
+<p><strong>Maintenance &amp; Infrastructure</strong></p>
+<ul>
+<li>Replaced <code>std::mutex</code> with <code>arch::CSyncObject</code> in <code>stringid</code> for improved portability</li>
+<li>Updated CI dependency (<code>cpp-linter-action</code>)</li>
+</ul>
+</li>
+<li>
+<p><strong>Project Management</strong></p>
+<ul>
+<li>Streamlined <code>CONTRIBUTING.md</code> in line with new contribution guidelines</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-documentation">Enhancements and Fixes in 4diac Documentation</h2>
+<ul>
+<li><strong>Contribution Workflow</strong>
+<ul>
+<li>Streamlined <code>CONTRIBUTING.md</code> to reduce duplication and align with centralized documentation</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-fbe">Enhancements and Fixes in 4diac FBE</h2>
+<ul>
+<li>
+<p><strong>Runtime Alignment</strong></p>
+<ul>
+<li>Updated to 4diac FORTE 3.1</li>
+</ul>
+</li>
+<li>
+<p><strong>Contribution Workflow</strong></p>
+<ul>
+<li>Streamlined <code>CONTRIBUTING.md</code> in line with new contribution guidelines</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
+
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
   
 
   
@@ -1543,7 +1662,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1774108817"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1774108848"></script>
   
 
   
