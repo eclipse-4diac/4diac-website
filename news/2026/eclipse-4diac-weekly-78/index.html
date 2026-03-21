@@ -16,13 +16,19 @@
   
 
 
-<title>Committer | The Eclipse Foundation</title>
-<meta property="og:title" content="Committer | The Eclipse Foundation" />
-<meta name="twitter:title" content="Committer | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #78 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #78 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #78 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from March 13 to March 20, 2026.
+
+This week’s Eclipse 4diac updates focus on …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from March 13 to March 20, 2026.
+
+This week’s Eclipse 4diac updates focus on …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from March 13 to March 20, 2026.
+
+This week’s Eclipse 4diac updates focus on …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/categories/committer/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-78/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,13 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/categories/committer/" />
-
-<link rel="alternate" href="/4diac/categories/committer/index.xml" type="application/rss+xml" title="">
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-78/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1774120946">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1774120946">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1774121006">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1774121006">
 <script>
 	
 		var tableClasses = "table";
@@ -1288,12 +1292,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/categories/">Categories</a>
+              <a href="https://eclipse.dev/4diac/news/">News</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/categories/committer/">Committer</a>
+              <a href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-78/">Eclipse 4diac Weekly #78</a>
             </li>
           
           </ol>
@@ -1312,7 +1316,7 @@
     
       <h1>
         
-          Committer
+          Eclipse 4diac Weekly #78
         
       </h1>
     
@@ -1320,23 +1324,86 @@
 
 
   
-   
-  
-  
-    <div class="news-list">
-      
-        
 
-<a href=" /4diac/news/2025/2025/introducing-our-new-committer-martin-jobst/" class="media media-link match-height-item">
-  <p class="media-date">Wednesday, May 14, 2025</p>
-  <h4 class="media-heading">Introducing Our New Committer Martin Jobst</h4>
-  <p class="media-text">We’re happy to welcome [**Martin Jobst**](https://github.com/mx990), a long-time contributor and expert in embedded systems, as a new committer to the Eclipse 4diac project!
+  
+
+
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from March 13 to March 20, 2026.</p>
+<p>This week’s Eclipse 4diac updates focus on usability and robustness improvements in 4diac IDE, especially around libraries, validation, and editing workflows, while 4diac FORTE enhances monitoring capabilities and updates its OPC UA stack.</p>
+</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<ul>
+<li><strong>Editor &amp; UI Improvements</strong>
+<ul>
+<li>Improved grid rendering with reduced visual clutter and better contrast (including dark mode)</li>
+<li>More robust handling of selection change events in the diagram editor</li>
+<li>Renamed and cleaned up ECC editor components for better clarity and stability</li>
+<li>Fixed auto-expose behavior in ECC editor</li>
+<li>Improved connection error messages and validation feedback</li>
+</ul>
+</li>
+<li><strong>Refactoring &amp; Code Editing</strong>
+<ul>
+<li>Reworked extract callable refactorings to operate on exact selections</li>
+<li>Fixed missing variable quickfixes in ECC transition conditions</li>
+<li>Removed non-refactoring and obsolete code paths</li>
+</ul>
+</li>
+<li><strong>Library Management Overhaul</strong>
+<ul>
+<li>Introduced unified library importer and new project wizard integration</li>
+<li>Added support for multiple GitLab endpoints via preferences</li>
+<li>Improved handling of broken or missing libraries</li>
+<li>Fixed builder issues (including endless loops) and enhanced logging</li>
+<li>Migrated to a new tree structure and content provider for library handling</li>
+</ul>
+</li>
+<li><strong>Validation &amp; Type Handling</strong>
+<ul>
+<li>Improved connection validation, especially for generic and non-generic FBs</li>
+<li>Fixed recursion checks for structured data types</li>
+<li>Filtered error types from data type libraries to avoid incorrect behavior</li>
+<li>Unified name collision domain for interface and FB network elements</li>
+</ul>
+</li>
+<li><strong>Monitoring &amp; Debugging</strong>
+<ul>
+<li>Added configurable options for watching sub-elements (UI, watchpoints, default behavior)</li>
+<li>Improved detection of unused output events in simple FBs</li>
+</ul>
+</li>
+<li><strong>Infrastructure &amp; Cleanup</strong>
+<ul>
+<li>Migrated away from deprecated APIs and removed unused dependencies</li>
+<li>Fixed Maven warnings and cleaned up activators and message keys</li>
+<li>Improved secure storage handling for endpoints</li>
+<li>General code cleanup and removal of TODOs</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li><strong>Monitoring &amp; Query Enhancements</strong>
+<ul>
+<li>Added FB state information to Query FB responses for improved runtime introspection</li>
+<li>Fixed attribute naming issues in query responses</li>
+</ul>
+</li>
+<li><strong>OPC UA &amp; Dependencies</strong>
+<ul>
+<li>Upgraded OPC UA stack to newer open62541 version</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
+
+<p>Cheers,<br>
+      The Eclipse 4diac Team
 </p>
-</a>
-
-      
-    </div>
-    
+ 
   
 
   
@@ -1544,7 +1611,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1774120961"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1774121006"></script>
   
 
   

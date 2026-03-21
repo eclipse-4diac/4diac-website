@@ -10,6 +10,81 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacspecs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #78</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-78/</link>
+      <pubDate>Fri, 20 Mar 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-78/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Editor &amp;amp; UI Improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved grid rendering with reduced visual clutter and better contrast (including dark mode)&lt;/li&gt;
+&lt;li&gt;More robust handling of selection change events in the diagram editor&lt;/li&gt;
+&lt;li&gt;Renamed and cleaned up ECC editor components for better clarity and stability&lt;/li&gt;
+&lt;li&gt;Fixed auto-expose behavior in ECC editor&lt;/li&gt;
+&lt;li&gt;Improved connection error messages and validation feedback&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Refactoring &amp;amp; Code Editing&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reworked extract callable refactorings to operate on exact selections&lt;/li&gt;
+&lt;li&gt;Fixed missing variable quickfixes in ECC transition conditions&lt;/li&gt;
+&lt;li&gt;Removed non-refactoring and obsolete code paths&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Library Management Overhaul&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced unified library importer and new project wizard integration&lt;/li&gt;
+&lt;li&gt;Added support for multiple GitLab endpoints via preferences&lt;/li&gt;
+&lt;li&gt;Improved handling of broken or missing libraries&lt;/li&gt;
+&lt;li&gt;Fixed builder issues (including endless loops) and enhanced logging&lt;/li&gt;
+&lt;li&gt;Migrated to a new tree structure and content provider for library handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation &amp;amp; Type Handling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved connection validation, especially for generic and non-generic FBs&lt;/li&gt;
+&lt;li&gt;Fixed recursion checks for structured data types&lt;/li&gt;
+&lt;li&gt;Filtered error types from data type libraries to avoid incorrect behavior&lt;/li&gt;
+&lt;li&gt;Unified name collision domain for interface and FB network elements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring &amp;amp; Debugging&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added configurable options for watching sub-elements (UI, watchpoints, default behavior)&lt;/li&gt;
+&lt;li&gt;Improved detection of unused output events in simple FBs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Infrastructure &amp;amp; Cleanup&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Migrated away from deprecated APIs and removed unused dependencies&lt;/li&gt;
+&lt;li&gt;Fixed Maven warnings and cleaned up activators and message keys&lt;/li&gt;
+&lt;li&gt;Improved secure storage handling for endpoints&lt;/li&gt;
+&lt;li&gt;General code cleanup and removal of TODOs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring &amp;amp; Query Enhancements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added FB state information to Query FB responses for improved runtime introspection&lt;/li&gt;
+&lt;li&gt;Fixed attribute naming issues in query responses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OPC UA &amp;amp; Dependencies&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded OPC UA stack to newer open62541 version&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #77</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-77/</link>
       <pubDate>Fri, 13 Mar 2026 17:00:00 +0000</pubDate>
