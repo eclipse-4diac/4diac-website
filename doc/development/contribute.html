@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/development/contribute.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1774120948">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1774120948">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1774120948">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1774361736">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1774361736">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1774361736">
 <script>
 	
 		var tableClasses = "table";
@@ -1652,16 +1652,48 @@ git checkout -b my-fix-description upstream/develop</code></pre>
 <p><strong>Format:</strong> Use a short, descriptive subject line (max 50 characters).</p>
 </li>
 <li>
+<p><strong>Self Contained:</strong> Commit messages should be self-contained and comprehensible without relying on external links.</p>
+</li>
+<li>
 <p><strong>No Sign-off Required:</strong> You do not need to add a <code>Signed-off-by</code> line manually; our CI tools verify your ECA via your GitHub account.</p>
 </li>
 <li>
-<p><strong>Clean History:</strong> We encourage contributors to submit and maintain a clean commit history.
-This means:</p>
+<p><strong>Clean History:</strong> We encourage contributors to submit and maintain a clean commit history.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Important</div>
+</td>
+<td class="content">
+<div class="title">What to avoid</div>
 <div class="ulist">
 <ul>
 <li>
 <p>Avoid &#34;work in progress&#34;, &#34;fix typo&#34;, or &#34;review changes&#34; commits in your final PR.</p>
 </li>
+<li>
+<p>Avoid linking to issues, discussions, or pull requests from your commit messages.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="title">Amend or rebase your commits</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Use <code>git commit --amend</code> for small fixes to your last commit.</p>
 </li>
@@ -1670,8 +1702,9 @@ This means:</p>
 </li>
 </ul>
 </div>
-</li>
-</ul>
+</td>
+</tr>
+</tbody></table>
 </div>
 <div class="sect3">
 <h4 id="_commit_message_template">Commit Message Template</h4>
@@ -2815,7 +2848,7 @@ Project-specific technical documentation is maintained in the <a href="./overvie
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1774120960"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1774361741"></script>
   
 
   
