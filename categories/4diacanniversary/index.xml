@@ -10,6 +10,138 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacanniversary/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #79</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-79/</link>
+      <pubDate>Fri, 27 Mar 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-79/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Function Blocks &amp;amp; Libraries&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added new array-related function blocks:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;provide&lt;/code&gt; / &lt;code&gt;provide_arr&lt;/code&gt; blocks with improved structure and documentation&lt;/li&gt;
+&lt;li&gt;New utility FBs: &lt;code&gt;F_UPPER_BOUND&lt;/code&gt;, &lt;code&gt;F_LOWER_BOUND&lt;/code&gt;, &lt;code&gt;F_LEN_ARRAY&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type System &amp;amp; Resource Handling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Split &lt;code&gt;FordiacTypeResource&lt;/code&gt; into individual resources&lt;/li&gt;
+&lt;li&gt;Fixed missing type library references and filtered error data types&lt;/li&gt;
+&lt;li&gt;Improved handling of type loading and suppressed excessive logging&lt;/li&gt;
+&lt;li&gt;Removed outdated type reload logic and improved type consistency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Refactoring &amp;amp; Dependency Management&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed delayed dependency updates during UI-based refactorings (e.g., drag &amp;amp; drop)&lt;/li&gt;
+&lt;li&gt;Improved handling of dependency updaters and their lifecycle&lt;/li&gt;
+&lt;li&gt;Ensured correct refactoring behavior when types are opened in non-4diac editors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Subapplication &amp;amp; Connection Handling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Major improvements for subapplication-crossing connections:
+&lt;ul&gt;
+&lt;li&gt;Proper handling of expanded subapplications&lt;/li&gt;
+&lt;li&gt;Added automatic imports for types and constants&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Reworked TargetLabel reconnect:
+&lt;ul&gt;
+&lt;li&gt;Multi-select reconnect support&lt;/li&gt;
+&lt;li&gt;Multiple connections for events&lt;/li&gt;
+&lt;li&gt;Improved selection, feedback, and movement behavior&lt;/li&gt;
+&lt;li&gt;Refactored policies and commands for better structure&lt;/li&gt;
+&lt;li&gt;Added selection support for single target interfaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interface Editor &amp;amp; Visualization&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reworked interface editor layout&lt;/li&gt;
+&lt;li&gt;Improved visuals:
+&lt;ul&gt;
+&lt;li&gt;Better rendering order for connections&lt;/li&gt;
+&lt;li&gt;Enhanced “with” connections appearance and anchor calculation&lt;/li&gt;
+&lt;li&gt;Show adapter connections in interface editor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved debug view:
+&lt;ul&gt;
+&lt;li&gt;Updated to new FB figure&lt;/li&gt;
+&lt;li&gt;Fixed zooming and width handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring &amp;amp; Debugging&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed toggle watch handler enablement&lt;/li&gt;
+&lt;li&gt;Added resource status display in monitoring&lt;/li&gt;
+&lt;li&gt;Extended FB/resource list responses with optional status information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor &amp;amp; UI Improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed active editor detection in multipage editors&lt;/li&gt;
+&lt;li&gt;Fixed exception when resizing expanded subapplications&lt;/li&gt;
+&lt;li&gt;Improved connection following for multiple targets&lt;/li&gt;
+&lt;li&gt;Updated visuals for target interface selection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Internationalization &amp;amp; Features&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added i18n support across multiple features:
+&lt;ul&gt;
+&lt;li&gt;workbench, type editor, structured text, runtime, interpreter, deployment, export, comgeneration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Switched features to reuse &lt;code&gt;org.eclipse.license&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Removed redundant feature attributes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Miscellaneous Improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed duplicate GitLab package entries in import tree&lt;/li&gt;
+&lt;li&gt;Improved value handling for FB inputs/outputs&lt;/li&gt;
+&lt;li&gt;Decoupled ECC transition command from UI dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OPC UA Communication Layer&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added forward declarations to improve structure and compilation&lt;/li&gt;
+&lt;li&gt;Reorganized include structure for better maintainability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Contribution Guide Improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved commit message guidelines:
+&lt;ul&gt;
+&lt;li&gt;Added self-contained commit message recommendations&lt;/li&gt;
+&lt;li&gt;Introduced admonitions for better readability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Updated IDE import instructions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #78</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-78/</link>
       <pubDate>Fri, 20 Mar 2026 17:00:00 +0000</pubDate>

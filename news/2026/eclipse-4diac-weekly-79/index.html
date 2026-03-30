@@ -16,13 +16,19 @@
   
 
 
-<title>Building 4diac FORTE on Raspberry Pi | The Eclipse Foundation</title>
-<meta property="og:title" content="Building 4diac FORTE on Raspberry Pi | The Eclipse Foundation" />
-<meta name="twitter:title" content="Building 4diac FORTE on Raspberry Pi | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #79 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #79 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #79 | The Eclipse Foundation" />
 
-<meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
-<meta name="twitter:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from March 20 to March 27, 2026.
+
+This week brings significant improvements to …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from March 20 to March 27, 2026.
+
+This week brings significant improvements to …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from March 20 to March 27, 2026.
+
+This week brings significant improvements to …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/doc/installation/raspi.html" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-79/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,12 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/doc/installation/raspi.html" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-79/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1774899532">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1774899532">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1774899532">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1774899566">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1774899566">
 <script>
 	
 		var tableClasses = "table";
@@ -1281,25 +1286,18 @@
             
               
             
-              
-            
             <li >
               <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
             </li>
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/doc/">Documentation</a>
-            </li>
-          
-            
-            <li >
-              <a href="https://eclipse.dev/4diac/doc/installation/">Installation</a>
+              <a href="https://eclipse.dev/4diac/news/">News</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/doc/installation/raspi.html">Building 4diac FORTE on Raspberry Pi</a>
+              <a href="https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-79/">Eclipse 4diac Weekly #79</a>
             </li>
           
           </ol>
@@ -1318,7 +1316,7 @@
     
       <h1>
         
-          Building 4diac FORTE on Raspberry Pi
+          Eclipse 4diac Weekly #79
         
       </h1>
     
@@ -1326,338 +1324,144 @@
 
 
   
-  <div class="sect1">
-<h2 id="_introduction">Introduction</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This guide is for compiling FORTE for the Raspberry Pi.
-For information about the parameters to be used, go to <a href="../io_config/sysfs.html">Parameters</a>.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://www.raspberrypi.org/">Raspberry Pi</a> (RPI) is one of the most famous low-cost embedded systems.
-In its third generation, the Raspberry Pi 3 was launched in February 2016.
-It has a 1.2GHz 64-bit quad-core ARMv8 CPU, 1 GB RAM and several I/O options, among them a 40 pin header.
-The operating system is loaded from a SD card, so it can support many OS.
-The most popular one is the Debian-based Raspbian.
-4diac FORTE  previously used the <span class="specificText">wiringPi</span> library, but it has changed to use the sysFs virtual file system.</p>
-</div>
-<div class="paragraph">
-<p>This tutorial explains first how to compile 4diac FORTE in the RPI, or even cross-compile, and how to easily use the I/O Function Blocks in 4diac FORTE to control the 40 pin header.</p>
-</div>
-<div class="sect2">
-<h3 id="_getting_the_rpi_ready">Getting the RPI ready</h3>
-<div class="paragraph">
-<p>This tutorial doesn’t show the details of how to make the RPI run, but if you never used before, you should know that beside the RPI board, you need a source power that is connected to the mini-USB port and a mini-SD card.
-The RPI can be connected to a screen, mouse and keyboard through the HDMI and USB ports, but you also can connect to it headless, meaning that you connect through ssh using the Ethernet or a usb-wifi connector.
-There are plenty of tutorials on how to access the RPI, so this tutorial assumes that you have access to the command line of the RPI, through ssh or directly on it using the GUI, and that the RPI has Internet access.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_building_4diacforte_on_the_rpi"><a id="onRPI"></a>Building 4diac FORTE on the RPI</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_preparation">Preparation</h3>
-<div class="paragraph">
-<p>Install the additional software needed on your RPI.
-* Git: 4diac FORTE is stored as a Git repository on the Eclipse server.
-* The building tools: cmake, make, gcc, g++</p>
-</div>
-<div class="paragraph">
-<p>+</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>$ sudo apt-get install git cmake make gcc g++</pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_building">Building</h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Check out 4diac FORTE from the Git repository in your home directory.</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ cd ~ $ git clone</pre>
-</div>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/eclipse-4diac/4diac-forte.git" class="bare">https://github.com/eclipse-4diac/4diac-forte.git</a></p>
-</div>
-</li>
-<li>
-<p>Prepare the 4diac FORTE project structure for the Posix architecture.</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ cd org.eclipse.4diac.forte $ chmod +x setup_posix.sh</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You will need to add the SysFs module to the compilation.
-In order to that, you will need to change the <code>setup_posix.sh</code> file, using your preferred text editor.
-In the file you will find a line that starts with <code>cmake -G &#34;Unix Makefiles&#34; -DFORTE_ARCHITECTURE=Posix</code>.
-At the end of the line, add <code>-DFORTE_MODULE_SysFs=ON</code>.
-This will enable the interface to the 40 pin header of the RPI.
-Save the file, exit the editor and execute:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>$ ./setup_posix.sh</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>When no error occurs, the command creates a folder in bin/posix where all the files to compile 4diac FORTE are stored.
-Access the folder if not already there.</p>
-</div>
-</li>
-<li>
-<p>Execute &#34;make&#34;, which will start the compilation.</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ make</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_cross_compiling_for_the_rpi"><a id="crossCompiling"></a>Cross-compiling for the RPI</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The RPI is a very powerful computer, but when developing a project, one sometimes has to compile 4diac FORTE many times.
-As the RPI is slow compared to the power of a desktop computer, cross-compiling is useful.
-It allows to compile on your desktop machine, and then send the executable to the RPI.</p>
-</div>
-<div class="paragraph">
-<p>You will need the 4diac FORTE source code, and the same additional tools used in the preparation, except CMake because CMake-GUI will be needed in this case.</p>
-</div>
-<div class="sect2">
-<h3 id="_cross_compiling_using_linux"><a id="crossCompilingLinux"></a>Cross-compiling using Linux</h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Install needed additional tools:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>CMake-GUI</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ sudo apt-get install cmake-gui</pre>
-</div>
-</div>
-</li>
-<li>
-<p>ARM GNU Cross-compiling Toolchain.
-You can download it from the <a href="https://developer.arm.com/downloads/-/gnu-a">arm Developer web-site</a>.
-Then, you should de-compress this file</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ tar -xvf gcc-linaro-4.8-2015.06-x86_64_arm-linux-gnueabihf.tar.xz</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You could avoid downloading and de-compressing the file using the command</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>$ sudo apt-get install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>but this method gave some errors in some cases.</p>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Open CMake-GUI and complete as shown in the image</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Set the 4diac FORTE source path where you cloned the Git repository.</p>
-</li>
-<li>
-<p>Set path for binaries where you want to create the executable.
-Normally, <code>bin/raspPi</code> is used.</p>
-</li>
-<li>
-<p>Press <span class="button4diac">Configure</span></p>
-<div class="paragraph">
-<p><span class="image"><img src="img/raspiCrossLinux1.png" alt="Selecting folders in CMake"/></span></p>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>CMake Setup</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Select the tool you normally use to compile your programs.
-This example follows using UNIX Makefiles from the list.</p>
-</li>
-<li>
-<p>Select <span class="button4diac">Specify tools for cross-compiling</span></p>
-</li>
-<li>
-<p>Press <span class="button4diac">Next</span></p>
-<div class="paragraph">
-<p><span class="image"><img src="img/raspiCrossLinux2.png" alt="CMake Setup"/></span></p>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>CMake Setup</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Write a name for the OS (normally Raspbian, it won’t affect the compilation).</p>
-</li>
-<li>
-<p>Select the path to the C cross-compiler called arm-linux-gnueabihf-gcc, in the bin folder of the downloaded tools&#39; folder.
-If not found, you could execute:</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ which arm-linux-gnueabi-gcc</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Select the path to the C cross-compiler called arm-linux-gnueabihf-g, in the bin folder of the downloaded tools&#39; folder.
-If not found, you could execute:</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ which arm-linux-gnueabi-g++</pre>
-</div>
-</div>
-</li>
-<li>
-<p>The target root field can be left empty.</p>
-</li>
-<li>
-<p>Click <span class="button4diac">Finish</span></p>
-<div class="paragraph">
-<p><span class="image"><img src="img/raspiCrossLinux3.png" alt="Select cross-compiling tools."/></span></p>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Configure the compilation</p>
-<div class="paragraph">
-<p>A list with all variables of 4diac FORTE in red should be shown in CMake as the picture below.</p>
-</div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>Choose your Eclipse version if you selected it in step 3.1.
-Otherwise, it can be left as it is.</p>
-</li>
-<li>
-<p>Set the FORTE_ARCHITECTURE variable to Posix</p>
-</li>
-<li>
-<p>Enable FORTE_MODULE_SysFs and all other modules that you want</p>
-</li>
-<li>
-<p>Click <span class="button4diac">Configure</span> and the variables that need revision will appear again in red and the rest in white.
-Check these variables and press <span class="button4diac">Configure</span> until no variable is shown in red.</p>
-<div class="paragraph">
-<p><span class="image"><img src="img/raspiCrossLinux4.png" alt="Configure 4diac FORTE compilation."/></span></p>
-</div>
-</li>
-</ol>
-</div>
-</li>
-<li>
-<p>Generate files: Click <span class="button4diac">Generate</span></p>
-<div class="paragraph">
-<p><span class="image"><img src="img/raspiCrossLinux5.png" alt="Generate the makefiles."/></span></p>
-</div>
-</li>
-<li>
-<p>Build 4diac FORTE: Go to the recently generated folder and execute make (or build it as you normally do)</p>
-<div class="listingblock">
-<div class="content">
-<pre>$ cd bin/raspPi $ make</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_cross_compiling_using_windows"><a id="crossCompilingWindows"></a>Cross-compiling using Windows</h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Install needed additional tools:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>CMake from its download <a href="https://cmake.org/download/">page</a></p>
-</li>
-<li>
-<p>Cross-compiling tool. You can download it from <a href="http://gnutoolchains.com/raspberry/">this</a> link.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Follow instructions of cross-compiling in the <a href="#crossCompilingLinux">Linux</a> platform from step 2, taking in account the following:</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>In steps 4.2 and 4.3, the C and C++ cross-compilers are in the bin folder where you installed the tool, normally C:\SysGCC\Raspberry\bin</p>
-</li>
-</ol>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_where_to_go_from_here"><a id="whereToGoFromHere"></a>Where to go from here?</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Now that you installed the required tools, it’s time to start using
-them. Take a look at the following tutorials:</p>
-</div>
-<div class="paragraph">
-<p><a href="../tutorials/overview.html">Step 0 - 4diac IDE Overview</a></p>
-</div>
-<div class="paragraph">
-<p>If you want to compile 4diac FORTE for another platform or want to know more about that, here’s a quick link back:</p>
-</div>
-<div class="paragraph">
-<p><a href="./overview.html">Install Eclipse 4diac</a></p>
-</div>
-<div class="paragraph">
-<p>If you want to go back to the Start Here page, we leave you here a fast access</p>
-</div>
-<div class="paragraph">
-<p><a href="../doc_overview.html">Where to Start</a></p>
-</div>
-<div class="paragraph">
-<p>Or <a href="#top">Go to top</a></p>
-</div>
-</div>
-</div>
 
+  
+
+
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from March 20 to March 27, 2026.</p>
+<p>This week brings significant improvements to connection handling and the interface editor, introduces new array-related function blocks, and enhances type management, monitoring, and internationalization across the 4diac IDE, alongside smaller maintainability updates in 4diac FORTE and clearer contribution guidelines in the documentation.</p>
+</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<ul>
+<li><strong>Function Blocks &amp; Libraries</strong>
+<ul>
+<li>Added new array-related function blocks:
+<ul>
+<li><code>provide</code> / <code>provide_arr</code> blocks with improved structure and documentation</li>
+<li>New utility FBs: <code>F_UPPER_BOUND</code>, <code>F_LOWER_BOUND</code>, <code>F_LEN_ARRAY</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Type System &amp; Resource Handling</strong>
+<ul>
+<li>Split <code>FordiacTypeResource</code> into individual resources</li>
+<li>Fixed missing type library references and filtered error data types</li>
+<li>Improved handling of type loading and suppressed excessive logging</li>
+<li>Removed outdated type reload logic and improved type consistency</li>
+</ul>
+</li>
+<li><strong>Refactoring &amp; Dependency Management</strong>
+<ul>
+<li>Fixed delayed dependency updates during UI-based refactorings (e.g., drag &amp; drop)</li>
+<li>Improved handling of dependency updaters and their lifecycle</li>
+<li>Ensured correct refactoring behavior when types are opened in non-4diac editors</li>
+</ul>
+</li>
+<li><strong>Subapplication &amp; Connection Handling</strong>
+<ul>
+<li>Major improvements for subapplication-crossing connections:
+<ul>
+<li>Proper handling of expanded subapplications</li>
+<li>Added automatic imports for types and constants</li>
+</ul>
+</li>
+<li>Reworked TargetLabel reconnect:
+<ul>
+<li>Multi-select reconnect support</li>
+<li>Multiple connections for events</li>
+<li>Improved selection, feedback, and movement behavior</li>
+<li>Refactored policies and commands for better structure</li>
+<li>Added selection support for single target interfaces</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Interface Editor &amp; Visualization</strong>
+<ul>
+<li>Reworked interface editor layout</li>
+<li>Improved visuals:
+<ul>
+<li>Better rendering order for connections</li>
+<li>Enhanced “with” connections appearance and anchor calculation</li>
+<li>Show adapter connections in interface editor</li>
+</ul>
+</li>
+<li>Improved debug view:
+<ul>
+<li>Updated to new FB figure</li>
+<li>Fixed zooming and width handling</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Monitoring &amp; Debugging</strong>
+<ul>
+<li>Fixed toggle watch handler enablement</li>
+<li>Added resource status display in monitoring</li>
+<li>Extended FB/resource list responses with optional status information</li>
+</ul>
+</li>
+<li><strong>Editor &amp; UI Improvements</strong>
+<ul>
+<li>Fixed active editor detection in multipage editors</li>
+<li>Fixed exception when resizing expanded subapplications</li>
+<li>Improved connection following for multiple targets</li>
+<li>Updated visuals for target interface selection</li>
+</ul>
+</li>
+<li><strong>Internationalization &amp; Features</strong>
+<ul>
+<li>Added i18n support across multiple features:
+<ul>
+<li>workbench, type editor, structured text, runtime, interpreter, deployment, export, comgeneration</li>
+</ul>
+</li>
+<li>Switched features to reuse <code>org.eclipse.license</code></li>
+<li>Removed redundant feature attributes</li>
+</ul>
+</li>
+<li><strong>Miscellaneous Improvements</strong>
+<ul>
+<li>Removed duplicate GitLab package entries in import tree</li>
+<li>Improved value handling for FB inputs/outputs</li>
+<li>Decoupled ECC transition command from UI dependencies</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li><strong>OPC UA Communication Layer</strong>
+<ul>
+<li>Added forward declarations to improve structure and compilation</li>
+<li>Reorganized include structure for better maintainability</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-documentation">Enhancements and Fixes in 4diac Documentation</h2>
+<ul>
+<li><strong>Contribution Guide Improvements</strong>
+<ul>
+<li>Improved commit message guidelines:
+<ul>
+<li>Added self-contained commit message recommendations</li>
+<li>Introduced admonitions for better readability</li>
+</ul>
+</li>
+<li>Updated IDE import instructions</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
+
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
+  
 
   
 
@@ -1689,514 +1493,6 @@ them. Take a look at the following tutorials:</p>
   
   
 
-  
-    <aside class="main-sidebar-default-margin" id="main-sidebar">
-      
-        
-          <ul class="ul-left-nav" id="leftnav" role="tablist" aria-multiselectable="true">
-            <li class="main-sidebar-main-item main-sidebar-item-indented separator">
-              
-                <a class="main-sidebar-heading link-unstyled" href="/4diac/doc">
-                  Documentation
-                </a>
-              
-            </li>
-            
-              
-              
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-getting-started" aria-expanded="false" aria-controls="sb-doc-getting-started">
-                      <span>Getting Started</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-getting-started">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/intro/iec61499.html" target="_self">IEC 61499 101</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/intro/4diacframework.html" target="_self">4diac Framework</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-install" aria-expanded="false" aria-controls="sb-doc-install">
-                      <span>Installation</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-install">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/installation/overview.html#_4diacide" target="_self">4diac IDE</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/installation/overview.html#_4diacforte" target="_self">4diac FORTE</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/installation/docker.html" target="_self">4diac FORTE as docker</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/installation/bootwithforte.html" target="_self">Autostart 4diac FORTE on Linux</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-tutorials" aria-expanded="false" aria-controls="sb-doc-tutorials">
-                      <span>Tutorials</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-tutorials">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/overview.html" target="_self">Step 0 - 4diac IDE Overview</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/use4diaclocally.html" target="_self">Step 1 - Use 4diac Locally (Blinking Tutorial)</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/distribute4diac.html" target="_self">Step 2 - Distribute 4diac Applications</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/use4diacremotely.html" target="_self">Step 3 - Deploy Applications Remotely</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/createowntypes.html" target="_self">Step 4 - Create Your own Function Block Types</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/otheruseful.html" target="_self">Step 5 - Other Basic Features</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/advancedfeatures.html" target="_self">Step 6 - Advanced Features</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/other_features/replaydebugger.html" target="_self">Replay Debugger</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/opcuadeployment.html" target="_self">Deploying Applications with OPC UA</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/tutorials/gitissuereporting.html" target="_self">Git Issue Reporting</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-examples" aria-expanded="false" aria-controls="sb-doc-examples">
-                      <span>Examples</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-examples">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/examples/xplus3.html" target="_self">X&#43;3</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/examples/pidmotor.html" target="_self">PID control on Lego Mindstorm&#39;s Motor</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/examples/bbbtrafficcontrol.html" target="_self">Traffic control example running on a BBB</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-io" aria-expanded="false" aria-controls="sb-doc-io">
-                      <span>IO Access</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-io">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/io_config/plc01a1.html" target="_self">PLC01A1</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/io_config/revolutionpi.html" target="_self">Revolution Pi</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/io_config/wago_pfc200.html" target="_self">Wago PFC200</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-com" aria-expanded="false" aria-controls="sb-doc-com">
-                      <span>Communication Protocols</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-com">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/opcua.html" target="_self">OPCA UA</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/mqttpaho.html" target="_self">MQTT with Eclipse Paho</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/modbus.html" target="_self">Modbus</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/http.html" target="_self">HTTP</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/opcda.html" target="_self">OPC DA</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/tsn.html" target="_self">TSN</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/openpowerlink.html" target="_self">openPOWERLINK</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/simulation.html" target="_self">Communicating with Simulation Tools</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/xqueries.html" target="_self">Access BaseX Database with XQuery</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/communication/arrowhead.html" target="_self">Arrowhead</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-spec" aria-expanded="false" aria-controls="sb-doc-spec">
-                      <span>Eclipse 4diac Specifications</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-spec">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/specs/fbrunscommunicationmodelwp.pdf" target="_self">Modelling Network Communication in IEC 61499</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-dev" aria-expanded="false" aria-controls="sb-doc-dev">
-                      <span>Development Documentation</span>
-                      <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="collapse" id="sb-doc-dev">
-                      <ul class="main-sidebar-item-submenu list-unstyled">
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/building4diac.html" target="_self">Building and Running 4diac IDE from Source</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/swtbottestsdocumentation.html" target="_self">SWTBot testing</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/forte_monitoring.html" target="_self">Monitoring</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/forte_communicationarchitecture.html" target="_self">4diac FORTE Communication Architecture</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/externalevent_example.html" target="_self">External Event SIFB</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/forte_codequality.html" target="_self">Assuring 4diac FORTE Code Quality</a>
-                        </li>
-                        
-                        
-                        <li class="submenu-item">
-                          
-                          <a class="link-unstyled" href="/4diac/doc/development/contribute.html" target="_self">Contributing to Eclipse 4diac</a>
-                        </li>
-                        
-                      </ul>
-                    </div>
-                  </li>
-                
-              </li>
-            
-              
-              
-              
-              <li class="main-sidebar-item main-sidebar-item-indented">
-                
-                  
-                  <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled" href="/4diac/doc/faq.html">
-                      <div>
-                        <span class="main-sidebar-item-pre" aria-hidden="true">
-                          
-                        </span>
-                        FAQs
-                      </div>
-                    </a>
-                  </li>
-                
-              </li>
-            
-          </ul>
-        
-      
-    </aside>
   
 
 
@@ -2372,7 +1668,7 @@ them. Take a look at the following tutorials:</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1774899540"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1774899566"></script>
   
 
   
