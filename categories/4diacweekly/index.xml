@@ -8,7 +8,144 @@
     <language>en</language>
     <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
-    <lastBuildDate>Fri, 10 Apr 2026 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Apr 2026 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacweekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac at OCX 2026: 18 Years of Eclipse RCP</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-at-ocx-2026-18-years-of-eclipse-rcp/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-at-ocx-2026-18-years-of-eclipse-rcp/</guid>
+      <description>&lt;p&gt;The recording of the talk is now available on YouTube:
+&lt;a href=&#34;https://www.youtube.com/watch?si=CkSRVkNpl53n7ssH&amp;amp;v=q9qpGfA3-MY&amp;amp;feature=youtu.be&#34;&gt;Watch “18 Years of Eclipse 4diac – An Eclipse RCP Success Story”&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+
+&lt;img 
+    src=&#34;https://eclipse.dev/4diac/img/news/OCX2026_Michael_4diac.jpeg&#34; 
+    alt=&#34;Michael Oberlehner presenting Eclipse 4diac at OCX 2026&#34; 
+    style=&#34;
+        max-width: 70%; 
+        max-height: ; 
+        margin: ; 
+        margin-top: ; 
+        margin-left: ; 
+        margin-right: ;
+        margin-bottom: ; 
+        display: ;&#34; 
+    class=&#34;&#34;
+&gt;
+
+
+&lt;br&gt;
+
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Michael Oberlehner&lt;/strong&gt;, Eclipse 4diac committer, presented the journey of the project from its first beginnings in 2007 to today’s mature open-source toolchain for distributed industrial automation based on &lt;strong&gt;IEC 61499&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #83</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-83/</link>
+      <pubDate>Fri, 24 Apr 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-83/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Interpreter &amp;amp; Replay Debugging&lt;/strong&gt;
+-Renamed simulator to replayer and improved overall interpreter state handling
+-Better separation of utilities between FORTE and interpreter
+-Added force/clear value capabilities for debugging&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor &amp;amp; UI Improvements&lt;/strong&gt;
+-Added new GEF elements and removed legacy ones
+-Introduced multiline capabilities in editors
+-Fixed issues when opening service sequence tabs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function Blocks&lt;/strong&gt;
+-Removed obsolete QO output from &lt;code&gt;RT_E_CYCLE&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code Quality &amp;amp; Testing&lt;/strong&gt;
+-Replaced magic numbers in tests with descriptive constants for better readability
+-Updated test event constants to reflect actual IEC 61499 event names
+-Improved consistency in test literals using IEC-compliant syntax&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Runtime &amp;amp; Utilities&lt;/strong&gt;
+-Simplified formatting by replacing &lt;code&gt;std::format_to()&lt;/code&gt; with &lt;code&gt;to_string()&lt;/code&gt;
+-Added utility functions for string handling (&lt;code&gt;appendInt&lt;/code&gt;, &lt;code&gt;appendFloat&lt;/code&gt;)
+-Improved normalization of string representations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function Blocks&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;-Removed obsolete QO output from &lt;code&gt;RT_E_CYCLE&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Extended documentation for serial communication&lt;/li&gt;
+&lt;li&gt;Added documentation for GPIOChip function block&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #82</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-82/</link>
+      <pubDate>Fri, 17 Apr 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-82/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Refactoring &amp;amp; Model Handling&lt;/strong&gt;
+-Extracted shared helpers for type rename and move refactorings
+-Simplified datatype refactoring edits and restructured DataTypeEdit
+-Fixed package name updates when moving types
+-Split complex model edits into dedicated components for better maintainability
+-Improved copy workflows with rename suggestions and validation
+-Prevented duplicate Xtext resource creation during copy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deployment &amp;amp; OPC UA&lt;/strong&gt;
+-Updated Eclipse Milo to 1.1.2 and introduced fragment plugins
+-Reduced Milo dependency footprint in deployment interpreter
+-Improved handling of VarConfig parameters and subapp hierarchy in deployment data&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Text Tooling&lt;/strong&gt;
+-Refactored ST partitioners to better separate algorithm and method bodies
+-Improved legacy format detection using lexer-based checks
+-Switched endian conversion functions to use native endianness&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor &amp;amp; UI Improvements&lt;/strong&gt;
+-Improved tooltips (merged value/initial value, added pin comments, refreshed interface tooltips)
+-Fixed issues with pin labels and editor reopening
+-Improved transition routing using dedicated connection anchors
+-Ensured correct debugging timing for linked internal FBs
+-Updated plant hierarchy on comment changes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation &amp;amp; Robustness&lt;/strong&gt;
+-Preserved untyped subapp pin values during datatype updates
+-Fixed example creation dialog validation
+-Fixed import/export issues for VarConfig parameters&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform &amp;amp; Infrastructure&lt;/strong&gt;
+-Updated target platform to Eclipse 2026-06 M1
+-Migrated to upstream HierarchyGrid and adapted GEF changes
+-Fixed launch configuration product usage
+-General cleanup and dependency updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Runtime &amp;amp; Event Handling&lt;/strong&gt;
+-Improved event triggering to correctly update monitoring counters
+-Fixed event processing for simulated time updates
+-Initialized internal states in RT function blocks to avoid undefined behavior&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function Blocks &amp;amp; Features&lt;/strong&gt;
+-Added new &lt;code&gt;PROVIDE_ARR&lt;/code&gt; function blocks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Performance &amp;amp; Code Quality&lt;/strong&gt;
+-Simplified event dispatch logic and removed redundant utilities
+-Minor utility additions (e.g., &lt;code&gt;hexChar&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build &amp;amp; Tooling&lt;/strong&gt;
+-Updated CI dependencies and workflows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac Weekly #81</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-81/</link>
