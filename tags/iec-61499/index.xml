@@ -10,6 +10,77 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/iec-61499/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #84</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-84/</link>
+      <pubDate>Fri, 01 May 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-84/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Improved validation and diagnostics&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Clear stale type library markers after successful registration&lt;/li&gt;
+&lt;li&gt;Create error markers from diagnostics&lt;/li&gt;
+&lt;li&gt;Add manifest version validation (including model-based checks)&lt;/li&gt;
+&lt;li&gt;Introduce version range validation and corresponding tests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bulk Editor enhancements and refactoring&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactor Bulk Editor into multiple classes for better maintainability&lt;/li&gt;
+&lt;li&gt;Add Find context menu and improved feedback when no usage is found&lt;/li&gt;
+&lt;li&gt;Improve table handling and remove VarConfig from data output tables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Library and project handling improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Add project selection to library import wizard&lt;/li&gt;
+&lt;li&gt;Fix issues reported by static analysis in the import wizard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Architecture and modularization&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Extract OPC UA deployment into a separate feature to better isolate dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Security and robustness improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed handling of gathering connections (queries, disconnect, and source port resolution)&lt;/li&gt;
+&lt;li&gt;Fix buffer handling in &lt;code&gt;strcpy&lt;/code&gt; usage to prevent vulnerabilities&lt;/li&gt;
+&lt;li&gt;Improve GitHub workflow permissions for better security&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Determinism and runtime improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduce static FreeRTOS task creation to reduce heap usage and fragmentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Testing and quality assurance&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Add extensive tests for &lt;code&gt;E_REND&lt;/code&gt; function block behavior&lt;/li&gt;
+&lt;li&gt;Add tests for gathering, member, and negating connections, as well as management commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Functional extensions&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Add distance module components to signal processing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Update installation guide for Raspberry Pi&lt;/li&gt;
+&lt;li&gt;Improve serial communication documentation with clearer explanations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac at OCX 2026: 18 Years of Eclipse RCP</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-at-ocx-2026-18-years-of-eclipse-rcp/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
