@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
-    <lastmod>2026-05-01T17:00:00+00:00</lastmod>
+    <loc>https://eclipse.dev/4diac/categories/4diacevents/</loc>
+    <lastmod>2026-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2026-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2026/welcoming-our-google-summer-of-code-2026-contributors/</loc>
+    <lastmod>2026-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
     <lastmod>2026-05-01T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-84/</loc>
     <lastmod>2026-05-01T17:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/categories/4diacevents/</loc>
-    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/eclipse-4diac-at-ocx-2026-18-years-of-eclipse-rcp/</loc>
     <lastmod>2026-04-30T00:00:00+00:00</lastmod>

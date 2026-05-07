@@ -10,6 +10,28 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Fri, 04 Apr 2025 14:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacforte/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Welcoming Our Google Summer of Code 2026 Contributors!</title>
+      <link>https://eclipse.dev/4diac/news/2026/welcoming-our-google-summer-of-code-2026-contributors/</link>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/welcoming-our-google-summer-of-code-2026-contributors/</guid>
+      <description>&lt;p&gt;As Eclipse 4diac continues its journey toward industrial-grade maturity, these projects will help strengthen both the robustness of the IDE and the experience for its users.&lt;/p&gt;
+&lt;h3 id=&#34;this-years-projects&#34;&gt;This Year’s Projects&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://summerofcode.withgoogle.com/programs/2026/projects/yuMveNWN&#34;&gt;&lt;strong&gt;Strengthening Refactoring Quality through Automated Testing&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+As code quality becomes increasingly critical, especially in industrial contexts, refactoring support in the 4diac IDE plays a key role.
+This project focuses on improving the infrastructure for automated unit testing of our advanced refactoring features, helping ensure their correctness, reliability, and maintainability over time.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://summerofcode.withgoogle.com/programs/2026/projects/2FIzvyaE&#34;&gt;&lt;strong&gt;Enhancing the ECC Editor User Experience&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+While the 4diac IDE has seen significant usability and UX improvements in recent years, the ECC editor has not yet received the same level of attention.
+This project will analyze the current state of the ECC editor and introduce targeted UI and UX improvements to make it more intuitive and efficient for users.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;growing-the-community&#34;&gt;Growing the Community&lt;/h3&gt;
+&lt;p&gt;Google Summer of Code is a fantastic opportunity to bring new contributors into the Eclipse Foundation ecosystem and the Eclipse 4diac community. We are looking forward to working closely with our students, supporting them throughout the summer, and learning from their fresh perspectives.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #84</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-84/</link>
       <pubDate>Fri, 01 May 2026 17:00:00 +0000</pubDate>
