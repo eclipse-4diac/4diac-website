@@ -10,6 +10,85 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #85</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-85/</link>
+      <pubDate>Fri, 08 May 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-85/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Bulk Editor and UI improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix column handling in the BulkEditor variable tables&lt;/li&gt;
+&lt;li&gt;Improve editability handling for VarInOut sections and instance sections&lt;/li&gt;
+&lt;li&gt;Disable hiding of pins that still have active connections&lt;/li&gt;
+&lt;li&gt;Remove display synchronization calls from &lt;code&gt;TypeDecorator&lt;/code&gt; to avoid UI locking issues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation and robustness improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Add validation for invisible &lt;code&gt;VAR_IN_OUT&lt;/code&gt; connections&lt;/li&gt;
+&lt;li&gt;Improve model support for validating hidden connected &lt;code&gt;VAR_IN_OUT&lt;/code&gt;s&lt;/li&gt;
+&lt;li&gt;Prevent exceptions in background updates by checking project availability of interface elements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function block and standard library updates&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refine metadata and version information for &lt;code&gt;F_ATAN2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fix missing &lt;code&gt;PV&lt;/code&gt; association on &lt;code&gt;REQ&lt;/code&gt; events for CTU function blocks&lt;/li&gt;
+&lt;li&gt;Add event rendezvous function blocks for 2, 3, and 4 events&lt;/li&gt;
+&lt;li&gt;Update storage format for &lt;code&gt;E_REND&lt;/code&gt; function blocks to 4diac IDE 3.0.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Refactorings and maintenance&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Extract edge calculation logic into a reusable &lt;code&gt;EdgeDirection&lt;/code&gt; utility&lt;/li&gt;
+&lt;li&gt;Upgrade Xtext tests to JUnit 6&lt;/li&gt;
+&lt;li&gt;Improve UI test execution support on macOS Apple Silicon&lt;/li&gt;
+&lt;li&gt;Remove obsolete source folder references from Milo fragment plugins&lt;/li&gt;
+&lt;li&gt;Add missing event-data associations in test function blocks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;IEC 61131-3 compliance and standard library improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Add IEC 61131-3 compliant &lt;code&gt;ATAN2&lt;/code&gt; implementation&lt;/li&gt;
+&lt;li&gt;Correct input handling and argument order for &lt;code&gt;F_ATAN2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add new &lt;code&gt;CTUD_UDINT&lt;/code&gt; counter function block&lt;/li&gt;
+&lt;li&gt;Fix missing &lt;code&gt;PV&lt;/code&gt; event association for CTU function blocks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Event synchronization enhancements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Add generic &lt;code&gt;GEN_E_REND&lt;/code&gt; event rendezvous function block&lt;/li&gt;
+&lt;li&gt;Add tests for &lt;code&gt;GEN_E_REND&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Networking and logging improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactor TCP connection opening logic for BSD and Win32 sockets&lt;/li&gt;
+&lt;li&gt;Improve logging output handling for info log levels&lt;/li&gt;
+&lt;li&gt;Show the actual port used in BSD and Win32 socket interfaces&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Testing and maintainability&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Add tests and cleanup for new rendezvous functionality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add documentation note about macOS requirements for UI tests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Welcoming Our Google Summer of Code 2026 Contributors!</title>
       <link>https://eclipse.dev/4diac/news/2026/welcoming-our-google-summer-of-code-2026-contributors/</link>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
