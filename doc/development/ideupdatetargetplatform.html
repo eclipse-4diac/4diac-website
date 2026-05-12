@@ -16,9 +16,9 @@
   
 
 
-<title>Replay Debugger | The Eclipse Foundation</title>
-<meta property="og:title" content="Replay Debugger | The Eclipse Foundation" />
-<meta name="twitter:title" content="Replay Debugger | The Eclipse Foundation" />
+<title>Updating the Target Platform Used by 4diac IDE | The Eclipse Foundation</title>
+<meta property="og:title" content="Updating the Target Platform Used by 4diac IDE | The Eclipse Foundation" />
+<meta name="twitter:title" content="Updating the Target Platform Used by 4diac IDE | The Eclipse Foundation" />
 
 <meta name="description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
 <meta property="og:description" content="The Eclipse Foundation provides our global community of individuals and organizations with a mature, scalable, and business-friendly environment for open source …">
@@ -30,7 +30,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/doc/other_features/replaydebugger.html" />
+<meta property="og:url" content="https://eclipse.dev/4diac/doc/development/ideupdatetargetplatform.html" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,12 +38,12 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/doc/other_features/replaydebugger.html" />
+<link rel="canonical" href="https://eclipse.dev/4diac/doc/development/ideupdatetargetplatform.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1778363707">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1778363707">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1778363711">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1778584730">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1778584730">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1778584730">
 <script>
 	
 		var tableClasses = "table";
@@ -1089,12 +1089,12 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/doc/tutorials/">Step 0 - 4diac IDE - Overview</a>
+              <a href="https://eclipse.dev/4diac/doc/development/">Development</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/doc/other_features/replaydebugger.html">Replay Debugger</a>
+              <a href="https://eclipse.dev/4diac/doc/development/ideupdatetargetplatform.html">Updating the Target Platform Used by 4diac IDE</a>
             </li>
           
           </ol>
@@ -1113,7 +1113,7 @@
     
       <h1>
         
-          Replay Debugger
+          Updating the Target Platform Used by 4diac IDE
         
       </h1>
     
@@ -1121,159 +1121,67 @@
 
 
   
-  <div class="sect1">
-<h2 id="_overview"><a id="ReplayDebuggerOverview"></a> Overview</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Replay Debugging is a powerful tool that allows you to record the execution of your application and then replay it later. This can be useful for debugging purposes, as it allows you to see exactly what happened during the execution of your application.</p>
+  <div class="paragraph">
+<p>For upgrading to new Eclipse platform versions the following steps need to be done:</p>
 </div>
-<div class="paragraph">
-<p>Tracing information is already available in 4diac FORTE. However, the current implementation traces a lot of information. Basically, it traces all events, data and also internal data from the function block.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Update org.eclipse.fordiac.ide.product.target in the org.eclipse.fordiac.ide.product plug-in</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Locate <a href="https://github.com/eclipse-4diac/4diac-ide/blob/develop/plugins/org.eclipse.fordiac.ide.product/org.eclipse.fordiac.ide.product.target" class="bare">https://github.com/eclipse-4diac/4diac-ide/blob/develop/plugins/org.eclipse.fordiac.ide.product/org.eclipse.fordiac.ide.product.target</a></p>
+</li>
+<li>
+<p>Open it in a plain text editor</p>
+</li>
+<li>
+<p>Go through all entries check for new urls and new versions</p>
+</li>
+<li>
+<p>At the end open the <code>org.eclipse.fordiac.ide.product.target</code> in the target editor to verify all upgrades work. Resolve any problems accordingly</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>To avoid the overhead of tracing all this information, 4diac FORTE has been extended to support a replay debugging mode. In this mode, only the output events of Service Function Blocks and their related data are traced.
-In a later stage, the rest of the information is generated using a replay algorithm.</p>
+</li>
+<li>
+<p>Update pom.xml in the 4diac IDE’s source root directory.
+At least the following steps have to be done:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Check tycho.version</p>
+</li>
+<li>
+<p>Update tycho-repo.url to the new target platform version</p>
+</li>
+<li>
+<p>Check org.eclipse.equinox.executable version range.
+  Attention this has to be done on two places in the file.<br/>
+For the version check the latest <a href="https://download.eclipse.org/eclipse/downloads/">release overview page</a>.
+There check for <em>Eclipse Platform Launcher Executables</em>.</p>
+</li>
+</ul>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_current_status"><a id="CurrentStatus"></a> Current Status</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The replay algorithm is currently implemented in the development branch of <a href="https://github.com/eclipse-4diac/4diac-forte/blob/develop/src/stdfblib/ita/replay">4diac FORTE</a>.</p>
-</div>
-<div class="paragraph">
-<p>The code is structured so that the device replayer contains one resource replayer for each resource present in the device.
-The algorithm receives the output events of the Service Interface Function Blocks and their related data. Then, the original run can be replayed by advancing one event at a time.
-While replaying, any information to be extracted from the device can be directly retrieved from the resource or device instances used to create the replayer.</p>
-</div>
-<div class="sect2">
-<h3 id="_4diac_forte_interface"><a id="Interface"></a> 4diac FORTE Interface</h3>
-<div class="paragraph">
-<p>The replay debugger can be used directly programmatically by instantiating the corresponding class.</p>
-</div>
-<div class="paragraph">
-<p>On top of the replayer, a Replay Device was added, which offers two OPC UA methods: one for loading existing traces from a given path, and another for triggering one event at a time, which returns the last execute event, or empty if it is the last event.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_4diac_ide"><a id="IDE"></a> 4diac IDE</h3>
-<div class="paragraph">
-<p>A Graphical User Interface in 4diac IDE allows using the provided interface by 4diac FORTE. The feature provides a timeline of the events for each resource being replayed. Sliders and buttons allow moving forward and backwards over the sequence of events. The state of the application can be observed as usual by using watches of the desired elements and is reflected on these watches as the user moves over the sequence of events.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_testing"><a id="Testing"></a> Testing</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The replay algorithm was tested by using different scenarios. The scenarios are tested by letting each scenario run first with the original traces (which traces all events), filtering the output events of Service Interface Function Blocks, executing the replay algorithm, and then comparing the results of the original run with the replayed run.</p>
-</div>
-<div class="paragraph">
-<p>The tests are located <a href="https://github.com/eclipse-4diac/4diac-forte/blob/develop/tests/core/trace/replayAlgorithmTest.cpp">here</a>.</p>
-</div>
-<div class="paragraph">
-<p>The used scenarios come from the reference examples, in the <a href="https://github.com/eclipse-4diac/4diac-examples/tree/master/compliance_tests">example repostory</a></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_usage"><a id="Usage"></a> Usage</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_generate_traces"><a id="GenerateTraces"></a> Generate Traces</h3>
-<div class="paragraph">
-<p>To enable the replay debugging capability, 4diac FORTE must be compiled with the <code>FORTE_TRACE_CTF</code> and <code>FORTE_TRACE_CTF_REPLAY_DEBUGGING</code> flags enabled.
-This will enable the tracing of the output events of Service Function Blocks and their related data.</p>
-</div>
-<div class="paragraph">
-<p>When executing 4diac FORTE, provide the <code>-t FOLDER</code> flag, where FOLDER is the path where traces will be saved.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tbody><tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-FOLDER must exist before executing the command for the traces to be saved.
-</td>
-</tr>
-</tbody></table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_start_4diac_forte_as_a_replay_device"><a id="ReplayDevice"></a> Start 4diac FORTE as a Replay Device</h3>
-<div class="paragraph">
-<p>To later execute the replay algorithm, the Replay Device must be enabled. This is acomplished by compiling 4diac FORTE using the <code>FORTE_REPLAY_DEVICE</code> and <code>FORTE_TRACE_CTF_REPLAY_DEBUGGING</code> flags.
-As OPC UA is used to communicate with the replay device, the OPC UA module must also be properly enabled.</p>
-</div>
-<div class="paragraph">
-<p>One extra step is needed so the traces can be properly processed. In the 4diac FORTE repository, the file <code>src/core/trace/replay_debugging/generated/metadata</code> must be copied into the FOLDER where the traces were saved.</p>
-</div>
-<div class="paragraph">
-<p>Then, start 4diac FORTE with the parameters <code>-d ReplayDevice</code>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_start_replay_debugging_in_4diac_ide"><a id="ReplayGUI"></a> Start replay debugging in 4diac IDE</h3>
-<div class="paragraph">
-<p>In 4diac IDE, create a new debug configuration of type Replay Debugging, select the device that you want to replay debug, and set the path to the FOLDER where the traces are stored.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="img/replayDebuggingConfigurationTab.png" alt="Example of a Replay Debugging configuration tab"/></span></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tbody><tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-Currently only one device can be replayed per configuration.
-</td>
-</tr>
-</tbody></table>
-</div>
-<div class="paragraph">
-<p>Start the debug configuration. 4diac IDE will connect to the instance of 4diac FORTE started before, load the traces from the provided path, and generate all the data for replay debugging. Open the Replay Debugging view if not already present (Window → Show View → Other…​ → Other → Replay Debugging).</p>
-</div>
-<div class="paragraph">
-<p>The view will show a timeline of events for each resource. In the application, toggle the watches you want to observe as usual, and the shown values will change according to the position of the timeslider. Use the buttons to move forward or backward, or just click on the timeline at the desired event number.
-The values that changed at the current event are marked as red.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="img/replayDebuggingApplication.png" alt="View of an application being replayed"/></span></p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_where_to_go_from_here">Where to go from here?</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>You can see the supported protocols:</p>
-</div>
-<div class="paragraph">
-<p><a href="../communication/overview.html">Supported Communication Protocols</a></p>
-</div>
-<div class="paragraph">
-<p>You can see the examples:</p>
-</div>
-<div class="paragraph">
-<p><a href="../examples/overview.html">4diac Examples</a></p>
-</div>
-<div class="paragraph">
-<p>If you want to go back to the Where to Start page, we leave you here a fast access</p>
-</div>
-<div class="paragraph">
-<p><a href="../doc_overview.html">Where to Start</a></p>
-</div>
-<div class="paragraph">
-<p>Or <a href="#topOfPage">Go to top</a></p>
-</div>
-</div>
+</li>
+<li>
+<p>Regenerate all model and model edit code from the models plug-in.</p>
+</li>
+<li>
+<p>Run product from Eclipse IDE using product editor, i.e., press the synchronize button and then the &#34;Launch an Eclipse Application&#34;</p>
+</li>
+<li>
+<p>Run Maven install for pom.xml in the 4diac IDE’s source root directory locally</p>
+</li>
+<li>
+<p>Test if the generated product can be executed. The generated products are in:<br/>
+`/org.eclipse.4diac.ide/plugins/org.eclipse.fordiac.ide.product/target/products/org.eclipse.fordiac.ide.product</p>
+</li>
+<li>
+<p>Push to Gerrit so that CI build can also check if it is working</p>
+</li>
+</ul>
 </div>
 
 
@@ -1424,8 +1332,6 @@ The values that changed at the current event are marked as red.</p>
                 
               
                 
-                  
-                
               
                 
               
@@ -1434,11 +1340,11 @@ The values that changed at the current event are marked as red.</p>
               <li class="main-sidebar-item main-sidebar-item-indented">
                 
                   <li class="main-sidebar-item main-sidebar-item-indented">
-                    <a class="link-unstyled main-sidebar-item-active" role="button" data-toggle="collapse" href="#sb-doc-tutorials" aria-expanded="true" aria-controls="sb-doc-tutorials">
+                    <a class="link-unstyled" role="button" data-toggle="collapse" href="#sb-doc-tutorials" aria-expanded="false" aria-controls="sb-doc-tutorials">
                       <span>Tutorials</span>
                       <i class="main-sidebar-item-icon fa fa-chevron-down" aria-hidden="true"></i>
                     </a>
-                    <div class="collapse in" id="sb-doc-tutorials">
+                    <div class="collapse" id="sb-doc-tutorials">
                       <ul class="main-sidebar-item-submenu list-unstyled">
                         
                         
@@ -1486,7 +1392,7 @@ The values that changed at the current event are marked as red.</p>
                         
                         <li class="submenu-item">
                           
-                          <a class="link-unstyled main-sidebar-item-active" href="/4diac/doc/other_features/replaydebugger.html" target="_self">Replay Debugger</a>
+                          <a class="link-unstyled" href="/4diac/doc/tutorials/replaydebugger.html" target="_self">Replay Debugger</a>
                         </li>
                         
                         
@@ -1992,7 +1898,7 @@ The values that changed at the current event are marked as red.</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1778363722"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1778584741"></script>
   
 
   

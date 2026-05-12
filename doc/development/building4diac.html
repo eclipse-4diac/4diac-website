@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/development/building4diac.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1778363680">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1778363680">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1778363680">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1778584725">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1778584725">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1778584725">
 <script>
 	
 		var tableClasses = "table";
@@ -1451,7 +1451,19 @@ Then the necessary steps for generating binary 4diac IDE packages are:</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>Alternatively you can run <code>.mvn .install</code>  on the command line in the root folder of 4diac IDE source code.</p>
+<p>Alternatively you can run <code>mvn clean install</code> on the command line in the root folder of 4diac IDE source code.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+When running UI tests directly from an IDE (e.g. Eclipse) on macOS, you must manually add <code>-XstartOnFirstThread</code> to your JVM arguments. This is handled automatically by a Maven profile when building from the command line.
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 </div>
@@ -1678,7 +1690,7 @@ Then the necessary steps for generating binary 4diac IDE packages are:</p>
                         
                         <li class="submenu-item">
                           
-                          <a class="link-unstyled" href="/4diac/doc/other_features/replaydebugger.html" target="_self">Replay Debugger</a>
+                          <a class="link-unstyled" href="/4diac/doc/tutorials/replaydebugger.html" target="_self">Replay Debugger</a>
                         </li>
                         
                         
@@ -2186,7 +2198,7 @@ Then the necessary steps for generating binary 4diac IDE packages are:</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1778363699"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1778584729"></script>
   
 
   
