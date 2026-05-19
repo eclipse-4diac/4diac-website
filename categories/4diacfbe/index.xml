@@ -10,6 +10,75 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Sun, 09 Feb 2025 14:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacfbe/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #86</title>
+      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-86/</link>
+      <pubDate>Fri, 15 May 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-86/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Event Function Blocks&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added the new &lt;code&gt;E_RF_TRIG&lt;/code&gt; function block for combined rising/falling edge detection&lt;/li&gt;
+&lt;li&gt;Added generic &lt;code&gt;E_D_FF_ANY&lt;/code&gt; flip-flop function block supporting arbitrary data types&lt;/li&gt;
+&lt;li&gt;Modernized timer function blocks by replacing deprecated event FBs with newer edge-triggering variants&lt;/li&gt;
+&lt;li&gt;Removed obsolete &lt;code&gt;E_MOVE&lt;/code&gt; function block from the event library&lt;/li&gt;
+&lt;li&gt;Fixed comments and documentation typos in edge detection FBs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type System &amp;amp; Project Handling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed stale type references and dependency cleanup after project dereferencing&lt;/li&gt;
+&lt;li&gt;Improved cleanup of FB palette listeners on disposal&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Export &amp;amp; Build&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactored export builder implementation&lt;/li&gt;
+&lt;li&gt;Improved auto export by skipping generic types&lt;/li&gt;
+&lt;li&gt;Integrated CodeQL analysis into the main Maven workflow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor &amp;amp; Visualization&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed transition bounds and edge direction aspect ratio handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Event Function Blocks&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;E_RF_TRIG&lt;/code&gt; runtime support for detecting rising and falling boolean edges&lt;/li&gt;
+&lt;li&gt;Updated timer function blocks to use &lt;code&gt;E_RF_TRIG&lt;/code&gt; instead of &lt;code&gt;E_SWITCH&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Composite FBs &amp;amp; Connections&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed forwarding of generic values through internal composite FB connections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform &amp;amp; Code Quality&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactored FreeRTOS thread cleanup by introducing a named deleter type&lt;/li&gt;
+&lt;li&gt;Eliminated compiler warnings related to internal linkage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Documentation Maintenance&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Harmonized capitalization of URL paths and file names&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #85</title>
       <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-85/</link>
       <pubDate>Fri, 08 May 2026 17:00:00 +0000</pubDate>
