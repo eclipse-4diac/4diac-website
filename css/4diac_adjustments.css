@@ -191,17 +191,71 @@ h6 {
    News List
    -------------------------------------------------------------------------- */
 .news-list .media-link {
-  background-color: var(--bg-muted);
-  color: var(--text-muted);
   display: block;
-  margin-bottom: 10px;
-  padding: 30px;
+  padding: 1.5rem 2rem;
+  background: var(--bg-muted);
+  border: 1px solid var(--4diac-gray-pale);
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    border-left-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
 }
 
 .news-list .media-link:hover {
-  background-color: var(--bg-accent);
-  color: var(--text-muted);
-  text-decoration: none;
+  background: var(--4diac-orange-tint);
+  border-color: var(--4diac-orange-soft);
+  border-left-color: var(--4diac-orange);
+  box-shadow: 0 4px 12px rgba(224, 130, 12, 0.08);
+  transform: translateY(-1px);
+}
+
+.news-list .media-link:focus-visible {
+  outline: 3px solid var(--4diac-orange);
+  outline-offset: 3px;
+}
+
+.news-list .media-heading {
+  margin: 0 0 0.5rem;
+  color: var(--heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  transition: color 0.15s ease;
+}
+
+.news-list .media-link:hover .media-heading {
+  color: var(--4diac-blue);
+}
+
+.news-list .media-text {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--text-base);
+}
+
+/* --------------------------------------------------------------------------
+   News item page
+   --------------------------------------------------------------------------*/
+.news-metadata {
+  display: flex;
+
+  margin-top: calc(-1 * var(--space-xs));
+  margin-bottom: var(--space-md);
+  
+  border-bottom: 1px solid var(--4diac-gray-pale);
+  padding-bottom: var(--space-xs);
+}
+
+.news-metadata time {
+  font-size: var(--text-base);
+  color: var(--4diac-blue-medium-1);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 /* --------------------------------------------------------------------------

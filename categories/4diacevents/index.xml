@@ -11,12 +11,12 @@
     <lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacevents/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eclipse 4diac Weekly #87</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-87/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-87/</link>
       <pubDate>Fri, 22 May 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-87/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-87/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Validation &amp;amp; UI Enhancements&lt;/strong&gt;
@@ -46,12 +46,12 @@
     
     <item>
       <title>OpenFB 1.1.0 Released</title>
-      <link>https://eclipse.dev/4diac/news/2026/openfb-1.1.0-released/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/openfb-1.1.0-released/</link>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/openfb-1.1.0-released/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/openfb-1.1.0-released/</guid>
       <description>&lt;p&gt;We are pleased to announce the release of &lt;strong&gt;OpenFB&lt;/strong&gt;, a new open-source &lt;strong&gt;IEC 61499&lt;/strong&gt; runtime for Python. The project source code is available on GitHub: &lt;a href=&#34;https://github.com/rtsoft-sdc/OpenFB&#34;&gt;OpenFB&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;OpenFB&lt;/strong&gt; is a Python-powered IEC 61499 runtime compliant with latest &lt;strong&gt;4diac IDE&lt;/strong&gt;. It acts as a lightweight, portable execution device - similar in role to 4diac FORTE but written in Python, which makes it particularly attractive for:&lt;/p&gt;
 &lt;ul&gt;
@@ -65,12 +65,12 @@
     
     <item>
       <title>Eclipse 4diac Weekly #86</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-86/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-86/</link>
       <pubDate>Fri, 15 May 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-86/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-86/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Event Function Blocks&lt;/strong&gt;
@@ -134,12 +134,12 @@
     
     <item>
       <title>Eclipse 4diac Weekly #85</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-85/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-85/</link>
       <pubDate>Fri, 08 May 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-85/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-85/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Bulk Editor and UI improvements&lt;/strong&gt;
@@ -213,12 +213,12 @@
     
     <item>
       <title>Welcoming Our Google Summer of Code 2026 Contributors!</title>
-      <link>https://eclipse.dev/4diac/news/2026/welcoming-our-google-summer-of-code-2026-contributors/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/welcoming-our-google-summer-of-code-2026-contributors/</link>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/welcoming-our-google-summer-of-code-2026-contributors/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/welcoming-our-google-summer-of-code-2026-contributors/</guid>
       <description>&lt;p&gt;As Eclipse 4diac continues its journey toward industrial-grade maturity, these projects will help strengthen both the robustness of the IDE and the experience for its users.&lt;/p&gt;
 &lt;h3 id=&#34;this-years-projects&#34;&gt;This Year’s Projects&lt;/h3&gt;
 &lt;ul&gt;
@@ -235,12 +235,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #84</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-84/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-84/</link>
       <pubDate>Fri, 01 May 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-84/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-84/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Improved validation and diagnostics&lt;/strong&gt;
@@ -306,12 +306,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac at OCX 2026: 18 Years of Eclipse RCP</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-at-ocx-2026-18-years-of-eclipse-rcp/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-at-ocx-2026-18-years-of-eclipse-rcp/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-at-ocx-2026-18-years-of-eclipse-rcp/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-at-ocx-2026-18-years-of-eclipse-rcp/</guid>
       <description>&lt;p&gt;The recording of the talk is now available on YouTube:
 &lt;a href=&#34;https://www.youtube.com/watch?si=CkSRVkNpl53n7ssH&amp;amp;v=q9qpGfA3-MY&amp;amp;feature=youtu.be&#34;&gt;Watch “18 Years of Eclipse 4diac – An Eclipse RCP Success Story”&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
@@ -340,12 +340,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #83</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-83/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-83/</link>
       <pubDate>Fri, 24 Apr 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-83/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-83/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Interpreter &amp;amp; Replay Debugging&lt;/strong&gt;
@@ -385,12 +385,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #82</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-82/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-82/</link>
       <pubDate>Fri, 17 Apr 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-82/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-82/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Refactoring &amp;amp; Model Handling&lt;/strong&gt;
@@ -443,12 +443,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #81</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-81/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-81/</link>
       <pubDate>Fri, 10 Apr 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-81/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-81/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Refactoring &amp;amp; Structured Text&lt;/strong&gt;
@@ -494,12 +494,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #80</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-80/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-80/</link>
       <pubDate>Fri, 03 Apr 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-80/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-80/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Library Management &amp;amp; Remote Access&lt;/strong&gt;
@@ -568,12 +568,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #79</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-79/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-79/</link>
       <pubDate>Fri, 27 Mar 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-79/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-79/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Function Blocks &amp;amp; Libraries&lt;/strong&gt;
@@ -700,12 +700,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #78</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-78/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-78/</link>
       <pubDate>Fri, 20 Mar 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-78/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-78/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Editor &amp;amp; UI Improvements&lt;/strong&gt;
@@ -775,12 +775,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #77</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-77/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-77/</link>
       <pubDate>Fri, 13 Mar 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-77/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-77/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -800,12 +800,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac 3.1 Released!</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-released/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.1-released/</link>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-released/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.1-released/</guid>
       <description>&lt;h2 id=&#34;highlights-4diac-ide&#34;&gt;Highlights 4diac IDE:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Improved Struct Member Access:&lt;/strong&gt; &lt;code&gt;F_MOVE&lt;/code&gt; and generic variables now fully support member access pins for easier handling of structured data types.&lt;/li&gt;
@@ -825,12 +825,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #76</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-76/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-76/</link>
       <pubDate>Fri, 06 Mar 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-76/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-76/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -856,12 +856,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #75</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-75/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-75/</link>
       <pubDate>Fri, 27 Feb 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-75/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-75/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -883,12 +883,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac 3.1 Development Milestone: Feature Freeze</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-development-milestone-feature-freeze/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.1-development-milestone-feature-freeze/</link>
       <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-3.1-development-milestone-feature-freeze/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.1-development-milestone-feature-freeze/</guid>
       <description>&lt;p&gt;The 3.1 release introduces several architectural and usability enhancements:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;4diac IDE:&lt;/strong&gt; Improved Struct Member Access for &lt;code&gt;F_MOVE&lt;/code&gt; blocks, support for Folder Refactoring, and a refined user interface including drop shadows and optimized Dark Mode support.&lt;/li&gt;
@@ -899,12 +899,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #74</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-74/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-74/</link>
       <pubDate>Fri, 20 Feb 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-74/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-74/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -934,12 +934,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #73</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-73/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-73/</link>
       <pubDate>Fri, 13 Feb 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-73/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-73/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -966,12 +966,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #72</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-72/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-72/</link>
       <pubDate>Fri, 06 Feb 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-72/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-72/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Structured data &amp;amp; model correctness&lt;/strong&gt;
@@ -1064,12 +1064,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #71</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-71/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-71/</link>
       <pubDate>Fri, 30 Jan 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-71/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-71/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Editor, refactoring, and model robustness&lt;/strong&gt;
@@ -1147,12 +1147,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #70</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-70/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-70/</link>
       <pubDate>Fri, 23 Jan 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-70/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-70/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1197,12 +1197,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Maintenance Release</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-maintenance-release/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-maintenance-release/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-maintenance-release/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-maintenance-release/</guid>
       <description>&lt;h2 id=&#34;highlights-of-4diac-ide-302-fixes&#34;&gt;Highlights of 4diac IDE 3.0.2 fixes:&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Fixed issues when changing FB types from data to adapter connections (and vice versa).&lt;/li&gt;
@@ -1225,12 +1225,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #69</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-69/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-69/</link>
       <pubDate>Fri, 16 Jan 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-69/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-69/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1255,12 +1255,12 @@ This project will analyze the current state of the ECC editor and introduce targ
     
     <item>
       <title>Eclipse 4diac Weekly #68</title>
-      <link>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-68/</link>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-68/</link>
       <pubDate>Fri, 09 Jan 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
-      <guid>https://eclipse.dev/4diac/news/2026/eclipse-4diac-weekly-68/</guid>
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-68/</guid>
       <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
