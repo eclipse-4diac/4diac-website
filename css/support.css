@@ -42,3 +42,101 @@
    padding-left: 1.2em;
 }
 
+
+/*******   commercial support settings    ********/
+.support-list-container {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.support-entry {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--4diac-gray-pale);
+}
+
+.support-entry:last-of-type {
+  border-bottom: none;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-xs);
+}
+
+.entry-title-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-name {
+  color: var(--4diac-blue-medium-1);
+  font-size: var(--text-lg);
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  font-weight: 500;
+}
+
+.entry-type {
+  display: block;
+  color: var(--4diac-gray-dark-mid);
+  font-size: var(--text-base);
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: var(--space-xs);
+  padding-left: var(--space-md);
+}
+
+.entry-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: var(--space-sm);
+  padding-left: var(--space-md);
+}
+
+.topic-tag {
+  display: inline-block;
+  background-color: var(--4diac-lime-tint);
+  color: var(--4diac-lime-ultra-dark);
+  border: 1px solid var(--4diac-lime-light);
+  padding: 2px 8px;
+  font-size: 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.entry-description p {
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: var(--space-sm);
+  font-size: var(--text-base);
+  padding-left: var(--space-md);
+}
+
+
+.entry-social-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--4diac-blue-ultra-dark) !important;
+  text-decoration: none;
+  background-color: var(--4diac-blue-pale); 
+  border: 1px solid var(--4diac-blue-light);
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.entry-social-btn:hover {
+  background-color: var(--4diac-blue-medium-1);
+  border-color: var(--4diac-blue-medium-1);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
