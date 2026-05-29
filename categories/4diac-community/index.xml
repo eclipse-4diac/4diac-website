@@ -10,6 +10,19 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Tue, 10 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diac-community/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac 3.2 Development Milestone: Feature Freeze</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.2-development-milestone-feature-freeze/</link>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.2-development-milestone-feature-freeze/</guid>
+      <description>&lt;p&gt;The final release is scheduled for June 10, 2026.&lt;/p&gt;
+&lt;p&gt;Information on the changes is available on the &lt;a href=&#34;https://eclipse.dev/4diac/new-and-noteworthy/3.2/&#34;&gt;New and Noteworthy pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Testing of the current development branches is encouraged to assist in the final stabilization phase. Please report any issues via our GitHub issue trackers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #87</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-87/</link>
       <pubDate>Fri, 22 May 2026 17:00:00 +0000</pubDate>
