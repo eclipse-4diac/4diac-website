@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/doc_overview/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780086129">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780086129">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1780086129">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780160691">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780160691">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1780160691">
 <script>
 	
 		var tableClasses = "table";
@@ -1114,133 +1114,131 @@
 
 
   
-  <div class="sect1">
-<h2 id="_how_to_contribute_to_this_document">How to contribute to this document</h2>
+  <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Your feedback can improve the Eclipse 4diac documentation.
-There are several ways to submit feedback:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>report an <a href="https://github.com/eclipse-4diac/4diac-documentation/issues">issue</a>,</p>
-</li>
-<li>
-<p>contribute a <a href="https://github.com/eclipse-4diac/4diac-documentation/pulls">pull request</a> with changes,</p>
-</li>
-<li>
-<p>or start a <a href="https://github.com/eclipse-4diac/4diac-documentation/discussions">discussion</a>.</p>
-</li>
-</ul>
+<p>Eclipse 4diac is an open source environment for distributed industrial automation based on IEC 61499.
+This documentation provides tutorials, examples, integration guides, communication references, and developer resources for Eclipse 4diac.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_where_to_start"><a id="wheretostart"></a> Where to start?</h2>
+<h2 id="_start_here">Start Here</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This page is intended to work as an overall index of the documentation
-about Eclipse 4diac. Whenever you have doubts about anything, come here
-and you might find the right page to visit. Depending on your
-background’s area (automation, mechanics, computer science, or just
-curiosity), you will need different information to understand what
-Eclipse 4diac is and its strengths. But since this might be the first
-page you arrived to, there’s a quick <a href="#quickIntro">intro</a> below the
-link list.</p>
+<p>If you are new to Eclipse 4diac, these pages provide the recommended starting points.</p>
 </div>
+<table class="tableblock frame-all grid-all fit-content landing-table">
+<colgroup>
+<col/>
+<col/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./intro/iec61499.html">Getting Started</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Learn the basics of IEC 61499, Function Blocks, and distributed automation.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./intro/4diacframework.html">4diac Framework</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Understand the Eclipse 4diac architecture and the interaction between 4diac IDE and 4diac FORTE.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./installation/overview.html">Installation</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Install Eclipse 4diac IDE and prepare your target environment.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./tutorials/tutorials.html">Tutorials</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Create, model, and deploy your first Eclipse 4diac application step by step.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch details-table">
+<colgroup>
+<col style="width: 50%;"/>
+<col style="width: 50%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="sect2">
+<h3 id="_using_eclipse_4diac">Using Eclipse 4diac</h3>
 <div class="paragraph">
-<p>Here’s a list of the main topics in the documentation:</p>
+<p>Guides for application design, hardware integration, and industrial communication.</p>
 </div>
+<table class="tableblock frame-all grid-all fit-content landing-table">
+<colgroup>
+<col/>
+<col/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./examples/overview.html">Examples</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Explore reference applications and working systems.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./io_config/overview.html">IO Access</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connect hardware and configure peripherals for platforms such as Raspberry Pi or PLCs.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./communication/overview.html">Communication</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use industrial and IoT protocols such as MQTT, OPC UA, and Modbus.</p></td>
+</tr>
+</tbody>
+</table>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="sect2">
+<h3 id="_reference_development">Reference &amp; Development</h3>
+<div class="paragraph">
+<p>Resources for troubleshooting, advanced configuration, and platform extension.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content landing-table">
+<colgroup>
+<col/>
+<col/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./faq.html">FAQs</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Answers to common questions and troubleshooting scenarios.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./development/overview.html">Development</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Develop custom Function Blocks, 4diac IDE plugins, and 4diac FORTE extensions.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><a href="./specs/index.html">Specifications</a></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Review compliance profiles and project-maintained specifications.</p></td>
+</tr>
+</tbody>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="title">Want to improve the documentation?</div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="./intro/iec61499.html">Learn about IEC 61499</a>:
-To use Eclipse 4diac, you need to understand the terms of the IEC 61499 standard and how the Function Blocks work.
-At first, take therefore a look at this explanation about the standards and technology related to Eclipse 4diac.</p>
+<p>Report an <a href="https://github.com/eclipse-4diac/4diac-documentation/issues">issue</a></p>
 </li>
 <li>
-<p><a href="./intro/4diacframework.html">Understand the 4diac framework</a>:
-If you know about IEC 61499 and what PLCs are, but you don’t understand what 4diac IDE is, or what’s the relation with 4diac FORTE, then you should take a look at this topic about the 4diac IDE framework.</p>
+<p>Open a <a href="https://github.com/eclipse-4diac/4diac-documentation/pulls">pull request</a></p>
 </li>
 <li>
-<p><a href="./tutorials/tutorials.html">Step by Step Tutorials</a>:
-To understand the basics of 4diac IDE, it is best to start using it.</p>
-</li>
-<li>
-<p><a href="./installation/overview.html">Install Eclipse 4diac</a>:
-If you understand all of the above, and you want to start using Eclipse 4diac, you will need to first install it.</p>
-</li>
-<li>
-<p><a href="./examples/overview.html">4diac IDE examples</a>:
-If you want to see some examples using 4diac IDE, this link is your friend.</p>
-</li>
-<li>
-<p><a href="./io_config/overview.html">IO Configuration for the different platforms</a>:
-If you have a specific platform with input and outputs that is supported by 4diac FORTE, for example a Raspberry Pi or a PLC, and you want to use them, use this topic.</p>
-</li>
-<li>
-<p><a href="./communication/overview.html">Communication Protocols</a>:
-If you want to use a specific communication protocol supported by 4diac FORTE, for example MQTT, OPC UA, Modbus and so on, follow the link.</p>
-</li>
-<li>
-<p><a href="./specs/index.html">Specifications</a>:
-Specifications provided and maintained by the Eclipse 4diac project (e.g., compliance profiles and statements).</p>
-</li>
-<li>
-<p><a href="./development/overview.html">Development of 4diac FORTE and 4diac IDE</a>:
-If you are a developer or you want to know more deep stuff about 4diac FORTE or 4diac IDE, you’ll have fun here.</p>
-</li>
-<li>
-<p><a href="./other_features/overview.html">Other Features</a>:
-Eclipse 4diac is a nice place for research &amp; development, so new and exiting features are being developed all the time.</p>
-</li>
-<li>
-<p><a href="https://github.com/eclipse-4diac">File a bug for 4diac FORTE or 4diac IDE</a>:
-You found a bug? File it here.</p>
-</li>
-<li>
-<p><a href="./faq.html">Frequently Asked Questions</a>: If you have troubles with something, visit the FAQs page.</p>
-</li>
-<li>
-<p><a href="https://www.eclipse.org/forums/index.php?t=thread&amp;frm_id=308">4diac Forum</a>:
-And if you still have a question or something you want to share, don’t forget to participate in the forum.</p>
+<p>Join the conversation on our <a href="https://github.com/eclipse-4diac/4diac-documentation/discussions">4diac Discussion Forum</a>.</p>
 </li>
 </ul>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_quick_intro"><a id="quickIntro"></a> Quick Intro</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>4diac IDE is an open source IDE intended for distributed industrial systems.
-It is also applicable in other areas such as home automation, electrical networks, or wherever you think some automated system is needed.
-You can &#34;program&#34; an application using Function Blocks and your program will look like the one in image below.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="intro/img/genericApplication.png" alt="A generic application in IEC61499"/></span></p>
-</div>
-<div class="paragraph">
-<p>The same application can run on different devices such as a Raspberry Pi, a PLC or your computer, since the application is independent of the device on which it’s running.</p>
-</div>
-<div class="paragraph">
-<p>Note that you can run this application not only in one device, but you can distribute it to many devices, as shown in the picture below.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="intro/img/iec61499Disitribution.png" alt="Distributing an application"/></span></p>
-</div>
-<div class="paragraph">
-<p>Quick reference: each Function Block (FB) is like a normal function that is executed when an event (red incoming line on the left of the FB) arrives.
-The incoming blue lines are the data inputs (parameters to the function) and the outgoing blue lines are the parameters sent to other FBs (similar to return values, yet they don’t always &#34;return&#34; but go forward).</p>
-</div>
-<div class="paragraph">
-<p>This application might not be intended for only one device, but for a whole system with many devices.
-In that case, some FBs will need to run on one device, and some on others - a distributed system is created.
-With 4diac IDE you can design your distributed application and deploy it.</p>
-</div>
-<div class="paragraph">
-<p><a href="#top">Go to top</a></p>
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 </div>
@@ -1959,7 +1957,7 @@ With 4diac IDE you can design your distributed application and deploy it.</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780086135"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780160697"></script>
   
 
   

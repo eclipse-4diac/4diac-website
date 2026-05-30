@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/tutorials/distribute4diac.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780086158">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780086158">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1780086158">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780160722">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780160722">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1780160722">
 <script>
 	
 		var tableClasses = "table";
@@ -1310,41 +1310,26 @@ The first is a UDP multi-cast address use to send messages between devices, and 
 <h2 id="_start_both_devices"><a id="startDevices"></a>Start Both Devices</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Change to the Deployment Perspective.</p>
+<p>Open two local consoles</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Set the Port to 61499 (the same as defined before, remember localhost:61499 in the System Configuration Editor?).</p>
+<p>Navigate to the folder where the forte executable is saved.</p>
 </li>
 <li>
-<p>Launch Local 4diac FORTE.</p>
+<p>Open Forte with port 61499 and in the other cmd window with port 61500.</p>
 </li>
 <li>
-<p>You should see the location of your 4diac FORTE and the Terminate button enabled in the Console.</p>
-</li>
-<li>
-<p>Set the Port to 61500 (the same as defined before, remember localhost:61500 in the System Configuration?)</p>
-</li>
-<li>
-<p>Launch Local 4diac FORTE</p>
-</li>
-<li>
-<p>You should see the the location of your 4diac FORTE and the Terminate button enabled in the Console.</p>
+<p>The command looks like this: forte.exe -c localhost:port</p>
 </li>
 <li>
 <p>Select the elements to deploy. For this tutorial select our devices <em>Counter</em> and <em>Testee</em>.</p>
 </li>
 <li>
-<p>Click the <span class="button4diac">Deploy</span> button.</p>
-</li>
-<li>
-<p>Check that the <em>Deployment Console</em> shows some output, and that no red warning appears on the right nor left of it. If you get something red, something went wrong.</p>
+<p>Start the program by clicking the green execute button.</p>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="img/Step2/deployCounter.png" alt="deploying of the application"/></span></p>
 </div>
 </div>
 </div>
@@ -2097,7 +2082,7 @@ The first is a UDP multi-cast address use to send messages between devices, and 
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780086164"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780160727"></script>
   
 
   

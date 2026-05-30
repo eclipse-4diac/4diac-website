@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/tutorials/use4diaclocally.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780086164">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780086164">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1780086164">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780160728">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780160728">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1780160728">
 <script>
 	
 		var tableClasses = "table";
@@ -1530,54 +1530,18 @@ Go to <span class="menu4diac">Windows → Preferences → 4diac IDE → FORTE P
 <span class="image"><img src="img/Step1/selectForte.png" alt="select your 4diac FORTE" width="600"/></span></p>
 </li>
 <li>
-<p>Change to the <em>Deployment Perspective</em> using the <span class="image"><img src="img/perspective/deploymentButton.gif" alt="Deployment Perspective Button"/></span> button.</p>
+<p>Start Forte locally on your computer and then simply run the program by clicking on the green arrow. (If you don’t have a configuration yet, you can edit/create it with run configuration.)</p>
 </li>
 <li>
-<p>Set the port to 61499 (the same define before, remember <span class="address">localhost:61499</span> in the System Configuration?)</p>
-</li>
-<li>
-<p><span class="button4diac">Launch Local 4diac FORTE</span></p>
-</li>
-<li>
-<p>You should see the the location of your 4diac FORTE and the <strong>Terminate</strong> button enabled in the Console.</p>
-</li>
-<li>
-<p>Select the elements to deploy. For this tutorial select our device <code>Testee</code>.
-In case you have many devices with many resources, you can select the devices to deploy and even which resources to deploy.</p>
-</li>
-<li>
-<p>Click the <span class="button4diac">Deploy</span> button</p>
-</li>
-<li>
-<p>Check that the <em>Deployment Console</em> shows some output, and that no red warning appears on the right nor left of it.
-If you get something red, something went wrong.</p>
+<p>The console in 4diac should show the following output:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-console" data-lang="console">&lt;!--  Connected to device: Testee --&gt;
+&lt;!--  Disconnected from device: Testee --&gt;</code></pre>
+</div>
+</div>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="img/Step1/deploymentExample.png" alt="deploying of the application"/></span></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tbody><tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-With the runtime launcher you can only start run-time environments on your local development computer.
-It is not possible to start run-time environments on remote computers or control devices.
-In order to perform this task device specific means to start the run-time environment have to be performed.
-</td>
-</tr>
-</tbody></table>
-</div>
-<div class="paragraph">
-<p>The <em>Deployment Console</em> is automatically cleared before each download.
-Furthermore, with the icon <span class="image"><img src="img/clearDeploymentConsole.png" alt="Clear Deployment Console"/></span> in the upper right corner of the <em>Deployment Console</em> the deployment messages can be cleared.</p>
-</div>
-<div class="paragraph">
-<p>By selecting a Device or Resource the corresponding IEC 61499 element can be cleaned.
-This means that the Device or Resource configuration are cleaned and reset to the default configuration without any Function Block Network.</p>
 </div>
 <div class="paragraph">
 <p><span class="menu4diac">Delete All Resources</span> leaves the Device empty, and <span class="menu4diac">Kill Device</span> stops 4diac FORTE.
@@ -2388,7 +2352,7 @@ If a controller output were connected, a light would now blink at 1 second inter
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780086170"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780160734"></script>
   
 
   

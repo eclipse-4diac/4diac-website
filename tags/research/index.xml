@@ -10,6 +10,102 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #88</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-88/</link>
+      <pubDate>Fri, 29 May 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-88/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;UI &amp;amp; Property Sheet Enhancements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a member access property sheet to the instance section and refactored the member access tree viewer into its own dedicated class to accommodate struct pins.&lt;/li&gt;
+&lt;li&gt;Harmonized the look and feel by enabling the &amp;ldquo;Edit Interface&amp;rdquo; sections for standard FB instances, creating clear structural separation between untyped SubApps and instance sheets.&lt;/li&gt;
+&lt;li&gt;Shifted the BulkEditor context menu to leverage native Eclipse infrastructure and disabled the auto-layouting context menu when the selection is empty.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation &amp;amp; Modeling Fixes&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Eliminated false-positives in unused instance validation by ensuring the check confirms whether an internal FB belongs to an FB network.&lt;/li&gt;
+&lt;li&gt;Restricted the HTML preview feature to trigger exclusively on read-only files.&lt;/li&gt;
+&lt;li&gt;Fixed an undo-command bug to properly restore connections after a structural block has been deleted.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Replay Debugging &amp;amp; Timeline Features&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced a new state comparison view along with its associated handling commands.&lt;/li&gt;
+&lt;li&gt;Added search capabilities directly within debugging timelines.&lt;/li&gt;
+&lt;li&gt;Added capabilities to delete specific timelines and event markers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CI/CD &amp;amp; DevOps&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Implemented a automated GitHub workflow to automatically tag and flag inactive issues and pull requests as stale.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Testing Infrastructure&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Enforced the IEC 61131-3 module as a mandatory requirement when running tests, introducing force options and clear log diagnostics for dependent blocks like &lt;code&gt;GEN_F_MOVE&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Resolved several memory leaks in the test suite by ensuring proper resource and global fixture initialization and deinitialization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Redesigned and cleaned up the main documentation overview page, streamlining text by grouping technical topics into highly legible tables and resolving broken layout links.&lt;/li&gt;
+&lt;li&gt;Improved and expanded the project deployment documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-fbe&#34;&gt;Enhancements and Fixes in 4diac FBE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OPC UA Support (&lt;a href=&#34;https://open62541.org/&#34;&gt;&lt;code&gt;open62541&lt;/code&gt;&lt;/a&gt;)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactored the &lt;code&gt;open62541&lt;/code&gt; version 1.4 recipe to introduce integrated support for Alarms &amp;amp; Conditions.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;code&gt;open62541&lt;/code&gt; recipe to version 1.4.16, enabling the alarms feature by default.&lt;/li&gt;
+&lt;li&gt;Introduced a new recipe for &lt;code&gt;open62541&lt;/code&gt; version 1.5.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core Build Dependencies &amp;amp; Runtime Sync&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Synced the internal FORTE dependency to align with the current release branch.&lt;/li&gt;
+&lt;li&gt;Upgraded core underlying libraries across the build recipes:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;boost&lt;/code&gt; updated to 1.91.0-1&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;libmodbus&lt;/code&gt; updated to 3.1.12&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;libpcap&lt;/code&gt; updated to 1.10.6&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;libressl&lt;/code&gt; updated to 4.3.2&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;zlib&lt;/code&gt; updated to 1.3.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GSoC 2026 Progress: Execution Control Chart</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/gsoc-2026-progress-execution-control-chart/</link>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/gsoc-2026-progress-execution-control-chart/</guid>
+      <description>&lt;h2 id=&#34;project-enhancing-execution-control-chart-ecc-experience&#34;&gt;Project: Enhancing Execution Control Chart ECC Experience&lt;/h2&gt;
+&lt;h3 id=&#34;contributor-vikash-kumar-sinha&#34;&gt;Contributor: Vikash Kumar Sinha&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Organization:&lt;/strong&gt; Sant Longowal Institute of Engineering and Technology (SLIET), Punjab, India&lt;br&gt;
+&lt;strong&gt;Field of Study:&lt;/strong&gt; Computer Science (3rd Year)&lt;br&gt;
+&lt;strong&gt;Mentors:&lt;/strong&gt; Alois Zoitl and Eclipse 4diac Community&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m Vikash Kumar Sinha, a 3rd-year Computer Science student from Sant Longowal Institute of Engineering and Technology (SLIET), Punjab, India. I&amp;rsquo;m passionate about open-source development and building robust industrial automation tools. This summer, I&amp;rsquo;m thrilled to be contributing to Eclipse 4diac as part of Google Summer of Code 2026, focusing on enhancing the ECC (Execution Control Chart) editor&amp;rsquo;s user experience.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac 3.2 Development Milestone: Feature Freeze</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.2-development-milestone-feature-freeze/</link>
       <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
@@ -54,7 +150,25 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;New Function Blocks &amp;amp; Library Enhancements&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New Function Blocks &amp;amp; Library Enhancements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;E_D_FF_ANY&lt;/code&gt; to allow data latching for any data type instead of just booleans.&lt;/li&gt;
+&lt;li&gt;Introduced &lt;code&gt;LTIME&lt;/code&gt; variants for standard timer blocks (&lt;code&gt;FB_TOF&lt;/code&gt;, &lt;code&gt;FB_TON&lt;/code&gt;, &lt;code&gt;FB_TP&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Upgraded &lt;code&gt;E_TP&lt;/code&gt; pulse timers to use precise rising-edge triggering (&lt;code&gt;E_R_TRIG&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Implemented standard array handling blocks (&lt;code&gt;F_LOWER_BOUND&lt;/code&gt;, &lt;code&gt;F_UPPER_BOUND&lt;/code&gt;, &lt;code&gt;F_LEN_ARRAY&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Testing &amp;amp; Bug Fixes&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Created a dedicated &lt;code&gt;forte_systemtest&lt;/code&gt; executable to separate system tests from regular runtime builds.&lt;/li&gt;
+&lt;li&gt;Added delegate connection tests and fixed test-suite memory crashes caused by uninitialized testing blocks.&lt;/li&gt;
+&lt;li&gt;Fixed data casting and string copying errors inside the Modbus communication layer.&lt;/li&gt;
+&lt;li&gt;Added a CodeQL analysis workflow to check incoming pull requests for bugs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
     </item>
     
     <item>

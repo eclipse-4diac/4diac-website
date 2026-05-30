@@ -94,3 +94,54 @@ code {
   border-radius: 4px;
 }
 
+
+/*-----------------------------------------------------------------------------
+  Documentation landing page
+  -----------------------------------------------------------------------------*/
+
+.landing-table td p,
+.action-table td p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.landing-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  margin-bottom: var(--space-sm);
+}
+
+.landing-table td {
+  padding: 0 var(--space-sm) !important;
+  vertical-align: top;
+  border: none !important;
+}
+
+.landing-table td strong a,
+.landing-table td b a,
+.landing-table td a strong {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--link);
+  transition: color 0.15s ease-in-out;
+}
+
+.landing-table td strong a:hover {
+  color: var(--4diac-blue-medium-1);
+}
+
+.landing-table ~ table td.tableblock {
+  vertical-align: top !important;
+}
+
+.details-table h3 {
+  margin-top: var(--space-sm);
+  border-bottom: 2px solid var(--4diac-blue-pale);
+  width: calc(100% - var(--space-sm));
+}
+
+td:last-child .details-table h3 {
+  margin-left: var(--space-sm);
+  width: calc(100% - var(--space-sm));
+}
