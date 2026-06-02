@@ -41,8 +41,8 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/new-and-noteworthy/3.2/4diacide/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780160920">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780160920">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780402344">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780402344">
 <script>
 	
 		var tableClasses = "table";
@@ -1140,6 +1140,12 @@
 <li>Added member access pins for all FB instances</li>
 <li>Added unified wizard to manage project libraries</li>
 <li>Removed <em>Affected Types</em> dialog when saving types</li>
+<li>Updated rules for hiding pins to prevent hiding of connected pins
+<ul>
+<li>Tables also reflect that option correctly now</li>
+</ul>
+</li>
+<li>Added feature to reconnect Target Pins to different Source</li>
 </ul>
 <h3 id="new-and-changed-validations">New and changed validations</h3>
 <ul>
@@ -1156,12 +1162,32 @@
 <li>Extract method refactoring now uses the exact selection</li>
 <li>Update ST code during copy refactoring</li>
 </ul>
+<h3 id="plant-hierarchy">Plant Hierarchy</h3>
+<ul>
+<li>Added reordering of Nodes and Folders</li>
+<li>Improved updating of Comments</li>
+</ul>
+<h3 id="bulk-editor">Bulk Editor</h3>
+<ul>
+<li>Fixed &ldquo;Open in Bulk Editor&rdquo; showing in unrelated context menus</li>
+<li>Added new context menu to go to selected element of the result table</li>
+<li>Added filtering of Internal Attributes in result table</li>
+<li>Fixed edge cases for Copy/Paste of result table</li>
+<li>Added validation when adding new Attributes</li>
+</ul>
 <h3 id="deployment-and-monitoring">Deployment and Monitoring</h3>
 <ul>
 <li>Show resource status in <em>Debug</em> view</li>
 <li>No longer watch internal FBs or variables by default</li>
 <li>Separated OPC UA deployment into its own optional feature</li>
 <li>Type hash now only considers Negate and Retain attributes</li>
+</ul>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>Fixed imports for constants in arrays when creating connections over UntypedSubApps</li>
+<li>Fixed importing of VarConfigParameter of TypedSubApps</li>
+<li>Fixed showing Pin-Tooltips to correctly show type/instance information</li>
+<li>Removed VarConfig column from output tables</li>
 </ul>
 
 
@@ -1370,7 +1396,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780160920"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780402344"></script>
   
 
   
