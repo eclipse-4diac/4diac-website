@@ -16,13 +16,19 @@
   
 
 
-<title>4diac FBE | The Eclipse Foundation</title>
-<meta property="og:title" content="4diac FBE | The Eclipse Foundation" />
-<meta name="twitter:title" content="4diac FBE | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #89 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #89 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #89 | The Eclipse Foundation" />
 
-<meta name="description" content="New build engine that automates 4diac FORTE compilation and multi-target management without manual software installations.">
-<meta property="og:description" content="New build engine that automates 4diac FORTE compilation and multi-target management without manual software installations.">
-<meta name="twitter:description" content="New build engine that automates 4diac FORTE compilation and multi-target management without manual software installations.">
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from May 29 to June 5, 2026.
+
+This week&#39;s updates focus on polishing usability …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from May 29 to June 5, 2026.
+
+This week&#39;s updates focus on polishing usability …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from May 29 to June 5, 2026.
+
+This week&#39;s updates focus on polishing usability …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -30,7 +36,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacfbe/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-89/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -38,11 +44,11 @@
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacfbe/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-89/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780835118">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780835118">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1780835122">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1780835122">
 <script>
 	
 		var tableClasses = "table";
@@ -1083,17 +1089,17 @@
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/new-and-noteworthy/">New and Noteworthy</a>
+              <a href="https://eclipse.dev/4diac/news/">Eclipse 4diac News</a>
             </li>
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/new-and-noteworthy/3.0/">Eclipse 4diac 3.0 - New and Noteworthy</a>
+              <a href="https://eclipse.dev/4diac/news/2026/">2026</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/new-and-noteworthy/3.0/4diacfbe/">4diac FBE</a>
+              <a href="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-89/">Eclipse 4diac Weekly #89</a>
             </li>
           
           </ol>
@@ -1112,7 +1118,7 @@
     
       <h1>
         
-          4diac FBE
+          Eclipse 4diac Weekly #89
         
       </h1>
     
@@ -1120,13 +1126,74 @@
 
 
   
-  <ul>
-<li>New component in 4diac 3.0</li>
-<li>4diac FBE builds 4diac FORTE fully automatically, no manual downloads or installs of third-party software needed</li>
-<li>Manages multiple 4diac FORTE configurations for multiple target machines and operating systems on a single developer machine</li>
-<li>Integration into 4diac IDE upcoming, a beta-quality setup is available</li>
-</ul>
 
+<div class="news-metadata">
+  <time datetime="2026-06-05">Friday, Jun 5, 2026</time>
+</div>
+  
+
+
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from May 29 to June 5, 2026.</p>
+<p>This week&rsquo;s updates focus on polishing usability and model handling, featuring enhanced replay debugging tools and refined type import logic for the 4diac IDE. Meanwhile, 4diac FORTE upgrades its underlying OPC UA event layer to better support the open62541 v1.5 series.</p>
+</p> 
+
+
+<h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
+<ul>
+<li><strong>Release &amp; Documentation Updates</strong>
+<ul>
+<li>Updated the Splash screen, Intro pages, and official Documentation for the 3.2 Release.</li>
+<li>Reworked and enhanced the &ldquo;What&rsquo;s New&rdquo; page and corrected tutorial and table-of-contents links.</li>
+</ul>
+</li>
+<li><strong>Deployment &amp; Debugging Tools</strong>
+<ul>
+<li>Fixed an issue in the deployment evaluator where fake time was written to devices <em>after</em> event execution; it is now correctly set beforehand to ensure exact timing sync.</li>
+<li>Polished the replay debugging tools UI by assigning distinct colors to columns and cleaning up overall aesthetics.</li>
+<li>Ensured original events are marked as read-only during replay sessions.</li>
+</ul>
+</li>
+<li><strong>Importing &amp; Type Management</strong>
+<ul>
+<li>Fixed an issue where missing parameter types in devices, resources, or segments resulted in a null type; they now default to <code>ANY</code>.</li>
+<li>Reworked the importer&rsquo;s type lookup to enforce the creation of error data types when needed, adding proper container variable declarations.</li>
+<li>Cleaned up the parameter handling logic for devices, resources, and segments within the importer.</li>
+<li>Ensured the <code>TypeLibrary</code> is completely cleared when a project is closed.</li>
+</ul>
+</li>
+<li><strong>Model &amp; Serialization Fixes</strong>
+<ul>
+<li>Fixed an issue where <code>ECTransition</code> comments were incorrectly derived and lost during model copying (<code>ECoreUtil.copy()</code>).</li>
+<li>Harmonized how transition comments are parsed and serialized in XML using a centralized approach.</li>
+<li>Fixed a date typo bug present in Client blocks.</li>
+<li>Preserved member access pin attributes automatically during Function Block updates.</li>
+</ul>
+</li>
+<li><strong>Refactoring &amp; Maintenance</strong>
+<ul>
+<li>Refactored rename change logic into a dedicated helper class to streamline code reuse.</li>
+<li>Added explanatory comments for how old names are utilized within the dependency updater.</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
+<ul>
+<li><strong>OPC UA Integration</strong>
+<ul>
+<li>Upgraded the integrated open62541 stack to version 1.5.4.</li>
+<li>Refactored the OPC UA Event layer to natively support the open62541 v1.5 API.</li>
+<li>Regenerated the OPC UA data types inside the dedicated 4diac namespace for system testing.</li>
+</ul>
+</li>
+</ul>
+<p>Many thanks to all contributors for their work and their feedback!</p>
+ 
+
+<p>Cheers,<br>
+      The Eclipse 4diac Team
+</p>
+ 
+  
 
   
 
@@ -1333,7 +1400,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780835119"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1780835122"></script>
   
 
   

@@ -10,6 +10,65 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #89</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-89/</link>
+      <pubDate>Fri, 05 Jun 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-89/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Release &amp;amp; Documentation Updates&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the Splash screen, Intro pages, and official Documentation for the 3.2 Release.&lt;/li&gt;
+&lt;li&gt;Reworked and enhanced the &amp;ldquo;What&amp;rsquo;s New&amp;rdquo; page and corrected tutorial and table-of-contents links.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deployment &amp;amp; Debugging Tools&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue in the deployment evaluator where fake time was written to devices &lt;em&gt;after&lt;/em&gt; event execution; it is now correctly set beforehand to ensure exact timing sync.&lt;/li&gt;
+&lt;li&gt;Polished the replay debugging tools UI by assigning distinct colors to columns and cleaning up overall aesthetics.&lt;/li&gt;
+&lt;li&gt;Ensured original events are marked as read-only during replay sessions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Importing &amp;amp; Type Management&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where missing parameter types in devices, resources, or segments resulted in a null type; they now default to &lt;code&gt;ANY&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Reworked the importer&amp;rsquo;s type lookup to enforce the creation of error data types when needed, adding proper container variable declarations.&lt;/li&gt;
+&lt;li&gt;Cleaned up the parameter handling logic for devices, resources, and segments within the importer.&lt;/li&gt;
+&lt;li&gt;Ensured the &lt;code&gt;TypeLibrary&lt;/code&gt; is completely cleared when a project is closed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Model &amp;amp; Serialization Fixes&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where &lt;code&gt;ECTransition&lt;/code&gt; comments were incorrectly derived and lost during model copying (&lt;code&gt;ECoreUtil.copy()&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Harmonized how transition comments are parsed and serialized in XML using a centralized approach.&lt;/li&gt;
+&lt;li&gt;Fixed a date typo bug present in Client blocks.&lt;/li&gt;
+&lt;li&gt;Preserved member access pin attributes automatically during Function Block updates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Refactoring &amp;amp; Maintenance&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactored rename change logic into a dedicated helper class to streamline code reuse.&lt;/li&gt;
+&lt;li&gt;Added explanatory comments for how old names are utilized within the dependency updater.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OPC UA Integration&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Upgraded the integrated open62541 stack to version 1.5.4.&lt;/li&gt;
+&lt;li&gt;Refactored the OPC UA Event layer to natively support the open62541 v1.5 API.&lt;/li&gt;
+&lt;li&gt;Regenerated the OPC UA data types inside the dedicated 4diac namespace for system testing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #88</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-88/</link>
       <pubDate>Fri, 29 May 2026 17:00:00 +0000</pubDate>

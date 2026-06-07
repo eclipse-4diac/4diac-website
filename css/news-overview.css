@@ -30,11 +30,23 @@
   flex: 0 0 4.65rem;
   color: var(--4diac-gray);
   font-variant-numeric: tabular-nums;
+  transition: color 0.15s ease;
+}
+
+.media-link:hover .news-item-date,
+.media-link:focus-visible .news-item-date {
+  color: var(--4diac-blue-ultra-dark);
 }
 
 .news-item-sep {
   margin: 0 0.5rem;
   color: var(--4diac-gray-light);
+  transition: color 0.15s ease;
+}
+
+.media-link:hover .news-item-sep,
+.media-link:focus-visible .news-item-sep {
+  color: var(--4diac-blue-medium-2);
 }
 
 .news-item-title {

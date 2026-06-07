@@ -1,0 +1,137 @@
+
+
+.header-default-bg-img .featured-jumbotron {
+  background-image: url(../img/4diac-home-bg_blue.jpg?281f3578e8c92caaa2691632d0fb4065);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.release-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.release-link {
+  display: block;
+  padding: 1.5rem 2rem;
+  background: var(--bg-muted);
+  border: 1px solid var(--4diac-gray-pale);
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    border-left-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.release-link:hover {
+  background: var(--4diac-orange-tint);
+  border-color: var(--4diac-orange-soft);
+  border-left-color: var(--4diac-orange);
+  box-shadow: 0 4px 12px rgba(224, 130, 12, 0.08);
+  transform: translateY(-1px);
+}
+
+.release-link:focus-visible {
+  outline: 3px solid var(--4diac-orange);
+  outline-offset: 3px;
+}
+
+.release-heading {
+  margin: 0;
+  color: var(--heading);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  letter-spacing: normal;
+  transition: color 0.15s ease;
+}
+
+.release-link:hover .release-heading,
+.release-link:focus-visible .release-heading {
+  color: var(--4diac-blue);
+}
+
+.release-arrow {
+  color: var(--4diac-gray-light);
+  transition: transform 0.15s, color 0.15s;
+}
+
+.release-link:hover .release-arrow {
+  transform: translateX(4px);
+  color: var(--4diac-orange);
+}
+
+.release-date {
+  margin-top: 0.35rem;
+  margin-bottom: 1rem;
+  color: var(--4diac-gray-dark-mid);
+  font-size: var(--text-base);
+}
+
+.release-date-upcoming {
+  color: var(--4diac-lime-dark);
+}
+
+.release-preview-list {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.release-preview-list li {
+  display: grid;
+  grid-template-columns: 10.5rem 1fr;
+  gap: 0.75rem;
+  padding: 0.45rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  transition: color 0.15s ease;
+  align-items: center;
+}
+
+.release-preview-list li:first-child {
+  border-top: none;
+}
+
+.release-link:hover .release-component,
+.release-link:focus-visible .release-component {
+  color: var(--4diac-blue);
+}
+
+.release-component {
+  white-space: nowrap;
+  font-weight: 500;
+  color: var(--4diac-gray-dark);
+  font-size: var(--text-base);
+  transition: color 0.15s ease;
+}
+
+.release-component::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 0.95em;
+  margin-right: 6px;
+  width: 1.25em;
+  display: inline-block;
+  text-align: center;
+}
+
+.release-component.component-4diacIDE::before { content: "\f108"; }
+.release-component.component-4diacFORTE::before { content: "\f2db"; }
+.release-component.component-4diacFBE::before { content: "\f085"; }
+
+.component-summary {
+  color: var(--text);
+  font-size: var(--text-base);
+  margin: 0;
+}
+
+.release-footer {
+  margin-top: var(--space-sm);
+  font-size: var(--text-base);
+  color: var(--4diac-gray);
+}
