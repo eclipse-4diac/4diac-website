@@ -10,6 +10,24 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac 3.2 Released!</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.2-released/</link>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.2-released/</guid>
+      <description>&lt;p&gt;This release introduces major feature upgrades and optimization across the entire ecosystem, most notably:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Replay Debugging:&lt;/strong&gt; A brand-new framework allowing exact, step-by-step reproduction of application runs from FORTE traces or manual events, complete with parallel branching timelines.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IDE UI &amp;amp; Usability Overhaul:&lt;/strong&gt; A new low-clutter visual grid, modernized ECC and Interface editors matching IEC 61499 color semantics, and smoother transition splines.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Runtime &amp;amp; Performance Boosts:&lt;/strong&gt; 4diac FORTE now features reduced binary sizes, faster floating-point formatting, native &lt;code&gt;ANY_STRUCT&lt;/code&gt; support, and a modularized OPC UA feature layer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;explore-the-full-details&#34;&gt;Explore the Full Details&lt;/h3&gt;
+&lt;p&gt;For a complete, in-depth breakdown of every single new feature, validation rule, and dependency upgrade in this version, check out the official details page: &lt;strong&gt;&lt;a href=&#34;https://eclipse.dev/4diac/new-and-noteworthy/3.2/&#34;&gt;Eclipse 4diac 3.2 New and Noteworthy&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #89</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-89/</link>
       <pubDate>Fri, 05 Jun 2026 17:00:00 +0000</pubDate>
