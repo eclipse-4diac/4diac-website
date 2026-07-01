@@ -10,6 +10,78 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 03 Sep 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diacpodcast/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #92</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-92/</link>
+      <pubDate>Fri, 26 Jun 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-92/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Type Refactoring &amp;amp; Package Management&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved type rename support:
+&lt;ul&gt;
+&lt;li&gt;Preserved error markers and &lt;code&gt;STRUCT_DEMUX&lt;/code&gt; visibility during type renames&lt;/li&gt;
+&lt;li&gt;Added quick fix to align package names with the folder structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved connection handling during refactoring:
+&lt;ul&gt;
+&lt;li&gt;Added recursive connection deletion&lt;/li&gt;
+&lt;li&gt;Merged compatible connections during reconnect&lt;/li&gt;
+&lt;li&gt;Preserved marker information while simplifying marker cleanup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build &amp;amp; Export&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved incremental export performance by avoiding unnecessary exports&lt;/li&gt;
+&lt;li&gt;Triggered full exports when relevant source files are removed&lt;/li&gt;
+&lt;li&gt;Fixed export builds to only process existing files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor &amp;amp; UI Improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved alignment of type information fields&lt;/li&gt;
+&lt;li&gt;Enhanced scrolling behavior in property sheet tables on Windows&lt;/li&gt;
+&lt;li&gt;Fixed rendering of member access tables&lt;/li&gt;
+&lt;li&gt;Improved Bulk Editor selection handling&lt;/li&gt;
+&lt;li&gt;Moved member access viewer into its own package&lt;/li&gt;
+&lt;li&gt;Improved project creation by decoupling it from the UI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;General Improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Consolidated Plant Hierarchy saving and replaced &lt;code&gt;printStackTrace&lt;/code&gt; with proper logging&lt;/li&gt;
+&lt;li&gt;Updated GitHub Actions dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Management Commands&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactored management command processing by separating command parsing from execution&lt;/li&gt;
+&lt;li&gt;Simplified command handling with improved response management and cleanup methods&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;XML Schema Support&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added an XSD for Adapter Types&lt;/li&gt;
+&lt;li&gt;Improved reuse of common XML schema definitions through shared attribute groups&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #91</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-91/</link>
       <pubDate>Fri, 19 Jun 2026 17:00:00 +0000</pubDate>

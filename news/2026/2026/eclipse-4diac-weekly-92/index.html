@@ -16,19 +16,19 @@
   
 
 
-<title>Eclipse 4diac Weekly #47 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #47 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #47 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #92 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #92 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #92 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from August 1 to August 8, 2025.
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from June 19 to June 26, 2026.
 
-This round of updates focuses on enhancing …">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from August 1 to August 8, 2025.
+This week focused on refining the editing …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from June 19 to June 26, 2026.
 
-This round of updates focuses on enhancing …">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from August 1 to August 8, 2025.
+This week focused on refining the editing …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from June 19 to June 26, 2026.
 
-This round of updates focuses on enhancing …">
+This week focused on refining the editing …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -36,7 +36,7 @@ This round of updates focuses on enhancing …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-47/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-92/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -44,11 +44,11 @@ This round of updates focuses on enhancing …">
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-47/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-92/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1782942141">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1782942141">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1782942144">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1782942144">
 <script>
 	
 		var tableClasses = "table";
@@ -1094,12 +1094,12 @@ This round of updates focuses on enhancing …">
           
             
             <li >
-              <a href="https://eclipse.dev/4diac/news/2025/">2025</a>
+              <a href="https://eclipse.dev/4diac/news/2026/">2026</a>
             </li>
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2025/2025/eclipse-4diac-weekly-47/">Eclipse 4diac Weekly #47</a>
+              <a href="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-92/">Eclipse 4diac Weekly #92</a>
             </li>
           
           </ol>
@@ -1118,7 +1118,7 @@ This round of updates focuses on enhancing …">
     
       <h1>
         
-          Eclipse 4diac Weekly #47
+          Eclipse 4diac Weekly #92
         
       </h1>
     
@@ -1128,52 +1128,74 @@ This round of updates focuses on enhancing …">
   
 
 <div class="news-metadata">
-  <time datetime="2025-08-08">Friday, Aug 8, 2025</time>
+  <time datetime="2026-06-26">Friday, Jun 26, 2026</time>
 </div>
   
 
 
-  <p><p>Update on what development happened across the Eclipse 4diac project in the week from August 1 to August 8, 2025.</p>
-<p>This round of updates focuses on enhancing the user experience in the 4diac IDE&rsquo;s graphical editor—especially when dragging and resizing blocks—and improving test reliability in 4diac FORTE. Highlights include better collision feedback and robust test behavior in release builds.</p>
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from June 19 to June 26, 2026.</p>
+<p>This week focused on refining the editing experience with improvements to type refactoring, package management, build performance, and numerous usability enhancements across 4diac IDE, while 4diac FORTE continued to simplify its management command infrastructure.</p>
 </p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
-<li>
-<p><strong>Working Sets Support</strong></p>
+<li><strong>Type Refactoring &amp; Package Management</strong>
 <ul>
-<li>Fixed the Bulk Editor to open correctly when using working sets.</li>
+<li>Improved type rename support:
+<ul>
+<li>Preserved error markers and <code>STRUCT_DEMUX</code> visibility during type renames</li>
+<li>Added quick fix to align package names with the folder structure</li>
 </ul>
 </li>
-<li>
-<p><strong>Graphical Editor Enhancements</strong></p>
+<li>Improved connection handling during refactoring:
 <ul>
-<li>Improved feedback when resizing blocks:
-<ul>
-<li>A <strong>margin-border</strong> is now shown for function blocks during resize.</li>
+<li>Added recursive connection deletion</li>
+<li>Merged compatible connections during reconnect</li>
+<li>Preserved marker information while simplifying marker cleanup</li>
 </ul>
 </li>
-<li>Improved block movement behavior:
-<ul>
-<li>Moving blocks with cloning active is now correctly handled.</li>
 </ul>
 </li>
-<li>Added <strong>ghost figures</strong> when dragging blocks to visualize movement.</li>
-<li>Collision feedback was improved:
+<li><strong>Build &amp; Export</strong>
 <ul>
-<li>A <strong>color change</strong> indicates when dragged elements would collide.</li>
-<li><strong>Figures with margin</strong> now show potential collisions while dragging.</li>
+<li>Improved incremental export performance by avoiding unnecessary exports</li>
+<li>Triggered full exports when relevant source files are removed</li>
+<li>Fixed export builds to only process existing files</li>
 </ul>
 </li>
+<li><strong>Editor &amp; UI Improvements</strong>
+<ul>
+<li>Improved alignment of type information fields</li>
+<li>Enhanced scrolling behavior in property sheet tables on Windows</li>
+<li>Fixed rendering of member access tables</li>
+<li>Improved Bulk Editor selection handling</li>
+<li>Moved member access viewer into its own package</li>
+<li>Improved project creation by decoupling it from the UI</li>
+</ul>
+</li>
+<li><strong>General Improvements</strong>
+<ul>
+<li>Consolidated Plant Hierarchy saving and replaced <code>printStackTrace</code> with proper logging</li>
+<li>Updated GitHub Actions dependencies</li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
-<li><strong>Test Reliability</strong>
+<li><strong>Management Commands</strong>
 <ul>
-<li>Fixed tests to work correctly in <strong>Release mode</strong> by replacing <code>BOOST_ASSERT</code> (which is disabled in Release builds) with <code>BOOST_REQUIRE</code>, ensuring that side effects and conditions are still verified.</li>
+<li>Refactored management command processing by separating command parsing from execution</li>
+<li>Simplified command handling with improved response management and cleanup methods</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-documentation">Enhancements and Fixes in 4diac Documentation</h2>
+<ul>
+<li><strong>XML Schema Support</strong>
+<ul>
+<li>Added an XSD for Adapter Types</li>
+<li>Improved reuse of common XML schema definitions through shared attribute groups</li>
 </ul>
 </li>
 </ul>
@@ -1391,7 +1413,7 @@ This round of updates focuses on enhancing …">
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1782942141"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1782942144"></script>
   
 
   
