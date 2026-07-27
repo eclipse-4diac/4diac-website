@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/tutorials/distribute4diac.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1783625055">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1783625055">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1783625055">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1785163153">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1785163153">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1785163153">
 <script>
 	
 		var tableClasses = "table";
@@ -1201,7 +1201,7 @@ The two different programs running on the local machine emulate two PLCs.</p>
 <p>Remember, Event and Data connections can not be mixed.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/Step2/counterFBs.png" alt="architecture for the current step"/></span></p>
+<p><span class="image"><img src="img/Step2/insert_new_fbs.png" alt="architecture for the current step"/></span></p>
 </div>
 </div>
 </div>
@@ -1230,14 +1230,14 @@ The devices need to have different localhosts, they can not have the same one.</
 </ol>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/Step2/addAnotherDevice.png" alt="Add another device to the system"/></span></p>
+<p><span class="image"><img src="img/Step2/add_new_device.png" alt="Add another device to the system"/></span></p>
 </div>
 <div class="paragraph">
 <p>Change back to the <em>BlinkTestApp</em> Application Editor and map the two new FBs to the Resource <em>Counter_RES</em>.
 You can see the dashed connections between the two devices.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/Step2/mapToCounter.png" alt="Mapping of Function Block Instances within the Application Editor"/></span></p>
+<p><span class="image"><img src="img/Step2/map_new_fbs.png" alt="Mapping of Function Block Instances within the Application Editor"/></span></p>
 </div>
 </div>
 </div>
@@ -1253,7 +1253,8 @@ We fix it by adding special Communications FBs.
 You can find more information about broken connections <a href="../intro/iec61499.html#brokenConnection">here on our Homepage</a>.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/Step2/incompleteFBs.png" alt="incomplete FBs show die broken connection between two devices"/></span></p>
+<p><span class="image"><img src="img/Step2/blinky_res_editor.png" alt="incomplete FBs show die broken connection between two devices"/></span>
+<span class="image"><img src="img/Step2/counter_res_editor.png" alt="incomplete FBs show die broken connection between two devices"/></span></p>
 </div>
 <div class="sect2">
 <h3 id="_set_up_the_blinking_part_of_the_application"><a id="SetUpBlinking"></a>Set up the Blinking Part of the Application</h3>
@@ -1265,10 +1266,10 @@ You can find more information about broken connections <a href="../intro/iec6149
 The PUBLISH FB must be initialized, so it is best to connect its INIT event directly to the START.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/Step2/blinkyResourceComplete.png" alt="Blinky_RES completely connected"/></span></p>
+<p><span class="image"><img src="img/Step2/insert_publish_fb.png" alt="Blinky_RES completely connected"/></span></p>
 </div>
 <div class="paragraph">
-<p>Set the <code>QI</code> value to <code>1</code> and the set the <code>ID</code> input data of the <code>PUBLISH_COUNT</code> FB to <code>239.0.0.1:61000</code>.</p>
+<p>Set the <code>QI</code> value to <code>1</code> and the set the <code>ID</code> input data of the <code>PUBLISH_COUNT</code> FB to <code>&#34;239.0.0.1:61000&#34;</code>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1281,10 +1282,10 @@ The PUBLISH FB must be initialized, so it is best to connect its INIT event dire
 The SUBSCRIBE FB must also be initialized.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/Step2/counterResourceComplete.png" alt="Counter_RES completely connected"/></span></p>
+<p><span class="image"><img src="img/Step2/insert_subscribe_fb.png" alt="Counter_RES completely connected"/></span></p>
 </div>
 <div class="paragraph">
-<p>Set the <code>QI</code> value to <code>1</code> and the set the <code>ID</code> input data of the <code>SUBSCRIBE_COUNT</code> FB to <code>239.0.0.1:61000</code>.</p>
+<p>Set the <code>QI</code> value to <code>1</code> and the set the <code>ID</code> input data of the <code>SUBSCRIBE_COUNT</code> FB to <code>&#34;239.0.0.1:61000&#34;</code>.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2082,7 +2083,7 @@ The first is a UDP multi-cast address use to send messages between devices, and 
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1783625063"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1785163167"></script>
   
 
   

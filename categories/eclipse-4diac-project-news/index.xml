@@ -10,6 +10,206 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #96</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-96/</link>
+      <pubDate>Fri, 24 Jul 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-96/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Debugging &amp;amp; Evaluation&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for breakpoints on ECC states&lt;/li&gt;
+&lt;li&gt;Added toggle watchpoint functionality&lt;/li&gt;
+&lt;li&gt;Improved interpreter execution:
+&lt;ul&gt;
+&lt;li&gt;Correctly applies data outputs in interpreter networks&lt;/li&gt;
+&lt;li&gt;Tracks explicitly initialized variables during evaluation&lt;/li&gt;
+&lt;li&gt;Uses concrete values for runtimes and watches&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Project &amp;amp; Library Management&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced a new library provider infrastructure&lt;/li&gt;
+&lt;li&gt;Enhanced the Manage Library wizard:
+&lt;ul&gt;
+&lt;li&gt;Integrated validation, preview, and pending changes&lt;/li&gt;
+&lt;li&gt;Added progress monitoring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Refactored project creation into a dedicated &lt;code&gt;ProjectCreator&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Model &amp;amp; Refactoring&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced abstract base classes for ECC states, actions, and FB types&lt;/li&gt;
+&lt;li&gt;Added extensive automated tests for FB type and structured data renaming and moving across nested subapplications&lt;/li&gt;
+&lt;li&gt;Improved rename handling for container variable declarations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editors &amp;amp; UI&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced dialogs for editing sparse initial values of structs&lt;/li&gt;
+&lt;li&gt;Improved error messages and property section stability&lt;/li&gt;
+&lt;li&gt;Updated Trace Compass and reduced dependencies on internal Mylyn APIs&lt;/li&gt;
+&lt;li&gt;Simplified the FBT importer and removed obsolete dialogs and unused methods&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation &amp;amp; Miscellaneous&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved validation for container variable declarations&lt;/li&gt;
+&lt;li&gt;Removed legacy OCL builder integration from project creation&lt;/li&gt;
+&lt;li&gt;Added the missing Wago636 function block for the 3.0 library&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;EtherCAT&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Continued the EtherCAT integration with the second development stage:
+&lt;ul&gt;
+&lt;li&gt;Added EtherCAT controller, bus, device, coupler, module, and adapter function blocks&lt;/li&gt;
+&lt;li&gt;Introduced configuration structures and module management infrastructure&lt;/li&gt;
+&lt;li&gt;Improved architecture for device configuration and ESI handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved replay debugging documentation by clarifying terminology and workflow steps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #95</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-95/</link>
+      <pubDate>Fri, 17 Jul 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-95/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Replay Debugging&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for replay debugging across multiple devices&lt;/li&gt;
+&lt;li&gt;Enabled debugging of selected resources within a device&lt;/li&gt;
+&lt;li&gt;Improved timeline handling:
+&lt;ul&gt;
+&lt;li&gt;Corrected branch calculation during timeline resizing&lt;/li&gt;
+&lt;li&gt;Fixed edge cases when removing events&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved cleanup when closing replay debugging resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Structured Text &amp;amp; Validation&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed duplicate and stale diagnostics for Structured Text resources with query parameters&lt;/li&gt;
+&lt;li&gt;Improved collision validation messages for FB pin labels&lt;/li&gt;
+&lt;li&gt;Fixed FB shape helper to correctly calculate maximum pin label sizes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform &amp;amp; Maintenance&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the target platform to Eclipse 2026-09&lt;/li&gt;
+&lt;li&gt;Restored GitLab settings removed in an earlier change&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Management Command Processing&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Continued refactoring of the management command infrastructure:
+&lt;ul&gt;
+&lt;li&gt;Introduced a dedicated &lt;code&gt;CommandScanner&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reworked &lt;code&gt;CommandParser&lt;/code&gt; for improved XML validation&lt;/li&gt;
+&lt;li&gt;Migrated boot file loading to the new parser&lt;/li&gt;
+&lt;li&gt;Eliminated unnecessary memory allocations and buffering&lt;/li&gt;
+&lt;li&gt;Optimized XML unescaping&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added comprehensive unit tests for the new command parser and fixed several related issues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the replay debugging documentation to reflect the latest capabilities.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #94</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-94/</link>
+      <pubDate>Fri, 10 Jul 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-94/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring &amp;amp; Debugging&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Restored existing watches automatically when starting a monitoring session&lt;/li&gt;
+&lt;li&gt;Enabled editing of attributes from System Explorer selections&lt;/li&gt;
+&lt;li&gt;Displayed internal constant variables in the System Explorer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation &amp;amp; OCL&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced a project-level OCL validation builder&lt;/li&gt;
+&lt;li&gt;Removed legacy OCL validation infrastructure and obsolete FB OCL definitions&lt;/li&gt;
+&lt;li&gt;Improved quick fix availability based on project settings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bulk Editor &amp;amp; Query Language&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Extended the Bulk Query Language:
+&lt;ul&gt;
+&lt;li&gt;Added support for &lt;code&gt;AttributeDeclaration&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Added support for Service Interface FBs and types&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Library &amp;amp; Project Management&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced a wrapper for linked library folders&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor &amp;amp; UI Improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for disabling automatic &lt;code&gt;INITO&lt;/code&gt; generation in Service Interface FBs&lt;/li&gt;
+&lt;li&gt;Prevented the Initial Value Editor from committing values when fields are read-only&lt;/li&gt;
+&lt;li&gt;Improved quick fix handling and resolved various code quality issues&lt;/li&gt;
+&lt;li&gt;Routed selection changes through commands for better consistency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced the first stage of native EtherCAT support for Linux:
+&lt;ul&gt;
+&lt;li&gt;Integrated the &lt;a href=&#34;https://etherlab.org/en_GB/ethercat&#34;&gt;IgH EtherCAT Master library&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added the core bus handler and device layer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac 3.2.1 Maintenance Release!</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.2.1-maintenance-release/</link>
       <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
@@ -28,6 +228,46 @@
 &lt;li&gt;Various UI fixes, API updates, and general maintenance improvements.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;While this is a maintenance release, these improvements make everyday engineering with 4diac IDE smoother and more reliable.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #93</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-93/</link>
+      <pubDate>Fri, 03 Jul 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-93/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Refactoring &amp;amp; Testing&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added automated tests for deleting structured data types and function block types in nested subapplication scenarios&lt;/li&gt;
+&lt;li&gt;Improved rename refactoring performance by limiting builds to affected and referenced projects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ECC Editor&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed positioning of incoming and outgoing transitions to improve diagram layout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plant Hierarchy&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Refactored loading and saving into a dedicated helper class&lt;/li&gt;
+&lt;li&gt;Harmonized XML serialization and parsing&lt;/li&gt;
+&lt;li&gt;Corrected XML output to omit unnecessary namespaces&lt;/li&gt;
+&lt;li&gt;Standardized Plant Hierarchy files to UTF-8 encoding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build &amp;amp; Infrastructure&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added an Ant task for configuring GitLab endpoints&lt;/li&gt;
+&lt;li&gt;Improved URI handling to avoid unintended relative resolution&lt;/li&gt;
+&lt;li&gt;Updated GitHub Actions dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
     </item>
     
     <item>

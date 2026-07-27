@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/tutorials/otheruseful.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1783625056">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1783625056">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1783625056">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1785163154">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1785163154">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1785163154">
 <script>
 	
 		var tableClasses = "table";
@@ -1179,30 +1179,51 @@
 <h2 id="_import_an_existing_system"><a id="ImportSystem"></a>Import an Existing System</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Existing Systems can be imported as follows:</p>
+<p>Use these steps when you already have a 4diac project, for example from a zip file, a Git checkout or the examples folder, and you want to open it in 4diac IDE.</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Start 4diac IDE with the desired Workspace</p>
-</li>
-<li>
-<p>Select File/Import/Existing Projects into Workspace and press Next</p>
-</li>
-<li>
-<p>Choose the folder that contains the folder with the System you want to import</p>
-</li>
-<li>
-<p>Mark the desired System within the project field below</p>
-</li>
-<li>
-<p>If your project is not yet within your workspace and if you do not want to modify the original version of your project, mark Copy Projects into workspace and press Finish.
-Consider that if you did not check Copy Projects into workspace and you delete your System within 4diac IDE, your System will be deleted permanently.</p>
-</li>
-<li>
-<p>Verify that the System is completely there, that is the System Configuration with the Devices and Resources as well as the Application with FBs and both event and data connections.</p>
-</li>
-</ol>
+<div class="paragraph">
+<p><strong>Choose the workspace.</strong>
+Start 4diac IDE.
+If a workspace chooser appears, select the folder you want to work in (for example a <code>workspace</code> folder on your Desktop) and click <span class="button4diac">Launch</span>.
+If 4diac IDE is already running, you can switch the workspace via <span class="menu4diac">File → Switch Workspace → Other…</span> and restart.</p>
+</div>
+<div class="paragraph">
+<p><strong>Open the import wizard.</strong>
+Go to <span class="menu4diac">File → Import…</span>, then select <span class="menu4diac">General → Existing Projects into Workspace</span> and click Next.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/ExistingProjectsIntoWorkspace.png" alt="Existing projects into workspace"/></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Select the folder that contains your system.</strong>
+In the Import Projects dialog, next to <em>Select root directory</em>, click <span class="button4diac">Browse…</span> and navigate to the folder that contains your project.
+Select that folder and confirm; the Projects list now shows one or more entries.</p>
+</div>
+<div class="paragraph">
+<p><strong>Pick what to import.</strong>
+In the Projects list, tick the checkbox of the system you want to import.
+If you want to keep the original project unchanged, which is recommended for tutorials and examples, enable <em>Copy projects into workspace</em>.
+This creates a copy in the workspace so you can edit it safely.
+Click <span class="button4diac">Finish</span> to import.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Caution</div>
+</td>
+<td class="content">
+If you do not enable <em>Copy projects into workspace</em> and later delete the system from the IDE, the original project on disk is deleted as well.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/ImportProjects.png" alt="Import projects"/></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Check that the system imported correctly.</strong>
+In the <span class="view4diac">System Explorer</span>, open your system and verify that the System Configuration is present with its Devices and Resources, and that the Application view shows the Function Blocks with their event and data connections.</p>
 </div>
 </div>
 </div>
@@ -1220,28 +1241,49 @@ Furthermore, the Type Navigator allows to drag and drop types between projects a
 <h2 id="_creating_boot_files"><a id="CreateBootfiles"></a>Creating Boot-Files</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>When the option <code>FORTE_SUPPORT_BOOTFILE</code> is enabled for the 4diac FORTE you are using, on startup 4diac FORTE tries to load a so called boot-file.
-This boot-file has to be located in the same directory as your 4diac FORTE binary and needs to be named <code>forte.fboot</code>.
-This file contains the FB network configuration for the device and will be automatically instantiated during startup of 4diac FORTE.</p>
+<p>Use these steps when you want 4diac FORTE to start an application automatically from a boot-file, without downloading it from 4diac IDE every time.</p>
 </div>
 <div class="paragraph">
-<p>In order to create such boot-files, you need to select one or more devices or resources in the <span class="view4diac">Download Selection View</span> and select <span class="menu4diac">Create FORTE boot-files…​</span> from the context menu.</p>
+<p>When the option <code>FORTE_SUPPORT_BOOTFILE</code> is enabled in the 4diac FORTE runtime you are using, FORTE looks for a boot-file when it starts.
+This boot-file must be located in the same directory as the 4diac FORTE executable and must be named <code>forte.fboot</code>.
+It contains the FB network configuration for a device and is instantiated automatically during startup.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/createBootFileContextMenu.png" alt="Create Boot-file context menu"/></span></p>
+<p><strong>Open the boot-file wizard.</strong>
+In the System perspective, find the device or resource that should get a boot-file.
+Right-click it and select <span class="menu4diac">Create FORTE boot-files…​</span>.</p>
 </div>
 <div class="paragraph">
-<p>In the wizard, you can then select the devices and resources for which you wish to create boot-files as well as the directory where to place them.</p>
+<p><strong>Select the system file.</strong>
+In the <span class="element4diac">Create FORTE Boot-files</span> wizard, use the file list on the right to tick the system file of your project, for example <code>BlinkyTest.sys</code>.
+After selecting the system file, the <span class="element4diac">Selection</span> area at the bottom shows the system entry (for example <code>BlinkyTest</code>).
+By expanding this entry, you can see and select the devices of the system.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/createBootFileWizard.png" alt="Create Boot-file Wizard"/></span></p>
+<p><strong>Choose the devices to include.</strong>
+In the <span class="element4diac">Selection</span> area, tick the device or devices for which boot-files should be generated.
+One boot-file is created for each selected device.</p>
 </div>
 <div class="paragraph">
-<p>On pressing <span class="button4diac">Finish</span> one boot-file will be created per device.
-This boot-file will contain the selected resources and the FB networks contained in the resources.
-As only the resources selected are included in the boot-file, you can have a larger set of resources during development (e.g., for test-code) and use only the main resources for the boot-file.
-The name of the boot-file will be a combination of system and device name dot fboot.
-Before using it you need to rename it to forte.fboot.</p>
+<p><strong>Choose the destination folder.</strong>
+Next to <span class="element4diac">Destination</span>, click <span class="button4diac">Browse…​</span> and select the folder where the boot-files should be stored.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/CreateForteBootFilesWizard.png" alt="Create forte boot files"/></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Generate the boot-files.</strong>
+Click <span class="button4diac">Finish</span>.
+Each boot-file contains the selected resources and the FB networks contained in these resources.
+Because only the selected resources are included, you can keep additional resources in the system during development, for example for testing, and generate boot-files only for the resources needed in the final deployment.</p>
+</div>
+<div class="paragraph">
+<p><strong>Prepare the file for startup loading.</strong>
+The generated file name is a combination of the system name and the device name with the extension <code>.fboot</code>.
+Before using it for startup loading, rename this file to <code>forte.fboot</code> and place it in the same directory as the 4diac FORTE executable.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/fbootFile.png" alt="Boot file"/></span></p>
 </div>
 </div>
 </div>
@@ -1999,7 +2041,7 @@ page:<br/>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1783625066"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1785163167"></script>
   
 
   

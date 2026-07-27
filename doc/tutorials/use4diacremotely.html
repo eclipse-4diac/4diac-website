@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/tutorials/use4diacremotely.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1783625059">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1783625059">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1783625062">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1785163147">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1785163147">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1785163147">
 <script>
 	
 		var tableClasses = "table";
@@ -1190,10 +1190,10 @@ However, certain devices require a special device type.
 To do this, delete the <em>testee FORTE_PC</em> and pull in the new matching device from the Palette and connect it to the network (map, insert communication FB and connect)<br/>
 In our example the device IP address is 192.168.0.8, you may have another one.
 The port is 61499 by default.<br/>
-<span class="image"><img src="img/Step3/deviceAddress.png" alt="changing the device address"/></span></p>
+<span class="image"><img src="img/Step3/testee_ip.png" alt="changing the device address"/></span></p>
 </li>
 <li>
-<p>Switch to Deployment Perspective set the port to 61500.</p>
+<p>Stay in System (default) perspective (that’s the 4diac main view).</p>
 </li>
 <li>
 <p>Launch Local Forte</p>
@@ -1207,7 +1207,8 @@ Normally it has some type of Terminal or FTP that you can access and launch the 
 <p>Select both devices (i.e., Counter and Testee) in the Deployment Selection</p>
 </li>
 <li>
-<p>Click the <span class="button4diac">Deploy</span> button</p>
+<p>Right‑click one of the devices → Run As → <span class="button4diac">Deploy</span>
+<span class="image"><img src="img/Step3/deploy_devices.png" alt="Deploy"/></span></p>
 </li>
 <li>
 <p>Check that the <em>Deployment Console</em> shows some output, and that no red warning appears on the right nor left of it.
@@ -1225,14 +1226,14 @@ Here are the most common mistakes:</p>
 <li>
 <p>4diac FORTE does not run on the external device<br/>
 Here is an example of an error message<br/>
-<span class="image"><img src="img/Step3/downloadError.png" alt="Major Download Error pop-up"/></span></p>
+<span class="image"><img src="img/Step3/error.png" alt="Major Download Error pop-up"/></span></p>
 </li>
 </ul>
 </div>
 </li>
 <li>
 <p>You can activate the monitor system and watch the project. Now you can
-see that <em>true</em> and <em>false</em>alternate as before.</p>
+see that <em>true</em> and <em>false</em> alternate as before.</p>
 </li>
 </ol>
 </div>
@@ -2041,7 +2042,7 @@ After that everything should work fine.</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1783625072"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1785163163"></script>
   
 
   
