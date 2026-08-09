@@ -10,6 +10,128 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/releases/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #98</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-98/</link>
+      <pubDate>Fri, 07 Aug 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-98/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Library &amp;amp; Refactoring&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Extracted library refactoring logic from the UI plugin&lt;/li&gt;
+&lt;li&gt;Switched copy operations to the Eclipse LTK refactoring infrastructure&lt;/li&gt;
+&lt;li&gt;Simplified library deletion by removing obsolete configuration handling&lt;/li&gt;
+&lt;li&gt;Improved error handling in the Library Manager&lt;/li&gt;
+&lt;li&gt;Fixed timer function blocks after a recent regression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build &amp;amp; Project Validation&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Excluded projects with library errors from export and Xtext builds&lt;/li&gt;
+&lt;li&gt;Added project-level markers for unresolved library dependencies&lt;/li&gt;
+&lt;li&gt;Improved handling of missing or invalid type names in broken projects&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deployment &amp;amp; System Configuration&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed deployment data generation for untyped subapplications&lt;/li&gt;
+&lt;li&gt;Added support for restricting device profiles to supported IEC 61499 profiles&lt;/li&gt;
+&lt;li&gt;Introduced parsing and modeling of supported device profiles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editors &amp;amp; Debugging&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved replay debugging interaction and timeline zoom behavior&lt;/li&gt;
+&lt;li&gt;Fixed execution trace handling and connection style updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Model &amp;amp; Cleanup&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added optional recursive deletion of network elements&lt;/li&gt;
+&lt;li&gt;Removed obsolete resource relocation support for legacy DTP files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Communication &amp;amp; Deployment&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed OPC UA deployment query commands&lt;/li&gt;
+&lt;li&gt;Added a communication layer for automatic endianness conversion supporting big-, little-, and native-endian systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Runtime&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed adapter instance handling by assigning unique IDs, preventing event conflicts in I/O modules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eclipse 4diac Weekly #97</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-97/</link>
+      <pubDate>Fri, 31 Jul 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-97/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Library Management&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced the first redesign of the Manifest Editor:
+&lt;ul&gt;
+&lt;li&gt;Grouped dependencies for improved readability&lt;/li&gt;
+&lt;li&gt;Added version range validation and error highlighting&lt;/li&gt;
+&lt;li&gt;Added refresh and library management actions&lt;/li&gt;
+&lt;li&gt;Restricted editing where appropriate&lt;/li&gt;
+&lt;li&gt;Added marker navigation support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Moved the Library Preference page into the library UI plugin&lt;/li&gt;
+&lt;li&gt;Refreshed the Manifest Editor after library builds&lt;/li&gt;
+&lt;li&gt;Removed obsolete library management code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Simple Function Blocks&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added an event action section for Simple FB types&lt;/li&gt;
+&lt;li&gt;Added model validation for Simple EC states&lt;/li&gt;
+&lt;li&gt;Improved editing of event actions&lt;/li&gt;
+&lt;li&gt;Simplified Simple EC state commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Replay Debugging&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Automatically opens the state comparison view when adding new comparison states&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor &amp;amp; Validation&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved handling of invalid FBs and missing pins&lt;/li&gt;
+&lt;li&gt;Fixed drag-and-drop handling for missing templates&lt;/li&gt;
+&lt;li&gt;Improved robustness and code quality through various cleanup and refactoring efforts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build &amp;amp; Maintenance&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed obsolete resources and resolved additional Sonar findings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reworked tutorials 4 and 5 with new images.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #96</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-96/</link>
       <pubDate>Fri, 24 Jul 2026 17:00:00 +0000</pubDate>
