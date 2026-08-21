@@ -10,6 +10,48 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacanniversary/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #99</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-99/</link>
+      <pubDate>Fri, 14 Aug 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-99/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Architecture &amp;amp; Dependencies&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduced dependencies on the main UI plugin by moving shared utilities and UI-specific classes to more appropriate plugins&lt;/li&gt;
+&lt;li&gt;Removed GEF and UI-specific classes from the main model&lt;/li&gt;
+&lt;li&gt;Cleaned up utility and plugin dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editors &amp;amp; Usability&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed scaling issues in the Service Sequence Editor when switching tabs&lt;/li&gt;
+&lt;li&gt;Improved handling of documentation links to avoid UI deadlocks&lt;/li&gt;
+&lt;li&gt;Made pin name handling case-insensitive&lt;/li&gt;
+&lt;li&gt;Improved ST validation for &lt;code&gt;ELSEIF&lt;/code&gt; conditions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Runtime &amp;amp; Export&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed missing adapter initial values when exporting composite FBs for forte-ng&lt;/li&gt;
+&lt;li&gt;Added missing library model dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function Blocks &amp;amp; Libraries&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Corrected parameter descriptions for &lt;code&gt;F_DIVTIME&lt;/code&gt; and &lt;code&gt;F_MULTIME&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Cleaned up obsolete members from Revolution Pi and Wago bus adapter definitions&lt;/li&gt;
+&lt;li&gt;Added namespace information to Wago definitions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #98</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-98/</link>
       <pubDate>Fri, 07 Aug 2026 17:00:00 +0000</pubDate>
