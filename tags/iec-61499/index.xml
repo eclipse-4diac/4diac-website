@@ -10,6 +10,64 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/iec-61499/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #100</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-100/</link>
+      <pubDate>Fri, 21 Aug 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-100/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Library &amp;amp; Manifest Management&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added version range editing directly in the Manifest Editor, including a dedicated configuration dialog&lt;/li&gt;
+&lt;li&gt;Added an &lt;strong&gt;Import Libraries&lt;/strong&gt; button to the Manifest Editor&lt;/li&gt;
+&lt;li&gt;Improved the Search Reference View by showing the source code line for references&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Struct Member Access &amp;amp; Manipulators&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reworked struct manipulator pins to use the new member access mechanism&lt;/li&gt;
+&lt;li&gt;Improved navigation and connection following for member access pins&lt;/li&gt;
+&lt;li&gt;Removed obsolete multiplexer/demultiplexer edit parts, property sheets, and model elements&lt;/li&gt;
+&lt;li&gt;Simplified handling of visible multiplexer/demultiplexer children and legacy format compatibility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Configurable Function Blocks&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced a unified instance property sheet for configurable FBs, combining instance and type configuration&lt;/li&gt;
+&lt;li&gt;Removed obsolete dedicated property sheets for multiplexer and configurable &lt;code&gt;MOVE&lt;/code&gt; FBs&lt;/li&gt;
+&lt;li&gt;Simplified configurable FB configuration handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Usability &amp;amp; UI&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Prevented property sheets from stealing focus when selections change&lt;/li&gt;
+&lt;li&gt;Fixed event action table layout on Windows&lt;/li&gt;
+&lt;li&gt;Improved UI independence of FB shape handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Other&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added register communication support for Wago 750-636&lt;/li&gt;
+&lt;li&gt;Corrected the comment for &lt;code&gt;SPLIT_LTOD&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Further reduced UI and RGB dependencies in the utility/model code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Timer Function Blocks&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a regression in the standard timer function blocks &lt;code&gt;E_PULSE&lt;/code&gt;, &lt;code&gt;E_TOF&lt;/code&gt;, &lt;code&gt;E_TON&lt;/code&gt;, &lt;code&gt;E_TONOF&lt;/code&gt;, and &lt;code&gt;E_TP&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #99</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-99/</link>
       <pubDate>Fri, 14 Aug 2026 17:00:00 +0000</pubDate>
