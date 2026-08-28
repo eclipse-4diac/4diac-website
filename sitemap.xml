@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
-    <lastmod>2026-08-21T17:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2026-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.3-feature-freeze/</loc>
+    <lastmod>2026-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/releases/</loc>
+    <lastmod>2026-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
     <lastmod>2026-08-21T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-100/</loc>
@@ -30,9 +36,6 @@
     <lastmod>2026-07-10T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.2.1-maintenance-release/</loc>
-    <lastmod>2026-07-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/categories/releases/</loc>
     <lastmod>2026-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-93/</loc>

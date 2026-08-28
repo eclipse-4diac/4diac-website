@@ -10,6 +10,30 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Sun, 09 Feb 2025 14:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacfbe/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac 3.3 Feature Freeze</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.3-feature-freeze/</link>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.3-feature-freeze/</guid>
+      <description>&lt;h3 id=&#34;4diac-ide-highlights&#34;&gt;4diac IDE Highlights&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Replay Debugging:&lt;/strong&gt; A powerful new toolset to record, replay, and navigate execution traces across multiple devices. Complete with a dedicated timeline view, state comparison, and step-by-step undo/redo, this significantly simplifies diagnosing complex timing and sequencing issues.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Event Sequence View:&lt;/strong&gt; A brand-new dedicated visual representation for defining, reviewing, and testing function block service sequences with intuitive drag-and-drop reordering.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Library Management Infrastructure:&lt;/strong&gt; Important foundational improvements including a redesigned manifest editor, a new Manage Library Wizard, and direct library import from the New Project wizard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4diac-forte-highlights&#34;&gt;4diac FORTE Highlights&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Expanded Industrial Platform Support:&lt;/strong&gt; Upgraded support for Wago and RevolutionPi, including new Wago 750-636 register communication and a newly added EtherCAT fieldbus communication support.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Enhanced Monitoring:&lt;/strong&gt; New monitoring capabilities specifically for struct members.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Robust Deployment:&lt;/strong&gt; Hardened deployment command parsing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;we-need-your-help&#34;&gt;We need your help!&lt;/h3&gt;
+&lt;p&gt;The Eclipse 4diac 3.3 Early Access build is now available through the &lt;a href=&#34;https://eclipse.dev/4diac/download&#34;&gt;download page&lt;/a&gt;. We highly encourage all users to download it, try the new features in your environments, and provide feedback. Community testing is critical to making the final release as stable as possible. If you encounter any bugs, please report them directly on the &lt;a href=&#34;https://github.com/eclipse-4diac&#34;&gt;issue trackers&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #100</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-100/</link>
       <pubDate>Fri, 21 Aug 2026 17:00:00 +0000</pubDate>
