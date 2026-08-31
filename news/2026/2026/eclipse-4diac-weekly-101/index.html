@@ -16,19 +16,19 @@
   
 
 
-<title>Eclipse 4diac Weekly #71 | The Eclipse Foundation</title>
-<meta property="og:title" content="Eclipse 4diac Weekly #71 | The Eclipse Foundation" />
-<meta name="twitter:title" content="Eclipse 4diac Weekly #71 | The Eclipse Foundation" />
+<title>Eclipse 4diac Weekly #101 | The Eclipse Foundation</title>
+<meta property="og:title" content="Eclipse 4diac Weekly #101 | The Eclipse Foundation" />
+<meta name="twitter:title" content="Eclipse 4diac Weekly #101 | The Eclipse Foundation" />
 
-<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from January 23, 2026 to January 30, 2026.
+<meta name="description" content="Update on what development happened across the Eclipse 4diac project in the week from August 21 to August 28, 2026.
 
-This week’s updates focus on …">
-<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 23, 2026 to January 30, 2026.
+This week brings new visualization and …">
+<meta property="og:description" content="Update on what development happened across the Eclipse 4diac project in the week from August 21 to August 28, 2026.
 
-This week’s updates focus on …">
-<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from January 23, 2026 to January 30, 2026.
+This week brings new visualization and …">
+<meta name="twitter:description" content="Update on what development happened across the Eclipse 4diac project in the week from August 21 to August 28, 2026.
 
-This week’s updates focus on …">
+This week brings new visualization and …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -36,7 +36,7 @@ This week’s updates focus on …">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@eclipsefdn" />
 <meta name="twitter:creator" content="@eclipsefdn" />
-<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-71/" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-101/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Eclipse 4diac" />
 <meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
@@ -44,7 +44,7 @@ This week’s updates focus on …">
 
 <meta name="generator" content="Hugo 0.144.2">
 
-<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-71/" />
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-101/" />
 
 
 <link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1788205302">
@@ -1099,7 +1099,7 @@ This week’s updates focus on …">
           
             
             <li  class="active" aria-current="page">
-              <a href="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-71/">Eclipse 4diac Weekly #71</a>
+              <a href="https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-101/">Eclipse 4diac Weekly #101</a>
             </li>
           
           </ol>
@@ -1118,7 +1118,7 @@ This week’s updates focus on …">
     
       <h1>
         
-          Eclipse 4diac Weekly #71
+          Eclipse 4diac Weekly #101
         
       </h1>
     
@@ -1128,86 +1128,82 @@ This week’s updates focus on …">
   
 
 <div class="news-metadata">
-  <time datetime="2026-01-30">Friday, Jan 30, 2026</time>
+  <time datetime="2026-08-28">Friday, Aug 28, 2026</time>
 </div>
   
 
 
-  <p><p>Update on what development happened across the Eclipse 4diac project in the week from January 23, 2026 to January 30, 2026.</p>
-<p>This week’s updates focus on robustness and usability improvements in the 4diac IDE, with refinements across refactoring, library element handling, system management, UI consistency, and replay debugging support.
-4diac FORTE complements this with targeted fixes and cleanups around array/value conversions, diagnostics, and code consistency.</p>
+  <p><p>Update on what development happened across the Eclipse 4diac project in the week from August 21 to August 28, 2026.</p>
+<p>This week brings new visualization and event-sequence tooling to 4diac IDE, including FB network topology and sequence views, alongside substantial improvements to OCL validation and type handling.
+4diac FORTE extends monitoring to struct members and Wago 750-636 register communication, while RampLimitFS receives corresponding fixes and new limit indicators.</p>
 </p> 
 
 
 <h2 id="enhancements-and-fixes-in-4diac-ide">Enhancements and Fixes in 4diac IDE</h2>
 <ul>
-<li><strong>Editor, refactoring, and model robustness</strong>
+<li><strong>Visualization &amp; Event Sequences</strong>
 <ul>
-<li>Fixed undo context handling in the bulk editor to correctly integrate with other editors and dirty-state tracking.</li>
-<li>Switched rename and move refactorings to model-based edits and ensured explicit builds are scheduled afterward.</li>
-<li>Fixed issues with recursive members in structs and avoided unnecessary notifications in type entries.</li>
-<li>Refactored and fixed system creation after recent infrastructure changes.</li>
-<li>Restored correct “Copy Project” behavior in the System Explorer paste action.</li>
+<li>Added an Event Sequence View with drag-and-drop reordering</li>
+<li>Added FB network lane and topology graphs</li>
+<li>Redesigned self-loop visualization</li>
 </ul>
 </li>
-<li><strong>Library element and type handling</strong>
+<li><strong>OCL Validation</strong>
 <ul>
-<li>Fixed disconnected library elements during disposal in the type editor.</li>
-<li>Corrected dependency updates in the library element provider.</li>
-<li>Removed obsolete system access from the System Manager, consolidating handling in the type library.</li>
+<li>Reworked OCL dependencies and parsing</li>
+<li>Improved validation after project reference changes</li>
+<li>Improved marker cleanup and handling when validation is disabled</li>
+<li>Added build-path projects to the OCL validation extent</li>
+<li>Added additional OCL validation tests</li>
 </ul>
 </li>
-<li><strong>UI, usability, and visual improvements</strong>
+<li><strong>Type &amp; Editor Handling</strong>
 <ul>
-<li>Improved interface bar visuals with a cleaner appearance and enhanced dark mode support.</li>
-<li>Fixed input updates for sub-editors in the breadcrumb editor.</li>
-<li>Improved export feedback by showing ignored files and informational messages in the export status dialog.</li>
-<li>Fixed texts and removed outdated icons for configurable FBs and container variables.</li>
+<li>Improved handling of types without backing files</li>
+<li>Fixed hierarchy manager drop validation</li>
+<li>Improved attribute target validation for internal variables</li>
+<li>Fixed asynchronous refresh issues in the FB Debug View</li>
 </ul>
 </li>
-<li><strong>Function blocks, initial values, and validation</strong>
+<li><strong>Build &amp; Tooling</strong>
 <ul>
-<li>Added documentation comments for RS and SR bistable latch function blocks.</li>
-<li>Disallowed recursive members in structs.</li>
-<li>Improved handling of inherited initial values on generic variables.</li>
-<li>Added configurable severities for initial values on generic variables.</li>
+<li>Added project-wide Ant checks with shared reporting and JSON output</li>
+<li>Renamed and reorganized Ant check infrastructure</li>
 </ul>
 </li>
-<li><strong>Debugging and tooling</strong>
+<li><strong>Function Blocks &amp; Storage</strong>
 <ul>
-<li>Prepared replay debugging support for use with the interpreter in the GUI, including:
-<ul>
-<li>Integration of a tracer reader from Trace Compass.</li>
-<li>Clear separation between simulator and interpreter components.</li>
-<li>Support for selecting local or remote simulators.</li>
-<li>Ensured listeners are removed safely only if projects still exist.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><strong>Miscellaneous fixes</strong>
-<ul>
-<li>Updated generic class naming for array-to-value conversion.</li>
-<li>Fixed dependency update initialization in library element handling.</li>
+<li>Improved <code>RampLimitFS</code> initialization and <code>WITH</code> lists</li>
+<li>Added <code>qAtZero</code> and <code>qAtFull</code> limit indicators</li>
+<li>Fixed service definitions and documentation for <code>ARTimeOut</code>, <code>ATimeOut</code>, <code>E_DELAY</code>, and <code>E_RDELAY</code></li>
 </ul>
 </li>
 </ul>
 <h2 id="enhancements-and-fixes-in-4diac-forte">Enhancements and Fixes in 4diac FORTE</h2>
 <ul>
-<li><strong>Data conversion and utility functions</strong>
+<li><strong>Monitoring</strong>
 <ul>
-<li>Refactored and fixed <code>VALUES2ARRAY</code> and <code>ARRAY2VALUES</code> to improve correctness and maintainability.</li>
+<li>Added monitoring support for struct members</li>
+<li>Reworked watch handling to use name identifiers and <code>std::span</code></li>
 </ul>
 </li>
-<li><strong>Diagnostics and usability</strong>
+<li><strong>Wago &amp; Function Blocks</strong>
 <ul>
-<li>Added a helpful startup message for common issues when device creation fails due to missing shared libraries or linker flags.</li>
+<li>Added register communication support for Wago 750-636</li>
+<li>Regenerated <code>RampLimitFS</code> with the corrected initialization and new limit indicators</li>
 </ul>
 </li>
-<li><strong>Code cleanup and consistency</strong>
+<li><strong>OPC UA</strong>
 <ul>
-<li>Renamed the RT_Bridge class to <code>GEN_RT_Bridge</code> and aligned all related declarations.</li>
-<li>Fixed missing includes in the embrick module to restore successful builds.</li>
+<li>Improved SecureChannel diagnostics by reporting the actual connection state instead of misleading open-state messages</li>
+</ul>
+</li>
+</ul>
+<h2 id="enhancements-and-fixes-in-4diac-documentation">Enhancements and Fixes in 4diac Documentation</h2>
+<ul>
+<li><strong>Wago</strong>
+<ul>
+<li>Added documentation for register communication with Wago modular I/O.</li>
 </ul>
 </li>
 </ul>

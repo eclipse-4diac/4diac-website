@@ -10,6 +10,85 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/white-paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #101</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-101/</link>
+      <pubDate>Fri, 28 Aug 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-101/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Visualization &amp;amp; Event Sequences&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added an Event Sequence View with drag-and-drop reordering&lt;/li&gt;
+&lt;li&gt;Added FB network lane and topology graphs&lt;/li&gt;
+&lt;li&gt;Redesigned self-loop visualization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OCL Validation&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reworked OCL dependencies and parsing&lt;/li&gt;
+&lt;li&gt;Improved validation after project reference changes&lt;/li&gt;
+&lt;li&gt;Improved marker cleanup and handling when validation is disabled&lt;/li&gt;
+&lt;li&gt;Added build-path projects to the OCL validation extent&lt;/li&gt;
+&lt;li&gt;Added additional OCL validation tests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type &amp;amp; Editor Handling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved handling of types without backing files&lt;/li&gt;
+&lt;li&gt;Fixed hierarchy manager drop validation&lt;/li&gt;
+&lt;li&gt;Improved attribute target validation for internal variables&lt;/li&gt;
+&lt;li&gt;Fixed asynchronous refresh issues in the FB Debug View&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build &amp;amp; Tooling&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added project-wide Ant checks with shared reporting and JSON output&lt;/li&gt;
+&lt;li&gt;Renamed and reorganized Ant check infrastructure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Function Blocks &amp;amp; Storage&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved &lt;code&gt;RampLimitFS&lt;/code&gt; initialization and &lt;code&gt;WITH&lt;/code&gt; lists&lt;/li&gt;
+&lt;li&gt;Added &lt;code&gt;qAtZero&lt;/code&gt; and &lt;code&gt;qAtFull&lt;/code&gt; limit indicators&lt;/li&gt;
+&lt;li&gt;Fixed service definitions and documentation for &lt;code&gt;ARTimeOut&lt;/code&gt;, &lt;code&gt;ATimeOut&lt;/code&gt;, &lt;code&gt;E_DELAY&lt;/code&gt;, and &lt;code&gt;E_RDELAY&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-forte&#34;&gt;Enhancements and Fixes in 4diac FORTE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Monitoring&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added monitoring support for struct members&lt;/li&gt;
+&lt;li&gt;Reworked watch handling to use name identifiers and &lt;code&gt;std::span&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wago &amp;amp; Function Blocks&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added register communication support for Wago 750-636&lt;/li&gt;
+&lt;li&gt;Regenerated &lt;code&gt;RampLimitFS&lt;/code&gt; with the corrected initialization and new limit indicators&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OPC UA&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved SecureChannel diagnostics by reporting the actual connection state instead of misleading open-state messages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-documentation&#34;&gt;Enhancements and Fixes in 4diac Documentation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wago&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Added documentation for register communication with Wago modular I/O.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many thanks to all contributors for their work and their feedback!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac 3.3 Feature Freeze</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.3-feature-freeze/</link>
       <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
