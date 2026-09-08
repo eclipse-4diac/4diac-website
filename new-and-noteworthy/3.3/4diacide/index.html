@@ -41,8 +41,8 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/new-and-noteworthy/3.3/4diacide/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1788207536">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1788207536">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1788901200">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1788901200">
 <script>
 	
 		var tableClasses = "table";
@@ -1125,6 +1125,32 @@
 <li>Added a new section for simple FB types that allows editing simple EC actions via a table</li>
 <li>Each Event Input can be associated with one or multiple Algorithms and Event Outputs</li>
 </ul>
+<h3 id="bulk-editor">Bulk Editor</h3>
+<ul>
+<li>Added first prototype of the Bulk Query Language inside the BulkEditor</li>
+</ul>
+<h3 id="connection-usability">Connection Usability</h3>
+<ul>
+<li>Added a more aggressive delete of connections, which deletes connections all the way to the next FB</li>
+<li>Reworked reconnect to merge connections if possible
+<ul>
+<li>When a connection is dragged to a pin that already has a connection, connections are merged for their shared path</li>
+</ul>
+</li>
+</ul>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>Pin names are now case insensitive</li>
+<li>Error FBs/Pins are now created correctly for connections with missing source/destination</li>
+</ul>
+<h1 id="deleting-function-blocks-has-never-been-this-satisfying">Deleting Function Blocks Has Never Been This Satisfying</h1>
+<p>You&rsquo;re deep in a Function Block network, re-architecting your distributed control application, and it&rsquo;s time to clean house. You select the blocks that no longer serve the design, hit delete, and… they just vanish. Functional, sure — but where&rsquo;s the fun in that?</p>
+<h2 id="a-small-spark-of-joy-in-the-editor">A Small Spark of Joy in the Editor</h2>
+<p>A new contribution to Eclipse 4diac IDE adds an optional visual explosion animation that plays whenever you delete Function Blocks or Connections in the Application Editor. Instead of elements silently disappearing from the canvas, they burst apart in a brief, satisfying particle effect before fading out.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>It&rsquo;s a small touch — but once you&rsquo;ve seen it, plain deletion feels strangely incomplete.
+The feature is entirely optional and can be toggled off for those who prefer their deletions quiet and dignified.</p>
+<p>Happy deleting!</p>
 
 
   
@@ -1332,7 +1358,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1788207540"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1788901200"></script>
   
 
   
