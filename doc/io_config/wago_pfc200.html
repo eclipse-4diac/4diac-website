@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/io_config/wago_pfc200.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1788984624">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1788984624">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1788984624">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1789025590">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1789025590">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1789025590">
 <script>
 	
 		var tableClasses = "table";
@@ -1149,7 +1149,7 @@
 <p><strong>Wago459</strong>: 4 Analog inputs, Wago module 750-459</p>
 </li>
 <li>
-<p><strong>Wago636</strong>: DC-Drive-Controller 24V 5A, Wago module 750-636</p>
+<p><strong>Wago636</strong>: DC-Drive-Controller 24V 5A, Wago module 750-636, supports register communication</p>
 </li>
 </ul>
 </div>
@@ -1320,29 +1320,21 @@ Your configuration file for Wago PFC200 for this build environment could be like
 <div class="content">
 <pre>ARCH=arm-linux-gnueabihf
 
-DEPS=tinyxml
 DEPS=wago
 
-COM=ETH,FBDK,LOCAL,HTTP
+COM=ETH,FBDK,LOCAL
 
-MODULE=CONVERT,IEC61131,UTILS,UTILS_ADDON,CUSTOM_FBS
+MODULE=CONVERT,IEC61131,UTILS
 MODULE=WagoKbus
 
-// address sanitizer doesn&#39;t work with static linking
-TOOLCHAIN_EXTRA_C_FLAGS=-fno-sanitize=address -fno-lto
-TOOLCHAIN_EXTRA_LINKER_FLAGS=-fno-sanitize=address -fno-lto
-
-FORTE_IO=ON
-
-// no local additions
-#FORTE_EXTERNAL_MODULES_DIRECTORY=/nonexistant</pre>
+FORTE_IO=ON</pre>
 </div>
 </div>
 <div class="paragraph">
 <p>After successful compilation the runtime can be found within the folder <em>build/yourConfigurationFileName/output/bin</em> of 4diac FORTE’s build environment.
 Copy the whole content to your Wago PFC200 core module by e.g. <a href="https://winscp.net/eng/index.php">WinSCP</a>, possibly within a folder <em>/home/forte</em>.
 You should set execution rights for for all copied files to run it.
-Login to your Wago PFC200 core module by e.g. <a href="https://putty.org/">Putty</a>, navigate to the folder where you put your executable and run it by <em>./forte</em>.
+Login to your Wago PFC200 core module by e.g. <a href="https://putty.org/">Putty</a> or SSH, navigate to the folder where you put your executable and run it by <em>./forte</em>.
 Now you can deploy the desired IEC 61499 resources on your Wago PFC200.</p>
 </div>
 </div>
@@ -1368,6 +1360,55 @@ Take it’s IEC 61499 application name and it’s instance name separated by a d
 </div>
 <div class="paragraph">
 <p>When all I/Os are wired and named within your <em>IO_CONFIG</em> function block network correspondingly, your IEC 61499 application is ready to be deployed and to access the hardware.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_register_communication">Register Communication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Some Wago modules support register communication to configure the specific module.
+Within 4diac register communication has currently been integrated for the Wago 750-636 module.
+Because certain register entries require password authorization, the system internally sets the password register when communication opens and resets it upon closure.
+The password (re)set can be turned off by setting <em>autoPsw</em> to <em>false</em>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./src/io_config/img/wago_RegCom_Adapter.png" alt="Adapter for register communication"/></span></p>
+</div>
+<div class="paragraph">
+<p>For register communication this module has an input Adapter <em>RegCom</em>, as shown above.
+This Adapter is supposed to be used for the register communication during the initialization phase of the Wago modules.
+This Adapter opens the register communication, send all required read/write commands, and close the register communication afterwards.
+Consider that during register communication the entire process image is replaced by the register and motors can not be controlled within that time.
+For the available register numbers please check the Wago documentation of the specific Wago module.
+A possible setup for register communication in your application is shown within the following image.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./src/io_config/img/wago_RegCom_use.png" alt="Use register communication"/></span></p>
+</div>
+<div class="paragraph">
+<p>The following image shows an example configuration with the register communication.
+It opens the register communication, sets the <em>Ramp Time</em> register with the register number 35 and reads the <em>Password</em> register with the register number 31, and closes the register communication afterwards.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./src/io_config/img/wago_example_RegCom.png" alt="Example register communication"/></span></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Important</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Due to the protocol architecture of the WAGO K-Bus register communication, do not trigger a read request (Read Event) immediately after a write command (Write Event) for the same register number.
+Because the bus echoes the register number in the status byte during a write operation, an immediate read request will inadvertently read the remaining local echo of the previous write cycle.
+This results in a <em>silent failure</em> where the application processes outdated data.
+If you need to verify a register perform a command on another register in between to clear the interface buffer.</p>
+</div>
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 </div>
@@ -2130,7 +2171,7 @@ Take it’s IEC 61499 application name and it’s instance name separated by a d
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1788984628"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1789025596"></script>
   
 
   

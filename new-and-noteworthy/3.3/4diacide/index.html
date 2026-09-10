@@ -20,9 +20,9 @@
 <meta property="og:title" content="4diac IDE | The Eclipse Foundation" />
 <meta name="twitter:title" content="4diac IDE | The Eclipse Foundation" />
 
-<meta name="description" content="TBA">
-<meta property="og:description" content="TBA">
-<meta name="twitter:description" content="TBA">
+<meta name="description" content="New ways to inspect and reorganize event networks, create advanced Bulk Editor queries, validate projects with custom rules, and work more safely with …">
+<meta property="og:description" content="New ways to inspect and reorganize event networks, create advanced Bulk Editor queries, validate projects with custom rules, and work more safely with …">
+<meta name="twitter:description" content="New ways to inspect and reorganize event networks, create advanced Bulk Editor queries, validate projects with custom rules, and work more safely with …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -41,8 +41,8 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/new-and-noteworthy/3.3/4diacide/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1788984638">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1788984638">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1789025605">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1789025605">
 <script>
 	
 		var tableClasses = "table";
@@ -1120,37 +1120,182 @@
 
 
   
-  <h3 id="event-actions-ui-for-simple-fbs">Event Actions UI for Simple FBs</h3>
+  <p>4diac IDE 3.3 provides new ways to inspect and reorganize event networks, create advanced Bulk Editor queries, validate projects with custom rules, and work more safely with structured data, dependencies, replay traces, and broken model content.</p>
+<h3 id="event-flow-analysis-and-editing">Event Flow Analysis and Editing</h3>
+<p>A new <strong>Event Sequence</strong> view provides a structural outline of event connections in function block networks. This makes event chains easier to understand, review, and explain without manually tracing every connection in the editor.</p>
+<p><em>Highlights:</em></p>
 <ul>
-<li>Added a new section for simple FB types that allows editing simple EC actions via a table</li>
-<li>Each Event Input can be associated with one or multiple Algorithms and Event Outputs</li>
+<li>visual event sequence overview for FB networks</li>
+<li>sequence ordering and event relationships at a glance</li>
+<li>support for nested untyped subapplications</li>
+<li>double-click navigation back to the network editor</li>
+<li>Drag-and-drop reordering in the Event Sequence view allows direct reordering of function blocks using drag and drop, which automatically updates the affected event connections.</li>
 </ul>
-<h3 id="bulk-editor">Bulk Editor</h3>
+<h3 id="replay-debugging-enhancements">Replay Debugging Enhancements</h3>
 <ul>
-<li>Added first prototype of the Bulk Query Language inside the BulkEditor</li>
+<li>Replay across multiple devices<br>
+Replay Debugging now supports sessions spanning multiple devices. Users can select only the required resources from each device and configure replay options independently.</li>
+<li>Replay Debugging has gained several workflow improvements that make trace analysis more practical and more efficient.</li>
+<li>Replay sessions are now easier to explore without risking accidental damage to imported traces.</li>
 </ul>
-<h3 id="connection-usability">Connection Usability</h3>
+<h3 id="bulk-editor-and-query-authoring">Bulk Editor and Query Authoring</h3>
+<p>The Bulk Editor has been reworked into a clearer multi-page workflow. Search configuration, result editing, and advanced query design are now separated into dedicated pages, helping users focus on one task at a time.</p>
+<p><em>Highlights:</em></p>
 <ul>
-<li>Added a more aggressive delete of connections, which deletes connections all the way to the next FB</li>
-<li>Reworked reconnect to merge connections if possible
+<li><strong>Controls</strong> page for search setup</li>
+<li><strong>Result</strong> page for editing matching elements</li>
+<li><strong>Query</strong> page for advanced search construction</li>
+</ul>
+<h3 id="project-validation-and-model-quality">Project Validation and Model Quality</h3>
+<h4 id="project-level-ocl-validation">Project-level OCL Validation</h4>
+<p>Introduction of a project-level OCL validation builder. Projects can now define custom OCL constraints that are evaluated automatically during builds, with violations reported as markers in the Problems view. This makes it easier for teams to enforce project-specific modeling rules across project content and referenced libraries.</p>
+<p>Highlights:</p>
 <ul>
-<li>When a connection is dragged to a pin that already has a connection, connections are merged for their shared path</li>
+<li>OCL validation can be enabled or disabled per project</li>
+<li>constraints can be loaded from the project and its build path</li>
+<li>violations appear as standard Eclipse markers</li>
+<li>obsolete OCL markers are removed when validation is disabled</li>
+</ul>
+<h4 id="improved-validation-and-cleanup-for-interfaces-and-connections">Improved Validation and Cleanup for Interfaces and Connections</h4>
+<p>Validation and cleanup workflows have been extended to make model maintenance easier. Unused pins in CFB types and SubApps can now be detected automatically, and cleanup actions help resolve such issues directly from validation output.</p>
+<p>Highlights:</p>
+<ul>
+<li>validation for unused interface pins</li>
+<li>quick fix support for deleting unused pins</li>
+<li>improved consistency between collision feedback and collision validation</li>
+<li>better cleanup behavior for obsolete validation markers</li>
+</ul>
+<h3 id="function-block-and-ecc-editing">Function Block and ECC Editing</h3>
+<h4 id="event-actions-editor-for-simple-fbs">Event Actions Editor for Simple FBs</h4>
+<p>Simple FB types now have a dedicated <strong>Event Actions</strong> section for assigning algorithms and output events to input events in a structured table-based UI. This makes simple FB behavior easier to configure graphically.</p>
+<p><em>Highlights:</em></p>
+<ul>
+<li>assign one or multiple actions per input event</li>
+<li>select algorithms and output events in a dedicated UI</li>
+<li>reorder and delete actions directly in the property tab</li>
+</ul>
+<h4 id="ecc-editor-improvements">ECC Editor Improvements</h4>
+<p>The ECC editor has been improved in several areas, making it easier to understand and debug basic FB behavior.</p>
+<p><em>Highlights:</em></p>
+<ul>
+<li>breakpoints can now be placed directly on ECC states</li>
+<li>self-transitions are displayed more clearly as loops</li>
+<li>a graphical outline improves ECC navigation and orientation</li>
+</ul>
+<h3 id="structured-data-configuration-and-refactoring">Structured Data, Configuration, and Refactoring</h3>
+<ul>
+<li>
+<p><strong>Unified Configuration for Configurable FBs</strong><br>
+Configurable FBs, multiplexers, and demultiplexers can now be configured through the standard <strong>Instance</strong> property tab. This reduces fragmentation and makes configuration more consistent across block types.</p>
+</li>
+<li>
+<p><strong>Better Structured and Array Value Editing</strong><br>
+Editing large structured and array initial values is now more efficient. Instead of expanding and storing complete values, 4diac can preserve only the differences from defaults.</p>
+</li>
+<li>
+<p><strong>Improved Refactoring Reliability</strong><br>
+Refactoring workflows were enhanced to better preserve dependent references and related configuration during copy and rename operations.</p>
+<p><em>Highlights:</em></p>
+<ul>
+<li>improved rename handling for structured members</li>
+<li>safer copy and rename refactorings</li>
+<li>better update behavior for dependent references, values, and connections</li>
 </ul>
 </li>
 </ul>
-<h3 id="bug-fixes">Bug Fixes</h3>
+<h3 id="project-and-library-management">Project and Library Management</h3>
 <ul>
-<li>Pin names are now case insensitive</li>
-<li>Error FBs/Pins are now created correctly for connections with missing source/destination</li>
+<li>
+<p><strong>Improved project creation with library import</strong><br>
+The New 4diac Project wizard can now import required libraries directly during project creation, reducing setup effort for new projects.</p>
+</li>
+<li>
+<p>Redesigned manifest and dependency handling<br>
+Library dependency management has been improved through a redesigned dependency page and better refresh behavior after builds.</p>
+<p><em>Highlights:</em></p>
+<ul>
+<li>easier dependency maintenance</li>
+<li>improved refresh after library build</li>
+<li>clearer validation and editing workflows</li>
 </ul>
-<h1 id="deleting-function-blocks-has-never-been-this-satisfying">Deleting Function Blocks Has Never Been This Satisfying</h1>
-<p>You&rsquo;re deep in a Function Block network, re-architecting your distributed control application, and it&rsquo;s time to clean house. You select the blocks that no longer serve the design, hit delete, and… they just vanish. Functional, sure — but where&rsquo;s the fun in that?</p>
-<h2 id="a-small-spark-of-joy-in-the-editor">A Small Spark of Joy in the Editor</h2>
-<p>A new contribution to Eclipse 4diac IDE adds an optional visual explosion animation that plays whenever you delete Function Blocks or Connections in the Application Editor. Instead of elements silently disappearing from the canvas, they burst apart in a brief, satisfying particle effect before fading out.</p>
-<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
-<p>It&rsquo;s a small touch — but once you&rsquo;ve seen it, plain deletion feels strangely incomplete.
-The feature is entirely optional and can be toggled off for those who prefer their deletions quiet and dignified.</p>
-<p>Happy deleting!</p>
+</li>
+<li>
+<p><strong>Better remote library and GitLab configuration</strong><br>
+Remote library access is more robust and easier to automate in development and CI environments.</p>
+<p><em>Highlights:</em></p>
+<ul>
+<li>Ant task for GitLab endpoint configuration</li>
+<li>migration from legacy GitLab settings to endpoint-based configuration</li>
+<li>invalid remote versions are skipped instead of blocking valid downloads</li>
+</ul>
+</li>
+</ul>
+<h3 id="export-deployment-and-automation">Export, Deployment, and Automation</h3>
+<ul>
+<li>
+<p><strong>Automated project validation with JSON reports</strong><br>
+Headless validation has been improved so that complete projects can be checked in automated builds and CI pipelines, with optional machine-readable JSON output.</p>
+<p><em>Highlights:</em></p>
+<ul>
+<li>validate complete projects in headless builds</li>
+<li>generate JSON reports with errors, warnings, resources, and line numbers</li>
+<li>fail builds automatically when validation errors occur</li>
+</ul>
+</li>
+<li>
+<p><strong>Improved FORTE NG export</strong><br>
+FORTE NG export now handles additional modeling details more accurately, including adapter initial values and related composite FB configuration.</p>
+</li>
+<li>
+<p><strong>Deployment and export robustness</strong><br>
+Several fixes improve correctness and resilience in deployment and export workflows, especially around hierarchical models and untyped subapplications.</p>
+</li>
+</ul>
+<h3 id="libraries-devices-and-standard-fbs">Libraries, Devices, and Standard FBs</h3>
+<ul>
+<li>
+<p><strong>WAGO 750-636 support</strong><br>
+The WAGO library has been expanded with improved support for the 750-636 drive controller and its register communication workflows.</p>
+</li>
+<li>
+<p><strong>Standard FB improvements</strong><br>
+Several standard library function blocks were improved in behavior, configuration, and documentation.</p>
+</li>
+<li>
+<p><strong>Device communication profile filtering</strong><br>
+Device types can now restrict the communication profiles presented to users, so only supported profiles are shown.</p>
+</li>
+</ul>
+<h3 id="everyday-usability-and-robustness">Everyday Usability and Robustness</h3>
+<ul>
+<li>
+<p><strong>Improved connection editing</strong><br>
+Connection handling has been improved for easier network cleanup and restructuring.</p>
+<p>Highlights:</p>
+<ul>
+<li>more aggressive connection deletion</li>
+<li>automatic merging of compatible connection paths during reconnect</li>
+</ul>
+</li>
+<li>
+<p><strong>Better search result context</strong><br>
+The Search References view now shows the relevant source line directly in the results, making it easier to understand hits before opening them.</p>
+</li>
+<li>
+<p><strong>Reload open editors from disk</strong><br>
+Open editors can now be reloaded after external file changes, without requiring users to close and reopen the editor manually.</p>
+</li>
+<li>
+<p><strong>Improved handling of broken or unresolved types</strong><br>
+If a type cannot be loaded, 4diac can now keep the project usable by representing the failure as an error library element. This improves error recovery and reduces the impact of malformed or unresolved resources.</p>
+</li>
+<li>
+<p><strong>Optional deletion explosion effect</strong><br>
+Deleting function blocks and connections can now trigger an optional visual explosion effect. It is a small but memorable usability touch that adds immediate visual feedback during editing.</p>
+</li>
+</ul>
+<h3 id="additional-improvements-and-fixes">Additional Improvements and Fixes</h3>
+<p>In addition to the headline features above, 4diac IDE 3.3 includes many further improvements in connection handling, refactoring infrastructure, deployment data handling, search integration, type loading, editor robustness, and general maintenance. These changes help make 4diac IDE more stable, more predictable, and easier to use in larger real-world projects.</p>
 
 
   
@@ -1358,7 +1503,7 @@ The feature is entirely optional and can be toggled off for those who prefer the
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1788984638"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1789025605"></script>
   
 
   

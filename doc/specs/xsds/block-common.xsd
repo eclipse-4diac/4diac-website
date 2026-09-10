@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2026 Johannes Kepler University Linz
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+
+  Contributors:
+    Alois Zoitl - initial API and implementation and/or initial documentation
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:include schemaLocation="datatype.xsd"/>
+
+<!-- ============================================== -->
+<!-- FB Interface                                   -->
+<!-- ============================================== -->
+<xs:complexType name="InterfaceList">
+  <xs:sequence>
+    <xs:element name="EventInputs"  type="EventInputs"  minOccurs="0" maxOccurs="1"/>
+    <xs:element name="EventOutputs" type="EventOutputs" minOccurs="0" maxOccurs="1"/>
+    <xs:element name="InputVars"    type="InputVars"    minOccurs="0" maxOccurs="1"/>
+    <xs:element name="OutputVars"   type="OutputVars"   minOccurs="0" maxOccurs="1"/>
+    <xs:element name="InOutVars"    type="InOutVars"    minOccurs="0" maxOccurs="1"/>
+    <xs:element name="Sockets"      type="Sockets"      minOccurs="0" maxOccurs="1"/>
+    <xs:element name="Plugs"        type="Plugs"        minOccurs="0" maxOccurs="1"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EventInputs">
+  <xs:sequence>
+    <xs:element name="Event" type="Event" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EventOutputs">
+  <xs:sequence>
+    <xs:element name="Event" type="Event" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InputVars">
+  <xs:sequence>
+    <xs:element ref="VarDeclaration" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OutputVars">
+  <xs:sequence>
+    <xs:element ref="VarDeclaration" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InOutVars">
+  <xs:sequence>
+    <xs:element ref="VarDeclaration" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Sockets">
+  <xs:sequence>
+    <xs:element name="AdapterDeclaration" type="AdapterDeclaration" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Plugs">
+  <xs:sequence>
+    <xs:element name="AdapterDeclaration" type="AdapterDeclaration" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Event">
+  <xs:sequence>
+    <xs:element name="With" type="With" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+  <xs:attributeGroup ref="NameTypeCommentAttributes"/>
+</xs:complexType>
+
+<xs:complexType name="With">
+  <xs:attribute name="Var" type="Identifier" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="AdapterDeclaration">
+  <xs:sequence>
+    <xs:element name="Parameter" type="Parameter" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+  <xs:attributeGroup ref="NameTypeCommentAttributes"/>
+  <xs:attributeGroup ref="PositionAttributes"/>
+</xs:complexType>
+
+<xs:complexType name="Parameter">
+  <xs:attributeGroup ref="NameCommentAttributes"/>
+  <xs:attribute name="Value" type="xs:string" use="required"/>
+</xs:complexType>
+
+
+<!-- ============================================== -->
+<!-- Service Sequence Diagram                       -->
+<!-- ============================================== -->
+<xs:complexType name="Service">
+  <xs:sequence>
+    <xs:element name="ServiceSequence" type="ServiceSequence" maxOccurs="unbounded"/>
+  </xs:sequence>
+  <xs:attribute name="RightInterface" type="xs:string" use="required"/>
+  <xs:attribute name="LeftInterface"  type="xs:string" use="required"/>
+  <xs:attribute name="Comment"        type="xs:string" use="optional"/>
+</xs:complexType>
+
+<xs:complexType name="ServiceSequence">
+  <xs:sequence>
+    <xs:element name="ServiceTransaction" type="ServiceTransaction" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+  <xs:attributeGroup ref="NameCommentAttributes"/>
+</xs:complexType>
+
+<xs:complexType name="ServiceTransaction">
+  <xs:sequence>
+    <xs:element name="InputPrimitive"  type="InputPrimitive"  minOccurs="0" maxOccurs="1"/>
+    <xs:element name="OutputPrimitive" type="OutputPrimitive" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="InputPrimitive">
+  <xs:attributeGroup ref="ServicePrimitiveGroup"/>
+</xs:complexType>
+
+<xs:complexType name="OutputPrimitive">
+  <xs:attributeGroup ref="ServicePrimitiveGroup"/>
+</xs:complexType>
+
+<xs:attributeGroup name="ServicePrimitiveGroup">
+  <xs:attribute name="Interface"  type="xs:string" use="required"/>
+  <xs:attribute name="Event"      type="xs:string" use="required"/>
+  <xs:attribute name="Parameters" type="xs:string" use="optional"/>
+</xs:attributeGroup>
+
+</xs:schema>

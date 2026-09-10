@@ -20,9 +20,9 @@
 <meta property="og:title" content="4diac FORTE | The Eclipse Foundation" />
 <meta name="twitter:title" content="4diac FORTE | The Eclipse Foundation" />
 
-<meta name="description" content="TBA.">
-<meta property="og:description" content="TBA.">
-<meta name="twitter:description" content="TBA.">
+<meta name="description" content="4diac FORTE 3.3 introduces EtherCAT support as a major new feature and brings a broad set of improvements across industrial I/O support, OPC UA, runtime …">
+<meta property="og:description" content="4diac FORTE 3.3 introduces EtherCAT support as a major new feature and brings a broad set of improvements across industrial I/O support, OPC UA, runtime …">
+<meta name="twitter:description" content="4diac FORTE 3.3 introduces EtherCAT support as a major new feature and brings a broad set of improvements across industrial I/O support, OPC UA, runtime …">
 <link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
 
 <meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
@@ -41,8 +41,8 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/new-and-noteworthy/3.3/4diacforte/" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1788984638">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1788984638">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1789025605">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1789025605">
 <script>
 	
 		var tableClasses = "table";
@@ -1120,7 +1120,43 @@
 
 
   
-  
+  <p>4diac FORTE 3.3 introduces <strong>EtherCAT support</strong> as a major new feature and brings a broad set of improvements across industrial I/O support, OPC UA, runtime behavior, and internal architecture.</p>
+<h3 id="ethercat-support-new">EtherCAT Support (new)</h3>
+<p>4diac FORTE 3.3 adds EtherCAT support with the first set of required building blocks:</p>
+<ul>
+<li>Core EtherCAT integration</li>
+<li>Initial EtherCAT IO function blocks</li>
+<li>Foundation for further EtherCAT expansion in upcoming releases</li>
+</ul>
+<h3 id="io-updates">I/O Updates</h3>
+<p>I/O support for industrial platforms and devices has been extended and fixed:</p>
+<ul>
+<li>Wago and RevolutionPi I/O support updated to latest I/O infrastructure</li>
+<li>Register communication for Wago 750-636 module</li>
+</ul>
+<h3 id="opc-ua-improvements">OPC UA Improvements</h3>
+<p>OPC UA functionality has been improved in deployment, runtime handling, monitoring, and validation:</p>
+<ul>
+<li>Fixes for query-type command handling in deployment</li>
+<li>Correct SecureChannel state reporting in client callbacks</li>
+<li>OPC UA enabled on Linux CI workflows</li>
+<li>Regenerated UA types for system test alignment</li>
+<li>Monitoring support for struct members</li>
+</ul>
+<h3 id="runtime-fixes-and-stability-improvements">Runtime fixes and stability improvements</h3>
+<ul>
+<li>Unique IDs for adapter instances to prevent event overlap</li>
+<li>Timer-related bug fixes</li>
+<li>Regenerated RampLimitFS implementation for corrected INIT behavior</li>
+</ul>
+<h3 id="management-command-refactoring">Management command refactoring</h3>
+<p>The management command subsystem was reworked and cleaned up to better and more correctly handle wrong or malicious commands:</p>
+<ul>
+<li>Command parsing restructured</li>
+<li>Command execution separated from parsing</li>
+<li>Additional parser rework for consistency and maintainability</li>
+</ul>
+
 
   
 
@@ -1327,7 +1363,7 @@
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1788984638"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1789025605"></script>
   
 
   

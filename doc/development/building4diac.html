@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/development/building4diac.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1788984590">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1788984590">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1788984590">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1789025557">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1789025557">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1789025557">
 <script>
 	
 		var tableClasses = "table";
@@ -1165,19 +1165,37 @@
 </div>
 <div class="sect2">
 <h3 id="_1_1_get_the_development_environment"><a id="devEnvironment"></a>1.1 Get the Development Environment</h3>
-<div class="paragraph">
-<p>The 4diac IDE requires at least a version 21 Java JRE.
-Higher version JREs are supported, but may require additional Eclipse IDE configuration (see step 4 of chapter <a href="#importPlugins">Import plug-ins into workspace</a>).</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The 4diac IDE requires at least a version <strong>25 Java JRE</strong>.</p>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+The currently required Java version can be found in the <a href="https://github.com/eclipse-4diac/4diac-ide/blob/develop/pom.xml">pom.xml</a> file in the root directory of 4diac IDE. The value in the <strong>&lt;maven.compiler.source&gt;</strong> tag in the properties section (as well as &lt;maven.compiler.target&gt;) is the determining factor.
+</td>
+</tr>
+</tbody></table>
 </div>
 <div class="paragraph">
-<p>Get the latest <a href="https://www.eclipse.org/downloads/packages/">Eclipse IDE</a>.
-Use <span class="specificText">Eclipse Modeling Tools</span> edition.</p>
+<p>Higher version JREs are supported, but may require additional Eclipse IDE configuration (see step 4 of chapter <a href="#importPlugins">Import plug-ins into workspace</a>).</p>
 </div>
+</li>
+<li>
+<p>Get the latest <a href="https://www.eclipse.org/downloads/packages/">Eclipse IDE</a>. Use <strong>Eclipse IDE for Java and DSL Developers edition</strong>. Please make sure to select this edition, as using other editions may cause issues and setup problems. With this edition, you’re all set to go.</p>
 <div class="paragraph">
-<p>In order for all dependencies to resolve correctly, the following additional Eclipse packages are required:</p>
+<p>If you already have a version of the Eclipse IDE installed and would like to use it, make sure it has the required packages installed.
+In order for all dependencies to resolve correctly, the additional Eclipse packages listed below are required. To check, select <strong>Help</strong> &gt; <strong>About Eclipse IDE</strong></p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>Modeling Project</p>
+</li>
 <li>
 <p>M2E - Maven Integration for Eclipse</p>
 </li>
@@ -1185,44 +1203,68 @@ Use <span class="specificText">Eclipse Modeling Tools</span> edition.</p>
 <p>M2E - PDE Integration</p>
 </li>
 <li>
+<p>EGit</p>
+</li>
+<li>
 <p>XText Complete SDK</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/EclipseRequiredPackages.svg" alt="required packages"/></span></p>
+</div>
+<div class="paragraph">
+<p>You can install these packages using your Eclipse IDE by selecting <strong>Help</strong> &gt; <strong>Install New Software…​</strong>. Select <code>Latest Eclipse Simultaneous Release - <a href="https://download.eclipse.org/releases/latest" class="bare">https://download.eclipse.org/releases/latest</a></code> in <em>Work with</em> drop-down list. You can filter the results by typing <em>maven</em> or <em>xtext</em>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/installNewSoftwareMenu.png" alt="Install new Software Menu"/></span></p>
+</div>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>You can install these packages using your Eclipse IDE by selecting Help → Install New Software (Eclipse Repository).</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+To receive valuable tips and suggestions for improving the source code, we strongly recommend installing <strong>SonarQube for IDE</strong> from the Marketplace. Select <strong>Help</strong> &gt; <strong>Eclipse Marketplace…​</strong> and type <em>SonarQube</em> into the search field.
+<span class="image"><img src="img/SonarQubeMarketplace.png" alt="SonarQube Marketplace"/></span>
+</td>
+</tr>
+</tbody></table>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_1_2_check_out_the_4diac_ide_repository"><a id="checkOutRepos"></a>1.2 Check out the 4diac IDE Repository</h3>
 <div class="paragraph">
-<p>This section shows how to check out (clone) the 4diac IDE repository.
-You will need <a href="https://git-scm.com/downloads">Git</a> to download it by using the <code>clone</code> command from Git to the repository <code><a href="https://github.com/eclipse-4diac/4diac-ide.git" class="bare">https://github.com/eclipse-4diac/4diac-ide.git</a></code>.
-If you’re using the terminal, do:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>$ cd ~
-$ git clone https://github.com/eclipse-4diac/4diac-ide.git</pre>
-</div>
+<p>Eclipse IDE has <strong>Git</strong> directly integrated. It’s common to use two separate folders, one for the workspace settings and one for the source code.
+. change to the <strong>Git perspective</strong> within Eclipse</p>
 </div>
 <div class="paragraph">
-<p>The code will be copied to the new created folder
-<code>~/4diac-ide</code>.</p>
+<p>+
+<span class="image"><img src="img/CloneGit_EGit_Options.png" alt="Options of EGit"/></span>
+. select <em>Clone a Git repository</em>
+. select <em>Clone URI</em>
+. copy <code>https://github.com/eclipse-4diac/4diac-ide.git</code> into the URI field. All other relevant information fields will be auto-completed.</p>
 </div>
 <div class="paragraph">
-<p>You can also use the git integrated into Eclipse for this process.
-Please refer to the Eclipse EGit documentation on how to clone a repository.</p>
+<p>+
+<span class="image"><img src="img/CloneGit_SourceGitRepositoryWizard.png" alt="Source Git Repository Wizard"/></span>
+. select the branches <code>release</code>, <code>develop</code> and the <code>latest milestone branch</code> (the highest number), named like <code>z.y.x</code>. At the time of writing this documentation, the latest milestone branch was <em>3.3.x</em>.</p>
 </div>
 <div class="paragraph">
-<p>Once you have cloned the repository make sure that you switch to the <code>develop</code> branch.
-The default branch, <code>release</code>, might be out of date and thus incompatible with these setup steps.</p>
+<p>+
+<span class="image"><img src="img/CloneGit_BranchSelection.png" alt="Clone Git Repository Branch Selection"/></span>
+. Make sure that <code>develop</code> is the <strong>initial branch</strong>, name the remote branch <code>upstream</code>, and select <code>clone submodules</code>.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre>$ cd ~/4diac-ide/
-$ git checkout develop</pre>
+<div class="paragraph">
+<p>+
+<span class="image"><img src="img/CloneGit_LocalDestination.png" alt="Local Destination Wizard"/></span></p>
 </div>
+<div class="paragraph">
+<p>If you require further instructions on cloning a repository, you can find them in the Eclipse EGit documentation. More information about contributing can be found in the <a href="https://eclipse.dev/4diac/doc/development/contribute.html">contributing guidelines</a></p>
 </div>
 </div>
 <div class="sect2">
@@ -1230,30 +1272,41 @@ $ git checkout develop</pre>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>change to the Git perspective within Eclipse</p>
+<p>change to the <strong>Git perspective</strong> within Eclipse (if they aren’t already in perspective)</p>
 </li>
 <li>
-<p>right click on the 4diac IDE git repository and select <em>Import Projects…​</em> that opens a dialog.
-Select everything within this dialog except the following ones</p>
+<p>right click on the 4diac IDE Git repository and select <strong>Projects</strong> &gt; <strong>Import Projects…​</strong> that opens a dialog.
+Select everything within this dialog except the following ones:</p>
 <div class="paragraph">
 <p><span class="image"><img src="img/4diacIDE_import.png" alt="4diac IDE not imported folders"/></span></p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The first part of the path — in this case, <em>4diac-ide_ECC</em> — might have a different name on your system. It displays the name of the folder where the cloned repository is located.
+</td>
+</tr>
+</tbody></table>
+</div>
 </li>
 <li>
-<p>Wait till Eclipse finished building the project (look at the progress bar at the right bottom corner of the Eclipse main window)</p>
+<p>Wait till Eclipse finished building the project (look at the progress bar at the right bottom corner of the Eclipse main window).</p>
 </li>
 <li>
-<p>If you have a JRE &gt; 21 installed, you need to make sure the compiler compliance level is set to JDK version 21 in order for the build to succeed.
-Go to Window → Preferences. Search for &#34;Compiler&#34; and in the &#34;JDK Compliance&#34; section, set &#34;Compiler compliance level&#34; to 21.
-If this step has not been completed properly the &#34;Problems&#34; view will be populated with &#34;XText&#34; errors.</p>
+<p>Make sure the <strong>compiler compliance level</strong> is set to the current JDK version, see Section <a href="#devEnvironment">4diac IDE requires</a> in order for the build to succeed. Go to <strong>Window</strong> &gt; <strong>Preferences</strong>. Search for &#34;Compiler&#34; and in the &#34;JDK Compliance&#34; section, set &#34;Compiler compliance level&#34; to the current version.
+If this step has not been completed properly the &#34;Problems&#34; view will be populated with &#34;XText&#34; errors. If you don’t see this view, select <strong>Window</strong> &gt; <strong>Show View</strong> &gt; <strong>Other</strong> &gt; <strong>General</strong> &gt; <strong>Problems</strong>.</p>
 </li>
 <li>
-<p>Check problems view for errors.
+<p>Check <strong>problems view</strong> for errors.
 If you get <span class="specificText">API Baseline</span> not set errors you need to perform the following steps:</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>Open the Eclipse preferences: <span class="menu4diac">Window → Preferences</span></p>
+<p>Open the Eclipse preferences: <strong>Window</strong> &gt; <strong>Preferences</strong></p>
 </li>
 <li>
 <p>Enter API in the top left search field.
@@ -1443,7 +1496,7 @@ Then the necessary steps for generating binary 4diac IDE packages are:</p>
 <p>Go to the root project <code>org.eclipse.fordiac.ide</code> and right-click on the pom.xml</p>
 </li>
 <li>
-<p>Invoke the <span class="menu4diac">Run As → Maven Install</span>.</p>
+<p>Invoke the <strong>Run As</strong> &gt; <strong>Maven Install</strong>.</p>
 </li>
 <li>
 <p>After a successful build you will find the output in <code>plugins/org.eclipse.fordiac.ide.product/target/products</code> directory.</p>
@@ -2214,7 +2267,7 @@ When running UI tests directly from an IDE (e.g. Eclipse) on macOS, you must man
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1788984595"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1789025561"></script>
   
 
   

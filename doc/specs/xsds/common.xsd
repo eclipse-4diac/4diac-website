@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2026 Johannes Kepler University Linz
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+
+  Contributors:
+    Alois Zoitl - initial API and implementation and/or initial documentation
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="Identifier">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[_a-zA-Z][a-zA-Z0-9]+(_[a-zA-Z0-9]+)*|[_a-zA-Z]"/>
+  </xs:restriction>
+</xs:simpleType>
+
+
+<xs:simpleType name="PackageName">
+  <xs:restriction base="xs:string">
+    <!-- Regex from Identifier needs to be duplicated as XSD can not refer to it -->
+    <xs:pattern value="([_a-zA-Z][a-zA-Z0-9]+(_[a-zA-Z0-9]+)*|[_a-zA-Z])(::([_a-zA-Z][a-zA-Z0-9]+(_[a-zA-Z0-9]+)*|[_a-zA-Z]))*"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="ImportDeclaration">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="([_a-zA-Z][a-zA-Z0-9]+(_[a-zA-Z0-9]+)*|[_a-zA-Z])(::([_a-zA-Z][a-zA-Z0-9]+(_[a-zA-Z0-9]+)*|[_a-zA-Z]))*(::\*)?"/>
+  </xs:restriction>
+</xs:simpleType>
+
+
+<xs:complexType name="LibraryElement"  abstract="true">
+  <xs:sequence>
+    <xs:element name="Identification" type="Identification" minOccurs="0"/>
+    <xs:element name="VersionInfo"    type="VersionInfo"    minOccurs="1" maxOccurs="unbounded"/>
+    <xs:element name="CompilerInfo"   type="CompilerInfo"   minOccurs="0"/>
+  </xs:sequence>
+  <xs:attributeGroup ref="NameCommentAttributes"/>
+</xs:complexType>
+
+<xs:complexType name="Identification">
+  <xs:attribute name="Standard"          type="xs:string" use="optional"/>
+  <xs:attribute name="Classification"    type="xs:string" use="optional"/>
+  <xs:attribute name="ApplicationDomain" type="xs:string" use="optional"/>
+  <xs:attribute name="Function"          type="xs:string" use="optional"/>
+  <xs:attribute name="Type"              type="xs:string" use="optional"/>
+  <xs:attribute name="Description"       type="xs:string" use="optional"/>
+</xs:complexType>
+
+<xs:complexType name="VersionInfo">
+  <xs:attribute name="Organization" type="xs:string"        use="required"/>
+  <xs:attribute name="Version"      type="VersionValueType" use="required"/>
+  <xs:attribute name="Author"       type="xs:string"        use="required"/>
+  <xs:attribute name="Date"         type="xs:string"        use="required"/>
+  <xs:attribute name="Remarks"      type="xs:string"        use="optional"/>
+</xs:complexType>
+
+<xs:complexType name="CompilerInfo">
+  <xs:sequence>
+    <xs:element name="Import" type="Import"  minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+  <xs:attribute name="packageName" type="PackageName" use="optional"/>
+  <xs:attribute name="header"      type="xs:string"   use="optional"/>
+  <xs:attribute name="classdef"    type="xs:string"   use="optional"/>
+</xs:complexType>
+
+<xs:complexType name="Import">
+  <xs:attribute name="declaration" type="ImportDeclaration" use="required"/>
+</xs:complexType>
+
+<xs:simpleType name="VersionValueType">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[0-9]{1,2}\.[0-9]{1,2}[a-zA-Z]?"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name='Attribute'>
+  <xs:simpleContent>
+    <xs:extension base="xs:string">  <!-- Attributes with Type="CDATA" may have string content instead of value -->
+      <xs:attribute name="Name"    type="PackageName" use="required"/> <!-- For references to attribute declarations full qualified type name may be used -->
+      <xs:attribute name="Type"    type="PackageName" use="optional"/> <!-- For references to attribute declarations type may be omitted -->
+      <xs:attribute name='Value'   type='xs:string'   use='optional'/> <!-- Only optional for attributes with Type="CDATA" and string child content -->
+      <xs:attribute name="Comment" type="xs:string"   use="optional"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<xs:group name="AttributeGroup">
+  <xs:sequence>
+    <xs:element name="Attribute" type="Attribute" minOccurs="0" maxOccurs="unbounded"/>
+  </xs:sequence>
+</xs:group>
+
+<xs:attributeGroup name="NameCommentAttributes">
+  <xs:attribute name="Name"    type="Identifier" use="required"/>
+  <xs:attribute name="Comment" type="xs:string"  use="optional"/>
+</xs:attributeGroup>
+
+<xs:attributeGroup name="NameTypeCommentAttributes">
+  <xs:attribute name="Type" type="PackageName" use="required"/>
+  <xs:attributeGroup ref="NameCommentAttributes"/>
+</xs:attributeGroup>
+
+<xs:simpleType name="Coordinate">
+  <xs:restriction base="xs:decimal">
+    <xs:fractionDigits value="2"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:attributeGroup name="PositionAttributes">
+  <xs:attribute name="x" type="Coordinate" use="optional"/>
+  <xs:attribute name="y" type="Coordinate" use="optional"/>
+</xs:attributeGroup>
+
+</xs:schema>

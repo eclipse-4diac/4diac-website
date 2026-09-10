@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2026 Johannes Kepler University Linz
+
+  This program and the accompanying materials are made available under the
+  terms of the Eclipse Public License 2.0 which is available at
+  http://www.eclipse.org/legal/epl-2.0.
+
+  SPDX-License-Identifier: EPL-2.0
+
+  Contributors:
+    Alois Zoitl - initial API and implementation and/or initial documentation
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:include schemaLocation="common.xsd"/>
+
+<xs:element name="DataType">
+  <xs:complexType>
+    <xs:complexContent>
+      <xs:extension base="LibraryElement">
+        <xs:sequence>
+          <xs:choice>
+            <xs:element ref="DirectlyDerivedType"/>
+            <xs:element ref="EnumeratedType"/>
+            <xs:element ref="SubrangeType"/>
+            <xs:element ref="ArrayType"/>
+            <xs:element ref="StructuredType"/>
+          </xs:choice>
+          <xs:group ref="AttributeGroup"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="UserDefinedDataType"  abstract="true">
+  <xs:attribute name="InitialValue" type="xs:string" use="optional"/>
+  <xs:attribute name="Comment"      type="xs:string" use="optional"/>
+</xs:complexType>
+
+<xs:element name="DirectlyDerivedType" type="DirectlyDerivedType"/>
+<xs:complexType name="DirectlyDerivedType">
+  <xs:complexContent>
+    <xs:extension base="UserDefinedDataType">
+        <xs:attribute name="BaseType" type="PackageName" use="required"/>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+<xs:element name="EnumeratedType" type="EnumeratedType"/>
+<xs:complexType name="EnumeratedType">
+  <xs:complexContent>
+    <xs:extension base="UserDefinedDataType">
+      <xs:sequence>
+        <xs:element name="EnumeratedValue" type="EnumeratedValue" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+<xs:element name="SubrangeType" type="SubrangeType"/>
+<xs:complexType name="SubrangeType">
+  <xs:complexContent>
+    <xs:extension base="UserDefinedDataType">
+      <xs:sequence>
+        <xs:element name="Subrange" type="Subrange"/>
+      </xs:sequence>
+      <xs:attribute name="BaseType" type="SubrangeBaseType" use="required"/>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+<xs:element name="ArrayType" type="ArrayType"/>
+<xs:complexType name="ArrayType">
+  <xs:complexContent>
+    <xs:extension base="UserDefinedDataType">
+      <xs:sequence>
+        <xs:element name="Subrange" type="Subrange" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="BaseType" type="PackageName" use="required"/>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+<xs:element name="StructuredType" type="StructuredType"/>
+<xs:complexType name="StructuredType">
+  <xs:choice maxOccurs="unbounded">
+   <xs:element ref="VarDeclaration"/>
+   <xs:element ref="SubrangeVarDeclaration"/>
+  </xs:choice>
+  <xs:attribute name="Comment" type="xs:string" use="optional"/>
+</xs:complexType>
+
+<xs:complexType name="EnumeratedValue">
+  <xs:attributeGroup ref="NameCommentAttributes"/>
+</xs:complexType>
+
+<xs:complexType name="Subrange">
+  <xs:attribute name="LowerLimit" type="xs:integer" use="required"/>
+  <xs:attribute name="UpperLimit" type="xs:integer" use="required"/>
+</xs:complexType>
+
+<xs:element name="VarDeclaration" type="VarDeclaration"/>
+<xs:complexType name="VarDeclaration">
+  <xs:attributeGroup ref="NameTypeCommentAttributes"/>
+  <xs:attribute name="ArraySize"    type="xs:string"   use="optional"/>
+  <xs:attribute name="InitialValue" type="xs:string"   use="optional"/>
+</xs:complexType>
+
+<xs:element name="SubrangeVarDeclaration" type="SubrangeVarDeclaration"/>
+<xs:complexType name="SubrangeVarDeclaration">
+  <xs:complexContent>
+    <xs:extension base="UserDefinedDataType">
+      <xs:sequence>
+        <xs:element name="Subrange" type="Subrange" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="Identifier"       use="required"/>
+      <xs:attribute name="Type" type="SubrangeBaseType" use="required"/>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+
+<xs:simpleType name="SubrangeBaseType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="SINT"/>
+    <xs:enumeration value="INT"/>
+    <xs:enumeration value="DINT"/>
+    <xs:enumeration value="LINT"/>
+    <xs:enumeration value="USINT"/>
+    <xs:enumeration value="UINT"/>
+    <xs:enumeration value="UDINT"/>
+    <xs:enumeration value="ULINT"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

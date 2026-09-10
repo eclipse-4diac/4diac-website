@@ -41,9 +41,9 @@
 <link rel="canonical" href="https://eclipse.dev/4diac/doc/tutorials/replaydebugger.html" />
 
 
-<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1788984633">
-<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1788984633">
-<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1788984633">
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1789025598">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1789025598">
+<link rel="stylesheet" href="/4diac/css/4diac_doc.css?v=1789025598">
 <script>
 	
 		var tableClasses = "table";
@@ -1132,49 +1132,7 @@
 </div>
 <div class="paragraph">
 <p>To avoid the overhead of tracing all this information, 4diac FORTE has been extended to support a replay debugging mode. In this mode, only the output events of Service Function Blocks and their related data are traced.
-In a later stage, the rest of the information is generated using a replay algorithm.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_current_status"><a id="CurrentStatus"></a> Current Status</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The replay algorithm is currently implemented in the development branch of <a href="https://github.com/eclipse-4diac/4diac-forte/blob/develop/src/stdfblib/ita/replay">4diac FORTE</a>.</p>
-</div>
-<div class="paragraph">
-<p>The code is structured so that the device replayer contains one resource replayer for each resource present in the device.
-The algorithm receives the output events of the Service Interface Function Blocks and their related data. Then, the original run can be replayed by advancing one event at a time.
-While replaying, any information to be extracted from the device can be directly retrieved from the resource or device instances used to create the replayer.</p>
-</div>
-<div class="sect2">
-<h3 id="_4diac_forte_interface"><a id="Interface"></a> 4diac FORTE Interface</h3>
-<div class="paragraph">
-<p>The replay debugger can be used directly programmatically by instantiating the corresponding class.</p>
-</div>
-<div class="paragraph">
-<p>On top of the replayer, a Replay Device was added, which offers two OPC UA methods: one for loading existing traces from a given path, and another for triggering one event at a time, which returns the last execute event, or empty if it is the last event.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_4diac_ide"><a id="IDE"></a> 4diac IDE</h3>
-<div class="paragraph">
-<p>A Graphical User Interface in 4diac IDE allows using the provided interface by 4diac FORTE. The feature provides a timeline of the events for each resource being replayed. Sliders and buttons allow moving forward and backwards over the sequence of events. The state of the application can be observed as usual by using watches of the desired elements and is reflected on these watches as the user moves over the sequence of events.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_testing"><a id="Testing"></a> Testing</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The replay algorithm was tested by using different scenarios. The scenarios are tested by letting each scenario run first with the original traces (which traces all events), filtering the output events of Service Interface Function Blocks, executing the replay algorithm, and then comparing the results of the original run with the replayed run.</p>
-</div>
-<div class="paragraph">
-<p>The tests are located <a href="https://github.com/eclipse-4diac/4diac-forte/blob/develop/tests/core/trace/replayAlgorithmTest.cpp">here</a>.</p>
-</div>
-<div class="paragraph">
-<p>The used scenarios come from the reference examples, in the <a href="https://github.com/eclipse-4diac/4diac-examples/tree/master/compliance_tests">example repostory</a></p>
+In a later stage, the rest of the information is generated in 4diac IDE using a replay algorithm.</p>
 </div>
 </div>
 </div>
@@ -1202,24 +1160,14 @@ FOLDER must exist before executing the command for the traces to be saved.
 </tr>
 </tbody></table>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_start_4diac_forte_as_a_replay_device"><a id="ReplayDevice"></a> Start 4diac FORTE as a Replay Device</h3>
 <div class="paragraph">
-<p>To later execute the replay algorithm, the Replay Device must be enabled. This is acomplished by compiling 4diac FORTE using the <code>FORTE_REPLAY_DEVICE</code> and <code>FORTE_TRACE_CTF_REPLAY_DEBUGGING</code> flags.
-As OPC UA is used to communicate with the replay device, the OPC UA module must also be properly enabled.</p>
-</div>
-<div class="paragraph">
-<p>One extra step is needed so the traces can be properly processed. In the 4diac FORTE repository, the file <code>src/core/trace/replay_debugging/generated/metadata</code> must be copied into the FOLDER where the traces were saved.</p>
-</div>
-<div class="paragraph">
-<p>Then, start 4diac FORTE with the parameters <code>-d ReplayDevice</code>.</p>
+<p>After the traces are generated, make sure you copy the file from <code>src/core/trace/replay_debugging/generated/metadata</code> into FOLDER.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_start_replay_debugging_in_4diac_ide"><a id="ReplayGUI"></a> Start replay debugging in 4diac IDE</h3>
 <div class="paragraph">
-<p>In 4diac IDE, create a new debug configuration of type Replay Debugging, select the device that you want to replay debug, and set the path to the FOLDER where the traces are stored.</p>
+<p>In 4diac IDE, create a new debug configuration of type Replay Debugging, select the resources in the devices that you want to replay debug, and set the path to the FOLDER where the traces are stored. Whenever you select or deselect a device to be replayed (fully or partially), extra fields appear or disappear to set the trace path and remote configurations for each device.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/replayDebuggingConfigurationTab.png" alt="Example of a Replay Debugging configuration tab"/></span></p>
@@ -1231,21 +1179,65 @@ As OPC UA is used to communicate with the replay device, the OPC UA module must 
 <div class="title">Note</div>
 </td>
 <td class="content">
-Currently only one device can be replayed per configuration.
+The Remote checkbox is used for the replay algorithm present in 4diac FORTE. This feature is deprecated and should not be used.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The trace path can be left empty, which offers the functionality to manually execute the resources by triggering events as you normally do when monitoring a system, without any previous information from traces.
 </td>
 </tr>
 </tbody></table>
 </div>
 <div class="paragraph">
-<p>Start the debug configuration. 4diac IDE will connect to the instance of 4diac FORTE started before, load the traces from the provided path, and generate all the data for replay debugging. Open the Replay Debugging view if not already present (Window → Show View → Other…​ → Other → Replay Debugging).</p>
+<p>Start the debug configuration. 4diac IDE will load the traces from the provided paths and generate all the data for replay debugging. Open the Replay Debugging view if not already present (Window → Show View → Other…​ → Other → Replay Debugging).</p>
 </div>
 <div class="paragraph">
-<p>The view will show a timeline of events for each resource. In the application, toggle the watches you want to observe as usual, and the shown values will change according to the position of the timeslider. Use the buttons to move forward or backward, or just click on the timeline at the desired event number.
-The values that changed at the current event are marked as red.</p>
+<p>The view will show a timeline for each resource. A timeline is a series of steps that occurred while the system was running. Each step represents a new state of the resource and they usually represent a new event being triggered in the resource, but it is not restricted to it. This state of the resource at a given step is seen in the application view, when the watch feature is used as usual. That is, changing the current step in the timeline view will update the state seen in the applicaiton view.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/replayDebuggingApplication.png" alt="View of an application being replayed"/></span></p>
 </div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implementation"><a id="Implementation"></a> Implementation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The replay algorithm is currently implemented in 4diac FORTE and in 4diac IDE. The implementation of 4diac IDE is more advanced and offers many more features. The 4diac FORTE implementation was initially used for testing purposes, but it will be removed in the future. The information that follows refers only to the implementation in 4diac IDE.</p>
+</div>
+<div class="paragraph">
+<p>The code is structured so that the device replayer contains one resource replayer for each resource present in the device.
+The algorithm receives the output events of the Service Interface Function Blocks and their related data. Then, the original run can be replayed by advancing one event at a time.
+While replaying, any information to be extracted from the device can be directly retrieved from the resource or device instances used to create the replayer.</p>
+</div>
+<div class="sect2">
+<h3 id="_4diac_ide"><a id="IDE"></a> 4diac IDE</h3>
+<div class="paragraph">
+<p>A Graphical User Interface in 4diac IDE allows creating debugging sessions for replay debugging. For each session, the devices and resources that are to be debugged are selected together with the traces generated by 4diac FORTE. For each resource, a timeline of events is generated, allowing the user to go through each event of the system, forwards or backwards, with full observability of the complete system.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_testing"><a id="Testing"></a> Testing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The replay algorithm was tested by using different scenarios. The scenarios are tested by letting each scenario run first with the original traces (which traces all events), filtering the output events of Service Interface Function Blocks, executing the replay algorithm, and then comparing the results of the original run with the replayed run.</p>
+</div>
+<div class="paragraph">
+<p>The tests are located <a href="https://github.com/eclipse-4diac/4diac-forte/blob/develop/tests/core/trace/replayAlgorithmTest.cpp">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>The used scenarios come from the reference examples in the <a href="https://github.com/eclipse-4diac/4diac-examples/tree/master/compliance_tests">example repository</a></p>
 </div>
 </div>
 </div>
@@ -1265,7 +1257,7 @@ The values that changed at the current event are marked as red.</p>
 <p><a href="../examples/overview.html">4diac Examples</a></p>
 </div>
 <div class="paragraph">
-<p>If you want to go back to the Where to Start page, we leave you here a fast access</p>
+<p>If you want to go back to the Where to Start page, we leave you here a fast access.</p>
 </div>
 <div class="paragraph">
 <p><a href="../doc_overview.html">Where to Start</a></p>
@@ -2008,7 +2000,7 @@ The values that changed at the current event are marked as red.</p>
   
   <div id="footer-js">
   
-  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1788984638"></script>
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1789025604"></script>
   
 
   

@@ -8,7 +8,27 @@
     <language>en</language>
     <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
-    <lastBuildDate>Fri, 04 Sep 2026 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac 3.3 Released!</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.3-released/</link>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-3.3-released/</guid>
+      <description>&lt;p&gt;This release introduces feature upgrades and optimization across the entire ecosystem, most notably:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;EtherCAT Support:&lt;/strong&gt; Core EtherCAT integration and initial I/O function blocks in 4diac FORTE to expand fieldbus capabilities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Event Flow Analysis &amp;amp; Editing:&lt;/strong&gt; A new Event Sequence view in 4diac IDE to visualize, inspect, and reorder event chains via drag-and-drop.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CI/CD &amp;amp; Project Validation:&lt;/strong&gt; Headless project validation with automated JSON reports alongside project-level OCL rule enforcement.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editor &amp;amp; Workflow Enhancements:&lt;/strong&gt; A multi-page Bulk Editor workflow, Simple FB Event Actions tab, state breakpoints in the ECC editor, multi-device Replay Debugging, and updated Wago / RevolutionPi platform support.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Runtime &amp;amp; OPC UA Refinements:&lt;/strong&gt; Struct member monitoring, improved SecureChannel state reporting, and restructured management command parsing for better runtime security and stability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;explore-the-full-details&#34;&gt;Explore the Full Details&lt;/h3&gt;
+&lt;p&gt;For a complete, in-depth breakdown of every single new feature, validation rule, and dependency upgrade in this version, check out the official details page: &lt;strong&gt;&lt;a href=&#34;https://eclipse.dev/4diac/new-and-noteworthy/3.3/&#34;&gt;Eclipse 4diac 3.3 New and Noteworthy&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac Weekly #102</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-102/</link>
