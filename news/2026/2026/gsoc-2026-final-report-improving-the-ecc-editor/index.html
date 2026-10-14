@@ -1,0 +1,1922 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  
+
+
+
+  
+
+
+<title>GSoC 2026 Final Report: Improving the ECC Editor | The Eclipse Foundation</title>
+<meta property="og:title" content="GSoC 2026 Final Report: Improving the ECC Editor | The Eclipse Foundation" />
+<meta name="twitter:title" content="GSoC 2026 Final Report: Improving the ECC Editor | The Eclipse Foundation" />
+
+<meta name="description" content="Google Summer of Code 2026 final report by Vikash Kumar Sinha, describing improvements to the ECC editor in 4diac IDE, including state placement, transition …">
+<meta property="og:description" content="Google Summer of Code 2026 final report by Vikash Kumar Sinha, describing improvements to the ECC editor in 4diac IDE, including state placement, transition …">
+<meta name="twitter:description" content="Google Summer of Code 2026 final report by Vikash Kumar Sinha, describing improvements to the ECC editor in 4diac IDE, including state placement, transition …">
+<link href='/4diac/img/4diac_favicon.svg' rel='icon' type='image/x-icon'/>
+
+<meta property="og:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:image" content="https://eclipse.dev/4diac/img/4diac_Logo_2024.svg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@eclipsefdn" />
+<meta name="twitter:creator" content="@eclipsefdn" />
+<meta property="og:url" content="https://eclipse.dev/4diac/news/2026/2026/gsoc-2026-final-report-improving-the-ecc-editor/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Eclipse 4diac" />
+<meta name="keywords" content="eclipse, project, plug-ins, plugins, java, ide, swt, refactoring, free java ide, tools, platform, open source, development environment, development, ide">
+
+
+<meta name="generator" content="Hugo 0.144.2">
+
+<link rel="canonical" href="https://eclipse.dev/4diac/news/2026/2026/gsoc-2026-final-report-improving-the-ecc-editor/" />
+
+
+<link rel="stylesheet" href="https://www.eclipse.org/public/css/astro.css?v=1792000986">
+<link rel="stylesheet" href="/4diac/css/4diac_adjustments.css?v=1792000986">
+<script>
+	
+		var tableClasses = "table";
+	
+</script>
+
+
+
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" type="text/css"/>
+
+  
+
+</head>
+<body >
+  
+
+
+
+
+
+
+
+
+<a class="sr-only" href="#content">Skip to main content</a>
+<header class="header-wrapper header-wrapper header-default-bg-img featured-jumbotron-bottom-shape" id="header">
+  
+
+
+
+
+
+<div class="header-toolbar">
+    <div class="container">
+        <div class="header-toolbar-row">
+            <div class="toolbar-btn toolbar-search-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-search" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="Search"
+                >
+                    <i class="fa fa-search fa-lg" aria-role="none"></i>
+                </button>
+                <div 
+                    class="toolbar-search-bar-wrapper dropdown-menu dropdown-menu-right"
+                    aria-labelledby="toolbar-search"
+                >
+                      <form action="https://www.eclipse.org/home/search" method="get">
+                    <div class="search-bar">
+                        <input class="search-bar-input" name="q" placeholder="Search" />
+                        <button>
+                            <i class="fa fa-search" type="submit"></i>
+                        </button>
+                    </div>
+                      </form>
+                </div>
+            </div>
+            <div class="toolbar-btn toolbar-user-menu-btn dropdown">
+                <button 
+                    class="dropdown-toggle" 
+                    id="toolbar-user-menu" 
+                    type="button" 
+                    data-toggle="dropdown"
+                    tabindex="0"
+                    aria-label="User Menu"
+                >
+                    <i class="fa fa-user fa-lg"></i>
+                </button>
+                <ul class="toolbar-user-menu dropdown-menu dropdown-menu-right text-center"
+                    aria-labelledby="toolbar-user-menu">
+                    <li>
+                        <a href="https://accounts.eclipse.org/user">
+                            <i class="fa fa-user"></i>
+                            View My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://accounts.eclipse.org/user/edit">
+                            <i class="fa fa-edit"></i>
+                            Edit My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a class="toolbar-manage-cookies">
+                            <i class="fa fa-wrench"></i>
+                            Manage Cookies
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="header-navbar-wrapper">
+    <div class="container">
+        <div class="header-navbar">
+            <div class="header-navbar-brand">
+                <a class="logo-wrapper" href="/4diac/" title="Eclipse 4diac">
+                    <img src="/4diac/img/4diac_Logo_2024.svg" alt="" width="55%" />
+                </a>
+            </div>
+            
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="header-navbar-nav">
+    <ul class="header-navbar-nav-links">
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="fordiac-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Eclipse 4diac
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/news/" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    News
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <button 
+                        class="nav-link-js btn-link link-unstyled" 
+                        type="button"
+                        aria-expanded="true" 
+                        data-menu-target="events-menu"
+                        style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;"
+                    >
+                        Events
+                    </button>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/support/" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Support
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/contribute/" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Contribute
+                    </a>
+                
+            </li>
+        
+            
+               
+            
+            
+
+            <li class="navbar-nav-links-item ">
+
+                
+                    <a class="nav-link-js btn-link link-unstyled" href="/4diac/doc/" style = "font-size: large; color: rgba(1,34,105,1.0); font-weight: bold;">
+                        
+                    Documentation
+                    </a>
+                
+            </li>
+        
+    </ul>
+</nav>
+
+
+
+
+
+            <div class="header-navbar-end">
+                
+                   <a 
+                  class="header-navbar-end-download-btn btn btn-primary" 
+                  href="/4diac/download/" 
+                   >
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download
+                  </a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+                    <i class="fa fa-bars fa-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+
+
+
+    
+
+
+
+
+<nav class="mobile-menu hidden" aria-expanded="false">
+    <ul>
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="fordiac-menu">
+      <span>Eclipse 4diac</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="fordiac-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-projects-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Explore Eclipse 4diac</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-projects-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_ide/">
+                      4diac IDE
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_forte/">
+                      4diac FORTE
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_fbe/">
+                      4diac FBE
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_lib/">
+                      4diac LIB
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/4diac_sys/">
+                      4diac SYS
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/new-and-noteworthy/">
+                      New &amp; Noteworthy
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="fordiac-community-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Our Community</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="fordiac-community-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/team/">
+                      Committers
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://accounts.eclipse.org/mailing-list/4diac-dev">
+                      Mailing List
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org">
+                      Matrix Chat
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/support/#discussions">
+                      Q&amp;A / Discussions
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="https://github.com/eclipse-4diac">
+                      Report an Issue
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/news/">News</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+              
+            
+
+            
+            
+              
+                
+              
+            
+              
+                
+              
+            
+              
+                
+              
+            
+            
+            
+
+            
+              
+  <li class="mobile-menu-dropdown">
+    <a class="mobile-menu-item mobile-menu-dropdown-toggle" data-target="events-menu">
+      <span>Events</span>
+      <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </a>
+    <div class="mobile-menu-sub-menu-wrapper">
+      <ul class="mobile-menu-sub-menu hidden" id="events-menu">
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-winterschools-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Winter Schools</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-winterschools-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/4diacwinterschool/">
+                      1st 4days of Eclipse 4diac Winter School, 2025
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-community-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>Community Events</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-community-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/virt-community/">
+                      Eclipse 4diac Virtual Community Meetings
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_4days_of_4diac/">
+                      4days of 4diac, 2019
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/workshops/2019_eclipse_insight/">
+                      Eclipse Insight: Cross Domain Engineering, 2019
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+          <li class="mobile-menu-dropdown">
+            <a 
+              data-target="events-etfa_workshops-sub-menu"
+              class="mobile-menu-item mobile-menu-dropdown-toggle" 
+              aria-expanded="false"
+            >
+              <span>ETFA Workshops</span>
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="mobile-menu-sub-menu-wrapper">
+              <ul 
+                class="mobile-menu-sub-menu mobile-menu-links-menu hidden"
+                id="events-etfa_workshops-sub-menu"
+              >
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2016/">
+                      7th 4diac Users&#39; Workshop @ ETFA 2016
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2015/">
+                      6th 4diac Users&#39; Workshop @ ETFA 2015
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2014/">
+                      5th 4diac Users&#39; Workshop @ ETFA 2014
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2013/">
+                      4th 4diac Users&#39; Workshop @ ETFA 2013
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2012/">
+                      3rd 4diac Users&#39; Workshop @ ETFA 2012
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2011/">
+                      2nd 4diac Users&#39; Workshop @ ETFA 2011
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a class="mobile-menu-item" href="/4diac/events/etfa/etfa2010/">
+                      1st 4diac Users&#39; Workshop @ ETFA 2010
+                    </a>
+                  </li>
+                
+              </ul>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </li>
+ 
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/support/">Support</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/contribute/">Contribute</a>
+  </li>
+
+            
+        
+            
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+
+            
+              
+  <li>
+    <a class="mobile-menu-item" href="/4diac/doc/">Documentation</a>
+  </li>
+
+            
+        
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="eclipsefdn-mega-menu">
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="fordiac-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Eclipse 4diac</p>
+                <p class="mega-menu-submenu-featured-story-text">      Eclipse 4diac™ provides an open source infrastructure
+      for distributed industrial process measurement and control systems
+      based on the IEC 61499 standard.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Explore Eclipse 4diac</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_ide/">4diac IDE</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_forte/">4diac FORTE</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_fbe/">4diac FBE</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_lib/">4diac LIB</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/4diac_sys/">4diac SYS</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/new-and-noteworthy/">New &amp; Noteworthy</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Our Community</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/team/">Committers</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://accounts.eclipse.org/mailing-list/4diac-dev">Mailing List</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org">Matrix Chat</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/support/#discussions">Q&amp;A / Discussions</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://github.com/eclipse-4diac">Report an Issue</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="news-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="events-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Events</p>
+                <p class="mega-menu-submenu-featured-story-text">    Eclipse 4diac™ has been founded to support research activities and industrial adoption of distributed automation systems. 
+    Over time 4diac grew with new versions, improvements and new features for the modeling of distributed automation systems. 
+    Moreover, a special focus was the performance improvement of the runtime system. Even more important, 4diac as an 
+    IEC 61499-compliant distributed control environment for industrial and research applications has proven 
+    to be a stable basis for further research towards the next generation of distributed automation and control systems based 
+    on open standards. To get in contact with its users and share results and future plans 4diac participates at different events, 
+    which are collected here:
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Winter Schools</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/4diacwinterschool/">1st 4days of Eclipse 4diac Winter School, 2025</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">Community Events</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/virt-community/">Eclipse 4diac Virtual Community Meetings</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_4days_of_4diac/">4days of 4diac, 2019</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/workshops/2019_eclipse_insight/">Eclipse Insight: Cross Domain Engineering, 2019</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <div class="mega-menu-submenu-links">
+                        <p class="menu-heading">ETFA Workshops</p>
+                        <ul>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2016/">7th 4diac Users&#39; Workshop @ ETFA 2016</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2015/">6th 4diac Users&#39; Workshop @ ETFA 2015</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2014/">5th 4diac Users&#39; Workshop @ ETFA 2014</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2013/">4th 4diac Users&#39; Workshop @ ETFA 2013</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2012/">3rd 4diac Users&#39; Workshop @ ETFA 2012</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2011/">2nd 4diac Users&#39; Workshop @ ETFA 2011</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="/4diac/events/etfa/etfa2010/">1st 4diac Users&#39; Workshop @ ETFA 2010</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="support-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Support</p>
+                <p class="mega-menu-submenu-featured-story-text">    Support for using Eclipse 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="contribute-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Contribute</p>
+                <p class="mega-menu-submenu-featured-story-text">    Contribute to Eclipse 4diac.
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+        
+        
+
+        <div class="mega-menu-submenu container hidden" data-menu-id="documentation-menu">
+            <div class="mega-menu-submenu-featured-story">
+
+              
+                <p class="mega-menu-submenu-featured-story-heading">Documentation</p>
+                <p class="mega-menu-submenu-featured-story-text">    Documentation for Eclipse 4diac. 
+    </p>
+              
+
+              
+
+            </div>
+            <div class="mega-menu-submenu-links-section">
+                
+            </div>
+            <div class="mega-menu-submenu-ad-wrapper">
+              
+            </div>
+        </div>
+    
+</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</header>
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<main>
+  <div class="container padding-bottom-30">
+    
+      <div class="row">
+        <div class="col-md-18">
+    
+    
+      
+
+
+
+
+
+
+
+
+
+<div class="default-breadcrumbs hidden-print" id="breadcrumb">
+  <div class="">
+    <div class="row">
+      <div class="col-sm-24">
+        <ol aria-label="Breadcrumb" class="breadcrumb">
+          
+            
+              
+            
+              
+            
+              
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/">Eclipse 4diac</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/news/">Eclipse 4diac News</a>
+            </li>
+          
+            
+            <li >
+              <a href="https://eclipse.dev/4diac/news/2026/">2026</a>
+            </li>
+          
+            
+            <li  class="active" aria-current="page">
+              <a href="https://eclipse.dev/4diac/news/2026/2026/gsoc-2026-final-report-improving-the-ecc-editor/">GSoC 2026 Final Report: Improving the ECC Editor</a>
+            </li>
+          
+          </ol>
+          
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+    
+      <h1>
+        
+          GSoC 2026 Final Report: Improving the ECC Editor
+        
+      </h1>
+    
+
+
+
+  
+
+<div class="news-metadata">
+  <time datetime="2026-10-14">Wednesday, Oct 14, 2026</time>
+</div>
+  
+
+
+  <p>Google Summer of Code 2026 final report by Vikash Kumar Sinha, describing improvements to the ECC editor in 4diac IDE, including state placement, transition routing, connection anchors, breakpoint support, and bendpoint preservation during state movement.</p> 
+
+
+<h2 id="project-information">Project Information</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Details</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Project Name</strong></td>
+          <td>Improving the ECC Editor in Eclipse 4diac IDE</td>
+      </tr>
+      <tr>
+          <td><strong>Organization</strong></td>
+          <td>Eclipse Foundation</td>
+      </tr>
+      <tr>
+          <td><strong>Project</strong></td>
+          <td>Eclipse 4diac IDE</td>
+      </tr>
+      <tr>
+          <td><strong>Repository</strong></td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide">eclipse-4diac/4diac-ide</a></td>
+      </tr>
+      <tr>
+          <td><strong>Repository Description</strong></td>
+          <td>Eclipse 4diac IDE is an open-source engineering tool for IEC 61499-based distributed automation systems.</td>
+      </tr>
+      <tr>
+          <td><strong>Contributor</strong></td>
+          <td>Vikash Kumar Sinha</td>
+      </tr>
+      <tr>
+          <td><strong>GitHub Username</strong></td>
+          <td><a href="https://github.com/vikash1703">vikash1703</a></td>
+      </tr>
+      <tr>
+          <td><strong>Mentor</strong></td>
+          <td>Alois Zoitl</td>
+      </tr>
+      <tr>
+          <td><strong>GSoC Year</strong></td>
+          <td>2026</td>
+      </tr>
+      <tr>
+          <td><strong>Primary Technologies</strong></td>
+          <td>Java, Eclipse RCP, GEF, IEC 61499 Model</td>
+      </tr>
+      <tr>
+          <td><strong>Main Module</strong></td>
+          <td>ECC Editor</td>
+      </tr>
+      <tr>
+          <td><strong>Merged Pull Requests</strong></td>
+          <td>16</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h1 id="1-executive-summary">1. Executive Summary</h1>
+<p>During my Google Summer of Code project with the Eclipse Foundation, I worked on improving the Execution Control Chart (ECC) editor of Eclipse 4diac IDE.</p>
+<p>Eclipse 4diac IDE is an open-source engineering environment for developing IEC 61499-based distributed automation systems. The ECC editor is an important component of the IDE because it allows users to visually design execution control logic using states and transitions.</p>
+<p>My work focused on improving the reliability, usability, maintainability, performance, and model consistency of the ECC editor.</p>
+<p>The major areas of work included:</p>
+<ul>
+<li>Correcting ECC state placement under different zoom levels</li>
+<li>Separating model coordinates from screen coordinates</li>
+<li>Removing unnecessary UI dependencies from model commands</li>
+<li>Improving transition routing</li>
+<li>Implementing connection anchors for ECC states</li>
+<li>Fixing transition spline rendering</li>
+<li>Improving edge-direction calculation</li>
+<li>Fixing self-loop transitions</li>
+<li>Adding ECC debugging breakpoint support</li>
+<li>Optimizing connection-anchor calculations</li>
+<li>Adding inline ECC state creation</li>
+<li>Preserving transition bendpoints when a state is moved</li>
+</ul>
+<p>During the project, 16 of my pull requests were merged into the Eclipse 4diac IDE repository. These contributions improved both the internal architecture and the user-facing behavior of the ECC editor.</p>
+<hr>
+<h1 id="2-summary-of-contributions">2. Summary of Contributions</h1>
+<p>The following 16 pull requests were merged during the project:</p>
+<ol>
+<li>PR #2189 — Clean CreateECStateCommand to remove screen coordinate dependency</li>
+<li>PR #2209 — Fix EC state placement under zoom</li>
+<li>PR #2226 — Fix zoom-aware coordinate translation in NewStateAction</li>
+<li>PR #2269 — Remove UI dependency from CreateTransitionCommand</li>
+<li>PR #2369 — Implement ECStateConnectionAnchor</li>
+<li>PR #2421 — Fix ECC transition splines</li>
+<li>PR #2430 — Refactor edge direction</li>
+<li>PR #2445 — Fix edge direction aspect ratio</li>
+<li>PR #2495 — Fix ECC new router</li>
+<li>PR #2526 — Fix ECC self-loop</li>
+<li>PR #2548 — Fix bug 2546</li>
+<li>PR #2568 — Implement EvaluatorModelBreakpoint for ECC debugging</li>
+<li>PR #2573 — Add support for ECC state model breakpoints</li>
+<li>PR #2611 — Fix ECC anchor stream optimization</li>
+<li>PR #2884 — Create ECC state on commit of the inline editor</li>
+<li>PR #2897 — Adjust transition bendpoints when a state is moved</li>
+</ol>
+<hr>
+<h1 id="3-detailed-contributions">3. Detailed Contributions</h1>
+<h2 id="31-pr-2189--clean-createecstatecommand-to-remove-screen-coordinate-dependency">3.1 PR #2189 — Clean CreateECStateCommand to remove screen coordinate dependency</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2189">PR #2189</a></p>
+<p>This pull request removed screen-coordinate conversion from <strong>CreateECStateCommand</strong>.</p>
+<p>The command was changed to accept a Position object directly and operate using IEC 61499 model coordinates. This improved the separation between the graphical user interface and the model layer.</p>
+<p>The change resulted in:</p>
+<ul>
+<li>A cleaner command interface</li>
+<li>Better separation between model logic and UI logic</li>
+<li>Reduced dependency on graphical viewer objects</li>
+<li>More predictable state creation behavior</li>
+<li>Better support for testing and reuse</li>
+</ul>
+<h2 id="32-pr-2209--fix-ec-state-placement-under-zoom">3.2 PR #2209 — Fix EC state placement under zoom</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2209">PR #2209</a></p>
+<p>This pull request fixed incorrect ECC state placement when creating a state while the editor was zoomed.</p>
+<p>The mouse location was previously used without properly compensating for the current zoom factor. The coordinate calculation was updated to account for zoom before creating the state.</p>
+<p>The behavior was tested under:</p>
+<ul>
+<li>100% zoom</li>
+<li>Zoomed-in views</li>
+<li>Zoomed-out views</li>
+<li>State creation followed by transition creation</li>
+</ul>
+<p>This made state creation more accurate and predictable.</p>
+<h2 id="33-pr-2226--fix-zoom-aware-coordinate-translation-in-newstateaction">3.3 PR #2226 — Fix zoom-aware coordinate translation in NewStateAction</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2226">PR #2226</a></p>
+<p>This pull request improved coordinate translation when creating an ECC state through the right-click context menu.</p>
+<p>The previous implementation manually calculated coordinates using viewport offsets and zoom factors. The implementation was changed to use GEF&rsquo;s built-in <strong>translateToRelative()</strong> method.</p>
+<p>This correctly handles:</p>
+<ul>
+<li>Zoom level</li>
+<li>Viewport offsets</li>
+<li>Scrolling</li>
+<li>Figure-relative coordinates</li>
+<li>Diagram translation</li>
+</ul>
+<p>The change reduced duplicated coordinate-transformation logic and made the implementation better integrated with Eclipse GEF.</p>
+<h2 id="34-pr-2269--remove-ui-dependency-from-createtransitioncommand">3.4 PR #2269 — Remove UI dependency from CreateTransitionCommand</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2269">PR #2269</a></p>
+<p>This pull request removed UI and screen-coordinate dependencies from <strong>CreateTransitionCommand</strong>.</p>
+<p>The following fields and methods were removed:</p>
+<ul>
+<li>sourceLocation</li>
+<li>destLocation</li>
+<li>Viewer references</li>
+<li>setSourceLocation()</li>
+<li>setDestinationLocation()</li>
+<li>setViewer()</li>
+</ul>
+<p>The transition bendpoint calculation now uses the model positions of the source and destination states directly.</p>
+<p>Related callers were updated in:</p>
+<ul>
+<li>TransitionNodeEditPolicy</li>
+<li>ReconnectTransitionCommand</li>
+<li>ECCEditorEditDomain</li>
+</ul>
+<p>This improved the separation between model commands and graphical editor state.</p>
+<h2 id="35-pr-2369--implement-ecstateconnectionanchor">3.5 PR #2369 — Implement ECStateConnectionAnchor</h2>
+<p>
+
+<img 
+    src="/4diac/img/news/Image-5.jpeg" 
+    alt="Transition anchors in the ECC editor" 
+    style="
+        max-width: 70%; 
+        max-height: ; 
+        margin: ; 
+        margin-top: ; 
+        margin-left: ; 
+        margin-right: ;
+        margin-bottom: ; 
+        display: ;" 
+    class=""
+>
+
+ <br>
+ 
+</p>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2369">PR #2369</a></p>
+<p>This pull request implemented a dedicated connection-anchor mechanism for ECC states.</p>
+<p>Connection anchors determine where transitions connect to states. Correct anchor calculation is important for:</p>
+<ul>
+<li>Clean transition paths</li>
+<li>Correct transition direction</li>
+<li>Avoiding overlapping connections</li>
+<li>Supporting self-loops</li>
+<li>Supporting spline rendering</li>
+<li>Improving routing stability</li>
+</ul>
+<p>The implementation considered state boundaries, transition direction, source and target positions, and ECC routing requirements.</p>
+<h2 id="36-pr-2421--fix-ecc-transition-splines">3.6 PR #2421 — Fix ECC transition splines</h2>
+<p>
+
+<img 
+    src="/4diac/img/news/Image-4.jpeg" 
+    alt="Spline transitions in the ECC editor" 
+    style="
+        max-width: 70%; 
+        max-height: ; 
+        margin: ; 
+        margin-top: ; 
+        margin-left: ; 
+        margin-right: ;
+        margin-bottom: ; 
+        display: ;" 
+    class=""
+>
+
+ <br>
+ 
+</p>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2421">PR #2421</a></p>
+<p>This pull request fixed problems related to ECC transition spline rendering and routing.</p>
+<p>The changes improved:</p>
+<ul>
+<li>Curve generation</li>
+<li>Transition path layout</li>
+<li>Connection behavior</li>
+<li>Visual consistency</li>
+<li>Interaction with state geometry</li>
+</ul>
+<p>The resulting ECC diagrams became easier to read, particularly when multiple transitions were present.</p>
+<h2 id="37-pr-2430--refactor-edge-direction">3.7 PR #2430 — Refactor edge direction</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2430">PR #2430</a></p>
+<p>This pull request refactored the logic used to determine edge direction.</p>
+<p>Edge direction is important for selecting appropriate connection points and routing paths. The refactoring made direction handling more consistent and reduced duplicated logic.</p>
+<p>This created a cleaner foundation for:</p>
+<ul>
+<li>Connection-anchor calculations</li>
+<li>Transition routing</li>
+<li>Aspect-ratio handling</li>
+<li>Spline generation</li>
+<li>Direction-dependent rendering</li>
+</ul>
+<h2 id="38-pr-2445--fix-edge-direction-aspect-ratio">3.8 PR #2445 — Fix edge direction aspect ratio</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2445">PR #2445</a></p>
+<p>This pull request fixed edge-direction calculations involving aspect ratio.</p>
+<p>When the horizontal and vertical distances between states were significantly different, the direction calculation could select an inappropriate edge. The updated implementation considers the relative aspect ratio between states.</p>
+<p>This improved connection placement for:</p>
+<ul>
+<li>Mostly horizontal transitions</li>
+<li>Mostly vertical transitions</li>
+<li>Diagonal transitions</li>
+<li>States positioned at different distances</li>
+</ul>
+<h2 id="39-pr-2495--fix-ecc-new-router">3.9 PR #2495 — Fix ECC new router</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2495">PR #2495</a></p>
+<p>This pull request fixed routing problems in the new ECC transition router.</p>
+<p>The changes improved the handling of:</p>
+<ul>
+<li>State locations</li>
+<li>Connection anchors</li>
+<li>Edge directions</li>
+<li>Transition geometry</li>
+<li>ECC diagram layout</li>
+</ul>
+<p>The router now produces more stable and understandable transition paths, especially in diagrams containing multiple states and transitions.</p>
+<h2 id="310-pr-2526--fix-ecc-self-loop">3.10 PR #2526 — Fix ECC self-loop</h2>
+<p>
+
+<img 
+    src="/4diac/img/news/Image-1.jpeg" 
+    alt="Self-loop transition in the ECC editor" 
+    style="
+        max-width: 40%; 
+        max-height: ; 
+        margin: ; 
+        margin-top: ; 
+        margin-left: ; 
+        margin-right: ;
+        margin-bottom: ; 
+        display: ;" 
+    class=""
+>
+
+ <br>
+ 
+</p>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2526">PR #2526</a></p>
+<p>This pull request fixed the handling and rendering of ECC self-loop transitions.</p>
+<p>A self-loop begins and ends at the same state and requires special routing logic. Without dedicated handling, a self-loop can overlap the state or be rendered as a normal connection.</p>
+<p>The routing and rendering behavior was corrected so that self-loop transitions are represented properly.</p>
+<h2 id="311-pr-2548--fix-bug-2546">3.11 PR #2548 — Fix bug 2546</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2548">PR #2548</a></p>
+<p>This pull request addressed the ECC-related issue tracked as bug 2546.</p>
+<p>The fix was applied to the 3.2.x maintenance branch and targeted the specific incorrect behavior reported in the issue. This helped improve the stability of the maintained Eclipse 4diac release line.</p>
+<h2 id="312-pr-2568--implement-evaluatormodelbreakpoint-for-ecc-debugging">3.12 PR #2568 — Implement EvaluatorModelBreakpoint for ECC debugging</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2568">PR #2568</a></p>
+<p>This pull request introduced <strong>EvaluatorModelBreakpoint</strong> for ECC debugging.</p>
+<p>The implementation added a model-level representation of breakpoints. This allows breakpoint information to be connected to ECC model elements rather than only to visual editor objects.</p>
+<p>Model-level breakpoints:</p>
+<ul>
+<li>Remain associated with the underlying ECC model</li>
+<li>Are less dependent on the current UI state</li>
+<li>Integrate with debugging infrastructure</li>
+<li>Support runtime evaluation workflows</li>
+</ul>
+<h2 id="313-pr-2573--add-support-for-ecc-state-model-breakpoints">3.13 PR #2573 — Add support for ECC state model breakpoints</h2>
+<p>
+
+<img 
+    src="/4diac/img/news/Image-2.jpeg" 
+    alt="Breakpoints view in 4diac IDE" 
+    style="
+        max-width: 100%; 
+        max-height: ; 
+        margin: ; 
+        margin-top: ; 
+        margin-left: ; 
+        margin-right: ;
+        margin-bottom: ; 
+        display: ;" 
+    class=""
+>
+
+ <br>
+ 
+</p>
+<p>
+
+<img 
+    src="/4diac/img/news/Image-3.jpeg" 
+    alt="Debugging the E_CTD function block" 
+    style="
+        max-width: 100%; 
+        max-height: ; 
+        margin: ; 
+        margin-top: ; 
+        margin-left: ; 
+        margin-right: ;
+        margin-bottom: ; 
+        display: ;" 
+    class=""
+>
+
+ <br>
+ 
+</p>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2573">PR #2573</a></p>
+<p>This pull request extended the debugging work by adding breakpoint support for ECC state model elements.</p>
+<p>Users need to stop or inspect execution at specific ECC states while debugging function block behavior. The implementation connected ECC states with the breakpoint infrastructure.</p>
+<p>This contribution improved the debugging experience by allowing users to reason about execution directly through the ECC model.</p>
+<h2 id="314-pr-2611--fix-ecc-anchor-stream-optimization">3.14 PR #2611 — Fix ECC anchor stream optimization</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2611">PR #2611</a></p>
+<p>This pull request optimized connection-anchor calculation using Java Streams.</p>
+<p>The previous implementation used separate intermediate collections for incoming and outgoing transitions. The updated implementation combines these transitions more efficiently.</p>
+<p>The changes helped to:</p>
+<ul>
+<li>Avoid unnecessary intermediate lists</li>
+<li>Reduce memory overhead</li>
+<li>Handle mixed transition collections consistently</li>
+<li>Prevent overlapping transitions on the same state edge</li>
+</ul>
+<h2 id="315-pr-2884--create-ecc-state-on-commit-of-the-inline-editor">3.15 PR #2884 — Create ECC state on commit of the inline editor</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2884">PR #2884</a></p>
+<p>This pull request introduced inline creation of ECC states.</p>
+<p>The new workflow allows the user to:</p>
+<ol>
+<li>Double-click an empty area of the ECC canvas.</li>
+<li>Open an inline text editor.</li>
+<li>Enter or edit the state name.</li>
+<li>Commit the text to create the state.</li>
+<li>Cancel the edit without modifying the model.</li>
+</ol>
+<p>The state is created only after the user commits the name. This makes state creation more direct and intuitive.</p>
+<h2 id="316-pr-2897--adjust-transition-bendpoints-when-a-state-is-moved">3.16 PR #2897 — Adjust transition bendpoints when a state is moved</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2897">PR #2897</a></p>
+<p>This pull request preserves transition layout when an ECC state is moved.</p>
+<p>When a state is dragged to a new position, the connected transitions may contain bendpoints that define their routing. If the state moves but the bendpoints remain unchanged, the transition paths can become distorted.</p>
+<p>The implementation:</p>
+<ul>
+<li>Detects movement of the ECC state</li>
+<li>Calculates the difference between old and new positions</li>
+<li>Finds connected transitions</li>
+<li>Applies the same movement delta to their bendpoints</li>
+<li>Updates the model using SetPositionCommand</li>
+<li>Persists the updated bendpoint positions in the XML model</li>
+</ul>
+<p>This keeps connected transitions visually aligned with the moved state and preserves the relative layout of the ECC diagram.</p>
+<hr>
+<h1 id="4-pull-request-summary">4. Pull Request Summary</h1>
+<table>
+  <thead>
+      <tr>
+          <th>No.</th>
+          <th>PR</th>
+          <th>Title</th>
+          <th>Main Contribution</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2189">#2189</a></td>
+          <td>Clean CreateECStateCommand to remove screen coordinate dependency</td>
+          <td>Removed screen-coordinate dependency from state creation command.</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2209">#2209</a></td>
+          <td>Fix EC state placement under zoom</td>
+          <td>Corrected state placement at different zoom levels.</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2226">#2226</a></td>
+          <td>Fix zoom-aware coordinate translation in NewStateAction</td>
+          <td>Used GEF coordinate translation for reliable state creation.</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2269">#2269</a></td>
+          <td>Remove UI dependency from CreateTransitionCommand</td>
+          <td>Removed viewer and screen-coordinate dependencies from transition commands.</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2369">#2369</a></td>
+          <td>Implement ECStateConnectionAnchor</td>
+          <td>Improved connection points and transition routing around ECC states.</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2421">#2421</a></td>
+          <td>Fix ECC transition splines</td>
+          <td>Improved transition spline rendering and path geometry.</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2430">#2430</a></td>
+          <td>Refactor edge direction</td>
+          <td>Refactored edge-direction calculation and handling.</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2445">#2445</a></td>
+          <td>Fix edge direction aspect ratio</td>
+          <td>Corrected direction decisions using relative aspect ratio.</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2495">#2495</a></td>
+          <td>Fix ECC new router</td>
+          <td>Improved the behavior of the new ECC transition router.</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2526">#2526</a></td>
+          <td>Fix ECC self-loop</td>
+          <td>Corrected self-loop transition handling and rendering.</td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2548">#2548</a></td>
+          <td>Fix bug 2546</td>
+          <td>Fixed an ECC-related bug in the 3.2.x maintenance branch.</td>
+      </tr>
+      <tr>
+          <td>12</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2568">#2568</a></td>
+          <td>Implement EvaluatorModelBreakpoint for ECC debugging</td>
+          <td>Added the model-level breakpoint foundation for ECC debugging.</td>
+      </tr>
+      <tr>
+          <td>13</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2573">#2573</a></td>
+          <td>Add support for ECC state model breakpoints</td>
+          <td>Added breakpoint support for ECC state model elements.</td>
+      </tr>
+      <tr>
+          <td>14</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2611">#2611</a></td>
+          <td>Fix ECC anchor stream optimization</td>
+          <td>Optimized anchor calculation and reduced intermediate collections.</td>
+      </tr>
+      <tr>
+          <td>15</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2884">#2884</a></td>
+          <td>Create ECC state on commit of the inline editor</td>
+          <td>Added inline ECC state creation with commit/cancel behavior.</td>
+      </tr>
+      <tr>
+          <td>16</td>
+          <td><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2897">#2897</a></td>
+          <td>Adjust transition bendpoints when a state is moved</td>
+          <td>Preserved connected transition layout when a state is moved.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h1 id="5-future-scope">5. Future Scope</h1>
+<p>Possible future work includes:</p>
+<ol>
+<li>Adding more automated tests for ECC routing and coordinate transformations.</li>
+<li>Improving visual feedback while moving states.</li>
+<li>Providing better automatic layout for large ECC diagrams.</li>
+<li>Supporting more advanced transition-routing strategies.</li>
+<li>Improving breakpoint visualization inside the ECC editor.</li>
+<li>Adding tests for self-loop and multi-transition scenarios.</li>
+<li>Improving undo and redo behavior for transition geometry changes.</li>
+<li>Providing better accessibility and keyboard support for inline editing.</li>
+<li>Improving performance for very large ECC models.</li>
+<li>Adding more documentation for ECC editor architecture and routing behavior.</li>
+</ol>
+<hr>
+<h1 id="6-conclusion">6. Conclusion</h1>
+<p>During my GSoC project, I worked on improving the ECC editor of Eclipse 4diac IDE. My contributions covered both user-facing features and internal architectural improvements.</p>
+<p>The work improved:</p>
+<ul>
+<li>State creation</li>
+<li>Zoom-aware positioning</li>
+<li>Coordinate transformation</li>
+<li>Transition routing</li>
+<li>Connection anchors</li>
+<li>Spline rendering</li>
+<li>Edge direction</li>
+<li>Self-loop handling</li>
+<li>Debugging breakpoints</li>
+<li>Anchor calculation performance</li>
+<li>Inline state creation</li>
+<li>State movement and bendpoint preservation</li>
+</ul>
+<p>A total of 16 pull requests were merged into the Eclipse 4diac IDE repository. These changes improved the reliability, maintainability, performance, usability, and model consistency of the ECC editor.</p>
+<p>The project also helped me gain valuable experience in Java, Eclipse plug-in development, GEF-based graphical editors, model-driven engineering, debugging infrastructure, industrial automation, GitHub collaboration, and open-source software development.</p>
+<p>I am grateful to my mentor, Alois Zoitl, the Eclipse 4diac community, and the Eclipse Foundation for their guidance, reviews, and support throughout the project.</p>
+<hr>
+<h1 id="7-important-links">7. Important Links</h1>
+<h2 id="repository">Repository</h2>
+<p><a href="https://github.com/eclipse-4diac/4diac-ide">Eclipse 4diac IDE</a></p>
+<h2 id="contributor-profile">Contributor Profile</h2>
+<p><a href="https://github.com/vikash1703">Vikash Kumar Sinha — GitHub Profile</a></p>
+<h2 id="merged-pull-requests">Merged Pull Requests</h2>
+<ul>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2189">PR #2189</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2209">PR #2209</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2226">PR #2226</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2269">PR #2269</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2369">PR #2369</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2421">PR #2421</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2430">PR #2430</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2445">PR #2445</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2495">PR #2495</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2526">PR #2526</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2548">PR #2548</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2568">PR #2568</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2573">PR #2573</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2611">PR #2611</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2884">PR #2884</a></li>
+<li><a href="https://github.com/eclipse-4diac/4diac-ide/pull/2897">PR #2897</a></li>
+</ul>
+<h2 id="signature">Signature</h2>
+<ul>
+<li><strong>Contributor:</strong> Vikash Kumar Sinha</li>
+<li><strong>Mentor:</strong> Alois Zoitl</li>
+<li><strong>Organization:</strong> Eclipse Foundation</li>
+<li><strong>Project:</strong> Eclipse 4diac IDE</li>
+<li><strong>Date:</strong> October 14, 2026</li>
+</ul>
+ 
+
+  
+
+  
+
+
+
+
+
+    
+
+
+     
+      
+      </div>
+        <div class="col-md-6  padding-bottom-30">
+          
+            
+
+
+
+
+
+
+  
+  
+
+  
+    
+  
+  
+  
+
+  
+
+
+
+          
+        </div>
+      </div>
+    
+  </div>
+</main>
+
+
+
+  
+  
+  
+
+
+
+
+  
+
+<p id="back-to-top">
+  <a class="visible-xs" href="#">Back to the top</a>
+</p>
+<footer class="footer" id="footer">
+  <div class="container">
+    
+
+<div class="footer-end-social-container margin-bottom-30">
+  
+
+
+
+
+
+
+
+
+
+
+<div class="footer-end-social">
+    <p class="footer-end-social-text hidden-xs">Follow Us:</p>
+    <ul class="footer-end-social-links list-inline">
+        <li>
+            <a class="link-unstyled" href="https://x.com/4diac" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.youtube.com/@4diac177" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="link-unstyled" href="https://www.linkedin.com/groups/6949091/" title="">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only"></span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        </li>
+    </ul>
+    <p class="footer-end-social-text hidden-xs">Support:</p>
+    <ul class="footer-end-social-links list-inline">
+    	<li>
+            <a class="link-unstyled" href="https://github.com/eclipse-4diac" title="Eclipse 4diac Github Organization">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Github Organization</span>
+                </span>
+            </a>
+        </li> 
+    	<li>
+            <a class="link-unstyled" href="https://accounts.eclipse.org/mailing-list/4diac-dev" title="Eclipse 4diac Developer Mailinglist">
+                <span class="fa fa-stack">
+                    <i class="fa fa-circle fa-stack-2x" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse" aria-hidden="true"></i>
+                    <span class="sr-only">Eclipse 4diac Developer Mailinglist</span>
+                </span>
+            </a>
+        </li> 
+        <li>
+        	<a class="link-unstyled" href="https://chat.eclipse.org/#/room/#eclipse-4diac:matrix.eclipse.org"  title="Eclipse 4diac Matrix Channels">
+        		<img src="/4diac/img/matrix.png" alt="Eclipse 4diac Matrix Channels"/></a>
+            <span class="sr-only">Eclipse 4diac Matrix Channels</span>
+        </li>
+    </ul>
+</div>
+
+
+</div>
+
+
+    <div class="footer-sections row equal-height-md font-bold">
+        
+        <div class="col-md-15">
+          <div class="row">
+            
+
+
+  
+  <section id="footer-legal" class="footer-section col-sm-8">
+    <div class="menu-heading">Legal</div>
+    <ul class="nav">
+      <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+      <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+      <li><a href="https://www.eclipse.org/legal/compliance/">Compliance</a></li>
+      <li><a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php">Code of Conduct</a></li>
+      <li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
+      <li><a class="toolbar-manage-cookies" href="#" onclick="event.preventDefault()">Manage Cookies</a></li>
+    </ul>
+  </section>
+
+
+ 
+ <section id="footer-more" class="footer-section col-sm-8">
+   <div class="menu-heading">More</div>
+   <ul class="nav">
+     <li><a href="https://www.eclipse.org/security/">Report a Vulnerability</a></li>
+     <li><a href="https://www.eclipsestatus.io/">Service Status</a></li>
+     
+     <li><a href="/4diac/support/">Support</a></li>
+   </ul>
+ </section>
+
+
+          </div>
+        </div>
+        
+
+
+
+
+  <div id="footer-end" class="footer-section col-md-8 col-md-offset-1 col-sm-24">
+    
+  </div>
+
+
+    </div>
+    
+
+
+
+<div class="col-sm-24 margin-top-20">
+  <div class="row">
+    <div id="copyright" class="col-sm-16">
+      <p id="copyright-text">Copyright &copy; Eclipse Foundation AISBL. All Rights Reserved.</p>
+    </div>
+    
+  </div>
+</div>
+
+    <a href="#" class="scrollup">Back to the top</a>
+  </div>
+</footer>
+
+
+
+
+  
+  <div id="footer-js">
+  
+  <script src="https://www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/astro.min.js?var=0.0.250?v=1792000986"></script>
+  
+
+  
+  
+
+  
+  <script>
+  (function($, document) {
+    
+    
+  })(jQuery, document);
+  </script>
+
+  
+</div>
+
+</body>
+</html>
+

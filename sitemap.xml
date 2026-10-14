@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
-    <lastmod>2026-10-11T17:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eclipse.dev/4diac/categories/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/gsoc/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/news/2026/2026/gsoc-2026-final-report-improving-the-ecc-editor/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/categories/4diacweekly/</loc>
     <lastmod>2026-10-11T17:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-107/</loc>
@@ -79,9 +85,6 @@
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-89/</loc>
     <lastmod>2026-06-05T17:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eclipse.dev/4diac/categories/gsoc/</loc>
-    <lastmod>2026-05-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2026/2026/introducing-our-gsoc-2026-contributor-dimitris-kalligaridis/</loc>
     <lastmod>2026-05-31T00:00:00+00:00</lastmod>

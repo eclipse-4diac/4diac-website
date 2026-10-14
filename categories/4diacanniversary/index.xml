@@ -10,6 +10,78 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacanniversary/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>GSoC 2026 Final Report: Improving the ECC Editor</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/gsoc-2026-final-report-improving-the-ecc-editor/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/gsoc-2026-final-report-improving-the-ecc-editor/</guid>
+      <description>&lt;h2 id=&#34;project-information&#34;&gt;Project Information&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Field&lt;/th&gt;
+          &lt;th&gt;Details&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Project Name&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Improving the ECC Editor in Eclipse 4diac IDE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Organization&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Eclipse Foundation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Project&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Eclipse 4diac IDE&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Repository&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/eclipse-4diac/4diac-ide&#34;&gt;eclipse-4diac/4diac-ide&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Repository Description&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Eclipse 4diac IDE is an open-source engineering tool for IEC 61499-based distributed automation systems.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Contributor&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Vikash Kumar Sinha&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;GitHub Username&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/vikash1703&#34;&gt;vikash1703&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Mentor&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Alois Zoitl&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;GSoC Year&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2026&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Primary Technologies&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Java, Eclipse RCP, GEF, IEC 61499 Model&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Main Module&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;ECC Editor&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Merged Pull Requests&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;16&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;1-executive-summary&#34;&gt;1. Executive Summary&lt;/h1&gt;
+&lt;p&gt;During my Google Summer of Code project with the Eclipse Foundation, I worked on improving the Execution Control Chart (ECC) editor of Eclipse 4diac IDE.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #107</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-107/</link>
       <pubDate>Sun, 11 Oct 2026 17:00:00 +0000</pubDate>
