@@ -10,6 +10,45 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #108</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-108/</link>
+      <pubDate>Fri, 16 Oct 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-108/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Documentation Editor&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved the AsciiDoc formatting toolbar
+&lt;ul&gt;
+&lt;li&gt;Switched to Mylyn AsciiDoc templates for more consistent formatting&lt;/li&gt;
+&lt;li&gt;Fixed bold and superscript formatting&lt;/li&gt;
+&lt;li&gt;Added support for inserting links and admonitions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Validation &amp;amp; Type Handling&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added validation for circular struct member references
+&lt;ul&gt;
+&lt;li&gt;Detects indirect circular dependencies and reports the involved type chain&lt;/li&gt;
+&lt;li&gt;Supports navigation to the affected model elements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved handling of library element dependency updates to prevent reentrant operations&lt;/li&gt;
+&lt;li&gt;Fixed potential exceptions when refreshing pin information with outdated data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Editor Stability&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>GSoC 2026 Final Report: Improving the ECC Editor</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/gsoc-2026-final-report-improving-the-ecc-editor/</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
@@ -84,7 +123,7 @@
     <item>
       <title>Eclipse 4diac Weekly #107</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-107/</link>
-      <pubDate>Sun, 11 Oct 2026 17:00:00 +0000</pubDate>
+      <pubDate>Fri, 09 Oct 2026 17:00:00 +0000</pubDate>
       
         <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
       
