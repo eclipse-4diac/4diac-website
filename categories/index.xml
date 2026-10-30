@@ -8,7 +8,46 @@
     <language>en</language>
     <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
-    <lastBuildDate>Fri, 16 Oct 2026 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Oct 2026 17:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eclipse 4diac Weekly #109</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-109/</link>
+      <pubDate>Fri, 23 Oct 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-109/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Documentation Editor&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extended the AsciiDoc formatting toolbar
+&lt;ul&gt;
+&lt;li&gt;Added an image insertion dialog with support for managing images in the &lt;code&gt;.assets&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Added buttons for inserting source code blocks and function block type macros&lt;/li&gt;
+&lt;li&gt;Improved the toolbar layout and restricted its visibility to the AsciiDoc Source tab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Type Export &amp;amp; Code Generation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved FORTE NG export of function FBs
+&lt;ul&gt;
+&lt;li&gt;Generated separate Structured Text implementations to reduce function call overhead&lt;/li&gt;
+&lt;li&gt;Removed unnecessary event accessors&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added an option to export library types as Service Interface Function Blocks (SIFBs)&lt;/li&gt;
+&lt;li&gt;Restricted supported types for SIFB export&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Library &amp;amp; Type Management&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Eclipse 4diac Weekly #108</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-108/</link>
