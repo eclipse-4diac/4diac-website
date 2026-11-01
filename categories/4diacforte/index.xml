@@ -10,6 +10,37 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Fri, 04 Apr 2025 14:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacforte/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #110</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-110/</link>
+      <pubDate>Fri, 30 Oct 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-110/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Bulk Editor &amp;amp; Querying&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Significantly extended the graphical Bulk Query Editor
+&lt;ul&gt;
+&lt;li&gt;Replaced the Zest viewer with a GEF-based editor, adding zoom, selection feedback, direct editing, and keyboard shortcuts&lt;/li&gt;
+&lt;li&gt;Added support for querying connections, connection attributes, subapplication hierarchies, function FBs, and composite FBs&lt;/li&gt;
+&lt;li&gt;Extended query constraints with AND/OR combinations, negation, and mixed constraint types&lt;/li&gt;
+&lt;li&gt;Improved constraint validation, chaining, and editing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Integrated graphical queries into the Bulk Editor&amp;rsquo;s search functionality, replacing the previous search tab&lt;/li&gt;
+&lt;li&gt;Added loading and saving of queries, including support for opening query files from the System Explorer&lt;/li&gt;
+&lt;li&gt;Improved undo/redo handling and management of unsaved changes&lt;/li&gt;
+&lt;li&gt;Improved context menus and graphical layout&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Replay Debugging&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #109</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-109/</link>
       <pubDate>Fri, 23 Oct 2026 17:00:00 +0000</pubDate>

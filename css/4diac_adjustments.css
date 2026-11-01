@@ -59,6 +59,42 @@ h6 {
 }
 
 /* --------------------------------------------------------------------------
+   Lists and nested lists
+   -------------------------------------------------------------------------- */
+
+/* Basic list layout */
+:is(main, #main-content) :is(ul, ol) {
+  padding-left: 1.8em;
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+}
+
+/* Small separation between siblings */
+:is(main, #main-content) :is(ul, ol) > li + li {
+  margin-top: 0.2em;
+}
+
+/* Nested lists belong close to their parent */
+:is(main, #main-content) li > :is(ul, ol, .ulist, .olist) {
+  margin-top: 0.15em;
+  margin-bottom: 0;
+}
+
+/* Separate complete groups from the next sibling */
+:is(main, #main-content) li:has(
+  > :is(ul, ol, .ulist, .olist)
+) + li {
+  margin-top: 0.8em;
+}
+
+/* AsciiDoc often wraps list-item text in paragraphs */
+:is(main, #main-content) li > p:has(
+  + :is(ul, ol, .ulist, .olist)
+) {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
    Buttons
    -------------------------------------------------------------------------- */
 .btn-primary {
