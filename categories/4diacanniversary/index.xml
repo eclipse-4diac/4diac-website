@@ -10,6 +10,26 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Wed, 23 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/4diacanniversary/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Removing Legacy Process Interfaces in 4diac FORTE</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/removing-legacy-process-interfaces-in-4diac-forte/</link>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/removing-legacy-process-interfaces-in-4diac-forte/</guid>
+      <description>&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;The legacy process interface codebase has been broken and non-compiling for the past four releases. Given that no issues or pull requests have been submitted for these interfaces during this period, they are no longer in active use.&lt;/p&gt;
+&lt;p&gt;Attempting to repair and maintain these obsolete implementations takes focus away from improving 4diac FORTE and advancing the modern process interface framework.&lt;/p&gt;
+&lt;h3 id=&#34;impact-on-users&#34;&gt;Impact on Users&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Current &amp;amp; New Projects:&lt;/strong&gt; No impact. Active developments should continue using the current process interface architecture.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Legacy Integrations:&lt;/strong&gt; Any setups still relying on old process interfaces will need to transition to the current implementation model.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;get-involved&#34;&gt;Get Involved&lt;/h3&gt;
+&lt;p&gt;Do you depend on a specific legacy process interface and need to keep it alive?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #110</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-110/</link>
       <pubDate>Fri, 30 Oct 2026 17:00:00 +0000</pubDate>
