@@ -18,21 +18,43 @@
 /* --------------------------------------------------------------------------
    News Section
    -------------------------------------------------------------------------- */
-.subscribe-btn {
+.news-cards-row  .subscribe-btn {
   display: block;
   width: 100%;
+  color: var(--4diac-blue);
 }
 
-.view-all-btn {
+.news-cards-row .view-all-btn {
   display: block;
   width: 100%;
   background-color: var(--4diac-blue);
   border: 0;
 }
 
-.view-all-btn:hover {
-  background-color: var(--4diac-blue-light);
+.news-cards-row .view-all-btn:hover {
+  background-color: var(--4diac-blue-medium-2);
+  color: var(--text-on-dark);
 }
+
+.news-cards-row .subscribe-btn:is(:hover, :focus-visible) {
+  background-color: var(--4diac-orange-light);
+  border-color: var(--4diac-orange-light);
+  color: var(--4diac-blue);
+}
+
+.news-cards-row .rss-btn {
+  background-color: var(--4diac-lime);
+  border-color: var(--4diac-lime);
+  width: 100%;
+  color: var(--4diac-blue);
+}
+
+.news-cards-row .rss-btn:is(:hover, :focus-visible) {
+  background-color: var(--4diac-lime-light);
+  border-color: var(--4diac-lime-light);
+  color: var(--4diac-blue);
+}
+
 
 .news-btn-font {
   font-size: 16px;
@@ -41,6 +63,21 @@
 
 .news-view-all-font {
   color: var(--link);
+}
+
+/* Limit homepage news excerpts on desktop */
+@media (min-width: 992px) {
+  .news-cards-row .news-card-excerpt {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 12;
+    line-clamp: 12;
+    overflow: hidden;
+  }
+}
+
+.news-cards-row .card-panel.panel {
+  margin-bottom: 0;
 }
 
 /* --------------------------------------------------------------------------
