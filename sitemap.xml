@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/2027/</loc>
+    <lastmod>2026-11-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/</loc>
+    <lastmod>2026-11-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://eclipse.dev/4diac/categories/4diac-forte/</loc>
     <lastmod>2026-11-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -470,19 +476,19 @@
     <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-9/</loc>
     <lastmod>2024-11-08T17:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/</loc>
+    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/2025/</loc>
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/organisation/</loc>
+    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/2025/organisation/</loc>
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/participation/</loc>
+    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/2025/participation/</loc>
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/program/</loc>
+    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/2025/program/</loc>
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/venue/</loc>
+    <loc>https://eclipse.dev/4diac/events/4diacwinterschool/2025/venue/</loc>
     <lastmod>2024-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eclipse.dev/4diac/news/2024/2024/eclipse-4diac-weekly-8/</loc>
