@@ -10,6 +10,50 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Thu, 28 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/ecc/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #111</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-111/</link>
+      <pubDate>Fri, 06 Nov 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-111/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Library Management&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extended library manifest validation
+&lt;ul&gt;
+&lt;li&gt;Added checks for library names, version information, version ranges, and include/exclude patterns&lt;/li&gt;
+&lt;li&gt;Improved error reporting for missing or invalid version declarations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved library package downloading
+&lt;ul&gt;
+&lt;li&gt;Unified discovery of library downloader providers&lt;/li&gt;
+&lt;li&gt;Fixed stale library cache entries, particularly on macOS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved library element hashing by excluding source comments from hash calculations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Structured Text &amp;amp; Type Management&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extended the type model and ST parser to preserve Structured Text source elements and comments during import/export&lt;/li&gt;
+&lt;li&gt;Improved adapter attribute handling
+&lt;ul&gt;
+&lt;li&gt;Preserved attributes across import/export and save/reload cycles&lt;/li&gt;
+&lt;li&gt;Ensured consistent editing in interface editors and FB networks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Bulk Query Editor&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Removing Legacy Process Interfaces in 4diac FORTE</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/removing-legacy-process-interfaces-in-4diac-forte/</link>
       <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
