@@ -8,7 +8,7 @@
     <language>en</language>
     <managingEditor>webdev@eclipse-foundation.org (Eclipse Foundation)</managingEditor>
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
-    <lastBuildDate>Thu, 31 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/categories/eclipse-4diac-project-news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Planned IEC 61499 Type Hash Changes in Eclipse 4diac 3.5</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/planned-iec-61499-type-hash-changes-in-eclipse-4diac-3.5/</link>
@@ -65,6 +65,19 @@ Addressing these issues will require backward-incompatible changes to the result
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Bulk Query Editor&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sovereign Tech Fund Invests in Eclipse 4diac</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/sovereign-tech-fund-invests-in-eclipse-4diac/</link>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/sovereign-tech-fund-invests-in-eclipse-4diac/</guid>
+      <description>&lt;p&gt;We are thrilled about this opportunity. Our community has built a substantial foundation over many years. Now we can bring several important developments together and address obstacles to broader industrial adoption. Our ambition is a clear path from the first installation to a working, maintainable automation application, with more possibilities for everyone building with Eclipse 4diac.&lt;/p&gt;
+&lt;h3 id=&#34;4diac-forte-strengthening-the-industrial-foundation&#34;&gt;4diac FORTE: strengthening the industrial foundation&lt;/h3&gt;
+&lt;p&gt;Reliable communication and predictable runtime behavior are essential when moving from an engineering project to a real machine. Our work on 4diac FORTE will strengthen that foundation in three areas:&lt;/p&gt;</description>
     </item>
     
     <item>
