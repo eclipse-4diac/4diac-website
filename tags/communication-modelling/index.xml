@@ -10,6 +10,20 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/communication-modelling/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Planned IEC 61499 Type Hash Changes in Eclipse 4diac 3.5</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/planned-iec-61499-type-hash-changes-in-eclipse-4diac-3.5/</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/planned-iec-61499-type-hash-changes-in-eclipse-4diac-3.5/</guid>
+      <description>&lt;p&gt;Eclipse 4diac uses type hashes to detect functional or structural mismatches of IEC 61499 types between 4diac IDE and 4diac FORTE.&lt;/p&gt;
+&lt;p&gt;During our ongoing work on &lt;a href=&#34;https://github.com/eclipse-4diac/4diac-documentation/pull/110&#34;&gt;IEC 61499 XSDs&lt;/a&gt; and investigations into recently discovered bugs (e.g., &lt;a href=&#34;https://github.com/eclipse-4diac/4diac-ide/pull/3112&#34;&gt;#3112&lt;/a&gt;), we identified several issues in the current type hash algorithm.
+Addressing these issues will require backward-incompatible changes to the resulting hash values.&lt;/p&gt;
+&lt;p&gt;To avoid introducing incompatible changes across multiple releases, we plan to collect and coordinate all known and foreseeable hash-related changes and introduce them together with a &lt;strong&gt;version bump of the type hash algorithm in Eclipse 4diac 3.5&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Eclipse 4diac Weekly #111</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-111/</link>
       <pubDate>Fri, 06 Nov 2026 17:00:00 +0000</pubDate>
