@@ -10,6 +10,33 @@
     <webMaster>webdev@eclipse-foundation.org (Eclipse Foundation)</webMaster>
     <lastBuildDate>Mon, 13 Oct 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://eclipse.dev/4diac/tags/white-paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Eclipse 4diac Weekly #112</title>
+      <link>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-112/</link>
+      <pubDate>Fri, 13 Nov 2026 17:00:00 +0000</pubDate>
+      
+        <author>webdev@eclipse-foundation.org (Eclipse Foundation)</author>
+      
+      <guid>https://eclipse.dev/4diac/news/2026/2026/eclipse-4diac-weekly-112/</guid>
+      <description>&lt;h2 id=&#34;enhancements-and-fixes-in-4diac-ide&#34;&gt;Enhancements and Fixes in 4diac IDE&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;EtherCAT &amp;amp; I/O Support&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved EtherCAT controller configuration
+&lt;ul&gt;
+&lt;li&gt;Renamed &lt;code&gt;ECController&lt;/code&gt; input &lt;code&gt;ControllerIndex&lt;/code&gt; to &lt;code&gt;ControllerId&lt;/code&gt; to match 4diac FORTE and ensure correct parameter deployment&lt;/li&gt;
+&lt;li&gt;Changed the default &lt;code&gt;UpdateInterval&lt;/code&gt; to 1 ms to match the runtime&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Changed the &lt;code&gt;GPIOChip&lt;/code&gt;&amp;rsquo;s &lt;code&gt;VALUE&lt;/code&gt; input from &lt;code&gt;WSTRING&lt;/code&gt; to &lt;code&gt;STRING&lt;/code&gt;, matching the updated 4diac FORTE implementation&lt;/li&gt;
+&lt;li&gt;Corrected the generic class name of &lt;code&gt;PROVIDE_ARR&lt;/code&gt; function blocks to ensure proper runtime compatibility&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;AsciiDoc Documentation Editor&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Planned IEC 61499 Type Hash Changes in Eclipse 4diac 3.5</title>
       <link>https://eclipse.dev/4diac/news/2026/2026/planned-iec-61499-type-hash-changes-in-eclipse-4diac-3.5/</link>
       <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
